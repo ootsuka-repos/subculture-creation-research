@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "checked_on": "2026-09-06",
   "scope": "SIGGRAPH 2026 Technical Papers, including selected TOG presentations; author-released trained weights, LoRAs, policies, and bundled networks. SIGGRAPH Asia, posters, courses, API-only systems, code-only releases, and methods using only unrelated upstream weights are excluded.",
   "verification_limits": "Release availability and file listings/headers were checked; model binaries were not fully downloaded or executed. Gated distributions are marked. This is a verified discovery snapshot, not a proof of exhaustive coverage.",
@@ -46,7 +46,8 @@
         "https://github.com/VAST-AI-Research/AniGen/blob/c49db3d6b466537a02ccf2286688903d77af7e4f/README.md"
       ],
       "notes": "DAE・Flowなどを配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "1枚の画像から、形状・骨格・スキニングをそろえた、動かせる3Dアセットを生成する。"
     },
     {
       "title": "B-repLer: Language-guided Editing of CAD Models",
@@ -74,7 +75,8 @@
         "https://github.com/yilinliu77/Brepler/blob/dde8c105621a1c6dc59570369747da29b5a47b59/readme.md"
       ],
       "notes": "編集モデルとHoLa VAE。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "既存のCADモデルを自然言語の指示で編集し、CADで再利用できるB-rep形式の形状を出力する。"
     },
     {
       "title": "CubePart: An Open-Vocabulary Part-Controllable 3D Generator",
@@ -107,7 +109,8 @@
         "https://github.com/Roblox/cube/blob/3c6d06ddbef3160a1e1950cb13ab63dd12a61e50/cubepart/README.md"
       ],
       "notes": "公開部分はmulti-part mesh decompositionとshape VAE。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3Dメッシュと部品名の一覧から、指定した意味単位のパーツに分解する。公開版は部品分解と形状VAEが対象。"
     },
     {
       "title": "DeepMill++: Neural Guidance Meets Rasterization for Efficient Accessibility Analysis",
@@ -144,7 +147,8 @@
         "https://github.com/YaoZhang-666/DeepMillPlusPlus/blob/eb227aa6e6be61e6bb112c426a98aaa73c416927/README.md"
       ],
       "notes": "DeepMモデル。Git LFS配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3D形状に対して切削工具が届く場所を推定する。3軸加工の干渉・加工可能性を調べる製造向け手法。"
     },
     {
       "title": "DualBrep: A Dual-Field Continuous Representation for B-rep Modelling",
@@ -178,7 +182,8 @@
         "https://github.com/AutodeskAILab/DualBrep/blob/3f276079a92759450b7431c96e140cd59a87ec0b/README.md"
       ],
       "notes": "checkpoints.zipにVAE・Flow・parametrizer。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "CAD形状の表面と境界構造を連続的な場で表現し、B-repモデルを復元・生成する。"
     },
     {
       "title": "InfiniteDiffusion: Bridging Learned Fidelity and Procedural Utility for Open-World Terrain Generation",
@@ -206,7 +211,8 @@
         "https://github.com/xandergos/terrain-diffusion/blob/e8dcb4b1a834ab2f6b1a6f5256ed7c9f2f3e8230/README.md"
       ],
       "notes": "Terrain Diffusionのモデル群。論文の旧題との重複を統合。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "シードを保ちながら必要な場所の地形を順次生成する。広大なゲーム背景や地形のストリーミング向け。"
     },
     {
       "title": "MeshFlow: Mesh Generation with Equivariant Flow Matching",
@@ -241,7 +247,8 @@
         "https://github.com/qiisun/MeshFlow/blob/bd7d8a138465c583694f9f86083ddd2979d10f87/README.md"
       ],
       "notes": "ShapeNetの4カテゴリの重み。配布先はHF datasetリポジトリ。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "頂点・面を持つ3Dメッシュを直接生成する。公開重みは椅子・机・ランプ・ベンチの4カテゴリ。"
     },
     {
       "title": "Learning Laplacian Eigenspace with Mass-Aware Neural Operators on Point Clouds",
@@ -269,7 +276,8 @@
         "https://github.com/Adversarr/NEO/blob/d928c319d3f156bb78f324b1820c095788a828eb/README.md"
       ],
       "notes": "NEOの学習済み重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "点群から形状解析に使う低周波の固有空間を高速に推定する。形状の比較・対応付けなどの基盤処理向け。"
     },
     {
       "title": "Neural Particle Automata: Learning Self-Organizing Particle Dynamics",
@@ -312,7 +320,8 @@
         "https://github.com/TheDevilWillBeBee/NPA/blob/1176ead09ef34e21814fd6b1dd29ca661aedb5da/README.md"
       ],
       "notes": "lizard・polka_dottedの学習済みモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "粒子同士の局所的な相互作用を学習し、模様や形が自己組織化して変化する動きを作る。"
     },
     {
       "title": "NeuralSketch2Surf: Fast Neural Surfacing of Unoriented 3D Sketches",
@@ -344,7 +353,8 @@
         "https://github.com/Hongsheng-Y/NeuralSketch2Surf/blob/e62182e6d369bd1d448aea21139c330924b4e358/README.md"
       ],
       "notes": "TorchScript/PyTorchチェックポイント。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "空間内に描いた疎な3D線画から、滑らかで閉じた立体表面を復元する。ラフな立体スケッチの造形支援。"
     },
     {
       "title": "Pixal3D: Pixel-Aligned 3D Generation from Images",
@@ -386,7 +396,8 @@
         "https://github.com/TencentARC/Pixal3D/blob/f7cf38429b0bd264f1995f0f8743a88b1c728b94/README.md"
       ],
       "notes": "論文再現用は paper ブランチ。最新実装と区別。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "参照画像の細部に対応する3D形状とPBRテクスチャを生成する。公開最新版は複数視点入力にも対応。"
     },
     {
       "title": "Points as Tori: Fast Pointwise Signed Distance for Point Clouds",
@@ -423,7 +434,8 @@
         "https://github.com/nzfeng/points-as-tori/blob/253bf9fc5e79831a03f0486e0c42feeb67c1c546/README.md"
       ],
       "notes": "小規模な学習済みネットワークを同梱。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "向き付き点群から、空間中の点が表面からどれだけ離れているかを高速に計算する。形状処理の基盤技術。"
     },
     {
       "title": "Raster2Seq: Polygon Sequence Generation for Floorplan Reconstruction",
@@ -459,7 +471,8 @@
         "https://github.com/Cornell-VAILab/Raster2Seq/blob/a6c4e27a68d11d7a459f6e4a2601fd887227dd1a/README.md"
       ],
       "notes": "床面図復元モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像になった間取り図を、部屋などの意味情報を持つポリゴン列へ変換する。室内レイアウトの構造化向け。"
     },
     {
       "title": "SegviGen: Repurposing 3D Generative Model for Part Segmentation",
@@ -493,7 +506,8 @@
         "https://github.com/Nelipot-Lee/SegviGen/blob/81ec99ede1fbe566c73322dd968cd64bb508f5f7/README.md"
       ],
       "notes": "部分指定・全体分割・2D誘導の重みを配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3Dモデルを意味のある部位に分割する。クリック指定・全体分割・2Dの分割画像による誘導を扱う。"
     },
     {
       "title": "SimArt: Decomposing Monolithic Meshes into Sim-ready Articulated Assets via MLLM",
@@ -532,7 +546,8 @@
         "https://github.com/ByteDance-Seed/SimArt/blob/c8d0829f37153feda9e0792131078a47fc15010d/README.md"
       ],
       "notes": "MLLMとVQ-VAEの重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "一体化した3Dメッシュを部品に分け、関節の動きも推定して、シミュレーション可能なアセットにする。"
     },
     {
       "title": "SQuadGen: Generating Simple Quad Layouts via Chart Distance Fields",
@@ -565,7 +580,8 @@
         "https://github.com/microsoft/SQuadGen/blob/b00a83b6f2068b9e66cbf195978dbe9c084108ee/README.md"
       ],
       "notes": "SQ-VAE・Geom-AE・SQDiffuse。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3D形状上にシンプルな四角形の区画構造を生成し、モデリングや編集に使いやすいクアッドメッシュ作成を支援する。"
     },
     {
       "title": "SuperSDF: Sparse SDF Super-Resolution for Surface Extraction",
@@ -619,7 +635,8 @@
         "https://github.com/Sagar160/SSU/blob/c548e9bfc93aa45bbc8bfb117fd64894475ee194/README.md"
       ],
       "notes": "リポジトリ内にモデル重みを収録。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "粗い符号付き距離場を高解像度化し、より細かな表面メッシュを復元する。低解像度形状の改善向け。"
     },
     {
       "title": "Generative 3D Gaussians with Learned Density Control",
@@ -656,7 +673,8 @@
         "https://github.com/runjie-yan/TripoSplat-Training/blob/bc94db87dd4b748d1edac5d28231c1e152e46508/README.md"
       ],
       "notes": "TripoSplat。DINOv3等の依存モデルには別途アクセス条件あり。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "1枚の画像から3D Gaussianアセットを生成する。Gaussian数を変えて見た目と描画負荷を調整できる。"
     },
     {
       "title": "ArtiFixer: Enhancing and Extending 3D Reconstruction with Auto-Regressive Diffusion Models",
@@ -691,7 +709,8 @@
         "https://github.com/nv-tlabs/ArtiFixer/blob/a392c4dfe17459ef9952407accdb9fcdcdddba98/README.md"
       ],
       "notes": "1.3B・14B。Wanベースモデルが別途必要。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3D復元結果のレンダリングに生じる欠損や破綻を動画拡散モデルで補い、復元の改善や視点範囲の拡張を行う。"
     },
     {
       "title": "GeoQuery: Geometry-Query Diffusion for Sparse-View Reconstruction",
@@ -723,7 +742,8 @@
         "https://github.com/Xiaoc7/GeoQuery/blob/8439c4ffdf87783c9dbc29329c72df77ab13e01d/README.md"
       ],
       "notes": "拡散refinerの重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "少数視点から復元した3Dシーンの新視点画像を、参照画像と幾何対応を使って修復する。"
     },
     {
       "title": "MegaNorm: Local Patch Embeddings for Efficient and Robust Point Normal Orientation at Super-Large Scale",
@@ -756,7 +776,8 @@
         "https://github.com/zd-lee/MegaNorm/blob/f7e2e309c3d1e595a31b488138e7df702105504c/README.md"
       ],
       "notes": "patchnet等の重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "大規模な点群で表面の向きを局所・全体の両方からそろえる。スキャン形状のメッシュ化などの前処理向け。"
     },
     {
       "title": "Mix3R: Mixing Feed-forward Reconstruction and Generative 3D Priors for Joint Multi-view Aligned 3D Reconstruction and Pose Estimation",
@@ -784,7 +805,8 @@
         "https://github.com/jsnln/mix3r/blob/8f7505c03d6a908148cb715df811027a285a2e1c/README.md"
       ],
       "notes": "V1が論文版、V2が会議後の更新版。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "複数画像から、生成モデルの形状知識を利用して3D形状とカメラ姿勢を同時に推定する。"
     },
     {
       "title": "MTPano: Multi-Task Panoramic Scene Understanding via Label-Free Integration of Dense Prediction Priors",
@@ -817,7 +839,8 @@
         "https://github.com/Evergreen0929/MTPano/blob/8750687be44f497aa0603b1684da1a256130a7ef/README.md"
       ],
       "notes": "140k・408kチェックポイント。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "360度パノラマ画像から、物体・領域の分類、奥行き、表面の向きをまとめて推定する。"
     },
     {
       "title": "PointLLM-R: Enhancing 3D Point Cloud Reasoning via Chain-of-Thought",
@@ -851,7 +874,8 @@
         "https://github.com/Xqle/PointLLM-R/blob/3bd1501a1d7a43a070ce66f8f1ad7a4a28514b8e/README.md"
       ],
       "notes": "7Bモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3D点群について自然言語で質問し、形状・用途などの説明や分類を得る。3D素材の理解・整理向け。"
     },
     {
       "title": "TrajVG: 3D Trajectory-Coupled Visual Geometry Learning",
@@ -879,7 +903,8 @@
         "https://github.com/xingy038/TrajVG/blob/24a4d37c82b6077bc9df8027dce6255f9b74d700/README.md"
       ],
       "notes": "3D軌跡と幾何復元の学習済みモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動画から点の3D軌跡、フレームごとの形状、カメラ姿勢を整合するように推定する。動的シーンの解析向け。"
     },
     {
       "title": "Adaptive Interpolation-Synthesis for Motion In-Betweening on Keyframe-Based Animation",
@@ -911,7 +936,8 @@
         "https://github.com/animaj-lab/mib-ais/blob/5db959ef3215805087c2bfcd2b570bbf2a94301f/README.md"
       ],
       "notes": "AIS-BiLSTMの学習済みモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "指定したキーフレーム間の3Dキャラクター動作を補完する。補間と学習による合成を組み合わせた中割り手法。"
     },
     {
       "title": "Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
@@ -979,7 +1005,8 @@
         "https://github.com/nv-tlabs/ardy/blob/693f74d13b3d04a0a22ce127ee79c929dd89756b/README.md"
       ],
       "notes": "ARDY。テキストエンコーダーのLlamaは申請が必要。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "テキスト、移動経路、キーポーズ、関節の制約から3D人体モーションを対話的に生成する。"
     },
     {
       "title": "GPC: Large-Scale Generative Pretraining for Transferable Motor Control",
@@ -1060,7 +1087,8 @@
         "https://github.com/NVlabs/ProtoMotions/blob/607ca7a0bb92e261120bcab8d9f97f28b3130ffc/data/pretrained_models/gpc_prior/soma_bones/MODEL_CARD.md"
       ],
       "notes": "GPC priorの学習済みモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "大量の動作から汎用的な運動制御の事前知識を学び、物理シミュレーション内のキャラクター制御に転用する。"
     },
     {
       "title": "Matérn Noise for Triangulation-Agnostic Flow Matching on Meshes",
@@ -1088,7 +1116,8 @@
         "https://github.com/kts707/Matern-FM/blob/2a9d3031fde4a6187113d02ca6438036b8aade60/demo/download_weights.sh"
       ],
       "notes": "6つの.ckptをGitHub Releasesで配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "メッシュの三角形分割に左右されにくい生成モデルで、形状上の変形などを扱う。異なるメッシュでの生成処理向け。"
     },
     {
       "title": "MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives",
@@ -1263,7 +1292,8 @@
         "https://github.com/NVlabs/GR00T-WholeBodyControl/blob/087f9ac01d46f6d8e4d0b73c01ae64799f292a38/motionbricks/README.md"
       ],
       "notes": "プレビュー版。VQVAE・pose・rootの重みとG1デモ。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動作の生成と接続を、速度・方向・キーポーズなどで制御する。公開プレビューはG1骨格のリアルタイムデモを含む。"
     },
     {
       "title": "MUSIC: Learning Muscle-Driven Dexterous Hand Control",
@@ -1318,7 +1348,8 @@
         "https://github.com/xupei0610/music/blob/1b13b795a3ce6af6819ade70efcb00d4bdd6a6ff/README.md"
       ],
       "notes": "joint・muscle_trackingの学習済みポリシーを同梱。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "筋肉・腱を模した手のモデルを物理制御し、指の動作追従や両手のピアノ演奏を学習する。"
     },
     {
       "title": "R-DMesh: Video-Guided 3D Animation via Rectified Dynamic Mesh Flow",
@@ -1351,7 +1382,8 @@
         "https://github.com/Tencent-Hunyuan/R-DMesh/blob/467cb35a9f53f6d61a0b36a5aa4e171e4d40ad0f/README.md"
       ],
       "notes": "DVAEとRectified Flow。Wan2.2を併用。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "静的な3Dメッシュを参照動画の初期ポーズに合わせ、動画に沿って動くメッシュ列を生成する。"
     },
     {
       "title": "SMP: Reusable Score-Matching Motion Priors for Physics-Based Character Control",
@@ -1379,7 +1411,8 @@
         "https://github.com/xbpeng/MimicKit/blob/2ed1e6c093bb0829f55d33cb4f7a1731cfe6cb69/README.md"
       ],
       "notes": "公式配布アーカイブ内のモデル。SMPの設定はMimicKitに収録。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動作データから再利用できるモーション事前分布を学び、物理キャラクターの自然な動作制御に使う。"
     },
     {
       "title": "TopoCap: Learning Topology-Agnostic Motion Priors for Monocular Video-to-Animation",
@@ -1412,7 +1445,8 @@
         "https://github.com/czpcf/TopoCap/blob/2e28f0b061f93a9c7c33ad9c6050d10bfaf2ae30/README.md"
       ],
       "notes": "VAE・Flowのモーションモデル。DINOv3は別途申請。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "単眼動画から動作を読み取り、骨格構造が異なる3Dキャラクターへ移す。人型以外の骨格も対象。"
     },
     {
       "title": "EchoAvatar: Real-time Generative Avatar Animation from Audio Streams",
@@ -1450,7 +1484,8 @@
         "https://github.com/RobinWitch/EchoAvatar/blob/174ca5dc6a535a557177cf6703cc9a5338a17bc7/readme.md"
       ],
       "notes": "音声駆動モデルとUnityパッケージ。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "入力音声ストリームから顔と身体の動きを生成し、Unityのアバターをリアルタイムに動かす。"
     },
     {
       "title": "EgoForce: Forearm-Guided Camera-Space 3D Hand Pose from a Monocular Egocentric Camera",
@@ -1486,7 +1521,8 @@
         "https://github.com/dfki-av/EgoForce/blob/480ffb358516d0d7f971ec9da99b7bb07635731e/scripts/download_model_weights.sh"
       ],
       "notes": "モデル配布元は公式ダウンロードスクリプトで確認。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "頭部に付けた単眼カメラの画像から、前腕の情報を利用して手の3D位置・姿勢・形状を推定する。"
     },
     {
       "title": "EgoRelight: Egocentric Human Capture and Illumination Recovery for Relightable and Photoreal Avatar Rendering",
@@ -1514,7 +1550,8 @@
         "https://github.com/jcjackch/EgoRelight/blob/4f3caad184788226b688ff2b97d3f5c4dd089efd/README.md"
       ],
       "notes": "配布サイトに登録・ログインが必要。被写体別重み等を配布。static-lighting appearance networkは未配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "一人称視点の人物撮影と照明推定を組み合わせ、照明を変更して描画できる写実的なアバターを構築する。"
     },
     {
       "title": "OmniHands: Robust Motion Capture of Interactive Hands via A Versatile Transformer",
@@ -1558,7 +1595,8 @@
         "https://github.com/LinDixuan/OmniHands/blob/935e1f580975263be799ebf56932e27ab18e1a01/README.md"
       ],
       "notes": "画像・動画・複数視点の重み。MANOは別途利用条件あり。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像・動画・複数視点の入力から、接触や重なりのある両手の3D形状と動きを復元する。"
     },
     {
       "title": "Learning a Delighting Prior for Facial Appearance Capture in the Wild",
@@ -1587,7 +1625,8 @@
         "https://github.com/yxuhan/OpenDelight/blob/431ad736371dcfbf2ce29cfa84b04512df4ea107/doc/TEST.md"
       ],
       "notes": "OpenDelight。配布モデルと論文内モデルの一致を著者が説明。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "顔の見た目から撮影時の照明や影の影響を取り除く。別の照明で描画する顔アセットの準備向け。"
     },
     {
       "title": "PEAR: Pixel-aligned Expressive humAn mesh Recovery",
@@ -1620,7 +1659,8 @@
         "https://github.com/Pixel-Talk/PEAR/blob/230fa1534367c9f357c1c192a328cdc87ab4491c/inference_images.py"
       ],
       "notes": "SMPL・SMPL-X・FLAMEには別途利用条件あり。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "人物画像から身体・手・顔を含む表情豊かな3D人体メッシュのパラメータを推定する。"
     },
     {
       "title": "VFAvatar: Feed-Forward 3D Avatar Reconstruction from Casual Image Collections",
@@ -1648,7 +1688,8 @@
         "https://github.com/huangshuo200823/VFAvatar/blob/5cdfd1c334e0f1e71fe788da5e4eba932c4a10f0/README.md"
       ],
       "notes": "事前学習済みアバター復元モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "日常的に撮った複数の人物画像から、アニメーション可能な3Dデジタルヒューマンを復元する。"
     },
     {
       "title": "Go-with-the-Track: Video Compositing and Motion Control with Point Tracking",
@@ -1698,7 +1739,8 @@
         "https://github.com/Eyeline-Labs/Go-with-the-Track/blob/e9cf3aaa16084081b3f6586a60e4f2867fbbdf9b/README.md"
       ],
       "notes": "動画合成・モーション制御のモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動画内の点の軌跡を指定し、被写体の動きの制御や別動画への合成を行う。"
     },
     {
       "title": "LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models",
@@ -1730,7 +1772,8 @@
         "https://github.com/cdfan0627/LongE2V/blob/86e70c8073eaf90623d999c3c55063efbe31b92e/README.md"
       ],
       "notes": "LoRA重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "イベントカメラの疎な信号から動画を復元し、将来フレームの予測や中間フレーム生成も行う。通常のRGB動画専用ではない。"
     },
     {
       "title": "MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation",
@@ -1765,7 +1808,8 @@
         "https://github.com/AMAP-ML/MACE-Dance/blob/ac1b5257fb8828790405825f02cfd9f63fc3519c/readme.md"
       ],
       "notes": "Appearance Expertの重み。配布範囲はモデルカード参照。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "音楽に合う3Dダンスと見た目の生成を分担してダンス動画を作る。配布重みはAppearance Expertが対象。"
     },
     {
       "title": "MV-S2V: Multi-View Subject-Consistent Video Generation",
@@ -1802,7 +1846,8 @@
         "https://github.com/Szy-Young/MV-S2V/blob/ccbc80944b36600b1dd39cb6bf671c285b9a1ebc/README.md"
       ],
       "notes": "14Bモデル。Wan2.1のVAE・T5を併用。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "同じ被写体の複数方向の参照画像から、視点が変わっても外観を保ちやすい動画を生成する。"
     },
     {
       "title": "OmniRoam: World Wandering via Long-Horizon Panoramic Video Generation",
@@ -1836,7 +1881,8 @@
         "https://github.com/yuhengliu02/OmniRoam/blob/faabe92241b75169d0439eb810ebe296adc57e4f/README.md"
       ],
       "notes": "Preview・Self-forcing・Refineの3段階モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "カメラ移動を制御しながら長い360度パノラマ動画を生成する。仮想空間を歩き回る映像の作成向け。"
     },
     {
       "title": "Relit-LiVE: Relight Video by Jointly Learning Environment Video",
@@ -1870,7 +1916,8 @@
         "https://github.com/zhuxing0/Relit-LiVE/blob/49ba18075b6d21d41d2016b5ca220287d5094a8e/README.md"
       ],
       "notes": "画像・動画用の複数チェックポイント。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動画の照明を変更する。環境側の照明動画も同時に生成し、時間方向のちらつきや不整合を抑える。"
     },
     {
       "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors",
@@ -1903,7 +1950,8 @@
         "https://github.com/houyuanchen111/UniVidX/blob/acf0ef791ae6d0294dc5f37d61a82d9b294185b9/README.md"
       ],
       "notes": "UniVid-Intrinsic・UniVid-Alpha。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "動画の色・材質・照明に関わる成分やアルファを扱い、成分の推定と条件付き動画生成を行う。"
     },
     {
       "title": "VFXMaster: Unlocking Dynamic Visual Effect Generation via In-Context Learning",
@@ -1956,7 +2004,8 @@
         "https://github.com/libaolu312/VFXMaster/blob/0632c5a9979586adc1d4f96632e5b808ee11712f/README.md"
       ],
       "notes": "In-Context ConditioningとOne-shot Adaptationの重み。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "見本のエフェクト動画を手掛かりに、別の画像へ同様の動的エフェクトを付けた動画を生成する。"
     },
     {
       "title": "BFS: Back-to-Front Layered Image Synthesis via Knowledge Transfer",
@@ -1992,7 +2041,8 @@
         "https://github.com/kkang831/BFS_Release/blob/3612ae457d34cb56b2db7a6be438bdc868176d73/README.md"
       ],
       "notes": "Transparency VAEとBFSの配布ファイルを確認。FLUX.1-Fill-devには条件同意が必要。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像を奥から手前へ透明度付きのレイヤーとして合成・生成する。後から部品を扱える画像制作向け。"
     },
     {
       "title": "BoxCtrl: 3D-Aware Visual Prompting for Geometric Image Editing",
@@ -2024,7 +2074,8 @@
         "https://github.com/beaglew/BoxCtrl/blob/a1cf92af83b67a26477e05e82e0136e49d52bf96/README.md"
       ],
       "notes": "LoRA。FLUX.1-Kontext-devは条件同意が必要。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像内の物体に3Dボックスを指定し、位置・大きさ・向きを幾何的に制御して画像を編集する。"
     },
     {
       "title": "ComboStoc: Combinatorial Stochasticity for Diffusion Generative Models",
@@ -2052,7 +2103,8 @@
         "https://github.com/Xrvitd/ComboStoc/blob/e3234091c940651644627665f75e2177f4acb2d9/README.md"
       ],
       "notes": "XL/2・UNSYNC_ALL・800Kのモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像の各次元や条件の組合せを多様に学習する拡散モデルの手法。制御付き生成の基盤研究向け。"
     },
     {
       "title": "Controllable Texture Tiling via Diffusion Transformers with Transformed Rotary Embeddings",
@@ -2080,7 +2132,8 @@
         "https://github.com/Junrongh/ControlTile/blob/f3410e843742335ae3fa3298d2b335509da18893/README.md"
       ],
       "notes": "ControlTile LoRA。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "模様の配置・反復を制御しながらタイル状テクスチャを生成する。背景素材や繰り返し材質の作成向け。"
     },
     {
       "title": "FIT: A Large-Scale Dataset for Fit-Aware Virtual Try-On",
@@ -2113,7 +2166,8 @@
         "https://github.com/HarryWang355/FIT-VTO/blob/5288a2285c732481ec93213aec7372be82976db2/sim2real/README.md"
       ],
       "notes": "公開モデルはデータ生成用Sim2Real LoRA。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "身体と衣服のサイズ関係を扱う試着データセット。公開モデルはシミュレーション画像を写実化するデータ生成用LoRA。"
     },
     {
       "title": "HairPort: In-context 3D-aware Hair Import and Transfer for Images",
@@ -2147,7 +2201,8 @@
         "https://github.com/deepmancer/HairPort/blob/9e258f3b8d059c615988cda9f63915608e3e5e19/README.md"
       ],
       "notes": "Bald Converter LoRA。FLUX.1-Kontext等の依存モデルあり。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "参照する髪型を顔画像へ移す。3Dの向きと大きさを合わせ、公開LoRAで元の髪を除く前処理も行う。"
     },
     {
       "title": "LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography",
@@ -2180,7 +2235,8 @@
         "https://github.com/frakenation/LUCID/blob/5213434ed2d6a8e13c0fa4aeac416ab752061f3f/README.md"
       ],
       "notes": "flare分離・restorationモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "夜景写真の露出不足、光のフレア、ゴーストなどを調整する。照明表現を制御できる画像修復。"
     },
     {
       "title": "MAOAM: Unified Object and Material Selection with Vision-Language Models",
@@ -2213,7 +2269,8 @@
         "https://github.com/adobe-research/obj-and-mat-selection/blob/004caf22ce64bab5613442baed417787baa0ff0c/README.md"
       ],
       "notes": "物体・材質選択モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "テキストやクリックで画像中の物体・材質を選択し、マスクを作る。部分的な編集や材質変更の準備向け。"
     },
     {
       "title": "See-through: Single-image Layer Decomposition for Anime Characters",
@@ -2275,7 +2332,8 @@
         "https://github.com/shitagaki-lab/see-through/blob/7f139bb25c46a0c8ac720d95ddab185fcda5451c/README.md"
       ],
       "notes": "レイヤー生成・深度・部位分割モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "1枚のアニメ絵を髪・顔・目・服などの補完済みレイヤーに分け、重なり順を推定する。2.5Dアニメの素材準備向け。"
     },
     {
       "title": "StyleID: A Perception-Aware Dataset and Metric for Stylization-Agnostic Facial Identity Recognition",
@@ -2308,7 +2366,8 @@
         "https://github.com/kwanyun/StyleID/blob/bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00/README.md"
       ],
       "notes": "顔IDエンコーダー。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画風が変わった顔同士でも同一人物らしさを測る特徴量を抽出する。キャラクター外観の比較・検索・評価向け。"
     },
     {
       "title": "VeraRetouch: A Lightweight Fully Differentiable Framework for Multi-Task Reasoning Photo Retouching",
@@ -2352,7 +2411,8 @@
         "https://github.com/OpenVeraTeam/VeraRetouch/blob/fefe6c4408f00beae07e132fc404cae0efee0985/README.md"
       ],
       "notes": "レタッチモデルとEncoder-Renderer。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "画像の内容や指示に応じて色・明るさなどをレタッチする。軽量な処理で写真の仕上げを支援する。"
     },
     {
       "title": "8DNA: 8D Neural Asset Light Transport by Distribution Learning",
@@ -2380,7 +2440,8 @@
         "https://github.com/lwwu2/8dna26/blob/4a2157ca24e506c5ac0831f27d656ecc50a64f07/README.md"
       ],
       "notes": "アセット別の学習済みlight-transportモデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "3Dアセット内部の光の伝わり方を学習済みモデルで表し、複雑な光輸送の描画に利用する。"
     },
     {
       "title": "Guidestar-Free Adaptive Optics with Asymmetric Apertures",
@@ -2408,7 +2469,8 @@
         "https://github.com/WeiyunJiang/guidestar-free-ao/blob/867ed6f2b12aea2c121b3f766c4256c5359b9eb9/README.md"
       ],
       "notes": "Places2で学習したモデル群。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "非対称な開口と学習モデルを使い、基準となる光点なしで光学収差を推定・補正する。撮像装置寄りの研究。"
     },
     {
       "title": "Neural Quadrature Rule and Autoregressive Adaptive Sampling",
@@ -2436,7 +2498,8 @@
         "https://github.com/SuikaSibyl/nqr/blob/d83832ca6f8449da7556441c872499e94a806f42/README.md"
       ],
       "notes": "配布アーカイブにscenesとckpt。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "数値積分の評価点や重みを学習し、照明・透過率などの計算を効率化する。レンダラー開発の基盤技術。"
     },
     {
       "title": "VfxDB: A Visual Effects Volume Dataset and Benchmark for VDB-Native Generative Modeling",
@@ -2470,7 +2533,8 @@
         "https://github.com/VfxDB-Official/VfxDB/blob/eaf0530af2067e9d0ffcdfc4fdbb114499037cf8/README.md"
       ],
       "notes": "論文用EMAチェックポイントを配布。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "煙などのVFXボリュームを扱うデータセットと生成モデル。VDB形式を意識した立体エフェクト素材の生成向け。"
     },
     {
       "title": "Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing",
@@ -2503,7 +2567,8 @@
         "https://github.com/ZeyueT/Audio-Omni/blob/e548fb025ecf13f0258b23feb2d91da59b6bccc4/README.md"
       ],
       "notes": "音声生成・編集モデル。",
-      "checked_on": "2026-09-06"
+      "checked_on": "2026-09-06",
+      "summary_ja": "効果音・音楽・音声を対象に、内容の理解、生成、指示による編集を統一的に行う。"
     },
     {
       "title": "Just-Dub-It: Video dubbing via Joint Audio-Visual Diffusion",
@@ -2532,10 +2597,12 @@
         }
       ],
       "evidence_urls": [
-        "https://github.com/justdubit/just-dub-it/blob/fa4d8f8911036ba79a62f97e7e62581e39441d56/README.md"
+        "https://github.com/justdubit/just-dub-it/blob/fa4d8f8911036ba79a62f97e7e62581e39441d56/README.md",
+        "https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-pipelines#10-lipdubpipeline"
       ],
-      "notes": "HFで条件への同意が必要。",
-      "checked_on": "2026-09-06"
+      "notes": "HFで条件への同意が必要。 旧実装はarchived。著者はLTX2.3対応のLTX-2公式実装への移行を案内。この行のモデル確認記録は既存の配布版。",
+      "checked_on": "2026-09-06",
+      "summary_ja": "元動画に別の発話音声を合わせ、口の動きと音声を整合させる吹き替え手法。"
     }
   ]
 }
