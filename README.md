@@ -1,14 +1,19 @@
-# SIGGRAPH 2026 — 論文・公式コード・公開モデル
+# アニメ・エンタメ向けAI研究 2026 — 公式コード・公開モデル
 
-SIGGRAPH 2026のTechnical Papersから、**公式実装と学習済みモデルの配布を確認した66件**をまとめたリンク集です。最終確認日: **2026-09-06**。
+**公式コードと本研究の学習済み重みが両方公開されている研究**を、日本語の内容要約付きでまとめています。2026年を優先し、2026年大会がない・採択が未確定の会議は2025年を参照します。最終確認日: **2026-09-06**。
 
-[JSON](papers.json) · [CSV](papers.csv) · [確認した未掲載候補](reviewed-not-included.json)
+| 一覧 | 掲載数 | 内容・データ |
+| --- | --- | --- |
+| [SIGGRAPH 2026](#分野別一覧) | 66件 | 3D・モーション・画像・映像・音声など。 [JSON](papers.json) · [CSV](papers.csv) · [未掲載候補](reviewed-not-included.json) |
+| [関連会議の2026年版／2025年補完](entertainment-research-2026.md) | 21件 | ICLR、CVPR、ICCV、ECCV、ICML、NeurIPS、SIGGRAPH Asia、SCA、ACM MM、ICASSP、Interspeech。 [JSON](entertainment-research-2026.json) · [CSV](entertainment-research-2026.csv) |
 
-**[アニメ・エンタメ向け：関連会議の2026年版／2025年補完・21件](entertainment-research-2026.md)** — ICLR、CVPR、ICCV、ECCV、ICML、NeurIPS、SIGGRAPH Asia、SCA、ACM MM、ICASSP、Interspeechを横断。追加分も公式コードと学習済み重みの両方が公開済みのものに限定しています。下のSIGGRAPH 66件には、リポジトリごとに「何ができるか」の日本語要約を付けました。
+**66件と21件は調査範囲が異なるため、会議間の研究数の比較には使えません。** SIGGRAPHはTechnical Papersを広く調べた一覧で、CAD・製造などの周辺分野も含みます。関連会議の21件はアニメ・エンタメへの関連性から選定した候補で、各会議の公開コード・重み付き研究を網羅した件数ではありません。
 
-## 掲載基準と確認範囲
+中割り・彩色、ベクターアニメ、キャラクター演技、リグ付け、効果音など、用途から探す場合は[制作工程別の一覧](entertainment-research-2026.md#制作工程から探す)を参照してください。各研究に「何ができるか」、公式コード、重みの配布先、公開範囲を記載しています。
 
-- Conference / Journalトラックと、SIGGRAPH 2026で発表されたTOG論文を対象とします。SIGGRAPH Asia、ポスター、講習、非公式再実装は対象外です。
+## SIGGRAPH 2026の掲載基準と確認範囲
+
+- 以下の66件はConference / Journalトラックと、SIGGRAPH 2026で発表されたTOG論文が対象です。SIGGRAPH Asiaは[関連会議の一覧](entertainment-research-2026.md)に掲載し、この66件には含めません。ポスター、講習、非公式再実装はこの一覧の対象外です。
 - 著者の公式実装が存在し、本研究で配布する学習済み重み・LoRA・ポリシー・同梱ネットワークにアクセスできることを確認しています。部分公開は備考で範囲を明示します。
 - 登録や利用条件への同意を要する配布も含みます。「公開」は無条件利用や商用利用の許可を意味しません。コードの条件とモデルの条件はそれぞれのリンク先を確認してください。
 - コードのファイル一覧、HFのモデルファイル一覧、GitHub Releases、外部配布ページ・ダウンロード応答を確認しました。重み全体のダウンロードや推論・再現実験は実施していません。
