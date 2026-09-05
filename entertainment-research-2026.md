@@ -4,6 +4,8 @@
 
 [検証根拠付きJSON](entertainment-research-2026.json) · [CSV](entertainment-research-2026.csv)
 
+追記・再調査の共通基準は[CONTRIBUTING.md](CONTRIBUTING.md)を参照してください。
+
 ## どの会議を見るとよいか
 
 アニメ・エンタメへの近さを重視するなら、まず **SIGGRAPH / SIGGRAPH Asia と CVPR / ICCV / ECCV**。生成モデルの新しい手法には **ICLR / NeurIPS / ICML**、キャラクター動作には **SCA / MIG**、音声・効果音には **ACM MM / ICASSP / Interspeech**を加えると探しやすくなります。これは本調査の用途別の見方で、会議間の品質順位ではありません。
