@@ -1,0 +1,126 @@
+# ゲーム・ノベル・スプライト
+
+[一覧へ](../README.md) · [機械可読データ](../catalog.json)
+
+一覧更新日: 2026-09-09。**56件 / 15分野**。各項目の確認日はJSONに記録。
+
+AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
+
+機能は公式説明の要約、将来性・用途評価は編集者の判断。起動・推論・品質比較は未実施です。モデル配布先22件でファイル一覧を確認しましたが、重み本体はダウンロードしていません。
+
+starsは確認時点の累計で増加率は未取得。最終pushは全ブランチの更新を含み、実装改善やリリースを意味しません。旧版・停止済み資料とAPI文書も区別して含めています。
+
+| リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
+| --- | --- | --- | --- |
+| [Godot](https://github.com/godotengine/godot) · [詳細](#godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 116,882 / 2026-09-08 |
+| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) · [詳細](#pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,272 / 2026-09-09 |
+| [PNGAL](https://github.com/1mm-module/PNGAL) · [詳細](#pngal) | 顔差分生成・PSD分解・目パチと口パクの補間を組み合わせ、立ち絵アニメ素材を制作する。 | AI連携 / 導入経路の追加確認が必要 | 340 / 2026-09-01 |
+| [RenPy](https://github.com/renpy/renpy) · [詳細](#renpy) | テキストとキャラクター素材を組み合わせたノベルゲームを制作する。 | 非AI制作 / 定番の制作基盤 | 6,805 / 2026-09-08 |
+| [sprite-maker](https://github.com/JohnKinyanjui/sprite-maker) · [詳細](#sprite-maker) | AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。 | AI連携 / 初期評価候補 | 347 / 2026-08-19 |
+
+<a id="godot"></a>
+
+## Godot
+
+2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。
+
+- **リポジトリ**: https://github.com/godotengine/godot
+- **分類**: engine / 非AI制作 / 定番の制作基盤
+- **入力**: 2D/3D素材、シーン、スクリプト
+- **出力**: 実行可能なゲーム
+- **環境**: 各OS向けエディタ・エクスポート環境。
+- **依存**: ゲーム用素材。AIモデルは必須でない
+- **制約・未確認**: AI素材生成機能そのものではない。配布先ごとのビルド要件は別途確認。
+- **編集者評価**: 生成素材を遊べる作品へ統合する定番基盤。
+- **メトリクス**: ★116,882、fork 26,648、作成 2014-01-04、最終push 2026-09-08T17:14:08Z、archived=False
+- **確認**: 2026-09-09 / コミット `9552dfb6859a1aaba1e570b8e0ef5c599b830f19`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/godotengine/godot/blob/9552dfb6859a1aaba1e570b8e0ef5c599b830f19/LICENSE.txt)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/godotengine/godot/blob/9552dfb6859a1aaba1e570b8e0ef5c599b830f19/README.md) / [GitHub API](https://api.github.com/repos/godotengine/godot) / [固定ツリー](https://github.com/godotengine/godot/tree/9552dfb6859a1aaba1e570b8e0ef5c599b830f19)
+
+<a id="pixelorama"></a>
+
+## Pixelorama
+
+ドット絵・タイル・アニメーションを編集する制作アプリ。
+
+- **リポジトリ**: https://github.com/Orama-Interactive/Pixelorama
+- **分類**: desktop_tool / 非AI制作 / 定番の制作基盤
+- **入力**: ピクセルアート、フレーム、タイル素材
+- **出力**: スプライト、タイル、アニメーション
+- **環境**: Windows・Linux・macOS・Web。
+- **依存**: 通常制作にAIモデル不要
+- **制約・未確認**: AI画像生成モデルを内蔵するという意味ではない。
+- **編集者評価**: 2Dゲーム素材の手直しと仕上げを担う定番候補。
+- **メトリクス**: ★10,272、fork 546、作成 2019-08-18、最終push 2026-09-09T16:41:48Z、archived=False
+- **確認**: 2026-09-09 / コミット `9263cf3636efc336aadbcc46c57dc614e57525b0`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Orama-Interactive/Pixelorama/blob/9263cf3636efc336aadbcc46c57dc614e57525b0/LICENSE)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Orama-Interactive/Pixelorama/blob/9263cf3636efc336aadbcc46c57dc614e57525b0/README.md) / [GitHub API](https://api.github.com/repos/Orama-Interactive/Pixelorama) / [固定ツリー](https://github.com/Orama-Interactive/Pixelorama/tree/9263cf3636efc336aadbcc46c57dc614e57525b0)
+
+<a id="pngal"></a>
+
+## PNGAL
+
+顔差分生成・PSD分解・目パチと口パクの補間を組み合わせ、立ち絵アニメ素材を制作する。
+
+- **リポジトリ**: https://github.com/1mm-module/PNGAL
+- **分類**: desktop_tool / AI連携 / 導入経路の追加確認が必要
+- **入力**: 透過PNG、Photoshop互換PSD
+- **出力**: PSD、WebM、MP4、GIF、スプライトシート、JSON
+- **環境**: Windows 10/11、NVIDIA CUDA。VRAM目安12GB以上、構成により24GB。
+- **依存**: Qwen、See-through、RIFE、ComfyUI
+- **制約・未確認**: 音声入力・顔追跡・マウス追従は非対応。正式配布ZIPのURLはREADMEに記載なし。
+- **編集者評価**: 2026年8月作成、9月更新。素材制作からゲーム用出力まで一連の工程を扱う。
+- **メトリクス**: ★340、fork 44、作成 2026-08-01、最終push 2026-09-01T15:53:21Z、archived=False
+- **確認**: 2026-09-09 / コミット `7a00caec16e8e9d6734f3ee5264118f44aec157c`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/1mm-module/PNGAL/blob/7a00caec16e8e9d6734f3ee5264118f44aec157c/LICENSE)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/1mm-module/PNGAL/blob/7a00caec16e8e9d6734f3ee5264118f44aec157c/README.md) / [GitHub API](https://api.github.com/repos/1mm-module/PNGAL) / [固定ツリー](https://github.com/1mm-module/PNGAL/tree/7a00caec16e8e9d6734f3ee5264118f44aec157c)
+
+関連: documented_upstream → see-through（公式説明、接続実行は未検証）
+
+<a id="renpy"></a>
+
+## RenPy
+
+テキストとキャラクター素材を組み合わせたノベルゲームを制作する。
+
+- **リポジトリ**: https://github.com/renpy/renpy
+- **分類**: engine / 非AI制作 / 定番の制作基盤
+- **入力**: シナリオ、立ち絵、背景、音声
+- **出力**: ビジュアルノベル・アドベンチャーゲーム
+- **環境**: Ren’Py SDKと対応OS。
+- **依存**: 台本、画像、音声。AIモデル不要
+- **制約・未確認**: LLMシナリオ生成器ではない。生成した素材をゲームへ組み込むためのエンジン。
+- **編集者評価**: 漫画・キャラ音声・背景など複数の生成素材を作品にまとめやすい。
+- **メトリクス**: ★6,805、fork 931、作成 2012-06-28、最終push 2026-09-08T03:48:12Z、archived=False
+- **確認**: 2026-09-09 / コミット `f6a68a3a77014eca58c799d6663ccae733e5e10f`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/renpy/renpy/blob/f6a68a3a77014eca58c799d6663ccae733e5e10f/README.rst)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/renpy/renpy/blob/f6a68a3a77014eca58c799d6663ccae733e5e10f/README.rst) / [GitHub API](https://api.github.com/repos/renpy/renpy) / [固定ツリー](https://github.com/renpy/renpy/tree/f6a68a3a77014eca58c799d6663ccae733e5e10f)
+
+<a id="sprite-maker"></a>
+
+## sprite-maker
+
+AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。
+
+- **リポジトリ**: https://github.com/JohnKinyanjui/sprite-maker
+- **分類**: desktop_tool / AI連携 / 初期評価候補
+- **入力**: スプライト画像、制作指示、関節設定
+- **出力**: アニメーションフレーム、PNGシート、メタデータ
+- **環境**: エージェントCLIとの連携環境が必要。詳細は公式README参照。
+- **依存**: 外部エージェントCLI、生成経路に応じた画像モデル
+- **制約・未確認**: 初期段階。全OSでの導入成功や生成品質は未検証。
+- **編集者評価**: 2026年8月作成。エージェント操作とゲーム用素材出力を組み合わせる新規候補。
+- **メトリクス**: ★347、fork 46、作成 2026-08-09、最終push 2026-08-19T10:28:09Z、archived=False
+- **確認**: 2026-09-09 / コミット `336c7114f0fce7336ec17f6e9beb93980ed03b1d`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/JohnKinyanjui/sprite-maker/blob/336c7114f0fce7336ec17f6e9beb93980ed03b1d/LICENSE)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/JohnKinyanjui/sprite-maker/blob/336c7114f0fce7336ec17f6e9beb93980ed03b1d/README.md) / [GitHub API](https://api.github.com/repos/JohnKinyanjui/sprite-maker) / [固定ツリー](https://github.com/JohnKinyanjui/sprite-maker/tree/336c7114f0fce7336ec17f6e9beb93980ed03b1d)

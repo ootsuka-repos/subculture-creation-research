@@ -1,0 +1,4521 @@
+{
+  "schema_version": "2.0",
+  "updated_on": "2026-09-09",
+  "scope_ja": "AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。",
+  "reference_catalog": "https://github.com/ootsuka-repos/entertainment-ai-2026-code-models",
+  "items": [
+    {
+      "id": "ai-comic-factory",
+      "name": "ai-comic-factory",
+      "repository": "jbilcke-hf/ai-comic-factory",
+      "url": "https://github.com/jbilcke-hf/ai-comic-factory",
+      "category": "manga",
+      "kind": "web_app",
+      "ai_role": "integration",
+      "maturity": "historical",
+      "inputs_ja": "ストーリー指示",
+      "outputs_ja": "コミックページ",
+      "summary_ja": "LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装。",
+      "assessment_ja": "ストーリーからコマ生成への構成を学ぶ資料として残す。",
+      "status_ja": "旧版・履歴資料",
+      "requirements_ja": "Webアプリ環境と推論バックエンド。",
+      "limitations_ja": "GitHubでarchived=true。現在の活発な開発候補には含めない。",
+      "dependencies_ja": "LLM、SDXL等の設定された画像バックエンド",
+      "checked_on": "2026-09-09",
+      "code_revision": "c5dc3c7dafeb593efa3b7c95431ee982965bb524",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1345,
+        "forks": 312,
+        "created_at": "2023-08-25T14:47:46Z",
+        "pushed_at": "2025-10-30T19:17:30Z",
+        "archived": true,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/jbilcke-hf/ai-comic-factory/blob/c5dc3c7dafeb593efa3b7c95431ee982965bb524/README.md"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/jbilcke-hf/ai-comic-factory/blob/c5dc3c7dafeb593efa3b7c95431ee982965bb524/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/jbilcke-hf/ai-comic-factory",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/jbilcke-hf/ai-comic-factory/tree/c5dc3c7dafeb593efa3b7c95431ee982965bb524",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "manga"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "next.config.js",
+        "postcss.config.js",
+        "src/app/engine/caption.ts",
+        "src/app/engine/censorship.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "krita",
+      "name": "krita",
+      "repository": "KDE/krita",
+      "url": "https://github.com/KDE/krita",
+      "category": "manga",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "ラフ、筆入力、画像素材",
+      "outputs_ja": "イラスト・漫画用デジタル原稿",
+      "summary_ja": "漫画・イラスト制作に使うデジタルペイントアプリ。",
+      "assessment_ja": "生成結果の手直しや原稿制作を担う定番基盤。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "Windows・macOS・Linux向け配布。",
+      "limitations_ja": "GitHubは公式ミラーで、開発元はKDE。標準アプリをAI生成モデルとして扱わない。",
+      "dependencies_ja": "通常の描画にはAIモデル不要",
+      "checked_on": "2026-09-09",
+      "code_revision": "75db0d95e142c9251dc27483180148f77d4de014",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 10341,
+        "forks": 849,
+        "created_at": "2015-10-09T19:24:19Z",
+        "pushed_at": "2026-09-09T15:31:07Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/KDE/krita/blob/75db0d95e142c9251dc27483180148f77d4de014/COPYING"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/KDE/krita/blob/75db0d95e142c9251dc27483180148f77d4de014/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/KDE/krita",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "manga"
+      ],
+      "repository_role": "official_mirror",
+      "evidence_files": [
+        "benchmarks/KisAnimationRenderingBenchmark.cpp",
+        "benchmarks/KisFourPointInterpolatorBenchmark.cpp",
+        "benchmarks/KisLiquifyTransformWorkerBenchmark.cpp",
+        "benchmarks/kis_bcontrast_benchmark.cpp"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "manga-editor-desu",
+      "name": "manga-editor-desu",
+      "repository": "new-sankaku/manga-editor-desu",
+      "url": "https://github.com/new-sankaku/manga-editor-desu",
+      "category": "manga",
+      "kind": "browser_tool",
+      "ai_role": "optional",
+      "maturity": "active_candidate",
+      "inputs_ja": "画像、セリフ、コマ割り、生成指示",
+      "outputs_ja": "漫画ページ・複数ページの編集プロジェクト",
+      "summary_ja": "ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。",
+      "assessment_ja": "漫画固有の編集操作と画像生成をつなぐ有力候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "ブラウザ。AI生成には対応するローカルバックエンド等。",
+      "limitations_ja": "文字・吹き出しやページ切り替え時の編集履歴などは実作業で確認が必要。",
+      "dependencies_ja": "画像素材、任意の画像生成バックエンド",
+      "checked_on": "2026-09-09",
+      "code_revision": "04e0cf3de1f3677682f6d1831f2713db70e441ba",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 384,
+        "forks": 54,
+        "created_at": "2023-08-14T22:23:46Z",
+        "pushed_at": "2026-08-30T17:00:19Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/new-sankaku/manga-editor-desu",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/new-sankaku/manga-editor-desu/tree/04e0cf3de1f3677682f6d1831f2713db70e441ba",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "manga"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "01_build/SvgBuilder.py",
+        "99_doc/LoadingProgress.js",
+        "99_doc/NotSaveHistory.js",
+        "99_server.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "openkoma",
+      "name": "OpenKoma",
+      "repository": "Reuben-Sun/OpenKoma",
+      "url": "https://github.com/Reuben-Sun/OpenKoma",
+      "category": "manga",
+      "kind": "browser_tool",
+      "ai_role": "none",
+      "maturity": "early_candidate",
+      "inputs_ja": "キャラ画像、背景、セリフ",
+      "outputs_ja": "漫画ページPNG、PDF、プロジェクトJSON",
+      "summary_ja": "手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。",
+      "assessment_ja": "生成画像を編集可能な漫画ページへまとめる用途が具体的。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "ブラウザ、ソース実行はNode.js。",
+      "limitations_ja": "小規模な新規候補。AI画像モデルそのものは含まない。",
+      "dependencies_ja": "入力する画像・テキスト素材",
+      "checked_on": "2026-09-09",
+      "code_revision": "aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 12,
+        "forks": 2,
+        "created_at": "2026-04-05T08:12:53Z",
+        "pushed_at": "2026-05-08T08:27:39Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Reuben-Sun/OpenKoma",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Reuben-Sun/OpenKoma/tree/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "manga"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "src/lib/api.ts",
+        "src/lib/colors.ts",
+        "src/lib/cropGeometry.ts",
+        "src/lib/imageFormat.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "bluefish",
+      "name": "BlueFish",
+      "repository": "bluefish2026/BlueFish",
+      "url": "https://github.com/bluefish2026/BlueFish",
+      "category": "story",
+      "kind": "web_app",
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "inputs_ja": "脚本、参照キャラ・背景",
+      "outputs_ja": "絵コンテ、生成動画、編集用素材",
+      "summary_ja": "複数のAIプロバイダを接続し、脚本から絵コンテ・動画制作まで管理する。",
+      "assessment_ja": "シナリオ・キャラ素材・生成履歴を同じ場所で扱う構成が参考になる。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "React/FastAPI、生成用API。mockモードあり。",
+      "limitations_ja": "小規模な初期候補。mock動作と実際の生成完了を区別する。ローカルUIはローカル推論を意味しない。",
+      "dependencies_ja": "外部LLM、画像・動画・TTS API",
+      "checked_on": "2026-09-09",
+      "code_revision": "8b409c1332e46bc1211d2ffc6d45fe1f01492eca",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 8,
+        "forks": 9,
+        "created_at": "2026-04-17T20:38:01Z",
+        "pushed_at": "2026-04-22T04:11:49Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/bluefish2026/BlueFish/blob/8b409c1332e46bc1211d2ffc6d45fe1f01492eca/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/bluefish2026/BlueFish/blob/8b409c1332e46bc1211d2ffc6d45fe1f01492eca/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/bluefish2026/BlueFish",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/bluefish2026/BlueFish/tree/8b409c1332e46bc1211d2ffc6d45fe1f01492eca",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "story"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "bluefish-client/eslint.config.js",
+        "bluefish-client/postcss.config.js",
+        "bluefish-client/src/api/client.js",
+        "bluefish-client/src/components/gallery/constants.js"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "sillytavern",
+      "name": "SillyTavern",
+      "repository": "SillyTavern/SillyTavern",
+      "url": "https://github.com/SillyTavern/SillyTavern",
+      "category": "story",
+      "kind": "web_app",
+      "ai_role": "integration",
+      "maturity": "active_candidate",
+      "inputs_ja": "キャラクター設定、世界設定、会話",
+      "outputs_ja": "キャラ会話、設定・ログ、連携した画像や音声",
+      "summary_ja": "キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。",
+      "assessment_ja": "キャラクター設計やシナリオの対話試作に使う候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Node.js環境と外部またはローカルのLLM。",
+      "limitations_ja": "完成シナリオの整合性を自動保証するものではない。独自LLM重みは提供しない。",
+      "dependencies_ja": "LLM、任意の画像生成・TTSバックエンド",
+      "checked_on": "2026-09-09",
+      "code_revision": "8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 33188,
+        "forks": 6250,
+        "created_at": "2023-02-09T10:19:24Z",
+        "pushed_at": "2026-09-07T21:09:17Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "AGPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/SillyTavern/SillyTavern/blob/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/SillyTavern/SillyTavern/blob/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8/.github/readme.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/SillyTavern/SillyTavern",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/SillyTavern/SillyTavern/tree/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "story"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "docker/build-lib.js",
+        "index.d.ts",
+        "plugins.js",
+        "public/global.d.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "godot",
+      "name": "Godot",
+      "repository": "godotengine/godot",
+      "url": "https://github.com/godotengine/godot",
+      "category": "game",
+      "kind": "engine",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "2D/3D素材、シーン、スクリプト",
+      "outputs_ja": "実行可能なゲーム",
+      "summary_ja": "2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。",
+      "assessment_ja": "生成素材を遊べる作品へ統合する定番基盤。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "各OS向けエディタ・エクスポート環境。",
+      "limitations_ja": "AI素材生成機能そのものではない。配布先ごとのビルド要件は別途確認。",
+      "dependencies_ja": "ゲーム用素材。AIモデルは必須でない",
+      "checked_on": "2026-09-09",
+      "code_revision": "9552dfb6859a1aaba1e570b8e0ef5c599b830f19",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 116882,
+        "forks": 26648,
+        "created_at": "2014-01-04T16:05:36Z",
+        "pushed_at": "2026-09-08T17:14:08Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/godotengine/godot/blob/9552dfb6859a1aaba1e570b8e0ef5c599b830f19/LICENSE.txt"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/godotengine/godot/blob/9552dfb6859a1aaba1e570b8e0ef5c599b830f19/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/godotengine/godot",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/godotengine/godot/tree/9552dfb6859a1aaba1e570b8e0ef5c599b830f19",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "game"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "core/config/engine.cpp",
+        "core/config/project_settings.cpp",
+        "core/core_bind.cpp",
+        "core/core_builders.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "pixelorama",
+      "name": "Pixelorama",
+      "repository": "Orama-Interactive/Pixelorama",
+      "url": "https://github.com/Orama-Interactive/Pixelorama",
+      "category": "game",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "ピクセルアート、フレーム、タイル素材",
+      "outputs_ja": "スプライト、タイル、アニメーション",
+      "summary_ja": "ドット絵・タイル・アニメーションを編集する制作アプリ。",
+      "assessment_ja": "2Dゲーム素材の手直しと仕上げを担う定番候補。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "Windows・Linux・macOS・Web。",
+      "limitations_ja": "AI画像生成モデルを内蔵するという意味ではない。",
+      "dependencies_ja": "通常制作にAIモデル不要",
+      "checked_on": "2026-09-09",
+      "code_revision": "9263cf3636efc336aadbcc46c57dc614e57525b0",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 10272,
+        "forks": 546,
+        "created_at": "2019-08-18T09:28:54Z",
+        "pushed_at": "2026-09-09T16:41:48Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Orama-Interactive/Pixelorama/blob/9263cf3636efc336aadbcc46c57dc614e57525b0/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Orama-Interactive/Pixelorama/blob/9263cf3636efc336aadbcc46c57dc614e57525b0/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Orama-Interactive/Pixelorama",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Orama-Interactive/Pixelorama/tree/9263cf3636efc336aadbcc46c57dc614e57525b0",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "game"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "addons/SmartSlicer/Classes/RegionUnpacker.gd",
+        "addons/aimg_io/apng_exporter.gd",
+        "addons/aimg_io/apng_import_plugin.gd",
+        "addons/aimg_io/apng_importer.gd"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "pngal",
+      "name": "PNGAL",
+      "repository": "1mm-module/PNGAL",
+      "url": "https://github.com/1mm-module/PNGAL",
+      "category": "game",
+      "kind": "desktop_tool",
+      "inputs_ja": "透過PNG、Photoshop互換PSD",
+      "outputs_ja": "PSD、WebM、MP4、GIF、スプライトシート、JSON",
+      "summary_ja": "顔差分生成・PSD分解・目パチと口パクの補間を組み合わせ、立ち絵アニメ素材を制作する。",
+      "assessment_ja": "2026年8月作成、9月更新。素材制作からゲーム用出力まで一連の工程を扱う。",
+      "status_ja": "導入経路の追加確認が必要",
+      "requirements_ja": "Windows 10/11、NVIDIA CUDA。VRAM目安12GB以上、構成により24GB。",
+      "limitations_ja": "音声入力・顔追跡・マウス追従は非対応。正式配布ZIPのURLはREADMEに記載なし。",
+      "dependencies_ja": "Qwen、See-through、RIFE、ComfyUI",
+      "checked_on": "2026-09-09",
+      "code_revision": "7a00caec16e8e9d6734f3ee5264118f44aec157c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 340,
+        "forks": 44,
+        "created_at": "2026-08-01T13:03:29Z",
+        "pushed_at": "2026-09-01T15:53:21Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/1mm-module/PNGAL/blob/7a00caec16e8e9d6734f3ee5264118f44aec157c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/1mm-module/PNGAL/blob/7a00caec16e8e9d6734f3ee5264118f44aec157c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/1mm-module/PNGAL",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/1mm-module/PNGAL/tree/7a00caec16e8e9d6734f3ee5264118f44aec157c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "tags": [
+        "game"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "layer-editor/app.js",
+        "layer-editor/canvas-editor.js",
+        "layer-editor/document-model.js",
+        "layer-editor/history.js"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "see-through",
+          "type": "documented_upstream",
+          "evidence_url": "https://github.com/1mm-module/PNGAL/blob/7a00caec16e8e9d6734f3ee5264118f44aec157c/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "renpy",
+      "name": "RenPy",
+      "repository": "renpy/renpy",
+      "url": "https://github.com/renpy/renpy",
+      "category": "game",
+      "kind": "engine",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "シナリオ、立ち絵、背景、音声",
+      "outputs_ja": "ビジュアルノベル・アドベンチャーゲーム",
+      "summary_ja": "テキストとキャラクター素材を組み合わせたノベルゲームを制作する。",
+      "assessment_ja": "漫画・キャラ音声・背景など複数の生成素材を作品にまとめやすい。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "Ren’Py SDKと対応OS。",
+      "limitations_ja": "LLMシナリオ生成器ではない。生成した素材をゲームへ組み込むためのエンジン。",
+      "dependencies_ja": "台本、画像、音声。AIモデル不要",
+      "checked_on": "2026-09-09",
+      "code_revision": "f6a68a3a77014eca58c799d6663ccae733e5e10f",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 6805,
+        "forks": 931,
+        "created_at": "2012-06-28T01:21:22Z",
+        "pushed_at": "2026-09-08T03:48:12Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": null,
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/renpy/renpy/blob/f6a68a3a77014eca58c799d6663ccae733e5e10f/README.rst"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/renpy/renpy/blob/f6a68a3a77014eca58c799d6663ccae733e5e10f/README.rst",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/renpy/renpy",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/renpy/renpy/tree/f6a68a3a77014eca58c799d6663ccae733e5e10f",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "game"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "add.py",
+        "distribute.py",
+        "gui/game/gui.rpy",
+        "gui/game/guisupport.rpy"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "sprite-maker",
+      "name": "sprite-maker",
+      "repository": "JohnKinyanjui/sprite-maker",
+      "url": "https://github.com/JohnKinyanjui/sprite-maker",
+      "category": "game",
+      "kind": "desktop_tool",
+      "inputs_ja": "スプライト画像、制作指示、関節設定",
+      "outputs_ja": "アニメーションフレーム、PNGシート、メタデータ",
+      "summary_ja": "AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。",
+      "assessment_ja": "2026年8月作成。エージェント操作とゲーム用素材出力を組み合わせる新規候補。",
+      "status_ja": "初期評価候補",
+      "requirements_ja": "エージェントCLIとの連携環境が必要。詳細は公式README参照。",
+      "limitations_ja": "初期段階。全OSでの導入成功や生成品質は未検証。",
+      "dependencies_ja": "外部エージェントCLI、生成経路に応じた画像モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "336c7114f0fce7336ec17f6e9beb93980ed03b1d",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 347,
+        "forks": 46,
+        "created_at": "2026-08-09T20:25:50Z",
+        "pushed_at": "2026-08-19T10:28:09Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/JohnKinyanjui/sprite-maker/blob/336c7114f0fce7336ec17f6e9beb93980ed03b1d/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/JohnKinyanjui/sprite-maker/blob/336c7114f0fce7336ec17f6e9beb93980ed03b1d/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/JohnKinyanjui/sprite-maker",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/JohnKinyanjui/sprite-maker/tree/336c7114f0fce7336ec17f6e9beb93980ed03b1d",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "tags": [
+        "game"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "src-tauri/build.rs",
+        "src-tauri/resources/sprite_polish.py",
+        "src-tauri/resources/sprite_rig.py",
+        "src-tauri/resources/sprite_rig_mcp.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "eccv2022-rife",
+      "name": "ECCV2022-RIFE",
+      "repository": "hzwer/ECCV2022-RIFE",
+      "url": "https://github.com/hzwer/ECCV2022-RIFE",
+      "category": "animation",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "前後の画像・動画フレーム",
+      "outputs_ja": "補間フレーム・高フレームレート動画",
+      "summary_ja": "フレーム間の中間画像を推定する動画補間モデル。",
+      "assessment_ja": "少枚数アニメや生成動画の補間を検討する基盤。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "Python/GPU環境または対応する外部実装。",
+      "limitations_ja": "作者がアニメ向けモデルを案内。原画の演技設計やタイミングを自動で正しく決めるものではない。",
+      "dependencies_ja": "RIFEモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "5d8adbdd40e12c2c8f91930eff838aebe561c086",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 5574,
+        "forks": 566,
+        "created_at": "2020-11-12T05:46:23Z",
+        "pushed_at": "2025-09-10T06:32:03Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/hzwer/ECCV2022-RIFE/blob/5d8adbdd40e12c2c8f91930eff838aebe561c086/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/hzwer/ECCV2022-RIFE/blob/5d8adbdd40e12c2c8f91930eff838aebe561c086/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/hzwer/ECCV2022-RIFE",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/hzwer/ECCV2022-RIFE/tree/5d8adbdd40e12c2c8f91930eff838aebe561c086",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "animation"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "benchmark/ATD12K.py",
+        "benchmark/HD.py",
+        "benchmark/HD_multi_4X.py",
+        "benchmark/MiddleBury_Other.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "latentsync",
+      "name": "LatentSync",
+      "repository": "bytedance/LatentSync",
+      "url": "https://github.com/bytedance/LatentSync",
+      "category": "animation",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "顔が映った動画、音声",
+      "outputs_ja": "リップシンク済み動画",
+      "summary_ja": "音声条件で口の動きを同期させる動画処理モデル。",
+      "assessment_ja": "アニメやキャラクター動画のセリフ同期を試す候補。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "GPU推論環境とモデル。",
+      "limitations_ja": "READMEにアニメ例はあるが、任意の二次元顔への適合性は未検証。更新は2025年中心。",
+      "dependencies_ja": "LatentSyncモデル、Whisper等",
+      "checked_on": "2026-09-09",
+      "code_revision": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 6059,
+        "forks": 976,
+        "created_at": "2024-12-11T10:32:54Z",
+        "pushed_at": "2025-06-20T07:36:58Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/bytedance/LatentSync/blob/a229c3948406bc2cf6eaf4873e662e70c6a04746/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/bytedance/LatentSync/blob/a229c3948406bc2cf6eaf4873e662e70c6a04746/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/bytedance/LatentSync",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/bytedance/LatentSync/tree/a229c3948406bc2cf6eaf4873e662e70c6a04746",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "animation"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "eval/detectors/__init__.py",
+        "eval/detectors/s3fd/__init__.py",
+        "eval/detectors/s3fd/box_utils.py",
+        "eval/detectors/s3fd/nets.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/ByteDance/LatentSync-1.6",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/ByteDance/LatentSync-1.6",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "c42c7e6c8e9c213626389fa7d9a3c444b8536353",
+          "gated": false,
+          "license_metadata": "openrail++",
+          "evidence_files": [
+            "auxiliary/i3d_torchscript.pt",
+            "auxiliary/sfd_face.pth",
+            "auxiliary/vgg16-397923af.pth",
+            "auxiliary/vit_g_hybrid_pt_1200e_ssv2_ft.pth"
+          ],
+          "matching_weight_file_count": 7
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "opentoonz",
+      "name": "opentoonz",
+      "repository": "opentoonz/opentoonz",
+      "url": "https://github.com/opentoonz/opentoonz",
+      "category": "animation",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "線画、画像素材、タイムシート",
+      "outputs_ja": "2Dアニメーション作品",
+      "summary_ja": "作画、彩色、撮影を扱う2Dアニメ制作アプリ。",
+      "assessment_ja": "AI生成素材を手で仕上げる制作基盤として有用。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "Windows・macOSなど。配布とビルドの対応状況は公式参照。",
+      "limitations_ja": "生成AIモデルそのものではない。既存の制作工程への適合性を確認する。",
+      "dependencies_ja": "通常制作にAIモデル不要",
+      "checked_on": "2026-09-09",
+      "code_revision": "1ef22259b9cf64c9d8710daebc131b401932e81b",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 7691,
+        "forks": 872,
+        "created_at": "2016-03-18T17:55:48Z",
+        "pushed_at": "2026-09-09T07:31:50Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/opentoonz/opentoonz/blob/1ef22259b9cf64c9d8710daebc131b401932e81b/LICENSE.txt"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/opentoonz/opentoonz/blob/1ef22259b9cf64c9d8710daebc131b401932e81b/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/opentoonz/opentoonz",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/opentoonz/opentoonz/tree/1ef22259b9cf64c9d8710daebc131b401932e81b",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "animation"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "plugins/blur/blur.cpp",
+        "plugins/geom/geom.cpp",
+        "plugins/multiplugin/multi.cpp",
+        "thirdparty/libjpeg-turbo/libjpeg-turbo-2.0.6/doc/html/dynsections.js"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "tooncomposer",
+      "name": "ToonComposer",
+      "repository": "TencentARC/ToonComposer",
+      "url": "https://github.com/TencentARC/ToonComposer",
+      "category": "animation",
+      "kind": "model",
+      "inputs_ja": "キーフレーム・スケッチ等の制作条件",
+      "outputs_ja": "彩色されたアニメーション動画",
+      "summary_ja": "キーフレーム後の中割りと彩色を生成AIでまとめて処理する。",
+      "assessment_ja": "原画以降の制作工程への関連が高い。READMEはICLR 2026と記載。",
+      "status_ja": "研究・技術評価候補",
+      "requirements_ja": "Python環境、モデル取得、Gradio UI。",
+      "limitations_ja": "最終pushは2025年8月。最近の開発活発度は低く、研究上の有望性と区別する。",
+      "dependencies_ja": "ToonComposer重みと基盤モデル。配布条件は公式参照",
+      "checked_on": "2026-09-09",
+      "code_revision": "53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 585,
+        "forks": 59,
+        "created_at": "2025-08-12T13:14:20Z",
+        "pushed_at": "2025-08-20T06:21:56Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/TencentARC/ToonComposer/blob/53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/TencentARC/ToonComposer/blob/53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/TencentARC/ToonComposer",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/TencentARC/ToonComposer/tree/53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "tags": [
+        "animation"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "app.py",
+        "model/__init__.py",
+        "model/dera.py",
+        "model/dit.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/TencentARC/ToonComposer",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/TencentARC/ToonComposer",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "a166c2c0f0755af6b1876586739e818e92e5c44f",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "480p/tooncomposer.ckpt",
+            "608p/tooncomposer.ckpt"
+          ],
+          "matching_weight_file_count": 2
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "anime2.5drig",
+      "name": "Anime2.5DRig",
+      "repository": "852wa/Anime2.5DRig",
+      "url": "https://github.com/852wa/Anime2.5DRig",
+      "category": "rig2d",
+      "kind": "browser_tool",
+      "inputs_ja": "パーツ分けPSD",
+      "outputs_ja": "リアルタイム2.5Dアバター、設定JSON、透過PNG、OBS表示",
+      "summary_ja": "PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。",
+      "assessment_ja": "2026年7月作成、9月更新。See-through出力と接続しやすいブラウザ実装。",
+      "status_ja": "導入候補",
+      "requirements_ja": "通常利用はブラウザ。OBS中継はPython 3。日本語README・デモあり。",
+      "limitations_ja": "入力PSDのレイヤー構造に依存。動作品質は未検証。",
+      "dependencies_ja": "MediaPipe FaceMesh（顔追跡時）、分解済みPSD",
+      "checked_on": "2026-09-09",
+      "code_revision": "7450341934a8ff77bf05b90d9f708786e3eb3996",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 204,
+        "forks": 36,
+        "created_at": "2026-07-04T04:58:37Z",
+        "pushed_at": "2026-09-07T06:23:57Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/852wa/Anime2.5DRig",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/852wa/Anime2.5DRig/tree/7450341934a8ff77bf05b90d9f708786e3eb3996",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "optional",
+      "maturity": "early_candidate",
+      "tags": [
+        "rig2d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "lib/ag-psd.min.js",
+        "lib/app.js",
+        "lib/genericparts.js",
+        "lib/psd-worker.js"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "see-through",
+          "type": "documented_input_compatibility",
+          "evidence_url": "https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "puppetloom",
+      "name": "PuppetLoom",
+      "repository": "CheshireMew/PuppetLoom",
+      "url": "https://github.com/CheshireMew/PuppetLoom",
+      "category": "rig2d",
+      "kind": "desktop_tool",
+      "inputs_ja": "レイヤー付きPSD",
+      "outputs_ja": "リグ付きプロジェクト、Web/OBS用出力、WebM",
+      "summary_ja": "PSDから初期リグを作成し、外部エージェントとCLIで検証・調整しながら動く2Dキャラクターを制作する。",
+      "assessment_ja": "エージェントによる制作と再現可能な修正履歴を組み合わせる設計が有望。",
+      "status_ja": "要再確認",
+      "requirements_ja": "Windows x64。ソース実行はNode.js 24以上。単画像の分解には外部See-throughを利用。",
+      "limitations_ja": "専門的Live2D制作と同等ではない。moc3はCubism Editorでの出力が必要。READMEのApache-2.0表記とGitHub APIのAGPL-3.0判定が不一致のため利用条件は要再確認。",
+      "dependencies_ja": "See-through（単画像分解時）",
+      "checked_on": "2026-09-09",
+      "code_revision": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 215,
+        "forks": 26,
+        "created_at": "2026-08-14T15:48:05Z",
+        "pushed_at": "2026-09-09T15:56:36Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "AGPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/CheshireMew/PuppetLoom",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/CheshireMew/PuppetLoom/tree/f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "tags": [
+        "rig2d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "apps/cli/src/cli-support.ts",
+        "apps/cli/src/commands/assets.ts",
+        "apps/cli/src/commands/authoring.ts",
+        "apps/cli/src/commands/cubism.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "see-through",
+          "type": "documented_upstream",
+          "evidence_url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "stretchystudio",
+      "name": "stretchystudio",
+      "repository": "MangoLion/stretchystudio",
+      "url": "https://github.com/MangoLion/stretchystudio",
+      "category": "rig2d",
+      "kind": "browser_tool",
+      "inputs_ja": "See-through形式の分割PSD",
+      "outputs_ja": "メッシュ変形アニメーション",
+      "summary_ja": "PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。",
+      "assessment_ja": "See-throughから演出・編集につなぐ公開ブラウザツール。",
+      "status_ja": "導入候補",
+      "requirements_ja": "ブラウザエディタあり。DWPoseまたはヒューリスティックな自動リグ。",
+      "limitations_ja": "最終pushは2026年4月。最近の活発な更新とは扱わない。",
+      "dependencies_ja": "See-through形式PSD、DWPose（選択時）",
+      "checked_on": "2026-09-09",
+      "code_revision": "24a83a27ba43e43e9d2e3de5e33994594e6199c2",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 472,
+        "forks": 66,
+        "created_at": "2026-04-12T15:51:53Z",
+        "pushed_at": "2026-04-28T03:53:09Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/MangoLion/stretchystudio",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/MangoLion/stretchystudio/tree/24a83a27ba43e43e9d2e3de5e33994594e6199c2",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "tags": [
+        "rig2d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "docs/live2d-export/scripts/caff_packer.py",
+        "docs/live2d-export/scripts/cmo3_decrypt.py",
+        "docs/live2d-export/scripts/cmo3_generate.py",
+        "eslint.config.js"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "see-through",
+          "type": "documented_input_compatibility",
+          "evidence_url": "https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "comfyui-see-through",
+      "name": "ComfyUI-See-through",
+      "repository": "jtydhr88/ComfyUI-See-through",
+      "url": "https://github.com/jtydhr88/ComfyUI-See-through",
+      "category": "layer",
+      "kind": "integration",
+      "inputs_ja": "アニメイラスト",
+      "outputs_ja": "分解レイヤー、PSD",
+      "summary_ja": "See-throughによる分解をComfyUIのノード工程へ接続する。",
+      "assessment_ja": "See-through公式が紹介する周辺実装で、既存ComfyUI工程へ組み込みやすい。",
+      "status_ja": "ComfyUI利用者向け",
+      "requirements_ja": "ComfyUIとSee-through用の依存環境・モデルが必要。",
+      "limitations_ja": "独立した分解モデルではない。GitHub APIはルートのライセンスを判定できていない。",
+      "dependencies_ja": "ComfyUI、See-through",
+      "checked_on": "2026-09-09",
+      "code_revision": "98d754bf04f668647919ab750eccb0e0640faa81",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 766,
+        "forks": 68,
+        "created_at": "2026-03-31T14:22:51Z",
+        "pushed_at": "2026-08-20T03:16:42Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": null,
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/jtydhr88/ComfyUI-See-through",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/jtydhr88/ComfyUI-See-through/tree/98d754bf04f668647919ab750eccb0e0640faa81",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "integration",
+      "maturity": "integration_candidate",
+      "tags": [
+        "layer"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "__init__.py",
+        "nodes.py",
+        "see-through/annotators/__init__.py",
+        "see-through/annotators/anime_face_detector/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "see-through",
+          "type": "integration_of",
+          "evidence_url": "https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-layered",
+      "name": "Qwen-Image-Layered",
+      "repository": "QwenLM/Qwen-Image-Layered",
+      "url": "https://github.com/QwenLM/Qwen-Image-Layered",
+      "category": "layer",
+      "kind": "model",
+      "inputs_ja": "汎用画像",
+      "outputs_ja": "複数RGBAレイヤー、PSD、ZIP、PPTX",
+      "summary_ja": "画像を複数の編集可能なレイヤーに分解し、個別の色・位置・サイズ変更につなげる。",
+      "assessment_ja": "イラスト・背景・小物を編集可能な素材に変える基盤として有用。",
+      "status_ja": "基盤技術候補",
+      "requirements_ja": "モデル推論環境または公式デモ。",
+      "limitations_ja": "アニメ専用の可動パーツ分解ではない。最終pushは2025年12月。",
+      "dependencies_ja": "Qwen-Image-Layered、編集にはQwen-Image-Edit",
+      "checked_on": "2026-09-09",
+      "code_revision": "54c4fe47e76d745775e03fc66ee38457280ed9ea",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 2093,
+        "forks": 170,
+        "created_at": "2025-12-18T08:54:50Z",
+        "pushed_at": "2025-12-31T11:40:35Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/QwenLM/Qwen-Image-Layered/blob/54c4fe47e76d745775e03fc66ee38457280ed9ea/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/QwenLM/Qwen-Image-Layered/blob/54c4fe47e76d745775e03fc66ee38457280ed9ea/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/QwenLM/Qwen-Image-Layered",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/QwenLM/Qwen-Image-Layered/tree/54c4fe47e76d745775e03fc66ee38457280ed9ea",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "tags": [
+        "layer"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "src/app.py",
+        "src/tool/combine_layers.py",
+        "src/tool/edit_rgba_image.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Qwen/Qwen-Image-Layered",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Qwen/Qwen-Image-Layered",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "8f0ca708dfff6ba1dd5f2d85d78f8c108a040bcf",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "text_encoder/model-00001-of-00004.safetensors",
+            "text_encoder/model-00002-of-00004.safetensors",
+            "text_encoder/model-00003-of-00004.safetensors",
+            "text_encoder/model-00004-of-00004.safetensors"
+          ],
+          "matching_weight_file_count": 10
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "see-through",
+      "name": "see-through",
+      "repository": "shitagaki-lab/see-through",
+      "url": "https://github.com/shitagaki-lab/see-through",
+      "category": "layer",
+      "kind": "model",
+      "inputs_ja": "アニメキャラクターの一枚絵",
+      "outputs_ja": "最大23レイヤーのPSD、深度・マスク",
+      "summary_ja": "一枚絵を意味別パーツへ分解し、遮蔽部分を補完してPSDに出力する。",
+      "assessment_ja": "PuppetLoomを含む複数の制作ツールが採用する上流基盤。",
+      "status_ja": "導入候補",
+      "requirements_ja": "オンラインデモあり。READMEの目安は1280解像度でVRAM 12〜16GB、量子化で約8GB。",
+      "limitations_ja": "分解が対象であり、リギングや専門家による可動構造設計は別工程。",
+      "dependencies_ja": "LayerDiff、Marigold、各種セグメンテーションモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "7f139bb25c46a0c8ac720d95ddab185fcda5451c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 3868,
+        "forks": 348,
+        "created_at": "2026-03-31T06:29:06Z",
+        "pushed_at": "2026-08-05T13:31:48Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/shitagaki-lab/see-through/blob/7f139bb25c46a0c8ac720d95ddab185fcda5451c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/shitagaki-lab/see-through/blob/7f139bb25c46a0c8ac720d95ddab185fcda5451c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/shitagaki-lab/see-through",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/shitagaki-lab/see-through/tree/7f139bb25c46a0c8ac720d95ddab185fcda5451c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "tags": [
+        "layer"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "annotators/__init__.py",
+        "annotators/anime_face_detector/__init__.py",
+        "annotators/anime_face_detector/configs/mmdet/faster-rcnn.py",
+        "annotators/anime_face_detector/configs/mmdet/yolov3.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "anime-segmentation",
+      "name": "anime-segmentation",
+      "repository": "SkyTNT/anime-segmentation",
+      "url": "https://github.com/SkyTNT/anime-segmentation",
+      "category": "image",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "アニメキャラクター画像",
+      "outputs_ja": "背景除去画像・マスク",
+      "summary_ja": "アニメ絵のキャラクター領域を抽出し、背景除去や合成用マスクを作る。",
+      "assessment_ja": "立ち絵の切り抜きと素材整理を支える専用基盤。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "Python推論環境または公式リンクのデモ。",
+      "limitations_ja": "レイヤー分解や隠れた身体部位の補完ではない。最近の更新は少ない。",
+      "dependencies_ja": "anime-seg重み",
+      "checked_on": "2026-09-09",
+      "code_revision": "55d874013a2811cdf59c365059174c7823acf5b4",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 838,
+        "forks": 76,
+        "created_at": "2022-08-14T07:48:29Z",
+        "pushed_at": "2025-05-21T02:00:35Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/SkyTNT/anime-segmentation/blob/55d874013a2811cdf59c365059174c7823acf5b4/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/SkyTNT/anime-segmentation/blob/55d874013a2811cdf59c365059174c7823acf5b4/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/SkyTNT/anime-segmentation",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/SkyTNT/anime-segmentation/tree/55d874013a2811cdf59c365059174c7823acf5b4",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "image"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "app.py",
+        "data_loader.py",
+        "dataset_generator.py",
+        "export.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/skytnt/anime-seg",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/skytnt/anime-seg",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "493cb60893f47441b26ec4fb9a306bce9e342982",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "isnetis.ckpt",
+            "isnetis.onnx",
+            "model.safetensors"
+          ],
+          "matching_weight_file_count": 3
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "krita-ai-diffusion",
+      "name": "krita-ai-diffusion",
+      "repository": "Acly/krita-ai-diffusion",
+      "url": "https://github.com/Acly/krita-ai-diffusion",
+      "category": "image",
+      "kind": "integration",
+      "ai_role": "integration",
+      "maturity": "active_candidate",
+      "inputs_ja": "Kritaのキャンバス、選択範囲、プロンプト",
+      "outputs_ja": "編集レイヤー・生成画像",
+      "summary_ja": "Kritaの描画工程へ画像生成・インペイント・アウトペイントを組み込む。",
+      "assessment_ja": "画師が手で直しながらAIを使う工程に適している。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Kritaと対応する生成バックエンド。",
+      "limitations_ja": "生成モデルとサービスによって費用・実行環境が変わる。",
+      "dependencies_ja": "Krita、ComfyUI等の対応生成環境",
+      "checked_on": "2026-09-09",
+      "code_revision": "dda58d1c63e361207ccec085efbc34dbd32f1654",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 10564,
+        "forks": 624,
+        "created_at": "2023-09-01T22:52:13Z",
+        "pushed_at": "2026-08-28T20:55:10Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Acly/krita-ai-diffusion/blob/dda58d1c63e361207ccec085efbc34dbd32f1654/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Acly/krita-ai-diffusion/blob/dda58d1c63e361207ccec085efbc34dbd32f1654/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Acly/krita-ai-diffusion",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Acly/krita-ai-diffusion/tree/dda58d1c63e361207ccec085efbc34dbd32f1654",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "image"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "ai_diffusion/__init__.py",
+        "ai_diffusion/backend/__init__.py",
+        "ai_diffusion/backend/api.py",
+        "ai_diffusion/backend/client.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "krita",
+          "type": "plugin_for",
+          "evidence_url": "https://github.com/Acly/krita-ai-diffusion/blob/dda58d1c63e361207ccec085efbc34dbd32f1654/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "qwen-image",
+      "name": "Qwen-Image",
+      "repository": "QwenLM/Qwen-Image",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "category": "image",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "テキスト、編集対象画像",
+      "outputs_ja": "生成・編集画像",
+      "summary_ja": "テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。",
+      "assessment_ja": "イラスト制作と文字入り素材の基盤として評価する。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "モデル別の推論環境。公式READMEにdiffusersの例。",
+      "limitations_ja": "2.0の告知と公開重みの版を混同しない。本調査の重み候補は2512とEdit-2511。",
+      "dependencies_ja": "Qwen-Imageモデル、編集用モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "6b5e1f5cec987d404be5ac6657db3b9aacb56a89",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 8294,
+        "forks": 542,
+        "created_at": "2025-08-03T11:03:25Z",
+        "pushed_at": "2026-02-10T07:37:37Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/QwenLM/Qwen-Image",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/QwenLM/Qwen-Image/tree/6b5e1f5cec987d404be5ac6657db3b9aacb56a89",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "image"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "src/examples/demo.py",
+        "src/examples/edit_demo.py",
+        "src/examples/generate_w_prompt_enhance.py",
+        "src/examples/tools/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2512",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Qwen/Qwen-Image-2512",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "25468b98e3276ca6700de15c6628e51b7de54a26",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "text_encoder/model-00001-of-00004.safetensors",
+            "text_encoder/model-00002-of-00004.safetensors",
+            "text_encoder/model-00003-of-00004.safetensors",
+            "text_encoder/model-00004-of-00004.safetensors"
+          ],
+          "matching_weight_file_count": 14
+        },
+        {
+          "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Qwen/Qwen-Image-Edit-2511",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "text_encoder/model-00001-of-00004.safetensors",
+            "text_encoder/model-00002-of-00004.safetensors",
+            "text_encoder/model-00003-of-00004.safetensors",
+            "text_encoder/model-00004-of-00004.safetensors"
+          ],
+          "matching_weight_file_count": 10
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "z-image",
+      "name": "Z-Image",
+      "repository": "Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "category": "image",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "テキスト、モデルによって画像条件",
+      "outputs_ja": "生成・編集画像",
+      "summary_ja": "6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。",
+      "assessment_ja": "背景・素材・イラスト試作の生成基盤候補。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "モデル推論環境または公式デモ。",
+      "limitations_ja": "アニメ専用ではない。Turbo・Base・Omni等の能力と公開範囲を分ける。",
+      "dependencies_ja": "対応するZ-Imageモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "26f23eda626ffadda020b04ff79488e1d72004cd",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 11999,
+        "forks": 819,
+        "created_at": "2025-11-26T09:18:10Z",
+        "pushed_at": "2026-02-09T12:49:43Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Tongyi-MAI/Z-Image/blob/26f23eda626ffadda020b04ff79488e1d72004cd/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Tongyi-MAI/Z-Image/blob/26f23eda626ffadda020b04ff79488e1d72004cd/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Tongyi-MAI/Z-Image",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Tongyi-MAI/Z-Image/tree/26f23eda626ffadda020b04ff79488e1d72004cd",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "image"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "batch_inference.py",
+        "inference.py",
+        "src/__init__.py",
+        "src/config/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Tongyi-MAI/Z-Image-Turbo",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "f332072aa78be7aecdf3ee76d5c247082da564a6",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "text_encoder/model-00001-of-00003.safetensors",
+            "text_encoder/model-00002-of-00003.safetensors",
+            "text_encoder/model-00003-of-00003.safetensors",
+            "transformer/diffusion_pytorch_model-00001-of-00003.safetensors"
+          ],
+          "matching_weight_file_count": 7
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "ltx-2",
+      "name": "LTX-2",
+      "repository": "Lightricks/LTX-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "category": "video",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "テキスト、参照画像・制御条件",
+      "outputs_ja": "音声と映像を伴う動画",
+      "summary_ja": "音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。",
+      "assessment_ja": "音と映像を一緒に制作する候補。旧LTX-Videoから開発の主軸が移った。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "モデル別のGPU環境。READMEの2.5取得例は約66GiBのモデル群。",
+      "limitations_ja": "LTX-2と2.5の版・必要モデル・利用条件を分ける。全環境での動作は未検証。",
+      "dependencies_ja": "LTXモデル、テキストエンコーダ、VAE、アップスケーラ",
+      "checked_on": "2026-09-09",
+      "code_revision": "a95ab856bf29407b6b066ede0abe1846050db56c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 9380,
+        "forks": 1484,
+        "created_at": "2026-01-03T13:16:29Z",
+        "pushed_at": "2026-08-26T10:47:10Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Lightricks/LTX-2",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Lightricks/LTX-2/tree/a95ab856bf29407b6b066ede0abe1846050db56c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "video"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "packages/ltx-core/src/ltx_core/__init__.py",
+        "packages/ltx-core/src/ltx_core/allocator_trim_strategy.py",
+        "packages/ltx-core/src/ltx_core/batch_split.py",
+        "packages/ltx-core/src/ltx_core/block_streaming/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Lightricks/LTX-2.5",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "5e6e71018ee1756ed329b697a7b4aedc934dfce9",
+          "gated": "auto",
+          "license_metadata": "other",
+          "evidence_files": [
+            "diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors",
+            "diffusion_models/ltx-2.5-22b-dev-transformer-comfy-int8-convrot.safetensors",
+            "diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+            "diffusion_models/ltx-2.5-22b-distilled-transformer-comfy-int8-convrot.safetensors"
+          ],
+          "matching_weight_file_count": 14
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "ltx-video",
+      "name": "LTX-Video",
+      "repository": "Lightricks/LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "category": "video",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "historical",
+      "inputs_ja": "テキスト、参照画像",
+      "outputs_ja": "動画",
+      "summary_ja": "LTXの旧世代動画生成実装。",
+      "assessment_ja": "既存ワークフローの保守・比較資料として残す。",
+      "status_ja": "旧版・履歴資料",
+      "requirements_ja": "旧LTX-Videoモデルと対応Python環境。",
+      "limitations_ja": "公式READMEはLTX-2への移行を案内。現在の主開発先として推薦しない。",
+      "dependencies_ja": "LTX-Videoモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "4b2d053057623ddd4d0a1d3e9cd28890e9ef487f",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 10941,
+        "forks": 1130,
+        "created_at": "2024-11-20T20:06:28Z",
+        "pushed_at": "2026-01-05T22:37:07Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Lightricks/LTX-Video/blob/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Lightricks/LTX-Video/blob/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Lightricks/LTX-Video",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Lightricks/LTX-Video/tree/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "video"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "inference.py",
+        "ltx_video/__init__.py",
+        "ltx_video/inference.py",
+        "ltx_video/models/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "ltx-2",
+          "type": "successor",
+          "evidence_url": "https://github.com/Lightricks/LTX-Video/blob/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "scail-2",
+      "name": "SCAIL-2",
+      "repository": "zai-org/SCAIL-2",
+      "url": "https://github.com/zai-org/SCAIL-2",
+      "category": "video",
+      "kind": "model",
+      "inputs_ja": "参照画像、動作動画、対応マスク、プロンプト",
+      "outputs_ja": "キャラクター動画、キャラ置換動画",
+      "summary_ja": "参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。",
+      "assessment_ja": "2026年6月に推論コード・モデル、8月に学習コード公開。ComfyUI連携あり。",
+      "status_ja": "研究・技術評価候補",
+      "requirements_ja": "14Bモデルと前処理環境が必要。Python 3.10〜3.12。",
+      "limitations_ja": "アニメ専用ではない。入力マスクが重要で、複数参照は品質低下の場合がある。",
+      "dependencies_ja": "SCAIL-2重み、Wan VAE、T5、前処理モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "78fe19576bb06be96c2375e088574a262a300edb",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 1177,
+        "forks": 89,
+        "created_at": "2026-05-28T11:38:02Z",
+        "pushed_at": "2026-08-24T13:30:59Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/zai-org/SCAIL-2/blob/78fe19576bb06be96c2375e088574a262a300edb/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/zai-org/SCAIL-2/blob/78fe19576bb06be96c2375e088574a262a300edb/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/zai-org/SCAIL-2",
+          "supports": "取得時点のstars・forks・created_at・pushed_at・ライセンス自動判定"
+        },
+        {
+          "url": "https://github.com/zai-org/SCAIL-2/tree/78fe19576bb06be96c2375e088574a262a300edb",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "tags": [
+        "video"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "cache_scail2_wds.py",
+        "convert.py",
+        "convert_lora.py",
+        "generate.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/zai-org/SCAIL-2",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/zai-org/SCAIL-2",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "150cc0ca4e98e50e60b9295dacde39442fdccab2",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "Wan2.1_VAE.pth",
+            "model/1/fsdp2_rank_0000_checkpoint.pt",
+            "model/bias-aware-dpo-lora.pt",
+            "model/relighting-lora.pt"
+          ],
+          "matching_weight_file_count": 6
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "wan2.2",
+      "name": "Wan2.2",
+      "repository": "Wan-Video/Wan2.2",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "category": "video",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "テキスト、画像等の条件",
+      "outputs_ja": "生成動画",
+      "summary_ja": "テキストや画像から動画を作るWan2.2公式モデル群。",
+      "assessment_ja": "短編アニメ・背景動画・動作素材の生成基盤候補。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "モデル規模と設定に応じたGPU環境。",
+      "limitations_ja": "アニメ専用ではない。5BとA14B等の機能・メモリ要件を一括りにしない。",
+      "dependencies_ja": "Wan2.2の対応モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "42bf4cfaa384bc21833865abc2f9e6c0e67233dc",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 17444,
+        "forks": 2235,
+        "created_at": "2025-07-28T08:17:01Z",
+        "pushed_at": "2026-03-17T10:48:41Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Wan-Video/Wan2.2/blob/42bf4cfaa384bc21833865abc2f9e6c0e67233dc/LICENSE.txt"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Wan-Video/Wan2.2/blob/42bf4cfaa384bc21833865abc2f9e6c0e67233dc/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Wan-Video/Wan2.2",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Wan-Video/Wan2.2/tree/42bf4cfaa384bc21833865abc2f9e6c0e67233dc",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "video"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "generate.py",
+        "wan/__init__.py",
+        "wan/animate.py",
+        "wan/configs/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Wan-AI/Wan2.2-TI2V-5B",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "921dbaf3f1674a56f47e83fb80a34bac8a8f203e",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "Wan2.2_VAE.pth",
+            "diffusion_pytorch_model-00001-of-00003.safetensors",
+            "diffusion_pytorch_model-00002-of-00003.safetensors",
+            "diffusion_pytorch_model-00003-of-00003.safetensors"
+          ],
+          "matching_weight_file_count": 5
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "repository": "blender/blender",
+      "url": "https://github.com/blender/blender",
+      "category": "3d",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "3D形状、材質、リグ、モーション等",
+      "outputs_ja": "3Dモデル、レンダリング画像、アニメーション",
+      "summary_ja": "モデリング、リギング、アニメ、レンダリング、合成を扱う統合制作環境。",
+      "assessment_ja": "生成3D素材の修正・リグ・演出・書き出しを担う基盤。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "対応OSと描画・計算用ハードウェア。",
+      "limitations_ja": "GitHubは公式ミラー。非AIの汎用3Dツールとしてキャラ・アニメ制作に関連付ける。",
+      "dependencies_ja": "制作に応じたアセット、任意のアドオン",
+      "checked_on": "2026-09-09",
+      "code_revision": "d0d7c4c861463ae8823a545c022db869c0858f66",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 20204,
+        "forks": 3220,
+        "created_at": "2019-10-09T12:47:28Z",
+        "pushed_at": "2026-09-09T17:59:50Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/blender/blender/blob/d0d7c4c861463ae8823a545c022db869c0858f66/COPYING"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/blender/blender/blob/d0d7c4c861463ae8823a545c022db869c0858f66/.github/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/blender/blender",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/blender/blender/tree/d0d7c4c861463ae8823a545c022db869c0858f66",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "3d"
+      ],
+      "repository_role": "official_mirror",
+      "evidence_files": [
+        "build_files/build_environment/utils/set_rpath.py",
+        "build_files/build_environment/utils/strip_libraries.py",
+        "build_files/cmake/cmake_print_build_options.py",
+        "build_files/linux/install_linux_packages.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "hunyuan3d-2.1",
+      "name": "Hunyuan3D-2.1",
+      "repository": "Tencent-Hunyuan/Hunyuan3D-2.1",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+      "category": "3d",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "画像",
+      "outputs_ja": "PBR材質付き3Dアセット",
+      "summary_ja": "画像から3D形状と材質を生成する公式実装。",
+      "assessment_ja": "TRELLIS.2等と比較する画像から3D化の基盤候補。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "GPUと形状・材質モデルの推論環境。",
+      "limitations_ja": "2025年公開版。制作で使う際は形状・材質・リグを個別に確認する。",
+      "dependencies_ja": "Hunyuan3D形状・材質モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "82920d643c0dc2f7bfd7255f45f62d386edfe60c",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 3998,
+        "forks": 600,
+        "created_at": "2025-06-13T15:45:50Z",
+        "pushed_at": "2025-10-17T10:10:07Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1/blob/82920d643c0dc2f7bfd7255f45f62d386edfe60c/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1/blob/82920d643c0dc2f7bfd7255f45f62d386edfe60c/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Tencent-Hunyuan/Hunyuan3D-2.1",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1/tree/82920d643c0dc2f7bfd7255f45f62d386edfe60c",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "3d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "api_models.py",
+        "api_server.py",
+        "constants.py",
+        "demo.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/tencent/Hunyuan3D-2.1",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/tencent/Hunyuan3D-2.1",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+          "gated": false,
+          "license_metadata": "other",
+          "evidence_files": [
+            "hunyuan3d-dit-v2-1/model.fp16.ckpt",
+            "hunyuan3d-paintpbr-v2-1/image_encoder/model.safetensors",
+            "hunyuan3d-paintpbr-v2-1/text_encoder/pytorch_model.bin",
+            "hunyuan3d-paintpbr-v2-1/unet/diffusion_pytorch_model.bin"
+          ],
+          "matching_weight_file_count": 6
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "skintokens",
+      "name": "SkinTokens",
+      "repository": "VAST-AI-Research/SkinTokens",
+      "url": "https://github.com/VAST-AI-Research/SkinTokens",
+      "category": "3d",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "3Dメッシュ",
+      "outputs_ja": "骨格階層・スキンウェイト付き3Dアセット",
+      "summary_ja": "TokenRigで骨格とスキンウェイトを一つの系列として生成する自動リギング研究。",
+      "assessment_ja": "UniRigの後継として、3Dモデルを動かす準備工程で注目。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "READMEではNVIDIA GPU 14GB以上、Python 3.11以上。",
+      "limitations_ja": "自動リグの実用性は対象メッシュごとに確認が必要。",
+      "dependencies_ja": "TokenRig、SkinTokensモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "273b691d35989d71cd17ff2895fdc735097b92d1",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 375,
+        "forks": 58,
+        "created_at": "2026-02-08T23:39:58Z",
+        "pushed_at": "2026-05-12T13:07:30Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/VAST-AI-Research/SkinTokens/blob/273b691d35989d71cd17ff2895fdc735097b92d1/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/VAST-AI-Research/SkinTokens/blob/273b691d35989d71cd17ff2895fdc735097b92d1/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/VAST-AI-Research/SkinTokens",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/VAST-AI-Research/SkinTokens/tree/273b691d35989d71cd17ff2895fdc735097b92d1",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "3d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "bpy_server.py",
+        "demo.py",
+        "download.py",
+        "src/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/VAST-AI/SkinTokens",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/VAST-AI/SkinTokens",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "79736cad0fd84de384d5eede659b4ebd24effe33",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "experiments/articulation_xl_quantization_256_token_4/grpo_1400.ckpt",
+            "experiments/skin_vae_2_10_32768/last.ckpt"
+          ],
+          "matching_weight_file_count": 2
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "trellis.2",
+      "name": "TRELLIS.2",
+      "repository": "microsoft/TRELLIS.2",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "category": "3d",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "画像",
+      "outputs_ja": "PBR材質を伴う3Dアセット",
+      "summary_ja": "画像から形状・材質を備えた3Dアセットを生成する4Bモデル。",
+      "assessment_ja": "小物・背景・キャラの3D化を検討する基盤。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "GPU、Python、ネイティブ拡張。環境詳細は公式README。",
+      "limitations_ja": "生成だけでゲーム向けトポロジーやリグが完成するわけではない。",
+      "dependencies_ja": "TRELLIS.2-4B、画像エンコーダ等",
+      "checked_on": "2026-09-09",
+      "code_revision": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 11134,
+        "forks": 1349,
+        "created_at": "2025-11-26T10:04:35Z",
+        "pushed_at": "2026-07-10T12:34:32Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/microsoft/TRELLIS.2",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/microsoft/TRELLIS.2/tree/75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "3d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "app.py",
+        "app_texturing.py",
+        "data_toolkit/asset_stats.py",
+        "data_toolkit/blender_script/dump_mesh.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/microsoft/TRELLIS.2-4B",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "af44b45f2e35a493886929c6d786e563ec68364d",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "ckpts/shape_dec_next_dc_f16c32_fp16.safetensors",
+            "ckpts/shape_enc_next_dc_f16c32_fp16.safetensors",
+            "ckpts/slat_flow_img2shape_dit_1_3B_1024_bf16.safetensors",
+            "ckpts/slat_flow_img2shape_dit_1_3B_512_bf16.safetensors"
+          ],
+          "matching_weight_file_count": 9
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "unirig",
+      "name": "UniRig",
+      "repository": "VAST-AI-Research/UniRig",
+      "url": "https://github.com/VAST-AI-Research/UniRig",
+      "category": "3d",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "3Dメッシュ",
+      "outputs_ja": "骨格とスキンウェイト",
+      "summary_ja": "形状から骨格推定とスキニングを行う自動リギング研究。",
+      "assessment_ja": "3D生成物を動かす工程の比較資料。後継SkinTokensと併読する。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "GPU、推論環境と配布モデル。",
+      "limitations_ja": "後継版の能力をこの実装へ混ぜない。実際の変形品質は未検証。",
+      "dependencies_ja": "UniRigモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "6793c6640ff01c8fb389f3993434124bb43d2933",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 1741,
+        "forks": 166,
+        "created_at": "2025-04-08T12:56:37Z",
+        "pushed_at": "2026-06-04T07:15:34Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/VAST-AI-Research/UniRig",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/VAST-AI-Research/UniRig/tree/6793c6640ff01c8fb389f3993434124bb43d2933",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "3d"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "run.py",
+        "src/data/__init__.py",
+        "src/data/asset.py",
+        "src/data/augment.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/VAST-AI/UniRig",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/VAST-AI/UniRig",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "36842e2b5947e9e60f89275b83208c8e74071c63",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "skeleton/articulation-xl_quantization_256/model.ckpt",
+            "skeleton/rignet/model.ckpt",
+            "skin/articulation-xl/model.ckpt"
+          ],
+          "matching_weight_file_count": 3
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": [
+        {
+          "target_id": "skintokens",
+          "type": "successor",
+          "evidence_url": "https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/README.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "fish-speech",
+      "name": "fish-speech",
+      "repository": "fishaudio/fish-speech",
+      "url": "https://github.com/fishaudio/fish-speech",
+      "category": "tts",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "テキスト、参照音声",
+      "outputs_ja": "合成音声",
+      "summary_ja": "Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。",
+      "assessment_ja": "多言語キャラ音声と会話音声の生成候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "モデル規模に対応した推論環境。",
+      "limitations_ja": "READMEはFISH AUDIO RESEARCH LICENSEと記載。過去版のライセンスを現在版へ適用しない。",
+      "dependencies_ja": "Fish Audio S2-Pro等の対応モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "befe4001745417f8c42131739d862b8a6fdbd15a",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 32627,
+        "forks": 2816,
+        "created_at": "2023-10-10T03:16:51Z",
+        "pushed_at": "2026-09-07T19:20:34Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/fishaudio/fish-speech/blob/befe4001745417f8c42131739d862b8a6fdbd15a/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/fishaudio/fish-speech/blob/befe4001745417f8c42131739d862b8a6fdbd15a/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/fishaudio/fish-speech",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/fishaudio/fish-speech/tree/befe4001745417f8c42131739d862b8a6fdbd15a",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "tts"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "awesome_webui/eslint.config.js",
+        "awesome_webui/src/lib/utils.ts",
+        "awesome_webui/vite.config.ts",
+        "fish_speech/callbacks/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/fishaudio/s2-pro",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/fishaudio/s2-pro",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "1de9996b6be38b745688de084d87a5633f714e4e",
+          "gated": false,
+          "license_metadata": "other",
+          "evidence_files": [
+            "codec.pth",
+            "model-00001-of-00002.safetensors",
+            "model-00002-of-00002.safetensors"
+          ],
+          "matching_weight_file_count": 3
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "gpt-sovits",
+      "name": "GPT-SoVITS",
+      "repository": "RVC-Boss/GPT-SoVITS",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "category": "tts",
+      "kind": "model_toolkit",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "テキスト、参照音声、学習音声",
+      "outputs_ja": "音声合成・追加学習モデル",
+      "summary_ja": "少量音声を使うTTSと音声クローンをWebUIから扱う。",
+      "assessment_ja": "独自キャラ音声を作るための学習・推論環境候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Pythonまたは配布環境。モデル版に応じたGPU要件。",
+      "limitations_ja": "参照音声の長さと品質で結果が変わる。作者の少量学習品質は未再現。",
+      "dependencies_ja": "GPT-SoVITS、音声前処理モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "48b1a0169a28582a8984402f82cf438d3bfa6aca",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 61660,
+        "forks": 6649,
+        "created_at": "2024-01-14T18:05:21Z",
+        "pushed_at": "2026-08-18T09:16:25Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/RVC-Boss/GPT-SoVITS",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/RVC-Boss/GPT-SoVITS/tree/48b1a0169a28582a8984402f82cf438d3bfa6aca",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "tts",
+        "japanese_voice"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "GPT_SoVITS/AR/__init__.py",
+        "GPT_SoVITS/AR/data/__init__.py",
+        "GPT_SoVITS/AR/data/bucket_sampler.py",
+        "GPT_SoVITS/AR/data/data_module.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/lj1995/GPT-SoVITS",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/lj1995/GPT-SoVITS",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "336b2ec4e8d4ac74740798dd40af44e74659ecaf",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "chinese-hubert-base/pytorch_model.bin",
+            "chinese-roberta-wwm-ext-large/pytorch_model.bin",
+            "gsv-v2final-pretrained/s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt",
+            "gsv-v2final-pretrained/s2D2333k.pth"
+          ],
+          "matching_weight_file_count": 18
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "qwen3-tts",
+      "name": "Qwen3-TTS",
+      "repository": "QwenLM/Qwen3-TTS",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "category": "tts",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "テキスト、声の説明、参照音声",
+      "outputs_ja": "合成音声",
+      "summary_ja": "声のデザイン、参照音声による合成、指示による話し方制御を扱う多言語TTS。",
+      "assessment_ja": "日本語を含むキャラ音声・ナレーション制作の新しい基盤候補。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "Python推論環境。0.6B/1.7Bなどのモデル別に機能が異なる。",
+      "limitations_ja": "通常TTSの表現制御とASMR専用性能を同一視しない。",
+      "dependencies_ja": "Qwen3-TTS、音声トークナイザ",
+      "checked_on": "2026-09-09",
+      "code_revision": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 13328,
+        "forks": 1727,
+        "created_at": "2026-01-21T06:41:32Z",
+        "pushed_at": "2026-03-17T06:38:41Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/QwenLM/Qwen3-TTS",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/QwenLM/Qwen3-TTS/tree/022e286b98fbec7e1e916cb940cdf532cd9f488e",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "tts",
+        "japanese_voice"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "finetuning/dataset.py",
+        "finetuning/prepare_data.py",
+        "finetuning/sft_12hz.py",
+        "qwen_tts/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "model.safetensors",
+            "speech_tokenizer/model.safetensors"
+          ],
+          "matching_weight_file_count": 2
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "style-bert-vits2",
+      "name": "Style-Bert-VITS2",
+      "repository": "litagin02/Style-Bert-VITS2",
+      "url": "https://github.com/litagin02/Style-Bert-VITS2",
+      "category": "tts",
+      "kind": "model_toolkit",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "テキスト、音声スタイル、学習音声",
+      "outputs_ja": "読み上げ音声・追加学習モデル",
+      "summary_ja": "Bert-VITS2を基に音声スタイルの制御と学習を扱う日本語TTSツール。",
+      "assessment_ja": "キャラの声色・話し方を調整する候補。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "Python、音声モデル、推論用ライブラリまたはエディタ。",
+      "limitations_ja": "コードとデフォルト音声モデルの利用条件を分ける。最近の更新は少ない。",
+      "dependencies_ja": "Style-Bert-VITS2モデル、BERT、音声素材",
+      "checked_on": "2026-09-09",
+      "code_revision": "66de777e06392c0f313600be03c43ef96658b244",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 1370,
+        "forks": 215,
+        "created_at": "2023-12-01T00:15:13Z",
+        "pushed_at": "2025-12-07T13:06:59Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "AGPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/litagin02/Style-Bert-VITS2/blob/66de777e06392c0f313600be03c43ef96658b244/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/litagin02/Style-Bert-VITS2/blob/66de777e06392c0f313600be03c43ef96658b244/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/litagin02/Style-Bert-VITS2",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/litagin02/Style-Bert-VITS2/tree/66de777e06392c0f313600be03c43ef96658b244",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "tts",
+        "japanese_voice"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "app.py",
+        "bert_gen.py",
+        "config.py",
+        "convert_bert_onnx.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/litagin/Style-Bert-VITS2-2.0-base-JP-Extra",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/litagin/Style-Bert-VITS2-2.0-base-JP-Extra",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "a731761009f3c96d104487be6ad332bf1bb5a3a5",
+          "gated": false,
+          "license_metadata": "agpl-3.0",
+          "evidence_files": [
+            "D_0.safetensors",
+            "G_0.safetensors",
+            "WD_0.safetensors"
+          ],
+          "matching_weight_file_count": 3
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "voicevox",
+      "name": "voicevox",
+      "repository": "VOICEVOX/voicevox",
+      "url": "https://github.com/VOICEVOX/voicevox",
+      "category": "tts",
+      "kind": "desktop_tool",
+      "ai_role": "integration",
+      "maturity": "established_tool",
+      "inputs_ja": "日本語テキスト、話者・抑揚設定",
+      "outputs_ja": "読み上げ音声",
+      "summary_ja": "日本語のキャラクター音声を編集して出力するVOICEVOXのエディタ。",
+      "assessment_ja": "セリフ・説明動画・ゲーム用音声の制作入口。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "VOICEVOXアプリと音声エンジン。",
+      "limitations_ja": "このリポジトリはエディタ。エンジン・音声ライブラリ・キャラの条件は別。",
+      "dependencies_ja": "VOICEVOX ENGINE、音声ライブラリ",
+      "checked_on": "2026-09-09",
+      "code_revision": "b7258250fe90c82f112d0f51e43f2a1b67992d36",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 3236,
+        "forks": 373,
+        "created_at": "2021-07-27T12:58:06Z",
+        "pushed_at": "2026-09-09T11:18:27Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/VOICEVOX/voicevox/blob/b7258250fe90c82f112d0f51e43f2a1b67992d36/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/VOICEVOX/voicevox/blob/b7258250fe90c82f112d0f51e43f2a1b67992d36/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/VOICEVOX/voicevox",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/VOICEVOX/voicevox/tree/b7258250fe90c82f112d0f51e43f2a1b67992d36",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "tts",
+        "japanese_voice"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        ".storybook/main.ts",
+        ".storybook/preview.ts",
+        ".storybook/utils/argTypesEnhancers.ts",
+        "build/afterAllArtifactBuild.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "asmrify",
+      "name": "ASMRify",
+      "repository": "ReactorcoreGames/ASMRify",
+      "url": "https://github.com/ReactorcoreGames/ASMRify",
+      "category": "sound",
+      "kind": "desktop_tool",
+      "ai_role": "postprocess",
+      "maturity": "early_candidate",
+      "inputs_ja": "録音またはTTS音声ファイル",
+      "outputs_ja": "効果処理したWAV・MP3",
+      "summary_ja": "音声に定位移動・残響・ピッチ等を加えて一括処理するASMR向け音声加工ツール。",
+      "assessment_ja": "AIのTTS出力をASMR風の音声演出へ加工する周辺候補。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "Windows 10/11、FFmpeg。",
+      "limitations_ja": "小規模で利用実績は未確認。AIによるささやき生成・実録バイノーラルの再現・効果効能は確認していない。",
+      "dependencies_ja": "FFmpeg、入力音声",
+      "checked_on": "2026-09-09",
+      "code_revision": "5f30fc61e6148a537cdc609173880e2d50ae3b53",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1,
+        "forks": 0,
+        "created_at": "2026-06-18T21:35:30Z",
+        "pushed_at": "2026-06-18T22:47:00Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": null,
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/ReactorcoreGames/ASMRify/blob/5f30fc61e6148a537cdc609173880e2d50ae3b53/README.md"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/ReactorcoreGames/ASMRify/blob/5f30fc61e6148a537cdc609173880e2d50ae3b53/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/ReactorcoreGames/ASMRify",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/ReactorcoreGames/ASMRify/tree/5f30fc61e6148a537cdc609173880e2d50ae3b53",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "sound",
+        "asmr"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "core/__init__.py",
+        "core/batch.py",
+        "core/binaural.py",
+        "core/filter_chain.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "foleycrafter",
+      "name": "FoleyCrafter",
+      "repository": "open-mmlab/FoleyCrafter",
+      "url": "https://github.com/open-mmlab/FoleyCrafter",
+      "category": "sound",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "無音動画、テキスト条件",
+      "outputs_ja": "動画に合わせた効果音",
+      "summary_ja": "動画の内容とタイミングに合わせた効果音を生成する研究実装。",
+      "assessment_ja": "アニメ・ゲーム映像のフォーリー制作候補。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "Python/GPU環境、推論時のチェックポイント取得。",
+      "limitations_ja": "ASMR専用ではなく、距離感・耳元表現・立体音響は未検証。",
+      "dependencies_ja": "FoleyCrafterと基盤音声モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "b4526d1586aaf044140b359295504452297f8c13",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 663,
+        "forks": 67,
+        "created_at": "2024-06-25T06:05:16Z",
+        "pushed_at": "2026-06-15T04:39:18Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/open-mmlab/FoleyCrafter/blob/b4526d1586aaf044140b359295504452297f8c13/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/open-mmlab/FoleyCrafter/blob/b4526d1586aaf044140b359295504452297f8c13/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/open-mmlab/FoleyCrafter",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/open-mmlab/FoleyCrafter/tree/b4526d1586aaf044140b359295504452297f8c13",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "sound"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "app.py",
+        "foleycrafter/data/__init__.py",
+        "foleycrafter/data/dataset.py",
+        "foleycrafter/data/video_transforms.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/ymzhang319/FoleyCrafter",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/ymzhang319/FoleyCrafter",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "56c5ba7e052249a10bca6ebd12f9d5d8e6c26ae0",
+          "gated": false,
+          "license_metadata": "apache-2.0",
+          "evidence_files": [
+            "semantic/semantic_adapter.bin",
+            "temporal_adapter.ckpt",
+            "vocoder/vocoder.pt"
+          ],
+          "matching_weight_file_count": 3
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "mmaudio",
+      "name": "MMAudio",
+      "repository": "hkchengrex/MMAudio",
+      "url": "https://github.com/hkchengrex/MMAudio",
+      "category": "sound",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "model_candidate",
+      "inputs_ja": "動画、テキスト",
+      "outputs_ja": "同期音声",
+      "summary_ja": "動画やテキストを条件に、時間的に対応する音声を生成する。",
+      "assessment_ja": "映像用の効果音・環境音を作る技術候補。",
+      "status_ja": "研究モデルの評価候補",
+      "requirements_ja": "Python/GPU環境とチェックポイント。",
+      "limitations_ja": "ASMRや日本語のセリフ生成専用ではない。音の同期と内容は素材ごとに評価する。",
+      "dependencies_ja": "MMAudio、音声VAE等",
+      "checked_on": "2026-09-09",
+      "code_revision": "974010a026c731054592d8f777218bd9d85a6c24",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 2268,
+        "forks": 267,
+        "created_at": "2024-12-07T07:47:39Z",
+        "pushed_at": "2026-02-23T06:09:19Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/hkchengrex/MMAudio/blob/974010a026c731054592d8f777218bd9d85a6c24/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/hkchengrex/MMAudio/blob/974010a026c731054592d8f777218bd9d85a6c24/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/hkchengrex/MMAudio",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/hkchengrex/MMAudio/tree/974010a026c731054592d8f777218bd9d85a6c24",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "sound"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "batch_eval.py",
+        "config/__init__.py",
+        "demo.py",
+        "eval_onsets.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/hkchengrex/MMAudio",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/hkchengrex/MMAudio",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "eb13a1a98fdbec91753775c57b074ccdfc60587c",
+          "gated": false,
+          "license_metadata": "cc-by-nc-4.0",
+          "evidence_files": [
+            "checkpoints/mmaudio_large_44k_ckpt.pth",
+            "checkpoints/mmaudio_medium_44k_ckpt.pth",
+            "checkpoints/mmaudio_small_16k_ckpt.pth",
+            "checkpoints/mmaudio_small_44k_ckpt.pth"
+          ],
+          "matching_weight_file_count": 13
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "stable-audio-tools",
+      "name": "stable-audio-tools",
+      "repository": "Stability-AI/stable-audio-tools",
+      "url": "https://github.com/Stability-AI/stable-audio-tools",
+      "category": "sound",
+      "kind": "model_toolkit",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "テキスト条件、音声、モデル設定",
+      "outputs_ja": "生成音声・学習済みモデル",
+      "summary_ja": "条件付き音声生成モデルの学習と推論を行うツール群。効果音や環境音素材を検討できる。",
+      "assessment_ja": "音声素材の生成・追加学習を同じ基盤で扱う。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Python、PyTorch。モデルごとに必要環境を確認。",
+      "limitations_ja": "ASMR専用モデルではない。空間音響・ささやきの品質は未検証。",
+      "dependencies_ja": "Stable Audio Openなど対応モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "3241adba4fc2a85cf5b29d9eb68d42f40a28e820",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 3856,
+        "forks": 483,
+        "created_at": "2023-05-23T15:51:04Z",
+        "pushed_at": "2026-09-09T09:50:41Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Stability-AI/stable-audio-tools/blob/3241adba4fc2a85cf5b29d9eb68d42f40a28e820/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Stability-AI/stable-audio-tools/blob/3241adba4fc2a85cf5b29d9eb68d42f40a28e820/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Stability-AI/stable-audio-tools",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Stability-AI/stable-audio-tools/tree/3241adba4fc2a85cf5b29d9eb68d42f40a28e820",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "sound"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "pre_encode.py",
+        "run_gradio.py",
+        "scripts/ds_zero_to_pl_ckpt.py",
+        "stable_audio_tools/__init__.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/stabilityai/stable-audio-open-1.0",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/stabilityai/stable-audio-open-1.0",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "f21265c1e2710b3bd2386596943f0007f55f802e",
+          "gated": "auto",
+          "license_metadata": "other",
+          "evidence_files": [
+            "model.ckpt",
+            "model.safetensors",
+            "projection_model/diffusion_pytorch_model.safetensors",
+            "text_encoder/model.safetensors"
+          ],
+          "matching_weight_file_count": 7
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "ace-step-1.5",
+      "name": "ACE-Step-1.5",
+      "repository": "ace-step/ACE-Step-1.5",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "category": "music",
+      "kind": "model",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "楽曲説明、歌詞、参照音声等",
+      "outputs_ja": "楽曲・歌声を含む音声",
+      "summary_ja": "ローカルで楽曲を生成し、編集や追加学習につなげる音楽モデル。",
+      "assessment_ja": "ゲームBGM・キャラソング・映像用音楽の試作候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "モデル・端末別の実行手順あり。XL版などでGPU要件が異なる。",
+      "limitations_ja": "作者の速度・商用モデル比較は当カタログで再検証していない。",
+      "dependencies_ja": "ACE-Stepのモデル群、任意のLoRA",
+      "checked_on": "2026-09-09",
+      "code_revision": "ca1e85fe9430179831e6bc6be790c332190a3866",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": true
+      },
+      "metrics": {
+        "stars": 12616,
+        "forks": 1619,
+        "created_at": "2025-09-04T02:00:07Z",
+        "pushed_at": "2026-09-03T02:46:44Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/ace-step/ACE-Step-1.5",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/ace-step/ACE-Step-1.5/tree/ca1e85fe9430179831e6bc6be790c332190a3866",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "music"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        ".claude/skills/acestep-simplemv/scripts/remotion.config.ts",
+        ".claude/skills/acestep-simplemv/scripts/src/index.ts",
+        ".claude/skills/acestep-simplemv/scripts/src/parseLrc.ts",
+        ".claude/skills/acestep-simplemv/scripts/src/types.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [
+        {
+          "url": "https://huggingface.co/ACE-Step/acestep-v15-xl-turbo",
+          "checked_on": "2026-09-09",
+          "api_url": "https://huggingface.co/api/models/ACE-Step/acestep-v15-xl-turbo",
+          "http_status": 200,
+          "weights_downloaded": false,
+          "verification": "file_listing_checked",
+          "revision": "d4a0b288b83ebb7e25a8c0b32c573c22e134e8ee",
+          "gated": false,
+          "license_metadata": "mit",
+          "evidence_files": [
+            "model-00001-of-00004.safetensors",
+            "model-00002-of-00004.safetensors",
+            "model-00003-of-00004.safetensors",
+            "model-00004-of-00004.safetensors"
+          ],
+          "matching_weight_file_count": 5
+        }
+      ],
+      "model_scope_ja": "下記配布先の代表的な重みファイル名をAPIで確認。依存モデル全体やダウンロード成功の保証ではない。",
+      "relations": []
+    },
+    {
+      "id": "diffsinger",
+      "name": "DiffSinger",
+      "repository": "openvpi/DiffSinger",
+      "url": "https://github.com/openvpi/DiffSinger",
+      "category": "music",
+      "kind": "model_toolkit",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "音符、歌詞、音声データ、表現パラメータ",
+      "outputs_ja": "合成歌声・音声モデル",
+      "summary_ja": "歌声合成の学習・推論と、ピッチ・エネルギー・息成分などの制御を扱う。",
+      "assessment_ja": "歌声の細かな表現と独自音源制作を検討する基盤。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Python/GPU環境。使用する音源の設定に依存。",
+      "limitations_ja": "原論文実装の拡張版。OpenUtau等のエディタと音源の対応は別途確認。",
+      "dependencies_ja": "DiffSinger対応モデル・ボコーダ",
+      "checked_on": "2026-09-09",
+      "code_revision": "336cf01b57f2ad44c6b37a79cf33993043291759",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 3201,
+        "forks": 348,
+        "created_at": "2022-08-03T15:11:21Z",
+        "pushed_at": "2026-09-07T11:30:33Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/openvpi/DiffSinger/blob/336cf01b57f2ad44c6b37a79cf33993043291759/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/openvpi/DiffSinger/blob/336cf01b57f2ad44c6b37a79cf33993043291759/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/openvpi/DiffSinger",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/openvpi/DiffSinger/tree/336cf01b57f2ad44c6b37a79cf33993043291759",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "music"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "augmentation/spec_stretch.py",
+        "basics/base_augmentation.py",
+        "basics/base_binarizer.py",
+        "basics/base_dataset.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "openutau",
+      "name": "OpenUtau",
+      "repository": "openutau/OpenUtau",
+      "url": "https://github.com/openutau/OpenUtau",
+      "category": "music",
+      "kind": "desktop_tool",
+      "ai_role": "optional",
+      "maturity": "established_tool",
+      "inputs_ja": "音符、歌詞、音源ライブラリ",
+      "outputs_ja": "合成歌声・歌唱プロジェクト",
+      "summary_ja": "UTAUコミュニティ向けの歌声編集・合成プラットフォーム。",
+      "assessment_ja": "キャラソングや同人音楽で、音符と発音を編集する入口。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "対応する歌声音源と合成エンジン。",
+      "limitations_ja": "エディタと音源・合成モデルの条件を分ける。公式リポジトリはopenutau/OpenUtauへ移転。",
+      "dependencies_ja": "UTAU系音源、対応するDiffSinger等",
+      "checked_on": "2026-09-09",
+      "code_revision": "17bf25e7f78c5f88a6c5bce437bf6d592f012e46",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 4281,
+        "forks": 546,
+        "created_at": "2014-11-27T06:55:34Z",
+        "pushed_at": "2026-09-09T06:52:33Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/openutau/OpenUtau/blob/17bf25e7f78c5f88a6c5bce437bf6d592f012e46/LICENSE.txt"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/openutau/OpenUtau/blob/17bf25e7f78c5f88a6c5bce437bf6d592f012e46/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/openutau/OpenUtau",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/openutau/OpenUtau/tree/17bf25e7f78c5f88a6c5bce437bf6d592f012e46",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "music"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        ".github/scripts/next-version.py",
+        "Misc/sync_strings.py",
+        "OpenUtau.Core/Analysis/AudioSlicer.cs",
+        "OpenUtau.Core/Analysis/Crepe/Crepe.cs"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "airi",
+      "name": "AIRI",
+      "repository": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "category": "vtuber",
+      "kind": "web_app",
+      "ai_role": "integration",
+      "maturity": "active_candidate",
+      "inputs_ja": "音声、キャラ設定、ゲーム等の入力",
+      "outputs_ja": "会話音声、2D/3Dキャラ表示、対応ゲーム操作",
+      "summary_ja": "会話するバーチャルキャラクターを構築する環境。",
+      "assessment_ja": "キャラ表示・会話・ゲーム操作の接続を扱う活動的な候補。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "ブラウザまたは対応デスクトップ環境、推論バックエンド。",
+      "limitations_ja": "対応機能はプラットフォームとプロバイダに依存。全ゲームで自律動作するという意味ではない。",
+      "dependencies_ja": "LLM、TTS、ASR、キャラモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "dfc6951a55bf4fdd66a68a0c881ae880ddd95f77",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 48985,
+        "forks": 4849,
+        "created_at": "2024-12-01T16:33:36Z",
+        "pushed_at": "2026-09-09T16:31:39Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/moeru-ai/airi/blob/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/moeru-ai/airi/blob/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/moeru-ai/airi",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/moeru-ai/airi/tree/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "vtuber"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "alint.config.ts",
+        "apps/component-calling/src/main.ts",
+        "apps/component-calling/src/plugins/plugin-component-calling-weather/components/index.ts",
+        "apps/component-calling/src/plugins/plugin-component-calling-weather/index.ts"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "inochi-creator",
+      "name": "inochi-creator",
+      "repository": "Inochi2D/inochi-creator",
+      "url": "https://github.com/Inochi2D/inochi-creator",
+      "category": "vtuber",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "established_reference",
+      "inputs_ja": "レイヤー付き2Dキャラ素材",
+      "outputs_ja": "Inochi2Dのリグ付きモデル",
+      "summary_ja": "レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。",
+      "assessment_ja": "AIなしでも使える2Dリギングの比較基盤。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "Inochi2D対応環境。配信用にはInochi Session等を併用。",
+      "limitations_ja": "最終pushは2025年6月。Live2D Cubism形式と同じものではない。",
+      "dependencies_ja": "Inochi2D、キャラ素材",
+      "checked_on": "2026-09-09",
+      "code_revision": "dba60811cff224f8cc9ce367b1d9291bfa5f7640",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1217,
+        "forks": 85,
+        "created_at": "2020-11-19T22:19:02Z",
+        "pushed_at": "2025-06-16T20:39:43Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "BSD-2-Clause",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Inochi2D/inochi-creator/blob/dba60811cff224f8cc9ce367b1d9291bfa5f7640/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Inochi2D/inochi-creator/blob/dba60811cff224f8cc9ce367b1d9291bfa5f7640/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Inochi2D/inochi-creator",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Inochi2D/inochi-creator/tree/dba60811cff224f8cc9ce367b1d9291bfa5f7640",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "vtuber"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "source/app.d",
+        "source/creator/actions/binding.d",
+        "source/creator/actions/drawable.d",
+        "source/creator/actions/mesh.d"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "open-llm-vtuber",
+      "name": "Open-LLM-VTuber",
+      "repository": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "category": "vtuber",
+      "kind": "web_app",
+      "ai_role": "integration",
+      "maturity": "integration_candidate",
+      "inputs_ja": "マイク入力、視覚情報、キャラ設定",
+      "outputs_ja": "音声応答とLive2Dアバター表示",
+      "summary_ja": "音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。",
+      "assessment_ja": "会話するVTuberやデスクトップキャラの実装候補。",
+      "status_ja": "連携の評価候補",
+      "requirements_ja": "Windows・macOS・Linux。LLM・TTS・ASR環境。",
+      "limitations_ja": "ローカル完結はバックエンドの選択に依存。Live2Dモデル制作機能とは別。",
+      "dependencies_ja": "LLM、TTS、ASR、Live2D素材",
+      "checked_on": "2026-09-09",
+      "code_revision": "992309c0aa19845960228f880013d4685fde93b5",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 13686,
+        "forks": 1630,
+        "created_at": "2023-11-24T04:55:43Z",
+        "pushed_at": "2026-05-15T07:18:04Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Open-LLM-VTuber/Open-LLM-VTuber",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/tree/992309c0aa19845960228f880013d4685fde93b5",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "vtuber"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "prompts/__init__.py",
+        "prompts/prompt_loader.py",
+        "run_server.py",
+        "scripts/run_bilibili_live.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "univrm",
+      "name": "UniVRM",
+      "repository": "vrm-c/UniVRM",
+      "url": "https://github.com/vrm-c/UniVRM",
+      "category": "vtuber",
+      "kind": "library",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "VRM・glTFアバター",
+      "outputs_ja": "Unityで読み書きできるアバター",
+      "summary_ja": "Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。",
+      "assessment_ja": "生成・制作した3DキャラをVTuberやゲームへ接続する基盤。",
+      "status_ja": "定番の制作基盤",
+      "requirements_ja": "Unityと対応するUniVRM版。",
+      "limitations_ja": "VRM 0.x/1.0等の互換性は個別確認。モデル生成・自動リギング機能ではない。",
+      "dependencies_ja": "Unity、VRM素材",
+      "checked_on": "2026-09-09",
+      "code_revision": "928b30e96439c1c11a49b172efb72eb96d2cad8b",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 3378,
+        "forks": 490,
+        "created_at": "2018-04-16T04:20:42Z",
+        "pushed_at": "2026-08-20T07:40:06Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/vrm-c/UniVRM/blob/928b30e96439c1c11a49b172efb72eb96d2cad8b/LICENSE.txt"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/vrm-c/UniVRM/blob/928b30e96439c1c11a49b172efb72eb96d2cad8b/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/vrm-c/UniVRM",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/vrm-c/UniVRM/tree/928b30e96439c1c11a49b172efb72eb96d2cad8b",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "vtuber"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "Assets/PerformanceTests/GltfParsePerformanceTests.cs",
+        "Assets/UniGLTF_Samples/GltfViewer/GltfViewer.cs",
+        "Assets/UniGLTF_Samples/GltfViewer/OpenFileDialog/FileDialogForWindows.cs",
+        "Assets/UniGLTF_Samples/GltfViewer/OpenFileDialog/OpenFileDialog.cs"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "vtubestudio",
+      "name": "VTubeStudio",
+      "repository": "DenchiSoft/VTubeStudio",
+      "url": "https://github.com/DenchiSoft/VTubeStudio",
+      "category": "vtuber",
+      "kind": "api_reference",
+      "ai_role": "integration",
+      "maturity": "reference_only",
+      "inputs_ja": "外部プログラムのAPI要求",
+      "outputs_ja": "VTube Studioのパラメータ制御・状態取得",
+      "summary_ja": "VTube Studioを外部から制御する公式API文書・開発資料。",
+      "assessment_ja": "AI会話や演出制御を既存のLive2D配信へ接続する参考。",
+      "status_ja": "連携用文書資料",
+      "requirements_ja": "VTube Studioアプリ、API対応クライアント。",
+      "limitations_ja": "アプリ本体のソース公開ではない。文書リポジトリとして掲載。",
+      "dependencies_ja": "VTube Studio、Live2Dモデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "0f46ef44b487fa17c8120db572ebd925924b93a3",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1287,
+        "forks": 141,
+        "created_at": "2019-11-11T00:38:43Z",
+        "pushed_at": "2026-09-02T08:39:56Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/DenchiSoft/VTubeStudio/blob/0f46ef44b487fa17c8120db572ebd925924b93a3/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/DenchiSoft/VTubeStudio/blob/0f46ef44b487fa17c8120db572ebd925924b93a3/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/DenchiSoft/VTubeStudio",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/DenchiSoft/VTubeStudio/tree/0f46ef44b487fa17c8120db572ebd925924b93a3",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "vtuber"
+      ],
+      "repository_role": "api_documentation",
+      "evidence_files": [
+        "Files/EffectConfigs.cs",
+        "Files/Effects.cs",
+        "Files/ErrorID.cs",
+        "Files/HotkeyAction.cs"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "repository": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "category": "workflow",
+      "kind": "workflow_tool",
+      "ai_role": "integration",
+      "maturity": "active_candidate",
+      "inputs_ja": "ノードグラフ、プロンプト、素材、モデル",
+      "outputs_ja": "画像・動画・音声などの生成物とワークフローJSON",
+      "summary_ja": "画像・動画などのモデルをノードで接続して制作工程を構成する。",
+      "assessment_ja": "複数分野のモデルと制作補助ノードを集約できる共通基盤。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "対応GPU・実行環境は利用するモデルによる。",
+      "limitations_ja": "カスタムノードとモデルの互換性は個別確認が必要。ワークフロー公開だけで再現済みとはしない。",
+      "dependencies_ja": "各種生成モデル、任意のカスタムノード",
+      "checked_on": "2026-09-09",
+      "code_revision": "4989cdd95487531b50438c6a091dffa06e4af4b2",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 132241,
+        "forks": 15590,
+        "created_at": "2023-01-17T03:15:56Z",
+        "pushed_at": "2026-09-09T18:24:58Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Comfy-Org/ComfyUI/blob/4989cdd95487531b50438c6a091dffa06e4af4b2/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Comfy-Org/ComfyUI/blob/4989cdd95487531b50438c6a091dffa06e4af4b2/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/Comfy-Org/ComfyUI",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/Comfy-Org/ComfyUI/tree/4989cdd95487531b50438c6a091dffa06e4af4b2",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "workflow"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        ".ci/update_windows/update.py",
+        "alembic_db/env.py",
+        "alembic_db/versions/0001_assets.py",
+        "alembic_db/versions/0002_merge_to_asset_references.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "comfyui-wanvideowrapper",
+      "name": "ComfyUI-WanVideoWrapper",
+      "repository": "kijai/ComfyUI-WanVideoWrapper",
+      "url": "https://github.com/kijai/ComfyUI-WanVideoWrapper",
+      "category": "workflow",
+      "kind": "integration",
+      "ai_role": "integration",
+      "maturity": "integration_candidate",
+      "inputs_ja": "ComfyUIグラフ、Wan系モデル、素材",
+      "outputs_ja": "生成動画と再利用可能なワークフロー",
+      "summary_ja": "Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。",
+      "assessment_ja": "動画制作のモデル操作・省メモリ設定を工程に組み込める。",
+      "status_ja": "連携の評価候補",
+      "requirements_ja": "ComfyUIと対応モデル、GPU。",
+      "limitations_ja": "公式Wan実装ではない。対応版と既存ワークフローの互換性を確認する。",
+      "dependencies_ja": "ComfyUI、Wan系モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "088128b224242e110d3906c6750e9a3a348a659b",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 6687,
+        "forks": 691,
+        "created_at": "2025-02-25T18:03:11Z",
+        "pushed_at": "2026-05-24T13:07:20Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/kijai/ComfyUI-WanVideoWrapper/blob/088128b224242e110d3906c6750e9a3a348a659b/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/kijai/ComfyUI-WanVideoWrapper/blob/088128b224242e110d3906c6750e9a3a348a659b/readme.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/kijai/ComfyUI-WanVideoWrapper",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/kijai/ComfyUI-WanVideoWrapper/tree/088128b224242e110d3906c6750e9a3a348a659b",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "workflow"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "ATI/motion.py",
+        "ATI/motion_patch.py",
+        "ATI/nodes.py",
+        "FlashVSR/LQ_proj_model.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": [
+        {
+          "target_id": "comfyui",
+          "type": "plugin_for",
+          "evidence_url": "https://github.com/kijai/ComfyUI-WanVideoWrapper/blob/088128b224242e110d3906c6750e9a3a348a659b/readme.md",
+          "runtime_integration_tested": false
+        }
+      ]
+    },
+    {
+      "id": "musubi-tuner",
+      "name": "musubi-tuner",
+      "repository": "kohya-ss/musubi-tuner",
+      "url": "https://github.com/kohya-ss/musubi-tuner",
+      "category": "workflow",
+      "kind": "training_tool",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "画像・動画データセット、キャプション、基盤モデル",
+      "outputs_ja": "LoRA等の追加学習結果",
+      "summary_ja": "画像・動画モデル向けのLoRA学習スクリプト群。",
+      "assessment_ja": "画風・キャラ・動作などを制作目的に合わせる学習基盤。",
+      "status_ja": "更新のある導入・評価候補",
+      "requirements_ja": "Python、学習用GPU。要件は対象アーキテクチャ別。",
+      "limitations_ja": "各モデル作者による公式実装ではない。対応するモデル版と学習素材を確認する。",
+      "dependencies_ja": "Wan、Qwen-Image、Z-Image等の対応モデル",
+      "checked_on": "2026-09-09",
+      "code_revision": "e0cbd8f3dfe38365b10f8bc790b980f8894e8ba1",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 2033,
+        "forks": 308,
+        "created_at": "2024-12-31T11:34:01Z",
+        "pushed_at": "2026-09-08T09:30:32Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": null,
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/kohya-ss/musubi-tuner/blob/e0cbd8f3dfe38365b10f8bc790b980f8894e8ba1/README.md"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/kohya-ss/musubi-tuner/blob/e0cbd8f3dfe38365b10f8bc790b980f8894e8ba1/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/kohya-ss/musubi-tuner",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/kohya-ss/musubi-tuner/tree/e0cbd8f3dfe38365b10f8bc790b980f8894e8ba1",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "workflow"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "cache_latents.py",
+        "cache_text_encoder_outputs.py",
+        "caption_images_by_qwen_vl.py",
+        "convert_lora.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "manga-image-translator",
+      "name": "manga-image-translator",
+      "repository": "zyddnys/manga-image-translator",
+      "url": "https://github.com/zyddnys/manga-image-translator",
+      "category": "localization",
+      "kind": "pipeline",
+      "ai_role": "core",
+      "maturity": "established_reference",
+      "inputs_ja": "漫画・イラスト画像",
+      "outputs_ja": "文字除去・翻訳・組版後の画像",
+      "summary_ja": "画像内の文字を検出・認識・翻訳し、元の文字を修復して訳文を組版する。",
+      "assessment_ja": "漫画のローカライズと文字処理工程の技術候補。",
+      "status_ja": "比較・既存工程の参考",
+      "requirements_ja": "Python、OCR・修復モデル、翻訳バックエンド。",
+      "limitations_ja": "公式説明に公開Webデモの停止記載あり。縦書き・擬音・レイアウト保持の品質は素材で検証が必要。",
+      "dependencies_ja": "OCR、インペイント、翻訳モデルまたはAPI",
+      "checked_on": "2026-09-09",
+      "code_revision": "95227a2bb0fd306cd4f0c104d57284026f991b3a",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 10401,
+        "forks": 1060,
+        "created_at": "2021-02-18T03:03:23Z",
+        "pushed_at": "2026-07-20T07:17:48Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/zyddnys/manga-image-translator/blob/95227a2bb0fd306cd4f0c104d57284026f991b3a/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/zyddnys/manga-image-translator/blob/95227a2bb0fd306cd4f0c104d57284026f991b3a/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/zyddnys/manga-image-translator",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/zyddnys/manga-image-translator/tree/95227a2bb0fd306cd4f0c104d57284026f991b3a",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "localization"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "MangaStudioMain.py",
+        "MangaStudio_Data/app/__init__.py",
+        "MangaStudio_Data/app/core/__init__.py",
+        "MangaStudio_Data/app/core/config_loader.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    },
+    {
+      "id": "voicetransl",
+      "name": "VoiceTransl",
+      "repository": "shinnpuru/VoiceTransl",
+      "url": "https://github.com/shinnpuru/VoiceTransl",
+      "category": "localization",
+      "kind": "pipeline",
+      "ai_role": "integration",
+      "maturity": "integration_candidate",
+      "inputs_ja": "音声、動画、字幕",
+      "outputs_ja": "文字起こし、翻訳字幕、動画",
+      "summary_ja": "音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。",
+      "assessment_ja": "ASMR・キャラ音声・映像の字幕付けとローカライズ候補。",
+      "status_ja": "連携の評価候補",
+      "requirements_ja": "音声認識モデルと翻訳用のローカルモデルまたはAPI。",
+      "limitations_ja": "同名forkと公式配布元を区別。声の生成機能ではない。",
+      "dependencies_ja": "Whisper系、翻訳LLM、FFmpeg等",
+      "checked_on": "2026-09-09",
+      "code_revision": "b5f7e5038763aeb3420ac872c0bd191112f92227",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1271,
+        "forks": 52,
+        "created_at": "2024-03-15T14:49:45Z",
+        "pushed_at": "2026-08-28T14:44:44Z",
+        "archived": false,
+        "checked_on": "2026-09-09",
+        "star_growth": null,
+        "snapshot_path": "data/github-snapshot-2026-09-09.json"
+      },
+      "license": {
+        "github_detected_spdx": "GPL-3.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/shinnpuru/VoiceTransl/blob/b5f7e5038763aeb3420ac872c0bd191112f92227/LICENSE"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/shinnpuru/VoiceTransl/blob/b5f7e5038763aeb3420ac872c0bd191112f92227/README.md",
+          "supports": "機能・環境・制約の公式説明。実行による確認ではない"
+        },
+        {
+          "url": "https://api.github.com/repos/shinnpuru/VoiceTransl",
+          "supports": "取得時点のGitHubメタデータ。時点値はdata/github-snapshot-2026-09-09.jsonに保存"
+        },
+        {
+          "url": "https://github.com/shinnpuru/VoiceTransl/tree/b5f7e5038763aeb3420ac872c0bd191112f92227",
+          "supports": "確認したリポジトリのファイル構成"
+        }
+      ],
+      "tags": [
+        "localization",
+        "asmr"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "GalTransl/AppSettings.py",
+        "GalTransl/Backend/BaseTranslate.py",
+        "GalTransl/Backend/ForGalJsonTranslate.py",
+        "GalTransl/Backend/ForGalTsvTranslate.py"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "今回、独立したモデル配布先のファイル一覧は未確認。モデル不要の制作ツールも含む。",
+      "relations": []
+    }
+  ],
+  "title_ja": "サブカルコンテンツ制作リサーチ",
+  "categories": [
+    {
+      "id": "manga",
+      "name_ja": "漫画・イラスト編集"
+    },
+    {
+      "id": "story",
+      "name_ja": "シナリオ・キャラクター・絵コンテ"
+    },
+    {
+      "id": "game",
+      "name_ja": "ゲーム・ノベル・スプライト"
+    },
+    {
+      "id": "animation",
+      "name_ja": "アニメ制作・中割り・彩色・リップシンク"
+    },
+    {
+      "id": "rig2d",
+      "name_ja": "2Dキャラクター・自動リギング"
+    },
+    {
+      "id": "layer",
+      "name_ja": "レイヤー分解"
+    },
+    {
+      "id": "image",
+      "name_ja": "画像生成・編集・切り抜き"
+    },
+    {
+      "id": "video",
+      "name_ja": "動画生成"
+    },
+    {
+      "id": "3d",
+      "name_ja": "3D生成・モデリング・リギング"
+    },
+    {
+      "id": "tts",
+      "name_ja": "TTS・キャラクター音声"
+    },
+    {
+      "id": "sound",
+      "name_ja": "ASMR・効果音・環境音"
+    },
+    {
+      "id": "music",
+      "name_ja": "音楽・歌声合成"
+    },
+    {
+      "id": "vtuber",
+      "name_ja": "VTuber・AIキャラクター・VRM"
+    },
+    {
+      "id": "workflow",
+      "name_ja": "制作ワークフロー・追加学習"
+    },
+    {
+      "id": "localization",
+      "name_ja": "字幕・翻訳・ローカライズ"
+    }
+  ]
+}

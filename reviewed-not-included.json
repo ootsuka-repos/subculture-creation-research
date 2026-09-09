@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-09-09",
+  "items": [
+    {
+      "repository": "zty0304/Anime-layer-decomposition",
+      "url": "https://github.com/zty0304/Anime-layer-decomposition",
+      "status": "pending",
+      "reason_ja": "前回調査でGitHubページ・APIから公開実装の確認に至らなかった。非公開・削除と断定せず、再確認対象とする。",
+      "source_url": "https://arxiv.org/abs/2603.14925",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "repository": "Stability-AI/Stable-Layers",
+      "url": "https://github.com/Stability-AI/Stable-Layers",
+      "status": "outside_initial_selection",
+      "reason_ja": "GitHubメタデータは確認したが、今回の初期10件への機能・利用条件の詳細確認を実施していない。未公開を意味しない。",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "name": "DeepASMR (2026)",
+      "status": "pending_implementation_verification",
+      "checked_on": "2026-09-09",
+      "source_url": "https://arxiv.org/abs/2601.15596",
+      "demo_url": "https://vivian556123.github.io/deepasmr-demo/",
+      "reason_ja": "ASMR音声生成論文と音声サンプルページを確認。研究に対応する公式推論コード・重み配布先を特定できなかった。検索で見つかる2021〜2022年の同名プロジェクトとは区別する。公開されていないとの断定ではない。"
+    },
+    {
+      "name": "Komiko",
+      "repository": "Story-Engine-Inc/Komiko",
+      "url": "https://github.com/Story-Engine-Inc/Komiko",
+      "status": "implementation_not_verified",
+      "checked_on": "2026-09-09",
+      "reason_ja": "検索で公式サービスの紹介READMEを確認したが、実装の公開確認には至らず主一覧へ含めない。"
+    }
+  ]
+}

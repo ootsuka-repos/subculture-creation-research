@@ -1,0 +1,510 @@
+{
+  "checked_on": "2026-09-09",
+  "note_ja": "GitHub API取得値の最初のスナップショット。増加率は未計算。",
+  "repositories": {
+    "jbilcke-hf/ai-comic-factory": {
+      "stars": 1345,
+      "forks": 312,
+      "created_at": "2023-08-25T14:47:46Z",
+      "pushed_at": "2025-10-30T19:17:30Z",
+      "archived": true,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "KDE/krita": {
+      "stars": 10341,
+      "forks": 849,
+      "created_at": "2015-10-09T19:24:19Z",
+      "pushed_at": "2026-09-09T15:31:07Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "new-sankaku/manga-editor-desu": {
+      "stars": 384,
+      "forks": 54,
+      "created_at": "2023-08-14T22:23:46Z",
+      "pushed_at": "2026-08-30T17:00:19Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Reuben-Sun/OpenKoma": {
+      "stars": 12,
+      "forks": 2,
+      "created_at": "2026-04-05T08:12:53Z",
+      "pushed_at": "2026-05-08T08:27:39Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "bluefish2026/BlueFish": {
+      "stars": 8,
+      "forks": 9,
+      "created_at": "2026-04-17T20:38:01Z",
+      "pushed_at": "2026-04-22T04:11:49Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "SillyTavern/SillyTavern": {
+      "stars": 33188,
+      "forks": 6250,
+      "created_at": "2023-02-09T10:19:24Z",
+      "pushed_at": "2026-09-07T21:09:17Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "godotengine/godot": {
+      "stars": 116882,
+      "forks": 26648,
+      "created_at": "2014-01-04T16:05:36Z",
+      "pushed_at": "2026-09-08T17:14:08Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Orama-Interactive/Pixelorama": {
+      "stars": 10272,
+      "forks": 546,
+      "created_at": "2019-08-18T09:28:54Z",
+      "pushed_at": "2026-09-09T16:41:48Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "1mm-module/PNGAL": {
+      "stars": 340,
+      "forks": 44,
+      "created_at": "2026-08-01T13:03:29Z",
+      "pushed_at": "2026-09-01T15:53:21Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "renpy/renpy": {
+      "stars": 6805,
+      "forks": 931,
+      "created_at": "2012-06-28T01:21:22Z",
+      "pushed_at": "2026-09-08T03:48:12Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "JohnKinyanjui/sprite-maker": {
+      "stars": 347,
+      "forks": 46,
+      "created_at": "2026-08-09T20:25:50Z",
+      "pushed_at": "2026-08-19T10:28:09Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "hzwer/ECCV2022-RIFE": {
+      "stars": 5574,
+      "forks": 566,
+      "created_at": "2020-11-12T05:46:23Z",
+      "pushed_at": "2025-09-10T06:32:03Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "bytedance/LatentSync": {
+      "stars": 6059,
+      "forks": 976,
+      "created_at": "2024-12-11T10:32:54Z",
+      "pushed_at": "2025-06-20T07:36:58Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "opentoonz/opentoonz": {
+      "stars": 7691,
+      "forks": 872,
+      "created_at": "2016-03-18T17:55:48Z",
+      "pushed_at": "2026-09-09T07:31:50Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "TencentARC/ToonComposer": {
+      "stars": 585,
+      "forks": 59,
+      "created_at": "2025-08-12T13:14:20Z",
+      "pushed_at": "2025-08-20T06:21:56Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "852wa/Anime2.5DRig": {
+      "stars": 204,
+      "forks": 36,
+      "created_at": "2026-07-04T04:58:37Z",
+      "pushed_at": "2026-09-07T06:23:57Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "CheshireMew/PuppetLoom": {
+      "stars": 215,
+      "forks": 26,
+      "created_at": "2026-08-14T15:48:05Z",
+      "pushed_at": "2026-09-09T15:56:36Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "MangoLion/stretchystudio": {
+      "stars": 472,
+      "forks": 66,
+      "created_at": "2026-04-12T15:51:53Z",
+      "pushed_at": "2026-04-28T03:53:09Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "jtydhr88/ComfyUI-See-through": {
+      "stars": 766,
+      "forks": 68,
+      "created_at": "2026-03-31T14:22:51Z",
+      "pushed_at": "2026-08-20T03:16:42Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "QwenLM/Qwen-Image-Layered": {
+      "stars": 2093,
+      "forks": 170,
+      "created_at": "2025-12-18T08:54:50Z",
+      "pushed_at": "2025-12-31T11:40:35Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "shitagaki-lab/see-through": {
+      "stars": 3868,
+      "forks": 348,
+      "created_at": "2026-03-31T06:29:06Z",
+      "pushed_at": "2026-08-05T13:31:48Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "SkyTNT/anime-segmentation": {
+      "stars": 838,
+      "forks": 76,
+      "created_at": "2022-08-14T07:48:29Z",
+      "pushed_at": "2025-05-21T02:00:35Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Acly/krita-ai-diffusion": {
+      "stars": 10564,
+      "forks": 624,
+      "created_at": "2023-09-01T22:52:13Z",
+      "pushed_at": "2026-08-28T20:55:10Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "QwenLM/Qwen-Image": {
+      "stars": 8294,
+      "forks": 542,
+      "created_at": "2025-08-03T11:03:25Z",
+      "pushed_at": "2026-02-10T07:37:37Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Tongyi-MAI/Z-Image": {
+      "stars": 11999,
+      "forks": 819,
+      "created_at": "2025-11-26T09:18:10Z",
+      "pushed_at": "2026-02-09T12:49:43Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Lightricks/LTX-2": {
+      "stars": 9380,
+      "forks": 1484,
+      "created_at": "2026-01-03T13:16:29Z",
+      "pushed_at": "2026-08-26T10:47:10Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Lightricks/LTX-Video": {
+      "stars": 10941,
+      "forks": 1130,
+      "created_at": "2024-11-20T20:06:28Z",
+      "pushed_at": "2026-01-05T22:37:07Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "zai-org/SCAIL-2": {
+      "stars": 1177,
+      "forks": 89,
+      "created_at": "2026-05-28T11:38:02Z",
+      "pushed_at": "2026-08-24T13:30:59Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Wan-Video/Wan2.2": {
+      "stars": 17444,
+      "forks": 2235,
+      "created_at": "2025-07-28T08:17:01Z",
+      "pushed_at": "2026-03-17T10:48:41Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "blender/blender": {
+      "stars": 20204,
+      "forks": 3220,
+      "created_at": "2019-10-09T12:47:28Z",
+      "pushed_at": "2026-09-09T17:59:50Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Tencent-Hunyuan/Hunyuan3D-2.1": {
+      "stars": 3998,
+      "forks": 600,
+      "created_at": "2025-06-13T15:45:50Z",
+      "pushed_at": "2025-10-17T10:10:07Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "VAST-AI-Research/SkinTokens": {
+      "stars": 375,
+      "forks": 58,
+      "created_at": "2026-02-08T23:39:58Z",
+      "pushed_at": "2026-05-12T13:07:30Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "microsoft/TRELLIS.2": {
+      "stars": 11134,
+      "forks": 1349,
+      "created_at": "2025-11-26T10:04:35Z",
+      "pushed_at": "2026-07-10T12:34:32Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "VAST-AI-Research/UniRig": {
+      "stars": 1741,
+      "forks": 166,
+      "created_at": "2025-04-08T12:56:37Z",
+      "pushed_at": "2026-06-04T07:15:34Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "fishaudio/fish-speech": {
+      "stars": 32627,
+      "forks": 2816,
+      "created_at": "2023-10-10T03:16:51Z",
+      "pushed_at": "2026-09-07T19:20:34Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "RVC-Boss/GPT-SoVITS": {
+      "stars": 61660,
+      "forks": 6649,
+      "created_at": "2024-01-14T18:05:21Z",
+      "pushed_at": "2026-08-18T09:16:25Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "QwenLM/Qwen3-TTS": {
+      "stars": 13328,
+      "forks": 1727,
+      "created_at": "2026-01-21T06:41:32Z",
+      "pushed_at": "2026-03-17T06:38:41Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "litagin02/Style-Bert-VITS2": {
+      "stars": 1370,
+      "forks": 215,
+      "created_at": "2023-12-01T00:15:13Z",
+      "pushed_at": "2025-12-07T13:06:59Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "VOICEVOX/voicevox": {
+      "stars": 3236,
+      "forks": 373,
+      "created_at": "2021-07-27T12:58:06Z",
+      "pushed_at": "2026-09-09T11:18:27Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "ReactorcoreGames/ASMRify": {
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2026-06-18T21:35:30Z",
+      "pushed_at": "2026-06-18T22:47:00Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "open-mmlab/FoleyCrafter": {
+      "stars": 663,
+      "forks": 67,
+      "created_at": "2024-06-25T06:05:16Z",
+      "pushed_at": "2026-06-15T04:39:18Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "hkchengrex/MMAudio": {
+      "stars": 2268,
+      "forks": 267,
+      "created_at": "2024-12-07T07:47:39Z",
+      "pushed_at": "2026-02-23T06:09:19Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Stability-AI/stable-audio-tools": {
+      "stars": 3856,
+      "forks": 483,
+      "created_at": "2023-05-23T15:51:04Z",
+      "pushed_at": "2026-09-09T09:50:41Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "ace-step/ACE-Step-1.5": {
+      "stars": 12616,
+      "forks": 1619,
+      "created_at": "2025-09-04T02:00:07Z",
+      "pushed_at": "2026-09-03T02:46:44Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "openvpi/DiffSinger": {
+      "stars": 3201,
+      "forks": 348,
+      "created_at": "2022-08-03T15:11:21Z",
+      "pushed_at": "2026-09-07T11:30:33Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "openutau/OpenUtau": {
+      "stars": 4281,
+      "forks": 546,
+      "created_at": "2014-11-27T06:55:34Z",
+      "pushed_at": "2026-09-09T06:52:33Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "moeru-ai/airi": {
+      "stars": 48985,
+      "forks": 4849,
+      "created_at": "2024-12-01T16:33:36Z",
+      "pushed_at": "2026-09-09T16:31:39Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Inochi2D/inochi-creator": {
+      "stars": 1217,
+      "forks": 85,
+      "created_at": "2020-11-19T22:19:02Z",
+      "pushed_at": "2025-06-16T20:39:43Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Open-LLM-VTuber/Open-LLM-VTuber": {
+      "stars": 13686,
+      "forks": 1630,
+      "created_at": "2023-11-24T04:55:43Z",
+      "pushed_at": "2026-05-15T07:18:04Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "vrm-c/UniVRM": {
+      "stars": 3378,
+      "forks": 490,
+      "created_at": "2018-04-16T04:20:42Z",
+      "pushed_at": "2026-08-20T07:40:06Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "DenchiSoft/VTubeStudio": {
+      "stars": 1287,
+      "forks": 141,
+      "created_at": "2019-11-11T00:38:43Z",
+      "pushed_at": "2026-09-02T08:39:56Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "Comfy-Org/ComfyUI": {
+      "stars": 132241,
+      "forks": 15590,
+      "created_at": "2023-01-17T03:15:56Z",
+      "pushed_at": "2026-09-09T18:24:58Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "kijai/ComfyUI-WanVideoWrapper": {
+      "stars": 6687,
+      "forks": 691,
+      "created_at": "2025-02-25T18:03:11Z",
+      "pushed_at": "2026-05-24T13:07:20Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "kohya-ss/musubi-tuner": {
+      "stars": 2033,
+      "forks": 308,
+      "created_at": "2024-12-31T11:34:01Z",
+      "pushed_at": "2026-09-08T09:30:32Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "zyddnys/manga-image-translator": {
+      "stars": 10401,
+      "forks": 1060,
+      "created_at": "2021-02-18T03:03:23Z",
+      "pushed_at": "2026-07-20T07:17:48Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    },
+    "shinnpuru/VoiceTransl": {
+      "stars": 1271,
+      "forks": 52,
+      "created_at": "2024-03-15T14:49:45Z",
+      "pushed_at": "2026-08-28T14:44:44Z",
+      "archived": false,
+      "checked_on": "2026-09-09",
+      "star_growth": null
+    }
+  }
+}
