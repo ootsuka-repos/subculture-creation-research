@@ -23,7 +23,7 @@ def require(condition, message):
 
 require(len(ids) == len(items), "重複ID")
 require(len({p["repository"].lower() for p in items}) == len(items), "重複repository")
-require(data["schema_version"] == "2.0", "未対応のschema_version")
+require(data["schema_version"] == "3.0", "未対応のschema_version")
 required = ["summary_ja", "inputs_ja", "outputs_ja", "requirements_ja", "dependencies_ja", "limitations_ja", "assessment_ja", "checked_on", "code_revision", "sources", "kind", "ai_role", "maturity", "repository_role"]
 for p in items:
     label = p["id"]
@@ -40,11 +40,22 @@ for p in items:
     snapshot = json.loads((ROOT / p["metrics"]["snapshot_path"]).read_text(encoding="utf-8"))
     require(snapshot["repositories"][p["repository"]]["stars"] == p["metrics"]["stars"], f"{label}: snapshot不一致")
     require(p["verification"]["weights_file_inventory_verified"] == any(m["verification"] == "file_listing_checked" for m in p["model_resources"]), f"{label}: 重み確認状態の矛盾")
+    require(p['repository_role'] in {'implementation', 'official_mirror', 'api_documentation', 'model_reference'}, f'{label}: repository_role')
+    deep = p['deep_dive']
+    for key in ('reviewed_on', 'production_fit_ja', 'next_validation_ja', 'scope_note_ja', 'license_notes_ja', 'entry_points'):
+        require(bool(deep.get(key)), f'{label}: deep_dive.{key}が空')
+    require(deep['reviewed_on'] == p['checked_on'], f'{label}: 深掘り確認日不一致')
+    require([e['path'] for e in deep['entry_points']] == p['evidence_files'], f'{label}: 入口候補の不一致')
+    for e in deep['entry_points']:
+        require(e['url'] == p['url'] + '/blob/' + p['code_revision'] + '/' + e['path'], f'{label}: 入口URL不一致')
+    for a in deep['source_inspections']:
+        require(a['commit'] == p['code_revision'] and a['finding_ja'] and re.fullmatch(r'[0-9a-f]{40}', a['blob_sha']), f'{label}: 本文確認根拠不足')
     for m in p["model_resources"]:
         if m["verification"] == "file_listing_checked":
             require(m["evidence_files"] and m["revision"] and m["http_status"] == 200, f"{label}: 重み根拠不足")
     for relation in p["relations"]:
         require(relation["target_id"] in ids, f"{label}: 関連先が存在しない")
+        require(relation['basis'] in {'editorial', 'official_documentation'}, f'{label}: 関係の根拠区分')
 
 jsonl = [json.loads(line) for line in (ROOT / "catalog.jsonl").read_text(encoding="utf-8").splitlines()]
 require(jsonl == items, "JSONLとJSONの不一致")
@@ -56,6 +67,16 @@ for row, p in zip(rows, items):
         require(row[key] == p[key], f"{p['id']}: CSV {key}不一致")
     require(json.loads(row["sources_json"]) == p["sources"], f"{p['id']}: CSV根拠不一致")
     require(json.loads(row["model_resources_json"]) == p["model_resources"], f"{p['id']}: CSVモデル不一致")
+    require(json.loads(row['deep_dive_json']) == p['deep_dive'], f"{p['id']}: CSV深掘り不一致")
+models = json.loads((ROOT / 'model-catalog.json').read_text(encoding='utf-8'))
+require(models['schema_version'] == '1.0', 'モデルカタログ形式')
+require(len({m['id'] for m in models['items']}) == len(models['items']), '重複モデルID')
+for m in models['items']:
+    dist = m['distribution']
+    require(dist['revision'] in m['sources'][0]['url'], f"{m['id']}: モデルカード固定参照")
+    require(dist['evidence_files'] and dist['http_status'] == 200 and dist['verification'] == 'file_listing_checked', f"{m['id']}: モデル配布根拠不足")
+    require(m['license_notes_ja'] and m['limitations_ja'], f"{m['id']}: モデル条件不足")
+require([json.loads(x) for x in (ROOT / 'model-catalog.jsonl').read_text(encoding='utf-8').splitlines()] == models['items'], 'モデルJSONL不一致')
 for name, content in render(data).items():
     require((ROOT / name).read_bytes() == content.encode("utf-8"), f"生成物が古い: {name}")
 for path in ROOT.rglob("*.md"):

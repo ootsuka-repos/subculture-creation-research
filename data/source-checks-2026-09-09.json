@@ -1,0 +1,112 @@
+[
+  {
+    "repo": "leigest519/OpenGame",
+    "path": "package.json",
+    "commit": "c9bea37786af524bf3bbe802f2b67d23816fa5c0",
+    "blob_sha": "60fe7ca5973fae44742f8d0b0508166e51bb56be",
+    "url": "https://github.com/leigest519/OpenGame/blob/c9bea37786af524bf3bbe802f2b67d23816fa5c0/package.json",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "Node.js20以上、ワークスペースとCLI起動用scriptsを確認。ゲーム完成・評価再現の証明ではない。"
+  },
+  {
+    "repo": "CheshireMew/PuppetLoom",
+    "path": "LICENSE-NOTICE.md",
+    "commit": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+    "blob_sha": "4a2c679fdf31f4ff1e98d22e83a8d02621259039",
+    "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE-NOTICE.md",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "AGPL-3.0-or-laterの版宣言を確認。"
+  },
+  {
+    "repo": "CheshireMew/PuppetLoom",
+    "path": "README.en.md",
+    "commit": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+    "blob_sha": "2786ccb2fe5f141c11c955777b2ac61adece0e25",
+    "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.en.md",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "Apache-2.0表記が残り中国語README・LICENSE-NOTICEと不一致。"
+  },
+  {
+    "repo": "CheshireMew/PuppetLoom",
+    "path": "README.ja.md",
+    "commit": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+    "blob_sha": "880049701655885cd0dca70602e088c7db2bc8c8",
+    "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.ja.md",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "Apache-2.0表記が残り中国語README・LICENSE-NOTICEと不一致。"
+  },
+  {
+    "repo": "CheshireMew/PuppetLoom",
+    "path": "apps/cli/src/commands/cubism.ts",
+    "commit": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+    "blob_sha": "9ffd89a9ec81d8fb872111bb2ab17c3448ce70c0",
+    "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/apps/cli/src/commands/cubism.ts",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "cubism exportがexportNativeCubismを呼び、EditorとRuntimeの対象版オプションを受け取る部分を確認。生成成功・形式互換は未検証。"
+  },
+  {
+    "repo": "CheshireMew/PuppetLoom",
+    "path": "LICENSE",
+    "commit": "f26c83dd31a48c644eb962971b9e21b9fa06f3f4",
+    "blob_sha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+    "url": "https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "AGPLv3本文の冒頭を確認。法的な適用判断は行っていない。"
+  },
+  {
+    "repo": "IamCreateAI/AnimeColor",
+    "path": "test_msketch.py",
+    "commit": "76fb1f83628fa420fbab73967af7e6b74712ebbc",
+    "blob_sha": "d2bf27d7b3193d6c4dca175886e3ab9b4541f2f8",
+    "url": "https://github.com/IamCreateAI/AnimeColor/blob/76fb1f83628fa420fbab73967af7e6b74712ebbc/test_msketch.py",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "CogVideoX-Fun系モデル・参照網と動画長46、入力設定を記述する冒頭部分を確認。"
+  },
+  {
+    "repo": "xiaomi-research/controlfoley",
+    "path": "demo.py",
+    "commit": "b6c902888d45d75f022e253e3db29836360a3f82",
+    "blob_sha": "fec549f3da35c646d417269e07c2d0ecbc32f309",
+    "url": "https://github.com/xiaomi-research/controlfoley/blob/b6c902888d45d75f022e253e3db29836360a3f82/demo.py",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "video/audio/prompt/durationを受け取り推論設定へ渡すCLI部分を確認。"
+  },
+  {
+    "repo": "kwanyun/StyleID",
+    "path": "example.py",
+    "commit": "bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00",
+    "blob_sha": "1a4779669323a381d896871130b287ec3e801c59",
+    "url": "https://github.com/kwanyun/StyleID/blob/bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00/example.py",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "CLIPModelのget_image_featuresと正規化を確認。画像を生成するコードではない。"
+  },
+  {
+    "repo": "QwenLM/Qwen-Image",
+    "path": "src/examples/demo.py",
+    "commit": "6b5e1f5cec987d404be5ac6657db3b9aacb56a89",
+    "blob_sha": "d54df85aa2671aa0ea2d5aa8d5c2f07185798670",
+    "url": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/src/examples/demo.py",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "DiffusionPipeline.from_pretrainedを呼ぶデモ部分を確認。モデル中核の独立実装ではない。"
+  },
+  {
+    "repo": "VfxDB-Official/VfxDB",
+    "path": "infer_one_stage_hf.py",
+    "commit": "eaf0530af2067e9d0ffcdfc4fdbb114499037cf8",
+    "blob_sha": "5333cdca971a1982dd842202f00063535a2b63d0",
+    "url": "https://github.com/VfxDB-Official/VfxDB/blob/eaf0530af2067e9d0ffcdfc4fdbb114499037cf8/infer_one_stage_hf.py",
+    "checked_on": "2026-09-09",
+    "verification": "selected_text_reviewed",
+    "finding_ja": "ローカルまたはHFチェックポイントとrevisionから推論バンドルを読み込む部分を確認。"
+  }
+]

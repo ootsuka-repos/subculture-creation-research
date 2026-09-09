@@ -2,18 +2,18 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**56件 / 15分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
-機能は公式説明の要約、将来性・用途評価は編集者の判断。起動・推論・品質比較は未実施です。モデル配布先22件でファイル一覧を確認しましたが、重み本体はダウンロードしていません。
+機能は公式説明の要約、将来性・用途評価は編集者の判断。起動・推論・品質比較は未実施です。モデル配布先52件でファイル一覧を確認しましたが、重み本体はダウンロードしていません。
 
 starsは確認時点の累計で増加率は未取得。最終pushは全ブランチの更新を含み、実装改善やリリースを意味しません。旧版・停止済み資料とAPI文書も区別して含めています。
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 204 / 2026-09-07 |
-| [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | PSDから初期リグを作成し、外部エージェントとCLIで検証・調整しながら動く2Dキャラクターを制作する。 | AI連携 / 要再確認 | 215 / 2026-09-09 |
+| [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 215 / 2026-09-09 |
 | [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 472 / 2026-04-28 |
 
 <a id="anime2.5drig"></a>
@@ -33,34 +33,70 @@ PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追�
 - **メトリクス**: ★204、fork 36、作成 2026-07-04、最終push 2026-09-07T06:23:57Z、archived=False
 - **確認**: 2026-09-09 / コミット `7450341934a8ff77bf05b90d9f708786e3eb3996`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/LICENSE)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/852wa/Anime2.5DRig/tree/7450341934a8ff77bf05b90d9f708786e3eb3996)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/README.md) / [GitHub API](https://api.github.com/repos/852wa/Anime2.5DRig) / [固定ツリー](https://github.com/852wa/Anime2.5DRig/tree/7450341934a8ff77bf05b90d9f708786e3eb3996)
 
-関連: documented_input_compatibility → see-through（公式説明、接続実行は未検証）
+### 制作に使う際の検討
+
+ブラウザでPSDから動く立ち絵を作る候補。衣装や髪のレイヤー構造を入力仕様として管理する。
+
+**次に確かめること（実施前）**: 目・口・前後髪の対応、可動角度、JSON再読込、OBS透過を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [lib/app.js](https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/lib/app.js) / [obs_server.py](https://github.com/852wa/Anime2.5DRig/blob/7450341934a8ff77bf05b90d9f708786e3eb3996/obs_server.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-07T06:23:50Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+関連: documented_input_compatibility → see-through（公式説明に基づく関係、接続実行は未検証）
 
 <a id="puppetloom"></a>
 
 ## PuppetLoom
 
-PSDから初期リグを作成し、外部エージェントとCLIで検証・調整しながら動く2Dキャラクターを制作する。
+レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。
 
 - **リポジトリ**: https://github.com/CheshireMew/PuppetLoom
 - **分類**: desktop_tool / AI連携 / 要再確認
 - **入力**: レイヤー付きPSD
-- **出力**: リグ付きプロジェクト、Web/OBS用出力、WebM
-- **環境**: Windows x64。ソース実行はNode.js 24以上。単画像の分解には外部See-throughを利用。
+- **出力**: リグ付きプロジェクト、Web/OBS表示、WebM、CMO3/MOC3等の直接出力経路
+- **環境**: 作者の対象はWindows x64。ソース実行はNode.js24以上・npm11・WebGL2。
 - **依存**: See-through（単画像分解時）
-- **制約・未確認**: 専門的Live2D制作と同等ではない。moc3はCubism Editorでの出力が必要。READMEのApache-2.0表記とGitHub APIのAGPL-3.0判定が不一致のため利用条件は要再確認。
+- **制約・未確認**: 専門的Live2D制作と同等ではない。現行中国語READMEとCLIにCubism直接出力経路があるが、実ファイル生成・互換性は未検証。英語・日本語READMEのApache表記がLICENSE/NOTICEのAGPLと不一致。
 - **編集者評価**: エージェントによる制作と再現可能な修正履歴を組み合わせる設計が有望。
 - **メトリクス**: ★215、fork 26、作成 2026-08-14、最終push 2026-09-09T15:56:36Z、archived=False
 - **確認**: 2026-09-09 / コミット `f26c83dd31a48c644eb962971b9e21b9fa06f3f4`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/CheshireMew/PuppetLoom/tree/f26c83dd31a48c644eb962971b9e21b9fa06f3f4)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
 
-根拠: [固定README](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.md) / [GitHub API](https://api.github.com/repos/CheshireMew/PuppetLoom) / [固定ツリー](https://github.com/CheshireMew/PuppetLoom/tree/f26c83dd31a48c644eb962971b9e21b9fa06f3f4)
+根拠: [固定README](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.md) / [GitHub API](https://api.github.com/repos/CheshireMew/PuppetLoom) / [固定ツリー](https://github.com/CheshireMew/PuppetLoom/tree/f26c83dd31a48c644eb962971b9e21b9fa06f3f4) / [追加一次資料 1](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE-NOTICE.md) / [追加一次資料 2](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.en.md) / [追加一次資料 3](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.ja.md) / [追加一次資料 4](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/apps/cli/src/commands/cubism.ts) / [追加一次資料 5](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE)
 
-関連: documented_upstream → see-through（公式説明、接続実行は未検証）
+### 制作に使う際の検討
+
+PSDから制作・校正の改訂履歴を残す自動化基盤。現行CLIのCubism直接出力も検証候補に含める。
+
+**次に確かめること（実施前）**: 自作PSDで中立・転頭・閉眼を点検し、直接出力したcmo3/moc3を対象Editor/SDKで開いて視覚比較する。
+
+**利用条件の確認メモ**: LICENSEはAGPLv3本文、LICENSE-NOTICEはAGPL-3.0-or-later。中国語READMEは一致するがREADME.en.md/README.ja.mdにはApache-2.0が残る。配布元の版宣言を記録し、商用利用・依存物の条件判断は別。
+
+**入口候補（固定ツリーで存在確認）**: [apps/cli/src/commands/cubism.ts](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/apps/cli/src/commands/cubism.ts) / [packages/core/src/cubism-export.ts](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/packages/core/src/cubism-export.ts)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-09T15:56:36Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+本文を確認した箇所:
+
+- [LICENSE-NOTICE.md](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE-NOTICE.md): AGPL-3.0-or-laterの版宣言を確認。
+- [README.en.md](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.en.md): Apache-2.0表記が残り中国語README・LICENSE-NOTICEと不一致。
+- [README.ja.md](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/README.ja.md): Apache-2.0表記が残り中国語README・LICENSE-NOTICEと不一致。
+- [apps/cli/src/commands/cubism.ts](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/apps/cli/src/commands/cubism.ts): cubism exportがexportNativeCubismを呼び、EditorとRuntimeの対象版オプションを受け取る部分を確認。生成成功・形式互換は未検証。
+- [LICENSE](https://github.com/CheshireMew/PuppetLoom/blob/f26c83dd31a48c644eb962971b9e21b9fa06f3f4/LICENSE): AGPLv3本文の冒頭を確認。法的な適用判断は行っていない。
+
+関連: documented_upstream → see-through（公式説明に基づく関係、接続実行は未検証）
 
 <a id="stretchystudio"></a>
 
@@ -79,8 +115,22 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **メトリクス**: ★472、fork 66、作成 2026-04-12、最終push 2026-04-28T03:53:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `24a83a27ba43e43e9d2e3de5e33994594e6199c2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/LICENSE)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/MangoLion/stretchystudio/tree/24a83a27ba43e43e9d2e3de5e33994594e6199c2)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md) / [GitHub API](https://api.github.com/repos/MangoLion/stretchystudio) / [固定ツリー](https://github.com/MangoLion/stretchystudio/tree/24a83a27ba43e43e9d2e3de5e33994594e6199c2)
 
-関連: documented_input_compatibility → see-through（公式説明、接続実行は未検証）
+### 制作に使う際の検討
+
+分解済みPSDをメッシュ変形に使う候補。See-through互換はレイヤー名だけでなく位置と遮蔽を試す。
+
+**次に確かめること（実施前）**: 前髪・耳・首の境界を大きく動かし、めくれ・透過・保存復元を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [src/mesh/generate.js](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/src/mesh/generate.js) / [eslint.config.js](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/eslint.config.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-04-28T03:53:06Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+関連: documented_input_compatibility → see-through（公式説明に基づく関係、接続実行は未検証）

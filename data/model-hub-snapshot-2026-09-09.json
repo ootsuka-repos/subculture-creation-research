@@ -1,0 +1,619 @@
+{
+  "checked_on": "2026-09-09",
+  "models": [
+    {
+      "url": "https://huggingface.co/circlestone-labs/Anima",
+      "api_url": "https://huggingface.co/api/models/circlestone-labs/Anima",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "f973fc41ec7545364ac9776c2440285f43ff2a30",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "circlestone-labs-non-commercial-license",
+      "evidence_files": [
+        "split_files/diffusion_models/anima-aesthetic-v1.0.safetensors",
+        "split_files/diffusion_models/anima-aesthetic-v1.0b.safetensors",
+        "split_files/diffusion_models/anima-aesthetic-v1.1.safetensors",
+        "split_files/diffusion_models/anima-base-v1.0.safetensors"
+      ],
+      "matching_weight_file_count": 11
+    },
+    {
+      "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+      "api_url": "https://huggingface.co/api/models/cagliostrolab/animagine-xl-4.0",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "2b7c1b397761bf5bd3cc42e5b39ec99314a75a96",
+      "gated": false,
+      "license_metadata": "openrail++",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "animagine-xl-4.0-opt.safetensors",
+        "animagine-xl-4.0.safetensors",
+        "unet/diffusion_pytorch_model.safetensors",
+        "vae/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 6
+    },
+    {
+      "url": "https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0",
+      "api_url": "https://huggingface.co/api/models/OnomaAIResearch/Illustrious-xl-early-release-v0",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "dca0dac303e6dc4b0c31d8001bc685b89b5d0204",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "fair-ai-public-license-1.0-sd",
+      "evidence_files": [
+        "Illustrious-XL-v0.1-GUIDED.safetensors",
+        "Illustrious-XL-v0.1.safetensors",
+        "unet/diffusion_pytorch_model.bin",
+        "unet/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 10
+    },
+    {
+      "url": "https://huggingface.co/Laxhar/noobai-XL-1.1",
+      "api_url": "https://huggingface.co/api/models/Laxhar/noobai-XL-1.1",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "814a274af2b8097c0828819d561ec74c7d0c6cea",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "fair-ai-public-license-1.0-sd",
+      "evidence_files": [
+        "NoobAI-XL-v1.1.safetensors",
+        "unet/diffusion_pytorch_model.safetensors",
+        "vae/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 5
+    },
+    {
+      "url": "https://huggingface.co/Yhmeng1106/anidoc",
+      "api_url": "https://huggingface.co/api/models/Yhmeng1106/anidoc",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "cd1d29fcab5e86fefb3d12d090f9630465f05185",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "anidoc/controlnet/diffusion_pytorch_model.safetensors",
+        "anidoc/scaler.pt",
+        "anidoc/scheduler.bin",
+        "anidoc/unet/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 4
+    },
+    {
+      "url": "https://huggingface.co/Johanan0528/MangaNinjia",
+      "api_url": "https://huggingface.co/api/models/Johanan0528/MangaNinjia",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "4e6237c1d22415272bf98426616fe478cd3202a0",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "controlnet.pth",
+        "denoising_unet.pth",
+        "point_net.pth",
+        "reference_unet.pth"
+      ],
+      "matching_weight_file_count": 4
+    },
+    {
+      "url": "https://huggingface.co/Doubiiu/ToonCrafter",
+      "api_url": "https://huggingface.co/api/models/Doubiiu/ToonCrafter",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "7c56c5a23d9f8a9d99398e2a2491fff4bd6cffaf",
+      "gated": false,
+      "license_metadata": null,
+      "license_name_metadata": null,
+      "evidence_files": [
+        "model.ckpt",
+        "sketch_encoder.ckpt",
+        "sketch_extractor.pth"
+      ],
+      "matching_weight_file_count": 3
+    },
+    {
+      "url": "https://huggingface.co/IndexTeam/Index-anisora",
+      "api_url": "https://huggingface.co/api/models/IndexTeam/Index-anisora",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "b134a8e677e4b22269827af7d596a4f2d9d3430a",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "14B/Wan2.1_VAE.pth",
+        "14B/model_part1.safetensors",
+        "14B/model_part2.safetensors",
+        "14B/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth"
+      ],
+      "matching_weight_file_count": 57
+    },
+    {
+      "url": "https://huggingface.co/lllyasviel/FramePackI2V_HY",
+      "api_url": "https://huggingface.co/api/models/lllyasviel/FramePackI2V_HY",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "86cef4396041b6002c957852daac4c91aaa47c79",
+      "gated": false,
+      "license_metadata": null,
+      "license_name_metadata": null,
+      "evidence_files": [
+        "diffusion_pytorch_model-00001-of-00003.safetensors",
+        "diffusion_pytorch_model-00002-of-00003.safetensors",
+        "diffusion_pytorch_model-00003-of-00003.safetensors"
+      ],
+      "matching_weight_file_count": 3
+    },
+    {
+      "url": "https://huggingface.co/SWivid/F5-TTS",
+      "api_url": "https://huggingface.co/api/models/SWivid/F5-TTS",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+      "gated": false,
+      "license_metadata": "cc-by-nc-4.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "F5TTS_Base/model_1200000.pt",
+        "F5TTS_Base/model_1200000.safetensors",
+        "F5TTS_Base_bigvgan/model_1250000.pt",
+        "F5TTS_v1_Base/model_1250000.safetensors"
+      ],
+      "matching_weight_file_count": 5
+    },
+    {
+      "url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "api_url": "https://huggingface.co/api/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "CosyVoice-BlankEN/model.safetensors",
+        "flow.pt",
+        "hift.pt",
+        "llm.pt"
+      ],
+      "matching_weight_file_count": 9
+    },
+    {
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+      "api_url": "https://huggingface.co/api/models/IndexTeam/IndexTTS-2.5",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "bilibili-model-license",
+      "evidence_files": [
+        "codec.pth",
+        "feat1.pt",
+        "feat2.pt",
+        "gpt.pth"
+      ],
+      "matching_weight_file_count": 7
+    },
+    {
+      "url": "https://huggingface.co/xandergos/terrain-diffusion-30m",
+      "api_url": "https://huggingface.co/api/models/xandergos/terrain-diffusion-30m",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "9ef8030cb805b433b98ec25c5dddefbac07a9e26",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "base_model/diffusion_pytorch_model.safetensors",
+        "coarse_model/diffusion_pytorch_model.safetensors",
+        "decoder_model/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 3
+    },
+    {
+      "url": "https://huggingface.co/nvidia/ARDY-Core-RP-20FPS-Horizon40",
+      "api_url": "https://huggingface.co/api/models/nvidia/ARDY-Core-RP-20FPS-Horizon40",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "abe6c43beb28c867c950acb824b9c4ef3d63fb76",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "nvidia-open-model-agreement",
+      "evidence_files": [
+        "denoiser.safetensors",
+        "tokenizer.safetensors"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/JarrentWu/R-DMesh",
+      "api_url": "https://huggingface.co/api/models/JarrentWu/R-DMesh",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "a374a76866abf15d22b598f1d7f0a80764a4ba76",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "ckpts/dvae/rdmeshvae/dvae_f.pth",
+        "ckpts/rf_model/rdmeshdit/rf_epoch_f.pth"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/YJX-Xiaomi/ControlFoley",
+      "api_url": "https://huggingface.co/api/models/YJX-Xiaomi/ControlFoley",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "cde633f5c3f5ccbedf07994ad6dc124b761df22f",
+      "gated": false,
+      "license_metadata": "cc-by-nc-4.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "weights/controlfoley.pth"
+      ],
+      "matching_weight_file_count": 6
+    },
+    {
+      "url": "https://huggingface.co/OmniLottie/OmniLottie",
+      "api_url": "https://huggingface.co/api/models/OmniLottie/OmniLottie",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "10b0d6bb443a2c70eb6a6fae6400f571d9df29d6",
+      "gated": false,
+      "license_metadata": null,
+      "license_name_metadata": null,
+      "evidence_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors",
+        "pytorch_model.bin"
+      ],
+      "matching_weight_file_count": 3
+    },
+    {
+      "url": "https://huggingface.co/huaichang/PersonaLive",
+      "api_url": "https://huggingface.co/api/models/huaichang/PersonaLive",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "b247581c0361b8bee0aa7232eea6e3fdd6e38e60",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "pretrained_weights/personalive/denoising_unet.pth",
+        "pretrained_weights/personalive/motion_encoder.pth",
+        "pretrained_weights/personalive/motion_extractor.pth",
+        "pretrained_weights/personalive/pose_guider.pth"
+      ],
+      "matching_weight_file_count": 7
+    },
+    {
+      "url": "https://huggingface.co/Ruihang/Wan-Move-14B-480P",
+      "api_url": "https://huggingface.co/api/models/Ruihang/Wan-Move-14B-480P",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "63a21fd3f4f1e6c6104e29f6b8d9b8ce3d635456",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "Wan2.1_VAE.pth",
+        "diffusion_pytorch_model-00001-of-00007.safetensors",
+        "diffusion_pytorch_model-00002-of-00007.safetensors",
+        "diffusion_pytorch_model-00003-of-00007.safetensors"
+      ],
+      "matching_weight_file_count": 10
+    },
+    {
+      "url": "https://huggingface.co/Seed3D/Puppeteer",
+      "api_url": "https://huggingface.co/api/models/Seed3D/Puppeteer",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "d83b1b73cd2e1507968d3eade2d6314082c82763",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "skeleton_ckpts/puppeteer_skeleton_w_diverse_pose.pth",
+        "skeleton_ckpts/puppeteer_skeleton_w_diverse_pose_bone_token.pth",
+        "skeleton_ckpts/puppeteer_skeleton_wo_diverse_pose.pth",
+        "skinning_ckpts/puppeteer_skin_w_diverse_pose_depth1.pth"
+      ],
+      "matching_weight_file_count": 6
+    },
+    {
+      "url": "https://huggingface.co/ryogishiki/VfxDB-models",
+      "api_url": "https://huggingface.co/api/models/ryogishiki/VfxDB-models",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "126f05c502b6527fc9ea679ded49593081827140",
+      "gated": false,
+      "license_metadata": "cc-by-nc-4.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "checkpoints/paper-v1/static-conditional-32/diffusion_pytorch_model.safetensors",
+        "checkpoints/paper-v1/static-unconditional-32/diffusion_pytorch_model.safetensors",
+        "checkpoints/paper-v1/temporal-conditional-32/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 3
+    },
+    {
+      "url": "https://huggingface.co/TencentARC/GenCompositor",
+      "api_url": "https://huggingface.co/api/models/TencentARC/GenCompositor",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "d499350f7aa952e43c2b342092e96b3725d8469e",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "branch/diffusion_pytorch_model.safetensors",
+        "model/pytorch_model/mp_rank_00_model_states.pt",
+        "model/scheduler.bin",
+        "model/transformer/diffusion_pytorch_model-00001-of-00002.safetensors"
+      ],
+      "matching_weight_file_count": 13
+    },
+    {
+      "url": "https://huggingface.co/kwanY/styleid",
+      "api_url": "https://huggingface.co/api/models/kwanY/styleid",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "1967c354f339a636e5b3e16ecab3d0075aa27ab1",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "model.safetensors",
+        "pytorch_model.bin"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/8ruceLi/VFXMaster",
+      "api_url": "https://huggingface.co/api/models/8ruceLi/VFXMaster",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "63d976c76bfd62bb8b991f97f5e753c6d9716c81",
+      "gated": false,
+      "license_metadata": null,
+      "license_name_metadata": null,
+      "evidence_files": [
+        "In-Context-Conditioning/checkpoint-40000/diffusion_pytorch_model-00001-of-00002.safetensors",
+        "In-Context-Conditioning/checkpoint-40000/diffusion_pytorch_model-00002-of-00002.safetensors",
+        "In-Context-Conditioning/checkpoint-40000/scheduler.bin",
+        "One-shot-Adaptation/Acid/checkpoint-200/pytorch_model.pt"
+      ],
+      "matching_weight_file_count": 24
+    },
+    {
+      "url": "https://huggingface.co/tencent/HY-Motion-1.0",
+      "api_url": "https://huggingface.co/api/models/tencent/HY-Motion-1.0",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "620dd559f8d964aac2f82f1204fe6a35ad8ad14d",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "tencent-hunyuan-community",
+      "evidence_files": [
+        "HY-Motion-1.0-Lite/latest.ckpt",
+        "HY-Motion-1.0/latest.ckpt"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/TencentARC/Pixal3D",
+      "api_url": "https://huggingface.co/api/models/TencentARC/Pixal3D",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "b0cb2e1b794cab9aa0ac38a95d794a4d9337437f",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "ckpts/shape_dec_next_dc_f16c32_fp16.safetensors",
+        "ckpts/slat_flow_img2shape_dit_1_3B_1024_bf16.safetensors",
+        "ckpts/slat_flow_img2shape_dit_1_3B_1024_bf16_mv.safetensors",
+        "ckpts/slat_flow_img2shape_dit_1_3B_512_bf16.safetensors"
+      ],
+      "matching_weight_file_count": 11
+    },
+    {
+      "url": "https://huggingface.co/VAST-AI/AniGen",
+      "api_url": "https://huggingface.co/api/models/VAST-AI/AniGen",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "53af954e283b42fcd8d3739a43514196f8093d10",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "ckpts/anigen/slat_dae/ckpts/decoder_final.pt",
+        "ckpts/anigen/slat_dae/ckpts/encoder_final.pt",
+        "ckpts/anigen/slat_flow_auto/ckpts/denoiser.pt",
+        "ckpts/anigen/slat_flow_control/ckpts/denoiser.pt"
+      ],
+      "matching_weight_file_count": 13
+    },
+    {
+      "url": "https://huggingface.co/Roblox/cubepart",
+      "api_url": "https://huggingface.co/api/models/Roblox/cubepart",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "28431d124e77040fcaf34c0a71623ff61d35a6c0",
+      "gated": false,
+      "license_metadata": "openrail",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "multi_part_dit.safetensors",
+        "vae.safetensors"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/microsoft/SQuadGen",
+      "api_url": "https://huggingface.co/api/models/microsoft/SQuadGen",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "67f8b71358cc5817cd7e759bd0c7503168e89291",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "ckpts/sqdiffuse.safetensors",
+        "ckpts/sqvae_geomae.safetensors"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/rainbowow/AnimeColor",
+      "api_url": "https://huggingface.co/api/models/rainbowow/AnimeColor",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "1672912547093795e8a9d2b9590ddb8fea6aa233",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "referencenet/diffusion_pytorch_model.safetensors",
+        "transformer/diffusion_pytorch_model.safetensors"
+      ],
+      "matching_weight_file_count": 2
+    },
+    {
+      "url": "https://huggingface.co/jianzongwu/DiffSensei",
+      "api_url": "https://huggingface.co/api/models/jianzongwu/DiffSensei",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "d862c11da74705eab282f6543ede76be9331c586",
+      "gated": false,
+      "license_metadata": "mit",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "image_generator/clip_image_encoder/model.safetensors",
+        "image_generator/image_proj_model/pytorch_model.bin",
+        "image_generator/magi_image_encoder/pytorch_model.bin",
+        "image_generator/unet/pytorch_model.bin"
+      ],
+      "matching_weight_file_count": 19
+    },
+    {
+      "url": "https://huggingface.co/kha-white/manga-ocr-base",
+      "api_url": "https://huggingface.co/api/models/kha-white/manga-ocr-base",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "aa6573bd10b0d446cbf622e29c3e084914df9741",
+      "gated": false,
+      "license_metadata": "apache-2.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "pytorch_model.bin"
+      ],
+      "matching_weight_file_count": 1
+    },
+    {
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "api_url": "https://huggingface.co/api/models/m-a-p/YuE2-3B",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "gated": false,
+      "license_metadata": "cc-by-nc-4.0",
+      "license_name_metadata": null,
+      "evidence_files": [
+        "model.safetensors"
+      ],
+      "matching_weight_file_count": 1
+    },
+    {
+      "url": "https://huggingface.co/StabilityLabs/Stable-Layers",
+      "api_url": "https://huggingface.co/api/models/StabilityLabs/Stable-Layers",
+      "checked_on": "2026-09-09",
+      "http_status": 200,
+      "weights_downloaded": false,
+      "verification": "file_listing_checked",
+      "revision": "41b2f7692d2bc6be496f1de1f5dd349e93aa090f",
+      "gated": false,
+      "license_metadata": "other",
+      "license_name_metadata": "stabilityai-community",
+      "evidence_files": [
+        "model/adapter_model.safetensors"
+      ],
+      "matching_weight_file_count": 1
+    }
+  ]
+}

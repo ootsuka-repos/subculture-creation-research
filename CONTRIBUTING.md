@@ -32,7 +32,7 @@ catalog.jsonが正本。schema_versionは形式の版。updated_onは一覧更�
 | requirements_ja / dependencies_ja / limitations_ja | 必要環境、外部依存、境界・未確認事項 |
 | assessment_ja | 編集者の評価。性能実測と混ぜない |
 | checked_on / code_revision / sources | 実際の確認日、確認したデフォルトブランチのコミット、根拠。固定README・ツリーURLを優先 |
-| repository_role | implementation / official_mirror / api_documentation |
+| repository_role | implementation / official_mirror / api_documentation / model_reference。最後は配布案内・外部実装の利用デモ中心 |
 | evidence_files / evidence_files_verification | ツリーで存在を確認した代表コードパス。tree_presence_onlyは内容レビューを意味しない |
 | verification | README・ツリー確認、実行、重み取得、モデルファイル一覧確認を独立した真偽値で記録 |
 | metrics | stars/forksは累計、pushed_atは全ブランチを含むAPI値。star_growth=nullは未取得。snapshot_pathが取得時点値の保存先 |
@@ -46,7 +46,7 @@ API文書は実行可能なアプリとして扱わない。非AIツールのver
 
 スター累計・直近push・新規公開・他プロジェクトによる採用・リリースを別々に見る。大きな累計スターを急成長と呼ばない。GitHub Trendingページの掲載を確認していなければ掲載済みと書かない。
 
-メトリクスを更新するときはdata/github-snapshot-YYYY-MM-DD.jsonを新規追加し、既存スナップショットを保持する。比較できる2時点がそろった場合のみ期間と増加量を計算する。リポジトリ移転やforkなど比較条件の変化を注記する。
+メトリクスを更新するときはdata/github-snapshot-YYYY-MM-DD.jsonを新規追加し、既存スナップショットを保持する。同日の追加取得は-deep等の接尾辞で区別する。比較できる2時点がそろった場合のみ期間と増加量を計算する。リポジトリ移転やforkなど比較条件の変化を注記する。
 
 ## 追記の流れ
 
@@ -69,3 +69,15 @@ README.md、catalog.md、catalog.csv、catalog.jsonl、MODEL_CONTEXT.md、catego
 ## 次のモデルへの依頼例
 
 > CONTRIBUTING.mdとRESEARCH_NOTES.mdを読み、AIまたは二次元・サブカル制作に関係する新しい分野・候補を調査してください。既存カテゴリに限定せず、公式実装、用途、入力・出力、モデル配布、制約、根拠、確認日を記録してください。既存候補の後継版も確認し、正本JSONと派生資料を同期してください。
+
+## 深掘りデータとモデル配布の正本
+
+schema 3.0の`deep_dive.production_fit_ja`と`next_validation_ja`は編集者の用途判断・未実施の検証提案であり、テスト結果ではない。`entry_points`は固定ツリー上の代表入口で、README掲載コマンドまたは構成から選ぶ。存在確認をコード内容のレビューと読み替えない。
+
+`source_inspections`が選択した本文の確認記録。path、commit、blob_sha、URL、確認日、具体的なfinding_jaを保持する。ファイル冒頭や特定呼出しの確認から全体のコード監査を主張しない。空ファイル、生成済みバンドル、型宣言、前処理を主要な実行入口と誤認しない。
+
+`latest_github_release=null`はAPIのlatest Releaseが得られなかった状態。研究モデルの公開日・未公開・開発停止を示す値ではない。`default_branch_commit_at`と全ブランチを含む`pushed_at`を区別する。`relations.basis`はofficial_documentationまたはeditorial。後者は比較候補を示し、公式の連携対応とは表示しない。
+
+GitHub以外のアニメ画像モデルは[model-catalog.json](model-catalog.json)（schema 1.0）が正本。[model-catalog.jsonl](model-catalog.jsonl)と[models/anime-models.md](models/anime-models.md)をexport.pyで生成する。GitHubリポジトリ数とは分けて数え、同一モデル系統の全派生や最新版まで確認したとは扱わない。配布URL、revision、カード本文、代表ファイル、条件を保持する。特にlicenseメタデータだけではなく、カード本文の追加条件・不一致を記録する。
+
+[詳細比較レポート](research/deep-dive-2026-09-09.md)はカタログの検証状態と矛盾しないように維持する。新しい比較や改訂時には引用した固定資料も見直す。

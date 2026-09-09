@@ -5,16 +5,18 @@
       "repository": "zty0304/Anime-layer-decomposition",
       "url": "https://github.com/zty0304/Anime-layer-decomposition",
       "status": "pending",
-      "reason_ja": "前回調査でGitHubページ・APIから公開実装の確認に至らなかった。非公開・削除と断定せず、再確認対象とする。",
+      "reason_ja": "深掘りでもGitHub APIは404。非公開・削除を断定せず、公式の別配布先を再確認対象とする。",
       "source_url": "https://arxiv.org/abs/2603.14925",
       "checked_on": "2026-09-09"
     },
     {
       "repository": "Stability-AI/Stable-Layers",
       "url": "https://github.com/Stability-AI/Stable-Layers",
-      "status": "outside_initial_selection",
-      "reason_ja": "GitHubメタデータは確認したが、今回の初期10件への機能・利用条件の詳細確認を実施していない。未公開を意味しない。",
-      "checked_on": "2026-09-09"
+      "status": "moved_to_main_catalog",
+      "reason_ja": "深掘りでdecompose.pyとHFアダプタを確認し主一覧へ移動。READMEの同梱説明とGitHubツリーの差も記録。",
+      "checked_on": "2026-09-09",
+      "catalog_id": "stable-layers",
+      "source_url": "https://github.com/Stability-AI/Stable-Layers/blob/b826314b34b12d7c7cce9f0de7f49a330bd8e011/README.md"
     },
     {
       "name": "DeepASMR (2026)",
@@ -30,7 +32,14 @@
       "url": "https://github.com/Story-Engine-Inc/Komiko",
       "status": "implementation_not_verified",
       "checked_on": "2026-09-09",
-      "reason_ja": "検索で公式サービスの紹介READMEを確認したが、実装の公開確認には至らず主一覧へ含めない。"
+      "reason_ja": "深掘りで指定GitHub APIは404。前回の紹介README確認から実装公開は確認できず、現在の別配布先を再確認対象とする。"
+    },
+    {
+      "name": "OpenGame: GameCoder-27B / OpenGame-Bench",
+      "status": "pending_component_release_verification",
+      "checked_on": "2026-09-09",
+      "source_url": "https://github.com/leigest519/OpenGame/blob/c9bea37786af524bf3bbe802f2b67d23816fa5c0/README.md",
+      "reason_ja": "OpenGameフレームワークは主一覧掲載。専用GameCoder-27B公式重みは未特定で、評価パイプラインはREADMEで公開予定。論文の構成全体が公開済みとは扱わない。"
     }
   ]
 }

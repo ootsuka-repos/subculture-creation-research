@@ -2,20 +2,23 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**56件 / 15分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
-機能は公式説明の要約、将来性・用途評価は編集者の判断。起動・推論・品質比較は未実施です。モデル配布先22件でファイル一覧を確認しましたが、重み本体はダウンロードしていません。
+機能は公式説明の要約、将来性・用途評価は編集者の判断。起動・推論・品質比較は未実施です。モデル配布先52件でファイル一覧を確認しましたが、重み本体はダウンロードしていません。
 
 starsは確認時点の累計で増加率は未取得。最終pushは全ブランチの更新を含み、実装改善やリリースを意味しません。旧版・停止済み資料とAPI文書も区別して含めています。
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ai-comic-factory](https://github.com/jbilcke-hf/ai-comic-factory) · [詳細](#ai-comic-factory) | LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装。 | AI連携 / 旧版・履歴資料 | 1,345 / 2025-10-30 |
+| [DiffSensei](https://github.com/jianzongwu/DiffSensei) · [詳細](#diffsensei) | 複数キャラ参照と配置を条件に白黒漫画のコマを生成する。 | AIモデル・学習 / モデル・研究候補 | 923 / 2025-02-05 |
 | [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,341 / 2026-09-09 |
 | [manga-editor-desu](https://github.com/new-sankaku/manga-editor-desu) · [詳細](#manga-editor-desu) | ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。 | AIは任意 / 更新のある導入・評価候補 | 384 / 2026-08-30 |
+| [MangaNinja](https://github.com/ali-vilab/MangaNinjia) · [詳細](#manganinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 740 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) · [詳細](#openkoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 12 / 2026-05-08 |
+| [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,457 / 2024-09-26 |
 
 <a id="ai-comic-factory"></a>
 
@@ -34,9 +37,62 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **メトリクス**: ★1,345、fork 312、作成 2023-08-25、最終push 2025-10-30T19:17:30Z、archived=True
 - **確認**: 2026-09-09 / コミット `c5dc3c7dafeb593efa3b7c95431ee982965bb524`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/jbilcke-hf/ai-comic-factory/blob/c5dc3c7dafeb593efa3b7c95431ee982965bb524/README.md)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/jbilcke-hf/ai-comic-factory/tree/c5dc3c7dafeb593efa3b7c95431ee982965bb524)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/jbilcke-hf/ai-comic-factory/blob/c5dc3c7dafeb593efa3b7c95431ee982965bb524/README.md) / [GitHub API](https://api.github.com/repos/jbilcke-hf/ai-comic-factory) / [固定ツリー](https://github.com/jbilcke-hf/ai-comic-factory/tree/c5dc3c7dafeb593efa3b7c95431ee982965bb524)
+
+### 制作に使う際の検討
+
+ページ全体を生成する過去のWebアプリ構成の参考。新規導入はアーカイブ状態と外部API依存を先に確認する。
+
+**次に確かめること（実施前）**: サンプルのAPI設定が現在利用できるかを確認し、ページ生成が完了する最小例を再現する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [src/app/interface/page/index.tsx](https://github.com/jbilcke-hf/ai-comic-factory/blob/c5dc3c7dafeb593efa3b7c95431ee982965bb524/src/app/interface/page/index.tsx)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2025-10-30T19:17:19Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="diffsensei"></a>
+
+## DiffSensei
+
+複数キャラ参照と配置を条件に白黒漫画のコマを生成する。
+
+- **リポジトリ**: https://github.com/jianzongwu/DiffSensei
+- **分類**: model_toolkit / AIモデル・学習 / モデル・研究候補
+- **入力**: キャラ参照、コマ説明、配置条件
+- **出力**: 白黒漫画コマ
+- **環境**: Python3.11、PyTorch/CUDA。MLLMなし版は小〜中サイズ・batch1で24GB4090の作者例。
+- **依存**: 画像生成器、必要に応じMLLM、対応チェックポイント
+- **制約・未確認**: 学習コードは調整が必要と作者が明記。漫画データは画像本体の一括配布ではない。台詞は別編集。
+- **編集者評価**: 多人数の顔と配置を制御する漫画研究として優先比較したい。
+- **メトリクス**: ★923、fork 100、作成 2024-12-03、最終push 2025-02-05T03:02:38Z、archived=False
+- **確認**: 2026-09-09 / コミット `9fed2ab50c89f19da12d7796edfa6a41eebf23c8`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
+- **利用条件**: [配布元の条件](https://github.com/jianzongwu/DiffSensei/tree/9fed2ab50c89f19da12d7796edfa6a41eebf23c8)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/jianzongwu/DiffSensei/blob/9fed2ab50c89f19da12d7796edfa6a41eebf23c8/README.md) / [GitHub API](https://api.github.com/repos/jianzongwu/DiffSensei) / [固定ツリー](https://github.com/jianzongwu/DiffSensei/tree/9fed2ab50c89f19da12d7796edfa6a41eebf23c8)
+
+### 制作に使う際の検討
+
+多人数の顔と配置を制御する漫画研究として優先比較したい。
+
+**次に確かめること（実施前）**: 二人の見た目の混線、位置・表情指定、吹き出し領域、MLLM有無の差を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [scripts/demo/gradio_wo_mllm.py](https://github.com/jianzongwu/DiffSensei/blob/9fed2ab50c89f19da12d7796edfa6a41eebf23c8/scripts/demo/gradio_wo_mllm.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2025-02-05T03:02:02Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+モデル配布確認（ファイル一覧のみ。代表モデルであり依存全体ではありません）:
+
+- [jianzongwu/DiffSensei](https://huggingface.co/jianzongwu/DiffSensei) — file_listing_checked、確認日 2026-09-09、revision `d862c11da74705eab282f6543ede76be9331c586`。代表ファイル: `image_generator/clip_image_encoder/model.safetensors`, `image_generator/image_proj_model/pytorch_model.bin`, `image_generator/magi_image_encoder/pytorch_model.bin`, `image_generator/unet/pytorch_model.bin`。gated=False。
 
 <a id="krita"></a>
 
@@ -55,9 +111,23 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **メトリクス**: ★10,341、fork 849、作成 2015-10-09、最終push 2026-09-09T15:31:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `75db0d95e142c9251dc27483180148f77d4de014`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/KDE/krita/blob/75db0d95e142c9251dc27483180148f77d4de014/COPYING)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/KDE/krita/blob/75db0d95e142c9251dc27483180148f77d4de014/README.md) / [GitHub API](https://api.github.com/repos/KDE/krita) / [固定ツリー](https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014)
+
+### 制作に使う際の検討
+
+線・文字・トーンを人が確定する原稿の中心に置く。AI連携は別プラグインで選べる。
+
+**次に確かめること（実施前）**: 縦書き、トーン、印刷解像度、レイヤー保持、PDF等の入稿経路を自作1ページで確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [krita/main.cc](https://github.com/KDE/krita/blob/75db0d95e142c9251dc27483180148f77d4de014/krita/main.cc)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-09T01:54:43Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
 <a id="manga-editor-desu"></a>
 
@@ -76,9 +146,62 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **メトリクス**: ★384、fork 54、作成 2023-08-14、最終push 2026-08-30T17:00:19Z、archived=False
 - **確認**: 2026-09-09 / コミット `04e0cf3de1f3677682f6d1831f2713db70e441ba`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/LICENSE)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/new-sankaku/manga-editor-desu/tree/04e0cf3de1f3677682f6d1831f2713db70e441ba)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/README.md) / [GitHub API](https://api.github.com/repos/new-sankaku/manga-editor-desu) / [固定ツリー](https://github.com/new-sankaku/manga-editor-desu/tree/04e0cf3de1f3677682f6d1831f2713db70e441ba)
+
+### 制作に使う際の検討
+
+生成済み素材を編集可能なページへ配置する用途。画像生成器の選定とコマ編集UIの評価を分ける。
+
+**次に確かめること（実施前）**: 複数ページを保存・再読込し、縦書き・吹き出し・履歴・出力解像度が維持されるか確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [99_server.py](https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/99_server.py) / [service-worker.js](https://github.com/new-sankaku/manga-editor-desu/blob/04e0cf3de1f3677682f6d1831f2713db70e441ba/service-worker.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-08-30T17:00:13Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="manganinjia"></a>
+
+## MangaNinja
+
+参照画像と点対応を使い、線画のキャラクターに指定色を反映する。
+
+- **リポジトリ**: https://github.com/ali-vilab/MangaNinjia
+- **分類**: model / AIモデル・学習 / モデル・研究候補
+- **入力**: 線画、カラー参照、対応点
+- **出力**: 彩色画像
+- **環境**: Python/PyTorch、infer.pyまたはrun_gradio.py。
+- **依存**: SD1.5系、CLIP、線画ControlNet、独自重み
+- **制約・未確認**: GitHub READMEはCC BY-NC 4.0表記、HFメタデータはApache-2.0で不一致。6GB案内は第三者Windows版。
+- **編集者評価**: 服・髪・小物の色を指定したいときの候補。ページ作成や台詞組版は別工程。
+- **メトリクス**: ★740、fork 59、作成 2024-12-23、最終push 2025-03-02T07:20:37Z、archived=False
+- **確認**: 2026-09-09 / コミット `6363c81aaedab0a435d18cba9209a7e842881ad7`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
+- **利用条件**: [配布元の条件](https://github.com/ali-vilab/MangaNinjia/tree/6363c81aaedab0a435d18cba9209a7e842881ad7)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/ali-vilab/MangaNinjia/blob/6363c81aaedab0a435d18cba9209a7e842881ad7/README.md) / [GitHub API](https://api.github.com/repos/ali-vilab/MangaNinjia) / [固定ツリー](https://github.com/ali-vilab/MangaNinjia/tree/6363c81aaedab0a435d18cba9209a7e842881ad7)
+
+### 制作に使う際の検討
+
+服・髪・小物の色を指定したいときの候補。ページ作成や台詞組版は別工程。
+
+**次に確かめること（実施前）**: 点を追加する前後で色の混線と元線画の変化を比較し、利用条件の不一致を配布元で確認する。
+
+**利用条件の確認メモ**: README/バッジCC BY-NC 4.0とHFメタデータApache-2.0が不一致。寛容な方を採用せず配布元で確認する。 商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [infer.py](https://github.com/ali-vilab/MangaNinjia/blob/6363c81aaedab0a435d18cba9209a7e842881ad7/infer.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2025-03-02T07:20:37Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+モデル配布確認（ファイル一覧のみ。代表モデルであり依存全体ではありません）:
+
+- [Johanan0528/MangaNinjia](https://huggingface.co/Johanan0528/MangaNinjia) — file_listing_checked、確認日 2026-09-09、revision `4e6237c1d22415272bf98426616fe478cd3202a0`。代表ファイル: `controlnet.pth`, `denoising_unet.pth`, `point_net.pth`, `reference_unet.pth`。gated=False。
 
 <a id="openkoma"></a>
 
@@ -97,6 +220,55 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **メトリクス**: ★12、fork 2、作成 2026-04-05、最終push 2026-05-08T08:27:39Z、archived=False
 - **確認**: 2026-09-09 / コミット `aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
-- **利用条件**: [配布元の条件](https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/LICENSE)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+- **利用条件**: [配布元の条件](https://github.com/Reuben-Sun/OpenKoma/tree/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
 
 根拠: [固定README](https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/README.md) / [GitHub API](https://api.github.com/repos/Reuben-Sun/OpenKoma) / [固定ツリー](https://github.com/Reuben-Sun/OpenKoma/tree/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c)
+
+### 制作に使う際の検討
+
+PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編集情報を保持する候補。
+
+**次に確かめること（実施前）**: 3ページで保存・復元、台詞修正、フォント欠落、PDFのページ順を点検する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [src/main.tsx](https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/src/main.tsx) / [src/App.tsx](https://github.com/Reuben-Sun/OpenKoma/blob/aa8dbf3c64ce0254d8a335196d8f395c4c1ab99c/src/App.tsx)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-05-08T08:27:22Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="storydiffusion"></a>
+
+## StoryDiffusion
+
+キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。
+
+- **リポジトリ**: https://github.com/HVision-NKU/StoryDiffusion
+- **分類**: model_toolkit / AIモデル・学習 / モデル・研究候補
+- **入力**: シーン記述、キャラクター指定・参照
+- **出力**: 連続画像、漫画素材
+- **環境**: 低VRAM例でも24GB GPU・30GB RAMで作者検証、20GB超を想定。
+- **依存**: SDXL、版・経路によりPhotoMaker等
+- **制約・未確認**: 動画モデルのソースと重みは現READMEのTODOで未公開。画像生成と動画研究の公開範囲を区別する。
+- **編集者評価**: 画像の連続性を比較する既存研究。動画公開済み候補としては使わない。
+- **メトリクス**: ★6,457、fork 642、作成 2024-04-21、最終push 2024-09-26T02:17:52Z、archived=False
+- **確認**: 2026-09-09 / コミット `8de45e424887766fdd84dc917436ff8605f00149`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/HVision-NKU/StoryDiffusion/tree/8de45e424887766fdd84dc917436ff8605f00149)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/HVision-NKU/StoryDiffusion/blob/8de45e424887766fdd84dc917436ff8605f00149/README.md) / [GitHub API](https://api.github.com/repos/HVision-NKU/StoryDiffusion) / [固定ツリー](https://github.com/HVision-NKU/StoryDiffusion/tree/8de45e424887766fdd84dc917436ff8605f00149)
+
+### 制作に使う際の検討
+
+画像の連続性を比較する既存研究。動画公開済み候補としては使わない。
+
+**次に確かめること（実施前）**: 服・顔・小物を固定した6コマで、一貫性とプロンプト追従を別々に採点する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定、モデルメタデータ、各素材の条件は別。商用可否の独立判定は未実施。
+
+**入口候補（固定ツリーで存在確認）**: [gradio_app_sdxl_specific_id_low_vram.py](https://github.com/HVision-NKU/StoryDiffusion/blob/8de45e424887766fdd84dc917436ff8605f00149/gradio_app_sdxl_specific_id_low_vram.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2024-09-26T02:17:52Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
