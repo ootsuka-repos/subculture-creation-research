@@ -6,8 +6,6 @@ import datetime
 import json
 import os
 import time
-import json
-import os
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
