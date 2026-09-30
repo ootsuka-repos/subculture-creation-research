@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "subculture-research-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": ["nodejs_compat"],
+  // public/ は build.mjs の生成物。Workerからのみ読む（URLで直接配信しない）
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": true },
+  "observability": { "enabled": true }
+}

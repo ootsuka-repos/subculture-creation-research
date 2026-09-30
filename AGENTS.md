@@ -14,6 +14,8 @@
 
 会話キャラ・研究の一部は制作カタログと重複する。`catalog_id` があれば詳細は `catalog.jsonl` の該当 `id` を見る。
 
+MCPで接続できる場合はリモートMCPサーバー `https://subculture-research-mcp.x-agent.workers.dev/mcp`（Streamable HTTP・読み取り専用、実装は `cloudflare/`）を使うと、上記の全データを横断検索（`search`）・1件取得（`get_item`）・リポジトリ名から登場箇所を横断（`find_repository`）・解説Markdownを見出し単位で取得（`read_document`）できる。公開版は最後に `cd cloudflare && npm run deploy` した時点のデータ。ファイルを直接読む場合は下表に従う。
+
 ## 質問から読むファイル
 
 | 質問の種類 | 読む | 読まない |

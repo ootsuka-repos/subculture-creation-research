@@ -129,6 +129,8 @@ for i in comp['items']:
 for name, content in {**render(data), **render_datasets(), **render_sota()}.items():
     require((ROOT / name).read_bytes() == content.encode("utf-8"), f"生成物が古い: {name}")
 for path in ROOT.rglob("*.md"):
+    if path.relative_to(ROOT).parts[0] == "cloudflare":  # node_modules とビルド生成物 public/
+        continue
     for target in re.findall(r"\]\(([^)\s]+)\)", path.read_text(encoding="utf-8")):
         if target.startswith(("https://", "http://", "#", "mailto:")):
             continue

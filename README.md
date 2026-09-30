@@ -21,6 +21,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) を読むと、質問別に必要なファイルだけを取得できます。
 
+## MCPサーバー
+
+正本JSONと解説Markdownを読み取り専用で返すリモートMCPサーバー（Streamable HTTP、認証なし）。Cloudflare Workersで公開しています。
+
+```json
+{"mcpServers": {"subculture-research": {"type": "http", "url": "https://subculture-research-mcp.x-agent.workers.dev/mcp"}}}
+```
+
+実装は [cloudflare/](cloudflare/)。データを更新したら `cd cloudflare && npm install && npm run deploy` で反映します（`npm run dev` でローカル起動）。
+
+ツール: `overview`（件数・分野ID・選定基準）、`search`（全データ横断の全文検索）、`list_items`、`get_item`（根拠つき全項目）、`find_repository`（リポジトリの登場箇所を横断）、`list_documents`、`read_document`（見出し単位で取得）。
+
 ## 読み方
 
 | 目的 | ファイル |
