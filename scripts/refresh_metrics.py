@@ -5,6 +5,9 @@
 import datetime
 import json
 import os
+import time
+import json
+import os
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -15,16 +18,22 @@ TODAY = datetime.date.today().isoformat()
 
 
 def get(url):
+    """JSONを取得。削除・非公開・gated、または再試行しても失敗したものは None（呼び出し側は前回値を残す）。"""
     headers = {'User-Agent': 'subculture-research-refresh', 'Accept': 'application/vnd.github+json'}
     if 'api.github.com' in url and os.environ.get('GITHUB_TOKEN'):
         headers['Authorization'] = f"Bearer {os.environ['GITHUB_TOKEN']}"
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        if e.code in (401, 403, 404, 451):  # 削除・非公開・gated は前回値を残す
-            return None
-        raise
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 404, 451):
+                return None
+        except (urllib.error.URLError, TimeoutError):
+            pass
+        time.sleep(2 ** attempt)
+    print(f'skip (failed 3x): {url}')
+    return None
 
 
 def github(repo):
