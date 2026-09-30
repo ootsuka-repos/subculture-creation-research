@@ -2,7 +2,7 @@
   "schema_version": "3.0",
   "updated_on": "2026-09-09",
   "scope_ja": "AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。",
-  "reference_catalog": "https://github.com/ootsuka-repos/entertainment-ai-2026-code-models",
+  "reference_catalog": "entertainment-ai-2026-code-models/",
   "items": [
     {
       "id": "ai-comic-factory",

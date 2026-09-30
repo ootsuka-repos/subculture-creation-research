@@ -4,7 +4,7 @@
 
 PuppetLoomに近いツールから始め、ユーザーの希望によりサブカル制作全般へ拡張した。15分野・56リポジトリを選定。全件の公式READMEとGitHub APIメタデータ・コミット・ファイル構成を確認した。22の代表モデル配布先ではHugging Face APIのファイル一覧・revision・アクセスメタデータも確認した。重みのダウンロード、起動・推論、作品制作、性能・品質比較は行っていない。
 
-参考構成: [entertainment-ai-2026-code-models](https://github.com/ootsuka-repos/entertainment-ai-2026-code-models)。本調査は会議論文の網羅調査ではなく、制作用途に基づく選定。参考リポジトリの全研究を転記・再検証した一覧ではない。
+参考構成: [entertainment-ai-2026-code-models](entertainment-ai-2026-code-models/README.md)。本調査は会議論文の網羅調査ではなく、制作用途に基づく選定。参考リポジトリの全研究を転記・再検証した一覧ではない。
 
 ## 今回確認した動き
 

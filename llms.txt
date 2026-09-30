@@ -1,0 +1,32 @@
+# subculture-creation-research
+
+> 二次元・サブカル制作に関わるAI/ツールの調査資料集（日本語）。確認日付き。人気ランキングや動作保証ではない。規則は AGENTS.md。
+
+## まず読む
+- [AGENTS.md](AGENTS.md): コレクション構成、質問別の読み先、引用規則
+- [README.md](README.md): 全体の目次と分野一覧
+
+## 制作ツール（GitHub 115件 / 18分野）
+- [WORKFLOWS.md](WORKFLOWS.md): 制作目的別の組み合わせ
+- [categories/](categories/): 分野別の詳細（manga, story, game, animation, rig2d, layer, image, video, 3d, tts, sound, music, vtuber, workflow, localization, motion, vfx, production）
+- [catalog.jsonl](catalog.jsonl): 1行1件（id, sources, checked_on, code_revision）
+- [MODEL_CONTEXT.md](MODEL_CONTEXT.md): 全件の短縮版（約78KB、一括投入用）
+- [research/deep-dive-2026-09-09.md](research/deep-dive-2026-09-09.md): 分野横断の比較
+
+## 画像モデル（GitHub外）
+- [models/anime-models.md](models/anime-models.md)
+- [model-catalog.jsonl](model-catalog.jsonl)
+
+## 会話AIキャラクター（Live2D / VRM / AI VTuber）
+- [awesome-anime-ai-characters/README.md](awesome-anime-ai-characters/README.md)
+- [awesome-anime-ai-characters/characters.jsonl](awesome-anime-ai-characters/characters.jsonl): name, url, section, description_ja
+
+## 研究（公式コード＋公開重み）
+- [entertainment-ai-2026-code-models/README.md](entertainment-ai-2026-code-models/README.md)
+- [papers.jsonl](entertainment-ai-2026-code-models/papers.jsonl): SIGGRAPH 2026 の66件（summary_ja, models, code_url）
+- [entertainment-research-2026.jsonl](entertainment-ai-2026-code-models/entertainment-research-2026.jsonl): 関連会議21件
+
+## Optional
+- [RESEARCH_NOTES.md](RESEARCH_NOTES.md): 調査範囲と追加調査の方向
+- [CONTRIBUTING.md](CONTRIBUTING.md): 追記ルールとデータ仕様
+- [reviewed-not-included.json](reviewed-not-included.json): 保留・未掲載候補
