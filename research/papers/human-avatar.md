@@ -1,0 +1,15 @@
+# 人体・顔・アバター（7件）
+
+[研究一覧の索引](../papers.md) · [機械可読データ](../papers.json)
+
+公式コードと本研究の学習済み重みの両方が公開されている研究。公開は利用条件・商用利用可・動作確認を意味しない。各項目のコミット、モデルのrevision・確認ファイル、根拠URLは papers.json / papers.jsonl。
+
+| 論文 | 会議 | 何ができるか | 公式コード | モデル | 公開範囲・備考 |
+| --- | --- | --- | --- | --- | --- |
+| [EchoAvatar: Real-time Generative Avatar Animation from Audio Streams](https://doi.org/10.1145/3799902.3811066)<br>[制作カタログ](../../categories/motion.md#echoavatar) | SIGGRAPH 2026 | 入力音声ストリームから顔と身体の動きを生成し、Unityのアバターをリアルタイムに動かす。 | [RobinWitch/EchoAvatar](https://github.com/RobinWitch/EchoAvatar) · 条件は各リポジトリ参照 | [HF](https://huggingface.co/robinwitch/EchoAvatar) | 音声駆動モデルとUnityパッケージ。 |
+| [EgoForce: Forearm-Guided Camera-Space 3D Hand Pose from a Monocular Egocentric Camera](https://doi.org/10.1145/3799902.3811047) | SIGGRAPH 2026 | 頭部に付けた単眼カメラの画像から、前腕の情報を利用して手の3D位置・姿勢・形状を推定する。 | [dfki-av/EgoForce](https://github.com/dfki-av/EgoForce) · 条件は各リポジトリ参照 | [HF](https://huggingface.co/chris10/EgoForce) | モデル配布元は公式ダウンロードスクリプトで確認。 |
+| [EgoRelight: Egocentric Human Capture and Illumination Recovery for Relightable and Photoreal Avatar Rendering](https://doi.org/10.1145/3811346) | SIGGRAPH 2026 | 一人称視点の人物撮影と照明推定を組み合わせ、照明を変更して描画できる写実的なアバターを構築する。 | [jcjackch/EgoRelight](https://github.com/jcjackch/EgoRelight) · [条件](https://github.com/jcjackch/EgoRelight/blob/main/LICENSE) | [配布先](https://gvv-assets.mpi-inf.mpg.de/EgoRelight) | 配布サイトに登録・ログインが必要。被写体別重み等を配布。static-lighting appearance networkは未配布。 |
+| [OmniHands: Robust Motion Capture of Interactive Hands via A Versatile Transformer](https://doi.org/10.1145/3807943) | SIGGRAPH 2026 | 画像・動画・複数視点の入力から、接触や重なりのある両手の3D形状と動きを復元する。 | [LinDixuan/OmniHands](https://github.com/LinDixuan/OmniHands) · 条件は各リポジトリ参照 | [配布先](https://drive.google.com/file/d/1ZoP4qmYE8MyXCfhGK5meWWfBOYpy1VZ7/view) · [配布先](https://drive.google.com/file/d/1jLo7cFIWeDXep_hhvumWdm90QIwy_HwB/view) · [配布先](https://drive.google.com/file/d/10EZF6qLQuTyrxS0glP23HFOAdiLQ9gy7/view) | 画像・動画・複数視点の重み。MANOは別途利用条件あり。 |
+| [Learning a Delighting Prior for Facial Appearance Capture in the Wild](https://doi.org/10.1145/3811303) | SIGGRAPH 2026 | 顔の見た目から撮影時の照明や影の影響を取り除く。別の照明で描画する顔アセットの準備向け。 | [yxuhan/OpenDelight](https://github.com/yxuhan/OpenDelight) · [条件](https://github.com/yxuhan/OpenDelight/blob/main/LICENSE) | [配布先](https://drive.google.com/file/d/1bCIKOGNlKcGgObg5AeErUHkRTMuv0HHZ/view) | OpenDelight。配布モデルと論文内モデルの一致を著者が説明。 |
+| [PEAR: Pixel-aligned Expressive humAn mesh Recovery](https://doi.org/10.1145/3799902.3811096) | SIGGRAPH 2026 | 人物画像から身体・手・顔を含む表情豊かな3D人体メッシュのパラメータを推定する。 | [Pixel-Talk/PEAR](https://github.com/Pixel-Talk/PEAR) · [条件](https://github.com/Pixel-Talk/PEAR/blob/main/LICENSE.txt) | [HF](https://huggingface.co/BestWJH/PEAR_models) | SMPL・SMPL-X・FLAMEには別途利用条件あり。 |
+| [VFAvatar: Feed-Forward 3D Avatar Reconstruction from Casual Image Collections](https://doi.org/10.1145/3799902.3811171) | SIGGRAPH 2026 | 日常的に撮った複数の人物画像から、アニメーション可能な3Dデジタルヒューマンを復元する。 | [huangshuo200823/VFAvatar](https://github.com/huangshuo200823/VFAvatar) · 条件は各リポジトリ参照 | [配布先](https://drive.google.com/file/d/18ITE4nXa0eYQqZueqnnzcLJQyNhhyHW7/view) | 事前学習済みアバター復元モデル。 |

@@ -1,0 +1,667 @@
+{
+ "schema_version": "1.0",
+ "checked_on": "",
+ "scope_ja": "アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。",
+ "notice_ja": "**注意**: リンク先のコード・モデル・音声・キャラクター素材の権利はそれぞれ別です。掲載は動作・安全性・商用利用の保証ではありません。導入前に各リポジトリのライセンス、同梱素材と外部APIの利用条件を確認してください。版権キャラのモデル・声の再利用や、実在人物の発言・私的な記録を用いた人格作成には権利と同意の確認が必要です。",
+ "discovery_md": "調査の入口: [live2d](https://github.com/topics/live2d) · [vtuber](https://github.com/topics/vtuber) · [anime](https://github.com/topics/anime) · [waifu](https://github.com/topics/waifu) · [virtualassistant](https://github.com/topics/virtualassistant) · [ai-companion](https://github.com/topics/ai-companion) · [chatbot](https://github.com/topics/chatbot) · [digital-human](https://github.com/topics/digital-human) のトピック、GitHubの関連語検索、[awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers) と [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion)。候補リストやトピックの掲載だけで採用せず、各プロジェクトのREADME・関連ドキュメントで機能と未実装部分を確認しています（2026-09-23）。",
+ "criteria_ja": [
+  "対象: アニメ調のキャラクターとAIで会話できるアプリ、AI VTuber実装、キャラクター対話環境、およびそれらに直接使う人格・キャラカード・記憶・アバターの部品。単体で会話できないものは専用の節に明示。",
+  "対象外: 一般的なチャットボット、アニメ作品データベース、画像生成だけのツール、写実的な人物動画専用のデジタルヒューマン。AI非搭載の部品は専用の節に明示。",
+  "同じプロジェクトは複数トピックにあっても一度だけ掲載。派生版は元との違いが明確な場合に限り区別する。機能は上流の記述に沿った要約であり、ベンチマークや動作検証の結果ではありません。"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "name_ja": "Live2D・2Dキャラクターとの対話"
+  },
+  {
+   "id": "s2",
+   "name_ja": "AI VTuber・配信"
+  },
+  {
+   "id": "s3",
+   "name_ja": "VRM・3Dキャラクターとの対話"
+  },
+  {
+   "id": "s4",
+   "name_ja": "キャラクター会話・ロールプレイ"
+  },
+  {
+   "id": "s5",
+   "name_ja": "人格・キャラカード・会話記憶の制作"
+  },
+  {
+   "id": "s6",
+   "name_ja": "アバター表示・アニメーション部品"
+  }
+ ],
+ "selection_guide": [
+  {
+   "purpose_ja": "自分のLive2Dキャラと音声会話",
+   "start_with_md": "[Warashi](https://github.com/inni918/warashi)、[Komorebi](https://github.com/kiskaserver/interactive_assistent)",
+   "check_ja": "LLM接続、モデル素材・Cubism Coreの入手条件。Warashiは既存実装の派生版。"
+  },
+  {
+   "purpose_ja": "配信コメントにキャラが応答",
+   "start_with_md": "[AkaneDen](https://github.com/nadezhdkov/AkaneDen)（Twitch）、[LiveVTuber Stage](https://github.com/KKLL2025/AILiveVTuber-Stage)（Bilibili）",
+   "check_ja": "対象サービスの認証、音声API、VTube StudioまたはLive2Dモデル。"
+  },
+  {
+   "purpose_ja": "VRMで会話・デスクトップ常駐",
+   "start_with_md": "[Aikeya](https://github.com/aikeyaorg/aikeya)、[AniCompanion](https://github.com/catsmice/AniCompanion)",
+   "check_ja": "前者はWebとmacOSベータ、後者はmacOS 15以降で外部エージェントが必要。"
+  },
+  {
+   "purpose_ja": "テキストでキャラ設定・物語を試す",
+   "start_with_md": "[SillyTavern](https://github.com/SillyTavern/SillyTavern)、[Serene Pub](https://github.com/doolijb/serene-pub)",
+   "check_ja": "LLM接続が必要。後者は複数人セッションとキャラ別の情報管理が特徴。"
+  },
+  {
+   "purpose_ja": "発言資料から人格を整理する",
+   "start_with_md": "[Distilly](https://github.com/titanwings/distilly)、[CharGen](https://github.com/Karmacoke/chargen)",
+   "check_ja": "前者は資料由来のAgent Skill、後者は創作キャラの設定・プロンプト生成。どちらもアバターアプリではない。"
+  }
+ ],
+ "items": [
+  {
+   "id": "moeru-ai-airi",
+   "name": "Project AIRI",
+   "url": "https://github.com/moeru-ai/airi",
+   "repository": "moeru-ai/airi",
+   "section_id": "s1",
+   "summary_ja": "Live2D/VRMを表示し、音声で会話できるAIキャラクタープロジェクト。Webとデスクトップ向けで、ゲーム連携も扱う。",
+   "catalog_id": "airi",
+   "checked_on": ""
+  },
+  {
+   "id": "open-llm-vtuber-open-llm-vtuber",
+   "name": "Open-LLM-VTuber",
+   "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+   "repository": "Open-LLM-VTuber/Open-LLM-VTuber",
+   "section_id": "s1",
+   "summary_ja": "Live2DアバターとLLM・音声認識・音声合成をつなぐ会話アプリ。Web/デスクトップ、ローカルモデル構成やデスクトップペット表示に対応。",
+   "catalog_id": "open-llm-vtuber",
+   "checked_on": ""
+  },
+  {
+   "id": "jofizcd-soul-of-waifu",
+   "name": "Soul of Waifu",
+   "url": "https://github.com/jofizcd/Soul-of-Waifu",
+   "repository": "jofizcd/Soul-of-Waifu",
+   "section_id": "s1",
+   "summary_ja": "Live2D/VRMのキャラクターとテキスト・音声で交流するWindows向けアプリ。キャラクター記憶とRPGモードも備える。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "voine-chatwaifu-mobile",
+   "name": "ChatWaifu Mobile",
+   "url": "https://github.com/Voine/ChatWaifu_Mobile",
+   "repository": "Voine/ChatWaifu_Mobile",
+   "section_id": "s1",
+   "summary_ja": "Android向けの二次元キャラクター会話アプリ。Live2D表示、端末上のVITS音声合成とSherpa音声認識を組み合わせる。付属モデルの商用利用は禁止と明記されている。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "morettt-my-neuro",
+   "name": "my-neuro",
+   "url": "https://github.com/morettt/my-neuro",
+   "repository": "morettt/my-neuro",
+   "section_id": "s1",
+   "summary_ja": "交換可能なLive2Dモデル、音声・性格を持つAIデスクトップ伴侶の制作ワークベンチ。ローカルLLM、音声会話、配信連携を扱う。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "elevenyellow-handcrafted-persona-engine",
+   "name": "Persona Engine",
+   "url": "https://github.com/elevenyellow/handcrafted-persona-engine",
+   "repository": "elevenyellow/handcrafted-persona-engine",
+   "section_id": "s1",
+   "summary_ja": "マイク入力→LLM→TTS→Live2Dの発話・表情同期を統合。透明デスクトップオーバーレイとOBS向け出力があり、Windows x64とNVIDIA CUDAが必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "project-n-e-k-o-n-e-k-o",
+   "name": "Project N.E.K.O.",
+   "url": "https://github.com/Project-N-E-K-O/N.E.K.O",
+   "repository": "Project-N-E-K-O/N.E.K.O",
+   "section_id": "s1",
+   "summary_ja": "Live2D/VRM/MMDなどのキャラ表示にテキスト・音声・画像入力、持続記憶とエージェント機能を組み合わせる。機能ごとの環境・モデル対応は異なる。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "kdaip-echobot",
+   "name": "EchoBot",
+   "url": "https://github.com/KdaiP/EchoBot",
+   "repository": "KdaiP/EchoBot",
+   "section_id": "s1",
+   "summary_ja": "Live2DキャラとのWeb音声対話と、別系統で動くファイル操作などのエージェントを統合。QQ/Telegramにも接続できる。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "kiyotakali-miru",
+   "name": "Miru",
+   "url": "https://github.com/kiyotakali/Miru",
+   "repository": "kiyotakali/Miru",
+   "section_id": "s1",
+   "summary_ja": "Live2Dデスクトップペット。許可した画面情報、日誌・長期記憶を使って自発的に話しかける。会話用モデルAPIは利用者が設定する。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "waifuai-waifu-companion",
+   "name": "Waifu Companion",
+   "url": "https://github.com/waifuai/waifu-companion",
+   "repository": "waifuai/waifu-companion",
+   "section_id": "s1",
+   "summary_ja": "ブラウザ上でLive2Dキャラを切り替え、人格設定・表情・会話要約と音声入出力を使える。LLMとの通常会話には外部API設定が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "ptghb-virtual-person",
+   "name": "小凡AI (virtual-person)",
+   "url": "https://github.com/ptghb/virtual-person",
+   "repository": "ptghb/virtual-person",
+   "section_id": "s1",
+   "summary_ja": "Live2Dの表情・動作とLLM対話、TTS、長期記憶を統合。カメラによる手ぶり・視線連動やデスクトップ表示にも対応。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "inni918-warashi",
+   "name": "Warashi",
+   "url": "https://github.com/inni918/warashi",
+   "repository": "inni918/warashi",
+   "section_id": "s1",
+   "summary_ja": "Open-LLM-VTuber派生のmacOS/Windows向けLive2D伴侶。キャラ別の永続記憶、自発会話、音声割り込みと就寝モードを追加。LLMは利用者が用意し、**同梱フロントエンドと試供モデルの利用条件はコードと別**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "yingwang-iris",
+   "name": "Iris",
+   "url": "https://github.com/yingwang/iris",
+   "repository": "yingwang/iris",
+   "section_id": "s1",
+   "summary_ja": "Live2Dの顔追跡と音声割り込み、自発発話を組み合わせたブラウザ伴侶。Claude CLIの認証が必要で、音声合成にはオンラインサービスを使う。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "kiskaserver-interactive-assistent",
+   "name": "Komorebi",
+   "url": "https://github.com/kiskaserver/interactive_assistent",
+   "repository": "kiskaserver/interactive_assistent",
+   "section_id": "s1",
+   "summary_ja": "Live2Dのデスクトップ秘書。ローカルのllama.cpp／Whisper.cpp／Piperまたは外部モデルを接続し、許可した画面の参照や会話検索を行う。Cubism Coreとモデルは別途用意。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "suzuran0y-live2d-llm-chat",
+   "name": "Live2D-LLM-Chat",
+   "url": "https://github.com/suzuran0y/Live2D-LLM-Chat",
+   "repository": "suzuran0y/Live2D-LLM-Chat",
+   "section_id": "s1",
+   "summary_ja": "SenseVoice/FunASRの音声認識、LM Studio等のLLM、CosyVoice合成とLive2Dの口パクをつなぐ対話実装。各音声モデルとLive2Dモデルを別途準備。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "xshiroenguyenx-anime-companion-vscode",
+   "name": "Anime Companion for VS Code",
+   "url": "https://github.com/xShiroeNguyenx/anime-companion-vscode",
+   "repository": "xShiroeNguyenx/anime-companion-vscode",
+   "section_id": "s1",
+   "summary_ja": "VS Code内のLive2Dキャラがコード文脈を踏まえて会話し、エラーやコミットにも反応する試験的拡張。デスクトップに浮かせる機能はWindows限定。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "daniel3282-gemma-live2d-assistant",
+   "name": "Gemma Live2D Assistant",
+   "url": "https://github.com/Daniel3282/gemma-live2d-assistant",
+   "repository": "Daniel3282/gemma-live2d-assistant",
+   "section_id": "s1",
+   "summary_ja": "Gemmaのオンデバイス音声・画面認識とLive2Dの口パクを組み合わせた実験的なデスクトップ伴侶。モデルの初回取得が必要で、**同梱Live2D素材は非商用条件**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "zoollcar-live2d-ai-chat",
+   "name": "Live2D AI chat",
+   "url": "https://github.com/zoollcar/live2d-AI-chat",
+   "repository": "zoollcar/live2d-AI-chat",
+   "section_id": "s1",
+   "summary_ja": "ブラウザ内のGGUFモデル、または権限を分けたブラウザ拡張経由の外部モデルでLive2Dと会話。音声・画像やWebページの入力にも対応し、付属素材の利用条件に注意。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "ryuno016-ai-secretary",
+   "name": "ai-secretary",
+   "url": "https://github.com/ryuno016/ai-secretary",
+   "repository": "ryuno016/ai-secretary",
+   "section_id": "s1",
+   "summary_ja": "OpenAI・Whisper・VOICEVOXで話すLive2Dデスクトップ秘書。タスクの登録・確認もできる。**Live2DモデルとCubism Coreは同梱されず**、別途入手が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "ikaros-521-ai-vtuber",
+   "name": "Luna AI (AI-Vtuber)",
+   "url": "https://github.com/Ikaros-521/AI-Vtuber",
+   "repository": "Ikaros-521/AI-Vtuber",
+   "section_id": "s2",
+   "summary_ja": "LLM・TTSとLive2Dなどのアバターを接続し、配信コメントへの応答やローカル会話を行う。READMEには商用時の別条件が記載されている。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "heshengtao-super-agent-party",
+   "name": "Super Agent Party",
+   "url": "https://github.com/heshengtao/super-agent-party",
+   "repository": "heshengtao/super-agent-party",
+   "section_id": "s2",
+   "summary_ja": "VRMデスクトップ伴侶、Live2D拡張・VTube Studio連携、キャラクターカードでの複数人会話や配信ボットを備える。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "sugarcanedefender-z-waif",
+   "name": "z-waif",
+   "url": "https://github.com/SugarcaneDefender/z-waif",
+   "repository": "SugarcaneDefender/z-waif",
+   "section_id": "s2",
+   "summary_ja": "ローカルLLMやWhisper/RVCとVTube Studioを連携させるAIキャラ環境。音声会話、ロアブック、過去会話検索を備える。外部ソフトの準備が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "zoan37-chatvrm",
+   "name": "ChatVRM (Restream連携版)",
+   "url": "https://github.com/zoan37/ChatVRM",
+   "repository": "zoan37/ChatVRM",
+   "section_id": "s2",
+   "summary_ja": "pixiv版ChatVRMから派生したVRM会話デモ。Restream経由でX/Twitchの配信コメントを取り込み、OpenRouterとElevenLabsで応答する。配信には各サービスの設定が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "mashasnolife-yuna-ai",
+   "name": "Yuna AI",
+   "url": "https://github.com/MasHasNoLife/yuna-ai",
+   "repository": "MasHasNoLife/yuna-ai",
+   "section_id": "s2",
+   "summary_ja": "OllamaとKokoroの音声をVTube StudioのLive2Dへ送り、表情・口パクを動かすローカルAI VTuber。**配信コメント取得は構想段階**で、VTube Studioやモデルを別途用意する。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "shinshin86-aituber-onair",
+   "name": "AITuber OnAir",
+   "url": "https://github.com/shinshin86/aituber-onair",
+   "repository": "shinshin86/aituber-onair",
+   "section_id": "s2",
+   "summary_ja": "Live2D・PNG・Inochi2D・PSD・VRMなどの会話アバター実装例を備えるTypeScript製AI VTuberキット。Live2Dモデル素材とLLM/TTSの設定が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "nadezhdkov-akaneden",
+   "name": "AkaneDen",
+   "url": "https://github.com/nadezhdkov/AkaneDen",
+   "repository": "nadezhdkov/AkaneDen",
+   "section_id": "s2",
+   "summary_ja": "Twitchコメントやマイク入力にLLMと音声合成で応答し、VTube StudioのLive2D表情・口パクを動かす。Twitch認証とVTube Studio APIの設定が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "gaetan-warin-ai-vtuber-twitch-chat-bot",
+   "name": "AI-VTUBER-Twitch-Chat-Bot",
+   "url": "https://github.com/gaetan-warin/AI-VTUBER-Twitch-Chat-Bot",
+   "repository": "gaetan-warin/AI-VTUBER-Twitch-Chat-Bot",
+   "section_id": "s2",
+   "summary_ja": "Twitchの`!ai`コメントをOllama/Geminiへ送り、ブラウザ音声とLive2Dで返す。**Cubism 2形式のモデル限定**で、Twitch OAuthが必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "kkll2025-ailivevtuber-stage",
+   "name": "LiveVTuber Stage",
+   "url": "https://github.com/KKLL2025/AILiveVTuber-Stage",
+   "repository": "KKLL2025/AILiveVTuber-Stage",
+   "section_id": "s2",
+   "summary_ja": "Bilibiliのコメント・ギフト等を優先キューで処理し、DeepSeek応答をMiMo音声・Live2D表情・字幕に反映。**UIは中国語のみ**。Cubism Coreと使用権のあるモデルは別途準備。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "motemen-ai-streamer",
+   "name": "ai-streamer",
+   "url": "https://github.com/motemen/ai-streamer",
+   "repository": "motemen/ai-streamer",
+   "section_id": "s2",
+   "summary_ja": "OpenAI・VOICEVOXによる台詞と字幕・表情付きの**静止画2Dアバター**をOBSに表示する。ディレクター入力や自発発話に対応するが、配信コメントの自動収集は記載されていない。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "uezo-chatdollkit",
+   "name": "ChatdollKit",
+   "url": "https://github.com/uezo/ChatdollKit",
+   "repository": "uezo/ChatdollKit",
+   "section_id": "s3",
+   "summary_ja": "Unity/VRMで音声対話できるキャラクターを組み立てるSDK。LLM、音声入出力、表情・モーション・リップシンクを統合。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "pixiv-chatvrm",
+   "name": "ChatVRM",
+   "url": "https://github.com/pixiv/ChatVRM",
+   "repository": "pixiv/ChatVRM",
+   "section_id": "s3",
+   "summary_ja": "ブラウザでVRMキャラクターと音声会話するデモ。音声認識、ChatGPT API、音声合成を利用。**2024年にアーカイブ済み**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "pixiv-local-chat-vrm",
+   "name": "LocalChatVRM",
+   "url": "https://github.com/pixiv/local-chat-vrm",
+   "repository": "pixiv/local-chat-vrm",
+   "section_id": "s3",
+   "summary_ja": "ChromeのBuilt-in AIとKokoro.jsでブラウザ内のVRM会話を試す技術デモ。**アーカイブ済み**で、対応するChrome環境が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "juiceboxxgames-utsuwa",
+   "name": "Utsuwa",
+   "url": "https://github.com/JuiceBoxxGames/utsuwa",
+   "repository": "JuiceBoxxGames/utsuwa",
+   "section_id": "s3",
+   "summary_ja": "VRMアバターとの会話に音声、意味検索できる記憶、気分・関係性の変化を組み合わせたブラウザ／デスクトップ伴侶。デスクトップ版はベータ。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "badhope-chatvrm-agent",
+   "name": "ChatVRM Agent",
+   "url": "https://github.com/badhope/ChatVRM-Agent",
+   "repository": "badhope/ChatVRM-Agent",
+   "section_id": "s3",
+   "summary_ja": "VRMをブラウザに読み込み、マイク入力→LLM→TTSの会話を表情・口パクとともに表示。音声入力はWeb Speech API対応ブラウザに依存。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "lobehub-lobe-vidol",
+   "name": "Lobe Vidol",
+   "url": "https://github.com/lobehub/lobe-vidol",
+   "repository": "lobehub/lobe-vidol",
+   "section_id": "s3",
+   "summary_ja": "VRMキャラの編集・会話、音声入出力、MMDダンスを統合するWeb/PWA。開発中のベータ版。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "semperai-amica",
+   "name": "Amica",
+   "url": "https://github.com/semperai/amica",
+   "repository": "semperai/amica",
+   "section_id": "s3",
+   "summary_ja": "pixiv版ChatVRMから発展したVRM会話アプリ。音声・画像入力、表情表現に対応し、ローカル／クラウドのAIを選べる。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "aikeyaorg-aikeya",
+   "name": "Aikeya",
+   "url": "https://github.com/aikeyaorg/aikeya",
+   "repository": "aikeyaorg/aikeya",
+   "section_id": "s3",
+   "summary_ja": "VRMキャラとの音声・テキスト対話に、関係性の変化と端末内の意味検索記憶を組み合わせる。Web版とmacOSデスクトップ版ベータ。**Live2D対応は未実装**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "catsmice-anicompanion",
+   "name": "AniCompanion",
+   "url": "https://github.com/catsmice/AniCompanion",
+   "repository": "catsmice/AniCompanion",
+   "section_id": "s3",
+   "summary_ja": "macOS 15以降のVRMデスクトップペット。音声・口パク・表情と、Claude Code／Codexなど利用者側のエージェントを接続する。初回の表示にはネット接続が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "johnson-durui-companion-space",
+   "name": "Companion Space",
+   "url": "https://github.com/Johnson-Durui/Companion-Space",
+   "repository": "Johnson-Durui/Companion-Space",
+   "section_id": "s3",
+   "summary_ja": "VRM／2D表示を持つローカル優先の学習伴侶。資料を引用する検索付き対話、リアルタイム音声、確認後の記憶保存を扱う。主要な利用経路はデスクトップブラウザ＋ローカル環境。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "luckybugqqq-claw-sama",
+   "name": "Claw Sama",
+   "url": "https://github.com/luckybugqqq/claw-sama",
+   "repository": "luckybugqqq/claw-sama",
+   "section_id": "s3",
+   "summary_ja": "OpenClawプラグインとして動くmacOS/Windows向けVRMデスクトップペット。音声会話、表情・口パク、人格設定と任意の画面観察を備える。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "apoorvdarshan-scowld",
+   "name": "Scowld",
+   "url": "https://github.com/apoorvdarshan/scowld",
+   "repository": "apoorvdarshan/scowld",
+   "section_id": "s3",
+   "summary_ja": "iOS 17以降のVRM音声伴侶。Amica由来のキャラ表示に、持ち込みAPIキーによる対話・音声入出力と端末内の会話履歴を組み合わせる。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "liupig-xiaokeai",
+   "name": "xiaoke.ai (小可爱)",
+   "url": "https://github.com/liupig/xiaokeai",
+   "repository": "liupig/xiaokeai",
+   "section_id": "s3",
+   "summary_ja": "Windows向けローカル3D伴侶。VRM/PMX/GLBのキャラと音声対話し、表情・動作・カメラ演出や記憶を扱う。**同梱されないモデル・音声などの素材はコードと利用条件が別**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "sktkkoo-yorishiro",
+   "name": "Yorishiro",
+   "url": "https://github.com/sktkkoo/Yorishiro",
+   "repository": "sktkkoo/Yorishiro",
+   "section_id": "s3",
+   "summary_ja": "macOSのClaude Code／Codex用ターミナルにVRMキャラを同居させる。テキスト・音声対話、表情反応、人格・シーンを変更するパックに対応。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "sillytavern-sillytavern",
+   "name": "SillyTavern",
+   "url": "https://github.com/SillyTavern/SillyTavern",
+   "repository": "SillyTavern/SillyTavern",
+   "section_id": "s4",
+   "summary_ja": "キャラクターの説明・人格・シナリオや会話例を定義してLLMと対話するフロントエンド。単体でLive2D/VRMを表示するアプリではない。",
+   "catalog_id": "sillytavern",
+   "checked_on": ""
+  },
+  {
+   "id": "hikariming-irori",
+   "name": "Irori",
+   "url": "https://github.com/hikariming/irori",
+   "repository": "hikariming/irori",
+   "section_id": "s4",
+   "summary_ja": "アニメ調キャラクターカードの人格・記憶を持つデスクトップ作業パートナー。文章作成やコーディングに対応。**音声とLive2Dはロードマップ段階**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "doolijb-serene-pub",
+   "name": "Serene Pub",
+   "url": "https://github.com/doolijb/serene-pub",
+   "repository": "doolijb/serene-pub",
+   "section_id": "s4",
+   "summary_ja": "キャラカード、複数人会話、lorebookと長期記憶を扱うセルフホストのテキストRPアプリ。人物ごとの情報可視性と共同セッションに対応。ベータ版。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "zebede1980-cardgenv2",
+   "name": "CardGenV2",
+   "url": "https://github.com/zebede1980/CardGenV2",
+   "repository": "zebede1980/CardGenV2",
+   "section_id": "s4",
+   "summary_ja": "SillyTavern互換のキャラカードを生成・編集してPNG/JSONで出力する環境。複数キャラのテキストRP会話と会話要約・記憶も試せる。LLM接続が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "justlatenightai-corvus-story-core",
+   "name": "Corvus Story Core",
+   "url": "https://github.com/JustLateNightAI/Corvus-Story-Core",
+   "repository": "JustLateNightAI/Corvus-Story-Core",
+   "section_id": "s4",
+   "summary_ja": "テキストRPG向けのGM/NPC会話エンジン。NPCカード、個別記憶、章要約と関係値などの状態を保持する。会話用LLMは別途用意。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "rayenfeng-riko-project",
+   "name": "Project Riko",
+   "url": "https://github.com/rayenfeng/riko_project",
+   "repository": "rayenfeng/riko_project",
+   "section_id": "s4",
+   "summary_ja": "アニメ風の人格設定、対話履歴、Faster-WhisperとGPT-SoVITSを組み合わせた音声会話スクリプト。**GUIとVRM表示は未実装**で、外部の音声合成サービスを起動する。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "titanwings-distilly",
+   "name": "Distilly",
+   "url": "https://github.com/titanwings/distilly",
+   "repository": "titanwings/distilly",
+   "section_id": "s5",
+   "summary_ja": "発言・文書・面談記録・公開資料から、同僚／身近な人／著名人・架空人物の言動や判断の特徴をPerson Profileに整理し、外部エージェント向けSkillとして出力する。**本人の再現を保証せず、独立したアバター／チャットアプリではない**。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "karmacoke-chargen",
+   "name": "CharGen",
+   "url": "https://github.com/Karmacoke/chargen",
+   "repository": "Karmacoke/chargen",
+   "section_id": "s5",
+   "summary_ja": "キーワードや世界設定からキャラの心理・経歴・容姿を設計し、別のLLM会話で使えるNPCシステムプロンプトを生成。日本語UIに対応。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "mmkaverappa-sillytavern-charcardstudio",
+   "name": "SillyTavern CharCardStudio",
+   "url": "https://github.com/MMKAVERAPPA/SillyTavern-CharCardStudio",
+   "repository": "MMKAVERAPPA/SillyTavern-CharCardStudio",
+   "section_id": "s5",
+   "summary_ja": "SillyTavern内で人物像・設定資料を草稿化して確認・適用する拡張。SillyTavern本体と設定済みLLMが必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "bal-spec-sillytavern-character-memory",
+   "name": "CharMemory",
+   "url": "https://github.com/bal-spec/sillytavern-character-memory",
+   "repository": "bal-spec/sillytavern-character-memory",
+   "section_id": "s5",
+   "summary_ja": "SillyTavernのキャラ別会話から重要事項を抽出して編集可能な記憶にし、後の会話で検索する拡張。想起にはVector Storageの有効化が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "chuyaowang-sillytavern-auto-memory",
+   "name": "AutoMemory for SillyTavern",
+   "url": "https://github.com/chuyaowang/sillytavern-auto-memory",
+   "repository": "chuyaowang/sillytavern-auto-memory",
+   "section_id": "s5",
+   "summary_ja": "関係・利用者・世界設定の3層に記憶を分けて保存・検索するセルフホスト拡張。**標準の埋め込みモデルは英語向け**で、日本語には変更が必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "roleplay-studio-character-card",
+   "name": "character-card",
+   "url": "https://github.com/roleplay-studio/character-card",
+   "repository": "roleplay-studio/character-card",
+   "section_id": "s5",
+   "summary_ja": "SillyTavern形式のPNG/JSONキャラカードを読み書きするPythonライブラリ。人格生成や会話は行わない。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "guansss-pixi-live2d-display",
+   "name": "pixi-live2d-display",
+   "url": "https://github.com/guansss/pixi-live2d-display",
+   "repository": "guansss/pixi-live2d-display",
+   "section_id": "s6",
+   "summary_ja": "PixiJS v6からLive2Dモデルを表示・操作するライブラリ。Cubism Coreは別途必要。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "stevenjoezhang-live2d-widget",
+   "name": "live2d-widget",
+   "url": "https://github.com/stevenjoezhang/live2d-widget",
+   "repository": "stevenjoezhang/live2d-widget",
+   "section_id": "s6",
+   "summary_ja": "WebページにLive2D看板娘を表示するウィジェット。モデルは同梱されない。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "inochi2d-inochi2d",
+   "name": "Inochi2D",
+   "url": "https://github.com/Inochi2D/inochi2d",
+   "repository": "Inochi2D/inochi2d",
+   "section_id": "s6",
+   "summary_ja": "レイヤー分割した2Dイラストをリアルタイムで変形するパペットのSDK・仕様。Live2Dとは別方式。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "pkhungurn-talking-head-anime-2-demo",
+   "name": "Talking Head Anime 2 Demo",
+   "url": "https://github.com/pkhungurn/talking-head-anime-2-demo",
+   "repository": "pkhungurn/talking-head-anime-2-demo",
+   "section_id": "s6",
+   "summary_ja": "1枚のアニメキャラ画像から表情・顔向きを操作する研究デモ。音声対話機能はない。",
+   "catalog_id": null,
+   "checked_on": ""
+  },
+  {
+   "id": "arpahls-avatar",
+   "name": "AVATAR",
+   "url": "https://github.com/ARPAHLS/avatar",
+   "repository": "ARPAHLS/avatar",
+   "section_id": "s6",
+   "summary_ja": "WindowsのVRMデスクトップオーバーレイ。音声に合わせた口パクとVRMA動作、外部エージェント向けMCP操作を備える。**単体のAI会話機能はない**。",
+   "catalog_id": null,
+   "checked_on": ""
+  }
+ ]
+}

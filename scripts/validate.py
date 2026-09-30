@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from export import render
+from export_datasets import render as render_datasets
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
@@ -77,7 +78,31 @@ for m in models['items']:
     require(dist['evidence_files'] and dist['http_status'] == 200 and dist['verification'] == 'file_listing_checked', f"{m['id']}: モデル配布根拠不足")
     require(m['license_notes_ja'] and m['limitations_ja'], f"{m['id']}: モデル条件不足")
 require([json.loads(x) for x in (ROOT / 'model-catalog.jsonl').read_text(encoding='utf-8').splitlines()] == models['items'], 'モデルJSONL不一致')
-for name, content in render(data).items():
+papers_data = json.loads((ROOT / 'research/papers.json').read_text(encoding='utf-8'))
+comp = json.loads((ROOT / 'companion-catalog.json').read_text(encoding='utf-8'))
+paper_cats = {c['id'] for c in papers_data['categories']}
+require(len({p['code_repository'].lower() for p in papers_data['papers']}) == len(papers_data['papers']), '論文: 重複repository')
+for p in papers_data['papers']:
+    label = 'paper:' + p['short_name']
+    for key in ('title', 'summary_ja', 'paper_url', 'code_url', 'checked_on', 'models', 'evidence_urls', 'venue', 'year'):
+        require(bool(p.get(key)), f'{label}: {key}が空')
+    require(re.fullmatch(r'[0-9a-f]{40}', p['code_revision'] or ''), f'{label}: commit形式')
+    require(p['code_url'].startswith('https://github.com/' + p['code_repository']), f'{label}: URL不一致')
+    require(p['category_id'] in paper_cats, f'{label}: 未定義分野')
+    require(p['catalog_id'] is None or p['catalog_id'] in ids, f'{label}: catalog_idが存在しない')
+    datetime.date.fromisoformat(p['checked_on'])
+for v in papers_data['venues']:
+    n = sum(1 for p in papers_data['papers'] if p['venue'] == v['conference'] and p['year'] == v['year'])
+    require(n == v['included_count'], f"会議件数不一致: {v['conference']} {v['year']} {n} != {v['included_count']}")
+require(sum(v['included_count'] for v in papers_data['venues']) == len(papers_data['papers']), '会議件数の合計')
+comp_sections = {s['id'] for s in comp['sections']}
+require(len({i['id'] for i in comp['items']}) == len(comp['items']), '会話キャラ: 重複ID')
+require(len({i['repository'].lower() for i in comp['items']}) == len(comp['items']), '会話キャラ: 重複repository')
+for i in comp['items']:
+    require(i['url'] == 'https://github.com/' + i['repository'] and i['summary_ja'], f"{i['id']}: 会話キャラ項目不備")
+    require(i['section_id'] in comp_sections, f"{i['id']}: 未定義セクション")
+    require((i['catalog_id'] is None) == (i['repository'].lower() not in {p['repository'].lower() for p in items}) and (i['catalog_id'] is None or i['catalog_id'] in ids), f"{i['id']}: catalog_id不整合")
+for name, content in {**render(data), **render_datasets()}.items():
     require((ROOT / name).read_bytes() == content.encode("utf-8"), f"生成物が古い: {name}")
 for path in ROOT.rglob("*.md"):
     for target in re.findall(r"\]\(([^)\s]+)\)", path.read_text(encoding="utf-8")):

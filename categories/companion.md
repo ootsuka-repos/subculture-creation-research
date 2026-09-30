@@ -1,18 +1,14 @@
-# Awesome Anime AI Characters
+# 会話できるアニメ系AIキャラクター（60件）
 
-アニメ・二次元系の**会話できるAIキャラクター**を作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類して掲載しています。
+最終確認日: 。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
-- [Live2D・2Dキャラクターとの対話](#live2d2dキャラクターとの対話)
-- [AI VTuber・配信](#ai-vtuber配信)
-- [VRM・3Dキャラクターとの対話](#vrm3dキャラクターとの対話)
-- [キャラクター会話・ロールプレイ](#キャラクター会話ロールプレイ)
-- [人格・キャラカード・会話記憶の制作](#人格キャラカード会話記憶の制作)
-- [アバター表示・アニメーション部品](#アバター表示アニメーション部品)
-- [探し方・掲載基準](#探し方掲載基準)
+アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
 > **注意**: リンク先のコード・モデル・音声・キャラクター素材の権利はそれぞれ別です。掲載は動作・安全性・商用利用の保証ではありません。導入前に各リポジトリのライセンス、同梱素材と外部APIの利用条件を確認してください。版権キャラのモデル・声の再利用や、実在人物の発言・私的な記録を用いた人格作成には権利と同意の確認が必要です。
 
-### 目的から選ぶ
+機能は各リポジトリの説明の要約で、ベンチマーク・動作検証の結果ではない。制作系カタログ（catalog.json）の項目のような固定コミット・メトリクス・入出力の整理は未実施で、一覧レベルの記録。
+
+## 目的から選ぶ
 
 | 目的 | まず見る | 導入前に確認すること |
 | --- | --- | --- |
@@ -24,8 +20,8 @@
 
 ## Live2D・2Dキャラクターとの対話
 
-- [Project AIRI](https://github.com/moeru-ai/airi) — Live2D/VRMを表示し、音声で会話できるAIキャラクタープロジェクト。Webとデスクトップ向けで、ゲーム連携も扱う。
-- [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — Live2DアバターとLLM・音声認識・音声合成をつなぐ会話アプリ。Web/デスクトップ、ローカルモデル構成やデスクトップペット表示に対応。
+- [Project AIRI](https://github.com/moeru-ai/airi) — Live2D/VRMを表示し、音声で会話できるAIキャラクタープロジェクト。Webとデスクトップ向けで、ゲーム連携も扱う。 → [制作カタログ](../categories/vtuber.md#airi)
+- [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — Live2DアバターとLLM・音声認識・音声合成をつなぐ会話アプリ。Web/デスクトップ、ローカルモデル構成やデスクトップペット表示に対応。 → [制作カタログ](../categories/vtuber.md#open-llm-vtuber)
 - [Soul of Waifu](https://github.com/jofizcd/Soul-of-Waifu) — Live2D/VRMのキャラクターとテキスト・音声で交流するWindows向けアプリ。キャラクター記憶とRPGモードも備える。
 - [ChatWaifu Mobile](https://github.com/Voine/ChatWaifu_Mobile) — Android向けの二次元キャラクター会話アプリ。Live2D表示、端末上のVITS音声合成とSherpa音声認識を組み合わせる。付属モデルの商用利用は禁止と明記されている。
 - [my-neuro](https://github.com/morettt/my-neuro) — 交換可能なLive2Dモデル、音声・性格を持つAIデスクトップ伴侶の制作ワークベンチ。ローカルLLM、音声会話、配信連携を扱う。
@@ -59,8 +55,6 @@
 
 ## VRM・3Dキャラクターとの対話
 
-2DのLive2Dとは異なる3Dアバターですが、アニメ調キャラクターの対話実装に役立つため分けて掲載します。
-
 - [ChatdollKit](https://github.com/uezo/ChatdollKit) — Unity/VRMで音声対話できるキャラクターを組み立てるSDK。LLM、音声入出力、表情・モーション・リップシンクを統合。
 - [ChatVRM](https://github.com/pixiv/ChatVRM) — ブラウザでVRMキャラクターと音声会話するデモ。音声認識、ChatGPT API、音声合成を利用。**2024年にアーカイブ済み**。
 - [LocalChatVRM](https://github.com/pixiv/local-chat-vrm) — ChromeのBuilt-in AIとKokoro.jsでブラウザ内のVRM会話を試す技術デモ。**アーカイブ済み**で、対応するChrome環境が必要。
@@ -78,9 +72,7 @@
 
 ## キャラクター会話・ロールプレイ
 
-アバターがなくても、人格・設定や物語を伴うキャラクター対話を作れる環境です。音声だけの会話実装も含みます。
-
-- [SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラクターの説明・人格・シナリオや会話例を定義してLLMと対話するフロントエンド。単体でLive2D/VRMを表示するアプリではない。
+- [SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラクターの説明・人格・シナリオや会話例を定義してLLMと対話するフロントエンド。単体でLive2D/VRMを表示するアプリではない。 → [制作カタログ](../categories/story.md#sillytavern)
 - [Irori](https://github.com/hikariming/irori) — アニメ調キャラクターカードの人格・記憶を持つデスクトップ作業パートナー。文章作成やコーディングに対応。**音声とLive2Dはロードマップ段階**。
 - [Serene Pub](https://github.com/doolijb/serene-pub) — キャラカード、複数人会話、lorebookと長期記憶を扱うセルフホストのテキストRPアプリ。人物ごとの情報可視性と共同セッションに対応。ベータ版。
 - [CardGenV2](https://github.com/zebede1980/CardGenV2) — SillyTavern互換のキャラカードを生成・編集してPNG/JSONで出力する環境。複数キャラのテキストRP会話と会話要約・記憶も試せる。LLM接続が必要。
@@ -88,8 +80,6 @@
 - [Project Riko](https://github.com/rayenfeng/riko_project) — アニメ風の人格設定、対話履歴、Faster-WhisperとGPT-SoVITSを組み合わせた音声会話スクリプト。**GUIとVRM表示は未実装**で、外部の音声合成サービスを起動する。
 
 ## 人格・キャラカード・会話記憶の制作
-
-**以下は単体でLive2D/VRMキャラと会話するアプリではありません。** 人物資料から人格を整理し、会話用のカードを作り、既存の対話環境に記憶を足すためのツールです。
 
 - [Distilly](https://github.com/titanwings/distilly) — 発言・文書・面談記録・公開資料から、同僚／身近な人／著名人・架空人物の言動や判断の特徴をPerson Profileに整理し、外部エージェント向けSkillとして出力する。**本人の再現を保証せず、独立したアバター／チャットアプリではない**。
 - [CharGen](https://github.com/Karmacoke/chargen) — キーワードや世界設定からキャラの心理・経歴・容姿を設計し、別のLLM会話で使えるNPCシステムプロンプトを生成。日本語UIに対応。
@@ -99,8 +89,6 @@
 - [character-card](https://github.com/roleplay-studio/character-card) — SillyTavern形式のPNG/JSONキャラカードを読み書きするPythonライブラリ。人格生成や会話は行わない。
 
 ## アバター表示・アニメーション部品
-
-**以下はAI会話アプリではありません。** 上のプロジェクトと組み合わせてアニメ調キャラクターの表示・動きを実装するための部品です。
 
 - [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) — PixiJS v6からLive2Dモデルを表示・操作するライブラリ。Cubism Coreは別途必要。
 - [live2d-widget](https://github.com/stevenjoezhang/live2d-widget) — WebページにLive2D看板娘を表示するウィジェット。モデルは同梱されない。
@@ -115,5 +103,3 @@
 - 対象: アニメ調のキャラクターとAIで会話できるアプリ、AI VTuber実装、キャラクター対話環境、およびそれらに直接使う人格・キャラカード・記憶・アバターの部品。単体で会話できないものは専用の節に明示。
 - 対象外: 一般的なチャットボット、アニメ作品データベース、画像生成だけのツール、写実的な人物動画専用のデジタルヒューマン。AI非搭載の部品は専用の節に明示。
 - 同じプロジェクトは複数トピックにあっても一度だけ掲載。派生版は元との違いが明確な場合に限り区別する。機能は上流の記述に沿った要約であり、ベンチマークや動作検証の結果ではありません。
-
-追加・修正はIssueまたはPull Requestへ。候補のURL、どんなキャラクター対話／アバター機能があるかを示すREADME等の根拠、利用条件の注意点を添えてください。

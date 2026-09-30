@@ -74,6 +74,7 @@ def render(data, model_data=None):
 - 編集者評価を性能比較結果として引用しない。star_growth=nullは未取得。
 - 詳細はcatalog.json / catalog.jsonlとcategories/、分野横断の比較はresearch/deep-dive-2026-09-09.md。
 - GitHub以外のアニメ画像モデルはmodel-catalog.jsonとmodels/anime-models.md。GitHubリポジトリとは別に数える。
+- 会話できるAIキャラクターはcategories/companion.md / companion-catalog.jsonl、公式コード＋重みのある研究はresearch/papers.md / research/papers.jsonl（どちらも本件数115件には含まない）。
 - deep_dive.next_validation_jaは未実施の検証提案であり、テスト合格の記録ではない。
 
 以下は短縮情報です。詳しく利用する際は固定READMEと分野別ページの制約を確認してください。
@@ -112,13 +113,13 @@ def render(data, model_data=None):
     outputs['README.md'] = '# サブカルコンテンツ制作リサーチ\n\n' + intro + '''
 漫画・ゲーム・アニメ・3D・ASMR／音声・TTS・画像生成・動画生成・VTuberに加え、歌声合成、シナリオ、リギング、翻訳、追加学習などを集約しています。AIを使わない二次元・キャラクター制作ツールも対象です。将来のモデルへのコンテキストと追加調査の引き継ぎに使えます。
 
-## 収録コレクション
+## 収録データ
 
-| コレクション | 内容 | 機械可読 |
+| データ | 内容 | 機械可読 |
 | --- | --- | --- |
-| 本体（このページ以下） | 制作系GitHubリポジトリ115件・18分野、GitHub外のアニメ画像モデル | [catalog.jsonl](catalog.jsonl) |
-| [awesome-anime-ai-characters/](awesome-anime-ai-characters/README.md) | 会話できるアニメ系AIキャラ（Live2D/VRM/AI VTuber） | [characters.jsonl](awesome-anime-ai-characters/characters.jsonl) |
-| [entertainment-ai-2026-code-models/](entertainment-ai-2026-code-models/README.md) | 公式コード＋公開重みのある研究（SIGGRAPH 2026ほか） | [papers.jsonl](entertainment-ai-2026-code-models/papers.jsonl) |
+| 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。115件 / 18分野 | [catalog.jsonl](catalog.jsonl) |
+| [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど60件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
+| [公式コード＋公開重みのある研究](research/papers.md) | SIGGRAPH 2026ほか87件、12分野 | [research/papers.jsonl](research/papers.jsonl) |
 
 AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) を読むと、質問別に必要なファイルだけを取得できます。
 
@@ -179,7 +180,7 @@ catalog.jsonを正本として、一覧・CSV・JSONL・分野別詳細・モデ
 
 ## 参考と公開条件の扱い
 
-[entertainment-ai-2026-code-models/](entertainment-ai-2026-code-models/README.md)の日本語要約・構造化データ・確認根拠を残す構成を参考にしました。本カタログは研究、制作アプリ、連携実装、API文書を含むため、全件に独自の学習済み重みを要求しません。
+研究コレクション（[research/papers.md](research/papers.md)）の日本語要約・構造化データ・確認根拠を残す構成を参考にしました。本カタログは研究、制作アプリ、連携実装、API文書を含むため、全件に独自の学習済み重みを要求しません。
 
 コード・重み・音声ライブラリ・キャラ素材の条件は個別です。商用利用可否は独立して判定していません。PuppetLoomはLICENSE/NOTICEと中国語READMEにAGPL表記、英語・日本語READMEにApache表記が残る不一致を確認しました。モデルカード本文の追加条件も別途記録しています。第三者のコードやモデル本体は収録していません。
 '''

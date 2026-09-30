@@ -81,3 +81,41 @@ schema 3.0の`deep_dive.production_fit_ja`と`next_validation_ja`は編集者の
 GitHub以外のアニメ画像モデルは[model-catalog.json](model-catalog.json)（schema 1.0）が正本。[model-catalog.jsonl](model-catalog.jsonl)と[models/anime-models.md](models/anime-models.md)をexport.pyで生成する。GitHubリポジトリ数とは分けて数え、同一モデル系統の全派生や最新版まで確認したとは扱わない。配布URL、revision、カード本文、代表ファイル、条件を保持する。特にlicenseメタデータだけではなく、カード本文の追加条件・不一致を記録する。
 
 [詳細比較レポート](research/deep-dive-2026-09-09.md)はカタログの検証状態と矛盾しないように維持する。新しい比較や改訂時には引用した固定資料も見直す。
+
+## 研究論文データ（research/papers.json）
+
+正本は[research/papers.json](research/papers.json)。`papers.jsonl`、`papers.md`、`papers/<分野>.md`はscripts/export_datasets.pyで生成する。手で編集しない。
+
+**掲載の必須条件**: 著者の公式コードと、本研究で配布する学習済み重み（LoRA・ポリシー・同梱ネットワーク含む）の両方が公開されていること。件数のために緩めない。
+
+| 項目 | 掲載に必要な確認 |
+| --- | --- |
+| 著者との対応 | 論文・著者／所属機関・公式プロジェクトから実装と重みの関係を確認。第三者まとめは候補発見のみ。 |
+| コード | 推論・モデルの実装ファイルを読み取れる。READMEだけ・APIクライアントだけ・デモ画面だけは不可。学習コードは必須でない。 |
+| 重み | 本研究の重みの配布を確認。依存する既存モデルだけ、データセットだけ、Coming soonは不可。部分公開は範囲を`release_scope_ja`/`notes_ja`に明記。 |
+| 登録・条件同意 | 一般向け配布が実在すれば可。`registration_required`等を記録。個別依頼が必要なものは保留。 |
+| 利用条件 | 商用可は必須でない。コード・重み・依存物の条件を別々に記録し、不明は不明のまま。`NOASSERTION`やnullを自由利用と読み替えない。 |
+
+- 年は採択・発表先の年で分類する。調査のたびに公式会議サイトで2026年の状況を確認し、2026年がない／未確定なら2025年を参照して理由を`venues`に記す。本会議・Findings・Journal/TOG・開催前告知を`venue_status`で区別する。
+- 確認手順: GitHubはコミットSHA固定。Hugging Faceはモデルカード・ファイル一覧・revision、可能ならHEAD応答。Git LFSポインタだけでは取得確認済みとしない。Drive等は共有ページのファイル名と説明を確認し、HTML 200を重みの取得成功としない。`verification`は実施した方法、`http_status`は実際の応答。未確認のrevision・チェックサムを推測で埋めない。
+- 公開情報の確認と動作・品質の確認は別。未実行のモデルを「すぐ動く」「再現済み」等と断定しない。
+- 追記時は`catalog_id`（制作カタログ側の同一リポジトリ）を設定し、`venues[].included_count`と実件数を一致させる（validate.pyで検査）。重複（旧題・ミラー）を別研究として数えない。
+- 掲載できない候補は理由・確認日・根拠つきで`reviewed_not_included`へ記録する。
+- SIGGRAPH 2026はTechnical Papers/指定TOG発表を広く調べた範囲、他会議は用途から選んだ候補。件数を会議間の比較に使わない。
+
+## 会話AIキャラクター一覧（companion-catalog.json）
+
+正本は[companion-catalog.json](companion-catalog.json)。`categories/companion.md`と`companion-catalog.jsonl`はexport_datasets.pyで生成する。
+
+- 対象: アニメ調キャラクターとAIで会話できるアプリ、AI VTuber実装、キャラクター対話環境、およびそれらに直接使う人格・キャラカード・記憶・アバター部品。単体で会話できないものは`summary_ja`に明示する。
+- 対象外: 一般的なチャットボット、アニメ作品DB、画像生成のみのツール、写実的な人物動画専用のデジタルヒューマン。
+- 候補リスト／トピックの掲載だけで採用せず、READMEと関連ドキュメントで機能と未実装を確認する。同じプロジェクトは一度だけ。派生版は元との違いが明確なときだけ区別する。
+- このデータは一覧レベル。固定コミット・メトリクス・入出力の整理を行った項目は制作カタログ（catalog.json）へ昇格し、`catalog_id`で結ぶ。
+
+## 生成物の更新
+
+```sh
+python3 scripts/export.py && python3 scripts/export_datasets.py
+python3 scripts/export.py --check && python3 scripts/export_datasets.py --check
+python3 scripts/validate.py && git diff --check
+```

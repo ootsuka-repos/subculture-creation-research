@@ -17,6 +17,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - 編集者評価を性能比較結果として引用しない。star_growth=nullは未取得。
 - 詳細はcatalog.json / catalog.jsonlとcategories/、分野横断の比較はresearch/deep-dive-2026-09-09.md。
 - GitHub以外のアニメ画像モデルはmodel-catalog.jsonとmodels/anime-models.md。GitHubリポジトリとは別に数える。
+- 会話できるAIキャラクターはcategories/companion.md / companion-catalog.jsonl、公式コード＋重みのある研究はresearch/papers.md / research/papers.jsonl（どちらも本件数115件には含まない）。
 - deep_dive.next_validation_jaは未実施の検証提案であり、テスト合格の記録ではない。
 
 以下は短縮情報です。詳しく利用する際は固定READMEと分野別ページの制約を確認してください。
