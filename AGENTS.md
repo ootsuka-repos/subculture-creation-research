@@ -7,7 +7,7 @@
 | 種類 | 正本 | 機械可読 | 閲覧 |
 | --- | --- | --- | --- |
 | 制作系GitHubリポジトリ・18分野（固定コミット・根拠つき詳細。毎日自動追加あり、件数は README） | `catalog.json` | `catalog.jsonl`, `catalog.csv` | `categories/<分野>.md`, `catalog.md` |
-| GitHub外のアニメ画像モデル4系統 | `model-catalog.json` | `model-catalog.jsonl` | `models/anime-models.md` |
+| GitHub外のアニメ系モデル（HF。毎日自動追加あり） | `model-catalog.json` | `model-catalog.jsonl` | `models/anime-models.md` |
 | HFタスク別のアニメ系最良モデル108タスク（最良あり82）・制作工程別の代表リポジトリ193件（2026-10-01） | `sota-catalog.json` | `sota-catalog.jsonl` | `models/anime-task-sota.md`, `models/sota/<分野>.md`, `models/anime-repositories.md`, `SOTA_CONTEXT.md` |
 | 会話できるアニメ系AIキャラクター（一覧レベル。毎日自動追加あり） | `companion-catalog.json` | `companion-catalog.jsonl` | `categories/companion.md` |
 | 公式コード＋公開重みのある研究87件・12分野 | `research/papers.json` | `research/papers.jsonl` | `research/papers.md`, `research/papers/<分野>.md` |

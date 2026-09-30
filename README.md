@@ -36,7 +36,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 [.github/workflows/auto-update.yml](.github/workflows/auto-update.yml) が毎日03:00（JST）に実行し、main に直接 push します。
 
 1. `scripts/refresh_metrics.py`: 既存項目の★・fork・最終push・最新Release（GitHub）とDL数・likes（HF）を最新化。固定コミットと本文は変えない。
-2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件、制作カタログか会話キャラ一覧に追加。AIが書くのは分類と説明文で、固定コミット・★・ライセンス・根拠URLはGitHub APIから埋める。**自動追加分は人による確認なし**（`deep_dive.scope_note_ja` に明記）。
+2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件（制作カタログか会話キャラ一覧）、HFの新しいアニメ系モデルを最大5件（モデル一覧）追加。AIが書くのは分類と説明文で、固定コミット/revision・★/DL数・ライセンス・根拠URLはGitHub/HF APIから埋める。**自動追加分は人による確認なし**（カタログは `deep_dive.scope_note_ja`、モデルは根拠欄に明記）。
 3. 生成物を作り直して push。`validate.py` は実行しない。
 
 手動実行: Actions の auto-update → Run workflow。
@@ -49,7 +49,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 | --- | --- |
 | 全件の日本語一覧 | [catalog.md](catalog.md) |
 | 分野横断の深掘り比較・優先候補・公開範囲 | [詳細リサーチ](research/deep-dive-2026-09-09.md) |
-| GitHub以外のアニメ画像モデル4系統 | [モデル比較](models/anime-models.md) / [モデル正本JSON](model-catalog.json) / [JSONL](model-catalog.jsonl) |
+| GitHub以外のアニメ系モデル（HF、毎日自動追加） | [モデル比較](models/anime-models.md) / [モデル正本JSON](model-catalog.json) / [JSONL](model-catalog.jsonl) |
 | タスク別のアニメ系最良モデル（開発で迷ったとき） | [一覧](models/anime-task-sota.md) / [短縮版](SOTA_CONTEXT.md) / [リポジトリ全体像](models/anime-repositories.md) / [正本JSON](sota-catalog.json) |
 | モデルに一括で渡す短縮資料 | [MODEL_CONTEXT.md](MODEL_CONTEXT.md) |
 | 入出力・環境・依存・根拠・モデル配布・コミットの正本 | [catalog.json](catalog.json) |
@@ -124,6 +124,6 @@ catalog.jsonを正本として、一覧・CSV・JSONL・分野別詳細・モデ
 
 ## 深掘り版の収録範囲
 
-全126件に制作での用途、入口候補、次の検証項目、GitHub Release情報を追加しました。別枠で4系統のアニメ画像モデルを収録。ASMR専用モデル等の公開範囲が不明な候補は保留に残しています。
+全126件に制作での用途、入口候補、次の検証項目、GitHub Release情報を追加しました。別枠で6系統のアニメ画像モデルを収録。ASMR専用モデル等の公開範囲が不明な候補は保留に残しています。
 
 [全件再確認時のスナップショット](data/github-snapshot-2026-09-09-deep.json) · [選択した本文の確認記録](data/source-checks-2026-09-09.json) · [モデル配布の確認記録](data/model-hub-snapshot-2026-09-09.json)

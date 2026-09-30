@@ -139,7 +139,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 [.github/workflows/auto-update.yml](.github/workflows/auto-update.yml) が毎日03:00（JST）に実行し、main に直接 push します。
 
 1. `scripts/refresh_metrics.py`: 既存項目の★・fork・最終push・最新Release（GitHub）とDL数・likes（HF）を最新化。固定コミットと本文は変えない。
-2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件、制作カタログか会話キャラ一覧に追加。AIが書くのは分類と説明文で、固定コミット・★・ライセンス・根拠URLはGitHub APIから埋める。**自動追加分は人による確認なし**（`deep_dive.scope_note_ja` に明記）。
+2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件（制作カタログか会話キャラ一覧）、HFの新しいアニメ系モデルを最大5件（モデル一覧）追加。AIが書くのは分類と説明文で、固定コミット/revision・★/DL数・ライセンス・根拠URLはGitHub/HF APIから埋める。**自動追加分は人による確認なし**（カタログは `deep_dive.scope_note_ja`、モデルは根拠欄に明記）。
 3. 生成物を作り直して push。`validate.py` は実行しない。
 
 手動実行: Actions の auto-update → Run workflow。
@@ -152,7 +152,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 | --- | --- |
 | 全件の日本語一覧 | [catalog.md](catalog.md) |
 | 分野横断の深掘り比較・優先候補・公開範囲 | [詳細リサーチ](research/deep-dive-2026-09-09.md) |
-| GitHub以外のアニメ画像モデル4系統 | [モデル比較](models/anime-models.md) / [モデル正本JSON](model-catalog.json) / [JSONL](model-catalog.jsonl) |
+| GitHub以外のアニメ系モデル（HF、毎日自動追加） | [モデル比較](models/anime-models.md) / [モデル正本JSON](model-catalog.json) / [JSONL](model-catalog.jsonl) |
 | タスク別のアニメ系最良モデル（開発で迷ったとき） | [一覧](models/anime-task-sota.md) / [短縮版](SOTA_CONTEXT.md) / [リポジトリ全体像](models/anime-repositories.md) / [正本JSON](sota-catalog.json) |
 | モデルに一括で渡す短縮資料 | [MODEL_CONTEXT.md](MODEL_CONTEXT.md) |
 | 入出力・環境・依存・根拠・モデル配布・コミットの正本 | [catalog.json](catalog.json) |
@@ -209,7 +209,7 @@ catalog.jsonを正本として、一覧・CSV・JSONL・分野別詳細・モデ
 コード・重み・音声ライブラリ・キャラ素材の条件は個別です。商用利用可否は独立して判定していません。PuppetLoomはLICENSE/NOTICEと中国語READMEにAGPL表記、英語・日本語READMEにApache表記が残る不一致を確認しました。モデルカード本文の追加条件も別途記録しています。第三者のコードやモデル本体は収録していません。
 '''
     outputs['README.md'] += f"\n## 深掘り版の収録範囲\n\n全{len(items)}件に制作での用途、入口候補、次の検証項目、GitHub Release情報を追加しました。別枠で{len(model_data['items'])}系統のアニメ画像モデルを収録。ASMR専用モデル等の公開範囲が不明な候補は保留に残しています。\n\n[全件再確認時のスナップショット](data/github-snapshot-2026-09-09-deep.json) · [選択した本文の確認記録](data/source-checks-2026-09-09.json) · [モデル配布の確認記録](data/model-hub-snapshot-2026-09-09.json)\n"
-    model_page = '# アニメ画像モデルの配布・制作条件比較\n\n[一覧へ](../README.md) · [正本JSON](../model-catalog.json)\n\n' + model_data['scope_ja'] + '\n\nモデルカードとファイル一覧を確認。重み取得・起動・品質比較は未実施。公開日はリポジトリ・ファイル・モデル版で異なります。\n'
+    model_page = '# アニメ系モデルの配布・制作条件比較\n\n[一覧へ](../README.md) · [正本JSON](../model-catalog.json)\n\n' + model_data['scope_ja'] + '\n\nモデルカードとファイル一覧を確認。重み取得・起動・品質比較は未実施。公開日はリポジトリ・ファイル・モデル版で異なります。\n'
     for m in model_data['items']:
         model_page += f"\n## {m['name']}\n\n{m['architecture_ja']}\n\n"
         for label, key in [('版の区別', 'variants_ja'), ('入力・設定', 'prompting_ja'), ('必要構成', 'requirements_ja'), ('制約', 'limitations_ja'), ('利用条件', 'license_notes_ja'), ('編集者評価', 'assessment_ja'), ('次の検証（未実施）', 'next_validation_ja')]:

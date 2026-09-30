@@ -14,7 +14,7 @@
 - [MODEL_CONTEXT.md](MODEL_CONTEXT.md): 全件の短縮版（約80KB、一括投入用）
 - [research/deep-dive-2026-09-09.md](research/deep-dive-2026-09-09.md): 分野横断の比較
 
-## 画像モデル（GitHub外）
+## モデル（GitHub外、毎日自動追加）
 - [models/anime-models.md](models/anime-models.md)
 - [model-catalog.jsonl](model-catalog.jsonl)
 

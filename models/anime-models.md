@@ -1,8 +1,8 @@
-# アニメ画像モデルの配布・制作条件比較
+# アニメ系モデルの配布・制作条件比較
 
 [一覧へ](../README.md) · [正本JSON](../model-catalog.json)
 
-GitHub中心の一覧を補うアニメ画像モデル4系統。最新版や全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。
+GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。
 
 モデルカードとファイル一覧を確認。重み取得・起動・品質比較は未実施。公開日はリポジトリ・ファイル・モデル版で異なります。
 
@@ -69,3 +69,35 @@ Illustrious系のアニメ画像モデル。直接のbase_modelはNoobAI XL1.0�
 確認日: 2026-09-09 / revision `814a274af2b8097c0828819d561ec74c7d0c6cea` / gated=False。ファイル名候補5件の一覧確認。代表ファイル: `NoobAI-XL-v1.1.safetensors`、`unet/diffusion_pytorch_model.safetensors`、`vae/diffusion_pytorch_model.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/Laxhar/noobai-XL-1.1/blob/814a274af2b8097c0828819d561ec74c7d0c6cea/README.md) / [モデルAPI](https://huggingface.co/api/models/Laxhar/noobai-XL-1.1)
+
+## manga-panel-detector-yolo26n
+
+Ultralytics YOLO26-nano（2.57Mパラメータ）を、Manga109-sでパネルとテキストの2クラス検出にファインチューニングしたモデル。入力は640x640。
+
+- **版の区別**: FP32のPyTorch重み（manga_panel_detector_fp32.pt、約15MB、追加学習・再エクスポート向け）と、Android/LiteRT向けINT8 TFLite（manga_panel_detector_int8.tflite、2.71MB）の2ファイル。READMEにFP32とINT8のmAP差はごく小さいと記載。
+- **入力・設定**: プロンプトは不要。推論時の推奨confidence閾値は0.25。クラスは0=panel、1=text。
+- **必要構成**: Pythonではultralyticsで推論、モバイルではTFLite/LiteRTランタイム。READM EはCPUで約100〜180ms/枚と記載。学習元はManga109-s（87作品・約18kページ）。
+- **制約**: 検出はコマ枠とテキスト領域の2クラスのみで、セリフの文字起こし・話者・読み順は扱わない。学習は日本語漫画中心。重みはAGPL-3.0で、ネットワーク経由のサービス提供時は完全なソース公開が必要と作者が明記。Manga109-sの利用条件も追加適用され出典表示が必要。
+- **利用条件**: 重みはAGPL-3.0（Ultralytics YOLO26由来）。以前はApache-2.0と表示していたが誤りだったと作者が訂正。クローズドな商用製品にはUltralytics Enterprise Licenseが必要と記載。
+- **編集者評価**: 漫画ページのコマ・テキスト領域検出を軽量・オンデバイスで回せるため、翻訳・組版・字幕付けの前段処理として組み込みやすい。
+- **次の検証（未実施）**: 手元の漫画ページでコマ検出・吹き出し検出の取りこぼしを確認し、AndroidのTFLiteでの速度とメモリを実測する。
+
+確認日: 2026-10-01 / revision `40a2854663d537563cfb95c370288a84c6505b9a` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `manga_panel_detector_fp32.pt`
+
+根拠: [固定モデルカード](https://huggingface.co/leoxs22/manga-panel-detector-yolo26n/blob/40a2854663d537563cfb95c370288a84c6505b9a/README.md) / [モデルAPI](https://huggingface.co/api/models/leoxs22/manga-panel-detector-yolo26n)
+
+## Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF
+
+tencent/Hy-MT2-1.8Bを日本語→英語の漫画セリフ翻訳向けにファインチューニングしたモデル（HunYuanDenseV1ForCausalLM）。Q4_K_MのGGUFとマージ済みbf16重みの両方を同梱。
+
+- **版の区別**: manga-v5-Q4_K_M.gguf（約1.13GB、llama.cpp想定）と、config・tokenizer・chat_template付きのbf16 model.safetensors。作者はv4の後継で日英ペアの推奨版と説明。他言語向けはv3-multilingualを案内。
+- **入力・設定**: 用語ブロック→指示→訳す行、の順で英語プロンプトを渡す。用語集をプロンプトに含めると効くと作者が説明。生成はtemperature 0.15、top_k 20、top_p 0.6、repeat_penalty 1.05、min_p 0。
+- **必要構成**: llama.cpp（GGUF）またはtransformers（bf16、trust_remote_code=True）。READMEは変換時にeos_token_idを120020にするよう注意を促している（3だと生成が止まらない）。
+- **制約**: 対象は日本語→英語のみ。漫画向けの短い1行単位の翻訳に特化し、切り詰められた入力を補完してしまう傾向、実在の固有名詞や専門用語が弱い、ページ文脈を見ない、出力がv4より約7%長い、といった制約を作者が明記。
+- **利用条件**: Apache-2.0（baseモデル tencent/Hy-MT2-1.8B に準拠）。
+- **編集者評価**: 漫画の吹き出し単位の日英翻訳をローカル（スマホ含む）で回せる専門モデルで、翻訳ツールのバックエンドとして試す価値がある。
+- **次の検証（未実施）**: 実際の漫画ページでv5とv4を比較し、固有名詞・擬音・吹き出し内の文字数に収まるかを確認する。
+
+確認日: 2026-10-01 / revision `e17bc6a8dd92ddf930bd7858ceb916117ee5f916` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `manga-v5-Q4_K_M.gguf`、`model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF/blob/e17bc6a8dd92ddf930bd7858ceb916117ee5f916/README.md) / [モデルAPI](https://huggingface.co/api/models/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF)

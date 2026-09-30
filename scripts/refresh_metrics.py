@@ -59,10 +59,10 @@ def save(name, data):
 
 
 def main():
-    catalog, sota = load('catalog.json'), load('sota-catalog.json')
+    catalog, sota, models = load('catalog.json'), load('sota-catalog.json'), load('model-catalog.json')
     gh_repos = {p['repository'] for p in catalog['items']}
     gh_repos |= {g['repo'] for t in sota['tasks'] for g in t.get('repositories') or []}
-    hf_repos = {t['best']['hub_repository'] for t in sota['tasks'] if t.get('best')}
+    hf_repos = {t['best']['hub_repository'] for t in sota['tasks'] if t.get('best')} | {m['hub_repository'] for m in models['items']}
     with ThreadPoolExecutor(16) as pool:
         gh = dict(zip(gh_repos, pool.map(github, gh_repos)))
         hub = dict(zip(hf_repos, pool.map(hf, hf_repos)))
@@ -92,9 +92,16 @@ def main():
             b.update(downloads_30d=h.get('downloads', b['downloads_30d']), downloads_all_time=h.get('downloadsAllTime', b['downloads_all_time']),
                      likes=h.get('likes', b['likes']), last_modified=(h.get('lastModified') or b['last_modified'])[:10])
             changed += 1
-    catalog['metrics_refreshed_on'] = sota['metrics_refreshed_on'] = TODAY
+    for m in models['items']:
+        h = hub.get(m['hub_repository'])
+        if h:
+            m['metrics'].update(downloads_last_month=h.get('downloads', m['metrics']['downloads_last_month']), likes=h.get('likes', m['metrics']['likes']),
+                                last_modified=h.get('lastModified') or m['metrics']['last_modified'], checked_on=TODAY)
+            changed += 1
+    catalog['metrics_refreshed_on'] = sota['metrics_refreshed_on'] = models['metrics_refreshed_on'] = TODAY
     save('catalog.json', catalog)
     save('sota-catalog.json', sota)
+    save('model-catalog.json', models)
     print(f'refreshed {changed} records ({len(gh_repos)} GitHub, {len(hf_repos)} HF)')
 
 
