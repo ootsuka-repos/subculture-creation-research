@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,16 +12,17 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 49,891 / 2026-09-30 |
+| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 49,892 / 2026-09-30 |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) · [詳細](#babylon-mmd) | Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モーフを再生する。 | 非AI制作 / 制作基盤として比較 | 256 / 2026-09-09 |
 | [inochi-creator](https://github.com/Inochi2D/inochi-creator) · [詳細](#inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,230 / 2025-06-16 |
-| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,824 / 2026-09-30 |
+| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,825 / 2026-09-30 |
 | [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) · [詳細](#open-llm-vtuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,963 / 2026-05-15 |
 | [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) · [詳細](#openseeface) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,080 / 2026-09-18 |
-| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,876 / 2026-08-28 |
+| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,877 / 2026-08-28 |
 | [three-vrm](https://github.com/pixiv/three-vrm) · [詳細](#three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,192 / 2026-09-30 |
 | [UniVRM](https://github.com/vrm-c/UniVRM) · [詳細](#univrm) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,392 / 2026-09-25 |
 | [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) · [詳細](#vtubestudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,304 / 2026-09-28 |
+| [prometheus-avatar](https://github.com/myths-labs/prometheus-avatar) · [詳細](#prometheus-avatar) | LLM出力でLive2D/3Dアバターを動かすオープンソースSDK。口パク、感情表現、リアルタイム音声、TTS、VTuberモード、MCPサーバをまとめる。 | AI連携 / 小規模・初期評価候補 | 17 / 2026-09-30 |
 
 <a id="airi"></a>
 
@@ -37,7 +38,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、TTS、ASR、キャラモデル
 - **制約・未確認**: 対応機能はプラットフォームとプロバイダに依存。全ゲームで自律動作するという意味ではない。
 - **編集者評価**: キャラ表示・会話・ゲーム操作の接続を扱う活動的な候補。
-- **メトリクス**: ★49,891、fork 4,976、作成 2024-12-01、最終push 2026-09-30T21:43:27Z、archived=False
+- **メトリクス**: ★49,892、fork 4,976、作成 2024-12-01、最終push 2026-09-30T21:43:27Z、archived=False
 - **確認**: 2026-09-09 / コミット `dfc6951a55bf4fdd66a68a0c881ae880ddd95f77`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/moeru-ai/airi/tree/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -142,7 +143,7 @@ MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
 - **依存**: 各配信先、アバター表示アプリ、任意プラグイン
 - **制約・未確認**: 顔追跡やモデル生成は別アプリ。プラグインの対応版を確認する。
 - **編集者評価**: VTuber制作物を実際の配信画面へまとめる基本工程。
-- **メトリクス**: ★76,824、fork 10,393、作成 2013-10-01、最終push 2026-09-30T19:04:25Z、archived=False
+- **メトリクス**: ★76,825、fork 10,393、作成 2013-10-01、最終push 2026-09-30T19:04:25Z、archived=False
 - **確認**: 2026-09-09 / コミット `012c6c23c73283ee5591ae00d08af14d9eeb8279`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/obsproject/obs-studio/tree/012c6c23c73283ee5591ae00d08af14d9eeb8279)。GitHub自動判定=GPL-2.0。独立レビュー・商用可否判定は未実施。
@@ -249,7 +250,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 - **依存**: 独自重み、SD image variations、VAE等
 - **制約・未確認**: 出力は動画であり編集可能なLive2D・VRMモデルではない。二次元適性は未評価。
 - **編集者評価**: 画像ベースの配信アバターを試す研究候補。
-- **メトリクス**: ★3,876、fork 576、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
+- **メトリクス**: ★3,877、fork 576、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `abdd112e01dcf7d89122c2e5efa29fcff0669740`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/GVCLab/PersonaLive/tree/abdd112e01dcf7d89122c2e5efa29fcff0669740)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -378,3 +379,38 @@ VTube Studioを外部から制御する公式API文書・開発資料。
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-09-02T08:39:55Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="prometheus-avatar"></a>
+
+## prometheus-avatar
+
+LLM出力でLive2D/3Dアバターを動かすオープンソースSDK。口パク、感情表現、リアルタイム音声、TTS、VTuberモード、MCPサーバをまとめる。
+
+- **リポジトリ**: https://github.com/myths-labs/prometheus-avatar
+- **分類**: library / AI連携 / 小規模・初期評価候補
+- **入力**: LLMのテキスト/音声、Live2Dモデル
+- **出力**: 発話・表情付きのアバター表示
+- **環境**: npm (@prometheusavatar/core)。Live2D Cubism 2/4。リアルタイム音声はGemini Live API。
+- **依存**: PIXI.js、Live2D Cubism SDK、TTS/LLMプロバイダ
+- **制約・未確認**: 音声/一部生成はホステッドAPIやマーケットプレイス前提の機能がある。比較的新しくv0.x系。
+- **編集者評価**: 数行のコードでアバターに感情付き発話と口パクを与えられ、MCP経由で任意のAIエージェントから駆動できる点が実装向き。
+- **メトリクス**: ★17、fork 7、作成 2026-03-07、最終push 2026-09-30T12:35:32Z、archived=False
+- **確認**: 2026-09-30 / コミット `7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/myths-labs/prometheus-avatar/tree/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/README.md) / [GitHub API](https://api.github.com/repos/myths-labs/prometheus-avatar) / [固定ツリー](https://github.com/myths-labs/prometheus-avatar/tree/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0)
+
+### 制作に使う際の検討
+
+Webアプリや自作エージェントへのアバター組込みに。
+
+**次に確かめること（実施前）**: 自作Live2Dモデルでの口パク同期と感情→表情マッピングの精度を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [docs/api/assets/main.js](https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/docs/api/assets/main.js) / [packages/mcp-server/src/index.ts](https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/packages/mcp-server/src/index.ts) / [packages/openclaw-plugin/src/index.ts](https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/packages/openclaw-plugin/src/index.ts)
+
+**最新GitHub Release**: [v1.0.0](https://github.com/myths-labs/prometheus-avatar/releases/tag/v1.0.0) / 2026-03-09T13:02:01Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-27T07:57:45Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

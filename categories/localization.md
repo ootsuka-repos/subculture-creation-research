@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -21,6 +21,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [BallonsTranslator-Pro](https://github.com/thomaswantstobeaskeleton/BallonsTranslator-Pro) · [詳細](#ballonstranslator-pro) | BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで、検出・OCR・翻訳・インペイント・植字を組み替え可能なモジュール群で処理する。 | AIモデル・学習 / 活発・候補 | 96 / 2026-07-31 |
 | [CarrotMangaTranslator](https://github.com/ucx0204/CarrotMangaTranslator) · [詳細](#carrotmangatranslator) | 漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。 | AIモデル・学習 / 活発・候補 | 76 / 2026-09-30 |
 | [Kites](https://github.com/Unheat/Kites) · [詳細](#kites) | ブラウザ拡張として動作し、WebGPU上でOCR・インペイント・翻訳を行って漫画をその場で翻訳表示するツール。 | AIモデル・学習 / 初期評価候補 | 30 / 2026-09-26 |
+| [lumina](https://github.com/lumina-tl/lumina) · [詳細](#lumina) | 漫画・マンファ・マンファ翻訳の無料デスクトップアプリ。テキスト検出・OCR・翻訳・インペイント・組版の全工程を自動化しつつ、各結果を手で修正できる。 | AIモデル・学習 / 活発・候補 | 19 / 2026-09-22 |
+| [yakuyomi-engine](https://github.com/joyeli/yakuyomi-engine) · [詳細](#yakuyomi-engine) | 端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。 | AIモデル・学習 / 活発・候補 | 7 / 2026-09-30 |
+| [translate-manga-br](https://github.com/marco0antonio0/translate-manga-br) · [詳細](#translate-manga-br) | ローカルファーストの漫画翻訳フルスタックアプリ。YOLOで吹き出し検出、PaddleOCRでOCR、翻訳、編集可能オーバーレイ付きリーダーまでを1本で提供する。 | AIモデル・学習 / 小規模・初期評価候補 | 31 / 2026-09-29 |
+| [LingoVeil](https://github.com/Gerald-Ha/LingoVeil) · [詳細](#lingoveil) | 漫画・コミック向けのセルフホスト翻訳ツール。画像内のテキストを検出・翻訳し、翻訳ビューで読める。ブックマークや読書進捗も保持する。 | AIモデル・学習 / 小規模・初期評価候補 | 5 / 2026-09-30 |
 
 <a id="asmr-dubber"></a>
 
@@ -344,3 +348,143 @@ BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで
 **最新GitHub Release**: [v1.1.0](https://github.com/Unheat/Kites/releases/tag/v1.1.0) / 2026-09-24T22:03:13Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-26T16:09:39Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="lumina"></a>
+
+## lumina
+
+漫画・マンファ・マンファ翻訳の無料デスクトップアプリ。テキスト検出・OCR・翻訳・インペイント・組版の全工程を自動化しつつ、各結果を手で修正できる。
+
+- **リポジトリ**: https://github.com/lumina-tl/lumina
+- **分類**: desktop_tool / AIモデル・学習 / 活発・候補
+- **入力**: 漫画のページ画像、プロジェクトファイル(.lmi)
+- **出力**: 翻訳済み画像(PNG/JPG)、プロジェクトファイル(.lmi)
+- **環境**: Electron+Python FastAPIバックエンド。モデルは同梱されず個別DL。CUDA/DirectML/CPU。
+- **依存**: ONNX Runtime、翻訳プロバイダのAPIキー、モデルファイル一式
+- **制約・未確認**: 翻訳は外部AI APIキーが必要。モデルは自動同梱されず手動配置/DL。
+- **編集者評価**: 翻訳だけ外部APIで、検出/OCR/インペイント/組版はローカルONNX実行という切り分けと、工程ごとの編集可能性が制作向き。
+- **メトリクス**: ★19、fork 3、作成 2026-08-24、最終push 2026-09-22T01:17:53Z、archived=False
+- **確認**: 2026-09-30 / コミット `bfbf042aff4c18290198f65c18f31430cd3f5a06`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/lumina-tl/lumina/tree/bfbf042aff4c18290198f65c18f31430cd3f5a06)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/lumina-tl/lumina/blob/bfbf042aff4c18290198f65c18f31430cd3f5a06/README.md) / [GitHub API](https://api.github.com/repos/lumina-tl/lumina) / [固定ツリー](https://github.com/lumina-tl/lumina/tree/bfbf042aff4c18290198f65c18f31430cd3f5a06)
+
+### 制作に使う際の検討
+
+同人・商業を問わない漫画翻訳ワークフローの中核候補。
+
+**次に確かめること（実施前）**: 日本語漫画数ページで工程別の精度とGPU/CPU速度、モデル配置の手間を計測する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [python/main.py](https://github.com/lumina-tl/lumina/blob/bfbf042aff4c18290198f65c18f31430cd3f5a06/python/main.py) / [src/main/main.ts](https://github.com/lumina-tl/lumina/blob/bfbf042aff4c18290198f65c18f31430cd3f5a06/src/main/main.ts) / [src/renderer/lib/canvas/index.ts](https://github.com/lumina-tl/lumina/blob/bfbf042aff4c18290198f65c18f31430cd3f5a06/src/renderer/lib/canvas/index.ts)
+
+**最新GitHub Release**: [v0.4.0](https://github.com/lumina-tl/lumina/releases/tag/v0.4.0) / 2026-09-13T05:39:34Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-22T01:17:40Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="yakuyomi-engine"></a>
+
+## yakuyomi-engine
+
+端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。
+
+- **リポジトリ**: https://github.com/joyeli/yakuyomi-engine
+- **分類**: library / AIモデル・学習 / 活発・候補
+- **入力**: 漫画ページのビットマップ
+- **出力**: 翻訳済みページのビットマップ(translatePage/PageResult)
+- **環境**: Kotlin/NCNN。arm64実機。モデルは自分で配置。翻訳は任意のLLM APIキー。
+- **依存**: NCNNモデル(DBNet/OCR/AOT-GAN)一式、任意のLLM API
+- **制約・未確認**: アプリではなくライブラリ本体。速度優先で画質は天井を取らない。GPU/NPUは使わずCPU実行とREADMEが明記。
+- **編集者評価**: スマホでの待ち時間を基準に各段を速度優先で設計しており、ページ間並行処理まで作り込まれている。
+- **メトリクス**: ★7、fork 1、作成 2026-06-01、最終push 2026-09-30T18:38:52Z、archived=False
+- **確認**: 2026-09-30 / コミット `3d64c43380ff0fd38ead58a35949825ecd9edfcc`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/joyeli/yakuyomi-engine/tree/3d64c43380ff0fd38ead58a35949825ecd9edfcc)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/joyeli/yakuyomi-engine/blob/3d64c43380ff0fd38ead58a35949825ecd9edfcc/README.md) / [GitHub API](https://api.github.com/repos/joyeli/yakuyomi-engine) / [固定ツリー](https://github.com/joyeli/yakuyomi-engine/tree/3d64c43380ff0fd38ead58a35949825ecd9edfcc)
+
+### 制作に使う際の検討
+
+Android読書アプリへの翻訳機能組み込みに。
+
+**次に確かめること（実施前）**: 手持ちページで検出・OCR・文字消去の所要時間と品質、翻訳併走時の挙動を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/joyeli/yakuyomi-engine/blob/3d64c43380ff0fd38ead58a35949825ecd9edfcc/README.md)
+
+**最新GitHub Release**: [models-v5](https://github.com/joyeli/yakuyomi-engine/releases/tag/models-v5) / 2026-09-26T07:14:02Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-30T18:26:08Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="translate-manga-br"></a>
+
+## translate-manga-br
+
+ローカルファーストの漫画翻訳フルスタックアプリ。YOLOで吹き出し検出、PaddleOCRでOCR、翻訳、編集可能オーバーレイ付きリーダーまでを1本で提供する。
+
+- **リポジトリ**: https://github.com/marco0antonio0/translate-manga-br
+- **分類**: web_app / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 漫画ページ画像
+- **出力**: 翻訳オーバーレイ付きページ、SQLite/ローカルファイル
+- **環境**: DockerまたはNode.js/Next.js。AIはCPU実行。翻訳はGoogle翻訳かOpenRouter。
+- **依存**: YOLO/PaddleOCRモデル、SQLite、任意の翻訳APIキー
+- **制約・未確認**: 翻訳は外部サービスが必要。規模は小さめでAndroidアプリはベータ。
+- **編集者評価**: 検出から閲覧までを自前ホストで完結させ、データをstorage/に残す設計が分かりやすい。
+- **メトリクス**: ★31、fork 0、作成 2026-05-18、最終push 2026-09-29T02:40:51Z、archived=False
+- **確認**: 2026-09-30 / コミット `cb6989b7a978bb3b87f4c6305d972c6d61811b3a`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/marco0antonio0/translate-manga-br/tree/cb6989b7a978bb3b87f4c6305d972c6d61811b3a)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/marco0antonio0/translate-manga-br/blob/cb6989b7a978bb3b87f4c6305d972c6d61811b3a/README.md) / [GitHub API](https://api.github.com/repos/marco0antonio0/translate-manga-br) / [固定ツリー](https://github.com/marco0antonio0/translate-manga-br/tree/cb6989b7a978bb3b87f4c6305d972c6d61811b3a)
+
+### 制作に使う際の検討
+
+自前サーバで漫画翻訳と閲覧を回す用途。
+
+**次に確かめること（実施前）**: 日本語ページで吹き出し検出・OCR精度とDocker運用の負荷を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [lib/backend/shared/migrations/index.ts](https://github.com/marco0antonio0/translate-manga-br/blob/cb6989b7a978bb3b87f4c6305d972c6d61811b3a/lib/backend/shared/migrations/index.ts)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-08-01T04:11:43Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="lingoveil"></a>
+
+## LingoVeil
+
+漫画・コミック向けのセルフホスト翻訳ツール。画像内のテキストを検出・翻訳し、翻訳ビューで読める。ブックマークや読書進捗も保持する。
+
+- **リポジトリ**: https://github.com/Gerald-Ha/LingoVeil
+- **分類**: web_app / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 画像、PDF、対応漫画サイトの章ページ
+- **出力**: 翻訳ビュー、履歴・ブックマーク
+- **環境**: Docker等でセルフホスト。翻訳はSeamlessM4T v2 Large/Bergamot/LM Studio/Ollama。
+- **依存**: 翻訳モデル(例:SeamlessM4T v2 Large、約8.7GiB)、任意でOllama/LM Studio
+- **制約・未確認**: 翻訳エンジンごとに対応言語が異なる。新規・小規模。SeamlessM4TはRAM消費が大きいと記載。
+- **編集者評価**: 読書体験と翻訳を一体化し、スマホから同じサーバにアクセスできる点が実用的。
+- **メトリクス**: ★5、fork 0、作成 2026-08-07、最終push 2026-09-30T08:44:03Z、archived=False
+- **確認**: 2026-09-30 / コミット `dc3e378a7199f7c746fa4a94d7556532885a5386`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Gerald-Ha/LingoVeil/tree/dc3e378a7199f7c746fa4a94d7556532885a5386)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Gerald-Ha/LingoVeil/blob/dc3e378a7199f7c746fa4a94d7556532885a5386/README.md) / [GitHub API](https://api.github.com/repos/Gerald-Ha/LingoVeil) / [固定ツリー](https://github.com/Gerald-Ha/LingoVeil/tree/dc3e378a7199f7c746fa4a94d7556532885a5386)
+
+### 制作に使う際の検討
+
+自宅サーバとスマホ閲覧を組み合わせた翻訳読書に。
+
+**次に確かめること（実施前）**: 実ページでOCR品質とSeamlessM4TのRAM/速度、Ollama連携の設定負荷を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [web/app.js](https://github.com/Gerald-Ha/LingoVeil/blob/dc3e378a7199f7c746fa4a94d7556532885a5386/web/app.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-30T08:44:03Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

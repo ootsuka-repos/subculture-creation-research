@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,12 +12,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,647 / 2026-09-30 |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,649 / 2026-09-30 |
 | [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) · [詳細](#comfyui-wanvideowrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,716 / 2026-05-24 |
 | [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) · [詳細](#diffsynth-studio) | 画像・動画の生成と追加学習を複数モデルで扱う統合実装。 | AIモデル・学習 / モデル・研究候補 | 13,200 / 2026-09-30 |
 | [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) · [詳細](#musubi-tuner) | 画像・動画モデル向けのLoRA学習スクリプト群。 | AIモデル・学習 / 更新のある導入・評価候補 | 2,074 / 2026-09-30 |
 | [sd-scripts](https://github.com/kohya-ss/sd-scripts) · [詳細](#sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,242 / 2026-09-24 |
 | [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) · [詳細](#comfyui-anime-extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-09-23 |
+| [comfyui-stylebook](https://github.com/EnragedAntelope/comfyui-stylebook) · [詳細](#comfyui-stylebook) | ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ済みプレビュー、1000以上の作家記述子、130以上のモディファイアを同梱する。 | AIは任意 / 小規模・初期評価候補 | 9 / 2026-09-28 |
 
 <a id="comfyui"></a>
 
@@ -33,7 +34,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 各種生成モデル、任意のカスタムノード
 - **制約・未確認**: カスタムノードとモデルの互換性は個別確認が必要。ワークフロー公開だけで再現済みとはしない。
 - **編集者評価**: 複数分野のモデルと制作補助ノードを集約できる共通基盤。
-- **メトリクス**: ★135,647、fork 16,091、作成 2023-01-17、最終push 2026-09-30T23:05:31Z、archived=False
+- **メトリクス**: ★135,649、fork 16,092、作成 2023-01-17、最終push 2026-09-30T23:23:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `4989cdd95487531b50438c6a091dffa06e4af4b2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Comfy-Org/ComfyUI/tree/4989cdd95487531b50438c6a091dffa06e4af4b2)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -230,3 +231,38 @@ ComfyUI向けのノード集で、音声合成、画像条件付きキャラク�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-09-23T00:25:52Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="comfyui-stylebook"></a>
+
+## comfyui-stylebook
+
+ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ済みプレビュー、1000以上の作家記述子、130以上のモディファイアを同梱する。
+
+- **リポジトリ**: https://github.com/EnragedAntelope/comfyui-stylebook
+- **分類**: integration / AIは任意 / 小規模・初期評価候補
+- **入力**: 被写体プロンプト
+- **出力**: スタイル/作家/モディファイアを合成したプロンプトとネガティブ
+- **環境**: ComfyUI。依存ゼロ、ネット不要、APIキー不要。
+- **依存**: ComfyUI
+- **制約・未確認**: スタイルの実効はベースモデル依存。AIモデル自体は含まない。CFG1ではネガティブが効かない旨の注意あり。
+- **編集者評価**: 650以上のスタイルにレンダ済みプレビューが付き、見て選べるため画風探索の試行錯誤を減らせる。
+- **メトリクス**: ★9、fork 0、作成 2026-08-02、最終push 2026-09-28T02:55:42Z、archived=False
+- **確認**: 2026-09-30 / コミット `3ccd87219d061fb549e481843be3c680de341e86`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/EnragedAntelope/comfyui-stylebook/tree/3ccd87219d061fb549e481843be3c680de341e86)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/EnragedAntelope/comfyui-stylebook/blob/3ccd87219d061fb549e481843be3c680de341e86/README.md) / [GitHub API](https://api.github.com/repos/EnragedAntelope/comfyui-stylebook) / [固定ツリー](https://github.com/EnragedAntelope/comfyui-stylebook/tree/3ccd87219d061fb549e481843be3c680de341e86)
+
+### 制作に使う際の検討
+
+画風の探索・統一、作品ごとのルック固定に。
+
+**次に確かめること（実施前）**: 主要スタイルを自前モデルで試し、意図した画風と被写体保持の両立を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [tests/frontend/stubs/app.js](https://github.com/EnragedAntelope/comfyui-stylebook/blob/3ccd87219d061fb549e481843be3c680de341e86/tests/frontend/stubs/app.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-28T02:55:42Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

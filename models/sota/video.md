@@ -83,7 +83,7 @@
 
 - [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) — MiniMax H3公式(推論・プロンプトガイド・スキル)（★9,417 / ライセンス未表示 / 最終push 2026-08-15 / 確認コミット [`d21241f0`](https://github.com/MiniMax-AI/MiniMax-H3/blob/d21241f0a4b3acbb34c97dae47fa417b7065e438/README.md)）
   - 9.4k stars。プロンプト作成スキルを同梱(リポジトリ側にライセンスメタデータなし、HF側LICENSEを参照)。
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,649 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - Comfy-Org/MiniMax-H3が最も取得されている配布形態。v0.38.0(2026-09-29)。
 - [kohya-ss/musubi-tuner](https://github.com/kohya-ss/musubi-tuner) — H3のLoRA学習(実験的サポート、1フレーム学習ドキュメントあり)（★2,074 / ライセンス未表示 / 最終push 2026-09-30 / release v0.3.6 (2026-09-27) / 確認コミット [`f8a1b037`](https://github.com/kohya-ss/musubi-tuner/blob/f8a1b03794a49239a3539015075f5123d6c07d66/README.md) / 制作カタログ: [musubi-tuner](../../categories/workflow.md#musubi-tuner)）
   - READMEがMiniMax-H3の学習をサポートと明記(2026-09-27 v0.3.6)。
@@ -106,7 +106,7 @@
   - 280 stars、GPL-3.0、2.1.0(2026-06-18)。
 - [NevermindNilas/TheAnimeScripter](https://github.com/NevermindNilas/TheAnimeScripter) — アニメ向けの一括ツールキット(アップスケール・RIFE補間・復元・重複フレーム除去、CLI/AE/Standalone)（★329 / AGPL-3.0 / 最終push 2026-09-28 / release v2.10.0 (2026-09-20) / 確認コミット [`a4913ca9`](https://github.com/NevermindNilas/TheAnimeScripter/blob/a4913ca99e0ef4a8d7253f11f2ee6735752664b4/README.md)）
   - 329 stars、AGPL-3.0、v2.10.0(2026-09-20)。READMEがCUGAN/Adore/SPAN等のモデル搭載を記載。
-- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K v4/Real-ESRGAN/Real-CUGAN/RIFEをncnn+Vulkanで動かす汎用フレームワーク（★21,899 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
+- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K v4/Real-ESRGAN/Real-CUGAN/RIFEをncnn+Vulkanで動かす汎用フレームワーク（★21,900 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
   - 21.9k stars だがAGPL-3.0、最終release 6.4.0は2025-01、最終pushは2026-03。
 
 ### フレーム補間(アニメの滑らか化)
@@ -253,7 +253,7 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) — Qwen3-VL公式(推論・動画入力の使い方)（★20,029 / Apache-2.0 / 最終push 2026-01-30 / 確認コミット [`96588727`](https://github.com/QwenLM/Qwen3-VL/blob/96588727e44c78b25ba03ea03b8e12f7e64fd0da/README.md)）
+- [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) — Qwen3-VL公式(推論・動画入力の使い方)（★20,030 / Apache-2.0 / 最終push 2026-01-30 / 確認コミット [`96588727`](https://github.com/QwenLM/Qwen3-VL/blob/96588727e44c78b25ba03ea03b8e12f7e64fd0da/README.md)）
   - 20k stars、Apache-2.0。最終push 2026-01-30(Qwen3.8系はHFカード参照)。
 - [Breakthrough/PySceneDetect](https://github.com/Breakthrough/PySceneDetect) — 長尺アニメ動画をカット単位に分割してからキャプション化する前処理（★5,212 / BSD-3-Clause / 最終push 2026-09-21 / release v0.7.1 (2026-07-22) / 確認コミット [`81c414cb`](https://github.com/Breakthrough/PySceneDetect/blob/81c414cb4b706e58648f98efd381024790b1565f/README.md)）
   - 5.2k stars、BSD-3-Clause。

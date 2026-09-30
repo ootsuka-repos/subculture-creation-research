@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -306,6 +306,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: ラフや生成画像の顔崩れを後処理で整える用途。
   - 出典（2026-09-30確認）: https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/blob/98a00ad332803f4adf9e2154a211e3641971d7ef/README.md
 
+- **Colortina** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 白黒漫画画像、PDF、画像フォルダ → 彩色済み画像。manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。
+  - 制約: モデル重みはリポジトリ非同梱。新規・小規模。第三者コード/モデルは各ライセンスに従う。
+  - 制作用途: ページ単位の彩色下地と手直しに。
+  - 出典（2026-09-30確認）: https://github.com/Amster-Ilvil/Colortina/blob/056c6ed79609037605a6d5fdde9f0bda5176abac/README.md
+
 ## 動画生成
 
 - **FramePack** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -411,6 +417,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 後継版の能力をこの実装へ混ぜない。実際の変形品質は未検証。
   - 制作用途: 後継SkinTokensとの比較基準や既存リグ再現のために残す。後継の新機能はこの版の実績としない。
   - 出典（2026-09-09確認）: https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/README.md
+
+- **SekaiBlender** [desktop_tool / 非AI制作 / 小規模・初期評価候補]
+  - PMXモデル、VMDモーション → PMX/VMD、レンダリング結果。MMD向けに特化したBlenderブランチ。PMX/VMDのネイティブ入出力、CCD IKソルバ、Bullet物理、FSR拡大を統合する。
+  - 制約: AI機能は含まない。MMD→Rigify連携など一部はテスト中。PMX出力は自前取込モデルに限定。HDRやライト/自己影フレームは非対応。
+  - 制作用途: MMDモデルの再利用やモーション流用、MMD風ルックのレンダリングに。
+  - 出典（2026-09-30確認）: https://github.com/ShiJieWorld/SekaiBlender/blob/3d92799c6a87372d5bf98f7ee4891bfa536665c8/README.md
 
 ## TTS・キャラクター音声
 
@@ -624,6 +636,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 既存VTube Studioアプリへ外部AIや演出からパラメータを送るAPI資料。アプリのOSS実装とは数えない。
   - 出典（2026-09-09確認）: https://github.com/DenchiSoft/VTubeStudio/blob/0f46ef44b487fa17c8120db572ebd925924b93a3/README.md
 
+- **prometheus-avatar** [library / AI連携 / 小規模・初期評価候補]
+  - LLMのテキスト/音声、Live2Dモデル → 発話・表情付きのアバター表示。LLM出力でLive2D/3Dアバターを動かすオープンソースSDK。口パク、感情表現、リアルタイム音声、TTS、VTuberモード、MCPサーバをまとめる。
+  - 制約: 音声/一部生成はホステッドAPIやマーケットプレイス前提の機能がある。比較的新しくv0.x系。
+  - 制作用途: Webアプリや自作エージェントへのアバター組込みに。
+  - 出典（2026-09-30確認）: https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -661,6 +679,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: モデルとランタイムは同梱されず別途準備。YuE2の重みは非商用ライセンスとREADMEが記載。
   - 制作用途: 音声・画像解析・VRM・漫画ページ組みをComfyUI内で連携。
   - 出典（2026-09-30確認）: https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/blob/aa21a682ea509bab0fa3f17ba877a3867647d4eb/README.md
+
+- **comfyui-stylebook** [integration / AIは任意 / 小規模・初期評価候補]
+  - 被写体プロンプト → スタイル/作家/モディファイアを合成したプロンプトとネガティブ。ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ済みプレビュー、1000以上の作家記述子、130以上のモディファイアを同梱する。
+  - 制約: スタイルの実効はベースモデル依存。AIモデル自体は含まない。CFG1ではネガティブが効かない旨の注意あり。
+  - 制作用途: 画風の探索・統一、作品ごとのルック固定に。
+  - 出典（2026-09-30確認）: https://github.com/EnragedAntelope/comfyui-stylebook/blob/3ccd87219d061fb549e481843be3c680de341e86/README.md
 
 ## 字幕・翻訳・ローカライズ
 
@@ -718,6 +742,30 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: ブラウザで読む漫画の下訳・確認作業を軽量化。
   - 出典（2026-09-30確認）: https://github.com/Unheat/Kites/blob/420898820e9ac2d4e91eede871ce48087c411475/README.md
 
+- **lumina** [desktop_tool / AIモデル・学習 / 活発・候補]
+  - 漫画のページ画像、プロジェクトファイル(.lmi) → 翻訳済み画像(PNG/JPG)、プロジェクトファイル(.lmi)。漫画・マンファ・マンファ翻訳の無料デスクトップアプリ。テキスト検出・OCR・翻訳・インペイント・組版の全工程を自動化しつつ、各結果を手で修正できる。
+  - 制約: 翻訳は外部AI APIキーが必要。モデルは自動同梱されず手動配置/DL。
+  - 制作用途: 同人・商業を問わない漫画翻訳ワークフローの中核候補。
+  - 出典（2026-09-30確認）: https://github.com/lumina-tl/lumina/blob/bfbf042aff4c18290198f65c18f31430cd3f5a06/README.md
+
+- **yakuyomi-engine** [library / AIモデル・学習 / 活発・候補]
+  - 漫画ページのビットマップ → 翻訳済みページのビットマップ(translatePage/PageResult)。端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。
+  - 制約: アプリではなくライブラリ本体。速度優先で画質は天井を取らない。GPU/NPUは使わずCPU実行とREADMEが明記。
+  - 制作用途: Android読書アプリへの翻訳機能組み込みに。
+  - 出典（2026-09-30確認）: https://github.com/joyeli/yakuyomi-engine/blob/3d64c43380ff0fd38ead58a35949825ecd9edfcc/README.md
+
+- **translate-manga-br** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - 漫画ページ画像 → 翻訳オーバーレイ付きページ、SQLite/ローカルファイル。ローカルファーストの漫画翻訳フルスタックアプリ。YOLOで吹き出し検出、PaddleOCRでOCR、翻訳、編集可能オーバーレイ付きリーダーまでを1本で提供する。
+  - 制約: 翻訳は外部サービスが必要。規模は小さめでAndroidアプリはベータ。
+  - 制作用途: 自前サーバで漫画翻訳と閲覧を回す用途。
+  - 出典（2026-09-30確認）: https://github.com/marco0antonio0/translate-manga-br/blob/cb6989b7a978bb3b87f4c6305d972c6d61811b3a/README.md
+
+- **LingoVeil** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - 画像、PDF、対応漫画サイトの章ページ → 翻訳ビュー、履歴・ブックマーク。漫画・コミック向けのセルフホスト翻訳ツール。画像内のテキストを検出・翻訳し、翻訳ビューで読める。ブックマークや読書進捗も保持する。
+  - 制約: 翻訳エンジンごとに対応言語が異なる。新規・小規模。SeamlessM4TはRAM消費が大きいと記載。
+  - 制作用途: 自宅サーバとスマホ閲覧を組み合わせた翻訳読書に。
+  - 出典（2026-09-30確認）: https://github.com/Gerald-Ha/LingoVeil/blob/dc3e378a7199f7c746fa4a94d7556532885a5386/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -749,6 +797,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 4Dメッシュ列と再利用可能な骨格モーションは同一ではない。リグ転送は別問題。
   - 制作用途: 骨格で表しにくい変形の映像制作に適する研究候補。
   - 出典（2026-09-09確認）: https://github.com/Tencent-Hunyuan/R-DMesh/blob/467cb35a9f53f6d61a0b36a5aa4e171e4d40ad0f/README.md
+
+- **VRM-Spacing-Animation-Baking** [integration / 非AI制作 / 小規模・初期評価候補]
+  - VRM 1.0モデルとアクション(アニメーション) → 物理ベイク済み・ループ調整済みのアニメーション。VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。
+  - 制約: VRM 1.0限定。外部のVRM Add-onと併用が前提。AI機能は含まない。
+  - 制作用途: VRMキャラのモーション最終調整や衣装・体型差の補正に。
+  - 出典（2026-09-30確認）: https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/blob/dc2a4a4aabb741f2eb30683e6883c3e3dd399512/README.md
 
 ## VFX・材質・ベクター演出
 
@@ -788,6 +842,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 短い映像へ未知の効果を移す研究候補。VRAM要件は個人環境での障壁。
   - 出典（2026-09-09確認）: https://github.com/libaolu312/VFXMaster/blob/0632c5a9979586adc1d4f96632e5b808ee11712f/README.md
 
+- **cHiDeScaler-Neo** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 任意のWindowsウィンドウ映像(リアルタイムキャプチャ) → 拡大・フレーム補間された映像出力。Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。
+  - 制約: HDR非対応でSDR前提。一部同梱モデル/シェーダのライセンス情報は整理中と明記。
+  - 制作用途: 映像素材のアップスケールや補間、視聴環境の画質底上げに。
+  - 出典（2026-09-30確認）: https://github.com/animeojisan/cHiDeScaler-Neo/blob/1e8fb3e7378b7df99709393087578ea7bc55d209/README.md
+
 ## 絵コンテ・制作管理・評価
 
 - **Kitsu** [web_app / 非AI制作 / 制作基盤として比較]
@@ -822,6 +882,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [NoobAI XL 1.1](https://huggingface.co/Laxhar/noobai-XL-1.1/blob/814a274af2b8097c0828819d561ec74c7d0c6cea/README.md): Illustrious系のアニメ画像モデル。直接のbase_modelはNoobAI XL1.0。 HFメタデータのFAIPL表記に加え、モデルカード本文にモデル・派生・生成物を含む商用禁止と共有条件を記載。本文の追加条件を見落とさない。
 - [manga-panel-detector-yolo26n](https://huggingface.co/leoxs22/manga-panel-detector-yolo26n/blob/40a2854663d537563cfb95c370288a84c6505b9a/README.md): Ultralytics YOLO26-nano（2.57Mパラメータ）を、Manga109-sでパネルとテキストの2クラス検出にファインチューニングしたモデル。入力は640x640。 重みはAGPL-3.0（Ultralytics YOLO26由来）。以前はApache-2.0と表示していたが誤りだったと作者が訂正。クローズドな商用製品にはUltralytics Enterprise Licenseが必要と記載。
 - [Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF](https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF/blob/e17bc6a8dd92ddf930bd7858ceb916117ee5f916/README.md): tencent/Hy-MT2-1.8Bを日本語→英語の漫画セリフ翻訳向けにファインチューニングしたモデル（HunYuanDenseV1ForCausalLM）。Q4_K_MのGGUFとマージ済みbf16重みの両方を同梱。 Apache-2.0（baseモデル tencent/Hy-MT2-1.8B に準拠）。
+- [Illustrious-XL-v2.0](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/blob/69459c1fe6f46db41ab31e6114f05acc0e06bcaa/README.md): アニメ特化のtext-to-imageモデル(ヴェースはSDXL系)。公式のv2系チェックポイントを公開している。 licenseはcreativeml-openrail-m。
+- [HDM-xut-340M-anime](https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime/blob/7c9e455a9722811bd9eec7eb38b4c8712a7ef290/README.md): 独自バックボーンXUT(Cross-U-Transformer)を用いる約340Mのアニメ向けtext-to-imageベース。TREAD併用で家庭用ハード/格安サーバでの学習を狙う。 licenseはcc(具体的なCC種別はカードに明記されていない)。
+- [anime-painter](https://huggingface.co/xinsir/anime-painter/blob/18185a73b6e7fe49f2f2de1bb9d7db0b74a41773/README.md): SDXLベースのscribble ControlNet。ラフな線画からアニメ調画像を生成する。 licenseはapache-2.0。
+- [Galgame-Llasa-3B](https://huggingface.co/OmniAICreator/Galgame-Llasa-3B/blob/23134f66585fe17c0e72bdeb737c9f71bb89d0db/README.md): Llasa-3B(HKUSTAudio)をベースに、ギャルゲー音声データセットで日本語向けに微調整したTTSモデル。 licenseはCC-BY-NC-4.0(非商用)。
+- [Audio2Face-3D-v3.0](https://huggingface.co/nvidia/Audio2Face-3D-v3.0/blob/b74132732fd9a9d29b237bec193ded64c9745e91/README.md): Hubert系エンコーダと拡散機構を組み合わせ、音声から3D顔モーション(肌・舌・顎・眼球)を生成する約1.8億パラメータのモデル。 license_nameはnvidia-open-model-license。カードは商用/非商用利用可と記載。
 
 ## 保留情報
 

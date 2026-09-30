@@ -109,7 +109,7 @@
 
 関連リポジトリ:
 
-- [nv-tlabs/kimodo](https://github.com/nv-tlabs/kimodo) — Kimodo公式実装(CLI・対話デモ・ベンチマーク)（★3,667 / Apache-2.0 / 最終push 2026-09-22 / 確認コミット [`58e78189`](https://github.com/nv-tlabs/kimodo/blob/58e781898b3d7e328a676a75d3e338c45dce3ad9/README.md)）
+- [nv-tlabs/kimodo](https://github.com/nv-tlabs/kimodo) — Kimodo公式実装(CLI・対話デモ・ベンチマーク)（★3,668 / Apache-2.0 / 最終push 2026-09-22 / 確認コミット [`58e78189`](https://github.com/nv-tlabs/kimodo/blob/58e781898b3d7e328a676a75d3e338c45dce3ad9/README.md)）
   - ★3,667、Apache-2.0、最終push 2026-09-22。ARDY公開(2026-07-10)もREADMEに記載。
 - [Kirakun0328/text-to-vrma](https://github.com/Kirakun0328/text-to-vrma) — テキスト→VRMA(VRMアニメーション)生成ツール(VRM特化)（★183 / MIT / 最終push 2026-09-05 / release v1.1.8 (2026-09-05) / 確認コミット [`b8081875`](https://github.com/Kirakun0328/text-to-vrma/blob/b8081875916c8621c7ec226b4adcb2c70e7b13b7/README.md)）
   - ★183、MIT、最終push 2026-09-05、最新 v1.1.8。ARDY/OpenAI/Claudeエンジン対応、ローカルHTTP API。X告知 671 likes(2026-07-16)。
@@ -181,7 +181,7 @@
 
 関連リポジトリ:
 
-- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★49,891 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
+- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★49,892 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
   - ★49,887、MIT、最終push 2026-09-30、最新 v0.12.0-beta.5(2026-08-29)。規模・更新とも首位。
 - [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの定番ローカルVTuber(割り込み・ハンズフリー)（★13,963 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../../categories/vtuber.md#open-llm-vtuber)）
   - ★13,961、最終push 2026-05-15、最新 v1.2.1(2025-08-26)。GitHubライセンスはNOASSERTION(READMEはMITと別の第三者ライセンスを併記、Live2Dサンプルは別条件)。更新は鈍化。

@@ -82,7 +82,7 @@
   - 637★、最終push 2026-08-23。Apache-2.0。TIPO/DanTagGen系の実運用入口。
 - [KohakuBlueleaf/KGen](https://github.com/KohakuBlueleaf/KGen) — TIPOの推論・サンプリング実装(pip install tipo-kgen)（★102 / Apache-2.0 / 最終push 2026-08-22 / 確認コミット [`fecfe053`](https://github.com/KohakuBlueleaf/KGen/blob/fecfe05341f021f916f9b23e1c93f23b4c50d9bb/README.md)）
   - 101★、Apache-2.0、2026-08-22更新。READMEにICLR 2026と明記。
-- [DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) — Danbooruタグのオートコンプリート(WebUI)（★2,807 / MIT / 最終push 2026-07-01 / release 3.3.0 (2025-05-08) / 確認コミット [`4170882f`](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete/blob/4170882f90b47be130a0ff9314f663c230b9153d/README.md)）
+- [DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) — Danbooruタグのオートコンプリート(WebUI)（★2,808 / MIT / 最終push 2026-07-01 / release 3.3.0 (2025-05-08) / 確認コミット [`4170882f`](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete/blob/4170882f90b47be130a0ff9314f663c230b9153d/README.md)）
   - 2.8k★、MIT。タグ語彙補完の定番(TIPOとは別機能)。最終push 2026-07-01。
 
 ### テキスト生成(キャラクターロールプレイ/キャラカード対話)

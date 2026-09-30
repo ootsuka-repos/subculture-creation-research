@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -18,6 +18,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 795 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 7 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
+| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 18 / 2026-09-28 |
 
 <a id="effekseer"></a>
 
@@ -248,3 +249,38 @@ OpenVDB由来の疎な3Dボリューム効果を学習・生成する。
 モデル配布確認（ファイル一覧のみ。代表モデルであり依存全体ではありません）:
 
 - [8ruceLi/VFXMaster](https://huggingface.co/8ruceLi/VFXMaster) — file_listing_checked、確認日 2026-09-09、revision `63d976c76bfd62bb8b991f97f5e753c6d9716c81`。代表ファイル: `In-Context-Conditioning/checkpoint-40000/diffusion_pytorch_model-00001-of-00002.safetensors`, `In-Context-Conditioning/checkpoint-40000/diffusion_pytorch_model-00002-of-00002.safetensors`, `In-Context-Conditioning/checkpoint-40000/scheduler.bin`, `One-shot-Adaptation/Acid/checkpoint-200/pytorch_model.pt`。gated=False。
+
+<a id="chidescaler-neo"></a>
+
+## cHiDeScaler-Neo
+
+Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。
+
+- **リポジトリ**: https://github.com/animeojisan/cHiDeScaler-Neo
+- **分類**: desktop_tool / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 任意のWindowsウィンドウ映像(リアルタイムキャプチャ)
+- **出力**: 拡大・フレーム補間された映像出力
+- **環境**: Windows 10/11、Rust/MSVCビルド。DirectML/NeoAMD/TensorRTバックエンド。
+- **依存**: ONNXモデル、mpv互換GLSLシェーダ、RIFE/DRBA
+- **制約・未確認**: HDR非対応でSDR前提。一部同梱モデル/シェーダのライセンス情報は整理中と明記。
+- **編集者評価**: アニメ向けシェーダ/ONNXモデルを前提に、DirectML・NeoAMD・TensorRTを選べる構成で、既存のmpv系資産を流用できる。
+- **メトリクス**: ★18、fork 0、作成 2026-08-08、最終push 2026-09-28T03:56:36Z、archived=False
+- **確認**: 2026-09-30 / コミット `1e8fb3e7378b7df99709393087578ea7bc55d209`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/animeojisan/cHiDeScaler-Neo/tree/1e8fb3e7378b7df99709393087578ea7bc55d209)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/animeojisan/cHiDeScaler-Neo/blob/1e8fb3e7378b7df99709393087578ea7bc55d209/README.md) / [GitHub API](https://api.github.com/repos/animeojisan/cHiDeScaler-Neo) / [固定ツリー](https://github.com/animeojisan/cHiDeScaler-Neo/tree/1e8fb3e7378b7df99709393087578ea7bc55d209)
+
+### 制作に使う際の検討
+
+映像素材のアップスケールや補間、視聴環境の画質底上げに。
+
+**次に確かめること（実施前）**: 手元のアニメ映像でバックエンド別の速度と画質、フレーム補間の破綻を比較する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [src/main.rs](https://github.com/animeojisan/cHiDeScaler-Neo/blob/1e8fb3e7378b7df99709393087578ea7bc55d209/src/main.rs)
+
+**最新GitHub Release**: [v0.99.4](https://github.com/animeojisan/cHiDeScaler-Neo/releases/tag/v0.99.4) / 2026-09-28T03:56:37Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-28T03:48:09Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

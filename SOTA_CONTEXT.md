@@ -12,7 +12,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **テキスト→画像(アニメ/イラスト生成)** [アニメ特化の最良 / 確度高]: `circlestone-labs/Anima`@f973fc41（other/circlestone-labs-non-commercial-license、DL累計5,537,017、likes 2,330）アニメ/イラスト特化の2B DiT テキスト→画像。Danbooruタグ+自然文の混在プロンプト、@artistタグ、年/品質/安全タグに対応。Qwen3-0.6B(base)をテキストエンコーダ、Qwen-Image VAEを使用。
   - 選定: Anima(2B)が30日123万DL・累計554万・コード参照1,378件で首位、既定はanima-base-v1.0、ただし非商用ライセンス。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0) / pamparamm/ComfyUI-ppm(★268,AGPL-3.0)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,649,GPL-3.0) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0) / pamparamm/ComfyUI-ppm(★268,AGPL-3.0)
 
 - **テキスト→画像(Anima用VAE)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `Comfy-Org/Qwen-Image_ComfyUI`@1f12b17b（apache-2.0、DL累計26,618,324、likes 507）Qwen-Image用16chVAE(ComfyUI再配布)。AnimaおよびAnima派生(2.9B等)が共通で使用。アニメ特化ではない汎用VAE。
   - 選定: AnimaはQwen-Image VAE固定で、Comfy-Org再配布の単体ファイルが実用上の最良(Apache-2.0)、FLUX.2 VAEへの変更要望は未対応。
@@ -43,7 +43,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像→画像(写真→アニメ調スタイル変換)** [アニメ特化の最良 / 確度中]: `autoweeb/Qwen-Image-Edit-2509-Photo-to-Anime`@2fdebf4e（mit、DL累計1,309,813、likes 131）Qwen-Image-Edit-2509向けLoRA。実写写真をアニメ画像へ変換する(AutoWeeb社製)。
   - 選定: autoweeb製Qwen-Image-Edit-2509 LoRA(累計131万DL, MIT)が次点の約12倍の30日DLで首位、品質は自己提示例のみで開発元の宣伝色あり。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / QwenLM/Qwen-Image(★8,385,Apache-2.0) / TachibanaYoshino/AnimeGANv3(★2,037,未表示)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,649,GPL-3.0) / QwenLM/Qwen-Image(★8,385,Apache-2.0) / TachibanaYoshino/AnimeGANv3(★2,037,未表示)
 
 - **画像→画像(ポーズ/線画/深度などのControlNet条件付け)** [アニメ特化の最良 / 確度中]: `kohya-ss/Anima-LLLite`@36ba7f2f（other/circlestone-labs-non-commercial-license、DL累計0、likes 233）AnimaのDiTに対するLoRA型の軽量ControlNet(LLLite)。any-test-like(線画・スケッチ条件)、inpainting(RGB+マスク4ch)、旧世代のlineart/depth/pose/scribble。
   - 選定: Anima作者kohya製のAnima-LLLite(Comfy-Org再配布が30日43,471DL)が事実上唯一の選択肢、ライセンスは非商用でlineart/pose等は旧世代の実験的重み。
@@ -51,7 +51,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像+テキスト→画像(アニメ画像の指示編集)** [汎用モデルのみ（アニメ特化なし） / 確度低]: `Qwen/Qwen-Image-2.1`@d26bb612（other/qwen-research、DL累計70,687、likes 2,720）Qwenの統合T2I/画像編集モデル(汎用)。アニメ特化ではないが、アニメ画像の指示編集で最も多く言及される最新モデル。
   - 選定: アニメ特化の編集モデルは見つからず、汎用のQwen-Image-2.1(X評判1,158 likes)を暫定首位としたが研究用非商用ライセンスで公開2週間のため信頼度は低。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / QwenLM/Qwen-Image-2.1(★1,653,NOASSERTION) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,649,GPL-3.0) / QwenLM/Qwen-Image-2.1(★1,653,NOASSERTION) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0)
 
 - **無条件画像生成(アニメ顔/全身GAN・拡散)** [アニメ特化の最良 / 確度低]: `skytnt/fbanime-gan`@79c6af6b（apache-2.0、DL累計0、likes 9）全身アニメ画像を生成するStyleGAN2。非正方形解像度対応、e4eエンコーダ(ONNX)付き。
   - 選定: 現行の勝者は無く、唯一実用に近い2022年のStyleGAN2のskytnt/fbanime-gan(FID 1.4は自己報告)を低信頼で選定、実務ではT2Iの乱数プロンプトが主流。
@@ -69,11 +69,11 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像+テキストから動画生成(アニメ)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `MiniMaxAI/MiniMax-H3`@42ed227e（other/minimax-h3-community-license-agreement、DL累計9,127,868、likes 5,793）MiniMax(Nanonoble)のオープン重み音声付き動画生成。FL2VA(先頭/末尾フレーム)とRef2VA(画像9枚・動画3本・音声3本の参照)の2系統、768p生成+2K再生成、日本語を含む11言語の音声。H3-Context-IR(プロンプト整形)は非公開のホスト型で、プロンプトガイドに沿って自前で整形する。
   - 選定: アニメ特化LoRAは採用が乏しくMiniMax-H3(likes 5,790)を汎用で採用、独自ライセンスで米・EU・英・韓は対象外で商用も条件付き。
-  - リポジトリ: MiniMax-AI/MiniMax-H3(★9,417,未表示) / Comfy-Org/ComfyUI(★135,647,GPL-3.0) / kohya-ss/musubi-tuner(★2,074,未表示) / ostris/ai-toolkit(★12,167,MIT)
+  - リポジトリ: MiniMax-AI/MiniMax-H3(★9,417,未表示) / Comfy-Org/ComfyUI(★135,649,GPL-3.0) / kohya-ss/musubi-tuner(★2,074,未表示) / ostris/ai-toolkit(★12,167,MIT)
 
 - **動画(アニメ)のアップスケール・修復(video-to-video)** [モデルなし / 確度低]: モデルなし（リポジトリのみ）
   - 選定: HF上に該当なく、GitHub配布のAnimeJaNai V3(mpv版752 stars)が実用標準だが非商用ライセンスで画質の実測根拠も無い。
-  - リポジトリ: the-database/mpv-AnimeJaNai(★752,NOASSERTION) / the-database/VideoJaNai(★280,GPL-3.0) / NevermindNilas/TheAnimeScripter(★329,AGPL-3.0) / k4yt3x/video2x(★21,899,AGPL-3.0)
+  - リポジトリ: the-database/mpv-AnimeJaNai(★752,NOASSERTION) / the-database/VideoJaNai(★280,GPL-3.0) / NevermindNilas/TheAnimeScripter(★329,AGPL-3.0) / k4yt3x/video2x(★21,900,AGPL-3.0)
 
 - **フレーム補間(アニメの滑らか化)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `Comfy-Org/frame_interpolation`@219da3c9（other/mit-and-apache-2.0、DL累計148,615、likes 42）ComfyUI公式(Comfy-Org)による動画フレーム補間モデルの再パッケージ集。RIFE v4.25(lite/標準/heavy)・v4.26(標準/heavy)とFILM fp16。元はhzwer/Practical-RIFEとgoogle-research/frame-interpolation。
   - 選定: アニメ専用の現役補間は無く、ComfyUI標準のRIFE/FILM再パッケージ(Comfy-Org、累計DL 148,615)を汎用で採用、アニメ比較ベンチは無い。
@@ -97,7 +97,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **動画理解・キャプション(アニメ動画)** [汎用モデルのみ（アニメ特化なし） / 確度低]: `Qwen/Qwen3-VL-8B-Instruct`@0c351dd0（apache-2.0、DL累計71,254,401、likes 1,157）Qwen3-VL 8B Instruct。画像・動画・長文脈(256K、1Mまで拡張可)の視覚言語モデルで、動画の時間位置合わせ(テキスト-タイムスタンプ整列)を強化。カードは事前学習でアニメ等の対象認識を強化したと記載。
   - 選定: アニメ特化の動画理解モデルは無く、Qwen3-VL-8B-Instruct(Apache-2.0、30日DL 1,655万)を暫定採用、アニメ動画での精度比較は未確認。
-  - リポジトリ: QwenLM/Qwen3-VL(★20,029,Apache-2.0) / Breakthrough/PySceneDetect(★5,212,BSD-3-Clause)
+  - リポジトリ: QwenLM/Qwen3-VL(★20,030,Apache-2.0) / Breakthrough/PySceneDetect(★5,212,BSD-3-Clause)
 
 ## 音声
 
@@ -157,7 +157,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **音声+テキスト→テキスト(アニメ/ゲーム調セリフの感情・話者特徴キャプション生成、TTS学習用注釈)** [アニメ特化の最良 / 確度低]: `NandemoGHS/Anime-Speech-Japanese-Captioner`@07433a52（cc-by-nc-4.0、DL累計223、likes 10）Qwen3-Omni-30B-A3B-Captionerをfine-tuneした、日本語アニメ/ゲーム調音声のキャプション生成モデル。感情、話者像、気分、速度、韻律、ピッチ/音色、スタイルを日本語の構造化テキストで返す。
   - 選定: アニメ調音声のキャプション生成はAnime-Speech-Japanese-Captionerのみだが、CC-BY-NC・DL累計223で出力例が性的内容を含み確度は低い。
-  - リポジトリ: QwenLM/Qwen3-Omni(★4,035,Apache-2.0) / modelscope/ms-swift(★15,761,Apache-2.0)
+  - リポジトリ: QwenLM/Qwen3-Omni(★4,036,Apache-2.0) / modelscope/ms-swift(★15,761,Apache-2.0)
 
 ## 画像認識（検出・分割・分類・特徴）
 
@@ -187,7 +187,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像セグメンテーション(キャラクター切り抜き・背景除去)** [アニメ特化の最良 / 確度低]: `joelseytre/toonout`@cbf720ec（mit、DL累計3,304、likes 23）BiRefNet(Dichotomous Image Segmentation)をアニメ画像1,228枚(ToonOutデータセット、CC-BY-4.0)で微調整した背景除去モデル。髪の毛先・線画・半透明を狙う。作者はKartoon AI
   - 選定: ToonOut採用(自作126枚でPixel Accuracy 95.3→99.5%の自己報告、MIT)、isnet-animeとの直接比較なくlow。
-  - リポジトリ: danielgatis/rembg(★24,932,MIT) / MatteoKartoon/BiRefNet(★101,MIT) / 1038lab/ComfyUI-RMBG(★2,128,GPL-3.0) / SkyTNT/anime-segmentation(★844,Apache-2.0)
+  - リポジトリ: danielgatis/rembg(★24,934,MIT) / MatteoKartoon/BiRefNet(★101,MIT) / 1038lab/ComfyUI-RMBG(★2,129,GPL-3.0) / SkyTNT/anime-segmentation(★844,Apache-2.0)
 
 - **画像セグメンテーション(キャラクター部位別レイヤー分解・セマンティックパース)** [アニメ特化の最良 / 確度中]: `layerdifforg/seethroughv0.0.2_layerdiff3d`@4477e6ce（openrail++、DL累計88,354、likes 27）SDXL(Animagine XL 4.0)ベースの拡散モデルで、アニメキャラ立ち絵を19部位のRGBAレイヤーに分解し、遮蔽された部位も補完する(See-throughパイプラインの1段目)。深度モデル(seethroughv0.0.1_marigold)とセットで描画順も推定
   - 選定: See-through LayerDiff3D採用、GitHub★4,189・SIGGRAPH 2026、Apache-2.0宣言だがOpenRAIL継承で生成型のため補完は推測。
@@ -199,7 +199,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **マスク生成(SAM系・アニメ対応)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `facebook/sam3`@3c879f39（other、DL累計21,453,510、likes 3,634）Meta Segment Anything 3。テキスト句・画像例・点/ボックス/マスクのプロンプトで、画像内の該当概念を全インスタンス分割(検出+マスク+動画追跡)する汎用モデル。アニメ専用ではない
   - 選定: アニメ特化SAMは見つからずfacebook/sam3(DL累計21.5M)をgeneral_only採用、SAM License・アニメ定量評価なし。
-  - リポジトリ: facebookresearch/sam3(★11,851,NOASSERTION) / PozzettiAndrea/ComfyUI-SAM3(★575,NOASSERTION) / kijai/ComfyUI-segment-anything-2(★1,221,Apache-2.0) / 1038lab/ComfyUI-RMBG(★2,128,GPL-3.0)
+  - リポジトリ: facebookresearch/sam3(★11,851,NOASSERTION) / PozzettiAndrea/ComfyUI-SAM3(★575,NOASSERTION) / kijai/ComfyUI-segment-anything-2(★1,221,Apache-2.0) / 1038lab/ComfyUI-RMBG(★2,129,GPL-3.0)
 
 - **ゼロショット物体検出(テキスト指定・アニメ画像)** [汎用モデルのみ（アニメ特化なし） / 確度低]: `facebook/sam3`@3c879f39（other、DL累計21,453,510、likes 3,634）Meta Segment Anything 3。テキスト句・画像例・点/ボックス/マスクのプロンプトで、画像内の該当概念を全インスタンス分割(検出+マスク+動画追跡)する汎用モデル。アニメ専用ではない
   - 選定: アニメ特化なしでSAM3をgeneral_only採用(Xの実務例あり)、アニメ定量ベンチなくGrounding DINOが代替でlow。
@@ -313,7 +313,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **テキスト生成(タグ/プロンプト拡張: Danbooruタグ→詳細プロンプト)** [アニメ特化の最良 / 確度中]: `KBlueLeaf/TIPO-500M-ft`@386fc21b（other/kohaku-license-1.0、DL累計436,120、likes 48）短いタグ/自然言語キャプションを、Danbooruタグ様式＋自然文の詳細プロンプトへ拡張するLLaMA系500Mモデル(TIPO)。T2Iに渡す前段のプリサンプリングで多様性を保ちつつ質を上げる。
   - 選定: TIPO-500M-ftを採用(累計43万DL、ICLR 2026採択、拡張637★)、評価は200Mでの自己報告でKohaku License。
-  - リポジトリ: KohakuBlueleaf/z-tipo-extension(★637,Apache-2.0) / KohakuBlueleaf/KGen(★102,Apache-2.0) / DominikDoom/a1111-sd-webui-tagcomplete(★2,807,MIT)
+  - リポジトリ: KohakuBlueleaf/z-tipo-extension(★637,Apache-2.0) / KohakuBlueleaf/KGen(★102,Apache-2.0) / DominikDoom/a1111-sd-webui-tagcomplete(★2,808,MIT)
 
 - **テキスト生成(キャラクターロールプレイ/キャラカード対話)** [汎用モデルのみ（アニメ特化なし） / 確度低]: `hiwaifu-research/WaifuGemma4-26b-a4b-v1`@540c0f8f（apache-2.0、DL累計1,413、likes 20）Gemma 4 26B-A4B(3.8B active MoE)をHiWaifuアリーナの人間投票由来の報酬モデルでGRPO(200step, LoRA r256)した汎用ロールプレイモデル。
   - 選定: アニメ特化は無く汎用のWaifuGemma4を暫定採用、勝率54.7%は自社アリーナの自己報告で公開12日と実績薄。
@@ -366,7 +366,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **テキストからの3Dモーション生成(キャラアニメ用)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `nvidia/Kimodo-SOMA-RP-v1.1`@6c9233af（other/nvidia-open-model-license、DL累計20,316、likes 67）テキストと運動制約(全身ポーズ・2Dルート・エンドエフェクタ)から3D人体スケルトンアニメーションを生成するモーション拡散モデル。SOMAスケルトン、Bones Rigplay 1(700時間の光学モーキャプ)で学習。
   - 選定: アニメ専用は無く汎用のNVIDIA Kimodo-SOMA-RP-v1.1を採用(累計DL 20,316・★3,667・日本語圏派生多数)、人体限定でVRM/MMDへの変換が別途必要。
-  - リポジトリ: nv-tlabs/kimodo(★3,667,Apache-2.0) / Kirakun0328/text-to-vrma(★183,MIT) / localai-org/kimodo.cpp(★883,Apache-2.0) / jtydhr88/ComfyUI-HY-Motion1(★313,未表示)
+  - リポジトリ: nv-tlabs/kimodo(★3,668,Apache-2.0) / Kirakun0328/text-to-vrma(★183,MIT) / localai-org/kimodo.cpp(★883,Apache-2.0) / jtydhr88/ComfyUI-HY-Motion1(★313,未表示)
 
 - **テキストから3D形状(アニメキャラ)生成**: 該当なし。アニメ専用のテキスト→3D形状モデルは無く、汎用TRELLIS-textも2025年で更新停滞のため、画像経由(image-to-3d)を推奨し推奨モデルは置かない。
 
@@ -385,7 +385,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **VTuber/AIキャラクター対話エージェント基盤(Live2D/VRM+LLM+TTS+ASR)** [モデルなし / 確度中]: モデルなし（リポジトリのみ）
   - 選定: HFに有力モデルは無くGitHubのフレームワークが実体で、moeru-ai/airi(★49,887・MIT・2026-09更新)が首位、ライセンスは各リポジトリで要確認。
-  - リポジトリ: moeru-ai/airi(★49,891,MIT) / Open-LLM-VTuber/Open-LLM-VTuber(★13,963,NOASSERTION) / tegnike/aituber-kit(★1,114,NOASSERTION)
+  - リポジトリ: moeru-ai/airi(★49,892,MIT) / Open-LLM-VTuber/Open-LLM-VTuber(★13,963,NOASSERTION) / tegnike/aituber-kit(★1,114,NOASSERTION)
 
 - **VRM/MMD/3Dアバター基盤ツール(ビューア・DCC連携・ゲームエンジン)** [モデルなし / 確度高]: モデルなし（リポジトリのみ）
   - 選定: モデルではなくランタイム領域で、three-vrm・UniVRM・VRM-Addon-for-Blenderの公式実装がいずれも2026年更新のMITで標準、HFモデルは不要。
@@ -421,13 +421,13 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 - **学習フレームワーク(動画・Wan/MiniMax等、音声は対象外)**: kohya-ss/musubi-tuner(★2,074,未表示,push 2026-09-30) / tdrussell/diffusion-pipe(★2,028,GPL-3.0,push 2026-09-28) / bghira/SimpleTuner(★2,930,AGPL-3.0,push 2026-09-29) / modelscope/DiffSynth-Studio(★13,200,Apache-2.0,push 2026-09-30)
   - 動画LoRAはkohya-ss/musubi-tuner(★2074、2026-09-27更新)が最有力だがライセンス未検出で要確認、アニメ特化の動画学習ツールは無い。
 
-- **ComfyUIのアニメ関連エコシステム(本体・テンプレ・Anima拡張)**: Comfy-Org/ComfyUI(★135,647,GPL-3.0,push 2026-09-30) / Comfy-Org/workflow_templates(★1,220,MIT,push 2026-09-30) / kohya-ss/ComfyUI-Anima-LLLite(★215,Apache-2.0,push 2026-08-02) / Ararararararaki/comfyui-anima-toolkit(★31,MIT,push 2026-09-30)
+- **ComfyUIのアニメ関連エコシステム(本体・テンプレ・Anima拡張)**: Comfy-Org/ComfyUI(★135,649,GPL-3.0,push 2026-09-30) / Comfy-Org/workflow_templates(★1,220,MIT,push 2026-09-30) / kohya-ss/ComfyUI-Anima-LLLite(★215,Apache-2.0,push 2026-08-02) / Ararararararaki/comfyui-anima-toolkit(★31,MIT,push 2026-09-30)
   - 土台はComfy-Org/ComfyUI(★135621)とAnima対応の公式テンプレ、Anima固有はkohya-ss/ComfyUI-Anima-LLLite(★215)。拡張類は小規模。
 
 - **データセット構築(収集・タグ付け・キュレーション)**: mikf/gallery-dl(★19,895,GPL-2.0,push 2026-09-27) / Bionus/imgbrd-grabber(★3,210,Apache-2.0,push 2026-09-26) / deepghs/imgutils(★416,MIT,push 2025-10-11) / starik222/BooruDatasetTagManager(★1,947,MIT,push 2026-02-25)
   - 収集はmikf/gallery-dl(★19893)、自動処理はdeepghs/imgutils(★415)だが最終push2025-10で鈍化、waifucは停滞。重複排除repoは未発見。
 
-- **アニメ動画の超解像・フレーム補間**: AaronFeng753/Waifu2x-Extension-GUI(★17,060,NOASSERTION,push 2026-09-19) / NevermindNilas/TheAnimeScripter(★329,AGPL-3.0,push 2026-09-28) / the-database/VideoJaNai(★280,GPL-3.0,push 2026-06-18) / k4yt3x/video2x(★21,899,AGPL-3.0,push 2026-03-07)
+- **アニメ動画の超解像・フレーム補間**: AaronFeng753/Waifu2x-Extension-GUI(★17,060,NOASSERTION,push 2026-09-19) / NevermindNilas/TheAnimeScripter(★329,AGPL-3.0,push 2026-09-28) / the-database/VideoJaNai(★280,GPL-3.0,push 2026-06-18) / k4yt3x/video2x(★21,900,AGPL-3.0,push 2026-03-07)
   - 実績はAaronFeng753/Waifu2x-Extension-GUI(★17060)とvideo2x、更新最速はTheAnimeScripter(★329)。Anime4K等は停滞、ライセンス要確認。
 
 - **漫画翻訳(検出・OCR以外のアプリ層)**: koharu-rs/koharu(★5,693,Apache-2.0,push 2026-09-30) / dmMaze/BallonsTranslator(★5,171,GPL-3.0,push 2026-09-27) / zyddnys/manga-image-translator(★10,457,GPL-3.0,push 2026-09-25) / ogkalu2/comic-translate(★2,960,Apache-2.0,push 2026-09-11)
@@ -439,7 +439,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 - **VTuber/Live2D/VRM/アバター基盤**: pixiv/three-vrm(★2,192,MIT,push 2026-09-30) / vrm-c/UniVRM(★3,392,MIT,push 2026-09-25) / saturday06/VRM-Addon-for-Blender(★1,716,MIT,push 2026-09-30) / emilianavt/OpenSeeFace(★2,080,BSD-2-Clause,push 2026-09-18)
   - VRMはpixiv/three-vrm(★2192)とUniVRM(★3392)が標準で更新も活発。Inochi2Dは停滞、Live2D本体は公開repo無し、信頼度は中程度。
 
-- **AIコンパニオン・キャラチャット・AITuber**: moeru-ai/airi(★49,891,MIT,push 2026-09-30) / SillyTavern/SillyTavern(★33,971,AGPL-3.0,push 2026-09-23) / Open-LLM-VTuber/Open-LLM-VTuber(★13,963,NOASSERTION,push 2026-05-15) / tegnike/aituber-kit(★1,114,NOASSERTION,push 2026-09-30)
+- **AIコンパニオン・キャラチャット・AITuber**: moeru-ai/airi(★49,892,MIT,push 2026-09-30) / SillyTavern/SillyTavern(★33,971,AGPL-3.0,push 2026-09-23) / Open-LLM-VTuber/Open-LLM-VTuber(★13,963,NOASSERTION,push 2026-05-15) / tegnike/aituber-kit(★1,114,NOASSERTION,push 2026-09-30)
   - 勢い重視でmoeru-ai/airi(★49887、MIT、ベータ版)、チャット標準はSillyTavern(★33968、AGPL-3.0)。aituber-kitは商用条件に注意。
 
 - **日本語キャラクター向けTTS/音声エンジン**: Aratako/Irodori-TTS(★1,365,MIT,push 2026-09-12) / VOICEVOX/voicevox_engine(★1,764,NOASSERTION,push 2026-09-26) / Aivis-Project/AivisSpeech-Engine(★181,LGPL-3.0,push 2026-09-18) / RVC-Boss/GPT-SoVITS(★62,274,MIT,push 2026-08-18)

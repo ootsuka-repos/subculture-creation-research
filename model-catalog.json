@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-09-30",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 961279,
-        "likes": 2200,
+        "downloads_last_month": 1228812,
+        "likes": 2330,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-09-09"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 325358,
-        "likes": 509,
+        "downloads_last_month": 366672,
+        "likes": 530,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-09-09"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 69139,
-        "likes": 429,
+        "downloads_last_month": 83888,
+        "likes": 432,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-09-09"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 96799,
-        "likes": 165,
+        "downloads_last_month": 135958,
+        "likes": 177,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-09-09"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -271,7 +271,7 @@
         "downloads_last_month": 1435,
         "likes": 16,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -326,7 +326,7 @@
         "downloads_last_month": 1097,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-09-30"
       },
       "sources": [
         {
@@ -338,6 +338,282 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "illustrious-xl-v2-0",
+      "name": "Illustrious-XL-v2.0",
+      "hub_repository": "OnomaAIResearch/Illustrious-XL-v2.0",
+      "url": "https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0",
+      "category": "image",
+      "checked_on": "2026-09-30",
+      "architecture_ja": "アニメ特化のtext-to-imageモデル(ヴェースはSDXL系)。公式のv2系チェックポイントを公開している。",
+      "variants_ja": "単一safetensors(Illustrious-XL-v2.0.safetensors)を配布。コサインアニーリング後半のより安定したチェックポイントとの説明がある。",
+      "prompting_ja": "モデルカードにプロンプト例や推奨設定・品質タグの記載はない。",
+      "requirements_ja": "カードに必要環境の記載はない。SDXL系の推論環境が前提。",
+      "limitations_ja": "モデルカードの記述が短く、学習データ・評価・推奨解像度は不明。",
+      "license_notes_ja": "licenseはcreativeml-openrail-m。",
+      "assessment_ja": "アニメ画像生成で広く派生している系統の公式版で、既存のアニメ系モデルと比較する基準として押さえる価値がある。",
+      "next_validation_ja": "同一プロンプトで他のアニメ系SDXLと品質・構図追従・タグ反応を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0",
+        "api_url": "https://huggingface.co/api/models/OnomaAIResearch/Illustrious-XL-v2.0",
+        "checked_on": "2026-09-30",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "69459c1fe6f46db41ab31e6114f05acc0e06bcaa",
+        "gated": false,
+        "license_metadata": "creativeml-openrail-m",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "Illustrious-XL-v2.0.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 228,
+        "last_modified": "2025-04-19T06:10:12.000Z",
+        "checked_on": "2026-09-30"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/blob/69459c1fe6f46db41ab31e6114f05acc0e06bcaa/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/OnomaAIResearch/Illustrious-XL-v2.0",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "hdm-xut-340m-anime",
+      "name": "HDM-xut-340M-anime",
+      "hub_repository": "KBlueLeaf/HDM-xut-340M-anime",
+      "url": "https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime",
+      "category": "image",
+      "checked_on": "2026-09-30",
+      "architecture_ja": "独自バックボーンXUT(Cross-U-Transformer)を用いる約340Mのアニメ向けtext-to-imageベース。TREAD併用で家庭用ハード/格安サーバでの学習を狙う。",
+      "variants_ja": "512px/768px/1024pxの重み、diffusersフォルダ、学習用ckptを配布。解像度別にファイルが分かれる。",
+      "prompting_ja": "カードはタグ/自然文の使い分けに触れていない。学習データはPixivとdanbooru系。",
+      "requirements_ja": "diffusersで実行可能。学習は民生クラスのGPU/格安サーバ想定と記載。",
+      "limitations_ja": "「世界最小・最安のアニメ調T2Iベース」を掲げる小規模モデルで、ベースとしての品質は限定的と考えられる。",
+      "license_notes_ja": "licenseはcc(具体的なCC種別はカードに明記されていない)。",
+      "assessment_ja": "低VRAM・低コストで回せるアニメ画像ベースとして、学習レシピ検証の土台になる。",
+      "next_validation_ja": "512/768/1024px各重みで同一プロンプトを生成し、VRAM・速度・品質の差を記録する。",
+      "distribution": {
+        "url": "https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime",
+        "api_url": "https://huggingface.co/api/models/KBlueLeaf/HDM-xut-340M-anime",
+        "checked_on": "2026-09-30",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "7c9e455a9722811bd9eec7eb38b4c8712a7ef290",
+        "gated": false,
+        "license_metadata": "cc",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "hdm-xut-340M-1024px-note.safetensors",
+          "hdm-xut-340M-512px-note.safetensors",
+          "hdm-xut-340M-768px-note.safetensors",
+          "text_encoder/model.safetensors"
+        ],
+        "matching_weight_file_count": 9
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 917,
+        "likes": 139,
+        "last_modified": "2025-08-14T06:26:25.000Z",
+        "checked_on": "2026-09-30"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime/blob/7c9e455a9722811bd9eec7eb38b4c8712a7ef290/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/KBlueLeaf/HDM-xut-340M-anime",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "anime-painter",
+      "name": "anime-painter",
+      "hub_repository": "xinsir/anime-painter",
+      "url": "https://huggingface.co/xinsir/anime-painter",
+      "category": "image",
+      "checked_on": "2026-09-30",
+      "architecture_ja": "SDXLベースのscribble ControlNet。ラフな線画からアニメ調画像を生成する。",
+      "variants_ja": "diffusion_pytorch_model.safetensorsの1ファイル。アニメ系SDXLベースモデルと組み合わせて使う。",
+      "prompting_ja": "danbooruタグで被写体を、自然文で状況を記述する併用を推奨。線の太さや種類を問わず対応すると記載。",
+      "requirements_ja": "diffusersのControlNetパイプライン。別途アニメ系SDXLベースモデルが必要。",
+      "limitations_ja": "カードは性能を強く宣伝するが数値根拠は示していない。ライセンスはapache-2.0。",
+      "license_notes_ja": "licenseはapache-2.0。",
+      "assessment_ja": "ラフ・走り書きからアニメ絵を作る定番候補で、下書き〜清書工程に組み込みやすい。",
+      "next_validation_ja": "自作ラフ数枚でタグ併用時の構図一致と破綻率を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/xinsir/anime-painter",
+        "api_url": "https://huggingface.co/api/models/xinsir/anime-painter",
+        "checked_on": "2026-09-30",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "18185a73b6e7fe49f2f2de1bb9d7db0b74a41773",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "diffusion_pytorch_model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 705,
+        "likes": 104,
+        "last_modified": "2024-07-09T15:43:58.000Z",
+        "checked_on": "2026-09-30"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/xinsir/anime-painter/blob/18185a73b6e7fe49f2f2de1bb9d7db0b74a41773/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/xinsir/anime-painter",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "galgame-llasa-3b",
+      "name": "Galgame-Llasa-3B",
+      "hub_repository": "OmniAICreator/Galgame-Llasa-3B",
+      "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B",
+      "category": "tts",
+      "checked_on": "2026-09-30",
+      "architecture_ja": "Llasa-3B(HKUSTAudio)をベースに、ギャルゲー音声データセットで日本語向けに微調整したTTSモデル。",
+      "variants_ja": "3Bの重み(2シャード)。デモSpaceあり。1B/8Bなど姉妹サイズも別リポジトリで公開されている。",
+      "prompting_ja": "カードにプロンプト仕様や話者指定の記載はない。",
+      "requirements_ja": "カードに必要環境や推論コードの記載はない。",
+      "limitations_ja": "モデルカードは概要のみで、評価・使い方の詳細がない。日本語のみ。",
+      "license_notes_ja": "licenseはCC-BY-NC-4.0(非商用)。",
+      "assessment_ja": "ギャルゲー調のキャラ音声生成の候補として、既存の日本語TTSと比較する余地がある。",
+      "next_validation_ja": "同一台本で既存の日本語TTSと聞き比べ、感情表現・安定性・速度を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B",
+        "api_url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B",
+        "checked_on": "2026-09-30",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "23134f66585fe17c0e72bdeb737c9f71bb89d0db",
+        "gated": false,
+        "license_metadata": "cc-by-nc-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model-00001-of-00002.safetensors",
+          "model-00002-of-00002.safetensors",
+          "training_args.bin"
+        ],
+        "matching_weight_file_count": 3
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 31,
+        "likes": 8,
+        "last_modified": "2025-07-21T03:03:33.000Z",
+        "checked_on": "2026-09-30"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B/blob/23134f66585fe17c0e72bdeb737c9f71bb89d0db/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "audio2face-3d-v3-0",
+      "name": "Audio2Face-3D-v3.0",
+      "hub_repository": "nvidia/Audio2Face-3D-v3.0",
+      "url": "https://huggingface.co/nvidia/Audio2Face-3D-v3.0",
+      "category": "animation",
+      "checked_on": "2026-09-30",
+      "architecture_ja": "Hubert系エンコーダと拡散機構を組み合わせ、音声から3D顔モーション(肌・舌・顎・眼球)を生成する約1.8億パラメータのモデル。",
+      "variants_ja": "ONNX(network.onnx)を配布。Audio2Face-SDK経由で利用し、TensorRTで高速化する。",
+      "prompting_ja": "プロンプトではなく、16kHzにリサンプルした音声と感情ラベルを入力にする。",
+      "requirements_ja": "NVIDIA GPU、TensorRT/Audio2Face-SDK。OSはLinux/Windows。Ampere〜Blackwell等に対応。",
+      "limitations_ja": "低品質音声では口形が不正確になり得るとカードが明記。アニメ特化ではなく写実的な3Dアバター向け。性能指標は口形精度・レイテンシ・スループット。",
+      "license_notes_ja": "license_nameはnvidia-open-model-license。カードは商用/非商用利用可と記載。",
+      "assessment_ja": "3Dアバターのリップシンク生成を自前パイプラインへ組み込む部品として有用。",
+      "next_validation_ja": "手持ち音声で口形精度とレイテンシを計測し、VRM等のアバターへの適用可否を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/nvidia/Audio2Face-3D-v3.0",
+        "api_url": "https://huggingface.co/api/models/nvidia/Audio2Face-3D-v3.0",
+        "checked_on": "2026-09-30",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "b74132732fd9a9d29b237bec193ded64c9745e91",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "nvidia-open-model-license",
+        "evidence_files": [
+          "network.onnx"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 803,
+        "likes": 96,
+        "last_modified": "2025-10-21T22:01:05.000Z",
+        "checked_on": "2026-09-30"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/nvidia/Audio2Face-3D-v3.0/blob/b74132732fd9a9d29b237bec193ded64c9745e91/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/nvidia/Audio2Face-3D-v3.0",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
-  ]
+  ],
+  "metrics_refreshed_on": "2026-09-30"
 }

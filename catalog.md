@@ -1,6 +1,6 @@
 # サブカルコンテンツ制作リポジトリ一覧
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -101,6 +101,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Z-Image](https://github.com/Tongyi-MAI/Z-Image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,057 / 2026-02-09 |
 | [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 103 / 2026-07-19 |
 | [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 25 / 2026-07-21 |
+| [Colortina](https://github.com/Amster-Ilvil/Colortina) | manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-08-23 |
 
 ## 動画生成
 
@@ -132,6 +133,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [SQuadGen](https://github.com/microsoft/SQuadGen) | 3D形状上の単純な四角形レイアウトを生成する研究。 | AIモデル・学習 / 小規模・初期候補 | 32 / 2026-08-31 |
 | [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | 画像から形状・材質を備えた3Dアセットを生成する4Bモデル。 | AIモデル・学習 / 研究モデルの評価候補 | 11,413 / 2026-07-10 |
 | [UniRig](https://github.com/VAST-AI-Research/UniRig) | 形状から骨格推定とスキニングを行う自動リギング研究。 | AIモデル・学習 / 比較・既存工程の参考 | 1,781 / 2026-06-04 |
+| [SekaiBlender](https://github.com/ShiJieWorld/SekaiBlender) | MMD向けに特化したBlenderブランチ。PMX/VMDのネイティブ入出力、CCD IKソルバ、Bullet物理、FSR拡大を統合する。 | 非AI制作 / 小規模・初期評価候補 | 17 / 2026-09-18 |
 
 ## TTS・キャラクター音声
 
@@ -184,16 +186,17 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [AIRI](https://github.com/moeru-ai/airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 49,891 / 2026-09-30 |
+| [AIRI](https://github.com/moeru-ai/airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 49,892 / 2026-09-30 |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モーフを再生する。 | 非AI制作 / 制作基盤として比較 | 256 / 2026-09-09 |
 | [inochi-creator](https://github.com/Inochi2D/inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,230 / 2025-06-16 |
-| [OBS Studio](https://github.com/obsproject/obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,824 / 2026-09-30 |
+| [OBS Studio](https://github.com/obsproject/obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,825 / 2026-09-30 |
 | [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,963 / 2026-05-15 |
 | [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,080 / 2026-09-18 |
-| [PersonaLive](https://github.com/GVCLab/PersonaLive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,876 / 2026-08-28 |
+| [PersonaLive](https://github.com/GVCLab/PersonaLive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,877 / 2026-08-28 |
 | [three-vrm](https://github.com/pixiv/three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,192 / 2026-09-30 |
 | [UniVRM](https://github.com/vrm-c/UniVRM) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,392 / 2026-09-25 |
 | [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,304 / 2026-09-28 |
+| [prometheus-avatar](https://github.com/myths-labs/prometheus-avatar) | LLM出力でLive2D/3Dアバターを動かすオープンソースSDK。口パク、感情表現、リアルタイム音声、TTS、VTuberモード、MCPサーバをまとめる。 | AI連携 / 小規模・初期評価候補 | 17 / 2026-09-30 |
 
 ## 制作ワークフロー・追加学習
 
@@ -201,12 +204,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,647 / 2026-09-30 |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,649 / 2026-09-30 |
 | [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,716 / 2026-05-24 |
 | [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) | 画像・動画の生成と追加学習を複数モデルで扱う統合実装。 | AIモデル・学習 / モデル・研究候補 | 13,200 / 2026-09-30 |
 | [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) | 画像・動画モデル向けのLoRA学習スクリプト群。 | AIモデル・学習 / 更新のある導入・評価候補 | 2,074 / 2026-09-30 |
 | [sd-scripts](https://github.com/kohya-ss/sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,242 / 2026-09-24 |
 | [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-09-23 |
+| [comfyui-stylebook](https://github.com/EnragedAntelope/comfyui-stylebook) | ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ済みプレビュー、1000以上の作家記述子、130以上のモディファイアを同梱する。 | AIは任意 / 小規模・初期評価候補 | 9 / 2026-09-28 |
 
 ## 字幕・翻訳・ローカライズ
 
@@ -223,6 +227,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [BallonsTranslator-Pro](https://github.com/thomaswantstobeaskeleton/BallonsTranslator-Pro) | BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで、検出・OCR・翻訳・インペイント・植字を組み替え可能なモジュール群で処理する。 | AIモデル・学習 / 活発・候補 | 96 / 2026-07-31 |
 | [CarrotMangaTranslator](https://github.com/ucx0204/CarrotMangaTranslator) | 漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。 | AIモデル・学習 / 活発・候補 | 76 / 2026-09-30 |
 | [Kites](https://github.com/Unheat/Kites) | ブラウザ拡張として動作し、WebGPU上でOCR・インペイント・翻訳を行って漫画をその場で翻訳表示するツール。 | AIモデル・学習 / 初期評価候補 | 30 / 2026-09-26 |
+| [lumina](https://github.com/lumina-tl/lumina) | 漫画・マンファ・マンファ翻訳の無料デスクトップアプリ。テキスト検出・OCR・翻訳・インペイント・組版の全工程を自動化しつつ、各結果を手で修正できる。 | AIモデル・学習 / 活発・候補 | 19 / 2026-09-22 |
+| [yakuyomi-engine](https://github.com/joyeli/yakuyomi-engine) | 端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。 | AIモデル・学習 / 活発・候補 | 7 / 2026-09-30 |
+| [translate-manga-br](https://github.com/marco0antonio0/translate-manga-br) | ローカルファーストの漫画翻訳フルスタックアプリ。YOLOで吹き出し検出、PaddleOCRでOCR、翻訳、編集可能オーバーレイ付きリーダーまでを1本で提供する。 | AIモデル・学習 / 小規模・初期評価候補 | 31 / 2026-09-29 |
+| [LingoVeil](https://github.com/Gerald-Ha/LingoVeil) | 漫画・コミック向けのセルフホスト翻訳ツール。画像内のテキストを検出・翻訳し、翻訳ビューで読める。ブックマークや読書進捗も保持する。 | AIモデル・学習 / 小規模・初期評価候補 | 5 / 2026-09-30 |
 
 ## モーション・身体演技
 
@@ -235,6 +243,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Gelina](https://github.com/TGuichoux/Gelina) | 音声とジェスチャーの生成・クローニング・音声から動作への変換を扱う。 | AIモデル・学習 / 小規模・初期候補 | 31 / 2026-04-28 |
 | [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,577 / 2026-07-18 |
 | [R-DMesh](https://github.com/Tencent-Hunyuan/R-DMesh) | 静的メッシュを参照動画に沿って動く4Dメッシュ列へ変換する。 | AIモデル・学習 / 小規模・初期候補 | 62 / 2026-08-11 |
+| [VRM-Spacing-Animation-Baking](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking) | VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。 | 非AI制作 / 小規模・初期評価候補 | 10 / 2026-09-13 |
 
 ## VFX・材質・ベクター演出
 
@@ -248,6 +257,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 795 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 7 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
+| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 18 / 2026-09-28 |
 
 ## 絵コンテ・制作管理・評価
 

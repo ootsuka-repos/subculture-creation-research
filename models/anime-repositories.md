@@ -46,7 +46,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★135,649 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
   - READMEがAnimaを対応モデルとして列挙、v0.38.0=2026-09-29。ComfyUIはcatalog収録の本体。【catalog.json収録: id=comfyui】
 - [Comfy-Org/workflow_templates](https://github.com/Comfy-Org/workflow_templates) — 公式ワークフロー雛形（★1,220 / MIT / 最終push 2026-09-30 / release v0.11.73 (2026-09-30) / 確認コミット [`0bfbbbfa`](https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/README.md)）
   - v0.11.73=2026-09-30と更新が頻繁。Animaテンプレの有無は個別に未確認。【catalog.json未収録(新規)】
@@ -86,7 +86,7 @@
   - v2.10.0=2026-09-20、2026-09-28push。★329と小規模だが更新最速。AGPL-3.0。【catalog.json未収録(新規)】
 - [the-database/VideoJaNai](https://github.com/the-database/VideoJaNai) — ONNX/TensorRT超解像+RIFE補間GUI（★280 / GPL-3.0 / 最終push 2026-06-18 / release 2.1.0 (2026-06-18) / 確認コミット [`68f6060c`](https://github.com/the-database/VideoJaNai/blob/68f6060c3971dfc0f2423b5702f2d259013eca60/README.md)）
   - 2026-06-18リリース。GPL-3.0。Windows GUI。【catalog.json未収録(新規)】
-- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K/Real-ESRGAN/RIFE統合フレームワーク（★21,899 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
+- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K/Real-ESRGAN/RIFE統合フレームワーク（★21,900 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
   - ★21897でX上の実利用例も多いが、最新リリース6.4.0は2025-01-24で、最終push 2026-03-07と鈍化。AGPL-3.0。【catalog.json未収録(新規)】
 
 ## 漫画翻訳(検出・OCR以外のアプリ層)
@@ -148,7 +148,7 @@
 
 関連リポジトリ:
 
-- [moeru-ai/airi](https://github.com/moeru-ai/airi) — VRM/Live2D対応の自己ホスト型AIコンパニオン（★49,891 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../categories/vtuber.md#airi)）
+- [moeru-ai/airi](https://github.com/moeru-ai/airi) — VRM/Live2D対応の自己ホスト型AIコンパニオン（★49,892 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../categories/vtuber.md#airi)）
   - ★49887。v0.12.0-beta.5=2026-08-29(ベータ)。MIT。【catalog.json収録: id=airi】
 - [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラクターカード/ロールプレイチャットUI（★33,971 / AGPL-3.0 / 最終push 2026-09-23 / release 1.19.0 (2026-09-14) / 確認コミット [`06bde939`](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md) / 制作カタログ: [sillytavern](../categories/story.md#sillytavern)）
   - ★33968、1.19.0=2026-09-14、AGPL-3.0。【catalog.json収録: id=sillytavern】

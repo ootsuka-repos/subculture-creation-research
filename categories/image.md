@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -18,6 +18,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,057 / 2026-02-09 |
 | [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) · [詳細](#comfyui-forbidden-vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 103 / 2026-07-19 |
 | [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) · [詳細](#comfyui-ultimate-face-fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 25 / 2026-07-21 |
+| [Colortina](https://github.com/Amster-Ilvil/Colortina) · [詳細](#colortina) | manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-08-23 |
 
 <a id="anime-segmentation"></a>
 
@@ -247,3 +248,38 @@ Turboで試作速度、Baseで学習・制御の適性を分けて調べる。�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-07-21T17:06:53Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="colortina"></a>
+
+## Colortina
+
+manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。
+
+- **リポジトリ**: https://github.com/Amster-Ilvil/Colortina
+- **分類**: desktop_tool / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 白黒漫画画像、PDF、画像フォルダ
+- **出力**: 彩色済み画像
+- **環境**: Python/PySide6。Apple SiliconはMPS、NVIDIAはCUDA、不足時はCPU。初回にモデル重みを取得。
+- **依存**: manga-colorization-v2のgenerator/denoiser重み、PyTorch、OpenCV等
+- **制約・未確認**: モデル重みはリポジトリ非同梱。新規・小規模。第三者コード/モデルは各ライセンスに従う。
+- **編集者評価**: 自動彩色に手動ガイドと部分再彩色を重ねられるため、下地づくりから修正までを1画面で回せる。
+- **メトリクス**: ★1、fork 0、作成 2026-07-16、最終push 2026-08-23T09:47:19Z、archived=False
+- **確認**: 2026-09-30 / コミット `056c6ed79609037605a6d5fdde9f0bda5176abac`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Amster-Ilvil/Colortina/tree/056c6ed79609037605a6d5fdde9f0bda5176abac)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Amster-Ilvil/Colortina/blob/056c6ed79609037605a6d5fdde9f0bda5176abac/README.md) / [GitHub API](https://api.github.com/repos/Amster-Ilvil/Colortina) / [固定ツリー](https://github.com/Amster-Ilvil/Colortina/tree/056c6ed79609037605a6d5fdde9f0bda5176abac)
+
+### 制作に使う際の検討
+
+ページ単位の彩色下地と手直しに。
+
+**次に確かめること（実施前）**: 見開き数ページで自動彩色の品質と再彩色・髪色補正の手間を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [main.py](https://github.com/Amster-Ilvil/Colortina/blob/056c6ed79609037605a6d5fdde9f0bda5176abac/main.py)
+
+**最新GitHub Release**: [v5.13.27](https://github.com/Amster-Ilvil/Colortina/releases/tag/v5.13.27) / 2026-08-10T08:33:51Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-08-23T09:44:36Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

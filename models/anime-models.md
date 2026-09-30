@@ -101,3 +101,83 @@ tencent/Hy-MT2-1.8Bを日本語→英語の漫画セリフ翻訳向けにファ�
 確認日: 2026-10-01 / revision `e17bc6a8dd92ddf930bd7858ceb916117ee5f916` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `manga-v5-Q4_K_M.gguf`、`model.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF/blob/e17bc6a8dd92ddf930bd7858ceb916117ee5f916/README.md) / [モデルAPI](https://huggingface.co/api/models/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF)
+
+## Illustrious-XL-v2.0
+
+アニメ特化のtext-to-imageモデル(ヴェースはSDXL系)。公式のv2系チェックポイントを公開している。
+
+- **版の区別**: 単一safetensors(Illustrious-XL-v2.0.safetensors)を配布。コサインアニーリング後半のより安定したチェックポイントとの説明がある。
+- **入力・設定**: モデルカードにプロンプト例や推奨設定・品質タグの記載はない。
+- **必要構成**: カードに必要環境の記載はない。SDXL系の推論環境が前提。
+- **制約**: モデルカードの記述が短く、学習データ・評価・推奨解像度は不明。
+- **利用条件**: licenseはcreativeml-openrail-m。
+- **編集者評価**: アニメ画像生成で広く派生している系統の公式版で、既存のアニメ系モデルと比較する基準として押さえる価値がある。
+- **次の検証（未実施）**: 同一プロンプトで他のアニメ系SDXLと品質・構図追従・タグ反応を比較する。
+
+確認日: 2026-09-30 / revision `69459c1fe6f46db41ab31e6114f05acc0e06bcaa` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `Illustrious-XL-v2.0.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/blob/69459c1fe6f46db41ab31e6114f05acc0e06bcaa/README.md) / [モデルAPI](https://huggingface.co/api/models/OnomaAIResearch/Illustrious-XL-v2.0)
+
+## HDM-xut-340M-anime
+
+独自バックボーンXUT(Cross-U-Transformer)を用いる約340Mのアニメ向けtext-to-imageベース。TREAD併用で家庭用ハード/格安サーバでの学習を狙う。
+
+- **版の区別**: 512px/768px/1024pxの重み、diffusersフォルダ、学習用ckptを配布。解像度別にファイルが分かれる。
+- **入力・設定**: カードはタグ/自然文の使い分けに触れていない。学習データはPixivとdanbooru系。
+- **必要構成**: diffusersで実行可能。学習は民生クラスのGPU/格安サーバ想定と記載。
+- **制約**: 「世界最小・最安のアニメ調T2Iベース」を掲げる小規模モデルで、ベースとしての品質は限定的と考えられる。
+- **利用条件**: licenseはcc(具体的なCC種別はカードに明記されていない)。
+- **編集者評価**: 低VRAM・低コストで回せるアニメ画像ベースとして、学習レシピ検証の土台になる。
+- **次の検証（未実施）**: 512/768/1024px各重みで同一プロンプトを生成し、VRAM・速度・品質の差を記録する。
+
+確認日: 2026-09-30 / revision `7c9e455a9722811bd9eec7eb38b4c8712a7ef290` / gated=False。ファイル名候補9件の一覧確認。代表ファイル: `hdm-xut-340M-1024px-note.safetensors`、`hdm-xut-340M-512px-note.safetensors`、`hdm-xut-340M-768px-note.safetensors`、`text_encoder/model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime/blob/7c9e455a9722811bd9eec7eb38b4c8712a7ef290/README.md) / [モデルAPI](https://huggingface.co/api/models/KBlueLeaf/HDM-xut-340M-anime)
+
+## anime-painter
+
+SDXLベースのscribble ControlNet。ラフな線画からアニメ調画像を生成する。
+
+- **版の区別**: diffusion_pytorch_model.safetensorsの1ファイル。アニメ系SDXLベースモデルと組み合わせて使う。
+- **入力・設定**: danbooruタグで被写体を、自然文で状況を記述する併用を推奨。線の太さや種類を問わず対応すると記載。
+- **必要構成**: diffusersのControlNetパイプライン。別途アニメ系SDXLベースモデルが必要。
+- **制約**: カードは性能を強く宣伝するが数値根拠は示していない。ライセンスはapache-2.0。
+- **利用条件**: licenseはapache-2.0。
+- **編集者評価**: ラフ・走り書きからアニメ絵を作る定番候補で、下書き〜清書工程に組み込みやすい。
+- **次の検証（未実施）**: 自作ラフ数枚でタグ併用時の構図一致と破綻率を確認する。
+
+確認日: 2026-09-30 / revision `18185a73b6e7fe49f2f2de1bb9d7db0b74a41773` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `diffusion_pytorch_model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/xinsir/anime-painter/blob/18185a73b6e7fe49f2f2de1bb9d7db0b74a41773/README.md) / [モデルAPI](https://huggingface.co/api/models/xinsir/anime-painter)
+
+## Galgame-Llasa-3B
+
+Llasa-3B(HKUSTAudio)をベースに、ギャルゲー音声データセットで日本語向けに微調整したTTSモデル。
+
+- **版の区別**: 3Bの重み(2シャード)。デモSpaceあり。1B/8Bなど姉妹サイズも別リポジトリで公開されている。
+- **入力・設定**: カードにプロンプト仕様や話者指定の記載はない。
+- **必要構成**: カードに必要環境や推論コードの記載はない。
+- **制約**: モデルカードは概要のみで、評価・使い方の詳細がない。日本語のみ。
+- **利用条件**: licenseはCC-BY-NC-4.0(非商用)。
+- **編集者評価**: ギャルゲー調のキャラ音声生成の候補として、既存の日本語TTSと比較する余地がある。
+- **次の検証（未実施）**: 同一台本で既存の日本語TTSと聞き比べ、感情表現・安定性・速度を確認する。
+
+確認日: 2026-09-30 / revision `23134f66585fe17c0e72bdeb737c9f71bb89d0db` / gated=False。ファイル名候補3件の一覧確認。代表ファイル: `model-00001-of-00002.safetensors`、`model-00002-of-00002.safetensors`、`training_args.bin`
+
+根拠: [固定モデルカード](https://huggingface.co/OmniAICreator/Galgame-Llasa-3B/blob/23134f66585fe17c0e72bdeb737c9f71bb89d0db/README.md) / [モデルAPI](https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B)
+
+## Audio2Face-3D-v3.0
+
+Hubert系エンコーダと拡散機構を組み合わせ、音声から3D顔モーション(肌・舌・顎・眼球)を生成する約1.8億パラメータのモデル。
+
+- **版の区別**: ONNX(network.onnx)を配布。Audio2Face-SDK経由で利用し、TensorRTで高速化する。
+- **入力・設定**: プロンプトではなく、16kHzにリサンプルした音声と感情ラベルを入力にする。
+- **必要構成**: NVIDIA GPU、TensorRT/Audio2Face-SDK。OSはLinux/Windows。Ampere〜Blackwell等に対応。
+- **制約**: 低品質音声では口形が不正確になり得るとカードが明記。アニメ特化ではなく写実的な3Dアバター向け。性能指標は口形精度・レイテンシ・スループット。
+- **利用条件**: license_nameはnvidia-open-model-license。カードは商用/非商用利用可と記載。
+- **編集者評価**: 3Dアバターのリップシンク生成を自前パイプラインへ組み込む部品として有用。
+- **次の検証（未実施）**: 手持ち音声で口形精度とレイテンシを計測し、VRM等のアバターへの適用可否を確認する。
+
+確認日: 2026-09-30 / revision `b74132732fd9a9d29b237bec193ded64c9745e91` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `network.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/nvidia/Audio2Face-3D-v3.0/blob/b74132732fd9a9d29b237bec193ded64c9745e91/README.md) / [モデルAPI](https://huggingface.co/api/models/nvidia/Audio2Face-3D-v3.0)

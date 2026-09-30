@@ -165,11 +165,11 @@
 
 関連リポジトリ:
 
-- [danielgatis/rembg](https://github.com/danielgatis/rembg) — 背景除去CLI/ライブラリ(isnet-animeセッション標準搭載)（★24,932 / MIT / 最終push 2026-09-20 / release v2.0.85 (2026-09-20) / 確認コミット [`202e4264`](https://github.com/danielgatis/rembg/blob/202e42649a8492a7c49f808de36608a7d1cbbfe3/README.md)）
+- [danielgatis/rembg](https://github.com/danielgatis/rembg) — 背景除去CLI/ライブラリ(isnet-animeセッション標準搭載)（★24,934 / MIT / 最終push 2026-09-20 / release v2.0.85 (2026-09-20) / 確認コミット [`202e4264`](https://github.com/danielgatis/rembg/blob/202e42649a8492a7c49f808de36608a7d1cbbfe3/README.md)）
   - MIT、★24,932、v2.0.85(2026-09-20)。README記載: isnet-anime=アニメキャラ向け高精度、isnet-general-use等。最も普及した呼び出し口
 - [MatteoKartoon/BiRefNet](https://github.com/MatteoKartoon/BiRefNet) — ToonOutの学習・推論コード(BiRefNetフォーク、デモノートブック)（★101 / MIT / 最終push 2026-06-12 / 確認コミット [`ba5d19a7`](https://github.com/MatteoKartoon/BiRefNet/blob/ba5d19a7bf16b1ea7746bb9e9bec83d97dad9709/README.md)）
   - MIT、★101、最終push 2026-06-12。論文・重み・データセットを一括公開。リリースタグなし
-- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIの背景除去ノード集(BiRefNet_toonOut、SAM3等)（★2,128 / GPL-3.0 / 最終push 2026-09-30 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
+- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIの背景除去ノード集(BiRefNet_toonOut、SAM3等)（★2,129 / GPL-3.0 / 最終push 2026-09-30 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
   - GPL-3.0、★2,127、push 2026-08-21。READMEにBiRefNet_toonOut追加の記載(v2.9.2)
 - [SkyTNT/anime-segmentation](https://github.com/SkyTNT/anime-segmentation) — ISNet-anime等の学習コード・デモ(HF skytnt/anime-seg)（★844 / Apache-2.0 / 最終push 2025-05-21 / 確認コミット [`55d87401`](https://github.com/SkyTNT/anime-segmentation/blob/55d874013a2811cdf59c365059174c7823acf5b4/README.md) / 制作カタログ: [anime-segmentation](../../categories/image.md#anime-segmentation)）
   - Apache-2.0、★844、最終push 2025-05-21(約16か月更新なし)。READMEの学習済みモデルは'skytnt/anime-seg'に掲載
@@ -246,7 +246,7 @@
   - ★575、push 2026-08-24。ライセンスはNOASSERTION
 - [kijai/ComfyUI-segment-anything-2](https://github.com/kijai/ComfyUI-segment-anything-2) — ComfyUI向けSAM2(Apache-2.0)（★1,221 / Apache-2.0 / 最終push 2025-09-28 / 確認コミット [`0c35fff5`](https://github.com/kijai/ComfyUI-segment-anything-2/blob/0c35fff5f382803e2310103357b5e985f5437f32/README.md)）
   - ★1,221、push 2025-09-28。SAM3のライセンス・ゲートを避けたい場合の代替
-- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIのSAM3/背景除去ノード集（★2,128 / GPL-3.0 / 最終push 2026-09-30 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
+- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIのSAM3/背景除去ノード集（★2,129 / GPL-3.0 / 最終push 2026-09-30 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
   - GPL-3.0、★2,127、push 2026-08-21。READMEにSAM3 Segmentation追加(v2.9.4, 2025-11-24)の記載
 
 ### ゼロショット物体検出(テキスト指定・アニメ画像)

@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -17,6 +17,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Gelina](https://github.com/TGuichoux/Gelina) · [詳細](#gelina) | 音声とジェスチャーの生成・クローニング・音声から動作への変換を扱う。 | AIモデル・学習 / 小規模・初期候補 | 31 / 2026-04-28 |
 | [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) · [詳細](#hy-motion-1-0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,577 / 2026-07-18 |
 | [R-DMesh](https://github.com/Tencent-Hunyuan/R-DMesh) · [詳細](#r-dmesh) | 静的メッシュを参照動画に沿って動く4Dメッシュ列へ変換する。 | AIモデル・学習 / 小規模・初期候補 | 62 / 2026-08-11 |
+| [VRM-Spacing-Animation-Baking](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking) · [詳細](#vrm-spacing-animation-baking) | VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。 | 非AI制作 / 小規模・初期評価候補 | 10 / 2026-09-13 |
 
 <a id="ardy"></a>
 
@@ -204,3 +205,38 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 モデル配布確認（ファイル一覧のみ。代表モデルであり依存全体ではありません）:
 
 - [JarrentWu/R-DMesh](https://huggingface.co/JarrentWu/R-DMesh) — file_listing_checked、確認日 2026-09-09、revision `a374a76866abf15d22b598f1d7f0a80764a4ba76`。代表ファイル: `ckpts/dvae/rdmeshvae/dvae_f.pth`, `ckpts/rf_model/rdmeshdit/rf_epoch_f.pth`。gated=False。
+
+<a id="vrm-spacing-animation-baking"></a>
+
+## VRM-Spacing-Animation-Baking
+
+VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。
+
+- **リポジトリ**: https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking
+- **分類**: integration / 非AI制作 / 小規模・初期評価候補
+- **入力**: VRM 1.0モデルとアクション(アニメーション)
+- **出力**: 物理ベイク済み・ループ調整済みのアニメーション
+- **環境**: Blender + VRM Add-on。VRM 1.0モデル。
+- **依存**: BlenderのVRM Add-on
+- **制約・未確認**: VRM 1.0限定。外部のVRM Add-onと併用が前提。AI機能は含まない。
+- **編集者評価**: 外部ツールで再生する前提のVRMモーション作りを、間隔調整と物理ループという実際に困る点で補助する。
+- **メトリクス**: ★10、fork 0、作成 2024-08-22、最終push 2026-09-13T13:14:33Z、archived=False
+- **確認**: 2026-09-30 / コミット `dc2a4a4aabb741f2eb30683e6883c3e3dd399512`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/tree/dc2a4a4aabb741f2eb30683e6883c3e3dd399512)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/blob/dc2a4a4aabb741f2eb30683e6883c3e3dd399512/README.md) / [GitHub API](https://api.github.com/repos/Meringue-Rouge/VRM-Spacing-Animation-Baking) / [固定ツリー](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/tree/dc2a4a4aabb741f2eb30683e6883c3e3dd399512)
+
+### 制作に使う際の検討
+
+VRMキャラのモーション最終調整や衣装・体型差の補正に。
+
+**次に確かめること（実施前）**: Mixamo系クリップで間隔調整後のクリッピングとループ継ぎ目の品質を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/blob/dc2a4a4aabb741f2eb30683e6883c3e3dd399512/README.md)
+
+**最新GitHub Release**: [2.1.0](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/releases/tag/2.1.0) / 2026-09-13T13:14:33Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-13T13:13:18Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

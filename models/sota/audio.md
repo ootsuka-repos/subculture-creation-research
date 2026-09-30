@@ -359,7 +359,7 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) — Qwen3-Omni公式(Captioner/Refinerのベースモデル)（★4,035 / Apache-2.0 / 最終push 2026-04-23 / 確認コミット [`e4235853`](https://github.com/QwenLM/Qwen3-Omni/blob/e4235853125589c789f06a2dd83e9f4126df5e9d/README.md)）
+- [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) — Qwen3-Omni公式(Captioner/Refinerのベースモデル)（★4,036 / Apache-2.0 / 最終push 2026-04-23 / 確認コミット [`e4235853`](https://github.com/QwenLM/Qwen3-Omni/blob/e4235853125589c789f06a2dd83e9f4126df5e9d/README.md)）
   - ★4,035、Apache-2.0。
 - [modelscope/ms-swift](https://github.com/modelscope/ms-swift) — Captioner/Refinerの学習に使われたfine-tuningフレームワーク(カード記載)（★15,761 / Apache-2.0 / 最終push 2026-09-30 / release v4.5.3 (2026-09-08) / 確認コミット [`02baac98`](https://github.com/modelscope/ms-swift/blob/02baac9832ba12cd24144266ac2ea7020ad0e4b8/README.md)）
   - ★15,761、Apache-2.0、v4.5.3(2026-09-08)、2026-09-30更新。
