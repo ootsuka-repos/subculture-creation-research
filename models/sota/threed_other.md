@@ -24,7 +24,7 @@
 
 関連リポジトリ:
 
-- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装・学習スクリプト・PSD出力パイプライン（★4,190 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
+- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装・学習スクリプト・PSD出力パイプライン（★4,192 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
   - ★4,189、Apache-2.0、最終push 2026-09-24。SIGGRAPH 2026論文の公式実装で、学習コード/データパイプラインは2026-04-14公開(READMEのChangelog)。リリースタグなし。
 - [jtydhr88/ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) — ComfyUIノード(PSD出力、ネイティブレイヤエディタ対応)（★814 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`98d754bf`](https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md) / 制作カタログ: [comfyui-see-through](../../categories/layer.md#comfyui-see-through)）
   - ★814、最終push 2026-08-20。公式READMEが推奨派生として掲載、Xでも753/355 likesの告知。ライセンス未設定(GitHub上null)のため再利用条件は要確認。
@@ -57,9 +57,9 @@
   - ★395、Apache-2.0、最終push 2026-04-17。CVPR 2025公式。リリースタグなし。
 - [zjp-shadow/CharacterGen](https://github.com/zjp-shadow/CharacterGen) — 前世代のアニメキャラ3D生成(VRMレンダリングスクリプト同梱)（★835 / Apache-2.0 / 最終push 2025-04-11 / 確認コミット [`f329a835`](https://github.com/zjp-shadow/CharacterGen/blob/f329a835dbd5003060a5653eafd83d4d8868b043/README.md)）
   - ★835、Apache-2.0、最終push 2025-04-11。Blender/three-vrm用VRMレンダリングスクリプトを公開(READMEのAnime3Dデータ準備手順)。更新は停滞。
-- [VAST-AI-Research/AniGen](https://github.com/VAST-AI-Research/AniGen) — リグ付き3Dアセットを1枚から生成(汎用)（★506 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`c49db3d6`](https://github.com/VAST-AI-Research/AniGen/blob/c49db3d6b466537a02ccf2286688903d77af7e4f/README.md) / 制作カタログ: [anigen](../../categories/3d.md#anigen)）
+- [VAST-AI-Research/AniGen](https://github.com/VAST-AI-Research/AniGen) — リグ付き3Dアセットを1枚から生成(汎用)（★507 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`c49db3d6`](https://github.com/VAST-AI-Research/AniGen/blob/c49db3d6b466537a02ccf2286688903d77af7e4f/README.md) / 制作カタログ: [anigen](../../categories/3d.md#anigen)）
   - ★506、最終push 2026-07-15。SIGGRAPH 2026。汎用でありアニメ専用ではない。GitHubライセンスはNOASSERTION、HF側はMIT表記で不一致。
-- [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) — 汎用image-to-3d(実務の比較基準)（★11,411 / MIT / 最終push 2026-07-10 / 確認コミット [`75fbf018`](https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md) / 制作カタログ: [trellis.2](../../categories/3d.md#trellis.2)）
+- [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) — 汎用image-to-3d(実務の比較基準)（★11,413 / MIT / 最終push 2026-07-10 / 確認コミット [`75fbf018`](https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md) / 制作カタログ: [trellis.2](../../categories/3d.md#trellis.2)）
   - ★11,411、MIT、最終push 2026-07-10。アニメ専用ではないが日本語圏の実例が多い。
 
 ### アニメ3Dキャラの自動リギング(骨格・スキニング)
@@ -181,9 +181,9 @@
 
 関連リポジトリ:
 
-- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★49,887 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
+- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★49,891 / MIT / 最終push 2026-09-30 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
   - ★49,887、MIT、最終push 2026-09-30、最新 v0.12.0-beta.5(2026-08-29)。規模・更新とも首位。
-- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの定番ローカルVTuber(割り込み・ハンズフリー)（★13,961 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../../categories/vtuber.md#open-llm-vtuber)）
+- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの定番ローカルVTuber(割り込み・ハンズフリー)（★13,963 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../../categories/vtuber.md#open-llm-vtuber)）
   - ★13,961、最終push 2026-05-15、最新 v1.2.1(2025-08-26)。GitHubライセンスはNOASSERTION(READMEはMITと別の第三者ライセンスを併記、Live2Dサンプルは別条件)。更新は鈍化。
 - [tegnike/aituber-kit](https://github.com/tegnike/aituber-kit) — 日本語圏で使われるAITuber向けWebアプリ(VRM/Live2D・多数のLLM/TTS)（★1,114 / NOASSERTION / 最終push 2026-09-30 / release v2.78.1 (2026-09-13) / 確認コミット [`c7ea2b65`](https://github.com/tegnike/aituber-kit/blob/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/README.md)）
   - ★1,114、最終push 2026-09-30、v2.78.1(2026-09-13)。ライセンスNOASSERTION(要確認)。

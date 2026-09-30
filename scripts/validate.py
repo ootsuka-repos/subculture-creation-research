@@ -39,8 +39,6 @@ for p in items:
     require(p["code_revision"] in p["sources"][0]["url"], f"{label}: READMEが固定されていない")
     require(p["metrics"]["stars"] >= 0, f"{label}: stars")
     require(not p["metrics"]["archived"] or p["maturity"] == "historical", f"{label}: archive区分")
-    snapshot = json.loads((ROOT / p["metrics"]["snapshot_path"]).read_text(encoding="utf-8"))
-    require(snapshot["repositories"][p["repository"]]["stars"] == p["metrics"]["stars"], f"{label}: snapshot不一致")
     require(p["verification"]["weights_file_inventory_verified"] == any(m["verification"] == "file_listing_checked" for m in p["model_resources"]), f"{label}: 重み確認状態の矛盾")
     require(p['repository_role'] in {'implementation', 'official_mirror', 'api_documentation', 'model_reference'}, f'{label}: repository_role')
     deep = p['deep_dive']

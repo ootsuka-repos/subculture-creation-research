@@ -1,6 +1,6 @@
 # サブカルコンテンツ制作リサーチ
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,8 +14,8 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | データ | 内容 | 機械可読 |
 | --- | --- | --- |
-| 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。115件 / 18分野 | [catalog.jsonl](catalog.jsonl) |
-| [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど60件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
+| 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。117件 / 18分野 | [catalog.jsonl](catalog.jsonl) |
+| [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど61件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
 | [公式コード＋公開重みのある研究](research/papers.md) | SIGGRAPH 2026ほか87件、12分野 | [research/papers.jsonl](research/papers.jsonl) |
 | [タスク別アニメ系SOTAモデル・リポジトリ](models/anime-task-sota.md) | HFタスク別の最良モデル（108タスク・最良あり82）と制作工程別の代表リポジトリ193件（2026-10-01） | [sota-catalog.jsonl](sota-catalog.jsonl) |
 
@@ -29,7 +29,17 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 {"mcpServers": {"subculture-research": {"type": "http", "url": "https://subculture-research-mcp.x-agent.workers.dev/mcp"}}}
 ```
 
-実装は [cloudflare/](cloudflare/)。データを更新したら `cd cloudflare && npm install && npm run deploy` で反映します（`npm run dev` でローカル起動）。
+実装は [cloudflare/](cloudflare/)。WorkerはこのリポジトリのmainをGitHubから直接読むため、pushから最大10分で反映され再デプロイは不要です（Worker本体を変えたときだけ `cd cloudflare && npm install && npm run deploy`）。
+
+## 自動更新
+
+[.github/workflows/auto-update.yml](.github/workflows/auto-update.yml) が毎日03:00（JST）に実行し、main に直接 push します。
+
+1. `scripts/refresh_metrics.py`: 既存項目の★・fork・最終push・最新Release（GitHub）とDL数・likes（HF）を最新化。固定コミットと本文は変えない。
+2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件、制作カタログか会話キャラ一覧に追加。AIが書くのは分類と説明文で、固定コミット・★・ライセンス・根拠URLはGitHub APIから埋める。**自動追加分は人による確認なし**（`deep_dive.scope_note_ja` に明記）。
+3. 生成物を作り直して push。`validate.py` は実行しない。
+
+手動実行: Actions の auto-update → Run workflow。
 
 ツール: `overview`（件数・分野ID・選定基準）、`search`（全データ横断の全文検索）、`list_items`、`get_item`（根拠つき全項目）、`find_repository`（リポジトリの登場箇所を横断）、`list_documents`、`read_document`（見出し単位で取得）。
 
@@ -60,7 +70,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 | [アニメ制作・中割り・彩色・リップシンク](categories/animation.md) | 8 | AniDoc、AnimeColor、BasicPBC、ECCV2022-RIFE、LatentSync、opentoonz、ToonComposer、ToonCrafter |
 | [2Dキャラクター・自動リギング](categories/rig2d.md) | 3 | Anime2.5DRig、PuppetLoom、stretchystudio |
 | [レイヤー分解](categories/layer.md) | 4 | ComfyUI-See-through、Qwen-Image-Layered、see-through、Stable Layers |
-| [画像生成・編集・切り抜き](categories/image.md) | 4 | anime-segmentation、krita-ai-diffusion、Qwen-Image、Z-Image |
+| [画像生成・編集・切り抜き](categories/image.md) | 5 | anime-segmentation、krita-ai-diffusion、Qwen-Image、Z-Image、ComfyUI-Forbidden-Vision |
 | [動画生成](categories/video.md) | 7 | FramePack、Index-anisora、LTX-2、LTX-Video、SCAIL-2、Wan-Move、Wan2.2 |
 | [3D生成・モデリング・リギング](categories/3d.md) | 10 | AniGen、Blender、Hunyuan3D-2.1、Pixal3D、Puppeteer、Roblox Cube / CubePart、SkinTokens、SQuadGen、TRELLIS.2、UniRig |
 | [TTS・キャラクター音声](categories/tts.md) | 9 | CosyVoice、F5-TTS、fish-speech、GPT-SoVITS、IndexTTS、Qwen3-TTS、RVC WebUI、Style-Bert-VITS2、voicevox |
@@ -68,7 +78,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 | [音楽・歌声合成](categories/music.md) | 6 | ACE-Step-1.5、Basic Pitch、DiffSinger、OpenUtau、SOFA、YuE2 |
 | [VTuber・AIキャラクター・VRM](categories/vtuber.md) | 10 | AIRI、babylon-mmd、inochi-creator、OBS Studio、Open-LLM-VTuber、OpenSeeFace、PersonaLive、three-vrm、UniVRM、VTubeStudio |
 | [制作ワークフロー・追加学習](categories/workflow.md) | 5 | ComfyUI、ComfyUI-WanVideoWrapper、DiffSynth-Studio、musubi-tuner、sd-scripts |
-| [字幕・翻訳・ローカライズ](categories/localization.md) | 5 | ASMR Dubber、Manga OCR、manga-image-translator、mokuro、VoiceTransl |
+| [字幕・翻訳・ローカライズ](categories/localization.md) | 6 | ASMR Dubber、Manga OCR、manga-image-translator、mokuro、VoiceTransl、xianscan-rust |
 | [モーション・身体演技](categories/motion.md) | 5 | ARDY、EchoAvatar、Gelina、HY-Motion 1.0、R-DMesh |
 | [VFX・材質・ベクター演出](categories/vfx.md) | 6 | Effekseer、GenCompositor、Material Maker、OmniLottie、VfxDB、VFXMaster |
 | [絵コンテ・制作管理・評価](categories/production.md) | 3 | Kitsu、Storyboarder、StyleID |
@@ -114,6 +124,6 @@ catalog.jsonを正本として、一覧・CSV・JSONL・分野別詳細・モデ
 
 ## 深掘り版の収録範囲
 
-全115件に制作での用途、入口候補、次の検証項目、GitHub Release情報を追加しました。別枠で4系統のアニメ画像モデルを収録。ASMR専用モデル等の公開範囲が不明な候補は保留に残しています。
+全117件に制作での用途、入口候補、次の検証項目、GitHub Release情報を追加しました。別枠で4系統のアニメ画像モデルを収録。ASMR専用モデル等の公開範囲が不明な候補は保留に残しています。
 
 [全件再確認時のスナップショット](data/github-snapshot-2026-09-09-deep.json) · [選択した本文の確認記録](data/source-checks-2026-09-09.json) · [モデル配布の確認記録](data/model-hub-snapshot-2026-09-09.json)

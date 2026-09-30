@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（60件）
+# 会話できるアニメ系AIキャラクター（61件）
 
-最終確認日: 2026-09-23。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-01。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -39,6 +39,7 @@
 - [Gemma Live2D Assistant](https://github.com/Daniel3282/gemma-live2d-assistant) — Gemmaのオンデバイス音声・画面認識とLive2Dの口パクを組み合わせた実験的なデスクトップ伴侶。モデルの初回取得が必要で、**同梱Live2D素材は非商用条件**。
 - [Live2D AI chat](https://github.com/zoollcar/live2d-AI-chat) — ブラウザ内のGGUFモデル、または権限を分けたブラウザ拡張経由の外部モデルでLive2Dと会話。音声・画像やWebページの入力にも対応し、付属素材の利用条件に注意。
 - [ai-secretary](https://github.com/ryuno016/ai-secretary) — OpenAI・Whisper・VOICEVOXで話すLive2Dデスクトップ秘書。タスクの登録・確認もできる。**Live2DモデルとCubism Coreは同梱されず**、別途入手が必要。
+- [Miko](https://github.com/danukim/Miko) — OllamaのローカルLLMとVRM/Unityの3Dデスクトップアバター、GPT-SoVITSまたはFish Audioの音声合成、リアルタイムのリップシンクとジェスチャーを組み合わせたWindows用デスクトップAIコンパニオン。
 
 ## AI VTuber・配信
 

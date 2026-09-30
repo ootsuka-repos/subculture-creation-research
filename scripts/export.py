@@ -117,8 +117,8 @@ def render(data, model_data=None):
 
 | データ | 内容 | 機械可読 |
 | --- | --- | --- |
-| 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。115件 / 18分野 | [catalog.jsonl](catalog.jsonl) |
-| [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど60件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
+| 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。''' + f"{len(items)}件 / {len(groups)}分野" + ''' | [catalog.jsonl](catalog.jsonl) |
+| [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど''' + str(len(json.loads((ROOT / 'companion-catalog.json').read_text(encoding='utf-8'))['items'])) + '''件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
 | [公式コード＋公開重みのある研究](research/papers.md) | SIGGRAPH 2026ほか87件、12分野 | [research/papers.jsonl](research/papers.jsonl) |
 | [タスク別アニメ系SOTAモデル・リポジトリ](models/anime-task-sota.md) | HFタスク別の最良モデル（108タスク・最良あり82）と制作工程別の代表リポジトリ193件（2026-10-01） | [sota-catalog.jsonl](sota-catalog.jsonl) |
 
@@ -132,7 +132,17 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 {"mcpServers": {"subculture-research": {"type": "http", "url": "https://subculture-research-mcp.x-agent.workers.dev/mcp"}}}
 ```
 
-実装は [cloudflare/](cloudflare/)。データを更新したら `cd cloudflare && npm install && npm run deploy` で反映します（`npm run dev` でローカル起動）。
+実装は [cloudflare/](cloudflare/)。WorkerはこのリポジトリのmainをGitHubから直接読むため、pushから最大10分で反映され再デプロイは不要です（Worker本体を変えたときだけ `cd cloudflare && npm install && npm run deploy`）。
+
+## 自動更新
+
+[.github/workflows/auto-update.yml](.github/workflows/auto-update.yml) が毎日03:00（JST）に実行し、main に直接 push します。
+
+1. `scripts/refresh_metrics.py`: 既存項目の★・fork・最終push・最新Release（GitHub）とDL数・likes（HF）を最新化。固定コミットと本文は変えない。
+2. `scripts/auto_discover.py`: DeepSeek（Secret `DEEPSEEK_API_KEY`）がGitHub/HFを検索し、未収録のリポジトリを最大10件、制作カタログか会話キャラ一覧に追加。AIが書くのは分類と説明文で、固定コミット・★・ライセンス・根拠URLはGitHub APIから埋める。**自動追加分は人による確認なし**（`deep_dive.scope_note_ja` に明記）。
+3. 生成物を作り直して push。`validate.py` は実行しない。
+
+手動実行: Actions の auto-update → Run workflow。
 
 ツール: `overview`（件数・分野ID・選定基準）、`search`（全データ横断の全文検索）、`list_items`、`get_item`（根拠つき全項目）、`find_repository`（リポジトリの登場箇所を横断）、`list_documents`、`read_document`（見出し単位で取得）。
 

@@ -24,7 +24,7 @@
 
 関連リポジトリ:
 
-- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — ベースモデルWan2.2の公式推論コード（★17,677 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
+- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — ベースモデルWan2.2の公式推論コード（★17,678 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
   - AnimeGenのベース。Apache-2.0、2026-09-21にもpush。
 - [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) — AnimeGenの開発ワークフローに使われたと記載のある学習・推論基盤（★13,200 / Apache-2.0 / 最終push 2026-09-30 / release v1.1.9 (2025-11-18) / 確認コミット [`974cfa37`](https://github.com/modelscope/DiffSynth-Studio/blob/974cfa37f27ac55eba3b6d10efa21f876900572d/README.md) / 制作カタログ: [diffsynth-studio](../../categories/workflow.md#diffsynth-studio)）
   - AnimeGenカードが開発基盤として明記。Wan2.2/Wan-Animate-2/LTX-2.5/MiniMax-H3を2026-08〜09に統合済みでApache-2.0。
@@ -55,7 +55,7 @@
 
 - [bilibili/Index-anisora](https://github.com/bilibili/Index-anisora) — AniSora公式(学習・推論・データパイプライン・報酬モデル)（★2,519 / Apache-2.0 / 最終push 2026-07-16 / 確認コミット [`6cdce3a1`](https://github.com/bilibili/Index-anisora/blob/6cdce3a17548d7ff0f2e05978469f134da25e68e/README.md) / 制作カタログ: [index-anisora](../../categories/video.md#index-anisora)）
   - 2,519 stars、Apache-2.0。最終pushは2026-07-16だが内容は認証情報削除。モデル更新は2025-10-31。
-- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — AniSora V3.2のベース(Wan2.2)推論コード（★17,677 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
+- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — AniSora V3.2のベース(Wan2.2)推論コード（★17,678 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
   - Apache-2.0、2026-09-21 push。
 - [kohya-ss/musubi-tuner](https://github.com/kohya-ss/musubi-tuner) — Wan2.1/2.2系I2VのLoRA学習（★2,074 / ライセンス未表示 / 最終push 2026-09-30 / release v0.3.6 (2026-09-27) / 確認コミット [`f8a1b037`](https://github.com/kohya-ss/musubi-tuner/blob/f8a1b03794a49239a3539015075f5123d6c07d66/README.md) / 制作カタログ: [musubi-tuner](../../categories/workflow.md#musubi-tuner)）
   - Wan2.2対応、v0.3.6(2026-09-27)。アニメLoRAを自作する際の標準的ツールの一つ。
@@ -69,7 +69,7 @@
 - **最良**: [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/tree/42ed227ee7df40d41602854ae760620d6eb651fe)（revision `42ed227e` / 作成 2026-07-28 / 更新 2026-08-13）
 - **利用条件**: other/minimax-h3-community-license-agreement。MiniMax H3 Community License(独自)。対象地域は世界全域だが米国・EU・英国・韓国は除外で、対象地域外での利用・出力の利用は許諾外。年間売上2,000万米ドル超の商用利用は別途許諾、商用UIに「MiniMax H3」表示義務、出力を他AIモデルの改善に使うことは禁止、再配布時は制限を利用者へ承継、提供側は安全対策が必要(LICENSE全文を確認)。商用可と断定しない。
 - **選定根拠**: 【事実】HFのimage-text-to-videoタグはMiniMax-H3系が占める(MiniMaxAI/MiniMax-H3: likes 5,790、30日DL 3,612,196、累計9,127,868、2026-07-28公開、FL2VA/Ref2VA、音声同時生成)。アニメ特化のH3向けLoRAは小規模: prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA(累計1,674DL、likes 27、『実験的』とカード自身が明記、ストップモーション系のループ向け)、Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime(likes 77、ライセンス未記載)。Xの2026-08〜09には、H3 Ref2VA+4step LoRAでアニメ動画を作る報告(ai_hakase_ 62〜103いいね、craftcapitallab 207/132いいね: アニメ背景下絵の用途)が多い一方、kiyoshi_shin(30いいね)は高速化LoRAでアニメだとゴースト破綻が出やすいと報告。【評価】アニメ特化LoRAは採用実績が不足のため、汎用ベースのH3をgeneral_onlyで採用し、LoRAは補助とする。ライセンスは地域・収益・用途制限つきで、日本国内利用は対象地域内だが商用可とは断定しない。
-- **指標（確認日時点）**: DL累計 9,127,868 / 直近30日 3,612,196 / likes 5,790 / Spaces 100
+- **指標（確認日時点）**: DL累計 9,127,868 / 直近30日 3,612,196 / likes 5,793 / Spaces 100
 - **概要**: MiniMax(Nanonoble)のオープン重み音声付き動画生成。FL2VA(先頭/末尾フレーム)とRef2VA(画像9枚・動画3本・音声3本の参照)の2系統、768p生成+2K再生成、日本語を含む11言語の音声。H3-Context-IR(プロンプト整形)は非公開のホスト型で、プロンプトガイドに沿って自前で整形する。
 - **入力**: テキスト+画像0〜2枚(FL2VA)、または画像≤9/動画≤3/音声≤3の参照(Ref2VA)。
 - **出力**: 24FPSの動画+32kHzステレオ音声、768p(再生成で最大2K)。
@@ -81,13 +81,13 @@
 
 関連リポジトリ:
 
-- [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) — MiniMax H3公式(推論・プロンプトガイド・スキル)（★9,418 / ライセンス未表示 / 最終push 2026-08-15 / 確認コミット [`d21241f0`](https://github.com/MiniMax-AI/MiniMax-H3/blob/d21241f0a4b3acbb34c97dae47fa417b7065e438/README.md)）
+- [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) — MiniMax H3公式(推論・プロンプトガイド・スキル)（★9,417 / ライセンス未表示 / 最終push 2026-08-15 / 確認コミット [`d21241f0`](https://github.com/MiniMax-AI/MiniMax-H3/blob/d21241f0a4b3acbb34c97dae47fa417b7065e438/README.md)）
   - 9.4k stars。プロンプト作成スキルを同梱(リポジトリ側にライセンスメタデータなし、HF側LICENSEを参照)。
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,624 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - Comfy-Org/MiniMax-H3が最も取得されている配布形態。v0.38.0(2026-09-29)。
 - [kohya-ss/musubi-tuner](https://github.com/kohya-ss/musubi-tuner) — H3のLoRA学習(実験的サポート、1フレーム学習ドキュメントあり)（★2,074 / ライセンス未表示 / 最終push 2026-09-30 / release v0.3.6 (2026-09-27) / 確認コミット [`f8a1b037`](https://github.com/kohya-ss/musubi-tuner/blob/f8a1b03794a49239a3539015075f5123d6c07d66/README.md) / 制作カタログ: [musubi-tuner](../../categories/workflow.md#musubi-tuner)）
   - READMEがMiniMax-H3の学習をサポートと明記(2026-09-27 v0.3.6)。
-- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — H3(FL2VA/Ref2V)のLoRA学習（★12,164 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
+- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — H3(FL2VA/Ref2V)のLoRA学習（★12,167 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
   - READMEが対応モデルに記載、MIT、2026-09-27 push。
 
 ### 動画(アニメ)のアップスケール・修復(video-to-video)
@@ -106,7 +106,7 @@
   - 280 stars、GPL-3.0、2.1.0(2026-06-18)。
 - [NevermindNilas/TheAnimeScripter](https://github.com/NevermindNilas/TheAnimeScripter) — アニメ向けの一括ツールキット(アップスケール・RIFE補間・復元・重複フレーム除去、CLI/AE/Standalone)（★329 / AGPL-3.0 / 最終push 2026-09-28 / release v2.10.0 (2026-09-20) / 確認コミット [`a4913ca9`](https://github.com/NevermindNilas/TheAnimeScripter/blob/a4913ca99e0ef4a8d7253f11f2ee6735752664b4/README.md)）
   - 329 stars、AGPL-3.0、v2.10.0(2026-09-20)。READMEがCUGAN/Adore/SPAN等のモデル搭載を記載。
-- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K v4/Real-ESRGAN/Real-CUGAN/RIFEをncnn+Vulkanで動かす汎用フレームワーク（★21,897 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
+- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K v4/Real-ESRGAN/Real-CUGAN/RIFEをncnn+Vulkanで動かす汎用フレームワーク（★21,899 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
   - 21.9k stars だがAGPL-3.0、最終release 6.4.0は2025-01、最終pushは2026-03。
 
 ### フレーム補間(アニメの滑らか化)
@@ -172,7 +172,7 @@
 - **最良**: [Wan-AI/Wan2.2-Animate-2-14B](https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B/tree/6e8f1973bf0abc2aafd517992e8b6d88c3c46e69)（revision `6e8f1973` / 作成 2026-07-14 / 更新 2026-08-09）
 - **利用条件**: apache-2.0。HFメタデータ・READMEともApache-2.0。学習データの記載なし。アニメ・2D画像への適用条件に関する追加条件は記載なし。
 - **選定根拠**: 【事実】アニメ特化のキャラ動作転写モデルは見つからず、汎用の参照画像+駆動動画方式が標準。最新はWan-AI/Wan2.2-Animate-2-14B(2026-07-14公開、Apache-2.0、likes 271、HF公式ディスカッション9件)。ComfyUI再パッケージ Comfy-Org/Wan-Animate-2 は30日DL 567,925・累計953,947(int8_convrot/蒸留版を含む)。旧版 Wan-AI/Wan2.2-Animate-14B は likes 1,268・累計482,409DL・spaces 100、Diffusers版あり。論文(arXiv 2608.06009)は定性評価とユーザースタディのみで数値ベンチ・アニメ評価なし、カードにanime/cartoon等の語は無い(例は制服の猫キャラ)。HF Discussion #5に『RTX 4090でも720x1280が厳しい』との報告。Xの比較は2人差し替えでWan2.2 Animateが同一人物を2回入れ替えた(4いいね)等、アニメ評価の裏付けは乏しい。【評価】アニメ対応の実証が無いためgeneral_only。新旧の優劣は定量比較が無く、採用規模で新版を採るが、資源要件は新版が重い。Viggle-Animate(drbaph/Viggle-Animate-ComfyUI、H3ベース33B)は30日DL 82,305だがH3ライセンス(地域制限)で、アニメ評価なし。
-- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 271 / Spaces 0
+- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 273 / Spaces 0
 - **概要**: Wan2.2系の14Bキャラクター動画アニメーション。駆動動画を中間表現(ポーズ抽出器)なしで直接入力し、参照画像のキャラに動き・表情を転写する。テキストによる視点制御と、10step・CFG無しの蒸留版、リアルタイム向けWan-Animate-2-Liteを論文/カードで言及(リリースノートの公開物はBaseと蒸留版のみ)。
 - **入力**: 参照キャラ画像+駆動動画+外見を記述したテキスト(カードは中国語の外見/背景記述をLLMで生成する手順)。
 - **出力**: 24fps、最大720p級のキャラクター動画。
@@ -186,11 +186,11 @@
 
 - [Wan-Video/Wan-Animate-2](https://github.com/Wan-Video/Wan-Animate-2) — Wan-Animate-2公式(推論・Gradio)（★331 / Apache-2.0 / 最終push 2026-08-08 / 確認コミット [`3ad2fef7`](https://github.com/Wan-Video/Wan-Animate-2/blob/3ad2fef7d61d6200c9c653e0fe47be7616b323f3/README.md)）
   - 331 stars、Apache-2.0、2026-08-08。
-- [kijai/ComfyUI-WanAnimatePreprocess](https://github.com/kijai/ComfyUI-WanAnimatePreprocess) — Wan-Animate系入力(ポーズ/顔)の前処理ComfyUIノード（★547 / Apache-2.0 / 最終push 2026-05-27 / 確認コミット [`0e0b6a2a`](https://github.com/kijai/ComfyUI-WanAnimatePreprocess/blob/0e0b6a2a555625acf4d4aefb780e27d06937132f/README.md)）
+- [kijai/ComfyUI-WanAnimatePreprocess](https://github.com/kijai/ComfyUI-WanAnimatePreprocess) — Wan-Animate系入力(ポーズ/顔)の前処理ComfyUIノード（★548 / Apache-2.0 / 最終push 2026-05-27 / 確認コミット [`0e0b6a2a`](https://github.com/kijai/ComfyUI-WanAnimatePreprocess/blob/0e0b6a2a555625acf4d4aefb780e27d06937132f/README.md)）
   - 547 stars、Apache-2.0、最終push 2026-05-27(Animate-2では中間抽出器不要のため旧版ワークフロー向け)。
 - [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) — Wan-Animate-2対応(2026-08-07)の学習・推論基盤（★13,200 / Apache-2.0 / 最終push 2026-09-30 / release v1.1.9 (2025-11-18) / 確認コミット [`974cfa37`](https://github.com/modelscope/DiffSynth-Studio/blob/974cfa37f27ac55eba3b6d10efa21f876900572d/README.md) / 制作カタログ: [diffsynth-studio](../../categories/workflow.md#diffsynth-studio)）
   - 13.2k stars、Apache-2.0。READMEに対応記載。
-- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — Wan2.2-Animate-14B(旧版)含む公式実装（★17,677 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
+- [Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2) — Wan2.2-Animate-14B(旧版)含む公式実装（★17,678 / Apache-2.0 / 最終push 2026-09-21 / 確認コミット [`1ea34ff4`](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md) / 制作カタログ: [wan2.2](../../categories/video.md#wan2.2)）
   - 17.7k stars、Apache-2.0。
 
 ### 音声駆動のリップシンク・トーキングヘッド(アニメキャラ)
@@ -212,11 +212,11 @@
 
 関連リポジトリ:
 
-- [meituan-longcat/LongCat-Video](https://github.com/meituan-longcat/LongCat-Video) — LongCat-Video / Avatar 1.5 公式（★8,444 / MIT / 最終push 2026-05-27 / 確認コミット [`6b3f4b85`](https://github.com/meituan-longcat/LongCat-Video/blob/6b3f4b8582a8bc3f20f795735f5383716c4ba794/README.md)）
+- [meituan-longcat/LongCat-Video](https://github.com/meituan-longcat/LongCat-Video) — LongCat-Video / Avatar 1.5 公式（★8,446 / MIT / 最終push 2026-05-27 / 確認コミット [`6b3f4b85`](https://github.com/meituan-longcat/LongCat-Video/blob/6b3f4b8582a8bc3f20f795735f5383716c4ba794/README.md)）
   - 8.4k stars、MIT、最終push 2026-05-27。
-- [MeiGen-AI/InfiniteTalk](https://github.com/MeiGen-AI/InfiniteTalk) — InfiniteTalk公式(動画ダビング/音声→動画)（★7,951 / Apache-2.0 / 最終push 2026-05-22 / 確認コミット [`50aa0a94`](https://github.com/MeiGen-AI/InfiniteTalk/blob/50aa0a94184315407a991ae804d9b58d6d311ba8/README.md)）
+- [MeiGen-AI/InfiniteTalk](https://github.com/MeiGen-AI/InfiniteTalk) — InfiniteTalk公式(動画ダビング/音声→動画)（★7,952 / Apache-2.0 / 最終push 2026-05-22 / 確認コミット [`50aa0a94`](https://github.com/MeiGen-AI/InfiniteTalk/blob/50aa0a94184315407a991ae804d9b58d6d311ba8/README.md)）
   - 7.9k stars、Apache-2.0、最終push 2026-05-22。
-- [pkhungurn/talking-head-anime-3-demo](https://github.com/pkhungurn/talking-head-anime-3-demo) — アニメ専用の1枚絵パペット(顔+体)（★1,044 / MIT / 最終push 2023-08-29 / 確認コミット [`8946939e`](https://github.com/pkhungurn/talking-head-anime-3-demo/blob/8946939ec7b417f443d7b0e3fcd97384313fcdb8/README.md)）
+- [pkhungurn/talking-head-anime-3-demo](https://github.com/pkhungurn/talking-head-anime-3-demo) — アニメ専用の1枚絵パペット(顔+体)（★1,045 / MIT / 最終push 2023-08-29 / 確認コミット [`8946939e`](https://github.com/pkhungurn/talking-head-anime-3-demo/blob/8946939ec7b417f443d7b0e3fcd97384313fcdb8/README.md)）
   - MIT、1,044 stars。最終push 2023-08。EasyVtuberの基盤。
 - [yuyuyzl/EasyVtuber](https://github.com/yuyuyzl/EasyVtuber) — THA3/4ベースのVTuberライブ用ラッパー（★3,071 / MIT / 最終push 2026-02-12 / 確認コミット [`f7dd2de4`](https://github.com/yuyuyzl/EasyVtuber/blob/f7dd2de4df93c878b0171f47346ff66414a863e6/README.md)）
   - 3,071 stars、MIT、最終push 2026-02-12。
@@ -253,7 +253,7 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) — Qwen3-VL公式(推論・動画入力の使い方)（★20,026 / Apache-2.0 / 最終push 2026-01-30 / 確認コミット [`96588727`](https://github.com/QwenLM/Qwen3-VL/blob/96588727e44c78b25ba03ea03b8e12f7e64fd0da/README.md)）
+- [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) — Qwen3-VL公式(推論・動画入力の使い方)（★20,029 / Apache-2.0 / 最終push 2026-01-30 / 確認コミット [`96588727`](https://github.com/QwenLM/Qwen3-VL/blob/96588727e44c78b25ba03ea03b8e12f7e64fd0da/README.md)）
   - 20k stars、Apache-2.0。最終push 2026-01-30(Qwen3.8系はHFカード参照)。
 - [Breakthrough/PySceneDetect](https://github.com/Breakthrough/PySceneDetect) — 長尺アニメ動画をカット単位に分割してからキャプション化する前処理（★5,212 / BSD-3-Clause / 最終push 2026-09-21 / release v0.7.1 (2026-07-22) / 確認コミット [`81c414cb`](https://github.com/Breakthrough/PySceneDetect/blob/81c414cb4b706e58648f98efd381024790b1565f/README.md)）
   - 5.2k stars、BSD-3-Clause。

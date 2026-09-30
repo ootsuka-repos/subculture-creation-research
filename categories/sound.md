@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,14 +13,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ASMRify](https://github.com/ReactorcoreGames/ASMRify) · [詳細](#asmrify) | 音声に定位移動・残響・ピッチ等を加えて一括処理するASMR向け音声加工ツール。 | AI出力の後処理 / 小規模・初期評価候補 | 1 / 2026-06-18 |
-| [Audacity](https://github.com/audacity/audacity) · [詳細](#audacity) | 録音とマルチトラック編集を行う音声制作アプリ。 | 非AI制作 / 制作基盤として比較 | 18,376 / 2026-09-09 |
+| [Audacity](https://github.com/audacity/audacity) · [詳細](#audacity) | 録音とマルチトラック編集を行う音声制作アプリ。 | 非AI制作 / 制作基盤として比較 | 18,609 / 2026-09-30 |
 | [Binaural Speech Synthesis](https://github.com/facebookresearch/BinauralSpeechSynthesis) · [詳細](#binauralspeechsynthesis) | モノラル音声を空間条件に従うバイノーラル音声へ変換する研究。 | AIモデル・学習 / アーカイブ済み資料 | 190 / 2022-05-19 |
-| [ControlFoley](https://github.com/xiaomi-research/controlfoley) · [詳細](#controlfoley) | 動画・テキスト・参照音を条件に、効果音とそのタイミングを制御する。 | AIモデル・学習 / 小規模・初期候補 | 150 / 2026-08-28 |
-| [FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter) · [詳細](#foleycrafter) | 動画の内容とタイミングに合わせた効果音を生成する研究実装。 | AIモデル・学習 / 研究モデルの評価候補 | 663 / 2026-06-15 |
-| [MMAudio](https://github.com/hkchengrex/MMAudio) · [詳細](#mmaudio) | 動画やテキストを条件に、時間的に対応する音声を生成する。 | AIモデル・学習 / 研究モデルの評価候補 | 2,268 / 2026-02-23 |
-| [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) · [詳細](#stable-audio-tools) | 条件付き音声生成モデルの学習と推論を行うツール群。効果音や環境音素材を検討できる。 | AIモデル・学習 / 更新のある導入・評価候補 | 3,856 / 2026-09-09 |
-| [Steam Audio](https://github.com/ValveSoftware/steam-audio) · [詳細](#steam-audio) | ゲーム空間に合わせた音の定位・伝播を扱う空間音響SDK。 | 非AI制作 / 制作基盤として比較 | 2,933 / 2026-03-25 |
-| [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui) · [詳細](#ultimatevocalremovergui) | 音源分離モデルをGUIで使い、歌・伴奏等を分離する。 | AI連携 / 連携・制作ツール候補 | 26,168 / 2025-03-13 |
+| [ControlFoley](https://github.com/xiaomi-research/controlfoley) · [詳細](#controlfoley) | 動画・テキスト・参照音を条件に、効果音とそのタイミングを制御する。 | AIモデル・学習 / 小規模・初期候補 | 153 / 2026-08-28 |
+| [FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter) · [詳細](#foleycrafter) | 動画の内容とタイミングに合わせた効果音を生成する研究実装。 | AIモデル・学習 / 研究モデルの評価候補 | 665 / 2026-06-15 |
+| [MMAudio](https://github.com/hkchengrex/MMAudio) · [詳細](#mmaudio) | 動画やテキストを条件に、時間的に対応する音声を生成する。 | AIモデル・学習 / 研究モデルの評価候補 | 2,270 / 2026-02-23 |
+| [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) · [詳細](#stable-audio-tools) | 条件付き音声生成モデルの学習と推論を行うツール群。効果音や環境音素材を検討できる。 | AIモデル・学習 / 更新のある導入・評価候補 | 3,871 / 2026-09-18 |
+| [Steam Audio](https://github.com/ValveSoftware/steam-audio) · [詳細](#steam-audio) | ゲーム空間に合わせた音の定位・伝播を扱う空間音響SDK。 | 非AI制作 / 制作基盤として比較 | 2,955 / 2026-03-25 |
+| [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui) · [詳細](#ultimatevocalremovergui) | 音源分離モデルをGUIで使い、歌・伴奏等を分離する。 | AI連携 / 連携・制作ツール候補 | 26,449 / 2025-03-13 |
 
 <a id="asmrify"></a>
 
@@ -71,7 +71,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 音声入出力機器、任意のプラグイン
 - **制約・未確認**: 現masterはAudacity4への構造変更中。3.x用の導入・開発手順と混用しない。
 - **編集者評価**: ASMR・台詞・効果音を実際に仕上げる録音編集工程。
-- **メトリクス**: ★18,376、fork 2,659、作成 2015-03-26、最終push 2026-09-09T16:05:36Z、archived=False
+- **メトリクス**: ★18,609、fork 2,675、作成 2015-03-26、最終push 2026-09-30T16:14:17Z、archived=False
 - **確認**: 2026-09-09 / コミット `7c667777427b0e80c177caa6d3c46367901fc775`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/audacity/audacity/tree/7c667777427b0e80c177caa6d3c46367901fc775)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -88,7 +88,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 
 **入口候補（固定ツリーで存在確認）**: [src/app/main.cpp](https://github.com/audacity/audacity/blob/7c667777427b0e80c177caa6d3c46367901fc775/src/app/main.cpp) / [tools/translations/run_lupdate.sh](https://github.com/audacity/audacity/blob/7c667777427b0e80c177caa6d3c46367901fc775/tools/translations/run_lupdate.sh)
 
-**最新GitHub Release**: [Audacity-4.0.0](https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0) / 2026-09-03T10:19:48Z / prerelease=False
+**最新GitHub Release**: [Audacity-4.0.1](https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1) / 2026-09-30T11:59:48Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-09T16:05:35Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
@@ -141,7 +141,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: ControlFoley、音声・映像特徴抽出器
 - **制約・未確認**: コードApache-2.0、重みCC BY-NC 4.0。ASMR専用・台詞合成モデルではない。
 - **編集者評価**: 接触音や環境音を映像の動きに合わせる工程でMMAudioと比較したい。
-- **メトリクス**: ★150、fork 5、作成 2026-04-14、最終push 2026-08-28T01:54:55Z、archived=False
+- **メトリクス**: ★153、fork 5、作成 2026-04-14、最終push 2026-08-28T01:54:55Z、archived=False
 - **確認**: 2026-09-09 / コミット `b6c902888d45d75f022e253e3db29836360a3f82`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/xiaomi-research/controlfoley/tree/b6c902888d45d75f022e253e3db29836360a3f82)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -184,7 +184,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: FoleyCrafterと基盤音声モデル
 - **制約・未確認**: ASMR専用ではなく、距離感・耳元表現・立体音響は未検証。
 - **編集者評価**: アニメ・ゲーム映像のフォーリー制作候補。
-- **メトリクス**: ★663、fork 67、作成 2024-06-25、最終push 2026-06-15T04:39:18Z、archived=False
+- **メトリクス**: ★665、fork 67、作成 2024-06-25、最終push 2026-06-15T04:39:18Z、archived=False
 - **確認**: 2026-09-09 / コミット `b4526d1586aaf044140b359295504452297f8c13`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/open-mmlab/FoleyCrafter/tree/b4526d1586aaf044140b359295504452297f8c13)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -223,7 +223,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: MMAudio、音声VAE等
 - **制約・未確認**: ASMRや日本語のセリフ生成専用ではない。音の同期と内容は素材ごとに評価する。
 - **編集者評価**: 映像用の効果音・環境音を作る技術候補。
-- **メトリクス**: ★2,268、fork 267、作成 2024-12-07、最終push 2026-02-23T06:09:19Z、archived=False
+- **メトリクス**: ★2,270、fork 268、作成 2024-12-07、最終push 2026-02-23T06:09:19Z、archived=False
 - **確認**: 2026-09-09 / コミット `974010a026c731054592d8f777218bd9d85a6c24`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/hkchengrex/MMAudio/tree/974010a026c731054592d8f777218bd9d85a6c24)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -262,7 +262,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: Stable Audio Openなど対応モデル
 - **制約・未確認**: ASMR専用モデルではない。空間音響・ささやきの品質は未検証。
 - **編集者評価**: 音声素材の生成・追加学習を同じ基盤で扱う。
-- **メトリクス**: ★3,856、fork 483、作成 2023-05-23、最終push 2026-09-09T09:50:41Z、archived=False
+- **メトリクス**: ★3,871、fork 486、作成 2023-05-23、最終push 2026-09-18T22:33:51Z、archived=False
 - **確認**: 2026-09-09 / コミット `3241adba4fc2a85cf5b29d9eb68d42f40a28e820`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Stability-AI/stable-audio-tools/tree/3241adba4fc2a85cf5b29d9eb68d42f40a28e820)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -301,7 +301,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: ホストエンジン、シーン・音響設定
 - **制約・未確認**: ニューラルASMR生成や収録音声の声質生成ではない。HRTFと再生環境で印象が変わる。
 - **編集者評価**: VR・耳元会話・環境音の位置制御に接続しやすい非AI基盤。
-- **メトリクス**: ★2,933、fork 251、作成 2017-01-26、最終push 2026-03-25T17:13:21Z、archived=False
+- **メトリクス**: ★2,955、fork 257、作成 2017-01-26、最終push 2026-03-25T17:13:21Z、archived=False
 - **確認**: 2026-09-09 / コミット `480dd64f513cc8a6437e7d5b9eb0d3f1d30c2fac`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ValveSoftware/steam-audio/tree/480dd64f513cc8a6437e7d5b9eb0d3f1d30c2fac)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -336,7 +336,7 @@ VR・耳元会話・環境音の位置制御に接続しやすい非AI基盤。
 - **依存**: UVR系モデル、選択によりDemucs
 - **制約・未確認**: 分離は完全ではなく、残響や楽器の漏れが残る可能性。2025年からコード更新が少ない。
 - **編集者評価**: 歌唱分析、台詞の抽出、既存音の整理の前処理候補。
-- **メトリクス**: ★26,168、fork 2,001、作成 2020-07-20、最終push 2025-03-13T21:44:03Z、archived=False
+- **メトリクス**: ★26,449、fork 2,019、作成 2020-07-20、最終push 2025-03-13T21:44:03Z、archived=False
 - **確認**: 2026-09-09 / コミット `5517e0cf0d1acd16a1618eeedec596957523f9e1`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Anjok07/ultimatevocalremovergui/tree/5517e0cf0d1acd16a1618eeedec596957523f9e1)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

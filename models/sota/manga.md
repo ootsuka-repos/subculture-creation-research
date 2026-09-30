@@ -28,7 +28,7 @@
   - 最も活発な漫画翻訳アプリ(リリース0.83.5、2026-09-22)。OCRモデルを選択式で比較運用できる
 - [NopeNopeGuy/hayai-ocr](https://github.com/NopeNopeGuy/hayai-ocr) — Hayai OCR 公式ヘルパーライブラリ（★8 / Apache-2.0 / 最終push 2026-09-21 / release v2.3.0 (2026-09-21) / 確認コミット [`54c2771e`](https://github.com/NopeNopeGuy/hayai-ocr/blob/54c2771e11424f2c732cf32be22d616220ad8c4c/README.md)）
   - v2.3.0(2026-09-21)。★8と小規模だがNova対応の唯一の配布経路
-- [kha-white/manga-ocr](https://github.com/kha-white/manga-ocr) — 標準manga-ocr Python/CLI。互換性の基準（★2,791 / Apache-2.0 / 最終push 2026-07-19 / release v0.1.16 (2026-07-19) / 確認コミット [`c333b5d3`](https://github.com/kha-white/manga-ocr/blob/c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69/README.md) / 制作カタログ: [manga-ocr](../../categories/localization.md#manga-ocr)）
+- [kha-white/manga-ocr](https://github.com/kha-white/manga-ocr) — 標準manga-ocr Python/CLI。互換性の基準（★2,792 / Apache-2.0 / 最終push 2026-07-19 / release v0.1.16 (2026-07-19) / 確認コミット [`c333b5d3`](https://github.com/kha-white/manga-ocr/blob/c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69/README.md) / 制作カタログ: [manga-ocr](../../categories/localization.md#manga-ocr)）
   - 2,791★、v0.1.16(2026-07-19)。多数の翻訳ツールが採用
 - [muscgab/JMangaBench_Mixed](https://github.com/muscgab/JMangaBench_Mixed) — 日本語漫画OCRの再現可能ベンチ(3,286サンプル)（★1 / GPL-3.0 / 最終push 2026-07-28 / 確認コミット [`9b8396a6`](https://github.com/muscgab/JMangaBench_Mixed/blob/9b8396a6191597c4ed58e05d35bf9f116a1e2d81/README.md)）
   - 第三者作。Manga109-s画像は各自取得。★1と小さいが複数モデルカードが引用
@@ -83,7 +83,7 @@
   - 97★、Apache-2.0表示、2026-09-25更新。VN/ゲーム用OCRとして owocr が推奨
 - [AuroraWright/owocr](https://github.com/AuroraWright/owocr) — 画面キャプチャ→OCRの多エンジン常駐ツール(manga-ocr/meikiocr/OneOCR等)（★301 / GPL-3.0 / 最終push 2026-06-03 / release 1.26.8 (2026-03-28) / 確認コミット [`0339f341`](https://github.com/AuroraWright/owocr/blob/0339f3412bf68c2385e88b59f4c59e4e1c2fe946/README.md)）
   - 301★、GPL-3.0、v1.26.8(2026-03-28)。manga-ocr・meikiocr・OneOCR など多エンジンを切替えられる常駐OCRツール
-- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — VN翻訳ツール(フック+OCR+翻訳)（★13,485 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/README.md)）
+- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — VN翻訳ツール(フック+OCR+翻訳)（★13,488 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/README.md)）
   - 13,485★(本調査の検索結果中でVN翻訳系最大)、GPL-3.0、2026-09-26リリース
 - [bpwhelan/GameSentenceMiner](https://github.com/bpwhelan/GameSentenceMiner) — ゲーム/VNからの言語学習用センテンスマイニング(owocr連携)（★859 / GPL-3.0 / 最終push 2026-09-29 / release v2026.9.4 (2026-09-26) / 確認コミット [`7dac58bc`](https://github.com/bpwhelan/GameSentenceMiner/blob/7dac58bc1a54b2f2b953787f36d587a2aedeb176/README.md)）
   - 859★、GPL-3.0、v2026.9.4(2026-09-26)。owocr を統合
@@ -107,7 +107,7 @@
 
 関連リポジトリ:
 
-- [fpgaminer/joycaption](https://github.com/fpgaminer/joycaption) — JoyCaption の学習・推論・プロンプトモード集（★1,268 / Apache-2.0 / 最終push 2026-02-24 / 確認コミット [`8445b2e5`](https://github.com/fpgaminer/joycaption/blob/8445b2e55db7856d522e44ae84e7415fcf3413f6/README.md)）
+- [fpgaminer/joycaption](https://github.com/fpgaminer/joycaption) — JoyCaption の学習・推論・プロンプトモード集（★1,269 / Apache-2.0 / 最終push 2026-02-24 / 確認コミット [`8445b2e5`](https://github.com/fpgaminer/joycaption/blob/8445b2e55db7856d522e44ae84e7415fcf3413f6/README.md)）
   - 1,268★、Apache-2.0、最終更新2026-02-24。アニメLoRA/ファインチューン用データ作成で広く使われるキャプショナの公式リポジトリ
 
 ### 画像+テキスト→テキスト(漫画ページ理解VLM:ページOCR+VQA)
@@ -179,9 +179,9 @@
 
 - [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — Koharu Layout を検出段に使う統合アプリ（★5,693 / Apache-2.0 / 最終push 2026-09-30 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
   - 5,693★、Apache-2.0(アプリ)、0.83.5(2026-09-22)。検出→OCR→消去まで一体
-- [roboflow/rf-detr](https://github.com/roboflow/rf-detr) — RF-DETR(検出/インスタンスセグメンテーション)の学習・推論基盤（★9,662 / Apache-2.0 / 最終push 2026-09-30 / release 1.11.1 (2026-09-30) / 確認コミット [`7b9d60c6`](https://github.com/roboflow/rf-detr/blob/7b9d60c61b3188dc871cd54d80257f6b2f483bdd/README.md)）
+- [roboflow/rf-detr](https://github.com/roboflow/rf-detr) — RF-DETR(検出/インスタンスセグメンテーション)の学習・推論基盤（★9,664 / Apache-2.0 / 最終push 2026-09-30 / release 1.11.1 (2026-09-30) / 確認コミット [`7b9d60c6`](https://github.com/roboflow/rf-detr/blob/7b9d60c61b3188dc871cd54d80257f6b2f483bdd/README.md)）
   - 9,662★、Apache-2.0、1.11.1(2026-09-30)。Koharu Layoutの基盤ライブラリ(rfdetr==1.7.0で学習)
-- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — ogkalu検出器+manga-ocr+LaMa の翻訳アプリ（★2,959 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
+- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — ogkalu検出器+manga-ocr+LaMa の翻訳アプリ（★2,960 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
   - 2,959★、Apache-2.0、v2.8.9(2026-09-11)。商用安全側のRT-DETR系検出器を実運用
 - [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator) — comic-text-detector / YSG等の検出器を選べる翻訳・編集アプリ（★5,171 / GPL-3.0 / 最終push 2026-09-27 / release v1.5.17 (2026-09-27) / 確認コミット [`9c7863c1`](https://github.com/dmMaze/BallonsTranslator/blob/9c7863c1e10c5bd927312eca0a0860177b0e5539/README.md)）
   - 5,171★、GPL-3.0、v1.5.17(2026-09-27)。検出・OCR・インペイントを差し替え可能
@@ -193,7 +193,7 @@
 - **最良**: [deepghs/AnimeText_yolo](https://huggingface.co/deepghs/AnimeText_yolo/tree/a180c191bfdb9f0e31b57e7de567e7b6bac50f84)（revision `a180c191` / 作成 2025-05-23 / 更新 2025-10-10）
 - **利用条件**: gpl-3.0 / gated。HFメタデータは gpl-3.0 かつ gated=auto(利用条件への同意が必要)。データセット AnimeText のライセンス・元画像の権利はカード抜粋に明記なし(本調査では未確認)。GPL-3.0のためクローズドな組込みは不可。商用可とは断定しない。
 - **選定根拠**: 【事実】AnimeText(735,060枚・423万テキストブロック、hard negative付き、論文 arXiv 2510.07951)で学習した YOLO12 系。カード表: yolo12x F1 0.90・mAP50 0.95167・mAP50-95 0.89656(l 0.88587、m 0.87804、s 0.86523、n 0.83449。単一クラス text_block、評価分割は表に明記なし=自己報告)。採用: MangaTranslator が枠外(OSB)文字検出に利用(GH 331★)、sorryhyun が同人誌SFX評価のボックス検出に使用している。likes27、spaces4、GitHubコード参照59件、DLカウンタ0(ゲート付きのため)。漫画ページの4クラス解析(Koharu Layout)は枠内の吹き出し/コマが得意だが、アニメ場面・イラスト・カラー同人誌の装飾文字や枠外題字は AnimeText 系が対象。重なる用途では両者を併用する事例がある(MangaTranslator)。【評価】該当ドメインで同規模の代替がない。ただし最終更新2025-10、GPL-3.0+ゲート(auto承認)で組込みに制約がある。
-- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 27 / Spaces 4
+- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 28 / Spaces 4
 - **概要**: AnimeText データセット(735K枚/4.2Mブロック)で学習した YOLO12 検出器の n/s/m/l/x 5サイズ。クラスは text_block のみ(hard negativeで記号・装飾を区別)。オンラインデモ Space あり(deepghs/AnimeText_yolo)。
 - **入力**: アニメ/イラスト/漫画画像(YOLO入力)。F1最大のしきい値はxで0.425、lで0.426、mで0.299、sで0.272、nで0.251(カード表)。
 - **出力**: text_blockのbbox。
@@ -273,7 +273,7 @@
   - 5,693★、Apache-2.0、0.83.5(2026-09-22)。検出/OCR/消去/LLMを設定で差し替え
 - [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator) — 編集機能が充実した翻訳ツール(plugin式で検出/OCR/消去を差し替え)（★5,171 / GPL-3.0 / 最終push 2026-09-27 / release v1.5.17 (2026-09-27) / 確認コミット [`9c7863c1`](https://github.com/dmMaze/BallonsTranslator/blob/9c7863c1e10c5bd927312eca0a0860177b0e5539/README.md)）
   - 5,171★、GPL-3.0、v1.5.17(2026-09-27)
-- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 漫画/Webtoon/PDF/EPUB対応の翻訳アプリ+ブラウザ拡張（★2,959 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
+- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 漫画/Webtoon/PDF/EPUB対応の翻訳アプリ+ブラウザ拡張（★2,960 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
   - 2,959★、Apache-2.0、v2.8.9(2026-09-11)
 - [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator) — 多くの派生(manga-translator-ui 等)の基盤（★10,457 / GPL-3.0 / 最終push 2026-09-25 / release beta-0.3 (2022-04-23) / 確認コミット [`441d07c5`](https://github.com/zyddnys/manga-image-translator/blob/441d07c59a735c7db3db2e7bb8b07920afd8a9cc/README.md) / 制作カタログ: [manga-image-translator](../../categories/localization.md#manga-image-translator)）
   - 10,457★(最大)、GPL-3.0。ただし最終リリース2022-04で、READMEは公式ホスト版の停止を記載

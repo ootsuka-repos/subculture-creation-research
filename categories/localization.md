@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,11 +12,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ASMR Dubber](https://github.com/EveningStudy/asmr-dubber) · [詳細](#asmr-dubber) | 日本語・英語の音声や動画を、校正可能な字幕・中国語吹替・二言語音声へ変換する制作ツール。 | AI連携 / 小規模・制作連携候補 | 167 / 2026-09-07 |
-| [Manga OCR](https://github.com/kha-white/manga-ocr) · [詳細](#manga-ocr) | 日本語漫画の縦書き・横書き・ルビ付き文字を認識する。 | AIモデル・学習 / モデル・研究候補 | 2,774 / 2026-07-19 |
-| [manga-image-translator](https://github.com/zyddnys/manga-image-translator) · [詳細](#manga-image-translator) | 画像内の文字を検出・認識・翻訳し、元の文字を修復して訳文を組版する。 | AIモデル・学習 / 比較・既存工程の参考 | 10,401 / 2026-07-20 |
-| [mokuro](https://github.com/kha-white/mokuro) · [詳細](#mokuro) | 漫画ページの文字位置とOCR結果をまとめ、選択可能なテキストとして閲覧できる形式へ変換。 | AI連携 / 連携・制作ツール候補 | 1,723 / 2026-07-20 |
-| [VoiceTransl](https://github.com/shinnpuru/VoiceTransl) · [詳細](#voicetransl) | 音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。 | AI連携 / 連携の評価候補 | 1,271 / 2026-08-28 |
+| [ASMR Dubber](https://github.com/EveningStudy/asmr-dubber) · [詳細](#asmr-dubber) | 日本語・英語の音声や動画を、校正可能な字幕・中国語吹替・二言語音声へ変換する制作ツール。 | AI連携 / 小規模・制作連携候補 | 215 / 2026-09-30 |
+| [Manga OCR](https://github.com/kha-white/manga-ocr) · [詳細](#manga-ocr) | 日本語漫画の縦書き・横書き・ルビ付き文字を認識する。 | AIモデル・学習 / モデル・研究候補 | 2,792 / 2026-07-19 |
+| [manga-image-translator](https://github.com/zyddnys/manga-image-translator) · [詳細](#manga-image-translator) | 画像内の文字を検出・認識・翻訳し、元の文字を修復して訳文を組版する。 | AIモデル・学習 / 比較・既存工程の参考 | 10,457 / 2026-09-25 |
+| [mokuro](https://github.com/kha-white/mokuro) · [詳細](#mokuro) | 漫画ページの文字位置とOCR結果をまとめ、選択可能なテキストとして閲覧できる形式へ変換。 | AI連携 / 連携・制作ツール候補 | 1,738 / 2026-07-20 |
+| [VoiceTransl](https://github.com/shinnpuru/VoiceTransl) · [詳細](#voicetransl) | 音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。 | AI連携 / 連携の評価候補 | 1,298 / 2026-08-28 |
+| [xianscan-rust](https://github.com/ArbenApura/xianscan-rust) · [詳細](#xianscan-rust) | 漫画・韓漫・国漫向けのローカル完結型翻訳スタジオ。吹き出し検出、多言語OCR、LLM翻訳、LaMaによるインペイント、組版までを単体バイナリで実行する。 | AIモデル・学習 / 更新が活発な実装候補 | 77 / 2026-09-29 |
 
 <a id="asmr-dubber"></a>
 
@@ -32,7 +33,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Parakeet/Kotoba/Faster-Whisper等のASR、IndexTTS2/2.5または音声API、翻訳API、FFmpeg等。
 - **制約・未確認**: 主な方向は日英から中国語への制作。ASMR専用生成モデルではない。IndexTTS2.5は任意追加で、基本パッケージへの同梱と混同しない。
 - **編集者評価**: ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な連携候補。
-- **メトリクス**: ★167、fork 8、作成 2026-07-23、最終push 2026-09-07T16:29:47Z、archived=False
+- **メトリクス**: ★215、fork 12、作成 2026-07-23、最終push 2026-09-30T16:16:58Z、archived=False
 - **確認**: 2026-09-09 / コミット `bc088faceec743d51f2914e9f7efd98d7b19d9e3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/EveningStudy/asmr-dubber/tree/bc088faceec743d51f2914e9f7efd98d7b19d9e3)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -49,7 +50,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 
 **入口候補（固定ツリーで存在確認）**: [src/asmr_dubber/cli.py](https://github.com/EveningStudy/asmr-dubber/blob/bc088faceec743d51f2914e9f7efd98d7b19d9e3/src/asmr_dubber/cli.py)
 
-**最新GitHub Release**: [v1.4.0](https://github.com/EveningStudy/asmr-dubber/releases/tag/v1.4.0) / 2026-09-07T10:49:50Z / prerelease=False
+**最新GitHub Release**: [v1.6.2](https://github.com/EveningStudy/asmr-dubber/releases/tag/v1.6.2) / 2026-09-30T16:21:38Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-07T16:29:46Z。公式READMEと固定ファイル構成の確認。バックエンドの起動・生成・翻訳品質は未検証。
 
@@ -69,7 +70,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: manga-ocr-base、Transformers、形態素関連依存
 - **制約・未確認**: ページ内の文字領域検出や翻訳・組版は別工程。読み取り品質は素材依存。
 - **編集者評価**: 漫画の校正・翻訳素材抽出を構成するOCR部品。
-- **メトリクス**: ★2,774、fork 141、作成 2022-01-15、最終push 2026-07-19T08:43:43Z、archived=False
+- **メトリクス**: ★2,792、fork 142、作成 2022-01-15、最終push 2026-07-19T08:43:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/kha-white/manga-ocr/tree/c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -108,7 +109,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: OCR、インペイント、翻訳モデルまたはAPI
 - **制約・未確認**: 公式説明に公開Webデモの停止記載あり。縦書き・擬音・レイアウト保持の品質は素材で検証が必要。
 - **編集者評価**: 漫画のローカライズと文字処理工程の技術候補。
-- **メトリクス**: ★10,401、fork 1,060、作成 2021-02-18、最終push 2026-07-20T07:17:48Z、archived=False
+- **メトリクス**: ★10,457、fork 1,067、作成 2021-02-18、最終push 2026-09-25T02:45:14Z、archived=False
 - **確認**: 2026-09-09 / コミット `95227a2bb0fd306cd4f0c104d57284026f991b3a`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/zyddnys/manga-image-translator/tree/95227a2bb0fd306cd4f0c104d57284026f991b3a)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -143,7 +144,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: comic-text-detector、manga-ocr、対応Webリーダー
 - **制約・未確認**: 主目的は読書支援。ここでは自作漫画の校正・テキスト抽出用の前処理として掲載。翻訳器ではない。
 - **編集者評価**: ページ単位で位置付き文字を得るため、OCR単体より制作後の校正に接続しやすい。
-- **メトリクス**: ★1,723、fork 121、作成 2022-04-16、最終push 2026-07-20T07:18:29Z、archived=False
+- **メトリクス**: ★1,738、fork 121、作成 2022-04-16、最終push 2026-07-20T07:18:29Z、archived=False
 - **確認**: 2026-09-09 / コミット `9f79b1281066f953ec6e5d1e7086c401fa8da159`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/kha-white/mokuro/tree/9f79b1281066f953ec6e5d1e7086c401fa8da159)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -180,7 +181,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: Whisper系、翻訳LLM、FFmpeg等
 - **制約・未確認**: 同名forkと公式配布元を区別。声の生成機能ではない。
 - **編集者評価**: ASMR・キャラ音声・映像の字幕付けとローカライズ候補。
-- **メトリクス**: ★1,271、fork 52、作成 2024-03-15、最終push 2026-08-28T14:44:44Z、archived=False
+- **メトリクス**: ★1,298、fork 53、作成 2024-03-15、最終push 2026-08-28T14:44:44Z、archived=False
 - **確認**: 2026-09-09 / コミット `b5f7e5038763aeb3420ac872c0bd191112f92227`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/shinnpuru/VoiceTransl/tree/b5f7e5038763aeb3420ac872c0bd191112f92227)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -200,3 +201,38 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 **最新GitHub Release**: [v1.30](https://github.com/shinnpuru/VoiceTransl/releases/tag/v1.30) / 2026-08-28T13:20:38Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-08-28T14:44:14Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="xianscan-rust"></a>
+
+## xianscan-rust
+
+漫画・韓漫・国漫向けのローカル完結型翻訳スタジオ。吹き出し検出、多言語OCR、LLM翻訳、LaMaによるインペイント、組版までを単体バイナリで実行する。
+
+- **リポジトリ**: https://github.com/ArbenApura/xianscan-rust
+- **分類**: pipeline / AIモデル・学習 / 更新が活発な実装候補
+- **入力**: 漫画・ウェブトゥーンの画像、フォルダ、ブラウザ拡張で取り込んだページ
+- **出力**: 翻訳・組版済みページ、Mihon/Tachiyomi拡張で読めるチャプター
+- **環境**: x86_64(AVX2)またはApple Silicon、RAM 8GB以上。ソースからはRust 1.88+。GPUは任意。
+- **依存**: 内蔵のONNXモデル/Skia。翻訳にOllama・LM Studio等のローカルLLMやGemini/OpenAI等のクラウドAPIを任意使用。
+- **制約・未確認**: 翻訳品質やOCR精度はREADMEの主張で未検証。GPU無しではCPU推論となる。
+- **編集者評価**: 検出→OCR→翻訳→インペイント→組版を1クリックで自動化し、ONNXモデルとUIを内蔵した単体実行ファイルで動かせる点が実用的。
+- **メトリクス**: ★77、fork 12、作成 2026-08-16、最終push 2026-09-29T22:30:33Z、archived=False
+- **確認**: 2026-10-01 / コミット `075d36f359cdcad1d08ea88d2f4d927640789c26`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/ArbenApura/xianscan-rust/tree/075d36f359cdcad1d08ea88d2f4d927640789c26)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/ArbenApura/xianscan-rust/blob/075d36f359cdcad1d08ea88d2f4d927640789c26/README.md) / [GitHub API](https://api.github.com/repos/ArbenApura/xianscan-rust) / [固定ツリー](https://github.com/ArbenApura/xianscan-rust/tree/075d36f359cdcad1d08ea88d2f4d927640789c26)
+
+### 制作に使う際の検討
+
+既存の漫画翻訳・組版工程をローカルで自動化したい場合の候補。
+
+**次に確かめること（実施前）**: 実際のページで吹き出し検出・OCR・組版の精度と日本語対応を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [docs-site/src/lib/components/ui/index.ts](https://github.com/ArbenApura/xianscan-rust/blob/075d36f359cdcad1d08ea88d2f4d927640789c26/docs-site/src/lib/components/ui/index.ts) / [src/main.rs](https://github.com/ArbenApura/xianscan-rust/blob/075d36f359cdcad1d08ea88d2f4d927640789c26/src/main.rs) / [web/src/lib/components/ui/index.ts](https://github.com/ArbenApura/xianscan-rust/blob/075d36f359cdcad1d08ea88d2f4d927640789c26/web/src/lib/components/ui/index.ts)
+
+**最新GitHub Release**: [v0.5.0-beta.8](https://github.com/ArbenApura/xianscan-rust/releases/tag/v0.5.0-beta.8) / 2026-09-26T13:56:24Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-29T22:28:44Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

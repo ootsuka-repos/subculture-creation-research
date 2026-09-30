@@ -3,9 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
-    "dev": "node build.mjs && wrangler dev",
-    "deploy": "node build.mjs && wrangler deploy",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

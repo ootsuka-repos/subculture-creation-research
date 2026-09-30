@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,16 +12,16 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 48,986 / 2026-09-09 |
-| [babylon-mmd](https://github.com/noname0310/babylon-mmd) · [詳細](#babylon-mmd) | Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モーフを再生する。 | 非AI制作 / 制作基盤として比較 | 253 / 2026-09-09 |
-| [inochi-creator](https://github.com/Inochi2D/inochi-creator) · [詳細](#inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,217 / 2025-06-16 |
-| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,008 / 2026-09-09 |
-| [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) · [詳細](#open-llm-vtuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,686 / 2026-05-15 |
-| [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) · [詳細](#openseeface) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,046 / 2025-12-28 |
-| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,690 / 2026-08-28 |
-| [three-vrm](https://github.com/pixiv/three-vrm) · [詳細](#three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,158 / 2026-09-09 |
-| [UniVRM](https://github.com/vrm-c/UniVRM) · [詳細](#univrm) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,378 / 2026-08-20 |
-| [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) · [詳細](#vtubestudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,287 / 2026-09-02 |
+| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 49,891 / 2026-09-30 |
+| [babylon-mmd](https://github.com/noname0310/babylon-mmd) · [詳細](#babylon-mmd) | Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モーフを再生する。 | 非AI制作 / 制作基盤として比較 | 256 / 2026-09-09 |
+| [inochi-creator](https://github.com/Inochi2D/inochi-creator) · [詳細](#inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,230 / 2025-06-16 |
+| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 76,824 / 2026-09-30 |
+| [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) · [詳細](#open-llm-vtuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,963 / 2026-05-15 |
+| [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) · [詳細](#openseeface) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,080 / 2026-09-18 |
+| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,876 / 2026-08-28 |
+| [three-vrm](https://github.com/pixiv/three-vrm) · [詳細](#three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,192 / 2026-09-30 |
+| [UniVRM](https://github.com/vrm-c/UniVRM) · [詳細](#univrm) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,392 / 2026-09-25 |
+| [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) · [詳細](#vtubestudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,304 / 2026-09-28 |
 
 <a id="airi"></a>
 
@@ -37,7 +37,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、TTS、ASR、キャラモデル
 - **制約・未確認**: 対応機能はプラットフォームとプロバイダに依存。全ゲームで自律動作するという意味ではない。
 - **編集者評価**: キャラ表示・会話・ゲーム操作の接続を扱う活動的な候補。
-- **メトリクス**: ★48,986、fork 4,849、作成 2024-12-01、最終push 2026-09-09T16:31:39Z、archived=False
+- **メトリクス**: ★49,891、fork 4,976、作成 2024-12-01、最終push 2026-09-30T21:43:27Z、archived=False
 - **確認**: 2026-09-09 / コミット `dfc6951a55bf4fdd66a68a0c881ae880ddd95f77`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/moeru-ai/airi/tree/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -72,7 +72,7 @@ Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モ�
 - **依存**: MMDモデル・モーション、物理ランタイム
 - **制約・未確認**: 読み込み成功と元MMDでの完全な見た目・挙動一致は別。素材条件は個別。
 - **編集者評価**: MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
-- **メトリクス**: ★253、fork 18、作成 2023-03-24、最終push 2026-09-09T07:00:36Z、archived=False
+- **メトリクス**: ★256、fork 19、作成 2023-03-24、最終push 2026-09-09T07:00:36Z、archived=False
 - **確認**: 2026-09-09 / コミット `ccb750db2998ed1067017eaf67f3fc987cfba6f8`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/noname0310/babylon-mmd/tree/ccb750db2998ed1067017eaf67f3fc987cfba6f8)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -107,7 +107,7 @@ MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
 - **依存**: Inochi2D、キャラ素材
 - **制約・未確認**: 最終pushは2025年6月。Live2D Cubism形式と同じものではない。
 - **編集者評価**: AIなしでも使える2Dリギングの比較基盤。
-- **メトリクス**: ★1,217、fork 85、作成 2020-11-19、最終push 2025-06-16T20:39:43Z、archived=False
+- **メトリクス**: ★1,230、fork 89、作成 2020-11-19、最終push 2025-06-16T20:39:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `dba60811cff224f8cc9ce367b1d9291bfa5f7640`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Inochi2D/inochi-creator/tree/dba60811cff224f8cc9ce367b1d9291bfa5f7640)。GitHub自動判定=BSD-2-Clause。独立レビュー・商用可否判定は未実施。
@@ -142,7 +142,7 @@ MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
 - **依存**: 各配信先、アバター表示アプリ、任意プラグイン
 - **制約・未確認**: 顔追跡やモデル生成は別アプリ。プラグインの対応版を確認する。
 - **編集者評価**: VTuber制作物を実際の配信画面へまとめる基本工程。
-- **メトリクス**: ★76,008、fork 10,098、作成 2013-10-01、最終push 2026-09-09T01:05:38Z、archived=False
+- **メトリクス**: ★76,824、fork 10,393、作成 2013-10-01、最終push 2026-09-30T19:04:25Z、archived=False
 - **確認**: 2026-09-09 / コミット `012c6c23c73283ee5591ae00d08af14d9eeb8279`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/obsproject/obs-studio/tree/012c6c23c73283ee5591ae00d08af14d9eeb8279)。GitHub自動判定=GPL-2.0。独立レビュー・商用可否判定は未実施。
@@ -177,7 +177,7 @@ VTuber制作物を実際の配信画面へまとめる基本工程。
 - **依存**: LLM、TTS、ASR、Live2D素材
 - **制約・未確認**: ローカル完結はバックエンドの選択に依存。Live2Dモデル制作機能とは別。
 - **編集者評価**: 会話するVTuberやデスクトップキャラの実装候補。
-- **メトリクス**: ★13,686、fork 1,630、作成 2023-11-24、最終push 2026-05-15T07:18:04Z、archived=False
+- **メトリクス**: ★13,963、fork 1,667、作成 2023-11-24、最終push 2026-05-15T07:18:04Z、archived=False
 - **確認**: 2026-09-09 / コミット `992309c0aa19845960228f880013d4685fde93b5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/tree/992309c0aa19845960228f880013d4685fde93b5)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -212,7 +212,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 - **依存**: 同梱・配布ONNXモデル、別途アバター描画ソフト
 - **制約・未確認**: 単体のアバター表示ソフトではない。作者の30〜60fpsは環境依存。
 - **編集者評価**: 生成モデルを増やす前に安定した表情入力を作る候補。
-- **メトリクス**: ★2,046、fork 208、作成 2020-01-01、最終push 2025-12-28T11:52:30Z、archived=False
+- **メトリクス**: ★2,080、fork 210、作成 2020-01-01、最終push 2026-09-18T17:30:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `85aa70fc67582d046e771ea73625182a0d8f7475`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/emilianavt/OpenSeeFace/tree/85aa70fc67582d046e771ea73625182a0d8f7475)。GitHub自動判定=BSD-2-Clause。独立レビュー・商用可否判定は未実施。
@@ -229,7 +229,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 
 **入口候補（固定ツリーで存在確認）**: [facetracker.py](https://github.com/emilianavt/OpenSeeFace/blob/85aa70fc67582d046e771ea73625182a0d8f7475/facetracker.py)
 
-**最新GitHub Release**: [v1.20.4](https://github.com/emilianavt/OpenSeeFace/releases/tag/v1.20.4) / 2021-09-17T20:20:39Z / prerelease=False
+**最新GitHub Release**: [v1.20.5](https://github.com/emilianavt/OpenSeeFace/releases/tag/v1.20.5) / 2026-09-14T10:29:18Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2025-12-28T11:52:30Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
@@ -249,7 +249,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 - **依存**: 独自重み、SD image variations、VAE等
 - **制約・未確認**: 出力は動画であり編集可能なLive2D・VRMモデルではない。二次元適性は未評価。
 - **編集者評価**: 画像ベースの配信アバターを試す研究候補。
-- **メトリクス**: ★3,690、fork 520、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
+- **メトリクス**: ★3,876、fork 576、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `abdd112e01dcf7d89122c2e5efa29fcff0669740`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/GVCLab/PersonaLive/tree/abdd112e01dcf7d89122c2e5efa29fcff0669740)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -288,7 +288,7 @@ three.jsでVRMアバターを読み込み表示するライブラリ。
 - **依存**: VRM素材、ブラウザWebGL
 - **制約・未確認**: アバター生成や顔追跡は含まない。VRM・three.jsの対応版を確認する。
 - **編集者評価**: WebのAIキャラクターUIへ既存VRMを組み込む基盤。
-- **メトリクス**: ★2,158、fork 190、作成 2019-06-04、最終push 2026-09-09T00:46:32Z、archived=False
+- **メトリクス**: ★2,192、fork 191、作成 2019-06-04、最終push 2026-09-30T09:53:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/pixiv/three-vrm/tree/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -323,7 +323,7 @@ Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱�
 - **依存**: Unity、VRM素材
 - **制約・未確認**: VRM 0.x/1.0等の互換性は個別確認。モデル生成・自動リギング機能ではない。
 - **編集者評価**: 生成・制作した3DキャラをVTuberやゲームへ接続する基盤。
-- **メトリクス**: ★3,378、fork 490、作成 2018-04-16、最終push 2026-08-20T07:40:06Z、archived=False
+- **メトリクス**: ★3,392、fork 490、作成 2018-04-16、最終push 2026-09-25T05:32:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `928b30e96439c1c11a49b172efb72eb96d2cad8b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/vrm-c/UniVRM/tree/928b30e96439c1c11a49b172efb72eb96d2cad8b)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -358,7 +358,7 @@ VTube Studioを外部から制御する公式API文書・開発資料。
 - **依存**: VTube Studio、Live2Dモデル
 - **制約・未確認**: アプリ本体のソース公開ではない。文書リポジトリとして掲載。
 - **編集者評価**: AI会話や演出制御を既存のLive2D配信へ接続する参考。
-- **メトリクス**: ★1,287、fork 141、作成 2019-11-11、最終push 2026-09-02T08:39:56Z、archived=False
+- **メトリクス**: ★1,304、fork 147、作成 2019-11-11、最終push 2026-09-28T23:12:53Z、archived=False
 - **確認**: 2026-09-09 / コミット `0f46ef44b487fa17c8120db572ebd925924b93a3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/DenchiSoft/VTubeStudio/tree/0f46ef44b487fa17c8120db572ebd925924b93a3)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

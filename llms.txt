@@ -7,7 +7,7 @@
 - [README.md](README.md): 目次と分野一覧
 - MCP: `https://subculture-research-mcp.x-agent.workers.dev/mcp`（Streamable HTTP）: 全データを検索・取得する読み取り専用リモートMCPサーバー（実装は [cloudflare/](cloudflare/)）
 
-## 制作ツール（GitHub 115件 / 18分野）
+## 制作ツール（GitHub / 18分野、毎日自動追加）
 - [WORKFLOWS.md](WORKFLOWS.md): 制作目的別の組み合わせ
 - [categories/](categories/): 分野別詳細（manga, story, game, animation, rig2d, layer, image, video, 3d, tts, sound, music, vtuber, workflow, localization, motion, vfx, production）
 - [catalog.jsonl](catalog.jsonl): 1行1件（id, sources, checked_on, code_revision）
@@ -25,7 +25,7 @@
 - [models/sota/not-included.md](models/sota/not-included.md): 検討したが選ばなかったもの
 - [sota-catalog.jsonl](sota-catalog.jsonl): 1行1タスク（task_id, status, confidence, best, repositories）
 
-## 会話AIキャラクター（Live2D / VRM / AI VTuber、60件）
+## 会話AIキャラクター（Live2D / VRM / AI VTuber、毎日自動追加）
 - [categories/companion.md](categories/companion.md): 目的別の選び方と分類
 - [companion-catalog.jsonl](companion-catalog.jsonl): id, name, url, section_id, summary_ja, catalog_id
 

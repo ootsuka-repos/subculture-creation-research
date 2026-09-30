@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,9 +12,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [Kitsu](https://github.com/cgwire/kitsu) · [詳細](#kitsu) | アニメ・VFX・ゲーム制作の成果物、レビュー、進行を管理するWebアプリ。 | 非AI制作 / 制作基盤として比較 | 709 / 2026-09-09 |
-| [Storyboarder](https://github.com/wonderunit/storyboarder) · [詳細](#storyboarder) | 絵コンテを描き、ショットの順序と時間を試すアニマティクス制作ツール。 | 非AI制作 / 既存研究・制作の参考 | 3,836 / 2024-03-17 |
-| [StyleID](https://github.com/kwanyun/StyleID) · [詳細](#styleid) | 画風変化に強い顔の同一性特徴を計算し、比較・検索・評価に使う。 | AIモデル・学習 / 小規模・初期候補 | 33 / 2026-08-16 |
+| [Kitsu](https://github.com/cgwire/kitsu) · [詳細](#kitsu) | アニメ・VFX・ゲーム制作の成果物、レビュー、進行を管理するWebアプリ。 | 非AI制作 / 制作基盤として比較 | 725 / 2026-09-30 |
+| [Storyboarder](https://github.com/wonderunit/storyboarder) · [詳細](#storyboarder) | 絵コンテを描き、ショットの順序と時間を試すアニマティクス制作ツール。 | 非AI制作 / 既存研究・制作の参考 | 3,860 / 2024-03-17 |
+| [StyleID](https://github.com/kwanyun/StyleID) · [詳細](#styleid) | 画風変化に強い顔の同一性特徴を計算し、比較・検索・評価に使う。 | AIモデル・学習 / 小規模・初期候補 | 34 / 2026-08-16 |
 
 <a id="kitsu"></a>
 
@@ -30,7 +30,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: CGWireの制作管理構成、ユーザー認証・保存先
 - **制約・未確認**: このフロントエンドだけで全サービスが完結するとは扱わない。画像生成器ではない。
 - **編集者評価**: 素材数・改訂数が増えた制作の受け渡しとレビュー整理に向く。
-- **メトリクス**: ★709、fork 186、作成 2017-03-26、最終push 2026-09-09T13:11:46Z、archived=False
+- **メトリクス**: ★725、fork 183、作成 2017-03-26、最終push 2026-09-30T15:18:12Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cf2e8e77b1172dff970286ea6098502579239f2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/cgwire/kitsu/tree/6cf2e8e77b1172dff970286ea6098502579239f2)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -47,7 +47,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 **入口候補（固定ツリーで存在確認）**: [src/main.js](https://github.com/cgwire/kitsu/blob/6cf2e8e77b1172dff970286ea6098502579239f2/src/main.js) / [src/App.vue](https://github.com/cgwire/kitsu/blob/6cf2e8e77b1172dff970286ea6098502579239f2/src/App.vue)
 
-**最新GitHub Release**: [v1.0.60](https://github.com/cgwire/kitsu/releases/tag/v1.0.60) / 2026-09-09T09:58:00Z / prerelease=False
+**最新GitHub Release**: [v1.0.68](https://github.com/cgwire/kitsu/releases/tag/v1.0.68) / 2026-09-29T11:51:32Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-09T13:11:45Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
@@ -65,7 +65,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 作画素材、外部編集ツールとの受け渡し
 - **制約・未確認**: 最終push2024年。最新OS・配布版の導入状態は再確認が必要。
 - **編集者評価**: 生成回数を増やす前にカット割りを固定する道具として有用。
-- **メトリクス**: ★3,836、fork 392、作成 2016-12-22、最終push 2024-03-17T12:03:55Z、archived=False
+- **メトリクス**: ★3,860、fork 396、作成 2016-12-22、最終push 2024-03-17T12:03:55Z、archived=False
 - **確認**: 2026-09-09 / コミット `8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/wonderunit/storyboarder/tree/8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -100,7 +100,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: kwanY/styleidチェックポイント
 - **制約・未確認**: 複数顔には不適、顔の中央クロップを推奨。非商用研究用と記載。画像生成器ではない。
 - **編集者評価**: 絵柄を跨ぐキャラの一貫性評価を補助する候補。自動合否の唯一の指標にはしない。
-- **メトリクス**: ★33、fork 2、作成 2026-04-23、最終push 2026-08-16T08:18:40Z、archived=False
+- **メトリクス**: ★34、fork 3、作成 2026-04-23、最終push 2026-08-16T08:18:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/kwanyun/StyleID/tree/bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。

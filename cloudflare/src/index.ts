@@ -1,11 +1,10 @@
 // 調査データ（正本JSON・Markdown）を読み取り専用で返すリモートMCPサーバー（Streamable HTTP、ステートレス）。
-// データは build.mjs が public/ に置く静的アセット。更新は `npm run deploy` で反映。
+// データは GitHub の main を直接読む（最新コミットを REFRESH_MS ごとに確認）。main への push は再デプロイなしで反映される。
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js';
 import type { CallToolResult } from '@modelcontextprotocol/sdk/types.js';
 import { z } from 'zod';
 
-interface Env { ASSETS: Fetcher }
 type Out = { [key: string]: unknown };
 
 // 正本JSONのうちサーバーが使う項目（全体は record としてそのまま返す）
@@ -72,8 +71,9 @@ interface Entry {
   dataset: Dataset; id: string; name: string; category: string; summary: string; url: string | null;
   repos: [string, string][]; extra: Out; raw: object; text: string; sotaRepos?: SotaRepo[];
 }
-interface Doc { path: string; title: string; chars: number }
+interface Doc { path: string; bytes: number }
 interface Data {
+  sha: string;
   entries: Entry[];
   index: Map<string, Entry>;
   catNames: Map<string, string>;
@@ -97,7 +97,7 @@ function normalizeRepo(repo: string): string {
   return r.split('/').slice(0, 2).join('/').replace(/\.git$/, '');
 }
 
-function build([catalog, sota, models, comp, papers, rni]: Sources, docs: Doc[]): Data {
+function build([catalog, sota, models, comp, papers, rni]: Sources, docs: Doc[]): Omit<Data, 'sha'> {
   const notIncludedCats: Category[] = [
     { id: 'catalog', name_ja: '制作カタログの保留・未掲載' },
     { id: 'sota', name_ja: 'SOTAで最良に選ばなかった候補' },
@@ -157,24 +157,41 @@ function build([catalog, sota, models, comp, papers, rni]: Sources, docs: Doc[])
   return { entries, index: new Map(entries.map(e => [`${e.dataset}\0${e.id}`, e])), catNames, overview: { datasets }, docs };
 }
 
-async function asset(env: Env, path: string): Promise<Response> {
-  const res = await env.ASSETS.fetch(`https://assets.local/${path.split('/').map(encodeURIComponent).join('/')}`);
-  if (!res.ok) throw new Error(`asset ${path}: ${res.status}`);
+const REPO = 'ootsuka-repos/subculture-creation-research';
+const REFRESH_MS = 10 * 60 * 1000;
+
+async function github(url: string): Promise<Response> {
+  const res = await fetch(url, { headers: { 'user-agent': 'subculture-research-mcp', accept: 'application/vnd.github+json' } });
+  if (!res.ok) throw new Error(`${url}: ${res.status}`);
   return res;
 }
 
-let dataPromise: Promise<Data> | null = null;
+const raw = (sha: string, path: string) =>
+  github(`https://raw.githubusercontent.com/${REPO}/${sha}/${path.split('/').map(encodeURIComponent).join('/')}`);
 
-function loadData(env: Env): Promise<Data> {
-  dataPromise ??= (async () => {
-    // build.mjs がリポジトリの正本からコピーした自前のアセットなので検証せず型付けする
-    const [sources, docs] = await Promise.all([
-      Promise.all(SOURCES.map(async f => (await asset(env, `data/${f}`)).json())) as Promise<Sources>,
-      asset(env, 'docs-index.json').then(r => r.json()) as Promise<Doc[]>,
-    ]);
-    return build(sources, docs);
-  })().catch(err => { dataPromise = null; throw err; });
-  return dataPromise;
+let cached: { data: Data; checkedAt: number } | null = null;
+let pending: Promise<Data> | null = null;
+
+async function fetchData(): Promise<Data> {
+  const commit = await (await github(`https://api.github.com/repos/${REPO}/commits/main`)).json() as { sha: string; commit: { tree: { sha: string } } };
+  if (cached && cached.data.sha === commit.sha) return cached.data;
+  const tree = await (await github(`https://api.github.com/repos/${REPO}/git/trees/${commit.commit.tree.sha}?recursive=1`)).json() as
+    { tree: { path: string; type: string; size?: number }[] };
+  const docs = tree.tree
+    .filter(t => t.type === 'blob' && /\.(md|txt)$/.test(t.path) && !t.path.startsWith('cloudflare/') && !t.path.startsWith('.github/'))
+    .map(t => ({ path: t.path, bytes: t.size ?? 0 }));
+  // 自リポジトリの正本（export/validate 済みの形）なので検証せず型付けする
+  const sources = await Promise.all(SOURCES.map(async f => (await raw(commit.sha, f)).json())) as Sources;
+  return { ...build(sources, docs), sha: commit.sha };
+}
+
+async function loadData(): Promise<Data> {
+  if (cached && Date.now() - cached.checkedAt < REFRESH_MS) return cached.data;
+  pending ??= fetchData()
+    .then(data => { cached = { data, checkedAt: Date.now() }; return data; })
+    .catch(err => { if (cached) { cached.checkedAt = Date.now(); return cached.data; } throw err; }) // 取得失敗時は前回のデータで継続
+    .finally(() => { pending = null; });
+  return pending;
 }
 
 function compact(e: Entry, catNames: Map<string, string>): Out {
@@ -202,11 +219,11 @@ function clamp(v: number, lo: number, hi: number): number {
   return Math.max(lo, Math.min(v, hi));
 }
 
-function createServer(env: Env): McpServer {
+function createServer(): McpServer {
   const server = new McpServer({ name: 'subculture-creation-research', version: '1.0.0' }, { instructions: INSTRUCTIONS });
   const run = async (fn: (d: Data) => Out | Promise<Out>): Promise<CallToolResult> => {
     try {
-      const result = await fn(await loadData(env));
+      const result = await fn(await loadData());
       return { content: [{ type: 'text', text: JSON.stringify(result) }], structuredContent: result };
     } catch (err) {
       if (!(err instanceof ToolError)) throw err;
@@ -218,7 +235,7 @@ function createServer(env: Env): McpServer {
   server.registerTool('overview', {
     description: 'データセットごとの件数・更新日・収録範囲・分野ID（category に使う値）・選定基準と注意を返す。',
     annotations: READ_ONLY,
-  }, () => run(d => d.overview));
+  }, () => run(d => ({ ...d.overview, source_commit: `https://github.com/${REPO}/tree/${d.sha}` })));
 
   server.registerTool('search', {
     description: '全データを横断して全文検索する（空白区切りの語をすべて含むものを、名前・ID・要約の一致を優先して並べる）。'
@@ -292,7 +309,7 @@ function createServer(env: Env): McpServer {
   }));
 
   server.registerTool('list_documents', {
-    description: '読める解説Markdown（分野別ページ、SOTA詳細、研究索引、ワークフロー、ガイド）の path・タイトル・サイズを返す。',
+    description: '読める解説Markdown（分野別ページ、SOTA詳細、研究索引、ワークフロー、ガイド）の path・バイト数を返す。',
     annotations: READ_ONLY,
   }, () => run(d => ({ documents: d.docs })));
 
@@ -305,7 +322,7 @@ function createServer(env: Env): McpServer {
   }, ({ path, heading, outline, offset, max_chars }) => run(async d => {
     const doc = d.docs.find(x => x.path === path.replace(/^\.?\//, ''));
     if (!doc) throw new ToolError(`読めない文書: ${path}（list_documents の path を指定）`);
-    let text = await (await asset(env, `docs/${doc.path}`)).text();
+    let text = await (await raw(d.sha, doc.path)).text();
     const heads = headings(text);
     if (outline) return { path: doc.path, chars: text.length, headings: heads.map(([, level, title]) => ({ level, title })) };
     if (heading) {
@@ -325,15 +342,15 @@ function createServer(env: Env): McpServer {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request) {
     const url = new URL(request.url);
     if (url.pathname !== '/mcp') {
       return new Response('subculture-creation-research MCP server. Endpoint: /mcp (Streamable HTTP)\n'
         + 'Source: https://github.com/ootsuka-repos/subculture-creation-research\n', { status: url.pathname === '/' ? 200 : 404 });
     }
-    const server = createServer(env);
+    const server = createServer();
     const transport = new WebStandardStreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
     await server.connect(transport);
     return transport.handleRequest(request);
   },
-} satisfies ExportedHandler<Env>;
+} satisfies ExportedHandler;

@@ -23,11 +23,11 @@
 
 関連リポジトリ:
 
-- [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) — Sakuraモデルの配布・推論/プロンプト仕様・対応ツール一覧（★4,793 / GPL-3.0 / 最終push 2026-07-23 / release v1.1.0 (2024-05-10) / 確認コミット [`0ff69116`](https://github.com/SakuraLLM/SakuraLLM/blob/0ff69116222ca66c7a15dcff00fd4f9f86b18d5c/README.md)）
+- [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) — Sakuraモデルの配布・推論/プロンプト仕様・対応ツール一覧（★4,794 / GPL-3.0 / 最終push 2026-07-23 / release v1.1.0 (2024-05-10) / 確認コミット [`0ff69116`](https://github.com/SakuraLLM/SakuraLLM/blob/0ff69116222ca66c7a15dcff00fd4f9f86b18d5c/README.md)）
   - 公式ハブ。4.8k★。最終push 2026-07-23。GPL-3.0(モデルはCC-BY-NC-SA)。
 - [GalTransl/GalTransl](https://github.com/GalTransl/GalTransl) — Galgameの自動翻訳・翻訳パッチ作成パイプライン(Sakura/GPT/Claude/DeepSeek対応)（★2,293 / GPL-3.0 / 最終push 2026-09-30 / release 8.1.0 (2026-09-27) / 確認コミット [`ad04d23e`](https://github.com/GalTransl/GalTransl/blob/ad04d23e187dbc37db2de588e99a13b785127a3e/README.md)）
   - 2.3k★、リリース8.1.0(2026-09-27)と活発。GPL-3.0。Sakura-GalTransl専用のAPI/辞書機構を持つ。
-- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — リアルタイムGalgame翻訳(フック/OCR/クリップボード、Sakura API対応)（★13,485 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/docs/zh/README.md)）
+- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — リアルタイムGalgame翻訳(フック/OCR/クリップボード、Sakura API対応)（★13,488 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/docs/zh/README.md)）
   - 13.5k★、v10.17.1.12(2026-09-26)。VN翻訳ツールで最大。GPL-3.0。
 - [neavo/LinguaGacha](https://github.com/neavo/LinguaGacha) — 小説・ゲーム・字幕のLLM一括翻訳器(Sakura対応とSakura README記載)（★2,519 / ライセンス未表示 / 最終push 2026-09-30 / release MANUAL_BUILD_v0.124.1 (2026-09-30) / 確認コミット [`1669245b`](https://github.com/neavo/LinguaGacha/blob/1669245ba26ecc78861be191f8b52716c520ca8f/README.md)）
   - 2.5k★、2026-09-30更新。ライセンス表示なし(GitHub API null): 利用条件は要確認。
@@ -52,7 +52,7 @@
 
 関連リポジトリ:
 
-- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — リアルタイムVN翻訳(任意のOpenAI互換LLMを接続可)（★13,485 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/docs/zh/README.md)）
+- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — リアルタイムVN翻訳(任意のOpenAI互換LLMを接続可)（★13,488 / GPL-3.0 / 最終push 2026-09-30 / release v10.17.1.12 (2026-09-26) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/docs/zh/README.md)）
   - 13.5k★で最大のVN翻訳ツール。JP→ENも各種エンジン対応。GPL-3.0。
 - [lmg-anon/vntl-benchmark](https://github.com/lmg-anon/vntl-benchmark) — VNTLリーダーボードの評価スクリプト（★3 / AGPL-3.0 / 最終push 2024-10-07 / 確認コミット [`325e148a`](https://github.com/lmg-anon/vntl-benchmark/blob/325e148adfeb92207885e5390e32a3f4fb61f6fd/README.md)）
   - JP→EN VN翻訳の評価手段。ただし3★・最終更新2024-10と小規模。AGPL-3.0。
@@ -80,7 +80,7 @@
 
 - [KohakuBlueleaf/z-tipo-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) — SD-WebUI/Forge/ComfyUI用のTIPO拡張(プロンプトアップサンプル)（★637 / Apache-2.0 / 最終push 2026-08-23 / 確認コミット [`61328629`](https://github.com/KohakuBlueleaf/z-tipo-extension/blob/6132862978021727284215bc2d5fe5257a872709/README.md)）
   - 637★、最終push 2026-08-23。Apache-2.0。TIPO/DanTagGen系の実運用入口。
-- [KohakuBlueleaf/KGen](https://github.com/KohakuBlueleaf/KGen) — TIPOの推論・サンプリング実装(pip install tipo-kgen)（★101 / Apache-2.0 / 最終push 2026-08-22 / 確認コミット [`fecfe053`](https://github.com/KohakuBlueleaf/KGen/blob/fecfe05341f021f916f9b23e1c93f23b4c50d9bb/README.md)）
+- [KohakuBlueleaf/KGen](https://github.com/KohakuBlueleaf/KGen) — TIPOの推論・サンプリング実装(pip install tipo-kgen)（★102 / Apache-2.0 / 最終push 2026-08-22 / 確認コミット [`fecfe053`](https://github.com/KohakuBlueleaf/KGen/blob/fecfe05341f021f916f9b23e1c93f23b4c50d9bb/README.md)）
   - 101★、Apache-2.0、2026-08-22更新。READMEにICLR 2026と明記。
 - [DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) — Danbooruタグのオートコンプリート(WebUI)（★2,807 / MIT / 最終push 2026-07-01 / release 3.3.0 (2025-05-08) / 確認コミット [`4170882f`](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete/blob/4170882f90b47be130a0ff9314f663c230b9153d/README.md)）
   - 2.8k★、MIT。タグ語彙補完の定番(TIPOとは別機能)。最終push 2026-07-01。
@@ -104,7 +104,7 @@
 
 関連リポジトリ:
 
-- [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラカード/ロールプレイ用LLMフロントエンドの事実上の標準（★33,969 / AGPL-3.0 / 最終push 2026-09-23 / release 1.19.0 (2026-09-14) / 確認コミット [`06bde939`](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md) / 制作カタログ: [sillytavern](../../categories/story.md#sillytavern)）
+- [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラカード/ロールプレイ用LLMフロントエンドの事実上の標準（★33,971 / AGPL-3.0 / 最終push 2026-09-23 / release 1.19.0 (2026-09-14) / 確認コミット [`06bde939`](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md) / 制作カタログ: [sillytavern](../../categories/story.md#sillytavern)）
   - 34k★、1.19.0(2026-09-14)。AGPL-3.0。
 - [jofizcd/Soul-of-Waifu](https://github.com/jofizcd/Soul-of-Waifu) — アニメ系キャラのデスクトップロールプレイ/チャットアプリ（★1,361 / GPL-3.0 / 最終push 2026-08-28 / release v2.5.1 (2026-08-28) / 確認コミット [`747048b3`](https://github.com/jofizcd/Soul-of-Waifu/blob/747048b3b3ad7d321a667630018f7ffc04eb5f6d/README.md)）
   - 1.4k★、v2.5.1(2026-08-28)。GPL-3.0。SillyTavernより小規模だがアニメ寄り。

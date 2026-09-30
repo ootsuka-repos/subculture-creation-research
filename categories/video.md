@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-09。**115件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,13 +12,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,249 / 2025-10-16 |
-| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,507 / 2026-07-16 |
-| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,380 / 2026-08-26 |
-| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 10,941 / 2026-01-05 |
-| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,177 / 2026-08-24 |
-| [Wan-Move](https://github.com/ali-vilab/Wan-Move) · [詳細](#wan-move) | 動きの軌跡を条件に動画を生成するWan系実装。 | AIモデル・学習 / モデル・研究候補 | 657 / 2026-01-05 |
-| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,444 / 2026-03-17 |
+| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,266 / 2025-10-16 |
+| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,519 / 2026-07-16 |
+| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,562 / 2026-09-30 |
+| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 10,997 / 2026-01-05 |
+| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,238 / 2026-08-24 |
+| [Wan-Move](https://github.com/ali-vilab/Wan-Move) · [詳細](#wan-move) | 動きの軌跡を条件に動画を生成するWan系実装。 | AIモデル・学習 / モデル・研究候補 | 658 / 2026-01-05 |
+| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,678 / 2026-09-21 |
 
 <a id="framepack"></a>
 
@@ -34,7 +34,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: HunyuanVideo系、FramePack重み、PyTorch
 - **制約・未確認**: 少ないVRAMは短い生成時間を保証しない。長尺の人物・背景一貫性は未評価。
 - **編集者評価**: 個人GPUで長さを伸ばす実験候補。生成時間を含めて採用を決めたい。
-- **メトリクス**: ★17,249、fork 1,739、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
+- **メトリクス**: ★17,266、fork 1,733、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
 - **確認**: 2026-09-09 / コミット `97fe5dbe06ac1f337ece08935b1076a35eefeeb9`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/lllyasviel/FramePack/tree/97fe5dbe06ac1f337ece08935b1076a35eefeeb9)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -73,7 +73,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Wan系基盤、Index-anisoraの版別重み
 - **制約・未確認**: V3.1の12GB配布パッケージをV3.2の一般要件としない。「3Dキャラ動画」は編集可能なメッシュではない。
 - **編集者評価**: アニメ特化の比較対象として優先度が高い。汎用Wanと同じカットを比較すると価値を判断しやすい。
-- **メトリクス**: ★2,507、fork 150、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
+- **メトリクス**: ★2,519、fork 152、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cdce3a17548d7ff0f2e05978469f134da25e68e`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/bilibili/Index-anisora/tree/6cdce3a17548d7ff0f2e05978469f134da25e68e)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -114,7 +114,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LTXモデル、テキストエンコーダ、VAE、アップスケーラ
 - **制約・未確認**: LTX-2と2.5の版・必要モデル・利用条件を分ける。全環境での動作は未検証。
 - **編集者評価**: 音と映像を一緒に制作する候補。旧LTX-Videoから開発の主軸が移った。
-- **メトリクス**: ★9,380、fork 1,484、作成 2026-01-03、最終push 2026-08-26T10:47:10Z、archived=False
+- **メトリクス**: ★9,562、fork 1,516、作成 2026-01-03、最終push 2026-09-30T14:51:06Z、archived=False
 - **確認**: 2026-09-09 / コミット `a95ab856bf29407b6b066ede0abe1846050db56c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-2/tree/a95ab856bf29407b6b066ede0abe1846050db56c)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -131,7 +131,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 **入口候補（固定ツリーで存在確認）**: [packages/ltx-pipelines/src/ltx_pipelines/ti2vid_two_stages.py](https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/packages/ltx-pipelines/src/ltx_pipelines/ti2vid_two_stages.py)
 
-**最新GitHub Release**: [v1.3.0](https://github.com/Lightricks/LTX-2/releases/tag/v1.3.0) / 2026-08-26T11:21:24Z / prerelease=False
+**最新GitHub Release**: [v1.4.1](https://github.com/Lightricks/LTX-2/releases/tag/v1.4.1) / 2026-09-30T14:51:08Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-08-26T10:46:59Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
@@ -153,7 +153,7 @@ LTXの旧世代動画生成実装。
 - **依存**: LTX-Videoモデル
 - **制約・未確認**: 公式READMEはLTX-2への移行を案内。現在の主開発先として推薦しない。
 - **編集者評価**: 既存ワークフローの保守・比較資料として残す。
-- **メトリクス**: ★10,941、fork 1,130、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
+- **メトリクス**: ★10,997、fork 1,151、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `4b2d053057623ddd4d0a1d3e9cd28890e9ef487f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-Video/tree/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -190,7 +190,7 @@ LTXの旧世代動画生成実装。
 - **依存**: SCAIL-2重み、Wan VAE、T5、前処理モデル
 - **制約・未確認**: アニメ専用ではない。入力マスクが重要で、複数参照は品質低下の場合がある。
 - **編集者評価**: 2026年6月に推論コード・モデル、8月に学習コード公開。ComfyUI連携あり。
-- **メトリクス**: ★1,177、fork 89、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
+- **メトリクス**: ★1,238、fork 90、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
 - **確認**: 2026-09-09 / コミット `78fe19576bb06be96c2375e088574a262a300edb`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/zai-org/SCAIL-2/tree/78fe19576bb06be96c2375e088574a262a300edb)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -229,7 +229,7 @@ LTXの旧世代動画生成実装。
 - **依存**: Wan-Move重み、Wan2.1系、CoTracker
 - **制約・未確認**: 第三者の低VRAM統合と公式経路を分ける。軌跡制御で厳密な骨格アニメになるわけではない。
 - **編集者評価**: キャラや小物の移動位置を狙った短いカットの候補。
-- **メトリクス**: ★657、fork 36、作成 2025-12-06、最終push 2026-01-05T11:32:22Z、archived=False
+- **メトリクス**: ★658、fork 37、作成 2025-12-06、最終push 2026-01-05T11:32:22Z、archived=False
 - **確認**: 2026-09-09 / コミット `80c58a7d2ad175fa82a4d57f79f2a1415317dcfa`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/ali-vilab/Wan-Move/tree/80c58a7d2ad175fa82a4d57f79f2a1415317dcfa)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -270,7 +270,7 @@ LTXの旧世代動画生成実装。
 - **依存**: Wan2.2の対応モデル
 - **制約・未確認**: アニメ専用ではない。5BとA14B等の機能・メモリ要件を一括りにしない。
 - **編集者評価**: 短編アニメ・背景動画・動作素材の生成基盤候補。
-- **メトリクス**: ★17,444、fork 2,235、作成 2025-07-28、最終push 2026-03-17T10:48:41Z、archived=False
+- **メトリクス**: ★17,678、fork 2,280、作成 2025-07-28、最終push 2026-09-21T06:16:22Z、archived=False
 - **確認**: 2026-09-09 / コミット `42bf4cfaa384bc21833865abc2f9e6c0e67233dc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Wan-Video/Wan2.2/tree/42bf4cfaa384bc21833865abc2f9e6c0e67233dc)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。

@@ -1,0 +1,45 @@
+name: auto-update
+
+# 毎日: 既存項目の数値を最新化 → DeepSeek が新規候補を追加 → 生成物を作り直して main に直接 push。
+# MCPサーバー（Cloudflare Worker）は main を直接読むので、push から最大10分で反映される。
+on:
+  schedule:
+    - cron: '0 18 * * *' # 03:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Refresh metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/refresh_metrics.py
+      - name: Discover new items
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python3 scripts/auto_discover.py
+      - name: Regenerate
+        run: python3 scripts/export.py && python3 scripts/export_datasets.py && python3 scripts/export_sota.py
+      - name: Commit and push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "auto-update $(date -u +%F)"
+          git pull --rebase
+          git push

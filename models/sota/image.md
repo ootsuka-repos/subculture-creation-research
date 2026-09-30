@@ -11,7 +11,7 @@
 - **最良**: [circlestone-labs/Anima](https://huggingface.co/circlestone-labs/Anima/tree/f973fc41ec7545364ac9776c2440285f43ff2a30)（revision `f973fc41` / 作成 2026-01-29 / 更新 2026-08-24）
 - **利用条件**: other/circlestone-labs-non-commercial-license。HFメタデータは other/circlestone-labs-non-commercial-license。カード・LICENSE.md: モデルと派生物は非商用のみ、NVIDIA Open Model License(Cosmos-Predict2派生)も適用。出力画像の商用利用は可だが、有料生成サービス/APIでのホスト、商用ゲームへの重み同梱、商用目的でのモデル蒸留・学習は不可。個人による派生重みの販売のみ例外。商用ライセンスはメール申請。商用可とは断定できない。
 - **選定根拠**: 【事実】circlestone-labs/Anima(2B, Cosmos-Predict2-2B派生, CircleStone×Comfy Org)は DL 30日1,228,812/累計5,537,017、likes 2,329、Discussions 240、GitHubコード参照1,378件。同時計測の比較対象は Anima-2.9B 122件、Z-Anime 148件、noobai-XL 245件。HF上の30日DLは noobai-XL-1.1 135,958(最終更新2025-09)、animagine-xl-4.0 366,672(最終更新2025-02)、Z-Anime 2,265、NetaYume-Lumina 19,698(最終更新2025-12)、NewBie-image-Exp0.1 255、Anima-2.9B 32,068。第三者の定量ベンチは見つからず、カードも自己比較用ワークフロー(anima_comparison.json)のみ。【評価】採用量が次点より1桁以上大きく、ComfyUI/Forge Neo/sd-scripts/ai-toolkit/diffusion-pipe が揃って対応するため首位。X(2026-09-22, javawock7618, 1,158 likes)は『アニメ画像=Anima aesthetic 1.1』、shimotti_ai(2026-08-29, 427 likes)は『Anima=構図理解・自然言語に強い/Illustrious=LoRA・ControlNet・量産に強い』と使い分けを提示。一方 mr_290000000000(2026-08-12)は形状・色調の正確さはIllustrious系より劣ると批判しており、用途で分かれる。【版の選択】既定は anima-base-v1.0.safetensors(作者がLoRA学習はBase版で行うよう指示、最大の柔軟性/画風追従、HF討議214でAesthetic 1.1は『AI感が強い』『1.0b/Baseを使う理由しかない』との声)。高速反復は anima-turbo-v1.1(CFG1・8〜12step、作者が開始点として推奨、ただし討議210/236で画風崩れ・ネガ無効の指摘)。標準の見た目重視は anima-aesthetic-v1.1(Xで高評価、HFは賛否)。最終更新は2026-08-24(turbo-v1.1追加)。次世代(Anima 2)については、討議232に『作者は資金不足で自己資金では出せないと発言』との第三者書込みがあるのみで一次確認不可。【未解決】非商用ライセンス、Qwen-Image VAEの再構成損失への不満(討議200)。NovelAI V5はクローズドで重み非公開のため対象外。
-- **指標（確認日時点）**: DL累計 5,537,017 / 直近30日 1,228,812 / likes 2,329 / Spaces 60
+- **指標（確認日時点）**: DL累計 5,537,017 / 直近30日 1,228,812 / likes 2,330 / Spaces 60
 - **概要**: アニメ/イラスト特化の2B DiT テキスト→画像。Danbooruタグ+自然文の混在プロンプト、@artistタグ、年/品質/安全タグに対応。Qwen3-0.6B(base)をテキストエンコーダ、Qwen-Image VAEを使用。
 - **入力**: テキストプロンプト(Danbooruタグ・自然文・混在、先頭に品質/年/安全タグ)。512²〜1536²。
 - **出力**: 画像(PNG/JPEG等)。
@@ -24,9 +24,9 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Animaの標準実行基盤(カードがComfyUIネイティブ対応と明記、ワークフローPNG同梱)（★135,624 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Animaの標準実行基盤(カードがComfyUIネイティブ対応と明記、ワークフローPNG同梱)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0(2026-09-29)。Comfy OrgがAnimaの共同開発元。
-- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: WebUI系でAnima 2B/2.9B/3.8B、Anima-LLLite、Anima Edit(要LoRA)を対応（★1,772 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
+- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: WebUI系でAnima 2B/2.9B/3.8B、Anima-LLLite、Anima Edit(要LoRA)を対応（★1,773 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
   - README記載でAnima各版・ControlNet-LLLite対応。1,772★/AGPL-3.0/2.29.1(2026-09-21)。
 - [pamparamm/ComfyUI-ppm](https://github.com/pamparamm/ComfyUI-ppm) — Anima/SDXL向け Attention Couple(多人数の領域指定)、NegPiP（★268 / AGPL-3.0 / 最終push 2026-08-09 / 確認コミット [`6c6c3601`](https://github.com/pamparamm/ComfyUI-ppm/blob/6c6c360155cace9d7091306c1b8e26d9c7438620/README.md)）
   - 268★/AGPL-3.0、pushed 2026-08-09。HF討議218/202で問題になる多人物・スタイル混入の対策ノード。
@@ -69,7 +69,7 @@
 
 - [KohakuBlueleaf/z-tipo-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) — TIPO実行用拡張(SD-WebUI/Forge/ComfyUI)（★637 / Apache-2.0 / 最終push 2026-08-23 / 確認コミット [`61328629`](https://github.com/KohakuBlueleaf/z-tipo-extension/blob/6132862978021727284215bc2d5fe5257a872709/README.md)）
   - 637★/Apache-2.0、pushed 2026-08-23。TIPO各版をGGUFで読み込むUI/ノードを提供。
-- [KohakuBlueleaf/KGen](https://github.com/KohakuBlueleaf/KGen) — TIPO/DanTagGenの推論ライブラリ(tag拡張・サンプリング)（★101 / Apache-2.0 / 最終push 2026-08-22 / 確認コミット [`fecfe053`](https://github.com/KohakuBlueleaf/KGen/blob/fecfe05341f021f916f9b23e1c93f23b4c50d9bb/README.md)）
+- [KohakuBlueleaf/KGen](https://github.com/KohakuBlueleaf/KGen) — TIPO/DanTagGenの推論ライブラリ(tag拡張・サンプリング)（★102 / Apache-2.0 / 最終push 2026-08-22 / 確認コミット [`fecfe053`](https://github.com/KohakuBlueleaf/KGen/blob/fecfe05341f021f916f9b23e1c93f23b4c50d9bb/README.md)）
   - 101★/Apache-2.0、2026-08-22更新、tipo_model_listにv2.1を追加済み。
 
 ### テキスト→画像(LoRA/ファインチューン学習ツール)【GitHubリポジトリ選定のみ】
@@ -84,7 +84,7 @@
   - 7,242★/Apache-2.0/v0.12.0(2026-09-24)。READMEがAnima LoRA・torch.compile・LLLite学習を記載。
 - [tdrussell/diffusion-pipe](https://github.com/tdrussell/diffusion-pipe) — Anima作者自身の学習スクリプト(パイプライン並列)（★2,028 / GPL-3.0 / 最終push 2026-09-28 / 確認コミット [`334106c2`](https://github.com/tdrussell/diffusion-pipe/blob/334106c2d0e29131b53d504b80e211942dac147e/README.md)）
   - 2,028★/GPL-3.0、pushed 2026-09-28。READMEに『Support Anima』。Animaカードがllm_adapter_lr=0を既定と説明。
-- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — GUI付き汎用LoRA学習(Anima-Base-v1.0-Diffusers対応)（★12,164 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
+- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — GUI付き汎用LoRA学習(Anima-Base-v1.0-Diffusers対応)（★12,167 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
   - 12,164★/MIT、pushed 2026-09-27。READMEの対応モデルにAnimaを記載。
 - [bmaltais/kohya_ss](https://github.com/bmaltais/kohya_ss) — sd-scriptsのGUIラッパー(Anima LoRA/全FT/LLLite/LoHa・LoKr)（★12,609 / Apache-2.0 / 最終push 2026-08-01 / release v26.0.0 (2026-07-09) / 確認コミット [`45088f04`](https://github.com/bmaltais/kohya_ss/blob/45088f04af78e11cec5407ff4652ea3ed2c14422/README.md)）
   - 12,609★/Apache-2.0/v26.0.0(2026-07-09)。READMEでAnima対応を明記。
@@ -114,7 +114,7 @@
   - 36,952★/BSD-3-Clause、最終push 2024-08-06(v0.3.0)。docs/anime_model.mdがanime6Bの使い方とwaifu2x比較を掲載(定性のみ)。実務の既定候補。
 - [chaiNNer-org/chaiNNer](https://github.com/chaiNNer-org/chaiNNer) — 超解像モデルを連鎖実行する汎用ノードGUI(アニメ専用ではない。READMEのモデル対応範囲は未精読)（★6,054 / GPL-3.0 / 最終push 2026-09-30 / release v0.25.1 (2025-10-23) / 確認コミット [`b3ca7ff5`](https://github.com/chaiNNer-org/chaiNNer/blob/b3ca7ff586d4071dbe8601bc4000493560503f21/README.md)）
   - 6,054★/GPL-3.0、pushed 2026-09-30、v0.25.1。
-- [nagadomi/nunif](https://github.com/nagadomi/nunif) — waifu2x最新版(MIT)を含むnunif（★3,471 / MIT / 最終push 2026-09-18 / release 0.0.0 (2022-11-09) / 確認コミット [`d23721f1`](https://github.com/nagadomi/nunif/blob/d23721f1b5f0a4c92c3ee1be013180bf298730c5/README.md)）
+- [nagadomi/nunif](https://github.com/nagadomi/nunif) — waifu2x最新版(MIT)を含むnunif（★3,473 / MIT / 最終push 2026-09-18 / release 0.0.0 (2022-11-09) / 確認コミット [`d23721f1`](https://github.com/nagadomi/nunif/blob/d23721f1b5f0a4c92c3ee1be013180bf298730c5/README.md)）
   - 3,471★/MIT、pushed 2026-09-18。waifu2x元祖(28,230★)の後継実装。
 
 ### 画像→画像(線画・漫画の着色)
@@ -193,7 +193,7 @@
   - 5,171★/GPL-3.0/v1.5.17(2026-09-27)。
 - [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — Rust製漫画翻訳(LaMa/AOT/FLUX.2 Klein/RORemを選択式で提供)（★5,693 / Apache-2.0 / 最終push 2026-09-30 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
   - 5,693★/Apache-2.0/0.83.5(2026-09-22)。READMEが各インペイントモデルのHFリンクを列挙。
-- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 翻訳アプリ(AnimeMangaInpaintingのlamaを採用)（★2,959 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
+- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 翻訳アプリ(AnimeMangaInpaintingのlamaを採用)（★2,960 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
   - 2,959★/Apache-2.0/v2.8.9(2026-09-11)。
 
 ### 画像→画像(写真→アニメ調スタイル変換)
@@ -203,7 +203,7 @@
 - **最良**: [autoweeb/Qwen-Image-Edit-2509-Photo-to-Anime](https://huggingface.co/autoweeb/Qwen-Image-Edit-2509-Photo-to-Anime/tree/2fdebf4e0c1ea04ef3037ff531bc5a4a3a842396)（revision `2fdebf4e` / 作成 2025-11-07 / 更新 2025-11-11）
 - **利用条件**: mit。LoRA側はMIT。基盤Qwen/Qwen-Image-Edit-2509(Apache-2.0表記)のライセンスに従う。学習データはカード未記載。商用可と断定しない。
 - **選定根拠**: 【事実】autoweeb/Qwen-Image-Edit-2509-Photo-to-Anime(Qwen-Image-Edit-2509用LoRA, MIT)は DL 30日55,981/累計1,309,813、likes 130、spaces 100(上限値の可能性)、GitHubコード参照31件。prithivMLmods/Qwen-Image-Edit-2511-Anime(Apache-2.0, 新しい2511基盤)は30日4,675/累計31,974/56 likes。定量ベンチはどちらも無し。古典GAN系 AnimeGANv3(TachibanaYoshino, 2,037★)は最終push 2025-08・重みGitHub配布で、拡散編集系に比べ採用の流れが薄い。【評価】採用量で autoweeb が圧倒(次点の約12倍)。『transform into anime』の一言で動き、Phr00t/Qwen-Image-Edit-Rapid-AIOとの併用が推奨される。【疑い】LoRAは商用サービス(AutoWeeb)向けに作られた宣伝色あり。品質は自己提示の例画像のみ。基盤は2025-09のEdit-2509で、2511/Qwen-Image-2.1世代への追随は未確認。
-- **指標（確認日時点）**: DL累計 1,309,813 / 直近30日 55,981 / likes 130 / Spaces 100
+- **指標（確認日時点）**: DL累計 1,309,813 / 直近30日 55,981 / likes 131 / Spaces 100
 - **概要**: Qwen-Image-Edit-2509向けLoRA。実写写真をアニメ画像へ変換する(AutoWeeb社製)。
 - **入力**: 写真(高解像度が推奨)+プロンプト『transform into anime』。
 - **出力**: アニメ調に変換された画像。
@@ -216,7 +216,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Qwen-Image-Edit LoRAの実行基盤(READMEがQwen Image Edit対応を明記)（★135,624 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Qwen-Image-Edit LoRAの実行基盤(READMEがQwen Image Edit対応を明記)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0。
 - [QwenLM/Qwen-Image](https://github.com/QwenLM/Qwen-Image) — Qwen-Image/Edit-2511の公式実装（★8,385 / Apache-2.0 / 最終push 2026-02-10 / 確認コミット [`6b5e1f5c`](https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md) / 制作カタログ: [qwen-image](../../categories/image.md#qwen-image)）
   - 8,385★/Apache-2.0、pushed 2026-02-10。
@@ -246,7 +246,7 @@
   - 215★/Apache-2.0、pushed 2026-08-02。
 - [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts) — LLLite学習スクリプト(anima_train_control_net_lllite.py)（★7,242 / Apache-2.0 / 最終push 2026-09-24 / release v0.12.0 (2026-09-24) / 確認コミット [`690ea7f9`](https://github.com/kohya-ss/sd-scripts/blob/690ea7f96c23182352ec63def76d431c6120bd2f/README.md) / 制作カタログ: [sd-scripts](../../categories/workflow.md#sd-scripts)）
   - 7,242★/Apache-2.0/v0.12.0。READMEがAnima LLLite学習を記載。
-- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: Anima-LLLite・Regional Controlnetを対応（★1,772 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
+- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: Anima-LLLite・Regional Controlnetを対応（★1,773 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
   - 1,772★/AGPL-3.0、READMEにAnima-LLLiteリンク。
 
 ### 画像+テキスト→画像(アニメ画像の指示編集)
@@ -256,7 +256,7 @@
 - **最良**: [Qwen/Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1/tree/d26bb61231c349cf6b7896fa83353113880e1ba3)（revision `d26bb612` / 作成 2026-09-14 / 更新 2026-09-30）
 - **利用条件**: other/qwen-research。Qwen RESEARCH LICENSE AGREEMENT(2026-09-20): 非商用・研究/評価のみ。商用は別途ライセンス要。学習/改良したモデルの公開時『Built with Qwen』表示義務。HFメタデータはother。商用利用不可として扱う。
 - **選定根拠**: 【事実】HFのimage-text-to-imageタグで検索したアニメ系は実質RunningHubAI系の新着(0 likes)のみ。アニメ専用の編集基盤モデルは見つからず、Forge Neoが対応する『Anima Edit』はCivitAI上のLoRA(HF不在, 未検証)。汎用の最有力は Qwen/Qwen-Image-2.1(2026-09-14公開, T2I+編集統合7B, likes 2,706, 30日70,687DL, 10参照画像・マスク/丸囲み編集)。X: javawock7618(2026-09-22, 1,158 likes)『編集=Qwen-Image 2.1』、sep_is_heim(2026-09-22)三面図でキャラLoRA代替を検証、ai_hakase_(2026-09-25)が修正用途で紹介。一方 PSueoka55133(2026-09-24)はT2Iのイラストはさほどでもないが編集能力は高いと評価。ライセンスはQwen RESEARCH LICENSE(非商用, 2026-09-20)。商用・安全側なら Qwen/Qwen-Image-Edit-2511(Apache-2.0, 30日292,995DL/累計1,914,682, likes 1,432)。anime LoRA(photo-to-anime等)は2509/2511基盤が主流で2.1用は新規。【評価】アニメ専用評価ベンチは無く、Xの評判と採用で暫定首位。信頼度低(公開2週間、個別の定量比較なし)。
-- **指標（確認日時点）**: DL累計 70,687 / 直近30日 70,687 / likes 2,706 / Spaces 100
+- **指標（確認日時点）**: DL累計 70,687 / 直近30日 70,687 / likes 2,720 / Spaces 100
 - **概要**: Qwenの統合T2I/画像編集モデル(汎用)。アニメ特化ではないが、アニメ画像の指示編集で最も多く言及される最新モデル。
 - **入力**: 画像(最大10枚)+編集指示、任意でマスク/丸囲み/ペイント注釈。
 - **出力**: 編集後画像(RGBA透過も可)。
@@ -268,11 +268,11 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — 編集モデルの実行基盤(READMEがQwen Image Edit・Flux.2 Klein編集等を対応と記載)（★135,624 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — 編集モデルの実行基盤(READMEがQwen Image Edit・Flux.2 Klein編集等を対応と記載)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0。
-- [QwenLM/Qwen-Image-2.1](https://github.com/QwenLM/Qwen-Image-2.1) — Qwen-Image-2.1公式実装（★1,652 / NOASSERTION / 最終push 2026-09-30 / 確認コミット [`6627d87c`](https://github.com/QwenLM/Qwen-Image-2.1/blob/6627d87c6433151463ec4b48b8945a24fcf16a35/README.md)）
+- [QwenLM/Qwen-Image-2.1](https://github.com/QwenLM/Qwen-Image-2.1) — Qwen-Image-2.1公式実装（★1,653 / NOASSERTION / 最終push 2026-09-30 / 確認コミット [`6627d87c`](https://github.com/QwenLM/Qwen-Image-2.1/blob/6627d87c6433151463ec4b48b8945a24fcf16a35/README.md)）
   - 1,651★、ライセンス表記なし(NOASSERTION)、pushed 2026-09-30。
-- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: Qwen-Image-Edit・Anima Edit(要LoRA)対応（★1,772 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
+- [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: Qwen-Image-Edit・Anima Edit(要LoRA)対応（★1,773 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
   - 1,772★/AGPL-3.0。
 
 ### 無条件画像生成(アニメ顔/全身GAN・拡散)
