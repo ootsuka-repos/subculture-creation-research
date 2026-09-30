@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -19,6 +19,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [MangaNinja](https://github.com/ali-vilab/MangaNinjia) · [詳細](#manganinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 742 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) · [詳細](#openkoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 14 / 2026-05-08 |
 | [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,470 / 2024-09-26 |
+| [Venera-SSR](https://github.com/Kiastr/Venera-SSR) · [詳細](#venera-ssr) | 複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。 | AIモデル・学習 / 初期評価候補 | 55 / 2026-08-02 |
 
 <a id="ai-comic-factory"></a>
 
@@ -272,3 +273,38 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2024-09-26T02:17:52Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="venera-ssr"></a>
+
+## Venera-SSR
+
+複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。
+
+- **リポジトリ**: https://github.com/Kiastr/Venera-SSR
+- **分類**: desktop_tool / AIモデル・学習 / 初期評価候補
+- **入力**: ローカルまたはネットワークの漫画画像・漫画源
+- **出力**: 着色・高解像度化・翻訳表示されたページ
+- **環境**: FlutterとRustのツールチェーンでビルド。
+- **依存**: Anime4K、OCR・翻訳モデル。
+- **制約・未確認**: 着色機能はテスト中の分支で追加モデルを検証中とREADMEが記載。権利面の注意も明記。
+- **編集者評価**: 読みながら端末内で着色と超解像、埋め込み文字の翻訳を行える点が特徴的で、Flutter/Rustでビルドする。
+- **メトリクス**: ★55、fork 3、作成 2026-02-28、最終push 2026-08-02T14:11:49Z、archived=False
+- **確認**: 2026-09-30 / コミット `07ac77fcbd6c9050a5313f327e28d617eb602488`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Kiastr/Venera-SSR/tree/07ac77fcbd6c9050a5313f327e28d617eb602488)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Kiastr/Venera-SSR/blob/07ac77fcbd6c9050a5313f327e28d617eb602488/README.md) / [GitHub API](https://api.github.com/repos/Kiastr/Venera-SSR) / [固定ツリー](https://github.com/Kiastr/Venera-SSR/tree/07ac77fcbd6c9050a5313f327e28d617eb602488)
+
+### 制作に使う際の検討
+
+漫画制作・確認時のラフな着色や文字置換の検討に利用。
+
+**次に確かめること（実施前）**: 代表的なページで着色とAnime4K、OCR翻訳の精度・速度を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [windows/runner/main.cpp](https://github.com/Kiastr/Venera-SSR/blob/07ac77fcbd6c9050a5313f327e28d617eb602488/windows/runner/main.cpp)
+
+**最新GitHub Release**: [v2.1.5](https://github.com/Kiastr/Venera-SSR/releases/tag/v2.1.5) / 2026-08-01T05:16:58Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-08-02T14:11:49Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

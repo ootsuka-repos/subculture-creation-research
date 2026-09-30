@@ -24,7 +24,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Animaの標準実行基盤(カードがComfyUIネイティブ対応と明記、ワークフローPNG同梱)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Animaの標準実行基盤(カードがComfyUIネイティブ対応と明記、ワークフローPNG同梱)（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0(2026-09-29)。Comfy OrgがAnimaの共同開発元。
 - [Haoming02/sd-webui-forge-classic](https://github.com/Haoming02/sd-webui-forge-classic) — Forge Neo: WebUI系でAnima 2B/2.9B/3.8B、Anima-LLLite、Anima Edit(要LoRA)を対応（★1,773 / AGPL-3.0 / 最終push 2026-09-30 / release 2.29.1 (2026-09-21) / 確認コミット [`0b1783c7`](https://github.com/Haoming02/sd-webui-forge-classic/blob/0b1783c79b397e73818c3d8432b25cc3cbb5ca50/README.md)）
   - README記載でAnima各版・ControlNet-LLLite対応。1,772★/AGPL-3.0/2.29.1(2026-09-21)。
@@ -216,7 +216,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Qwen-Image-Edit LoRAの実行基盤(READMEがQwen Image Edit対応を明記)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — Qwen-Image-Edit LoRAの実行基盤(READMEがQwen Image Edit対応を明記)（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0。
 - [QwenLM/Qwen-Image](https://github.com/QwenLM/Qwen-Image) — Qwen-Image/Edit-2511の公式実装（★8,385 / Apache-2.0 / 最終push 2026-02-10 / 確認コミット [`6b5e1f5c`](https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md) / 制作カタログ: [qwen-image](../../categories/image.md#qwen-image)）
   - 8,385★/Apache-2.0、pushed 2026-02-10。
@@ -268,7 +268,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — 編集モデルの実行基盤(READMEがQwen Image Edit・Flux.2 Klein編集等を対応と記載)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — 編集モデルの実行基盤(READMEがQwen Image Edit・Flux.2 Klein編集等を対応と記載)（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - 135,621★/GPL-3.0/v0.38.0。
 - [QwenLM/Qwen-Image-2.1](https://github.com/QwenLM/Qwen-Image-2.1) — Qwen-Image-2.1公式実装（★1,653 / NOASSERTION / 最終push 2026-09-30 / 確認コミット [`6627d87c`](https://github.com/QwenLM/Qwen-Image-2.1/blob/6627d87c6433151463ec4b48b8945a24fcf16a35/README.md)）
   - 1,651★、ライセンス表記なし(NOASSERTION)、pushed 2026-09-30。

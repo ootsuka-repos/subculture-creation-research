@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -65,6 +65,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 動画モデルのソースと重みは現READMEのTODOで未公開。画像生成と動画研究の公開範囲を区別する。
   - 制作用途: 画像の連続性を比較する既存研究。動画公開済み候補としては使わない。
   - 出典（2026-09-09確認）: https://github.com/HVision-NKU/StoryDiffusion/blob/8de45e424887766fdd84dc917436ff8605f00149/README.md
+
+- **Venera-SSR** [desktop_tool / AIモデル・学習 / 初期評価候補]
+  - ローカルまたはネットワークの漫画画像・漫画源 → 着色・高解像度化・翻訳表示されたページ。複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。
+  - 制約: 着色機能はテスト中の分支で追加モデルを検証中とREADMEが記載。権利面の注意も明記。
+  - 制作用途: 漫画制作・確認時のラフな着色や文字置換の検討に利用。
+  - 出典（2026-09-30確認）: https://github.com/Kiastr/Venera-SSR/blob/07ac77fcbd6c9050a5313f327e28d617eb602488/README.md
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -224,6 +230,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 分解済みPSDをメッシュ変形に使う候補。See-through互換はレイヤー名だけでなく位置と遮蔽を試す。
   - 出典（2026-09-09確認）: https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md
 
+- **psd2live** [desktop_tool / AIは任意 / 活発・候補]
+  - パーツ別レイヤーのPSD、差分用の透明画像 → .cmo3、.moc3と.model3.json等のランタイム一式、.psd2live工程ファイル。レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。
+  - 制約: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
+  - 制作用途: Live2Dモデルの初期リギングと物理設定の工数削減。
+  - 出典（2026-09-30確認）: https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md
+
 ## レイヤー分解
 
 - **ComfyUI-See-through** [integration / AI連携 / ComfyUI利用者向け]
@@ -249,6 +261,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 推論のみの公開。READMEは./model同梱と記すが確認GitHubツリー4ファイルにmodel/はない。HFにはアダプタを確認。既定PNGは白背景で、アルファ出力にはフラグが必要。
   - 制作用途: 画像全体の物体分離と再合成に向く候補。キャラ可動部の分解はSee-throughと目的が異なる。
   - 出典（2026-09-09確認）: https://github.com/Stability-AI/Stable-Layers/blob/b826314b34b12d7c7cce9f0de7f49a330bd8e011/README.md
+
+- **loom-unravel** [library / AIモデル・学習 / 初期評価候補]
+  - 正面・単一キャラ・上半身のイラスト1枚 → パーツ別RGBA PNG、layers.json。1枚のアニメキャラ立ち絵を顔パーツ単位のRGBAレイヤーと、階層・深度順・アンカー点を持つメタデータに分解するオフラインパイプライン。
+  - 制約: 正面・単一キャラ・上半身のみ対象で、パーツマスクは見本1枚向けに調整。インペイントのにじみは既知の未解決課題とREADMEが記載。
+  - 制作用途: Live2Dリギング前のレイヤー分けの下準備。
+  - 出典（2026-09-30確認）: https://github.com/byeolki/loom-unravel/blob/5d587a66d3e46b3c27cd0e655841356959c867fd/README.md
 
 ## 画像生成・編集・切り抜き
 
@@ -281,6 +299,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 強い様式化・遮蔽・特殊構図では検出失敗があり得るとREADMEに明記。モデル精度は未検証。
   - 制作用途: 生成イラストの顔修正・ディテール補正工程の候補。
   - 出典（2026-10-01確認）: https://github.com/luxdelux7/ComfyUI-Forbidden-Vision/blob/b474d579c7749c8046d267c75512484120626b6d/README.md
+
+- **ComfyUI-Ultimate-Face-Fix** [integration / AI出力の後処理 / 活発・候補]
+  - 元画像、生成モデル・VAE・プロンプト、顔検出/セグメンテーションモデル → 修復済み画像、顔クロップ、顔マスク、プレビュー。顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。
+  - 制約: 生成モデルと素材は利用者が用意。モデル重みは別途取得で上流ライセンスに従う。
+  - 制作用途: ラフや生成画像の顔崩れを後処理で整える用途。
+  - 出典（2026-09-30確認）: https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/blob/98a00ad332803f4adf9e2154a211e3641971d7ef/README.md
 
 ## 動画生成
 
@@ -632,6 +656,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: キャラ・画風の再現性を制作側で調整する学習基盤。
   - 出典（2026-09-09確認）: https://github.com/kohya-ss/sd-scripts/blob/4e624302e0088e39933b31cbc71f24212e900f5f/README.md
 
+- **ComfyUI-Anime-Extensions** [integration / AIモデル・学習 / 初期評価候補]
+  - テキスト、画像、参照音声、歌詞・スタイル → 音声、解析結果JSON、マスク、漫画ページ画像、VRM/Blenderシーン、動画。ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。
+  - 制約: モデルとランタイムは同梱されず別途準備。YuE2の重みは非商用ライセンスとREADMEが記載。
+  - 制作用途: 音声・画像解析・VRM・漫画ページ組みをComfyUI内で連携。
+  - 出典（2026-09-30確認）: https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/blob/aa21a682ea509bab0fa3f17ba877a3867647d4eb/README.md
+
 ## 字幕・翻訳・ローカライズ
 
 - **ASMR Dubber** [pipeline / AI連携 / 小規模・制作連携候補]
@@ -669,6 +699,24 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 翻訳品質やOCR精度はREADMEの主張で未検証。GPU無しではCPU推論となる。
   - 制作用途: 既存の漫画翻訳・組版工程をローカルで自動化したい場合の候補。
   - 出典（2026-10-01確認）: https://github.com/ArbenApura/xianscan-rust/blob/075d36f359cdcad1d08ea88d2f4d927640789c26/README.md
+
+- **BallonsTranslator-Pro** [desktop_tool / AIモデル・学習 / 活発・候補]
+  - 漫画・コミックの画像、翻訳先言語、各段階のモジュール設定 → 翻訳・植字済みの画像、作業データ。BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで、検出・OCR・翻訳・インペイント・植字を組み替え可能なモジュール群で処理する。
+  - 制約: dmMaze/BallonsTranslatorのフォーク。公開時は機械翻訳の明示が要るとREADMEが注意喚起し、人手校正を推奨。
+  - 制作用途: 漫画翻訳の一連の工程をGUIとAPIの両方から回せる。
+  - 出典（2026-09-30確認）: https://github.com/thomaswantstobeaskeleton/BallonsTranslator-Pro/blob/1cb5af0ca9b87919ffdfe0626167612815baf030/README.md
+
+- **CarrotMangaTranslator** [desktop_tool / AIモデル・学習 / 活発・候補]
+  - 漫画画像・ZIP/CBZ/RAR/PDF、用語・人物設定 → 翻訳済み画像、PSD出力、作業データ。漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。
+  - 制約: Intel Mac非対応。初回準備にネット接続と空き容量が必要。
+  - 制作用途: 漫画翻訳の制作パイプラインを1アプリで完結させやすい。
+  - 出典（2026-09-30確認）: https://github.com/ucx0204/CarrotMangaTranslator/blob/a6454549af83d424dc47d871d76734fb8a33187d/README.md
+
+- **Kites** [browser_tool / AIモデル・学習 / 初期評価候補]
+  - Web上の漫画・コミック画像 → 翻訳・植字済みのページ画像。ブラウザ拡張として動作し、WebGPU上でOCR・インペイント・翻訳を行って漫画をその場で翻訳表示するツール。
+  - 制約: 翻訳はローカルLLM・共有プール・Google翻訳・独自APIから選択。WebGPU環境が前提。
+  - 制作用途: ブラウザで読む漫画の下訳・確認作業を軽量化。
+  - 出典（2026-09-30確認）: https://github.com/Unheat/Kites/blob/420898820e9ac2d4e91eede871ce48087c411475/README.md
 
 ## モーション・身体演技
 
@@ -759,6 +807,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 複数顔には不適、顔の中央クロップを推奨。非商用研究用と記載。画像生成器ではない。
   - 制作用途: 絵柄を跨ぐキャラの一貫性評価を補助する候補。自動合否の唯一の指標にはしない。
   - 出典（2026-09-09確認）: https://github.com/kwanyun/StyleID/blob/bbb917dcc350d24456be6cb7dbb9fe5f4aa05c00/README.md
+
+- **Nomi** [desktop_tool / AIモデル・学習 / 活発・候補]
+  - 作りたい内容のテキスト、参照カード、接続した動画・画像生成モデル → 生成されたキーフレームと動画クリップ、タイムライン、MP4書き出し、プロジェクトフォルダ。ローカル優先のAI動画制作スタジオ。エージェントがショット分割・キーフレーム生成・動画化・タイムライン配置を支援する。
+  - 制約: LinuxやWindows arm64のインストーラは未配布。macOSビルドは署名・公証なし。モデル利用は提供元への課金。
+  - 制作用途: 絵コンテから動画素材の初稿作成までの流れをローカルで管理。
+  - 出典（2026-09-30確認）: https://github.com/aqm857886159/Nomi/blob/2094010c4b840314b0fffaea030d8b97e32ff275/README.md
 
 ## GitHub以外のアニメ画像モデル
 

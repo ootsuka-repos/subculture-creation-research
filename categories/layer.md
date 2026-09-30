@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -16,6 +16,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Qwen-Image-Layered](https://github.com/QwenLM/Qwen-Image-Layered) · [詳細](#qwen-image-layered) | 画像を複数の編集可能なレイヤーに分解し、個別の色・位置・サイズ変更につなげる。 | AIモデル・学習 / 基盤技術候補 | 2,122 / 2025-12-31 |
 | [see-through](https://github.com/shitagaki-lab/see-through) · [詳細](#see-through) | 一枚絵を意味別パーツへ分解し、遮蔽部分を補完してPSDに出力する。 | AIモデル・学習 / 導入候補 | 4,192 / 2026-09-24 |
 | [Stable Layers](https://github.com/Stability-AI/Stable-Layers) · [詳細](#stable-layers) | Qwen-Image-Layered上のLoRAで、画像を背景と物体の編集用RGBA層へ分解する。 | AIモデル・学習 / レイヤー分解の研究候補 | 24 / 2026-07-23 |
+| [loom-unravel](https://github.com/byeolki/loom-unravel) · [詳細](#loom-unravel) | 1枚のアニメキャラ立ち絵を顔パーツ単位のRGBAレイヤーと、階層・深度順・アンカー点を持つメタデータに分解するオフラインパイプライン。 | AIモデル・学習 / 初期評価候補 | 0 / 2026-09-11 |
 
 <a id="comfyui-see-through"></a>
 
@@ -168,3 +169,38 @@ Qwen-Image-Layered上のLoRAで、画像を背景と物体の編集用RGBA層へ
 モデル配布確認（ファイル一覧のみ。代表モデルであり依存全体ではありません）:
 
 - [StabilityLabs/Stable-Layers](https://huggingface.co/StabilityLabs/Stable-Layers) — file_listing_checked、確認日 2026-09-09、revision `41b2f7692d2bc6be496f1de1f5dd349e93aa090f`。代表ファイル: `model/adapter_model.safetensors`。gated=False。
+
+<a id="loom-unravel"></a>
+
+## loom-unravel
+
+1枚のアニメキャラ立ち絵を顔パーツ単位のRGBAレイヤーと、階層・深度順・アンカー点を持つメタデータに分解するオフラインパイプライン。
+
+- **リポジトリ**: https://github.com/byeolki/loom-unravel
+- **分類**: library / AIモデル・学習 / 初期評価候補
+- **入力**: 正面・単一キャラ・上半身のイラスト1枚
+- **出力**: パーツ別RGBA PNG、layers.json
+- **環境**: Python 3.10+、torch、onnxruntime等。初回にモデルを自動ダウンロード。
+- **依存**: lbpcascade_animeface、anime_face_landmark_detection、anime-segmentation、LaMa。
+- **制約・未確認**: 正面・単一キャラ・上半身のみ対象で、パーツマスクは見本1枚向けに調整。インペイントのにじみは既知の未解決課題とREADMEが記載。
+- **編集者評価**: 既存の顔検出・ランドマーク・シルエット分割・インペイントの学習済みモデルを組み合わせ、Live2D制作の前段となるレイヤー分解を行う点が明確。
+- **メトリクス**: ★0、fork 0、作成 2026-07-07、最終push 2026-09-11T15:43:32Z、archived=False
+- **確認**: 2026-09-30 / コミット `5d587a66d3e46b3c27cd0e655841356959c867fd`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/byeolki/loom-unravel/tree/5d587a66d3e46b3c27cd0e655841356959c867fd)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/byeolki/loom-unravel/blob/5d587a66d3e46b3c27cd0e655841356959c867fd/README.md) / [GitHub API](https://api.github.com/repos/byeolki/loom-unravel) / [固定ツリー](https://github.com/byeolki/loom-unravel/tree/5d587a66d3e46b3c27cd0e655841356959c867fd)
+
+### 制作に使う際の検討
+
+Live2Dリギング前のレイヤー分けの下準備。
+
+**次に確かめること（実施前）**: 自前の立ち絵で分解を実行し、顔パーツの切り出しと深度順の妥当性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [src/unravel/cli.py](https://github.com/byeolki/loom-unravel/blob/5d587a66d3e46b3c27cd0e655841356959c867fd/src/unravel/cli.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-07-07T06:15:59Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

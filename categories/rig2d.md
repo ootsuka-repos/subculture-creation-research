@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -15,6 +15,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 231 / 2026-09-23 |
 | [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 241 / 2026-09-28 |
 | [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 494 / 2026-04-28 |
+| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 514 / 2026-09-30 |
 
 <a id="anime2.5drig"></a>
 
@@ -134,3 +135,38 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 デフォルトブランチの確認コミット日時: 2026-04-28T03:53:06Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
 
 関連: documented_input_compatibility → see-through（公式説明に基づく関係、接続実行は未検証）
+
+<a id="psd2live"></a>
+
+## psd2live
+
+レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。
+
+- **リポジトリ**: https://github.com/tsunehimatoi/psd2live
+- **分類**: desktop_tool / AIは任意 / 活発・候補
+- **入力**: パーツ別レイヤーのPSD、差分用の透明画像
+- **出力**: .cmo3、.moc3と.model3.json等のランタイム一式、.psd2live工程ファイル
+- **環境**: Windows 10/11またはLinuxの配布バイナリ、ソース実行はJDK 21。
+- **依存**: Live2D Cubism SDKは同梱せず、公式SDKは任意。
+- **制約・未確認**: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
+- **編集者評価**: レイヤー名からパーツを認識してメッシュ・変形器・頭身パラメータ・待機/瞬き動作・髪物理を自動生成し、Cubism Editorで続きを編集できる形式で書き出せる点が実用的。
+- **メトリクス**: ★514、fork 43、作成 2026-09-03、最終push 2026-09-30T18:27:15Z、archived=False
+- **確認**: 2026-09-30 / コミット `a494c6e6d713640f7c07d2114998f80f638275cf`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/tsunehimatoi/psd2live/tree/a494c6e6d713640f7c07d2114998f80f638275cf)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md) / [GitHub API](https://api.github.com/repos/tsunehimatoi/psd2live) / [固定ツリー](https://github.com/tsunehimatoi/psd2live/tree/a494c6e6d713640f7c07d2114998f80f638275cf)
+
+### 制作に使う際の検討
+
+Live2Dモデルの初期リギングと物理設定の工数削減。
+
+**次に確かめること（実施前）**: 配布版でサンプルPSDを読み込み、.cmo3/.moc3を書き出してCubism Editorで開けるか確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md)
+
+**最新GitHub Release**: [v1.5.1](https://github.com/tsunehimatoi/psd2live/releases/tag/v1.5.1) / 2026-09-29T16:26:32Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-30T18:27:06Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

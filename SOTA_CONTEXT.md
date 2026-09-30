@@ -12,7 +12,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **テキスト→画像(アニメ/イラスト生成)** [アニメ特化の最良 / 確度高]: `circlestone-labs/Anima`@f973fc41（other/circlestone-labs-non-commercial-license、DL累計5,537,017、likes 2,330）アニメ/イラスト特化の2B DiT テキスト→画像。Danbooruタグ+自然文の混在プロンプト、@artistタグ、年/品質/安全タグに対応。Qwen3-0.6B(base)をテキストエンコーダ、Qwen-Image VAEを使用。
   - 選定: Anima(2B)が30日123万DL・累計554万・コード参照1,378件で首位、既定はanima-base-v1.0、ただし非商用ライセンス。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,646,GPL-3.0) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0) / pamparamm/ComfyUI-ppm(★268,AGPL-3.0)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0) / pamparamm/ComfyUI-ppm(★268,AGPL-3.0)
 
 - **テキスト→画像(Anima用VAE)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `Comfy-Org/Qwen-Image_ComfyUI`@1f12b17b（apache-2.0、DL累計26,618,324、likes 507）Qwen-Image用16chVAE(ComfyUI再配布)。AnimaおよびAnima派生(2.9B等)が共通で使用。アニメ特化ではない汎用VAE。
   - 選定: AnimaはQwen-Image VAE固定で、Comfy-Org再配布の単体ファイルが実用上の最良(Apache-2.0)、FLUX.2 VAEへの変更要望は未対応。
@@ -43,7 +43,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像→画像(写真→アニメ調スタイル変換)** [アニメ特化の最良 / 確度中]: `autoweeb/Qwen-Image-Edit-2509-Photo-to-Anime`@2fdebf4e（mit、DL累計1,309,813、likes 131）Qwen-Image-Edit-2509向けLoRA。実写写真をアニメ画像へ変換する(AutoWeeb社製)。
   - 選定: autoweeb製Qwen-Image-Edit-2509 LoRA(累計131万DL, MIT)が次点の約12倍の30日DLで首位、品質は自己提示例のみで開発元の宣伝色あり。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,646,GPL-3.0) / QwenLM/Qwen-Image(★8,385,Apache-2.0) / TachibanaYoshino/AnimeGANv3(★2,037,未表示)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / QwenLM/Qwen-Image(★8,385,Apache-2.0) / TachibanaYoshino/AnimeGANv3(★2,037,未表示)
 
 - **画像→画像(ポーズ/線画/深度などのControlNet条件付け)** [アニメ特化の最良 / 確度中]: `kohya-ss/Anima-LLLite`@36ba7f2f（other/circlestone-labs-non-commercial-license、DL累計0、likes 233）AnimaのDiTに対するLoRA型の軽量ControlNet(LLLite)。any-test-like(線画・スケッチ条件)、inpainting(RGB+マスク4ch)、旧世代のlineart/depth/pose/scribble。
   - 選定: Anima作者kohya製のAnima-LLLite(Comfy-Org再配布が30日43,471DL)が事実上唯一の選択肢、ライセンスは非商用でlineart/pose等は旧世代の実験的重み。
@@ -51,7 +51,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像+テキスト→画像(アニメ画像の指示編集)** [汎用モデルのみ（アニメ特化なし） / 確度低]: `Qwen/Qwen-Image-2.1`@d26bb612（other/qwen-research、DL累計70,687、likes 2,720）Qwenの統合T2I/画像編集モデル(汎用)。アニメ特化ではないが、アニメ画像の指示編集で最も多く言及される最新モデル。
   - 選定: アニメ特化の編集モデルは見つからず、汎用のQwen-Image-2.1(X評判1,158 likes)を暫定首位としたが研究用非商用ライセンスで公開2週間のため信頼度は低。
-  - リポジトリ: Comfy-Org/ComfyUI(★135,646,GPL-3.0) / QwenLM/Qwen-Image-2.1(★1,653,NOASSERTION) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0)
+  - リポジトリ: Comfy-Org/ComfyUI(★135,647,GPL-3.0) / QwenLM/Qwen-Image-2.1(★1,653,NOASSERTION) / Haoming02/sd-webui-forge-classic(★1,773,AGPL-3.0)
 
 - **無条件画像生成(アニメ顔/全身GAN・拡散)** [アニメ特化の最良 / 確度低]: `skytnt/fbanime-gan`@79c6af6b（apache-2.0、DL累計0、likes 9）全身アニメ画像を生成するStyleGAN2。非正方形解像度対応、e4eエンコーダ(ONNX)付き。
   - 選定: 現行の勝者は無く、唯一実用に近い2022年のStyleGAN2のskytnt/fbanime-gan(FID 1.4は自己報告)を低信頼で選定、実務ではT2Iの乱数プロンプトが主流。
@@ -69,7 +69,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 
 - **画像+テキストから動画生成(アニメ)** [汎用モデルのみ（アニメ特化なし） / 確度中]: `MiniMaxAI/MiniMax-H3`@42ed227e（other/minimax-h3-community-license-agreement、DL累計9,127,868、likes 5,793）MiniMax(Nanonoble)のオープン重み音声付き動画生成。FL2VA(先頭/末尾フレーム)とRef2VA(画像9枚・動画3本・音声3本の参照)の2系統、768p生成+2K再生成、日本語を含む11言語の音声。H3-Context-IR(プロンプト整形)は非公開のホスト型で、プロンプトガイドに沿って自前で整形する。
   - 選定: アニメ特化LoRAは採用が乏しくMiniMax-H3(likes 5,790)を汎用で採用、独自ライセンスで米・EU・英・韓は対象外で商用も条件付き。
-  - リポジトリ: MiniMax-AI/MiniMax-H3(★9,417,未表示) / Comfy-Org/ComfyUI(★135,646,GPL-3.0) / kohya-ss/musubi-tuner(★2,074,未表示) / ostris/ai-toolkit(★12,167,MIT)
+  - リポジトリ: MiniMax-AI/MiniMax-H3(★9,417,未表示) / Comfy-Org/ComfyUI(★135,647,GPL-3.0) / kohya-ss/musubi-tuner(★2,074,未表示) / ostris/ai-toolkit(★12,167,MIT)
 
 - **動画(アニメ)のアップスケール・修復(video-to-video)** [モデルなし / 確度低]: モデルなし（リポジトリのみ）
   - 選定: HF上に該当なく、GitHub配布のAnimeJaNai V3(mpv版752 stars)が実用標準だが非商用ライセンスで画質の実測根拠も無い。
@@ -421,7 +421,7 @@ HFのタスク分類ごとのアニメ系最良モデルと関連リポジトリ
 - **学習フレームワーク(動画・Wan/MiniMax等、音声は対象外)**: kohya-ss/musubi-tuner(★2,074,未表示,push 2026-09-30) / tdrussell/diffusion-pipe(★2,028,GPL-3.0,push 2026-09-28) / bghira/SimpleTuner(★2,930,AGPL-3.0,push 2026-09-29) / modelscope/DiffSynth-Studio(★13,200,Apache-2.0,push 2026-09-30)
   - 動画LoRAはkohya-ss/musubi-tuner(★2074、2026-09-27更新)が最有力だがライセンス未検出で要確認、アニメ特化の動画学習ツールは無い。
 
-- **ComfyUIのアニメ関連エコシステム(本体・テンプレ・Anima拡張)**: Comfy-Org/ComfyUI(★135,646,GPL-3.0,push 2026-09-30) / Comfy-Org/workflow_templates(★1,220,MIT,push 2026-09-30) / kohya-ss/ComfyUI-Anima-LLLite(★215,Apache-2.0,push 2026-08-02) / Ararararararaki/comfyui-anima-toolkit(★31,MIT,push 2026-09-30)
+- **ComfyUIのアニメ関連エコシステム(本体・テンプレ・Anima拡張)**: Comfy-Org/ComfyUI(★135,647,GPL-3.0,push 2026-09-30) / Comfy-Org/workflow_templates(★1,220,MIT,push 2026-09-30) / kohya-ss/ComfyUI-Anima-LLLite(★215,Apache-2.0,push 2026-08-02) / Ararararararaki/comfyui-anima-toolkit(★31,MIT,push 2026-09-30)
   - 土台はComfy-Org/ComfyUI(★135621)とAnima対応の公式テンプレ、Anima固有はkohya-ss/ComfyUI-Anima-LLLite(★215)。拡張類は小規模。
 
 - **データセット構築(収集・タグ付け・キュレーション)**: mikf/gallery-dl(★19,895,GPL-2.0,push 2026-09-27) / Bionus/imgbrd-grabber(★3,210,Apache-2.0,push 2026-09-26) / deepghs/imgutils(★416,MIT,push 2025-10-11) / starik222/BooruDatasetTagManager(★1,947,MIT,push 2026-02-25)

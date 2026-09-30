@@ -83,7 +83,7 @@
 
 - [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) — MiniMax H3公式(推論・プロンプトガイド・スキル)（★9,417 / ライセンス未表示 / 最終push 2026-08-15 / 確認コミット [`d21241f0`](https://github.com/MiniMax-AI/MiniMax-H3/blob/d21241f0a4b3acbb34c97dae47fa417b7065e438/README.md)）
   - 9.4k stars。プロンプト作成スキルを同梱(リポジトリ側にライセンスメタデータなし、HF側LICENSEを参照)。
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ComfyUIでのH3実行(Comfy-Org再パッケージ重み)（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../../categories/workflow.md#comfyui)）
   - Comfy-Org/MiniMax-H3が最も取得されている配布形態。v0.38.0(2026-09-29)。
 - [kohya-ss/musubi-tuner](https://github.com/kohya-ss/musubi-tuner) — H3のLoRA学習(実験的サポート、1フレーム学習ドキュメントあり)（★2,074 / ライセンス未表示 / 最終push 2026-09-30 / release v0.3.6 (2026-09-27) / 確認コミット [`f8a1b037`](https://github.com/kohya-ss/musubi-tuner/blob/f8a1b03794a49239a3539015075f5123d6c07d66/README.md) / 制作カタログ: [musubi-tuner](../../categories/workflow.md#musubi-tuner)）
   - READMEがMiniMax-H3の学習をサポートと明記(2026-09-27 v0.3.6)。

@@ -1,6 +1,6 @@
 # サブカルコンテンツ制作リポジトリ一覧
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -21,6 +21,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [MangaNinja](https://github.com/ali-vilab/MangaNinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 742 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 14 / 2026-05-08 |
 | [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,470 / 2024-09-26 |
+| [Venera-SSR](https://github.com/Kiastr/Venera-SSR) | 複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。 | AIモデル・学習 / 初期評価候補 | 55 / 2026-08-02 |
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -40,7 +41,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ControlTile](https://github.com/Junrongh/ControlTile) | 条件付きの画像タイル生成を扱う研究実装。 | AIモデル・学習 / 小規模・初期候補 | 12 / 2026-07-27 |
-| [Godot](https://github.com/godotengine/godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,010 / 2026-09-30 |
+| [Godot](https://github.com/godotengine/godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,011 / 2026-09-30 |
 | [LDtk](https://github.com/deepnight/ldtk) | 2Dレベルを設計するオープンソースのエディタ。 | 非AI制作 / 制作基盤として比較 | 4,283 / 2026-07-12 |
 | [OpenGame](https://github.com/leigest519/OpenGame) | 指示からWebゲームを制作するエージェント基盤。テンプレートとデバッグ手順を組み込む。 | AI連携 / 連携・制作ツール候補 | 2,960 / 2026-09-03 |
 | [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,431 / 2026-09-30 |
@@ -74,6 +75,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 231 / 2026-09-23 |
 | [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 241 / 2026-09-28 |
 | [stretchystudio](https://github.com/MangoLion/stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 494 / 2026-04-28 |
+| [psd2live](https://github.com/tsunehimatoi/psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 514 / 2026-09-30 |
 
 ## レイヤー分解
 
@@ -85,6 +87,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Qwen-Image-Layered](https://github.com/QwenLM/Qwen-Image-Layered) | 画像を複数の編集可能なレイヤーに分解し、個別の色・位置・サイズ変更につなげる。 | AIモデル・学習 / 基盤技術候補 | 2,122 / 2025-12-31 |
 | [see-through](https://github.com/shitagaki-lab/see-through) | 一枚絵を意味別パーツへ分解し、遮蔽部分を補完してPSDに出力する。 | AIモデル・学習 / 導入候補 | 4,192 / 2026-09-24 |
 | [Stable Layers](https://github.com/Stability-AI/Stable-Layers) | Qwen-Image-Layered上のLoRAで、画像を背景と物体の編集用RGBA層へ分解する。 | AIモデル・学習 / レイヤー分解の研究候補 | 24 / 2026-07-23 |
+| [loom-unravel](https://github.com/byeolki/loom-unravel) | 1枚のアニメキャラ立ち絵を顔パーツ単位のRGBAレイヤーと、階層・深度順・アンカー点を持つメタデータに分解するオフラインパイプライン。 | AIモデル・学習 / 初期評価候補 | 0 / 2026-09-11 |
 
 ## 画像生成・編集・切り抜き
 
@@ -97,6 +100,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Qwen-Image](https://github.com/QwenLM/Qwen-Image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,385 / 2026-02-10 |
 | [Z-Image](https://github.com/Tongyi-MAI/Z-Image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,057 / 2026-02-09 |
 | [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 103 / 2026-07-19 |
+| [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 25 / 2026-07-21 |
 
 ## 動画生成
 
@@ -121,7 +125,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [AniGen](https://github.com/VAST-AI-Research/AniGen) | 一枚の画像から形状・骨格・スキンウェイトを一緒に生成する。 | AIモデル・学習 / モデル・研究候補 | 507 / 2026-07-15 |
 | [Blender](https://github.com/blender/blender) | モデリング、リギング、アニメ、レンダリング、合成を扱う統合制作環境。 | 非AI制作 / 定番の制作基盤 | 20,617 / 2026-09-30 |
 | [Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) | 画像から3D形状と材質を生成する公式実装。 | AIモデル・学習 / 比較・既存工程の参考 | 4,099 / 2025-10-17 |
-| [Pixal3D](https://github.com/TencentARC/Pixal3D) | 画像からPBR付き3Dを生成。2026年9月に多視点推論経路を追加。 | AIモデル・学習 / モデル・研究候補 | 2,386 / 2026-09-01 |
+| [Pixal3D](https://github.com/TencentARC/Pixal3D) | 画像からPBR付き3Dを生成。2026年9月に多視点推論経路を追加。 | AIモデル・学習 / モデル・研究候補 | 2,387 / 2026-09-01 |
 | [Puppeteer](https://github.com/Seed3D/Puppeteer) | 3Dメッシュに骨格とウェイトを付け、動画誘導でアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 423 / 2025-09-19 |
 | [Roblox Cube / CubePart](https://github.com/Roblox/cube) | テキストからの形状生成に加え、メッシュと部品定義から構造を持つ部品群を生成する。 | AIモデル・学習 / モデル・研究候補 | 1,260 / 2026-05-28 |
 | [SkinTokens](https://github.com/VAST-AI-Research/SkinTokens) | TokenRigで骨格とスキンウェイトを一つの系列として生成する自動リギング研究。 | AIモデル・学習 / 研究モデルの評価候補 | 440 / 2026-05-12 |
@@ -197,11 +201,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,646 / 2026-09-30 |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,647 / 2026-09-30 |
 | [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,716 / 2026-05-24 |
 | [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) | 画像・動画の生成と追加学習を複数モデルで扱う統合実装。 | AIモデル・学習 / モデル・研究候補 | 13,200 / 2026-09-30 |
 | [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) | 画像・動画モデル向けのLoRA学習スクリプト群。 | AIモデル・学習 / 更新のある導入・評価候補 | 2,074 / 2026-09-30 |
 | [sd-scripts](https://github.com/kohya-ss/sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,242 / 2026-09-24 |
+| [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-09-23 |
 
 ## 字幕・翻訳・ローカライズ
 
@@ -215,6 +220,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [mokuro](https://github.com/kha-white/mokuro) | 漫画ページの文字位置とOCR結果をまとめ、選択可能なテキストとして閲覧できる形式へ変換。 | AI連携 / 連携・制作ツール候補 | 1,738 / 2026-07-20 |
 | [VoiceTransl](https://github.com/shinnpuru/VoiceTransl) | 音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。 | AI連携 / 連携の評価候補 | 1,298 / 2026-08-28 |
 | [xianscan-rust](https://github.com/ArbenApura/xianscan-rust) | 漫画・韓漫・国漫向けのローカル完結型翻訳スタジオ。吹き出し検出、多言語OCR、LLM翻訳、LaMaによるインペイント、組版までを単体バイナリで実行する。 | AIモデル・学習 / 更新が活発な実装候補 | 77 / 2026-09-29 |
+| [BallonsTranslator-Pro](https://github.com/thomaswantstobeaskeleton/BallonsTranslator-Pro) | BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで、検出・OCR・翻訳・インペイント・植字を組み替え可能なモジュール群で処理する。 | AIモデル・学習 / 活発・候補 | 96 / 2026-07-31 |
+| [CarrotMangaTranslator](https://github.com/ucx0204/CarrotMangaTranslator) | 漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。 | AIモデル・学習 / 活発・候補 | 76 / 2026-09-30 |
+| [Kites](https://github.com/Unheat/Kites) | ブラウザ拡張として動作し、WebGPU上でOCR・インペイント・翻訳を行って漫画をその場で翻訳表示するツール。 | AIモデル・学習 / 初期評価候補 | 30 / 2026-09-26 |
 
 ## モーション・身体演技
 
@@ -250,3 +258,4 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Kitsu](https://github.com/cgwire/kitsu) | アニメ・VFX・ゲーム制作の成果物、レビュー、進行を管理するWebアプリ。 | 非AI制作 / 制作基盤として比較 | 725 / 2026-09-30 |
 | [Storyboarder](https://github.com/wonderunit/storyboarder) | 絵コンテを描き、ショットの順序と時間を試すアニマティクス制作ツール。 | 非AI制作 / 既存研究・制作の参考 | 3,860 / 2024-03-17 |
 | [StyleID](https://github.com/kwanyun/StyleID) | 画風変化に強い顔の同一性特徴を計算し、比較・検索・評価に使う。 | AIモデル・学習 / 小規模・初期候補 | 34 / 2026-08-16 |
+| [Nomi](https://github.com/aqm857886159/Nomi) | ローカル優先のAI動画制作スタジオ。エージェントがショット分割・キーフレーム生成・動画化・タイムライン配置を支援する。 | AIモデル・学習 / 活発・候補 | 534 / 2026-09-30 |

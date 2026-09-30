@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（61件）
+# 会話できるアニメ系AIキャラクター（62件）
 
-最終確認日: 2026-10-01。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-09-30。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -40,6 +40,7 @@
 - [Live2D AI chat](https://github.com/zoollcar/live2d-AI-chat) — ブラウザ内のGGUFモデル、または権限を分けたブラウザ拡張経由の外部モデルでLive2Dと会話。音声・画像やWebページの入力にも対応し、付属素材の利用条件に注意。
 - [ai-secretary](https://github.com/ryuno016/ai-secretary) — OpenAI・Whisper・VOICEVOXで話すLive2Dデスクトップ秘書。タスクの登録・確認もできる。**Live2DモデルとCubism Coreは同梱されず**、別途入手が必要。
 - [Miko](https://github.com/danukim/Miko) — OllamaのローカルLLMとVRM/Unityの3Dデスクトップアバター、GPT-SoVITSまたはFish Audioの音声合成、リアルタイムのリップシンクとジェスチャーを組み合わせたWindows用デスクトップAIコンパニオン。
+- [alicization](https://github.com/TouHouQing/alicization) — SOUL.mdとSQLiteを核にしたlocal-firstの自律デジタル存在アーキテクチャ。Electronデスクトップで長期記憶・能動対話・MCP権限ゲート・Live2D表現を扱う。
 
 ## AI VTuber・配信
 

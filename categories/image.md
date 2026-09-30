@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -17,6 +17,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Qwen-Image](https://github.com/QwenLM/Qwen-Image) · [詳細](#qwen-image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,385 / 2026-02-10 |
 | [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,057 / 2026-02-09 |
 | [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) · [詳細](#comfyui-forbidden-vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 103 / 2026-07-19 |
+| [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) · [詳細](#comfyui-ultimate-face-fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 25 / 2026-07-21 |
 
 <a id="anime-segmentation"></a>
 
@@ -211,3 +212,38 @@ Turboで試作速度、Baseで学習・制御の適性を分けて調べる。�
 **最新GitHub Release**: [v1.1.8](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision/releases/tag/v1.1.8) / 2026-04-09T20:26:41Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-07-19T14:34:26Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="comfyui-ultimate-face-fix"></a>
+
+## ComfyUI-Ultimate-Face-Fix
+
+顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。
+
+- **リポジトリ**: https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix
+- **分類**: integration / AI出力の後処理 / 活発・候補
+- **入力**: 元画像、生成モデル・VAE・プロンプト、顔検出/セグメンテーションモデル
+- **出力**: 修復済み画像、顔クロップ、顔マスク、プレビュー
+- **環境**: ComfyUI。ComfyUI Managerで依存と3つの顔解析モデルを自動導入。
+- **依存**: 同梱の顔解析モデル、使用する生成チェックポイント。
+- **制約・未確認**: 生成モデルと素材は利用者が用意。モデル重みは別途取得で上流ライセンスに従う。
+- **編集者評価**: アニメ・イラスト・実写のチェックポイントに対応し、複数顔を順に処理して「修復」「再構成」などのデノイズプリセットで調整できる点が実用的。
+- **メトリクス**: ★25、fork 6、作成 2026-07-20、最終push 2026-07-21T17:06:53Z、archived=False
+- **確認**: 2026-09-30 / コミット `98a00ad332803f4adf9e2154a211e3641971d7ef`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/tree/98a00ad332803f4adf9e2154a211e3641971d7ef)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/blob/98a00ad332803f4adf9e2154a211e3641971d7ef/README.md) / [GitHub API](https://api.github.com/repos/Merserk/ComfyUI-Ultimate-Face-Fix) / [固定ツリー](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/tree/98a00ad332803f4adf9e2154a211e3641971d7ef)
+
+### 制作に使う際の検討
+
+ラフや生成画像の顔崩れを後処理で整える用途。
+
+**次に確かめること（実施前）**: アニメ系チェックポイントで複数顔画像を処理し、継ぎ目と同一性の保持を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/blob/98a00ad332803f4adf9e2154a211e3641971d7ef/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-07-21T17:06:53Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

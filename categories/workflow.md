@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**117件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-09-30。**126件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,11 +12,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,646 / 2026-09-30 |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,647 / 2026-09-30 |
 | [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) · [詳細](#comfyui-wanvideowrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,716 / 2026-05-24 |
 | [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) · [詳細](#diffsynth-studio) | 画像・動画の生成と追加学習を複数モデルで扱う統合実装。 | AIモデル・学習 / モデル・研究候補 | 13,200 / 2026-09-30 |
 | [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) · [詳細](#musubi-tuner) | 画像・動画モデル向けのLoRA学習スクリプト群。 | AIモデル・学習 / 更新のある導入・評価候補 | 2,074 / 2026-09-30 |
 | [sd-scripts](https://github.com/kohya-ss/sd-scripts) · [詳細](#sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,242 / 2026-09-24 |
+| [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) · [詳細](#comfyui-anime-extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-09-23 |
 
 <a id="comfyui"></a>
 
@@ -32,7 +33,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 各種生成モデル、任意のカスタムノード
 - **制約・未確認**: カスタムノードとモデルの互換性は個別確認が必要。ワークフロー公開だけで再現済みとはしない。
 - **編集者評価**: 複数分野のモデルと制作補助ノードを集約できる共通基盤。
-- **メトリクス**: ★135,646、fork 16,091、作成 2023-01-17、最終push 2026-09-30T23:05:31Z、archived=False
+- **メトリクス**: ★135,647、fork 16,091、作成 2023-01-17、最終push 2026-09-30T23:05:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `4989cdd95487531b50438c6a091dffa06e4af4b2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Comfy-Org/ComfyUI/tree/4989cdd95487531b50438c6a091dffa06e4af4b2)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -194,3 +195,38 @@ Wan派生をComfyUIへ接続する第三者統合。公式重みそのままと�
 **最新GitHub Release**: [v0.12.0](https://github.com/kohya-ss/sd-scripts/releases/tag/v0.12.0) / 2026-09-24T10:35:53Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-09T13:32:35Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="comfyui-anime-extensions"></a>
+
+## ComfyUI-Anime-Extensions
+
+ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。
+
+- **リポジトリ**: https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions
+- **分類**: integration / AIモデル・学習 / 初期評価候補
+- **入力**: テキスト、画像、参照音声、歌詞・スタイル
+- **出力**: 音声、解析結果JSON、マスク、漫画ページ画像、VRM/Blenderシーン、動画
+- **環境**: ComfyUIの最新Extension API、Python環境、VRM機能にはBlender+VRMアドオン。
+- **依存**: Irodori-TTS、YuE2、Sol-H3-Spark、dghs-imgutils等。
+- **制約・未確認**: モデルとランタイムは同梱されず別途準備。YuE2の重みは非商用ライセンスとREADMEが記載。
+- **編集者評価**: Irodori-TTSの音声合成や画像条件付きキャラクター音声、VRMのダンス生成、漫画ページ組みなど制作寄りの機能を1パッケージで提供する点が特徴。
+- **メトリクス**: ★1、fork 0、作成 2026-08-30、最終push 2026-09-23T00:25:54Z、archived=False
+- **確認**: 2026-09-30 / コミット `aa21a682ea509bab0fa3f17ba877a3867647d4eb`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/tree/aa21a682ea509bab0fa3f17ba877a3867647d4eb)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/blob/aa21a682ea509bab0fa3f17ba877a3867647d4eb/README.md) / [GitHub API](https://api.github.com/repos/ootsuka-repos/ComfyUI-Anime-Extensions) / [固定ツリー](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/tree/aa21a682ea509bab0fa3f17ba877a3867647d4eb)
+
+### 制作に使う際の検討
+
+音声・画像解析・VRM・漫画ページ組みをComfyUI内で連携。
+
+**次に確かめること（実施前）**: Irodori-TTSとVRM Danceノードを実環境で動かし、入出力と必要モデルを確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/blob/aa21a682ea509bab0fa3f17ba877a3867647d4eb/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-23T00:25:52Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

@@ -149,7 +149,7 @@
      "repo": "Comfy-Org/ComfyUI",
      "url": "https://github.com/Comfy-Org/ComfyUI",
      "role_ja": "Animaの標準実行基盤(カードがComfyUIネイティブ対応と明記、ワークフローPNG同梱)",
-     "stars": 135646,
+     "stars": 135647,
      "license": "GPL-3.0",
      "default_branch": "master",
      "commit_sha": "83071e1aec311d31e773d64d6872181b3bad0fe2",
@@ -1068,7 +1068,7 @@
      "repo": "Comfy-Org/ComfyUI",
      "url": "https://github.com/Comfy-Org/ComfyUI",
      "role_ja": "Qwen-Image-Edit LoRAの実行基盤(READMEがQwen Image Edit対応を明記)",
-     "stars": 135646,
+     "stars": 135647,
      "license": "GPL-3.0",
      "default_branch": "master",
      "commit_sha": "83071e1aec311d31e773d64d6872181b3bad0fe2",
@@ -1328,7 +1328,7 @@
      "repo": "Comfy-Org/ComfyUI",
      "url": "https://github.com/Comfy-Org/ComfyUI",
      "role_ja": "編集モデルの実行基盤(READMEがQwen Image Edit・Flux.2 Klein編集等を対応と記載)",
-     "stars": 135646,
+     "stars": 135647,
      "license": "GPL-3.0",
      "default_branch": "master",
      "commit_sha": "83071e1aec311d31e773d64d6872181b3bad0fe2",
@@ -1902,7 +1902,7 @@
      "repo": "Comfy-Org/ComfyUI",
      "url": "https://github.com/Comfy-Org/ComfyUI",
      "role_ja": "ComfyUIでのH3実行(Comfy-Org再パッケージ重み)",
-     "stars": 135646,
+     "stars": 135647,
      "license": "GPL-3.0",
      "default_branch": "master",
      "commit_sha": "83071e1aec311d31e773d64d6872181b3bad0fe2",
@@ -10547,7 +10547,7 @@
      "repo": "Comfy-Org/ComfyUI",
      "url": "https://github.com/Comfy-Org/ComfyUI",
      "role_ja": "ノードベース生成UI/エンジン本体",
-     "stars": 135646,
+     "stars": 135647,
      "license": "GPL-3.0",
      "default_branch": "master",
      "commit_sha": "83071e1aec311d31e773d64d6872181b3bad0fe2",
@@ -12182,5 +12182,5 @@
    "reason_ja": "最終push 2025-12/2026-03/2025-07。後継Haoming02/sd-webui-forge-classic(★1772、READMEにAnima対応明記)のほうが活発。"
   }
  ],
- "metrics_refreshed_on": "2026-10-01"
+ "metrics_refreshed_on": "2026-09-30"
 }

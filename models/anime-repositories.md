@@ -46,7 +46,7 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★135,646 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★135,647 / GPL-3.0 / 最終push 2026-09-30 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
   - READMEがAnimaを対応モデルとして列挙、v0.38.0=2026-09-29。ComfyUIはcatalog収録の本体。【catalog.json収録: id=comfyui】
 - [Comfy-Org/workflow_templates](https://github.com/Comfy-Org/workflow_templates) — 公式ワークフロー雛形（★1,220 / MIT / 最終push 2026-09-30 / release v0.11.73 (2026-09-30) / 確認コミット [`0bfbbbfa`](https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/README.md)）
   - v0.11.73=2026-09-30と更新が頻繁。Animaテンプレの有無は個別に未確認。【catalog.json未収録(新規)】
