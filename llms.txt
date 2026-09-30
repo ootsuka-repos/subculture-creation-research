@@ -17,6 +17,13 @@
 - [models/anime-models.md](models/anime-models.md)
 - [model-catalog.jsonl](model-catalog.jsonl)
 
+## タスク別アニメ系SOTA・開発用リポジトリ（2026-10-01、HFタスク分類ごとに最良1件）
+- [SOTA_CONTEXT.md](SOTA_CONTEXT.md): 全タスクの最良モデル・利用条件・選定要約・関連リポジトリ（約76KB、一括投入用）
+- [models/anime-task-sota.md](models/anime-task-sota.md): 選定基準・注意・全タスク一覧。詳細は分野別（[画像](models/sota/image.md), [動画](models/sota/video.md), [音声](models/sota/audio.md), [視覚](models/sota/vision.md), [マンガ・OCR](models/sota/manga.md), [言語](models/sota/text.md), [3D・その他](models/sota/threed_other.md)）
+- [models/anime-repositories.md](models/anime-repositories.md): 制作工程別の代表リポジトリ17分類
+- [models/sota/not-included.md](models/sota/not-included.md): 検討したが選ばなかったもの
+- [sota-catalog.jsonl](sota-catalog.jsonl): 1行1タスク（task_id, status, confidence, best, repositories）
+
 ## 会話AIキャラクター（Live2D / VRM / AI VTuber、60件）
 - [categories/companion.md](categories/companion.md): 目的別の選び方と分類
 - [companion-catalog.jsonl](companion-catalog.jsonl): id, name, url, section_id, summary_ja, catalog_id

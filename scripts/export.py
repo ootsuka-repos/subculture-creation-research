@@ -120,6 +120,7 @@ def render(data, model_data=None):
 | 制作系リポジトリ（分野別ページ） | 固定コミット・入出力・根拠つきの詳細調査。115件 / 18分野 | [catalog.jsonl](catalog.jsonl) |
 | [会話できるアニメ系AIキャラクター](categories/companion.md) | Live2D/VRM/AI VTuberなど60件。一覧レベルの記録 | [companion-catalog.jsonl](companion-catalog.jsonl) |
 | [公式コード＋公開重みのある研究](research/papers.md) | SIGGRAPH 2026ほか87件、12分野 | [research/papers.jsonl](research/papers.jsonl) |
+| [タスク別アニメ系SOTAモデル・リポジトリ](models/anime-task-sota.md) | HFタスク別の最良モデル（108タスク・最良あり82）と制作工程別の代表リポジトリ193件（2026-10-01） | [sota-catalog.jsonl](sota-catalog.jsonl) |
 
 AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) を読むと、質問別に必要なファイルだけを取得できます。
 
@@ -130,6 +131,7 @@ AIエージェントは先に [AGENTS.md](AGENTS.md) と [llms.txt](llms.txt) �
 | 全件の日本語一覧 | [catalog.md](catalog.md) |
 | 分野横断の深掘り比較・優先候補・公開範囲 | [詳細リサーチ](research/deep-dive-2026-09-09.md) |
 | GitHub以外のアニメ画像モデル4系統 | [モデル比較](models/anime-models.md) / [モデル正本JSON](model-catalog.json) / [JSONL](model-catalog.jsonl) |
+| タスク別のアニメ系最良モデル（開発で迷ったとき） | [一覧](models/anime-task-sota.md) / [短縮版](SOTA_CONTEXT.md) / [リポジトリ全体像](models/anime-repositories.md) / [正本JSON](sota-catalog.json) |
 | モデルに一括で渡す短縮資料 | [MODEL_CONTEXT.md](MODEL_CONTEXT.md) |
 | 入出力・環境・依存・根拠・モデル配布・コミットの正本 | [catalog.json](catalog.json) |
 | RAGなどで1件ずつ取り込む | [catalog.jsonl](catalog.jsonl) |

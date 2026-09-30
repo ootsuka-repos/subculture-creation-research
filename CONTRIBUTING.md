@@ -112,10 +112,22 @@ GitHub以外のアニメ画像モデルは[model-catalog.json](model-catalog.jso
 - 候補リスト／トピックの掲載だけで採用せず、READMEと関連ドキュメントで機能と未実装を確認する。同じプロジェクトは一度だけ。派生版は元との違いが明確なときだけ区別する。
 - このデータは一覧レベル。固定コミット・メトリクス・入出力の整理を行った項目は制作カタログ（catalog.json）へ昇格し、`catalog_id`で結ぶ。
 
+## タスク別アニメ系SOTA（sota-catalog.json）
+
+正本は[sota-catalog.json](sota-catalog.json)（schema 1.0）。`sota-catalog.jsonl`、`SOTA_CONTEXT.md`、`models/anime-task-sota.md`、`models/sota/<分野>.md`、`models/anime-repositories.md`はscripts/export_sota.pyで生成する。手で編集しない。
+
+- 構造: `tasks[]`は1要素がHFタスク（またはアニメ制作固有のカスタムID）の1判定。`task_id`＋`subtask`で一意。`slice`は分野（image/video/audio/vision/manga/text/threed_other/repos）。`repos-*`は制作工程別のリポジトリ選定でモデルを持たない。
+- `status`: `selected`=アニメ特化の最良を選定、`general_only`=アニメ特化がなく実用的な汎用モデルを代替に提示、`none`=該当なし（リポジトリのみ含む）。`confidence`は高/中/低。
+- 選定基準は`criteria_ja`: 実測品質（自己報告は弱い根拠として明示）→採用実績（DL累計・直近30日・likes・Spaces・GitHub参照数・主要ツール採用）→評判（X・HF議論）→新しさ→利用条件（同点時のみ、商用可と断定しない）。オリジナル配布を選び、量子化・ONNX・GGUF・マージは`variants_ja`に記す。成人向け専用モデルは選ばず`reviewed_not_included`に理由を残す。
+- `best`: `revision`（40桁、確認時のHF API値）、`evidence[0]`は固定revisionのモデルカード、`verification.weights_downloaded`と`runtime_tested`は実施していなければfalse。カード本文の追加条件とメタデータの不一致は`license_notes_ja`へ。ベンチマーク数値は自己報告かを明記する。
+- `repositories[]`: `commit_sha`は確認時のデフォルトブランチ先頭、`evidence_url`は同コミット固定。GitHub上の正規名（リネーム後）を使い、制作カタログ（catalog.json）に同じリポジトリがあれば`catalog_id`で結ぶ。
+- `decision_short_ja`は140字以内の自己完結した1文（選定・最強の根拠・最大の留意点）。短縮版はこれだけを使う。`decision_ja`は数値つきの詳細根拠。
+- 更新するときは追加件数ではなく、同じタスクで勝者が変わったかを確認する。新顔は採用実績と独立した評価がそろうまで`confidence: low`にとどめ、標準モデルを次点に残す。
+
 ## 生成物の更新
 
 ```sh
-python3 scripts/export.py && python3 scripts/export_datasets.py
-python3 scripts/export.py --check && python3 scripts/export_datasets.py --check
+python3 scripts/export.py && python3 scripts/export_datasets.py && python3 scripts/export_sota.py
+python3 scripts/export.py --check && python3 scripts/export_datasets.py --check && python3 scripts/export_sota.py --check
 python3 scripts/validate.py && git diff --check
 ```

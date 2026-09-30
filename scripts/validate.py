@@ -8,6 +8,7 @@ from urllib.parse import unquote
 
 from export import render
 from export_datasets import render as render_datasets
+from export_sota import render as render_sota
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
@@ -78,6 +79,29 @@ for m in models['items']:
     require(dist['evidence_files'] and dist['http_status'] == 200 and dist['verification'] == 'file_listing_checked', f"{m['id']}: モデル配布根拠不足")
     require(m['license_notes_ja'] and m['limitations_ja'], f"{m['id']}: モデル条件不足")
 require([json.loads(x) for x in (ROOT / 'model-catalog.jsonl').read_text(encoding='utf-8').splitlines()] == models['items'], 'モデルJSONL不一致')
+sota = json.loads((ROOT / 'sota-catalog.json').read_text(encoding='utf-8'))
+require(sota['schema_version'] == '1.0', 'SOTAカタログ形式')
+sota_slices = {s['id'] for s in sota['slices']}
+sota_keys = [(t['task_id'], t.get('subtask')) for t in sota['tasks']]
+require(len(set(sota_keys)) == len(sota_keys), 'SOTA: タスク/サブタスク重複')
+sha40 = re.compile(r'^[0-9a-f]{40}$')
+for t in sota['tasks']:
+    label = f"SOTA {t['task_id']}/{t.get('subtask')}"
+    require(t['slice'] in sota_slices and t['status'] in {'selected', 'general_only', 'none'} and t['confidence'] in {'high', 'medium', 'low'}, f'{label}: 分類不備')
+    require(20 <= len(t['decision_short_ja']) <= 140 and len(t['decision_ja']) >= 40, f'{label}: 選定根拠の長さ')
+    b = t.get('best')
+    require(t['status'] == 'none' or t['task_id'].startswith('repos-') or b is not None, f'{label}: bestなし')
+    if b:
+        require(sha40.match(b['revision']) and b['revision'] in b['evidence'][0]['url'], f'{label}: モデルカード固定参照')
+        require(b['verification']['weights_downloaded'] is False and b['verification']['runtime_tested'] is False and b['verification']['model_card_reviewed'] is True, f'{label}: 未実施の検証を実施済みと記録')
+        require(b['license_notes_ja'] and b['limitations_ja'], f'{label}: モデル条件不足')
+        datetime.date.fromisoformat(b['last_modified'])
+    for g in t.get('repositories', []):
+        require(sha40.match(g['commit_sha']) and g['commit_sha'] in g['evidence_url'] and g['url'] == 'https://github.com/' + g['repo'], f"{label}: {g['repo']} 固定参照")
+        require((g['catalog_id'] is None) == (g['repo'].lower() not in {p['repository'].lower() for p in items}) and (g['catalog_id'] is None or g['catalog_id'] in ids), f"{label}: {g['repo']} catalog_id不整合")
+for r in sota['reviewed_not_included']:
+    require(r['slice'] in sota_slices and r['repo'] and r['reason_ja'], f"SOTA検討済み不備: {r.get('repo')}")
+require([json.loads(x) for x in (ROOT / 'sota-catalog.jsonl').read_text(encoding='utf-8').splitlines()] == sota['tasks'], 'SOTA JSONL不一致')
 papers_data = json.loads((ROOT / 'research/papers.json').read_text(encoding='utf-8'))
 comp = json.loads((ROOT / 'companion-catalog.json').read_text(encoding='utf-8'))
 paper_cats = {c['id'] for c in papers_data['categories']}
@@ -102,7 +126,7 @@ for i in comp['items']:
     require(i['url'] == 'https://github.com/' + i['repository'] and i['summary_ja'], f"{i['id']}: 会話キャラ項目不備")
     require(i['section_id'] in comp_sections, f"{i['id']}: 未定義セクション")
     require((i['catalog_id'] is None) == (i['repository'].lower() not in {p['repository'].lower() for p in items}) and (i['catalog_id'] is None or i['catalog_id'] in ids), f"{i['id']}: catalog_id不整合")
-for name, content in {**render(data), **render_datasets()}.items():
+for name, content in {**render(data), **render_datasets(), **render_sota()}.items():
     require((ROOT / name).read_bytes() == content.encode("utf-8"), f"生成物が古い: {name}")
 for path in ROOT.rglob("*.md"):
     for target in re.findall(r"\]\(([^)\s]+)\)", path.read_text(encoding="utf-8")):
