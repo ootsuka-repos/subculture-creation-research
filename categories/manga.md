@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,12 +14,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [ai-comic-factory](https://github.com/jbilcke-hf/ai-comic-factory) · [詳細](#ai-comic-factory) | LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装。 | AI連携 / 旧版・履歴資料 | 1,342 / 2025-10-30 |
 | [DiffSensei](https://github.com/jianzongwu/DiffSensei) · [詳細](#diffsensei) | 複数キャラ参照と配置を条件に白黒漫画のコマを生成する。 | AIモデル・学習 / モデル・研究候補 | 925 / 2025-02-05 |
-| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,457 / 2026-09-30 |
-| [manga-editor-desu](https://github.com/new-sankaku/manga-editor-desu) · [詳細](#manga-editor-desu) | ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。 | AIは任意 / 更新のある導入・評価候補 | 390 / 2026-08-30 |
+| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,463 / 2026-10-01 |
+| [manga-editor-desu](https://github.com/new-sankaku/manga-editor-desu) · [詳細](#manga-editor-desu) | ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。 | AIは任意 / 更新のある導入・評価候補 | 391 / 2026-08-30 |
 | [MangaNinja](https://github.com/ali-vilab/MangaNinjia) · [詳細](#manganinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 742 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) · [詳細](#openkoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 14 / 2026-05-08 |
-| [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,470 / 2024-09-26 |
+| [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,471 / 2024-09-26 |
 | [Venera-SSR](https://github.com/Kiastr/Venera-SSR) · [詳細](#venera-ssr) | 複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。 | AIモデル・学習 / 初期評価候補 | 55 / 2026-08-02 |
+| [Manga-AI-detector](https://github.com/nonillion-studios/Manga-AI-detector) · [詳細](#manga-ai-detector) | 漫画・マンファ・コミックページ向けに追加学習したYOLOv11インスタンスセグメンテーションモデル。コマ枠(panels)・吹き出し(bubbles)・本文テキスト(text)・効果音(SFX)の4要素を検出する。 | AIモデル・学習 / 小規模・初期評価候補 | 4 / 2026-08-17 |
 
 <a id="ai-comic-factory"></a>
 
@@ -109,7 +110,7 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **依存**: 通常の描画にはAIモデル不要
 - **制約・未確認**: GitHubは公式ミラーで、開発元はKDE。標準アプリをAI生成モデルとして扱わない。
 - **編集者評価**: 生成結果の手直しや原稿制作を担う定番基盤。
-- **メトリクス**: ★10,457、fork 866、作成 2015-10-09、最終push 2026-09-30T19:45:06Z、archived=False
+- **メトリクス**: ★10,463、fork 866、作成 2015-10-09、最終push 2026-10-01T20:57:34Z、archived=False
 - **確認**: 2026-09-09 / コミット `75db0d95e142c9251dc27483180148f77d4de014`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -144,7 +145,7 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **依存**: 画像素材、任意の画像生成バックエンド
 - **制約・未確認**: 文字・吹き出しやページ切り替え時の編集履歴などは実作業で確認が必要。
 - **編集者評価**: 漫画固有の編集操作と画像生成をつなぐ有力候補。
-- **メトリクス**: ★390、fork 57、作成 2023-08-14、最終push 2026-08-30T17:00:19Z、archived=False
+- **メトリクス**: ★391、fork 57、作成 2023-08-14、最終push 2026-08-30T17:00:19Z、archived=False
 - **確認**: 2026-09-09 / コミット `04e0cf3de1f3677682f6d1831f2713db70e441ba`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/new-sankaku/manga-editor-desu/tree/04e0cf3de1f3677682f6d1831f2713db70e441ba)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -253,7 +254,7 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 - **依存**: SDXL、版・経路によりPhotoMaker等
 - **制約・未確認**: 動画モデルのソースと重みは現READMEのTODOで未公開。画像生成と動画研究の公開範囲を区別する。
 - **編集者評価**: 画像の連続性を比較する既存研究。動画公開済み候補としては使わない。
-- **メトリクス**: ★6,470、fork 645、作成 2024-04-21、最終push 2024-09-26T02:17:52Z、archived=False
+- **メトリクス**: ★6,471、fork 645、作成 2024-04-21、最終push 2024-09-26T02:17:52Z、archived=False
 - **確認**: 2026-09-09 / コミット `8de45e424887766fdd84dc917436ff8605f00149`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/HVision-NKU/StoryDiffusion/tree/8de45e424887766fdd84dc917436ff8605f00149)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -308,3 +309,38 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 **最新GitHub Release**: [v2.1.5](https://github.com/Kiastr/Venera-SSR/releases/tag/v2.1.5) / 2026-08-01T05:16:58Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-08-02T14:11:49Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="manga-ai-detector"></a>
+
+## Manga-AI-detector
+
+漫画・マンファ・コミックページ向けに追加学習したYOLOv11インスタンスセグメンテーションモデル。コマ枠(panels)・吹き出し(bubbles)・本文テキスト(text)・効果音(SFX)の4要素を検出する。
+
+- **リポジトリ**: https://github.com/nonillion-studios/Manga-AI-detector
+- **分類**: model / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 漫画/コミックのページ画像（ファイルまたはbase64）
+- **出力**: クラス名・confidence・bounding box・中心座標を含むJSON、可視化画像
+- **環境**: Python 3.8+、ultralytics。推論はCPU可、GPU任意。学習推奨はRTX 3060/4060以上・8GB+ VRAM、CUDA 11.8/12.x。
+- **依存**: Ultralytics YOLOv11、PyTorch、OpenCV、best.pt（同梱の学習済み重み）
+- **制約・未確認**: 学習データの規模や精度指標（mAP等）はREADMEに記載がなく検出精度は未確認。REST API化のコードはREADME内のサンプル記載で、そのまま動く形では同梱されていない。
+- **編集者評価**: 翻訳や読み上げパイプラインの前段（コマ・吹き出し検出）として用途が明確で、重みbest.ptと推論/学習スクリプトを同梱する。
+- **メトリクス**: ★4、fork 0、作成 2026-07-30、最終push 2026-08-17T20:32:39Z、archived=False
+- **確認**: 2026-10-01 / コミット `becb02ca3f2e5e01df4822045d001443442cf4ff`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/nonillion-studios/Manga-AI-detector/tree/becb02ca3f2e5e01df4822045d001443442cf4ff)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/nonillion-studios/Manga-AI-detector/blob/becb02ca3f2e5e01df4822045d001443442cf4ff/readme.md) / [GitHub API](https://api.github.com/repos/nonillion-studios/Manga-AI-detector) / [固定ツリー](https://github.com/nonillion-studios/Manga-AI-detector/tree/becb02ca3f2e5e01df4822045d001443442cf4ff)
+
+### 制作に使う際の検討
+
+漫画翻訳のコマ・吹き出し検出の候補として試せる。
+
+**次に確かめること（実施前）**: 実際の日本語漫画ページで4クラスの検出再現率と誤検出を測り、既存の検出器と比較する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [inference.py](https://github.com/nonillion-studios/Manga-AI-detector/blob/becb02ca3f2e5e01df4822045d001443442cf4ff/inference.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-08-17T20:32:39Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

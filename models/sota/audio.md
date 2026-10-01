@@ -24,9 +24,9 @@
 
 関連リポジトリ:
 
-- [Aratako/Irodori-TTS](https://github.com/Aratako/Irodori-TTS) — Irodori-TTS(v2〜v4.1/v4-Large)の学習・推論・Gradio UI・LoRA・Speaker Inversionコード（★1,365 / MIT / 最終push 2026-09-12 / 確認コミット [`89f9d8fb`](https://github.com/Aratako/Irodori-TTS/blob/89f9d8fbd4d51ea019867ee1197725ede1df13c5/README.md)）
+- [Aratako/Irodori-TTS](https://github.com/Aratako/Irodori-TTS) — Irodori-TTS(v2〜v4.1/v4-Large)の学習・推論・Gradio UI・LoRA・Speaker Inversionコード（★1,373 / MIT / 最終push 2026-09-12 / 確認コミット [`89f9d8fb`](https://github.com/Aratako/Irodori-TTS/blob/89f9d8fbd4d51ea019867ee1197725ede1df13c5/README.md)）
   - 公式実装。MIT、★1363、コード参照788件、2026-09-12更新。anime版もカード上この実装で動かす指定。
-- [Aratako/Irodori-TTS-Server](https://github.com/Aratako/Irodori-TTS-Server) — OpenAI互換APIサーバー(Irodori用)（★77 / MIT / 最終push 2026-09-13 / 確認コミット [`61012c76`](https://github.com/Aratako/Irodori-TTS-Server/blob/61012c760f22f7b4a6c21c5c5f8f9e148120b6f9/README.md)）
+- [Aratako/Irodori-TTS-Server](https://github.com/Aratako/Irodori-TTS-Server) — OpenAI互換APIサーバー(Irodori用)（★78 / MIT / 最終push 2026-09-13 / 確認コミット [`61012c76`](https://github.com/Aratako/Irodori-TTS-Server/blob/61012c760f22f7b4a6c21c5c5f8f9e148120b6f9/README.md)）
   - 公式READMEが案内するOpenAI互換推論API。MIT、★77、2026-09-13更新。
 - [Aivis-Project/AivisSpeech-Engine](https://github.com/Aivis-Project/AivisSpeech-Engine) — 日本語感情表現TTSエンジン(VOICEVOX互換API+AIVM形式)（★181 / LGPL-3.0 / 最終push 2026-09-18 / release 1.2.0 (2026-04-30) / 確認コミット [`0cf0635d`](https://github.com/Aivis-Project/AivisSpeech-Engine/blob/0cf0635d5f74de4cf07e5fb87b25c4c1d0c8a331/README.md)）
   - 別系統: VOICEVOX ENGINE派生の日本語合成エンジン(LGPL-3.0)。X投稿で利用者10万人突破(@aivis_project)。CPUのみでも動作、AIVM形式のモデルハブあり。
@@ -38,7 +38,7 @@
 - **最良**: [Qwen/Qwen3-TTS-12Hz-1.7B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3)（revision `fd4b2543` / 作成 2026-01-21 / 更新 2026-01-23）
 - **利用条件**: apache-2.0。メタデータ・カードともApache-2.0。生成音声の権利・声質複製時の本人同意は利用者責任。商用可とは断定しない(Qwen3-TTS-Tokenizer等の付随条件は未精査)。
 - **選定根拠**: 【事実】アニメ特化の多言語ゼロショットTTSは見つからず(日本語アニメ用途はIrodori系が担う)。多言語用途の汎用最有力として Qwen/Qwen3-TTS-12Hz-1.7B-Base を採る。DL 30日3,706,350/累計19,655,002、likes 539、spaces 100、GitHub QwenLM/Qwen3-TTS ★13,597(Apache-2.0)、コード参照5,552件。カード記載: 日本語を含む10言語、3秒の音声で声質複製、fine-tune用ベース。自己報告の多言語WER(CustomVoice 1.7B、日本語4.924%、GPT-4o-AudioPreviewは5.001%)はBaseではなくCustomVoice版の数値。【評価】採用規模・Apache-2.0・公式実装で次点(VoxCPM2、OmniVoice、IndexTTS-2)より選定リスクが低い。【疑い】アニメ演技・キャラ音声での品質や日本語声質複製の比較データは未確認で、日本語アニメ用途ではIrodori系との直接比較がない。IndexTTS-2系はHFメタデータのライセンス未設定でLICENSE.txt個別確認が必要。
-- **指標（確認日時点）**: DL累計 19,655,002 / 直近30日 3,706,350 / likes 539 / Spaces 100
+- **指標（確認日時点）**: DL累計 19,745,143 / 直近30日 3,679,759 / likes 540 / Spaces 100
 - **概要**: Qwen3-TTS(12Hz)のBase 1.7B。日本語含む10言語、3秒程度の参照音声による声質複製、fine-tuneのベースとして利用可(カード記載)。
 - **入力**: テキスト+参照音声(+参照テキスト)
 - **出力**: 音声波形(ストリーミング低遅延に対応と記載)
@@ -50,9 +50,9 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) — Qwen3-TTS公式推論・fine-tuningコード（★13,597 / Apache-2.0 / 最終push 2026-03-17 / 確認コミット [`022e286b`](https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md) / 制作カタログ: [qwen3-tts](../../categories/tts.md#qwen3-tts)）
+- [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) — Qwen3-TTS公式推論・fine-tuningコード（★13,607 / Apache-2.0 / 最終push 2026-03-17 / 確認コミット [`022e286b`](https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md) / 制作カタログ: [qwen3-tts](../../categories/tts.md#qwen3-tts)）
   - 公式実装、Apache-2.0、★13,597、コード参照はモデルIDで5,552件。
-- [index-tts/index-tts](https://github.com/index-tts/index-tts) — IndexTTS-2系ゼロショットTTS(代替)（★24,240 / NOASSERTION / 最終push 2026-09-29 / release v2.5.0 (2026-08-13) / 確認コミット [`d9e41aac`](https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md) / 制作カタログ: [index-tts](../../categories/tts.md#index-tts)）
+- [index-tts/index-tts](https://github.com/index-tts/index-tts) — IndexTTS-2系ゼロショットTTS(代替)（★24,258 / NOASSERTION / 最終push 2026-09-29 / release v2.5.0 (2026-08-13) / 確認コミット [`d9e41aac`](https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md) / 制作カタログ: [index-tts](../../categories/tts.md#index-tts)）
   - ★24,238、v2.5.0を2026-08-13に公開、2026-09-29更新。ライセンスはGitHub上NOASSERTION(要個別確認)。
 
 ### テキスト音声合成(特定キャラの少量データ学習・専用声モデル作成)
@@ -74,9 +74,9 @@
 
 関連リポジトリ:
 
-- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 少量データ学習TTS/WebUI(学習・推論・データ整備ツール)（★62,274 / MIT / 最終push 2026-08-18 / release 20250606v2pro (2025-06-06) / 確認コミット [`48b1a016`](https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/README.md) / 制作カタログ: [gpt-sovits](../../categories/tts.md#gpt-sovits)）
+- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 少量データ学習TTS/WebUI(学習・推論・データ整備ツール)（★62,221 / MIT / 最終push 2026-08-18 / release 20250606v2pro (2025-06-06) / 確認コミット [`48b1a016`](https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/README.md) / 制作カタログ: [gpt-sovits](../../categories/tts.md#gpt-sovits)）
   - ★62,272、MIT、コード参照822件、日本語UI・日本語対応。
-- [litagin02/Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2) — 日本語特化の感情スタイル付きTTS学習/エディタ(SBV2)（★1,378 / AGPL-3.0 / 最終push 2025-12-07 / release 2.7.0 (2025-08-24) / 確認コミット [`66de777e`](https://github.com/litagin02/Style-Bert-VITS2/blob/66de777e06392c0f313600be03c43ef96658b244/README.md) / 制作カタログ: [style-bert-vits2](../../categories/tts.md#style-bert-vits2)）
+- [litagin02/Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2) — 日本語特化の感情スタイル付きTTS学習/エディタ(SBV2)（★1,379 / AGPL-3.0 / 最終push 2025-12-07 / release 2.7.0 (2025-08-24) / 確認コミット [`66de777e`](https://github.com/litagin02/Style-Bert-VITS2/blob/66de777e06392c0f313600be03c43ef96658b244/README.md) / 制作カタログ: [style-bert-vits2](../../categories/tts.md#style-bert-vits2)）
   - 日本語特化の感情スタイル付きTTS学習/エディタ(SBV2)。READMEはJP-Extra事前学習モデルを案内(リンク先litagin/Style-Bert-VITS2-2.0-base-JP-ExtraはHF APIで404を確認)。AGPL-3.0、★1,378、更新は2025-12。
 - [Aivis-Project/AivisSpeech-Engine](https://github.com/Aivis-Project/AivisSpeech-Engine) — AIVM形式モデルを使う日本語TTSエンジン（★181 / LGPL-3.0 / 最終push 2026-09-18 / release 1.2.0 (2026-04-30) / 確認コミット [`0cf0635d`](https://github.com/Aivis-Project/AivisSpeech-Engine/blob/0cf0635d5f74de4cf07e5fb87b25c4c1d0c8a331/README.md)）
   - VOICEVOX互換API、LGPL-3.0、2026-09-18更新、利用者10万人超の告知(X)。
@@ -88,7 +88,7 @@
 - **最良**: [ACE-Step/Ace-Step1.5](https://huggingface.co/ACE-Step/Ace-Step1.5/tree/19671f406d603126926c1b7e2adc169acbcade22)（revision `19671f40` / 作成 2026-01-23 / 更新 2026-02-03）
 - **利用条件**: mit。メタデータ・カードともMIT。カードは「ライセンス済み・ロイヤリティフリー・合成データで学習し商用利用可」と自己申告(第三者検証なし)。生成物の権利・類似曲リスクは利用者責任。商用可とは断定しない。
 - **選定根拠**: 【事実】アニメ/ボカロ/アニソン特化の公開楽曲生成モデルは見つからず。近いのは ryanontheinside/j_pop-acestep1.5-xl-v1(ACE-Step 1.5 XL用のJ-Pop LoRA、DL累計149、likes 0、ライセンス未設定)のみで採用実績なし。ゲームBGM特化(game music/bgm/chiptune検索)・アニメ特化SFX生成も該当なし。汎用の実用最良として ACE-Step/Ace-Step1.5 を採る: MIT、DL 30日60,818/累計429,095、likes 880、spaces 100、GitHub ace-step/ACE-Step-1.5 ★12,959、コード参照1,250件、LoRA学習が公式機能(カード/README: 8曲・3090で約1時間、約4GB未満VRAMで推論、50以上の言語)。【比較】MiniMaxAI/MiniMax-Music3(2026-08-07、likes 1,418、Gigazine記事で日本語ボーカル対応報道、独自Community License)とm-a-p/YuE2-3B(2026-09-09、likes 1,045、CC-BY-NC、自己報告のWildSongBenchでSuno v5超え、日本語対応の報道)は新しく話題だが、いずれも日本語歌唱品質の第三者比較が無い。【疑い】ACE-StepはXで日本語の漢字読み誤り・歌詞無視が報告されている。実際の日本語歌唱品質でMiniMax-Music3/YuE2が上回る可能性は高く、商用条件(ACEはMIT、MiniMaxは表示義務と年商2,000万USD超は要許諾、YuE2は非商用)で選ぶ暫定判断。
-- **指標（確認日時点）**: DL累計 429,095 / 直近30日 60,818 / likes 880 / Spaces 100
+- **指標（確認日時点）**: DL累計 431,547 / 直近30日 61,360 / likes 881 / Spaces 100
 - **概要**: 拡散Transformer+LM(計画役)の楽曲生成基盤モデル。歌詞+キャプションから完全な楽曲、カバー、リペイント、ボーカル→BGM変換。50以上の言語、LoRAによる少量曲での個人化に対応(カード記載)。
 - **入力**: 歌詞+スタイル記述(キャプション)、参照音声(カバー/編集)
 - **出力**: 楽曲音声(最大10分の構成が可能と記載)
@@ -100,11 +100,11 @@
 
 関連リポジトリ:
 
-- [ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5) — ACE-Step 1.5推論・LoRA学習・Gradio/API（★12,959 / MIT / 最終push 2026-09-03 / release v0.1.8 (2026-05-18) / 確認コミット [`ca1e85fe`](https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/README.md) / 制作カタログ: [ace-step-1.5](../../categories/music.md#ace-step-1.5)）
+- [ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5) — ACE-Step 1.5推論・LoRA学習・Gradio/API（★12,984 / MIT / 最終push 2026-10-01 / release v0.1.8 (2026-05-18) / 確認コミット [`ca1e85fe`](https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/README.md) / 制作カタログ: [ace-step-1.5](../../categories/music.md#ace-step-1.5)）
   - ★12,959、MIT、v0.1.8(2026-05-18)、2026-09-03更新。
-- [MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3) — MiniMax-Music3 公式推論コード(代替)（★921 / ライセンス未表示 / 最終push 2026-08-14 / 確認コミット [`94565506`](https://github.com/MiniMax-AI/MiniMax-Music3/blob/945655064d59b98004dd70002e7eb5c8c6e11373/README.md)）
+- [MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3) — MiniMax-Music3 公式推論コード(代替)（★925 / ライセンス未表示 / 最終push 2026-08-14 / 確認コミット [`94565506`](https://github.com/MiniMax-AI/MiniMax-Music3/blob/945655064d59b98004dd70002e7eb5c8c6e11373/README.md)）
   - ★919、2026-08-14更新。ComfyUI公式対応、モデルは独自Community License。
-- [multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) — YuE/YuE2 公式コード(代替)（★10,648 / Apache-2.0 / 最終push 2026-09-29 / release yue2-v0.1.6 (2026-09-09) / 確認コミット [`18a07bb6`](https://github.com/multimodal-art-projection/YuE/blob/18a07bb628f070c2eede44c3143834818e856a73/README.md) / 制作カタログ: [yue](../../categories/music.md#yue)）
+- [multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) — YuE/YuE2 公式コード(代替)（★10,687 / Apache-2.0 / 最終push 2026-09-29 / release yue2-v0.1.6 (2026-09-09) / 確認コミット [`18a07bb6`](https://github.com/multimodal-art-projection/YuE/blob/18a07bb628f070c2eede44c3143834818e856a73/README.md) / 制作カタログ: [yue](../../categories/music.md#yue)）
   - ★10,639、Apache-2.0(コード)、yue2-v0.1.6(2026-09-09)。モデル重みはCC-BY-NC。
 
 ### 音声認識(アニメ/ゲーム調の演技セリフ・非言語発話の書き起こし)
@@ -114,7 +114,7 @@
 - **最良**: [litagin/anime-whisper](https://huggingface.co/litagin/anime-whisper/tree/22e2008a8182b357da3922a6308d095008f72973)（revision `22e2008a` / 作成 2024-11-10 / 更新 2024-11-24）
 - **利用条件**: mit。メタデータMIT。学習データはガルゲ音声(litagin/Galgame_Speech_ASR_16kHz)で、ゲーム音声の権利は個別。NSFW音声も書き起こせるとカードに明記(汎用モデルとして扱うが利用場面に注意)。商用可とは断定しない。
 - **選定根拠**: 【事実】litagin/anime-whisper: kotoba-whisper-v2.0を、約5,300時間・373万ファイルのガルゲ音声(litagin/Galgame_Speech_ASR_16kHz)でfine-tune。DL 30日60,772/累計385,072、likes 163、spaces 9、コード参照125件。自己報告CER(学習外のノベルゲーム5作・約75kファイル、no_repeat_ngram_size=5): anime-whisper 平均13.0%、whisper-large-v3 16.5%、kotoba-whisper-v2.0 18.8%、reazonspeech-nemo-v2 23.6%。第三者(efwkjn、後発モデル作者)のBENCH.md(VNゲーム5作)でも、比較対象に含まれるlitagin/anime-whisperとみられる行「anime」(beam5・n-gram抑制、5作平均CER 13.2%)が後発whisper-ja-anime-v0.3(同設定13.6%)と同水準。※行名「anime」=litagin版は並び順からの推定[INFERENCE]、比較者は競合モデル作者で自己報告。HF Discussionで「非言語発話や擬音の処理は他モデルを大きく上回る」との称賛(2026-03)。【次点】jaykwok/Qwen3-ASR-1.7B-JA-Anime-Galgame(同じデータでQwen3-ASR-1.7Bを全層fine-tune、2026-05-31、DL 30日8,845、likes 1)は自己報告CER 0.1285(base 0.1437、対象4ソース800クリップ)だがanime-whisperとの直接比較が無くライセンスが「other」。【評価】実績・比較評価・MITで最も安全。【疑い】最終更新2024-11-24と古く、タイムスタンプ出力がpipeline標準でなく別途工夫が要る(Discussion #2,#3)。出力正規化の癖(。省略、…1個、半角英数)と、initial_prompt使用で幻覚化する制約。
-- **指標（確認日時点）**: DL累計 385,072 / 直近30日 60,772 / likes 163 / Spaces 9
+- **指標（確認日時点）**: DL累計 386,606 / 直近30日 60,093 / likes 163 / Spaces 9
 - **概要**: kotoba-whisper-v2.0(whisper-large-v3蒸留)をガルゲ音声・台本5,300時間でfine-tuneした日本語ASR。言い淀み・笑い・叫び・吐息などの非言語発話を忠実に書き起こし、句読点がセリフ台本調になる(カード記載)。
 - **入力**: 16kHz日本語音声(30秒チャンク、initial promptなし)
 - **出力**: 日本語テキスト(句読点・…つき。タイムスタンプは標準出力なし)
@@ -129,11 +129,11 @@
 
 - [litagin02/anime-whisper](https://github.com/litagin02/anime-whisper) — anime-whisperの評価・観察レポート置き場(READMEは評価コード公開予定と記載)（★49 / ライセンス未表示 / 最終push 2024-11-12 / 確認コミット [`5065987c`](https://github.com/litagin02/anime-whisper/blob/5065987cd1e9d8debad05f452d96aae52f5a92cc/README.md)）
   - ★49、ライセンス未設定、最終push 2024-11-12(停滞)。
-- [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) — Whisper系(CTranslate2変換版anime-whisper含む)の高速推論（★25,650 / MIT / 最終push 2026-09-30 / release v1.2.1 (2025-10-31) / 確認コミット [`2ce7f9d7`](https://github.com/SYSTRAN/faster-whisper/blob/2ce7f9d7a9fbe315a5804a33bf7224d42e101174/README.md)）
+- [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) — Whisper系(CTranslate2変換版anime-whisper含む)の高速推論（★25,668 / MIT / 最終push 2026-10-01 / release v1.2.1 (2025-10-31) / 確認コミット [`2ce7f9d7`](https://github.com/SYSTRAN/faster-whisper/blob/2ce7f9d7a9fbe315a5804a33bf7224d42e101174/README.md)）
   - ★25,643、MIT、2026-09-30更新。
-- [QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR) — Qwen3-ASR推論・fine-tuningツールキット(Qwen3-ASR系anime fine-tuneの実行基盤)（★3,631 / Apache-2.0 / 最終push 2026-06-26 / 確認コミット [`7c6daf77`](https://github.com/QwenLM/Qwen3-ASR/blob/7c6daf77a2421100f5fb066495372c00129d39ff/README.md)）
+- [QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR) — Qwen3-ASR推論・fine-tuningツールキット(Qwen3-ASR系anime fine-tuneの実行基盤)（★3,633 / Apache-2.0 / 最終push 2026-06-26 / 確認コミット [`7c6daf77`](https://github.com/QwenLM/Qwen3-ASR/blob/7c6daf77a2421100f5fb066495372c00129d39ff/README.md)）
   - ★3,630、Apache-2.0、Fine Tuning手順付き。
-- [m-bain/whisperX](https://github.com/m-bain/whisperX) — Whisper系の単語レベルタイムスタンプ・話者分離パイプライン（★24,320 / BSD-2-Clause / 最終push 2026-09-26 / release v3.8.6 (2026-05-25) / 確認コミット [`771b4a14`](https://github.com/m-bain/whisperX/blob/771b4a14a9486f8fd5aef18ef49e35d639523dd3/README.md)）
+- [m-bain/whisperX](https://github.com/m-bain/whisperX) — Whisper系の単語レベルタイムスタンプ・話者分離パイプライン（★24,332 / BSD-2-Clause / 最終push 2026-09-26 / release v3.8.6 (2026-05-25) / 確認コミット [`771b4a14`](https://github.com/m-bain/whisperX/blob/771b4a14a9486f8fd5aef18ef49e35d639523dd3/README.md)）
   - ★24,318、BSD-2-Clause、2026-09-26更新。anime-whisperはタイムスタンプが標準出力に無いため補助に使う(Discussion #3参照)。
 
 ### 音声認識(強制アライメント・字幕タイムスタンプ付与)
@@ -143,7 +143,7 @@
 - **最良**: [Qwen/Qwen3-ForcedAligner-0.6B](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B/tree/c7cbfc2048c462b0d63a45797104fc9db3ad62b7)（revision `c7cbfc20` / 作成 2026-01-28 / 更新 2026-01-30）
 - **利用条件**: apache-2.0。メタデータ・カードともApache-2.0。商用可とは断定しない(依存データ・トークナイザ条件は未精査)。
 - **選定根拠**: 【事実】アニメ特化の強制アライメントモデルは見つからず(日本語phoneme CTCのprj-beatrice/japanese-hubert-base-phoneme-ctc-v4は汎用)。汎用最有力は Qwen/Qwen3-ForcedAligner-0.6B: DL 30日404,713/累計3,151,906、likes 163、spaces 40、Apache-2.0、日本語を含む11言語、最大5分の音声で任意単位のタイムスタンプ(カード記載)。Qwen3-ASRと同梱の推論ツールキットがforced_alignerを標準サポート。MahmoudAshraf/mms-300m-1130-forced-aligner(DL 2.69M、likes 104)は多言語CTC方式の旧来標準。【評価】採用・ライセンス・保守で優位。anime-whisperの出力(タイムスタンプ無し)に後段で時刻付与する用途に向く。【疑い】アニメ演技(叫び、吐息、重なり発話)でのアライメント精度は未検証、カードの精度主張はE2E系との比較で自己報告。
-- **指標（確認日時点）**: DL累計 3,151,906 / 直近30日 404,713 / likes 163 / Spaces 40
+- **指標（確認日時点）**: DL累計 3,165,766 / 直近30日 407,745 / likes 163 / Spaces 40
 - **概要**: Qwen3-ASRファミリーの非自己回帰強制アライメントモデル(0.6B)。音声+書き起こしテキストから任意単位(語/文字など)のタイムスタンプを予測、最大5分・11言語。
 - **入力**: 音声+書き起こしテキスト
 - **出力**: 単位ごとの開始・終了時刻
@@ -155,11 +155,11 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR) — Qwen3-ASR/ForcedAligner公式ツールキット（★3,631 / Apache-2.0 / 最終push 2026-06-26 / 確認コミット [`7c6daf77`](https://github.com/QwenLM/Qwen3-ASR/blob/7c6daf77a2421100f5fb066495372c00129d39ff/README.md)）
+- [QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR) — Qwen3-ASR/ForcedAligner公式ツールキット（★3,633 / Apache-2.0 / 最終push 2026-06-26 / 確認コミット [`7c6daf77`](https://github.com/QwenLM/Qwen3-ASR/blob/7c6daf77a2421100f5fb066495372c00129d39ff/README.md)）
   - ★3,630、Apache-2.0、forced_aligner統合。
 - [MahmoudAshraf97/ctc-forced-aligner](https://github.com/MahmoudAshraf97/ctc-forced-aligner) — CTCベース強制アライメント(代替)（★566 / BSD-2-Clause / 最終push 2026-09-07 / release v0.2 (2024-06-03) / 確認コミット [`64293cc6`](https://github.com/MahmoudAshraf97/ctc-forced-aligner/blob/64293cc6d711e57666c4a8b098e9fd93b381fd88/README.md)）
   - ★566、BSD-2-Clause、2026-09-07更新。
-- [m-bain/whisperX](https://github.com/m-bain/whisperX) — Whisper+wav2vec2アライメント+話者分離パイプライン（★24,320 / BSD-2-Clause / 最終push 2026-09-26 / release v3.8.6 (2026-05-25) / 確認コミット [`771b4a14`](https://github.com/m-bain/whisperX/blob/771b4a14a9486f8fd5aef18ef49e35d639523dd3/README.md)）
+- [m-bain/whisperX](https://github.com/m-bain/whisperX) — Whisper+wav2vec2アライメント+話者分離パイプライン（★24,332 / BSD-2-Clause / 最終push 2026-09-26 / release v3.8.6 (2026-05-25) / 確認コミット [`771b4a14`](https://github.com/m-bain/whisperX/blob/771b4a14a9486f8fd5aef18ef49e35d639523dd3/README.md)）
   - ★24,318、BSD-2-Clause、最新v3.8.6(2026-05-25)。
 
 ### 音声変換(キャラ声への変換・歌声変換。RVC/Seed-VC系)
@@ -169,7 +169,7 @@
 - **最良**: [lj1995/VoiceConversionWebUI](https://huggingface.co/lj1995/VoiceConversionWebUI/tree/e6d0c1a17da07c33557852f9dfa2bd44cc75737d)（revision `e6d0c1a1` / 作成 2023-01-12 / 更新 2026-08-01）
 - **利用条件**: mit。メタデータMIT。学習に使う声(声優・ゲーム音声)の権利・本人同意は利用者責任。商用可とは断定しない。
 - **選定根拠**: 【事実】アニメ特化の汎用声質変換モデルは見つからず(HF上のアニメキャラRVCモデルは個別キャラの重みで、ArkanDash/rvc-genshin-impact likes 246など。基盤は汎用)。汎用最有力はRVC: HFのlj1995/VoiceConversionWebUI likes 1,222・spaces 100・Discussion 138、GitHub RVC-Project ★38,620(MIT)、最新リリース2.3.260718(2026-07-21)、2026-08-04更新と保守継続。対抗のPlachta/Seed-VC(GPL-3.0、HF likes 94・spaces 98、GitHub ★3,892)はゼロショット(1〜30秒参照)・歌声変換対応だが最終push 2025-04-20と停滞。IAHispano/Applio(MIT、★3,773、2026-09-29更新、3.6.5)はRVC系の活発なフォーク。【評価】キャラごとに学習するRVCの資産(ボイスモデル交換文化、ComfyUI/VST等)が最大のため選ぶ。【疑い】lj1995/VoiceConversionWebUIは事前学習モデルと実行バンドル(7z、ffmpeg.exe、bat)の置き場でモデルカードが空、DLは未集計(0)。声質の客観比較データなし。ゼロショット要件ならSeed-VCが適する。
-- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 1,222 / Spaces 100
+- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 1,223 / Spaces 100
 - **概要**: RVC(Retrieval-based Voice Conversion)WebUIの配布リポジトリ。hubert_base、事前学習重み、Windows向け実行バンドル(RVC20260718Nvidia.7z等)を含む。
 - **入力**: 変換元の音声(+対象話者のRVC重み/index)
 - **出力**: 対象話者の声に変換した音声
@@ -181,9 +181,9 @@
 
 関連リポジトリ:
 
-- [RVC-Project/Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) — RVC本体(学習・推論・WebUI)（★38,620 / MIT / 最終push 2026-08-04 / release 2.3.260718 (2026-07-21) / 確認コミット [`81eed5e8`](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/81eed5e8f68b6bed1789f682fe78cdd324495afc/README.md) / 制作カタログ: [retrieval-based-voice-conversion-webui](../../categories/tts.md#retrieval-based-voice-conversion-webui)）
+- [RVC-Project/Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) — RVC本体(学習・推論・WebUI)（★38,552 / MIT / 最終push 2026-08-04 / release 2.3.260718 (2026-07-21) / 確認コミット [`81eed5e8`](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/81eed5e8f68b6bed1789f682fe78cdd324495afc/README.md) / 制作カタログ: [retrieval-based-voice-conversion-webui](../../categories/tts.md#retrieval-based-voice-conversion-webui)）
   - ★38,620、MIT、2.3.260718(2026-07-21)。
-- [IAHispano/Applio](https://github.com/IAHispano/Applio) — RVC系の活発なフォーク(UI/プラグイン/学習改善)（★3,773 / MIT / 最終push 2026-09-29 / release 3.6.5 (2026-09-19) / 確認コミット [`c7665ac9`](https://github.com/IAHispano/Applio/blob/c7665ac9a305b3683570ed914f1577d53d4b75c4/README.md)）
+- [IAHispano/Applio](https://github.com/IAHispano/Applio) — RVC系の活発なフォーク(UI/プラグイン/学習改善)（★3,778 / MIT / 最終push 2026-09-29 / release 3.6.5 (2026-09-19) / 確認コミット [`c7665ac9`](https://github.com/IAHispano/Applio/blob/c7665ac9a305b3683570ed914f1577d53d4b75c4/README.md)）
   - ★3,773、MIT、3.6.5(2026-09-19)、2026-09-29更新。
 - [Plachtaa/seed-vc](https://github.com/Plachtaa/seed-vc) — ゼロショット声質変換/歌声変換（★3,892 / GPL-3.0 / 最終push 2025-04-20 / 確認コミット [`51383efd`](https://github.com/Plachtaa/seed-vc/blob/51383efd921027683c89e5348211d93ff12ac2a8/README.md)）
   - ★3,892、GPL-3.0、最終push 2025-04-20(停滞)。READMEは1〜30秒参照のゼロショットと最小1発話のfine-tuneを記載。
@@ -195,7 +195,7 @@
 - **最良**: [KimberleyJSN/melbandroformer](https://huggingface.co/KimberleyJSN/melbandroformer/tree/ac9b0614ab3cd7f77219e18ba494dfd93956c348)（revision `ac9b0614` / 作成 2024-08-06 / 更新 2026-04-22）
 - **利用条件**: mit。メタデータMIT(2026-04-22更新時点)。Discussion #2で作者が2025-06に「自由に使ってよい」と発言後、GPL-3.0を付与し、2026-04にMIT化の要望あり(メタデータは現在mit)。学習データ・商用利用の明示条件はカードになく、Discussion #4/#5の商用利用質問は未解決。商用可と断定しない。
 - **選定根拠**: 【事実】アニメ映像の台詞・BGM分離に特化した公開モデルは見つからず。汎用ではMel-Band RoFormer系がボーカル分離の実用標準で、KimberleyJSN/melbandroformer(likes 35、spaces 4)をKijaiがComfyUI向けsafetensors化したKijai/MelBandRoFormer_comfy(DL 30日48,020/累計878,199)が実利用の中心、コード参照"MelBandRoformer"1,912件。ZFTurbo/Music-Source-Separation-Training(★1,566、MIT、v1.0.22 2026-08-27)が学習/推論基盤。demucs(facebookresearch)は2024-04で更新停止・archived。【評価】原著者重みを採る(Kijai版は変換派生)。【疑い】元リポジトリは2025-06にGPL-3.0を追加、2026-04-19にMIT変更の要望が出て、メタデータは2026-04-22更新時点でmit(最初は無ライセンスで、許可発言のみだった)と経緯が不安定。商用利用Discussion(#4,#5)は未解決。SDR等の比較データは本調査で未取得、TV/アニメ音声(BGM+SE+台詞)での性能は未評価。
-- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 35 / Spaces 4
+- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 34 / Spaces 4
 - **概要**: Mel-Band RoFormerのボーカル分離チェックポイント(MelBandRoformer.ckpt)。ボーカル/伴奏の2ステム分離。
 - **入力**: 音楽/混合音声
 - **出力**: ボーカル+伴奏(インストゥルメンタル)
@@ -209,7 +209,7 @@
 
 - [ZFTurbo/Music-Source-Separation-Training](https://github.com/ZFTurbo/Music-Source-Separation-Training) — RoFormer系分離モデルの学習・推論フレームワーク（★1,567 / MIT / 最終push 2026-09-26 / release v1.0.22 (2026-08-27) / 確認コミット [`84b1eac0`](https://github.com/ZFTurbo/Music-Source-Separation-Training/blob/84b1eac0887756b4f1a9d7a1ff49105939749ed2/README.md)）
   - ★1,566、MIT、v1.0.22(2026-08-27)、2026-09-26更新。mel_band_roformer/bs_roformer等に対応。
-- [nomadkaraoke/python-audio-separator](https://github.com/nomadkaraoke/python-audio-separator) — 分離モデル(MDX/Roformer等)をCLI/ライブラリで実行（★1,392 / MIT / 最終push 2026-08-27 / release v0.47.0 (2026-08-27) / 確認コミット [`bf1164aa`](https://github.com/nomadkaraoke/python-audio-separator/blob/bf1164aa0f1ee1d1d0ef0f09b315f7659fc06bab/README.md)）
+- [nomadkaraoke/python-audio-separator](https://github.com/nomadkaraoke/python-audio-separator) — 分離モデル(MDX/Roformer等)をCLI/ライブラリで実行（★1,396 / MIT / 最終push 2026-08-27 / release v0.47.0 (2026-08-27) / 確認コミット [`bf1164aa`](https://github.com/nomadkaraoke/python-audio-separator/blob/bf1164aa0f1ee1d1d0ef0f09b315f7659fc06bab/README.md)）
   - ★1,391、MIT、v0.47.0(2026-08-27)。
 - [kijai/ComfyUI-MelBandRoFormer](https://github.com/kijai/ComfyUI-MelBandRoFormer) — ComfyUIノード(Mel-Band RoFormer)（★257 / ライセンス未表示 / 最終push 2026-01-30 / 確認コミット [`92c86854`](https://github.com/kijai/ComfyUI-MelBandRoFormer/blob/92c86854e6654f4aacc97484471af95c98ea16d4/README.md)）
   - ★257、ライセンス未設定、2026-01-30停滞。ComfyUI運用の実装基盤。
@@ -221,7 +221,7 @@
 - **最良**: [NandemoGHS/Anime-XCodec2-44.1kHz-v2](https://huggingface.co/NandemoGHS/Anime-XCodec2-44.1kHz-v2/tree/58a5080a103abd861052b323279ccabb2333b636)（revision `58a5080a` / 作成 2025-10-27 / 更新 2025-10-28）
 - **利用条件**: cc-by-nc-4.0。メタデータ・カードともCC-BY-NC-4.0(非商用)。学習に使った約22,000時間の日本語データの出所・権利はカードに記載なし。商用不可。
 - **選定根拠**: 【事実】アニメ/ゲーム調日本語音声向けの公開コーデックとして NandemoGHS/Anime-XCodec2-44.1kHz-v2 がある(約22,000時間の日本語データでデコーダのみfine-tune、エンコーダ/コードブック固定でXCodec2トークン互換、16kHz入力→44.1kHz出力)。DL 30日1,153/累計27,011、likes 14、CC-BY-NC-4.0、2025-10-27。Anime-Llasa-3B系のTTSを44.1kHzで使うための用途特化で、他用途の採用は限定的。【比較】Aratako/MioCodec-25Hz-44.1kHz-v2(MIT、DL 30日486,900/累計746,988、likes 14、2026-02-14)は採用規模で圧倒的(25Hz/341bps、133M、カード記載)だが、カードにアニメ特化の記載はない(Aratako製の汎用コーデック)。Irodori系はSemantic-DACVAE-Japanese-32dim(MIT)を使用。【評価】アニメ特化の選択としてはこれだが、CC-BY-NC・Llasa依存のため、新規開発ではMioCodec/DACVAE系(MIT)が現実的。【疑い】再構成品質の客観指標はカードになし(超解像用途は未評価と明記)、カスタムxcodec2ライブラリ(v0.1.7以上)必須。
-- **指標（確認日時点）**: DL累計 27,011 / 直近30日 1,153 / likes 14 / Spaces 2
+- **指標（確認日時点）**: DL累計 27,038 / 直近30日 1,136 / likes 14 / Spaces 2
 - **概要**: Anime-XCodec2(XCodec2のアニメ/ゲーム調日本語fine-tune)の44.1kHz版v2。UpSamplerBlockとRMS lossをデコーダに追加し、44.1kHzの日本語音声を再構成。
 - **入力**: 16kHz音声(またはXCodec2トークン)
 - **出力**: 44.1kHz波形
@@ -238,7 +238,7 @@
 - **最良**: [litagin/anime_speech_emotion_classification](https://huggingface.co/litagin/anime_speech_emotion_classification/tree/6b94a022f4ee2aa4d67bfcb9c670cef8b5ac7833)（revision `6b94a022` / 作成 2025-04-01 / 更新 2025-06-28）
 - **利用条件**: mit。メタデータMIT。学習データのGalgame_Speech_SER_16kHz(ゲーム音声)の権利はカードに記載なし。商用可と断定しない。
 - **選定根拠**: 【事実】litagin/anime_speech_emotion_classification: litagin/Galgame_Speech_SER_16kHzで学習した感情分類(Angry/Disgusted/Embarrassed/Fearful/Happy/Sad/Surprised/Neutral+Sexual1/Sexual2の10クラス)。DL 30日154/累計5,267、likes 6、MIT、2025-04-01。アニメ/ゲーム調の演技音声に対応する公開感情分類は他に見つからない(日本語汎用のBagus/wav2vec2-xlsr-japanese-speech-emotion-recognitionはDL 30日1,997だがアニメ特化でない)。【評価】他に選択肢が無いため採用。【疑い】カードに精度・混同行列・ベンチが無く品質は不明、Sexual1/2クラス(喘ぎ/咀嚼音)を含む。採用規模も小さい。
-- **指標（確認日時点）**: DL累計 5,267 / 直近30日 154 / likes 6 / Spaces 0
+- **指標（確認日時点）**: DL累計 5,276 / 直近30日 158 / likes 6 / Spaces 0
 - **概要**: ガルゲ音声データで学習した音声感情分類モデル(10クラス、カスタムコード使用)。
 - **入力**: 16kHz音声
 - **出力**: 感情ラベルとスコア(Angry, Disgusted, Embarrassed, Fearful, Happy, Sad, Surprised, Neutral, Sexual1, Sexual2)
@@ -298,7 +298,7 @@
 - **最良**: [onnx-community/silero-vad](https://huggingface.co/onnx-community/silero-vad/tree/e71cae966052b992a7eca6b17738916ce0eca4ec)（revision `e71cae96` / 作成 2024-07-02 / 更新 2024-12-15）
 - **利用条件**: mit。HFメタデータMIT(ONNX派生・LICENSEファイルあり)、GitHub公式もMIT(READMEで縛りなしと明記)。学習データの詳細はHFカードにない。
 - **選定根拠**: 【事実】アニメ特化のVADは見つからず。汎用の実績標準は Silero VAD(GitHub snakers4/silero-vad ★10,332、MIT、v6.2.3を2026-09-23公開、1音声チャンク30ms+を単一CPUスレッド1ms未満、6000言語超で学習と主張)。ガルゲ/VNデータセット作成ツールStyle-Bert-VITS2のslice.pyがsilero-vad(litagin02/silero-vadフォーク)を使うことをコードで確認。HF上の公式リポジトリは無く、onnx-community/silero-vad(MIT、likes 47、spaces 12)をHF代表として掲載(DLは未集計0)。対抗のpyannote/segmentation-3.0は likes 2,041・DL 30日5.4M・累計400M・MITだがgated(auto)で、主用途は話者分離のセグメンテーション。NVIDIAのNemotron-3-Diarization(2026-09-01、likes 549)は新しく話者分離向け。【評価】軽量・permissive・データ切り出し用途の実績でSilero。【疑い】アニメ演技音声の吐息・笑い・ささやきでの欠落率は未検証、BGM重畳時の挙動も未評価。
-- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 47 / Spaces 12
+- **指標（確認日時点）**: DL累計 0 / 直近30日 0 / likes 46 / Spaces 12
 - **概要**: Silero VADのONNX変換(onnx-community、カード本文なし、YAMLメタデータのみ。バージョンは未確認)。音声/非音声を短いチャンク単位で判定する軽量VAD(公式実装はGitHub snakers4/silero-vad)。
 - **入力**: 8kHz/16kHz音声
 - **出力**: 音声区間確率(フレーム単位)→区間リスト
@@ -310,9 +310,9 @@
 
 関連リポジトリ:
 
-- [snakers4/silero-vad](https://github.com/snakers4/silero-vad) — Silero VAD公式実装(PyTorch/ONNX、PyPI配布)（★10,334 / MIT / 最終push 2026-09-29 / release v6.2.3 (2026-09-23) / 確認コミット [`1e261b03`](https://github.com/snakers4/silero-vad/blob/1e261b036686cd0017d500ee96acd1c4ba572a9d/README.md)）
+- [snakers4/silero-vad](https://github.com/snakers4/silero-vad) — Silero VAD公式実装(PyTorch/ONNX、PyPI配布)（★10,338 / MIT / 最終push 2026-09-29 / release v6.2.3 (2026-09-23) / 確認コミット [`1e261b03`](https://github.com/snakers4/silero-vad/blob/1e261b036686cd0017d500ee96acd1c4ba572a9d/README.md)）
   - ★10,332、MIT、v6.2.3(2026-09-23)。Style-Bert-VITS2のslice.pyが使用。
-- [pyannote/pyannote-audio](https://github.com/pyannote/pyannote-audio) — VAD/話者分離パイプライン(代替)（★10,607 / MIT / 最終push 2026-09-24 / release 4.0.7 (2026-06-30) / 確認コミット [`b749285c`](https://github.com/pyannote/pyannote-audio/blob/b749285c5cdd4636b2edc7f766f1352c8dde9369/README.md)）
+- [pyannote/pyannote-audio](https://github.com/pyannote/pyannote-audio) — VAD/話者分離パイプライン(代替)（★10,611 / MIT / 最終push 2026-09-24 / release 4.0.7 (2026-06-30) / 確認コミット [`b749285c`](https://github.com/pyannote/pyannote-audio/blob/b749285c5cdd4636b2edc7f766f1352c8dde9369/README.md)）
   - ★10,607、MIT、4.0.7(2026-06-30)。
 
 ### 音声区間検出(話者分離・キャラ別発話割当て)
@@ -322,7 +322,7 @@
 - **最良**: [pyannote/speaker-diarization-community-1](https://huggingface.co/pyannote/speaker-diarization-community-1/tree/3533c8cf8e369892e6b79ff1bf80f7b0286a54ee)（revision `3533c8cf` / 作成 2025-04-15 / 更新 2025-09-29）
 - **利用条件**: cc-by-4.0 / gated。メタデータ・カードともCC-BY-4.0(帰属表示が必要)。gated(auto)でHF利用条件の承認が必要。学習データ由来の制約はカードに要確認。商用可と断定しない。
 - **選定根拠**: 【事実】アニメ特化の話者分離モデルは見つからず。汎用のpyannote/speaker-diarization-community-1(CC-BY-4.0、gated(auto)、DL 30日5,462,903/累計31,718,971、likes 2,329、spaces 49)を採る。カード(公開ミラーpyannote-community/...で閲覧、公式はgated)は自己報告DERでAMI(IHM)17.0%(3.1系は18.8%)、AliMeeting 20.3%(24.5%)、DIHARD 3 20.2%(21.4%)など旧3.1比で改善と記載(会議/通話系データ)。新興の nvidia/Nemotron-3-Diarization(2026-09-01、openmdw-1.1、非gated、likes 549、DL 30日36,386、最大8話者・ストリーミング対応)は有望だが公開1か月で実績少、最大8話者制限あり。【評価】実績・ライセンス・パイプライン完備でpyannote。アニメでは登場人物が多く重なり発話・BGMがあるため、キャラ別の割当てには litagin/anime_speaker_embedding(キャラ/声優の埋め込み)でクラスタリングを併用する方が現実的と推定[INFERENCE]。【疑い】アニメ音声での精度は未評価、最新版のカード本文は公式リポジトリがgatedで直接確認できていない(ミラーで代替)。
-- **指標（確認日時点）**: DL累計 31,718,971 / 直近30日 5,462,903 / likes 2,341 / Spaces 49
+- **指標（確認日時点）**: DL累計 31,926,751 / 直近30日 5,503,362 / likes 2,382 / Spaces 49
 - **概要**: pyannoteの話者分離パイプライン(community-1)。16kHzモノラルを入力に、話者分離と話者カウントを出力(3.1より改善)。exclusive speaker diarization(ASRタイムスタンプとの突合せ用)を提供。
 - **入力**: 音声(モノラル16kHzへ自動変換)
 - **出力**: 話者ごとの発話区間(RTTM相当)
@@ -334,9 +334,9 @@
 
 関連リポジトリ:
 
-- [pyannote/pyannote-audio](https://github.com/pyannote/pyannote-audio) — 話者分離/VAD/埋め込みのツールキット（★10,607 / MIT / 最終push 2026-09-24 / release 4.0.7 (2026-06-30) / 確認コミット [`b749285c`](https://github.com/pyannote/pyannote-audio/blob/b749285c5cdd4636b2edc7f766f1352c8dde9369/README.md)）
+- [pyannote/pyannote-audio](https://github.com/pyannote/pyannote-audio) — 話者分離/VAD/埋め込みのツールキット（★10,611 / MIT / 最終push 2026-09-24 / release 4.0.7 (2026-06-30) / 確認コミット [`b749285c`](https://github.com/pyannote/pyannote-audio/blob/b749285c5cdd4636b2edc7f766f1352c8dde9369/README.md)）
   - ★10,607、MIT、4.0.7(2026-06-30)、2026-09-24更新。
-- [NVIDIA/NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) — Nemotron-3-Diarization向けC++推論ランタイム(代替)（★148 / Apache-2.0 / 最終push 2026-09-30 / release v0.1.0 (2026-08-19) / 確認コミット [`4c101bc7`](https://github.com/NVIDIA/NeMo-Speech.cpp/blob/4c101bc7113f49101a3e11d2c994c519f41939f6/README.md)）
+- [NVIDIA/NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) — Nemotron-3-Diarization向けC++推論ランタイム(代替)（★153 / Apache-2.0 / 最終push 2026-10-01 / release v0.1.0 (2026-08-19) / 確認コミット [`4c101bc7`](https://github.com/NVIDIA/NeMo-Speech.cpp/blob/4c101bc7113f49101a3e11d2c994c519f41939f6/README.md)）
   - ★147、Apache-2.0、v0.1.0(2026-08-19)、2026-09-30更新。
 
 ### 音声+テキスト→テキスト(アニメ/ゲーム調セリフの感情・話者特徴キャプション生成、TTS学習用注釈)
@@ -346,7 +346,7 @@
 - **最良**: [NandemoGHS/Anime-Speech-Japanese-Captioner](https://huggingface.co/NandemoGHS/Anime-Speech-Japanese-Captioner/tree/07433a522b1435b1bd88ff24c2527bc6c715616b)（revision `07433a52` / 作成 2025-11-03 / 更新 2025-11-03）
 - **利用条件**: cc-by-nc-4.0。メタデータ・カードともCC-BY-NC-4.0(非商用)。学習データ(Galgame_Gemini_Captions)はGemini 2.5 Pro生成でGeminiと競合する用途の禁止条件があり、元はゲーム音声(日本の著作権法上の学習利用を主張)。商用不可。
 - **選定根拠**: 【事実】アニメ/ゲーム調の日本語音声に特化した音声LLMは NandemoGHS/Anime-Speech-Japanese-Captioner(Qwen3-Omni-30B-A3B-Captionerをfine-tune、emotion/profile/mood/speed/prosody/pitch_timbre/style/notes/captionを出力)と同作者のAnime-Speech-Japanese-Refiner(音声+元書き起こし→非言語事象入りの修正書き起こし+記述)のみ。Captioner: DL 30日89/累計223、likes 10、CC-BY-NC-4.0、2025-11-03、FP8版あり。Refiner: DL 累計2,209、likes 12。学習データはGemini 2.5 Proが付けたキャプション(NandemoGHS/Galgame_Gemini_Captions、OOPPEENN VNデータのシャッフル済み部分集合、CC-BY-NC・Gemini競合利用禁止)。【評価】TTS学習用キャプション(Irodori系のcaption条件)作成の自前化手段として唯一の専用モデル。汎用代替はQwen/Qwen3-Omni-30B-A3B-Instruct(DL 30日597,430、likes 1,011、licenseメタデータは「other」)。【疑い/注意】カード掲載の出力例が性的内容(喘ぎ声・性的興奮)でデータにR18ゲーム音声を多く含むことが示唆される(adult特化を目的とは記載していないが、出力が性的になりうる)。採用規模が極小、評価指標なし、vLLM開発コミット指定のビルドが必要、30B級で重い。
-- **指標（確認日時点）**: DL累計 223 / 直近30日 89 / likes 10 / Spaces 0
+- **指標（確認日時点）**: DL累計 226 / 直近30日 92 / likes 10 / Spaces 0
 - **概要**: Qwen3-Omni-30B-A3B-Captionerをfine-tuneした、日本語アニメ/ゲーム調音声のキャプション生成モデル。感情、話者像、気分、速度、韻律、ピッチ/音色、スタイルを日本語の構造化テキストで返す。
 - **入力**: 音声(1クリップ)
 - **出力**: 日本語の構造化キャプション(emotion/profile/mood/speed/prosody/pitch_timbre/style/notes/caption)
@@ -359,7 +359,7 @@
 
 関連リポジトリ:
 
-- [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) — Qwen3-Omni公式(Captioner/Refinerのベースモデル)（★4,036 / Apache-2.0 / 最終push 2026-04-23 / 確認コミット [`e4235853`](https://github.com/QwenLM/Qwen3-Omni/blob/e4235853125589c789f06a2dd83e9f4126df5e9d/README.md)）
+- [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) — Qwen3-Omni公式(Captioner/Refinerのベースモデル)（★4,037 / Apache-2.0 / 最終push 2026-04-23 / 確認コミット [`e4235853`](https://github.com/QwenLM/Qwen3-Omni/blob/e4235853125589c789f06a2dd83e9f4126df5e9d/README.md)）
   - ★4,035、Apache-2.0。
-- [modelscope/ms-swift](https://github.com/modelscope/ms-swift) — Captioner/Refinerの学習に使われたfine-tuningフレームワーク(カード記載)（★15,761 / Apache-2.0 / 最終push 2026-09-30 / release v4.5.3 (2026-09-08) / 確認コミット [`02baac98`](https://github.com/modelscope/ms-swift/blob/02baac9832ba12cd24144266ac2ea7020ad0e4b8/README.md)）
+- [modelscope/ms-swift](https://github.com/modelscope/ms-swift) — Captioner/Refinerの学習に使われたfine-tuningフレームワーク(カード記載)（★15,767 / Apache-2.0 / 最終push 2026-10-01 / release v4.5.3 (2026-09-08) / 確認コミット [`02baac98`](https://github.com/modelscope/ms-swift/blob/02baac9832ba12cd24144266ac2ea7020ad0e4b8/README.md)）
   - ★15,761、Apache-2.0、v4.5.3(2026-09-08)、2026-09-30更新。

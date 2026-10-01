@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-09-30",
+  "updated_on": "2026-10-01",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1228812,
-        "likes": 2330,
+        "downloads_last_month": 1243463,
+        "likes": 2334,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 366672,
-        "likes": 530,
+        "downloads_last_month": 367630,
+        "likes": 532,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 83888,
+        "downloads_last_month": 84374,
         "likes": 432,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 135958,
-        "likes": 177,
+        "downloads_last_month": 142631,
+        "likes": 178,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1435,
+        "downloads_last_month": 1479,
         "likes": 16,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1097,
+        "downloads_last_month": 1148,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -380,7 +380,7 @@
         "downloads_last_month": 0,
         "likes": 228,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 917,
+        "downloads_last_month": 867,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 705,
+        "downloads_last_month": 700,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 31,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 803,
+        "downloads_last_month": 846,
         "likes": 96,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-09-30"
+        "checked_on": "2026-10-01"
       },
       "sources": [
         {
@@ -613,7 +613,176 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "indextts-2-5",
+      "name": "IndexTTS-2.5",
+      "hub_repository": "IndexTeam/IndexTTS-2.5",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+      "category": "tts",
+      "checked_on": "2026-10-01",
+      "architecture_ja": "GPTバックボーン＋フローマッチングの音声-to-メルデコーダ＋BigVGANボコーダで構成される自己回帰ゼロショットTTS。GPTバックボーンは約0.8B。出力は22.05kHz。",
+      "variants_ja": "リポジトリ直下がフル精度重み（codec.pth、gpt.pth、s2mel.pth、qwen0.6bemo4-merge 等）。補助モデル(w2v-bert-2.0、MaskGCTセマンティックコーデック、CAMPPlus、BigVGAN)は同梱されず初回実行時にhf_cacheへ自動取得される。量子化版の記載はない。",
+      "prompting_ja": "参照音声1本で話者をクローンし、langで言語(EN/ZH/JA/ES/AR)を指定。8要素の感情ベクトル[happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]で感情を制御でき、<word|reading>で読み（Pinyin/CMU/Kana）、duration_factor(0.5〜2.0)で話速を調整する。",
+      "requirements_ja": "Python 3.10〜3.11、NVIDIA GPU、推論におよそ6GBのVRAM。uvでセットアップし、webui.pyも用意される。",
+      "limitations_ja": "長文は分割して無音を挟んで連結するため、セグメント境界をまたぐ韻律は扱わない。テキスト記述からの感情制御にはQwenEmotionモデルが必要で、use_qwen_emo=True時のみ読み込まれる。参照話者の同意確認は利用者の責任と明記。",
+      "license_notes_ja": "licenseはother、license_nameはbilibili-model-license。公開重みを無条件の商用可として扱わない。",
+      "assessment_ja": "日本語を含む多言語のゼロショット声質クローンと、声質から切り離した感情制御を備え、キャラクター音声制作の候補になる。アニメ特化モデルではなく汎用のTTS。",
+      "next_validation_ja": "同一の参照音声でIndexTTS-2と比較し、推論速度・感情ベクトルの追従・日本語の読みと句読点処理を記録する。",
+      "distribution": {
+        "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+        "api_url": "https://huggingface.co/api/models/IndexTeam/IndexTTS-2.5",
+        "checked_on": "2026-10-01",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "bilibili-model-license",
+        "evidence_files": [
+          "codec.pth",
+          "feat1.pt",
+          "feat2.pt",
+          "gpt.pth"
+        ],
+        "matching_weight_file_count": 7
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 13912,
+        "likes": 228,
+        "last_modified": "2026-08-12T07:23:44.000Z",
+        "checked_on": "2026-10-01"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/c39ce5ba981572cb187443877ff559dfb246ce63/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/IndexTeam/IndexTTS-2.5",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "qwen2d-anime-vae",
+      "name": "Qwen2D-Anime-VAE",
+      "hub_repository": "Anzhc/Qwen2D-Anime-VAE",
+      "url": "https://huggingface.co/Anzhc/Qwen2D-Anime-VAE",
+      "category": "image",
+      "checked_on": "2026-10-01",
+      "architecture_ja": "Qwen Image VAE(非テンポラル版)のデコーダを調整したVAE。ComfyUI用ノードパック(anzhc-qwen2d-comfyui)から使用する。",
+      "variants_ja": "Qwen2D-Anime-dense-440k_ema_epoch_1.safetensors と Qwen2D-Anime-dense_epoch_1.safetensors の2ファイル。",
+      "prompting_ja": "モデルカードにプロンプト記述はなく、対応ワークフローのVAEを差し替えて使う想定。カードの説明は過剰シャープの軽減、瞳など小さい要素の改善、ノイズ低減という位置づけ。",
+      "requirements_ja": "カードに必要環境・VRAMの記載はない。ComfyUI用ノードパックの導入が必要。",
+      "limitations_ja": "デコーダ調整のみで、カードには解像度・再現手順・比較条件の記載が少ない。効果は作者の比較画像に基づくもので、数値評価は無い。",
+      "license_notes_ja": "apache-2.0。",
+      "assessment_ja": "Qwen Image系のアニメ絵ワークフローで、過剰シャープや小物（瞳など）の破綻を抑える狙いのVAE候補。",
+      "next_validation_ja": "同一シード・同一プロンプトで標準VAEと差し替え比較し、瞳や細部、全体のノイズ感の差を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Anzhc/Qwen2D-Anime-VAE",
+        "api_url": "https://huggingface.co/api/models/Anzhc/Qwen2D-Anime-VAE",
+        "checked_on": "2026-10-01",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "d59c106b50524909ac660cd97a32fdf49b2f8f21",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "Qwen2D-Anime-dense-440k_ema_epoch_1.safetensors",
+          "Qwen2D-Anime-dense_epoch_1.safetensors"
+        ],
+        "matching_weight_file_count": 2
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 5797,
+        "likes": 14,
+        "last_modified": "2026-09-18T01:44:16.000Z",
+        "checked_on": "2026-10-01"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Anzhc/Qwen2D-Anime-VAE/blob/d59c106b50524909ac660cd97a32fdf49b2f8f21/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Anzhc/Qwen2D-Anime-VAE",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "ml-danbooru-onnx",
+      "name": "ml-danbooru-onnx",
+      "hub_repository": "deepghs/ml-danbooru-onnx",
+      "url": "https://huggingface.co/deepghs/ml-danbooru-onnx",
+      "category": "workflow",
+      "checked_on": "2026-10-01",
+      "architecture_ja": "ML-DanbooruのONNX変換版。Caformer-M36（畳み込み＋Transformer）とTResnet-D系の画像分類モデルで、Danbooru系タグを推定する。",
+      "variants_ja": "主モデルはml_caformer_m36_dec-5-97527.onnx。他にml_caformer_m36_dec-3-80000.onnx、caformer_m36-3-80000.onnx、TResnet-D-FLq系が複数。classes.json（簡易タグ1527件）とtags.csv（12547件）を同梱する。",
+      "prompting_ja": "プロンプトではなく、dghs-imgutilsのget_mldanbooru_tagsに画像を渡す。threshold(既定0.7)・size(既定448)・keep_ratio・drop_overlapなどを指定してタグを得る。",
+      "requirements_ja": "pip install dghs-imgutils。ONNXランタイム上で動作。既定入力は448x448。",
+      "limitations_ja": "2023年公開のモデルで、タグ体系は当時のDanbooruに準拠する。カードに精度の数値は記載されておらず、近年の作風やタグ語彙への追随は未確認。",
+      "license_notes_ja": "mit。",
+      "assessment_ja": "手持ちイラストの自動タグ付けに使え、学習用データセット整備やキャラ・属性の下ごしらえに向く。",
+      "next_validation_ja": "対象イラストでthresholdを変えてタグの妥当性を確認し、日本語のキャラ名や作品名がどの程度拾えるかを測る。",
+      "distribution": {
+        "url": "https://huggingface.co/deepghs/ml-danbooru-onnx",
+        "api_url": "https://huggingface.co/api/models/deepghs/ml-danbooru-onnx",
+        "checked_on": "2026-10-01",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "eb9058324a741f1b90d4db168f6e1d6b6cb7e63d",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "TResnet-D-FLq_ema_2-40000.onnx",
+          "TResnet-D-FLq_ema_4-10000.onnx",
+          "TResnet-D-FLq_ema_6-10000.onnx",
+          "TResnet-D-FLq_ema_6-30000.onnx"
+        ],
+        "matching_weight_file_count": 7
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 11,
+        "last_modified": "2025-11-17T13:15:43.000Z",
+        "checked_on": "2026-10-01"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/deepghs/ml-danbooru-onnx/blob/eb9058324a741f1b90d4db168f6e1d6b6cb7e63d/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/deepghs/ml-danbooru-onnx",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-09-30"
+  "metrics_refreshed_on": "2026-10-01"
 }

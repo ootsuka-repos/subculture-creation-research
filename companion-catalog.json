@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "checked_on": "2026-09-30",
+ "checked_on": "2026-10-01",
  "scope_ja": "アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。",
  "notice_ja": "**注意**: リンク先のコード・モデル・音声・キャラクター素材の権利はそれぞれ別です。掲載は動作・安全性・商用利用の保証ではありません。導入前に各リポジトリのライセンス、同梱素材と外部APIの利用条件を確認してください。版権キャラのモデル・声の再利用や、実在人物の発言・私的な記録を用いた人格作成には権利と同意の確認が必要です。",
  "discovery_md": "調査の入口: [live2d](https://github.com/topics/live2d) · [vtuber](https://github.com/topics/vtuber) · [anime](https://github.com/topics/anime) · [waifu](https://github.com/topics/waifu) · [virtualassistant](https://github.com/topics/virtualassistant) · [ai-companion](https://github.com/topics/ai-companion) · [chatbot](https://github.com/topics/chatbot) · [digital-human](https://github.com/topics/digital-human) のトピック、GitHubの関連語検索、[awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers) と [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion)。候補リストやトピックの掲載だけで採用せず、各プロジェクトのREADME・関連ドキュメントで機能と未実装部分を確認しています（2026-09-23）。",
@@ -682,6 +682,36 @@
    "summary_ja": "SOUL.mdとSQLiteを核にしたlocal-firstの自律デジタル存在アーキテクチャ。Electronデスクトップで長期記憶・能動対話・MCP権限ゲート・Live2D表現を扱う。",
    "catalog_id": null,
    "checked_on": "2026-09-30"
+  },
+  {
+   "id": "liwusen-faustbot-llm-vtuber",
+   "name": "FaustBot-llm-vtuber",
+   "url": "https://github.com/liwusen/FaustBot-llm-vtuber",
+   "repository": "liwusen/FaustBot-llm-vtuber",
+   "section_id": "s1",
+   "summary_ja": "LangGraphベースのエージェントを中核にしたWindows向けデスクトップAI VTuber。GPT-SoVITSの専用声、Seed-VCによる歌、Live2D/VRMの形象、B站直播への弾幕応答、自動整理される長期記憶とDesktop Moodによる自発的な話しかけを備える。",
+   "catalog_id": null,
+   "checked_on": "2026-10-01"
+  },
+  {
+   "id": "firetable-project-xiaochun",
+   "name": "project-xiaochun",
+   "url": "https://github.com/FireTable/project-xiaochun",
+   "repository": "FireTable/project-xiaochun",
+   "section_id": "s2",
+   "summary_ja": "完全にブラウザ内で動くアニメ系コンパニオン。WebLLM(MiniCPM5/Qwen)と端末内STT、EMAGEの全身モーション、Edge-TTSでVRMキャラと対話し、Tauri製デスクトップ版では枠なし透過のデスクトップペット表示もできる。",
+   "catalog_id": null,
+   "checked_on": "2026-10-01"
+  },
+  {
+   "id": "yuricrystal-ai-avatar-bot",
+   "name": "ai-avatar-bot",
+   "url": "https://github.com/YuriCrystal/ai-avatar-bot",
+   "repository": "YuriCrystal/ai-avatar-bot",
+   "section_id": "s2",
+   "summary_ja": "1行のscriptタグでWebサイトに埋め込めるLive2D/VRMの音声AIキャラ。ブラウザ内のSTT/TTSと音量駆動のリップシンク、知識ベース検索、companionモードのローカル記憶、管理用ダッシュボードを備える。",
+   "catalog_id": null,
+   "checked_on": "2026-10-01"
   }
  ]
 }

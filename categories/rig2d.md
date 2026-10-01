@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,10 +12,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 231 / 2026-09-23 |
+| [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 232 / 2026-09-23 |
 | [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 241 / 2026-09-28 |
 | [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 494 / 2026-04-28 |
-| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 514 / 2026-09-30 |
+| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 524 / 2026-10-01 |
 
 <a id="anime2.5drig"></a>
 
@@ -31,7 +31,7 @@ PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追�
 - **依存**: MediaPipe FaceMesh（顔追跡時）、分解済みPSD
 - **制約・未確認**: 入力PSDのレイヤー構造に依存。動作品質は未検証。
 - **編集者評価**: 2026年7月作成、9月更新。See-through出力と接続しやすいブラウザ実装。
-- **メトリクス**: ★231、fork 40、作成 2026-07-04、最終push 2026-09-23T07:01:12Z、archived=False
+- **メトリクス**: ★232、fork 40、作成 2026-07-04、最終push 2026-09-23T07:01:12Z、archived=False
 - **確認**: 2026-09-09 / コミット `7450341934a8ff77bf05b90d9f708786e3eb3996`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/852wa/Anime2.5DRig/tree/7450341934a8ff77bf05b90d9f708786e3eb3996)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -113,7 +113,7 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **依存**: See-through形式PSD、DWPose（選択時）
 - **制約・未確認**: 最終pushは2026年4月。最近の活発な更新とは扱わない。
 - **編集者評価**: See-throughから演出・編集につなぐ公開ブラウザツール。
-- **メトリクス**: ★494、fork 71、作成 2026-04-12、最終push 2026-04-28T03:53:09Z、archived=False
+- **メトリクス**: ★494、fork 70、作成 2026-04-12、最終push 2026-04-28T03:53:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `24a83a27ba43e43e9d2e3de5e33994594e6199c2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/MangoLion/stretchystudio/tree/24a83a27ba43e43e9d2e3de5e33994594e6199c2)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -150,7 +150,7 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **依存**: Live2D Cubism SDKは同梱せず、公式SDKは任意。
 - **制約・未確認**: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
 - **編集者評価**: レイヤー名からパーツを認識してメッシュ・変形器・頭身パラメータ・待機/瞬き動作・髪物理を自動生成し、Cubism Editorで続きを編集できる形式で書き出せる点が実用的。
-- **メトリクス**: ★514、fork 43、作成 2026-09-03、最終push 2026-09-30T18:27:15Z、archived=False
+- **メトリクス**: ★524、fork 45、作成 2026-09-03、最終push 2026-10-01T19:07:58Z、archived=False
 - **確認**: 2026-09-30 / コミット `a494c6e6d713640f7c07d2114998f80f638275cf`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tsunehimatoi/psd2live/tree/a494c6e6d713640f7c07d2114998f80f638275cf)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -167,6 +167,6 @@ Live2Dモデルの初期リギングと物理設定の工数削減。
 
 **入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md)
 
-**最新GitHub Release**: [v1.5.1](https://github.com/tsunehimatoi/psd2live/releases/tag/v1.5.1) / 2026-09-29T16:26:32Z / prerelease=False
+**最新GitHub Release**: [v1.6.0](https://github.com/tsunehimatoi/psd2live/releases/tag/v1.6.0) / 2026-10-01T10:38:06Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-30T18:27:06Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

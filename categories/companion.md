@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（62件）
+# 会話できるアニメ系AIキャラクター（65件）
 
-最終確認日: 2026-09-30。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-01。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -41,6 +41,7 @@
 - [ai-secretary](https://github.com/ryuno016/ai-secretary) — OpenAI・Whisper・VOICEVOXで話すLive2Dデスクトップ秘書。タスクの登録・確認もできる。**Live2DモデルとCubism Coreは同梱されず**、別途入手が必要。
 - [Miko](https://github.com/danukim/Miko) — OllamaのローカルLLMとVRM/Unityの3Dデスクトップアバター、GPT-SoVITSまたはFish Audioの音声合成、リアルタイムのリップシンクとジェスチャーを組み合わせたWindows用デスクトップAIコンパニオン。
 - [alicization](https://github.com/TouHouQing/alicization) — SOUL.mdとSQLiteを核にしたlocal-firstの自律デジタル存在アーキテクチャ。Electronデスクトップで長期記憶・能動対話・MCP権限ゲート・Live2D表現を扱う。
+- [FaustBot-llm-vtuber](https://github.com/liwusen/FaustBot-llm-vtuber) — LangGraphベースのエージェントを中核にしたWindows向けデスクトップAI VTuber。GPT-SoVITSの専用声、Seed-VCによる歌、Live2D/VRMの形象、B站直播への弾幕応答、自動整理される長期記憶とDesktop Moodによる自発的な話しかけを備える。
 
 ## AI VTuber・配信
 
@@ -54,6 +55,8 @@
 - [AI-VTUBER-Twitch-Chat-Bot](https://github.com/gaetan-warin/AI-VTUBER-Twitch-Chat-Bot) — Twitchの`!ai`コメントをOllama/Geminiへ送り、ブラウザ音声とLive2Dで返す。**Cubism 2形式のモデル限定**で、Twitch OAuthが必要。
 - [LiveVTuber Stage](https://github.com/KKLL2025/AILiveVTuber-Stage) — Bilibiliのコメント・ギフト等を優先キューで処理し、DeepSeek応答をMiMo音声・Live2D表情・字幕に反映。**UIは中国語のみ**。Cubism Coreと使用権のあるモデルは別途準備。
 - [ai-streamer](https://github.com/motemen/ai-streamer) — OpenAI・VOICEVOXによる台詞と字幕・表情付きの**静止画2Dアバター**をOBSに表示する。ディレクター入力や自発発話に対応するが、配信コメントの自動収集は記載されていない。
+- [project-xiaochun](https://github.com/FireTable/project-xiaochun) — 完全にブラウザ内で動くアニメ系コンパニオン。WebLLM(MiniCPM5/Qwen)と端末内STT、EMAGEの全身モーション、Edge-TTSでVRMキャラと対話し、Tauri製デスクトップ版では枠なし透過のデスクトップペット表示もできる。
+- [ai-avatar-bot](https://github.com/YuriCrystal/ai-avatar-bot) — 1行のscriptタグでWebサイトに埋め込めるLive2D/VRMの音声AIキャラ。ブラウザ内のSTT/TTSと音量駆動のリップシンク、知識ベース検索、companionモードのローカル記憶、管理用ダッシュボードを備える。
 
 ## VRM・3Dキャラクターとの対話
 

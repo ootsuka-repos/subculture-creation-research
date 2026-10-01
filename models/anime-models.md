@@ -181,3 +181,51 @@ Hubert系エンコーダと拡散機構を組み合わせ、音声から3D顔モ
 確認日: 2026-09-30 / revision `b74132732fd9a9d29b237bec193ded64c9745e91` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `network.onnx`
 
 根拠: [固定モデルカード](https://huggingface.co/nvidia/Audio2Face-3D-v3.0/blob/b74132732fd9a9d29b237bec193ded64c9745e91/README.md) / [モデルAPI](https://huggingface.co/api/models/nvidia/Audio2Face-3D-v3.0)
+
+## IndexTTS-2.5
+
+GPTバックボーン＋フローマッチングの音声-to-メルデコーダ＋BigVGANボコーダで構成される自己回帰ゼロショットTTS。GPTバックボーンは約0.8B。出力は22.05kHz。
+
+- **版の区別**: リポジトリ直下がフル精度重み（codec.pth、gpt.pth、s2mel.pth、qwen0.6bemo4-merge 等）。補助モデル(w2v-bert-2.0、MaskGCTセマンティックコーデック、CAMPPlus、BigVGAN)は同梱されず初回実行時にhf_cacheへ自動取得される。量子化版の記載はない。
+- **入力・設定**: 参照音声1本で話者をクローンし、langで言語(EN/ZH/JA/ES/AR)を指定。8要素の感情ベクトル[happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]で感情を制御でき、<word|reading>で読み（Pinyin/CMU/Kana）、duration_factor(0.5〜2.0)で話速を調整する。
+- **必要構成**: Python 3.10〜3.11、NVIDIA GPU、推論におよそ6GBのVRAM。uvでセットアップし、webui.pyも用意される。
+- **制約**: 長文は分割して無音を挟んで連結するため、セグメント境界をまたぐ韻律は扱わない。テキスト記述からの感情制御にはQwenEmotionモデルが必要で、use_qwen_emo=True時のみ読み込まれる。参照話者の同意確認は利用者の責任と明記。
+- **利用条件**: licenseはother、license_nameはbilibili-model-license。公開重みを無条件の商用可として扱わない。
+- **編集者評価**: 日本語を含む多言語のゼロショット声質クローンと、声質から切り離した感情制御を備え、キャラクター音声制作の候補になる。アニメ特化モデルではなく汎用のTTS。
+- **次の検証（未実施）**: 同一の参照音声でIndexTTS-2と比較し、推論速度・感情ベクトルの追従・日本語の読みと句読点処理を記録する。
+
+確認日: 2026-10-01 / revision `c39ce5ba981572cb187443877ff559dfb246ce63` / gated=False。ファイル名候補7件の一覧確認。代表ファイル: `codec.pth`、`feat1.pt`、`feat2.pt`、`gpt.pth`
+
+根拠: [固定モデルカード](https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/c39ce5ba981572cb187443877ff559dfb246ce63/README.md) / [モデルAPI](https://huggingface.co/api/models/IndexTeam/IndexTTS-2.5)
+
+## Qwen2D-Anime-VAE
+
+Qwen Image VAE(非テンポラル版)のデコーダを調整したVAE。ComfyUI用ノードパック(anzhc-qwen2d-comfyui)から使用する。
+
+- **版の区別**: Qwen2D-Anime-dense-440k_ema_epoch_1.safetensors と Qwen2D-Anime-dense_epoch_1.safetensors の2ファイル。
+- **入力・設定**: モデルカードにプロンプト記述はなく、対応ワークフローのVAEを差し替えて使う想定。カードの説明は過剰シャープの軽減、瞳など小さい要素の改善、ノイズ低減という位置づけ。
+- **必要構成**: カードに必要環境・VRAMの記載はない。ComfyUI用ノードパックの導入が必要。
+- **制約**: デコーダ調整のみで、カードには解像度・再現手順・比較条件の記載が少ない。効果は作者の比較画像に基づくもので、数値評価は無い。
+- **利用条件**: apache-2.0。
+- **編集者評価**: Qwen Image系のアニメ絵ワークフローで、過剰シャープや小物（瞳など）の破綻を抑える狙いのVAE候補。
+- **次の検証（未実施）**: 同一シード・同一プロンプトで標準VAEと差し替え比較し、瞳や細部、全体のノイズ感の差を確認する。
+
+確認日: 2026-10-01 / revision `d59c106b50524909ac660cd97a32fdf49b2f8f21` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `Qwen2D-Anime-dense-440k_ema_epoch_1.safetensors`、`Qwen2D-Anime-dense_epoch_1.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Anzhc/Qwen2D-Anime-VAE/blob/d59c106b50524909ac660cd97a32fdf49b2f8f21/README.md) / [モデルAPI](https://huggingface.co/api/models/Anzhc/Qwen2D-Anime-VAE)
+
+## ml-danbooru-onnx
+
+ML-DanbooruのONNX変換版。Caformer-M36（畳み込み＋Transformer）とTResnet-D系の画像分類モデルで、Danbooru系タグを推定する。
+
+- **版の区別**: 主モデルはml_caformer_m36_dec-5-97527.onnx。他にml_caformer_m36_dec-3-80000.onnx、caformer_m36-3-80000.onnx、TResnet-D-FLq系が複数。classes.json（簡易タグ1527件）とtags.csv（12547件）を同梱する。
+- **入力・設定**: プロンプトではなく、dghs-imgutilsのget_mldanbooru_tagsに画像を渡す。threshold(既定0.7)・size(既定448)・keep_ratio・drop_overlapなどを指定してタグを得る。
+- **必要構成**: pip install dghs-imgutils。ONNXランタイム上で動作。既定入力は448x448。
+- **制約**: 2023年公開のモデルで、タグ体系は当時のDanbooruに準拠する。カードに精度の数値は記載されておらず、近年の作風やタグ語彙への追随は未確認。
+- **利用条件**: mit。
+- **編集者評価**: 手持ちイラストの自動タグ付けに使え、学習用データセット整備やキャラ・属性の下ごしらえに向く。
+- **次の検証（未実施）**: 対象イラストでthresholdを変えてタグの妥当性を確認し、日本語のキャラ名や作品名がどの程度拾えるかを測る。
+
+確認日: 2026-10-01 / revision `eb9058324a741f1b90d4db168f6e1d6b6cb7e63d` / gated=False。ファイル名候補7件の一覧確認。代表ファイル: `TResnet-D-FLq_ema_2-40000.onnx`、`TResnet-D-FLq_ema_4-10000.onnx`、`TResnet-D-FLq_ema_6-10000.onnx`、`TResnet-D-FLq_ema_6-30000.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/deepghs/ml-danbooru-onnx/blob/eb9058324a741f1b90d4db168f6e1d6b6cb7e63d/README.md) / [モデルAPI](https://huggingface.co/api/models/deepghs/ml-danbooru-onnx)

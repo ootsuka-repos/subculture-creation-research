@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-09-30。**136件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -71,6 +71,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 着色機能はテスト中の分支で追加モデルを検証中とREADMEが記載。権利面の注意も明記。
   - 制作用途: 漫画制作・確認時のラフな着色や文字置換の検討に利用。
   - 出典（2026-09-30確認）: https://github.com/Kiastr/Venera-SSR/blob/07ac77fcbd6c9050a5313f327e28d617eb602488/README.md
+
+- **Manga-AI-detector** [model / AIモデル・学習 / 小規模・初期評価候補]
+  - 漫画/コミックのページ画像（ファイルまたはbase64） → クラス名・confidence・bounding box・中心座標を含むJSON、可視化画像。漫画・マンファ・コミックページ向けに追加学習したYOLOv11インスタンスセグメンテーションモデル。コマ枠(panels)・吹き出し(bubbles)・本文テキスト(text)・効果音(SFX)の4要素を検出する。
+  - 制約: 学習データの規模や精度指標（mAP等）はREADMEに記載がなく検出精度は未確認。REST API化のコードはREADME内のサンプル記載で、そのまま動く形では同梱されていない。
+  - 制作用途: 漫画翻訳のコマ・吹き出し検出の候補として試せる。
+  - 出典（2026-10-01確認）: https://github.com/nonillion-studios/Manga-AI-detector/blob/becb02ca3f2e5e01df4822045d001443442cf4ff/readme.md
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -209,6 +215,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 第三者の軽量化版と公式実装の必要メモリを混同しない。2025年から更新が少ない。
   - 制作用途: 二枚の決定原画の間を試作する比較基準。完成カットのタイミングは編集で決める。
   - 出典（2026-09-09確認）: https://github.com/Doubiiu/ToonCrafter/blob/b0c47ff339c5e5ec45b84d0c6587850f242d41ef/README.md
+
+- **comic-manga-narrator** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - 漫画ページ画像、PDF（章単位） → ナレーション付きMP4、中間ファイル（page.json / script.json / cast.json / timing.json）。漫画/コミックページを、コマ検出・セリフの音声化・ナレーション・Ken Burnsと2.5Dパララックスで演出したナレーション付きMP4に変換するローカルパイプライン。
+  - 制約: 特定の自前スタック（Mushishi）を前提とした構成で、公開モデルへの差し替えはREADMEの範囲では未検証。Freesound APIキーは任意。READMEはライセンス表記がなく、権利条件は未確認。
+  - 制作用途: 漫画の読み聞かせ・二創動画化の実験パイプラインとして試せる。
+  - 出典（2026-10-01確認）: https://github.com/MushiSenpai/comic-manga-narrator/blob/38bac4fad34da68273de278a3fa85abc334b8308/README.md
 
 ## 2Dキャラクター・自動リギング
 
@@ -642,6 +654,30 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: Webアプリや自作エージェントへのアバター組込みに。
   - 出典（2026-09-30確認）: https://github.com/myths-labs/prometheus-avatar/blob/7cb8e6d6a8e7d03ae4a08cede07c9d9585edcbb0/README.md
 
+- **VMagicMirror** [desktop_tool / 非AI制作 / 確立済み]
+  - VRMモデル、キーボード/マウス（および対応デバイス）の入力 → アバターの描画（配信・録画向け、クロマキー合成可能）。WindowsでVRMモデルを読み込み、追加デバイスなしにキーボードとマウス操作をモーションとしてアバターの上半身に反映するアプリ。可変クロマキーに対応し、配信・ライブコーディング・デスクトップマスコットに使える。
+  - 制約: 同梱されないプリセット資産（サブキャラのVRM等）があるため、ソースからはダミー差し替え等の追加作業が必要。AI/対話機能は含まず、別途連携が前提。
+  - 制作用途: VRMアバターの配信・キャラ表示基盤として組み合わせやすい。
+  - 出典（2026-10-01確認）: https://github.com/malaybaku/VMagicMirror/blob/0f65276abb017015b9f6c5bbcfed428645050169/README.md
+
+- **gaussian-vrm** [library / 非AI制作 / 研究実装・活発]
+  - GVRMファイル、FBXアニメーション（Mixamo等） → Web/モバイル/VR上にレンダリングされるアバター。three.js上でVRM形式のスキニング付きガウシアンアバター(GVRM)を扱う実装。three-vrmとgaussian-splats-3dを基盤に、VRMの操作（移動やアニメーション）をそのまま再利用できる。
+  - 制約: assets/ 配下のファイルはMIT対象外で研究用途のみ。制作パイプラインへの組み込み手順や性能の記載はREADMEにない。
+  - 制作用途: Web向けアバター表現の選択肢として検討できる。
+  - 出典（2026-10-01確認）: https://github.com/naruya/gaussian-vrm/blob/f6f552a24f7c2b7fb0d8c73f9c0b5581273b1e4c/README.md
+
+- **Cortico** [engine / AIモデル・学習 / 活発・pre-release]
+  - LLMプロバイダ設定、外部環境からのイベント、ツール定義 → botの応答・行動、Webコンソール上の管理・監視ログ。イベントストリームを中心に設計したエージェント基盤。ペルソナbot・AI配信者・ロールプレイ・コンパニオン向けで、Core/Persona/Memory/World/Botの4層構成と、外部環境を隔離して接続するWorld拡張機構を持つ。
+  - 制約: READMEにpre-releaseと明記されている。VTuber向けWorldは本体と別ライセンス(AGPL-3.0+CLA)の別リポジトリで配布される。
+  - 制作用途: 配信・コンパニオン系エージェントの実装基盤として検討できる。
+  - 出典（2026-10-01確認）: https://github.com/Pal-AI-Lab/Cortico/blob/02f2936c89ac783675645f95cd87ff8c25305d46/README.md
+
+- **Anima** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - テキスト入力、音声（BYOKのOpenAI realtime）、VRMモデル、Mixamo互換FBXアニメーション（任意） → 画面上のVRM演技（表情・モーション）、TTS音声のデータURL。ブラウザで動くVRMキャラクタースタジオ。テキストまたはリアルタイム音声でキャラと対話し、表情・リップシンク・身体モーションを付けて演技させる。
+  - 制約: Mixamoの.fbxは再配布されず、フル動作には各自でアニメーションを用意する必要がある。同梱VRMは本リポジトリの公開デモ用途と明記されている。
+  - 制作用途: VRMキャラの対話・演技の試作に使える。
+  - 出典（2026-10-01確認）: https://github.com/Yun-0000/Anima/blob/9cdfb5eabe4230a34bd1d879053a1abb0baff76a/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -766,6 +802,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 自宅サーバとスマホ閲覧を組み合わせた翻訳読書に。
   - 出典（2026-09-30確認）: https://github.com/Gerald-Ha/LingoVeil/blob/dc3e378a7199f7c746fa4a94d7556532885a5386/README.md
 
+- **OverTranslate** [desktop_tool / AIは任意 / 活発・実用候補]
+  - 画面キャプチャ（スクリーン/ウィンドウ）、選択テキスト、入力テキスト → 画面にオーバーレイ表示された訳文、コピー可能なテキスト、朗読音声。Windows向けの画面翻訳ツール。スクリーンショット翻訳・リアルタイム翻訳・取詞翻訳・快速翻訳・文字翻訳の5機能を持ち、認識した訳文を元の画面上にそのまま重ねて表示する。
+  - 制約: 対応OSはWindowsのみ。OCRはRapidOcrNetのONNXモデルで、翻訳は外部サービスまたはローカルLLMに依存する。READMEに翻訳品質の数値評価の記載はない。
+  - 制作用途: 漫画・ゲーム画面を読むための補助ツールとして試しやすい。
+  - 出典（2026-10-01確認）: https://github.com/Hon-Lu/OverTranslate/blob/2c9d1ab98e0327837a4df009f6f404fe5b494d18/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -887,6 +929,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [anime-painter](https://huggingface.co/xinsir/anime-painter/blob/18185a73b6e7fe49f2f2de1bb9d7db0b74a41773/README.md): SDXLベースのscribble ControlNet。ラフな線画からアニメ調画像を生成する。 licenseはapache-2.0。
 - [Galgame-Llasa-3B](https://huggingface.co/OmniAICreator/Galgame-Llasa-3B/blob/23134f66585fe17c0e72bdeb737c9f71bb89d0db/README.md): Llasa-3B(HKUSTAudio)をベースに、ギャルゲー音声データセットで日本語向けに微調整したTTSモデル。 licenseはCC-BY-NC-4.0(非商用)。
 - [Audio2Face-3D-v3.0](https://huggingface.co/nvidia/Audio2Face-3D-v3.0/blob/b74132732fd9a9d29b237bec193ded64c9745e91/README.md): Hubert系エンコーダと拡散機構を組み合わせ、音声から3D顔モーション(肌・舌・顎・眼球)を生成する約1.8億パラメータのモデル。 license_nameはnvidia-open-model-license。カードは商用/非商用利用可と記載。
+- [IndexTTS-2.5](https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/c39ce5ba981572cb187443877ff559dfb246ce63/README.md): GPTバックボーン＋フローマッチングの音声-to-メルデコーダ＋BigVGANボコーダで構成される自己回帰ゼロショットTTS。GPTバックボーンは約0.8B。出力は22.05kHz。 licenseはother、license_nameはbilibili-model-license。公開重みを無条件の商用可として扱わない。
+- [Qwen2D-Anime-VAE](https://huggingface.co/Anzhc/Qwen2D-Anime-VAE/blob/d59c106b50524909ac660cd97a32fdf49b2f8f21/README.md): Qwen Image VAE(非テンポラル版)のデコーダを調整したVAE。ComfyUI用ノードパック(anzhc-qwen2d-comfyui)から使用する。 apache-2.0。
+- [ml-danbooru-onnx](https://huggingface.co/deepghs/ml-danbooru-onnx/blob/eb9058324a741f1b90d4db168f6e1d6b6cb7e63d/README.md): ML-DanbooruのONNX変換版。Caformer-M36（畳み込み＋Transformer）とTResnet-D系の画像分類モデルで、Danbooru系タグを推定する。 mit。
 
 ## 保留情報
 
