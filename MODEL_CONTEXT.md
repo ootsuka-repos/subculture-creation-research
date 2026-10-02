@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -222,6 +222,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 漫画の読み聞かせ・二創動画化の実験パイプラインとして試せる。
   - 出典（2026-10-01確認）: https://github.com/MushiSenpai/comic-manga-narrator/blob/38bac4fad34da68273de278a3fa85abc334b8308/README.md
 
+- **vedGen** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - あらすじ（premise）文、YAML設定、Comfy API形式のワークフローJSON → ショット別キーフレーム画像、ショット別クリップ、結合済みstory.mp4。一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。
+  - 制約: 既定ではインストールも重みDLも行わない。リポジトリは小規模・初期段階で、READMEにLICENSEファイルの実体はない。finalはT5をCPU/RAMへ逃がす構成を含む。
+  - 制作用途: 短編のプリビズ／キーフレーム検討から動画化までの試作。
+  - 出典（2026-10-02確認）: https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md
+
 ## 2Dキャラクター・自動リギング
 
 - **Anime2.5DRig** [browser_tool / AIは任意 / 導入候補]
@@ -247,6 +253,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
   - 制作用途: Live2Dモデルの初期リギングと物理設定の工数削減。
   - 出典（2026-09-30確認）: https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md
+
+- **live2d-py** [library / 非AI制作 / 実運用段階のライブラリ]
+  - Cubism 2.1／3.0以降のモデルファイル、モデルパラメータ、口パク用の音声 → OpenGLウィンドウへの描画、パラメータ・透明度操作の結果。Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。
+  - 制約: Cubism Coreを同梱できないため、ソースビルド時はSDKを自分で用意する必要がある。READMEにモーション編集やモデル制作機能の記載はない。
+  - 制作用途: デスクトップコンパニオン／VTuberアプリの描画・口パク・クリック判定。
+  - 出典（2026-10-02確認）: https://github.com/EasyLive2D/live2d-py/blob/35f686412470ea25718fa9c76ee4f1809f6a8506/README.md
+
+- **ayagami** [library / 非AI制作 / 初期評価候補]
+  - MOC3ファイル、テクスチャ、モデルパラメータ、ZIPアーカイブ（デモ） → ウィンドウ／テクスチャへの描画結果、任意パラメータでのポーズ。Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。
+  - 制約: API未安定・ドキュメント未整備で、表情ファイル／ポーズファイル／モーションの対応はTODOのまま。現状PRは受け付けておらず、crates.io公開も未実施。
+  - 制作用途: エンジンへ組み込みたい場合のLive2D描画層。
+  - 出典（2026-10-02確認）: https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/README.md
 
 ## レイヤー分解
 
@@ -324,6 +342,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: ページ単位の彩色下地と手直しに。
   - 出典（2026-09-30確認）: https://github.com/Amster-Ilvil/Colortina/blob/056c6ed79609037605a6d5fdde9f0bda5176abac/README.md
 
+- **ComfyUI-NeuralBooru** [integration / AIモデル・学習 / 小規模・初期評価候補]
+  - 英語のシーン説明文、system prompt、プロンプトテンプレート、ローカルLLMのモデル名 → 検証済みのDanbooruタグ文字列、除外されたタグ一覧。自然文のシーン記述をローカルLLMでDanbooruタグに変換するComfyUIノード。約14万件の実在タグ語彙で検証・別名変換・語形修正・並び替えを行い、テンプレートで包んでサンプラーへ渡す。
+  - 制約: READMEの想定はSDXL系チェックポイントと英語Danbooru語彙。日本語入力の扱いやタグ辞書の網羅性は記載されていない。fuzzy matchは既定で無効。
+  - 制作用途: 大量のプロンプト作成・表記ゆれ統一をワークフロー内で自動化する用途。
+  - 出典（2026-10-02確認）: https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/blob/e3376e5fcea10d38c52e8261f81f73fab6ef3352/README.md
+
 ## 動画生成
 
 - **FramePack** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -367,6 +391,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: アニメ専用ではない。5BとA14B等の機能・メモリ要件を一括りにしない。
   - 制作用途: 汎用動画基盤としてアニメ特化版の比較元にする。TI2V-5B、A14B、Animate等は別構成として扱う。
   - 出典（2026-09-09確認）: https://github.com/Wan-Video/Wan2.2/blob/42bf4cfaa384bc21833865abc2f9e6c0e67233dc/README.md
+
+- **vlog2anime-kit** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - 実写動画（16fps等に整形）、キャラクター参照画像、プロンプト／ネガティブ → 合成済みmp4、キャラクター／元人物／安全マットの各mp4、QC結果JSON。実写動画の人物を参照画像のアニメキャラへ置換し、元人物を露出させずに実写背景へ戻すComfyUIワークフロー集。Wan2.2 Animate/SCAIL-2で変換し、SAM3追跡＋MatAnyone2でマットを作る。
+  - 制約: キャラ固有の参照画像・プロンプト・LoRA、モデル本体は含まず、特定キャラの同一性は保証しない。81フレーム超は分割推奨。必要VRAM・速度は環境依存。
+  - 制作用途: 実写素材をアニメ調へ寄せるショット単位の変換と、その安全確認。
+  - 出典（2026-10-02確認）: https://github.com/mincad/vlog2anime-kit/blob/184f867dfd82d97913952f2087234d7d6d10b6ee/README.md
+
+- **video-regen-recipes** [workflow_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 再現したい動画の指定、キャラ参照画像、プロンプト、既存の生成AIログイン状況 → 二創動画、テンプレート形式の再現手順、検証記録。Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創動画を再現するためのテンプレート集（20件）とSkills。参考図生成・音声クローン・後期編集まで手順書と検証プロンプトを同梱する。
+  - 制約: 品質・再現性は保証されず、TODOにWindows側テスト未完了と他Agent製品への適配が残る。テンプレートは第三者の素材・権利に依存する。
+  - 制作用途: ショート二創動画のレシピ管理と再現手順の共有。
+  - 出典（2026-10-02確認）: https://github.com/Shenrui-Ma/video-regen-recipes/blob/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317/README.md
 
 ## 3D生成・モデリング・リギング
 
@@ -586,6 +622,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 生成前に旋律・和音を編集する曲作りの候補。歌声エディタとは出力制御が異なる。
   - 出典（2026-09-09確認）: https://github.com/multimodal-art-projection/YuE/blob/6332efcafa5f792df81812acc3b0f20b80b855cf/README.md
 
+- **OpenUtauMobile** [desktop_tool / AI連携 / 初期評価候補]
+  - USTXプロジェクト、歌声音源（ZIP）、歌詞と音符 → 歌声の合成結果、USTXファイル。モバイル向けのオープンソース歌声合成エディタ。OpenUtau CoreをベースにUSTXプロジェクトファイルを扱い、DiffSinger／UTAU／Vogenの音源を読み込める。
+  - 制約: READMEは現状かなり不安定でメモリ管理問題が起きうるとして頻繁な保存を推奨。非公式アプリであり、公式OpenUtauを名乗ってはいけない。他音源形式の動作は非保証。
+  - 制作用途: 外出先での歌わせ調整・プレビュー。
+  - 出典（2026-10-02確認）: https://github.com/vocoder712/OpenUtauMobile/blob/17a86f602e054c345841684224903004eff1f536/README.md
+
 ## VTuber・AIキャラクター・VRM
 
 - **AIRI** [web_app / AI連携 / 更新のある導入・評価候補]
@@ -677,6 +719,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: Mixamoの.fbxは再配布されず、フル動作には各自でアニメーションを用意する必要がある。同梱VRMは本リポジトリの公開デモ用途と明記されている。
   - 制作用途: VRMキャラの対話・演技の試作に使える。
   - 出典（2026-10-01確認）: https://github.com/Yun-0000/Anima/blob/9cdfb5eabe4230a34bd1d879053a1abb0baff76a/README.md
+
+- **open-vt** [desktop_tool / 非AI制作 / 実運用候補]
+  - Live2Dモデルとアセット、フェイストラッキング入力（OpenSeeFace／VTubeStudio） → 配信・録画向けのアバター表示。Godotで作られたオープンソースの2D VTuberソフト。OpenSeeFaceとVTubeStudioのトラッカーに対応し、OBSで取り込みやすい透過ウィンドウや複数ウィンドウのポップアウト操作を持つ。
+  - 制約: VTSのプラグイン互換やVNetは対象外。AI対話や音声合成などは含まず、アバター表示に限定される。
+  - 制作用途: Live2Dアバターでの配信運用と、透過合成を含むキャプチャ。
+  - 出典（2026-10-02確認）: https://github.com/erodozer/open-vt/blob/89f2f0f4119a21c96a8b9e1222850b558ffcb62e/README.md
 
 ## 制作ワークフロー・追加学習
 
@@ -932,6 +980,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [IndexTTS-2.5](https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/c39ce5ba981572cb187443877ff559dfb246ce63/README.md): GPTバックボーン＋フローマッチングの音声-to-メルデコーダ＋BigVGANボコーダで構成される自己回帰ゼロショットTTS。GPTバックボーンは約0.8B。出力は22.05kHz。 licenseはother、license_nameはbilibili-model-license。公開重みを無条件の商用可として扱わない。
 - [Qwen2D-Anime-VAE](https://huggingface.co/Anzhc/Qwen2D-Anime-VAE/blob/d59c106b50524909ac660cd97a32fdf49b2f8f21/README.md): Qwen Image VAE(非テンポラル版)のデコーダを調整したVAE。ComfyUI用ノードパック(anzhc-qwen2d-comfyui)から使用する。 apache-2.0。
 - [ml-danbooru-onnx](https://huggingface.co/deepghs/ml-danbooru-onnx/blob/eb9058324a741f1b90d4db168f6e1d6b6cb7e63d/README.md): ML-DanbooruのONNX変換版。Caformer-M36（畳み込み＋Transformer）とTResnet-D系の画像分類モデルで、Danbooru系タグを推定する。 mit。
+- [Irodori-TTS-500M-v2-Character-Voice-Tagger](https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger/blob/3fe62991c9e86d275a57e879ba62cff85c8cf18a/README.md): Aratako/Irodori-TTS-500M-v2をベースに、SmilingWolf/wd-vit-tagger-v3を画像エンコーダとして条件付けに加えた日本語TTS。参照音声や声色キャプションの代わりにキャラクター画像の特徴を使い、ゼロショットでキャラの雰囲気に合う声を合成する。 MIT。ベースのIrodori-TTS-500M-v2および画像エンコーダ（Apache系）の条件は別途確認が必要。
+- [Irodori-TTS-500M-v2-Character-Voice-SigLIP](https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP/blob/b5954e439b7b1a4a452d56ec6a15e079be56c99f/README.md): Aratako/Irodori-TTS-500M-v2をベースに、timm/vit_base_patch16_siglip_512.v2_webliを画像エンコーダとして使う日本語TTS。キャラクター画像を条件に話者スタイルを制御する。 MIT。ベースモデルと画像エンコーダ側の条件は別途確認が必要。
+- [Irodori-TTS-500M-v2-VoiceDesign](https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign/blob/456e55708e7183f5c7faa1448209d54aa8991451/README.md): 約500MのRectified Flow Diffusion Transformer（RF-DiT）による日本語TTS。v2系の参照音声エンコーダをキャプションエンコーダに置き換え、話者・感情・話し方をテキスト記述だけで設計できる。音声はSemantic-DACVAE-Japanese-32dimの32次元潜在で48kHz再構成。 MIT。加えて、実在人物の声の模倣や誤情報生成を禁じる倫理制限がカードに明記されている。キャプションには話者名は含まれない。
+- [anime-censorship-tagger-mnv3-384](https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384/blob/b6c017a5c9ee4273f27db51b0fe96956184ffa0e/README.md): MobileNetV3-Large（約4.2M）をEVA-02-Large教師から蒸留したONNX分類器。384×384のsquash入力を共有し、censored／bar／mosaicを独立シグモイドで出力する。 Apache-2.0（教師モデルwd-eva02-large-tagger-v3とバックボーンtimmもApache-2.0）。再配布時は帰属表示が必要。
+- [asmr-trigger-audio-h3-lora](https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/blob/9369cad86bc549caa9e0d8f6f1c812aad4fc2e33/README.md): MiniMaxAI/MiniMax-H3をベースにしたLoRAアダプタ。囁き系ASMRの音響と、それに対応する映像（T2V/I2V）を生成する。 Apache-2.0。ベースのMiniMax H3およびその他アダプタの条件は別途確認が必要。
 
 ## 保留情報
 

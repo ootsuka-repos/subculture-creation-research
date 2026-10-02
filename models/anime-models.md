@@ -229,3 +229,83 @@ ML-DanbooruのONNX変換版。Caformer-M36（畳み込み＋Transformer）とTRe
 確認日: 2026-10-01 / revision `eb9058324a741f1b90d4db168f6e1d6b6cb7e63d` / gated=False。ファイル名候補7件の一覧確認。代表ファイル: `TResnet-D-FLq_ema_2-40000.onnx`、`TResnet-D-FLq_ema_4-10000.onnx`、`TResnet-D-FLq_ema_6-10000.onnx`、`TResnet-D-FLq_ema_6-30000.onnx`
 
 根拠: [固定モデルカード](https://huggingface.co/deepghs/ml-danbooru-onnx/blob/eb9058324a741f1b90d4db168f6e1d6b6cb7e63d/README.md) / [モデルAPI](https://huggingface.co/api/models/deepghs/ml-danbooru-onnx)
+
+## Irodori-TTS-500M-v2-Character-Voice-Tagger
+
+Aratako/Irodori-TTS-500M-v2をベースに、SmilingWolf/wd-vit-tagger-v3を画像エンコーダとして条件付けに加えた日本語TTS。参照音声や声色キャプションの代わりにキャラクター画像の特徴を使い、ゼロショットでキャラの雰囲気に合う声を合成する。
+
+- **版の区別**: Character Voice系は画像エンコーダ違いの2系統で、本モデルはTagger（wd-vit-tagger-v3）版、姉妹のSigLIP版はSigLIP-v2-B/16-512を使う。重みはmodel.safetensorsの1ファイル。
+- **入力・設定**: 入力は日本語テキストとキャラクター画像。GitHubのCLIでは--hf-checkpoint p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger と --character-image を指定する。カードにプロンプト文面やキャプション指定の記載はない。
+- **必要構成**: 推論コード・インストール手順・CLI例はGitHubのp1atdev/Irodori-Character-Voice側。GradioデモSpaceも公開されている。モデルは約500M。必要VRAMや生成速度はカードに記載がない。
+- **制約**: 日本語のみ。話者類似度・表現力の定量評価はカードになく、arXivはcoming soon。同じキャラ画像でも出力が安定するかは未確認。学習データの詳細も非公開。
+- **利用条件**: MIT。ベースのIrodori-TTS-500M-v2および画像エンコーダ（Apache系）の条件は別途確認が必要。
+- **編集者評価**: 参照音声を用意せずにキャラ絵から声を決められるため、キャラボイスの試作やキャスト当ての検討に向く。
+- **次の検証（未実施）**: 同一テキストでキャラ画像だけを差し替え、声色の差と同一画像での再現性を比較する。
+
+確認日: 2026-10-02 / revision `3fe62991c9e86d275a57e879ba62cff85c8cf18a` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger/blob/3fe62991c9e86d275a57e879ba62cff85c8cf18a/README.md) / [モデルAPI](https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger)
+
+## Irodori-TTS-500M-v2-Character-Voice-SigLIP
+
+Aratako/Irodori-TTS-500M-v2をベースに、timm/vit_base_patch16_siglip_512.v2_webliを画像エンコーダとして使う日本語TTS。キャラクター画像を条件に話者スタイルを制御する。
+
+- **版の区別**: Character Voice系の画像エンコーダ違い2系統のうち本モデルがSigLIP版、姉妹のTagger版はwd-vit-tagger-v3を使う。重みはmodel.safetensorsの1ファイル。
+- **入力・設定**: 日本語テキストとキャラクター画像を入力する。GitHubのCLIでは--hf-checkpoint p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP と --character-image を指定。キャプション指定の記載はない。
+- **必要構成**: GitHubのp1atdev/Irodori-Character-Voiceの推論コードとデモSpaceを使用。モデルは約500M。VRAM要件はカードに記載がない。
+- **制約**: 日本語のみ。Tagger版との品質差や使い分けはカードに記載がなく、定量評価も未掲載。
+- **利用条件**: MIT。ベースモデルと画像エンコーダ側の条件は別途確認が必要。
+- **編集者評価**: 同じ発想を別の画像エンコーダで実装した比較対象で、用途に応じてTagger版と聴き比べる価値がある。
+- **次の検証（未実施）**: Tagger版と同じテキスト・同じ画像で生成し、声色と安定性を聴き比べる。
+
+確認日: 2026-10-02 / revision `b5954e439b7b1a4a452d56ec6a15e079be56c99f` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP/blob/b5954e439b7b1a4a452d56ec6a15e079be56c99f/README.md) / [モデルAPI](https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP)
+
+## Irodori-TTS-500M-v2-VoiceDesign
+
+約500MのRectified Flow Diffusion Transformer（RF-DiT）による日本語TTS。v2系の参照音声エンコーダをキャプションエンコーダに置き換え、話者・感情・話し方をテキスト記述だけで設計できる。音声はSemantic-DACVAE-Japanese-32dimの32次元潜在で48kHz再構成。
+
+- **版の区別**: VoiceDesign版として単一のmodel.safetensorsを配布。推論用のGradioデモSpaceがあり、mlx-communityによる量子化版も別途存在する。
+- **入力・設定**: 台詞テキストと、「低い声の女性が苛立ちを隠せず焦って話す」のようなキャプションを指定する。テキスト中に絵文字を埋め込むと間・感情・効果音を追加制御でき、EMOJI_ANNOTATIONS.mdに一覧がある。
+- **必要構成**: GitHubのAratako/Irodori-TTSの推論コードとデモSpaceを使用。必要VRAMや速度はカードに記載がない。
+- **制約**: 日本語のみ。複雑または矛盾したキャプションでは声が不安定になる。漢字の読みが弱く、事前にひらがな・カタカナ化が必要な場合がある。絵文字制御は常に一貫しない。
+- **利用条件**: MIT。加えて、実在人物の声の模倣や誤情報生成を禁じる倫理制限がカードに明記されている。キャプションには話者名は含まれない。
+- **編集者評価**: 参照音声なしでキャラの声色と演技を言語で指定できるため、キャラ音声の設計・試作に向く。実在の声優の声を再現する用途は想定されていない。
+- **次の検証（未実施）**: 同じ台詞でキャプションの記述だけを変え、声色・感情・話速の変化を確認する。
+
+確認日: 2026-10-02 / revision `456e55708e7183f5c7faa1448209d54aa8991451` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign/blob/456e55708e7183f5c7faa1448209d54aa8991451/README.md) / [モデルAPI](https://huggingface.co/api/models/Aratako/Irodori-TTS-500M-v2-VoiceDesign)
+
+## anime-censorship-tagger-mnv3-384
+
+MobileNetV3-Large（約4.2M）をEVA-02-Large教師から蒸留したONNX分類器。384×384のsquash入力を共有し、censored／bar／mosaicを独立シグモイドで出力する。
+
+- **版の区別**: 配布は17MBのmodel.onnxと、infer.py・censor_infer_core.py・config.json・selected_tags.csv等の同梱スクリプト一式。
+- **入力・設定**: プロンプトは使わない。カード記載の前処理（384×384へsquash、/255、(x-0.5)/0.5）と閾値（censored 0.47、bar 0.59、mosaic 0.53）を厳密に適用する必要があり、単純なsigmoid>0.5では誤る。
+- **必要構成**: onnxruntimeとnumpy・Pillow。CPUでも動作し、バッチ推論の実装例も同梱されている。
+- **制約**: アニメ・イラスト限定で写真や実写、AI生成画像では精度が落ちる。JPEG-q95前提のため圧縮条件が違うと分布外。ineffectiveヘッドは品質不足で無効化済み。判定は人手確認の代替ではなく、閾値は自前データで調整が必要と明記。
+- **利用条件**: Apache-2.0（教師モデルwd-eva02-large-tagger-v3とバックボーンtimmもApache-2.0）。再配布時は帰属表示が必要。
+- **編集者評価**: 学習データや納品物のフィルタリングを軽量に自動化できる検出専用モデルで、生成・改変は行わない。パイプラインへはほぼ追加コストなしで組み込める。
+- **次の検証（未実施）**: 手元のデータセットに適用して閾値の妥当性と誤検出傾向を確認する。
+
+確認日: 2026-10-02 / revision `b6c017a5c9ee4273f27db51b0fe96956184ffa0e` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384/blob/b6c017a5c9ee4273f27db51b0fe96956184ffa0e/README.md) / [モデルAPI](https://huggingface.co/api/models/Maltox/anime-censorship-tagger-mnv3-384)
+
+## asmr-trigger-audio-h3-lora
+
+MiniMaxAI/MiniMax-H3をベースにしたLoRAアダプタ。囁き系ASMRの音響と、それに対応する映像（T2V/I2V）を生成する。
+
+- **版の区別**: 配布はasmr_trigger_audio_h3_lora_v1_500.safetensorsの1ファイル（step500）。他のチェックポイントはカードに記載がない。
+- **入力・設定**: 「she is holding mic in one hand, she leans her head close to the mic and whispers: '...'」のようなプロンプトを推奨。解像度720x1280、weight 0.6〜0.8、20〜30ステップ、9:16で30ステップが最適と記載されている。
+- **必要構成**: MiniMax H3の推論環境。カードにはVRAM要件や実行手順の記載がない。
+- **制約**: カードは設定値とデモ動画のみで、音質評価・多言語対応・失敗例の記載がない。特定話者の声を再現する設計ではなく、ベースモデル側の制約も受ける。
+- **利用条件**: Apache-2.0。ベースのMiniMax H3およびその他アダプタの条件は別途確認が必要。
+- **編集者評価**: 囁きASMRの音声つき映像を狙って調整されたLoRAで、ASMR作品の試作に使いやすい。
+- **次の検証（未実施）**: 推奨設定で短文を生成し、囁きの明瞭度・音量・映像との同期を確認する。
+
+確認日: 2026-10-02 / revision `9369cad86bc549caa9e0d8f6f1c812aad4fc2e33` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `asmr_trigger_audio_h3_lora_v1_500.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/blob/9369cad86bc549caa9e0d8f6f1c812aad4fc2e33/README.md) / [モデルAPI](https://huggingface.co/api/models/vpakarinen/asmr-trigger-audio-h3-lora)

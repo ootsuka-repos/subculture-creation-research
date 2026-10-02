@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（65件）
+# 会話できるアニメ系AIキャラクター（67件）
 
-最終確認日: 2026-10-01。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-02。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -42,6 +42,7 @@
 - [Miko](https://github.com/danukim/Miko) — OllamaのローカルLLMとVRM/Unityの3Dデスクトップアバター、GPT-SoVITSまたはFish Audioの音声合成、リアルタイムのリップシンクとジェスチャーを組み合わせたWindows用デスクトップAIコンパニオン。
 - [alicization](https://github.com/TouHouQing/alicization) — SOUL.mdとSQLiteを核にしたlocal-firstの自律デジタル存在アーキテクチャ。Electronデスクトップで長期記憶・能動対話・MCP権限ゲート・Live2D表現を扱う。
 - [FaustBot-llm-vtuber](https://github.com/liwusen/FaustBot-llm-vtuber) — LangGraphベースのエージェントを中核にしたWindows向けデスクトップAI VTuber。GPT-SoVITSの専用声、Seed-VCによる歌、Live2D/VRMの形象、B站直播への弾幕応答、自動整理される長期記憶とDesktop Moodによる自発的な話しかけを備える。
+- [YUI](https://github.com/yw0nam/YUI) — VRMキャラクターをデスクトップ上の透過オーバーレイとして表示し、OpenAI互換の任意バックエンドを接続して声・表情・モーション付きで応答するTauri製コンパニオン。モデルは内蔵せず、generate_expressのキューで感情・モーション・音声タグを受け取る。
 
 ## AI VTuber・配信
 
@@ -57,6 +58,7 @@
 - [ai-streamer](https://github.com/motemen/ai-streamer) — OpenAI・VOICEVOXによる台詞と字幕・表情付きの**静止画2Dアバター**をOBSに表示する。ディレクター入力や自発発話に対応するが、配信コメントの自動収集は記載されていない。
 - [project-xiaochun](https://github.com/FireTable/project-xiaochun) — 完全にブラウザ内で動くアニメ系コンパニオン。WebLLM(MiniCPM5/Qwen)と端末内STT、EMAGEの全身モーション、Edge-TTSでVRMキャラと対話し、Tauri製デスクトップ版では枠なし透過のデスクトップペット表示もできる。
 - [ai-avatar-bot](https://github.com/YuriCrystal/ai-avatar-bot) — 1行のscriptタグでWebサイトに埋め込めるLive2D/VRMの音声AIキャラ。ブラウザ内のSTT/TTSと音量駆動のリップシンク、知識ベース検索、companionモードのローカル記憶、管理用ダッシュボードを備える。
+- [Lumi_Nox](https://github.com/MIO-456/Lumi_Nox) — 2体のAI VTuberが同じ配信で共演するためのリアルタイム音声対話エンジン（open-core・MIT）。キャラごとに独立した音声対話セッションを走らせ、@メンションや視聴者チャットから発話順を決め、声が重ならないよう発話権を調停する。視聴者・自己の長期記憶をSQLiteに保持する。
 
 ## VRM・3Dキャラクターとの対話
 

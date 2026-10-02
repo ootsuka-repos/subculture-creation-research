@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-10-02",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1243463,
-        "likes": 2334,
+        "downloads_last_month": 1238203,
+        "likes": 2341,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 367630,
-        "likes": 532,
+        "downloads_last_month": 386736,
+        "likes": 533,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 84374,
-        "likes": 432,
+        "downloads_last_month": 85185,
+        "likes": 433,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 142631,
+        "downloads_last_month": 146140,
         "likes": 178,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1479,
-        "likes": 16,
+        "downloads_last_month": 1495,
+        "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1148,
+        "downloads_last_month": 1193,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -378,9 +378,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 228,
+        "likes": 229,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 867,
+        "downloads_last_month": 876,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 700,
+        "downloads_last_month": 696,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -544,10 +544,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 31,
+        "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 846,
+        "downloads_last_month": 911,
         "likes": 96,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 13912,
+        "downloads_last_month": 13966,
         "likes": 228,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 5797,
+        "downloads_last_month": 5964,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-01"
+        "checked_on": "2026-10-02"
       },
       "sources": [
         {
@@ -782,7 +782,277 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "irodori-tts-500m-v2-character-voice-tagger",
+      "name": "Irodori-TTS-500M-v2-Character-Voice-Tagger",
+      "hub_repository": "p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger",
+      "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger",
+      "category": "tts",
+      "checked_on": "2026-10-02",
+      "architecture_ja": "Aratako/Irodori-TTS-500M-v2をベースに、SmilingWolf/wd-vit-tagger-v3を画像エンコーダとして条件付けに加えた日本語TTS。参照音声や声色キャプションの代わりにキャラクター画像の特徴を使い、ゼロショットでキャラの雰囲気に合う声を合成する。",
+      "variants_ja": "Character Voice系は画像エンコーダ違いの2系統で、本モデルはTagger（wd-vit-tagger-v3）版、姉妹のSigLIP版はSigLIP-v2-B/16-512を使う。重みはmodel.safetensorsの1ファイル。",
+      "prompting_ja": "入力は日本語テキストとキャラクター画像。GitHubのCLIでは--hf-checkpoint p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger と --character-image を指定する。カードにプロンプト文面やキャプション指定の記載はない。",
+      "requirements_ja": "推論コード・インストール手順・CLI例はGitHubのp1atdev/Irodori-Character-Voice側。GradioデモSpaceも公開されている。モデルは約500M。必要VRAMや生成速度はカードに記載がない。",
+      "limitations_ja": "日本語のみ。話者類似度・表現力の定量評価はカードになく、arXivはcoming soon。同じキャラ画像でも出力が安定するかは未確認。学習データの詳細も非公開。",
+      "license_notes_ja": "MIT。ベースのIrodori-TTS-500M-v2および画像エンコーダ（Apache系）の条件は別途確認が必要。",
+      "assessment_ja": "参照音声を用意せずにキャラ絵から声を決められるため、キャラボイスの試作やキャスト当ての検討に向く。",
+      "next_validation_ja": "同一テキストでキャラ画像だけを差し替え、声色の差と同一画像での再現性を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger",
+        "api_url": "https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger",
+        "checked_on": "2026-10-02",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "3fe62991c9e86d275a57e879ba62cff85c8cf18a",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 11,
+        "last_modified": "2026-05-16T10:38:24.000Z",
+        "checked_on": "2026-10-02"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger/blob/3fe62991c9e86d275a57e879ba62cff85c8cf18a/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-Tagger",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "irodori-tts-500m-v2-character-voice-siglip",
+      "name": "Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+      "hub_repository": "p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+      "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+      "category": "tts",
+      "checked_on": "2026-10-02",
+      "architecture_ja": "Aratako/Irodori-TTS-500M-v2をベースに、timm/vit_base_patch16_siglip_512.v2_webliを画像エンコーダとして使う日本語TTS。キャラクター画像を条件に話者スタイルを制御する。",
+      "variants_ja": "Character Voice系の画像エンコーダ違い2系統のうち本モデルがSigLIP版、姉妹のTagger版はwd-vit-tagger-v3を使う。重みはmodel.safetensorsの1ファイル。",
+      "prompting_ja": "日本語テキストとキャラクター画像を入力する。GitHubのCLIでは--hf-checkpoint p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP と --character-image を指定。キャプション指定の記載はない。",
+      "requirements_ja": "GitHubのp1atdev/Irodori-Character-Voiceの推論コードとデモSpaceを使用。モデルは約500M。VRAM要件はカードに記載がない。",
+      "limitations_ja": "日本語のみ。Tagger版との品質差や使い分けはカードに記載がなく、定量評価も未掲載。",
+      "license_notes_ja": "MIT。ベースモデルと画像エンコーダ側の条件は別途確認が必要。",
+      "assessment_ja": "同じ発想を別の画像エンコーダで実装した比較対象で、用途に応じてTagger版と聴き比べる価値がある。",
+      "next_validation_ja": "Tagger版と同じテキスト・同じ画像で生成し、声色と安定性を聴き比べる。",
+      "distribution": {
+        "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+        "api_url": "https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+        "checked_on": "2026-10-02",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "b5954e439b7b1a4a452d56ec6a15e079be56c99f",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 10,
+        "last_modified": "2026-05-16T10:38:16.000Z",
+        "checked_on": "2026-10-02"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP/blob/b5954e439b7b1a4a452d56ec6a15e079be56c99f/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/p1atdev/Irodori-TTS-500M-v2-Character-Voice-SigLIP",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "irodori-tts-500m-v2-voicedesign",
+      "name": "Irodori-TTS-500M-v2-VoiceDesign",
+      "hub_repository": "Aratako/Irodori-TTS-500M-v2-VoiceDesign",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign",
+      "category": "tts",
+      "checked_on": "2026-10-02",
+      "architecture_ja": "約500MのRectified Flow Diffusion Transformer（RF-DiT）による日本語TTS。v2系の参照音声エンコーダをキャプションエンコーダに置き換え、話者・感情・話し方をテキスト記述だけで設計できる。音声はSemantic-DACVAE-Japanese-32dimの32次元潜在で48kHz再構成。",
+      "variants_ja": "VoiceDesign版として単一のmodel.safetensorsを配布。推論用のGradioデモSpaceがあり、mlx-communityによる量子化版も別途存在する。",
+      "prompting_ja": "台詞テキストと、「低い声の女性が苛立ちを隠せず焦って話す」のようなキャプションを指定する。テキスト中に絵文字を埋め込むと間・感情・効果音を追加制御でき、EMOJI_ANNOTATIONS.mdに一覧がある。",
+      "requirements_ja": "GitHubのAratako/Irodori-TTSの推論コードとデモSpaceを使用。必要VRAMや速度はカードに記載がない。",
+      "limitations_ja": "日本語のみ。複雑または矛盾したキャプションでは声が不安定になる。漢字の読みが弱く、事前にひらがな・カタカナ化が必要な場合がある。絵文字制御は常に一貫しない。",
+      "license_notes_ja": "MIT。加えて、実在人物の声の模倣や誤情報生成を禁じる倫理制限がカードに明記されている。キャプションには話者名は含まれない。",
+      "assessment_ja": "参照音声なしでキャラの声色と演技を言語で指定できるため、キャラ音声の設計・試作に向く。実在の声優の声を再現する用途は想定されていない。",
+      "next_validation_ja": "同じ台詞でキャプションの記述だけを変え、声色・感情・話速の変化を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign",
+        "api_url": "https://huggingface.co/api/models/Aratako/Irodori-TTS-500M-v2-VoiceDesign",
+        "checked_on": "2026-10-02",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "456e55708e7183f5c7faa1448209d54aa8991451",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 79,
+        "last_modified": "2026-04-11T16:12:30.000Z",
+        "checked_on": "2026-10-02"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign/blob/456e55708e7183f5c7faa1448209d54aa8991451/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Aratako/Irodori-TTS-500M-v2-VoiceDesign",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "anime-censorship-tagger-mnv3-384",
+      "name": "anime-censorship-tagger-mnv3-384",
+      "hub_repository": "Maltox/anime-censorship-tagger-mnv3-384",
+      "url": "https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384",
+      "category": "workflow",
+      "checked_on": "2026-10-02",
+      "architecture_ja": "MobileNetV3-Large（約4.2M）をEVA-02-Large教師から蒸留したONNX分類器。384×384のsquash入力を共有し、censored／bar／mosaicを独立シグモイドで出力する。",
+      "variants_ja": "配布は17MBのmodel.onnxと、infer.py・censor_infer_core.py・config.json・selected_tags.csv等の同梱スクリプト一式。",
+      "prompting_ja": "プロンプトは使わない。カード記載の前処理（384×384へsquash、/255、(x-0.5)/0.5）と閾値（censored 0.47、bar 0.59、mosaic 0.53）を厳密に適用する必要があり、単純なsigmoid>0.5では誤る。",
+      "requirements_ja": "onnxruntimeとnumpy・Pillow。CPUでも動作し、バッチ推論の実装例も同梱されている。",
+      "limitations_ja": "アニメ・イラスト限定で写真や実写、AI生成画像では精度が落ちる。JPEG-q95前提のため圧縮条件が違うと分布外。ineffectiveヘッドは品質不足で無効化済み。判定は人手確認の代替ではなく、閾値は自前データで調整が必要と明記。",
+      "license_notes_ja": "Apache-2.0（教師モデルwd-eva02-large-tagger-v3とバックボーンtimmもApache-2.0）。再配布時は帰属表示が必要。",
+      "assessment_ja": "学習データや納品物のフィルタリングを軽量に自動化できる検出専用モデルで、生成・改変は行わない。パイプラインへはほぼ追加コストなしで組み込める。",
+      "next_validation_ja": "手元のデータセットに適用して閾値の妥当性と誤検出傾向を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384",
+        "api_url": "https://huggingface.co/api/models/Maltox/anime-censorship-tagger-mnv3-384",
+        "checked_on": "2026-10-02",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "b6c017a5c9ee4273f27db51b0fe96956184ffa0e",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.onnx"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 29,
+        "likes": 2,
+        "last_modified": "2026-06-21T22:24:19.000Z",
+        "checked_on": "2026-10-02"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384/blob/b6c017a5c9ee4273f27db51b0fe96956184ffa0e/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Maltox/anime-censorship-tagger-mnv3-384",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "asmr-trigger-audio-h3-lora",
+      "name": "asmr-trigger-audio-h3-lora",
+      "hub_repository": "vpakarinen/asmr-trigger-audio-h3-lora",
+      "url": "https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora",
+      "category": "sound",
+      "checked_on": "2026-10-02",
+      "architecture_ja": "MiniMaxAI/MiniMax-H3をベースにしたLoRAアダプタ。囁き系ASMRの音響と、それに対応する映像（T2V/I2V）を生成する。",
+      "variants_ja": "配布はasmr_trigger_audio_h3_lora_v1_500.safetensorsの1ファイル（step500）。他のチェックポイントはカードに記載がない。",
+      "prompting_ja": "「she is holding mic in one hand, she leans her head close to the mic and whispers: '...'」のようなプロンプトを推奨。解像度720x1280、weight 0.6〜0.8、20〜30ステップ、9:16で30ステップが最適と記載されている。",
+      "requirements_ja": "MiniMax H3の推論環境。カードにはVRAM要件や実行手順の記載がない。",
+      "limitations_ja": "カードは設定値とデモ動画のみで、音質評価・多言語対応・失敗例の記載がない。特定話者の声を再現する設計ではなく、ベースモデル側の制約も受ける。",
+      "license_notes_ja": "Apache-2.0。ベースのMiniMax H3およびその他アダプタの条件は別途確認が必要。",
+      "assessment_ja": "囁きASMRの音声つき映像を狙って調整されたLoRAで、ASMR作品の試作に使いやすい。",
+      "next_validation_ja": "推奨設定で短文を生成し、囁きの明瞭度・音量・映像との同期を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora",
+        "api_url": "https://huggingface.co/api/models/vpakarinen/asmr-trigger-audio-h3-lora",
+        "checked_on": "2026-10-02",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "9369cad86bc549caa9e0d8f6f1c812aad4fc2e33",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "asmr_trigger_audio_h3_lora_v1_500.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 426,
+        "likes": 27,
+        "last_modified": "2026-09-21T15:36:59.000Z",
+        "checked_on": "2026-10-02"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/blob/9369cad86bc549caa9e0d8f6f1c812aad4fc2e33/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/vpakarinen/asmr-trigger-audio-h3-lora",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-01"
+  "metrics_refreshed_on": "2026-10-02"
 }

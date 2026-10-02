@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,10 +12,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 232 / 2026-09-23 |
+| [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 233 / 2026-09-23 |
 | [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 241 / 2026-09-28 |
-| [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 494 / 2026-04-28 |
-| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 524 / 2026-10-01 |
+| [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 495 / 2026-04-28 |
+| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 535 / 2026-10-02 |
+| [live2d-py](https://github.com/EasyLive2D/live2d-py) · [詳細](#live2d-py) | Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。 | 非AI制作 / 実運用段階のライブラリ | 576 / 2026-09-30 |
+| [ayagami](https://github.com/AyagamiDev/ayagami) · [詳細](#ayagami) | Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。 | 非AI制作 / 初期評価候補 | 342 / 2026-09-14 |
 
 <a id="anime2.5drig"></a>
 
@@ -31,7 +33,7 @@ PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追�
 - **依存**: MediaPipe FaceMesh（顔追跡時）、分解済みPSD
 - **制約・未確認**: 入力PSDのレイヤー構造に依存。動作品質は未検証。
 - **編集者評価**: 2026年7月作成、9月更新。See-through出力と接続しやすいブラウザ実装。
-- **メトリクス**: ★232、fork 40、作成 2026-07-04、最終push 2026-09-23T07:01:12Z、archived=False
+- **メトリクス**: ★233、fork 40、作成 2026-07-04、最終push 2026-09-23T07:01:12Z、archived=False
 - **確認**: 2026-09-09 / コミット `7450341934a8ff77bf05b90d9f708786e3eb3996`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/852wa/Anime2.5DRig/tree/7450341934a8ff77bf05b90d9f708786e3eb3996)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -113,7 +115,7 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **依存**: See-through形式PSD、DWPose（選択時）
 - **制約・未確認**: 最終pushは2026年4月。最近の活発な更新とは扱わない。
 - **編集者評価**: See-throughから演出・編集につなぐ公開ブラウザツール。
-- **メトリクス**: ★494、fork 70、作成 2026-04-12、最終push 2026-04-28T03:53:09Z、archived=False
+- **メトリクス**: ★495、fork 70、作成 2026-04-12、最終push 2026-04-28T03:53:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `24a83a27ba43e43e9d2e3de5e33994594e6199c2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/MangoLion/stretchystudio/tree/24a83a27ba43e43e9d2e3de5e33994594e6199c2)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -150,7 +152,7 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **依存**: Live2D Cubism SDKは同梱せず、公式SDKは任意。
 - **制約・未確認**: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
 - **編集者評価**: レイヤー名からパーツを認識してメッシュ・変形器・頭身パラメータ・待機/瞬き動作・髪物理を自動生成し、Cubism Editorで続きを編集できる形式で書き出せる点が実用的。
-- **メトリクス**: ★524、fork 45、作成 2026-09-03、最終push 2026-10-01T19:07:58Z、archived=False
+- **メトリクス**: ★535、fork 46、作成 2026-09-03、最終push 2026-10-02T10:13:49Z、archived=False
 - **確認**: 2026-09-30 / コミット `a494c6e6d713640f7c07d2114998f80f638275cf`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tsunehimatoi/psd2live/tree/a494c6e6d713640f7c07d2114998f80f638275cf)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -167,6 +169,76 @@ Live2Dモデルの初期リギングと物理設定の工数削減。
 
 **入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md)
 
-**最新GitHub Release**: [v1.6.0](https://github.com/tsunehimatoi/psd2live/releases/tag/v1.6.0) / 2026-10-01T10:38:06Z / prerelease=False
+**最新GitHub Release**: [v2.0.2](https://github.com/tsunehimatoi/psd2live/releases/tag/v2.0.2) / 2026-10-02T10:13:49Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-30T18:27:06Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="live2d-py"></a>
+
+## live2d-py
+
+Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。
+
+- **リポジトリ**: https://github.com/EasyLive2D/live2d-py
+- **分類**: library / 非AI制作 / 実運用段階のライブラリ
+- **入力**: Cubism 2.1／3.0以降のモデルファイル、モデルパラメータ、口パク用の音声
+- **出力**: OpenGLウィンドウへの描画、パラメータ・透明度操作の結果
+- **環境**: Python 3.11以上。whl配布またはPyPIから導入、もしくはCMake 3.26以上でソースビルド。Live2D Cubism Core/Frameworkはライセンスの都合で同梱されず、公式から別途取得が必要。
+- **依存**: Live2D Cubism Native SDK、OpenGL対応のUIライブラリ
+- **制約・未確認**: Cubism Coreを同梱できないため、ソースビルド時はSDKを自分で用意する必要がある。READMEにモーション編集やモデル制作機能の記載はない。
+- **編集者評価**: Pygame／PyQt5／PySide6／GLFW等へ組み込めるため、自作VTuberやコンパニオンの描画層を自前実装する土台になる。
+- **メトリクス**: ★576、fork 55、作成 2024-06-04、最終push 2026-09-30T11:50:34Z、archived=False
+- **確認**: 2026-10-02 / コミット `35f686412470ea25718fa9c76ee4f1809f6a8506`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/EasyLive2D/live2d-py/tree/35f686412470ea25718fa9c76ee4f1809f6a8506)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/EasyLive2D/live2d-py/blob/35f686412470ea25718fa9c76ee4f1809f6a8506/README.md) / [GitHub API](https://api.github.com/repos/EasyLive2D/live2d-py) / [固定ツリー](https://github.com/EasyLive2D/live2d-py/tree/35f686412470ea25718fa9c76ee4f1809f6a8506)
+
+### 制作に使う際の検討
+
+デスクトップコンパニオン／VTuberアプリの描画・口パク・クリック判定。
+
+**次に確かめること（実施前）**: 手元のLive2Dモデルで読み込み・視線追跡・口パク・パーツ単位クリック判定を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [tests/v2/main.cpp](https://github.com/EasyLive2D/live2d-py/blob/35f686412470ea25718fa9c76ee4f1809f6a8506/tests/v2/main.cpp)
+
+**最新GitHub Release**: [v1.0.0](https://github.com/EasyLive2D/live2d-py/releases/tag/v1.0.0) / 2026-09-30T11:50:35Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-30T11:48:39Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="ayagami"></a>
+
+## ayagami
+
+Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。
+
+- **リポジトリ**: https://github.com/AyagamiDev/ayagami
+- **分類**: library / 非AI制作 / 初期評価候補
+- **入力**: MOC3ファイル、テクスチャ、モデルパラメータ、ZIPアーカイブ（デモ）
+- **出力**: ウィンドウ／テクスチャへの描画結果、任意パラメータでのポーズ
+- **環境**: Rust/Cargo。Webデモはブラウザで動作しモデルはローカル処理。ネイティブはcargo run、Webはtrunkを使用。
+- **依存**: wgpu、egui（デモ）、Godot（ayagami-gd）
+- **制約・未確認**: API未安定・ドキュメント未整備で、表情ファイル／ポーズファイル／モーションの対応はTODOのまま。現状PRは受け付けておらず、crates.io公開も未実施。
+- **編集者評価**: ブラックボックス解析のみで書かれた独立実装で、ゲーム組込みや自作VTuberソフトの描画基盤に使える。
+- **メトリクス**: ★342、fork 17、作成 2026-07-11、最終push 2026-09-14T14:19:06Z、archived=False
+- **確認**: 2026-10-02 / コミット `0d1d7aa3efe57b1b363b72e672e353c52a9c15d6`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/AyagamiDev/ayagami/tree/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/README.md) / [GitHub API](https://api.github.com/repos/AyagamiDev/ayagami) / [固定ツリー](https://github.com/AyagamiDev/ayagami/tree/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6)
+
+### 制作に使う際の検討
+
+エンジンへ組み込みたい場合のLive2D描画層。
+
+**次に確かめること（実施前）**: Webデモでモデル読込とパラメータ操作を行い、Godotコンポーネントがビルドできるか確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [ayagami-demo/src/app.rs](https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-demo/src/app.rs) / [ayagami-demo/src/main.rs](https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-demo/src/main.rs) / [ayagami-render/src/main.rs](https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-render/src/main.rs)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-14T14:15:47Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

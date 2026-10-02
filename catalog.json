@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-10-02",
   "scope_ja": "AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。",
   "reference_catalog": "research/papers.md",
   "items": [
@@ -31,12 +31,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 1342,
+        "stars": 1341,
         "forks": 311,
         "created_at": "2023-08-25T14:47:46Z",
         "pushed_at": "2025-10-30T19:17:30Z",
         "archived": true,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -157,7 +157,7 @@
         "created_at": "2024-12-03T04:57:10Z",
         "pushed_at": "2025-02-05T03:02:38Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -226,12 +226,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 10463,
-        "forks": 866,
+        "stars": 10467,
+        "forks": 867,
         "created_at": "2015-10-09T19:24:19Z",
-        "pushed_at": "2026-10-01T20:57:34Z",
+        "pushed_at": "2026-10-02T13:10:41Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -314,11 +314,11 @@
       },
       "metrics": {
         "stars": 391,
-        "forks": 57,
+        "forks": 58,
         "created_at": "2023-08-14T22:23:46Z",
         "pushed_at": "2026-08-30T17:00:19Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -441,11 +441,11 @@
       "code_revision": "6363c81aaedab0a435d18cba9209a7e842881ad7",
       "metrics": {
         "stars": 742,
-        "forks": 59,
+        "forks": 60,
         "created_at": "2024-12-23T07:05:53Z",
         "pushed_at": "2025-03-02T07:20:37Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -519,7 +519,7 @@
         "created_at": "2026-04-05T08:12:53Z",
         "pushed_at": "2026-05-08T08:27:39Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -622,11 +622,11 @@
       "code_revision": "8de45e424887766fdd84dc917436ff8605f00149",
       "metrics": {
         "stars": 6471,
-        "forks": 645,
+        "forks": 644,
         "created_at": "2024-04-21T10:54:22Z",
         "pushed_at": "2024-09-26T02:17:52Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -700,7 +700,7 @@
         "created_at": "2026-04-17T20:38:01Z",
         "pushed_at": "2026-04-22T04:11:49Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -802,12 +802,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "35c63e52f1d36060930dc7ed3cfba38ea224b528",
       "metrics": {
-        "stars": 4953,
-        "forks": 541,
+        "stars": 4954,
+        "forks": 542,
         "created_at": "2016-01-23T15:38:01Z",
         "pushed_at": "2026-05-05T11:24:42Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -887,12 +887,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 34005,
+        "stars": 34025,
         "forks": 6397,
         "created_at": "2023-02-09T10:19:24Z",
         "pushed_at": "2026-09-23T21:19:13Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -993,12 +993,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "c39241c573167ea0157e48d8380c36920c5e50d8",
       "metrics": {
-        "stars": 2850,
-        "forks": 234,
+        "stars": 2851,
+        "forks": 235,
         "created_at": "2015-10-03T23:16:59Z",
         "pushed_at": "2026-10-01T00:03:23Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1097,7 +1097,7 @@
         "created_at": "2026-05-01T08:15:03Z",
         "pushed_at": "2026-07-27T02:36:27Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1166,12 +1166,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 118060,
-        "forks": 26921,
+        "stars": 118072,
+        "forks": 26922,
         "created_at": "2014-01-04T16:05:36Z",
-        "pushed_at": "2026-10-01T15:58:25Z",
+        "pushed_at": "2026-10-02T18:11:24Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1272,12 +1272,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "6d69bd1d6be92f01ac30778f6a934f0da8448b16",
       "metrics": {
-        "stars": 4291,
+        "stars": 4295,
         "forks": 289,
         "created_at": "2020-05-29T09:39:23Z",
         "pushed_at": "2026-07-12T13:55:51Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1371,12 +1371,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "c9bea37786af524bf3bbe802f2b67d23816fa5c0",
       "metrics": {
-        "stars": 2960,
-        "forks": 431,
+        "stars": 2962,
+        "forks": 430,
         "created_at": "2026-04-20T15:28:16Z",
         "pushed_at": "2026-09-03T17:11:09Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1456,12 +1456,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 10437,
+        "stars": 10444,
         "forks": 551,
         "created_at": "2019-08-18T09:28:54Z",
-        "pushed_at": "2026-10-01T10:41:11Z",
+        "pushed_at": "2026-10-02T13:24:11Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1551,7 +1551,7 @@
         "created_at": "2026-08-01T13:03:29Z",
         "pushed_at": "2026-09-01T15:53:21Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1643,12 +1643,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 6876,
-        "forks": 941,
+        "stars": 6877,
+        "forks": 942,
         "created_at": "2012-06-28T01:21:22Z",
-        "pushed_at": "2026-10-01T16:58:42Z",
+        "pushed_at": "2026-10-02T15:00:18Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1739,12 +1739,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 415,
-        "forks": 53,
+        "stars": 418,
+        "forks": 52,
         "created_at": "2026-08-09T20:25:50Z",
         "pushed_at": "2026-09-24T22:57:34Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1871,7 +1871,7 @@
         "created_at": "2024-10-08T14:18:52Z",
         "pushed_at": "2026-08-12T03:58:54Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -1959,7 +1959,7 @@
         "created_at": "2011-02-27T15:18:22Z",
         "pushed_at": "2026-09-25T09:23:19Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2072,7 +2072,7 @@
         "created_at": "2024-12-18T11:55:26Z",
         "pushed_at": "2025-04-15T06:21:33Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2192,7 +2192,7 @@
         "created_at": "2025-06-17T02:55:23Z",
         "pushed_at": "2025-08-04T07:04:34Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2297,7 +2297,7 @@
         "created_at": "2024-03-29T10:49:37Z",
         "pushed_at": "2025-06-26T23:11:03Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2377,12 +2377,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 5597,
+        "stars": 5598,
         "forks": 570,
         "created_at": "2020-11-12T05:46:23Z",
         "pushed_at": "2025-09-10T06:32:03Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2481,7 +2481,7 @@
         "created_at": "2024-12-11T10:32:54Z",
         "pushed_at": "2025-06-20T07:36:58Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2582,12 +2582,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 7773,
-        "forks": 880,
+        "stars": 7774,
+        "forks": 879,
         "created_at": "2016-03-18T17:55:48Z",
-        "pushed_at": "2026-10-01T17:24:34Z",
+        "pushed_at": "2026-10-02T05:05:43Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2672,12 +2672,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 588,
+        "stars": 589,
         "forks": 60,
         "created_at": "2025-08-12T13:14:20Z",
         "pushed_at": "2025-08-20T06:21:56Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2816,7 +2816,7 @@
         "created_at": "2024-05-28T19:17:40Z",
         "pushed_at": "2025-03-19T06:43:54Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2889,12 +2889,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 232,
+        "stars": 233,
         "forks": 40,
         "created_at": "2026-07-04T04:58:37Z",
         "pushed_at": "2026-09-23T07:01:12Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -2995,7 +2995,7 @@
         "created_at": "2026-08-14T15:48:05Z",
         "pushed_at": "2026-09-28T09:47:51Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3162,12 +3162,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 494,
+        "stars": 495,
         "forks": 70,
         "created_at": "2026-04-12T15:51:53Z",
         "pushed_at": "2026-04-28T03:53:09Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3264,11 +3264,11 @@
       },
       "metrics": {
         "stars": 814,
-        "forks": 69,
+        "forks": 70,
         "created_at": "2026-03-31T14:22:51Z",
         "pushed_at": "2026-08-20T03:16:42Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3358,12 +3358,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 2123,
+        "stars": 2122,
         "forks": 169,
         "created_at": "2025-12-18T08:54:50Z",
         "pushed_at": "2025-12-31T11:40:35Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3470,12 +3470,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 4206,
-        "forks": 383,
+        "stars": 4217,
+        "forks": 384,
         "created_at": "2026-03-31T06:29:06Z",
         "pushed_at": "2026-09-24T23:50:39Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3574,7 +3574,7 @@
         "created_at": "2026-07-19T16:34:08Z",
         "pushed_at": "2026-07-23T22:10:50Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3690,7 +3690,7 @@
         "created_at": "2022-08-14T07:48:29Z",
         "pushed_at": "2025-05-21T02:00:35Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3790,12 +3790,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 10661,
+        "stars": 10662,
         "forks": 636,
         "created_at": "2023-09-01T22:52:13Z",
         "pushed_at": "2026-09-27T11:03:01Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -3890,12 +3890,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 8382,
-        "forks": 558,
+        "stars": 8381,
+        "forks": 559,
         "created_at": "2025-08-03T11:03:25Z",
         "pushed_at": "2026-02-10T07:37:37Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4031,12 +4031,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 12057,
-        "forks": 824,
+        "stars": 12058,
+        "forks": 821,
         "created_at": "2025-11-26T09:18:10Z",
         "pushed_at": "2026-02-09T12:49:43Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4176,12 +4176,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "97fe5dbe06ac1f337ece08935b1076a35eefeeb9",
       "metrics": {
-        "stars": 17266,
-        "forks": 1733,
+        "stars": 17265,
+        "forks": 1732,
         "created_at": "2025-04-12T14:45:22Z",
         "pushed_at": "2025-10-16T01:28:50Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4297,12 +4297,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "6cdce3a17548d7ff0f2e05978469f134da25e68e",
       "metrics": {
-        "stars": 2518,
-        "forks": 153,
+        "stars": 2520,
+        "forks": 154,
         "created_at": "2024-12-16T08:24:45Z",
         "pushed_at": "2026-07-16T08:14:26Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4371,12 +4371,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 9564,
+        "stars": 9568,
         "forks": 1521,
         "created_at": "2026-01-03T13:16:29Z",
-        "pushed_at": "2026-09-30T14:51:06Z",
+        "pushed_at": "2026-10-02T10:38:06Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4442,9 +4442,9 @@
           }
         ],
         "latest_github_release": {
-          "tag_name": "v1.4.1",
-          "html_url": "https://github.com/Lightricks/LTX-2/releases/tag/v1.4.1",
-          "published_at": "2026-09-30T14:51:08Z",
+          "tag_name": "v1.4.2",
+          "html_url": "https://github.com/Lightricks/LTX-2/releases/tag/v1.4.2",
+          "published_at": "2026-10-02T10:38:08Z",
           "prerelease": false
         },
         "default_branch_commit_at": "2026-08-26T10:46:59Z",
@@ -4482,12 +4482,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 11002,
-        "forks": 1152,
+        "stars": 11006,
+        "forks": 1154,
         "created_at": "2024-11-20T20:06:28Z",
         "pushed_at": "2026-01-05T22:37:07Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4575,12 +4575,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 1239,
-        "forks": 90,
+        "stars": 1236,
+        "forks": 89,
         "created_at": "2026-05-28T11:38:02Z",
         "pushed_at": "2026-08-24T13:30:59Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4725,12 +4725,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "80c58a7d2ad175fa82a4d57f79f2a1415317dcfa",
       "metrics": {
-        "stars": 658,
+        "stars": 659,
         "forks": 37,
         "created_at": "2025-12-06T02:05:44Z",
         "pushed_at": "2026-01-05T11:32:22Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4799,12 +4799,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 17694,
-        "forks": 2278,
+        "stars": 17697,
+        "forks": 2279,
         "created_at": "2025-07-28T08:17:01Z",
         "pushed_at": "2026-09-21T06:16:22Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -4948,11 +4948,11 @@
       "code_revision": "c49db3d6b466537a02ccf2286688903d77af7e4f",
       "metrics": {
         "stars": 509,
-        "forks": 42,
+        "forks": 41,
         "created_at": "2026-02-27T19:13:50Z",
         "pushed_at": "2026-07-15T20:48:41Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5027,12 +5027,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 20637,
-        "forks": 3312,
+        "stars": 20648,
+        "forks": 3314,
         "created_at": "2019-10-09T12:47:28Z",
-        "pushed_at": "2026-10-01T20:49:51Z",
+        "pushed_at": "2026-10-02T18:54:54Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5114,12 +5114,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 4102,
-        "forks": 619,
+        "stars": 4106,
+        "forks": 617,
         "created_at": "2025-06-13T15:45:50Z",
         "pushed_at": "2025-10-17T10:10:07Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5260,12 +5260,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "f7cf38429b0bd264f1995f0f8743a88b1c728b94",
       "metrics": {
-        "stars": 2392,
-        "forks": 228,
+        "stars": 2400,
+        "forks": 227,
         "created_at": "2026-05-10T15:35:28Z",
         "pushed_at": "2026-09-01T12:28:49Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5385,7 +5385,7 @@
         "created_at": "2025-08-14T13:50:26Z",
         "pushed_at": "2025-09-19T07:04:25Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5498,12 +5498,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "3c6d06ddbef3160a1e1950cb13ab63dd12a61e50",
       "metrics": {
-        "stars": 1260,
+        "stars": 1262,
         "forks": 138,
         "created_at": "2025-03-11T22:09:47Z",
         "pushed_at": "2026-05-28T03:37:24Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5578,12 +5578,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 442,
+        "stars": 444,
         "forks": 63,
         "created_at": "2026-02-08T23:39:58Z",
         "pushed_at": "2026-05-12T13:07:30Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5725,7 +5725,7 @@
         "created_at": "2026-06-15T04:59:51Z",
         "pushed_at": "2026-08-31T06:06:50Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5794,12 +5794,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 11433,
-        "forks": 1373,
+        "stars": 11438,
+        "forks": 1375,
         "created_at": "2025-11-26T10:04:35Z",
         "pushed_at": "2026-07-10T12:34:32Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -5906,12 +5906,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 1783,
+        "stars": 1784,
         "forks": 175,
         "created_at": "2025-04-08T12:56:37Z",
         "pushed_at": "2026-06-04T07:15:34Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6066,11 +6066,11 @@
       "code_revision": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
       "metrics": {
         "stars": 23820,
-        "forks": 2710,
+        "forks": 2708,
         "created_at": "2024-07-03T02:59:22Z",
         "pushed_at": "2026-05-25T18:15:40Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6185,12 +6185,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "9c614e9657089213efc6a7421b30630be138a3f5",
       "metrics": {
-        "stars": 15316,
-        "forks": 2241,
+        "stars": 15322,
+        "forks": 2240,
         "created_at": "2024-10-08T13:36:55Z",
         "pushed_at": "2026-09-21T14:21:15Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6264,12 +6264,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 32917,
-        "forks": 2845,
+        "stars": 32921,
+        "forks": 2846,
         "created_at": "2023-10-10T03:16:51Z",
         "pushed_at": "2026-09-16T17:33:47Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6380,12 +6380,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 62221,
-        "forks": 6688,
+        "stars": 62244,
+        "forks": 6689,
         "created_at": "2024-01-14T18:05:21Z",
         "pushed_at": "2026-08-18T09:16:25Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6538,12 +6538,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "ee40fa7d6c6b8a2c7f06105f9f1e65775b74868c",
       "metrics": {
-        "stars": 24258,
-        "forks": 2887,
+        "stars": 24262,
+        "forks": 2886,
         "created_at": "2025-02-06T04:08:05Z",
         "pushed_at": "2026-09-29T16:06:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6623,12 +6623,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 13607,
-        "forks": 1767,
+        "stars": 13615,
+        "forks": 1765,
         "created_at": "2026-01-21T06:41:32Z",
         "pushed_at": "2026-03-17T06:38:41Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6742,12 +6742,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "81eed5e8f68b6bed1789f682fe78cdd324495afc",
       "metrics": {
-        "stars": 38552,
-        "forks": 5289,
+        "stars": 38562,
+        "forks": 5286,
         "created_at": "2023-03-27T09:59:10Z",
         "pushed_at": "2026-08-04T07:47:32Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6826,7 +6826,7 @@
         "created_at": "2023-12-01T00:15:13Z",
         "pushed_at": "2025-12-07T13:06:59Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -6932,12 +6932,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 3255,
+        "stars": 3257,
         "forks": 375,
         "created_at": "2021-07-27T12:58:06Z",
         "pushed_at": "2026-10-01T14:44:30Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7030,7 +7030,7 @@
         "created_at": "2026-06-18T21:35:30Z",
         "pushed_at": "2026-06-18T22:47:00Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7133,12 +7133,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "7c667777427b0e80c177caa6d3c46367901fc775",
       "metrics": {
-        "stars": 18626,
-        "forks": 2674,
+        "stars": 18631,
+        "forks": 2673,
         "created_at": "2015-03-26T10:46:17Z",
-        "pushed_at": "2026-10-01T19:22:00Z",
+        "pushed_at": "2026-10-02T09:11:24Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7232,12 +7232,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "81d0765ae590e8f69d3d26dc03f8a2e9c02b7d03",
       "metrics": {
-        "stars": 190,
+        "stars": 191,
         "forks": 21,
         "created_at": "2021-03-09T17:29:07Z",
         "pushed_at": "2022-05-19T20:44:09Z",
         "archived": true,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7348,12 +7348,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "b6c902888d45d75f022e253e3db29836360a3f82",
       "metrics": {
-        "stars": 153,
+        "stars": 154,
         "forks": 5,
         "created_at": "2026-04-14T13:03:31Z",
         "pushed_at": "2026-08-28T01:54:55Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7438,7 +7438,7 @@
         "created_at": "2024-06-25T06:05:16Z",
         "pushed_at": "2026-06-15T04:39:18Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7543,7 +7543,7 @@
         "created_at": "2024-12-07T07:47:39Z",
         "pushed_at": "2026-02-23T06:09:19Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7656,11 +7656,11 @@
       },
       "metrics": {
         "stars": 3872,
-        "forks": 486,
+        "forks": 487,
         "created_at": "2023-05-23T15:51:04Z",
         "pushed_at": "2026-09-18T22:33:51Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7775,12 +7775,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "480dd64f513cc8a6437e7d5b9eb0d3f1d30c2fac",
       "metrics": {
-        "stars": 2956,
+        "stars": 2959,
         "forks": 257,
         "created_at": "2017-01-26T23:24:54Z",
         "pushed_at": "2026-03-25T17:13:21Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7868,12 +7868,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "5517e0cf0d1acd16a1618eeedec596957523f9e1",
       "metrics": {
-        "stars": 26458,
-        "forks": 2019,
+        "stars": 26464,
+        "forks": 2020,
         "created_at": "2020-07-20T21:29:01Z",
         "pushed_at": "2025-03-13T21:44:03Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -7953,12 +7953,12 @@
         "weights_file_inventory_verified": true
       },
       "metrics": {
-        "stars": 12984,
-        "forks": 1671,
+        "stars": 12992,
+        "forks": 1668,
         "created_at": "2025-09-04T02:00:07Z",
         "pushed_at": "2026-10-01T09:56:56Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8084,12 +8084,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "fa5997af0a8210982619003269994a1be25eddf3",
       "metrics": {
-        "stars": 5655,
+        "stars": 5659,
         "forks": 518,
         "created_at": "2022-05-03T09:10:03Z",
         "pushed_at": "2025-11-13T14:40:46Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8174,7 +8174,7 @@
         "created_at": "2022-08-03T15:11:21Z",
         "pushed_at": "2026-09-26T15:16:51Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8267,12 +8267,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 4348,
-        "forks": 557,
+        "stars": 4353,
+        "forks": 556,
         "created_at": "2014-11-27T06:55:34Z",
-        "pushed_at": "2026-09-30T12:28:12Z",
+        "pushed_at": "2026-10-02T12:25:56Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8378,7 +8378,7 @@
         "created_at": "2023-09-15T18:17:15Z",
         "pushed_at": "2026-09-02T12:39:58Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8503,12 +8503,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "6332efcafa5f792df81812acc3b0f20b80b855cf",
       "metrics": {
-        "stars": 10687,
-        "forks": 1224,
+        "stars": 10727,
+        "forks": 1228,
         "created_at": "2025-01-23T06:21:58Z",
-        "pushed_at": "2026-09-29T02:04:56Z",
+        "pushed_at": "2026-10-02T16:29:34Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8582,12 +8582,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 49923,
+        "stars": 49936,
         "forks": 4981,
         "created_at": "2024-12-01T16:33:36Z",
-        "pushed_at": "2026-10-01T18:21:20Z",
+        "pushed_at": "2026-10-02T21:12:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8693,7 +8693,7 @@
         "created_at": "2023-03-24T11:15:24Z",
         "pushed_at": "2026-09-09T07:00:36Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8767,12 +8767,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 1232,
-        "forks": 89,
+        "stars": 1235,
+        "forks": 90,
         "created_at": "2020-11-19T22:19:02Z",
         "pushed_at": "2025-06-16T20:39:43Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8879,12 +8879,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "012c6c23c73283ee5591ae00d08af14d9eeb8279",
       "metrics": {
-        "stars": 76857,
-        "forks": 10396,
+        "stars": 76891,
+        "forks": 10410,
         "created_at": "2013-10-01T02:40:31Z",
-        "pushed_at": "2026-10-01T22:00:12Z",
+        "pushed_at": "2026-10-02T20:13:45Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -8958,12 +8958,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 13965,
+        "stars": 13971,
         "forks": 1668,
         "created_at": "2023-11-24T04:55:43Z",
         "pushed_at": "2026-05-15T07:18:04Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9078,12 +9078,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "85aa70fc67582d046e771ea73625182a0d8f7475",
       "metrics": {
-        "stars": 2080,
+        "stars": 2081,
         "forks": 209,
         "created_at": "2020-01-01T12:49:35Z",
         "pushed_at": "2026-09-18T17:30:40Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9191,12 +9191,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "abdd112e01dcf7d89122c2e5efa29fcff0669740",
       "metrics": {
-        "stars": 3891,
-        "forks": 577,
+        "stars": 3902,
+        "forks": 583,
         "created_at": "2025-11-25T14:36:31Z",
         "pushed_at": "2026-08-28T04:01:07Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9291,12 +9291,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7",
       "metrics": {
-        "stars": 2193,
+        "stars": 2195,
         "forks": 191,
         "created_at": "2019-06-04T08:25:28Z",
-        "pushed_at": "2026-09-30T09:53:26Z",
+        "pushed_at": "2026-10-02T10:33:21Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9376,12 +9376,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 3392,
+        "stars": 3391,
         "forks": 490,
         "created_at": "2018-04-16T04:20:42Z",
-        "pushed_at": "2026-09-25T05:32:31Z",
+        "pushed_at": "2026-10-02T08:22:37Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9428,9 +9428,9 @@
           }
         ],
         "latest_github_release": {
-          "tag_name": "v0.131.2",
-          "html_url": "https://github.com/vrm-c/UniVRM/releases/tag/v0.131.2",
-          "published_at": "2026-07-24T15:46:04Z",
+          "tag_name": "v0.131.3",
+          "html_url": "https://github.com/vrm-c/UniVRM/releases/tag/v0.131.3",
+          "published_at": "2026-10-02T12:08:42Z",
           "prerelease": false
         },
         "default_branch_commit_at": "2026-08-20T07:40:06Z",
@@ -9468,12 +9468,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 1303,
+        "stars": 1304,
         "forks": 146,
         "created_at": "2019-11-11T00:38:43Z",
         "pushed_at": "2026-09-28T23:12:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9561,12 +9561,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 135777,
-        "forks": 16103,
+        "stars": 135880,
+        "forks": 16110,
         "created_at": "2023-01-17T03:15:56Z",
-        "pushed_at": "2026-10-01T20:49:39Z",
+        "pushed_at": "2026-10-02T21:19:14Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9659,12 +9659,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 6718,
-        "forks": 693,
+        "stars": 6719,
+        "forks": 694,
         "created_at": "2025-02-25T18:03:11Z",
         "pushed_at": "2026-05-24T13:07:20Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9769,11 +9769,11 @@
       "code_revision": "ce9f4541d0f4ae47a138337e59066dd633207aa7",
       "metrics": {
         "stars": 13200,
-        "forks": 1310,
+        "forks": 1309,
         "created_at": "2023-12-07T16:52:15Z",
         "pushed_at": "2026-09-30T08:07:05Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9854,11 +9854,11 @@
       },
       "metrics": {
         "stars": 2077,
-        "forks": 312,
+        "forks": 313,
         "created_at": "2024-12-31T11:34:01Z",
         "pushed_at": "2026-09-30T12:27:12Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -9959,12 +9959,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "4e624302e0088e39933b31cbc71f24212e900f5f",
       "metrics": {
-        "stars": 7241,
+        "stars": 7242,
         "forks": 1217,
         "created_at": "2022-12-18T04:32:15Z",
         "pushed_at": "2026-09-24T10:35:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10049,12 +10049,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 219,
-        "forks": 12,
+        "stars": 222,
+        "forks": 13,
         "created_at": "2026-07-23T18:16:47Z",
         "pushed_at": "2026-10-01T00:45:05Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10177,7 +10177,7 @@
         "created_at": "2022-01-15T17:18:34Z",
         "pushed_at": "2026-07-19T08:43:43Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10257,12 +10257,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 10463,
+        "stars": 10466,
         "forks": 1068,
         "created_at": "2021-02-18T03:03:23Z",
         "pushed_at": "2026-09-25T02:45:14Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10376,7 +10376,7 @@
         "created_at": "2022-04-16T12:44:52Z",
         "pushed_at": "2026-07-20T07:18:29Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10461,7 +10461,7 @@
         "created_at": "2024-03-15T14:49:45Z",
         "pushed_at": "2026-08-28T14:44:44Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10587,12 +10587,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "693f74d13b3d04a0a22ce127ee79c929dd89756b",
       "metrics": {
-        "stars": 947,
+        "stars": 950,
         "forks": 117,
         "created_at": "2026-07-08T15:40:28Z",
         "pushed_at": "2026-07-10T14:13:31Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10688,11 +10688,11 @@
       "code_revision": "174ca5dc6a535a557177cf6703cc9a5338a17bc7",
       "metrics": {
         "stars": 43,
-        "forks": 8,
+        "forks": 7,
         "created_at": "2026-05-27T07:34:22Z",
         "pushed_at": "2026-06-17T09:31:29Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10780,7 +10780,7 @@
         "created_at": "2025-09-22T09:45:03Z",
         "pushed_at": "2026-10-01T14:46:29Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -10892,7 +10892,7 @@
         "created_at": "2025-12-29T11:09:18Z",
         "pushed_at": "2026-07-18T15:13:36Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11004,7 +11004,7 @@
         "created_at": "2026-04-29T07:36:06Z",
         "pushed_at": "2026-08-11T01:56:44Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11092,7 +11092,7 @@
         "created_at": "2013-10-19T05:47:35Z",
         "pushed_at": "2026-09-14T13:05:28Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11205,7 +11205,7 @@
         "created_at": "2025-09-01T12:34:52Z",
         "pushed_at": "2026-06-30T12:41:01Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11288,12 +11288,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "ad19fcf0ee34a7caf74df709dc4de7112f0d467d",
       "metrics": {
-        "stars": 5961,
-        "forks": 379,
+        "stars": 5962,
+        "forks": 380,
         "created_at": "2018-07-22T15:08:24Z",
         "pushed_at": "2026-09-20T14:30:12Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11406,12 +11406,12 @@
       "checked_on": "2026-09-09",
       "code_revision": "26131278e7b46bc2f64f989b25bb816f9e07c528",
       "metrics": {
-        "stars": 796,
+        "stars": 797,
         "forks": 40,
         "created_at": "2026-01-15T06:20:28Z",
         "pushed_at": "2026-04-06T04:01:50Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11530,7 +11530,7 @@
         "created_at": "2026-04-27T16:34:28Z",
         "pushed_at": "2026-08-19T15:23:04Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11654,7 +11654,7 @@
         "created_at": "2025-10-24T11:04:29Z",
         "pushed_at": "2026-04-07T15:56:15Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11746,9 +11746,9 @@
         "stars": 726,
         "forks": 183,
         "created_at": "2017-03-26T23:36:40Z",
-        "pushed_at": "2026-09-30T15:18:12Z",
+        "pushed_at": "2026-10-02T13:45:18Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11847,7 +11847,7 @@
         "created_at": "2016-12-22T22:22:59Z",
         "pushed_at": "2024-03-17T12:03:55Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -11964,7 +11964,7 @@
         "created_at": "2026-04-23T03:26:40Z",
         "pushed_at": "2026-08-16T08:18:40Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": "data/github-snapshot-2026-09-09-deep.json"
       },
@@ -12055,7 +12055,7 @@
         "created_at": "2026-08-16T13:14:20Z",
         "pushed_at": "2026-09-29T22:30:33Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12166,7 +12166,7 @@
         "created_at": "2025-07-06T08:56:31Z",
         "pushed_at": "2026-07-19T14:34:33Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12258,12 +12258,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 524,
-        "forks": 45,
+        "stars": 535,
+        "forks": 46,
         "created_at": "2026-09-03T02:40:12Z",
-        "pushed_at": "2026-10-01T19:07:58Z",
+        "pushed_at": "2026-10-02T10:13:49Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12316,9 +12316,9 @@
           }
         ],
         "latest_github_release": {
-          "tag_name": "v1.6.0",
-          "html_url": "https://github.com/tsunehimatoi/psd2live/releases/tag/v1.6.0",
-          "published_at": "2026-10-01T10:38:06Z",
+          "tag_name": "v2.0.2",
+          "html_url": "https://github.com/tsunehimatoi/psd2live/releases/tag/v2.0.2",
+          "published_at": "2026-10-02T10:13:49Z",
           "prerelease": false
         },
         "default_branch_commit_at": "2026-09-30T18:27:06Z",
@@ -12361,7 +12361,7 @@
         "created_at": "2026-02-23T19:12:12Z",
         "pushed_at": "2026-07-31T00:24:49Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12451,9 +12451,9 @@
         "stars": 78,
         "forks": 15,
         "created_at": "2026-04-20T07:17:16Z",
-        "pushed_at": "2026-10-01T15:23:40Z",
+        "pushed_at": "2026-10-02T18:15:09Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12517,9 +12517,9 @@
           }
         ],
         "latest_github_release": {
-          "tag_name": "v3.1.0",
-          "html_url": "https://github.com/ucx0204/CarrotMangaTranslator/releases/tag/v3.1.0",
-          "published_at": "2026-10-01T15:23:40Z",
+          "tag_name": "v3.1.1",
+          "html_url": "https://github.com/ucx0204/CarrotMangaTranslator/releases/tag/v3.1.1",
+          "published_at": "2026-10-02T18:15:09Z",
           "prerelease": false
         },
         "default_branch_commit_at": "2026-09-30T11:15:16Z",
@@ -12562,7 +12562,7 @@
         "created_at": "2026-07-08T01:09:57Z",
         "pushed_at": "2026-09-26T16:09:40Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12671,7 +12671,7 @@
         "created_at": "2026-02-28T11:38:50Z",
         "pushed_at": "2026-08-02T14:11:49Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12767,7 +12767,7 @@
         "created_at": "2026-07-20T00:15:42Z",
         "pushed_at": "2026-07-21T17:06:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12856,9 +12856,9 @@
         "stars": 1,
         "forks": 0,
         "created_at": "2026-08-30T10:16:20Z",
-        "pushed_at": "2026-09-23T00:25:54Z",
+        "pushed_at": "2026-10-02T19:20:22Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -12945,12 +12945,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 537,
-        "forks": 121,
+        "stars": 542,
+        "forks": 123,
         "created_at": "2026-05-04T13:38:29Z",
-        "pushed_at": "2026-10-01T20:02:50Z",
+        "pushed_at": "2026-10-02T19:50:50Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13059,7 +13059,7 @@
         "created_at": "2026-07-07T01:24:49Z",
         "pushed_at": "2026-09-11T15:43:32Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13150,7 +13150,7 @@
         "created_at": "2026-08-24T02:26:36Z",
         "pushed_at": "2026-09-22T01:17:53Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13252,9 +13252,9 @@
         "stars": 7,
         "forks": 1,
         "created_at": "2026-06-01T07:22:12Z",
-        "pushed_at": "2026-10-01T19:47:43Z",
+        "pushed_at": "2026-10-02T06:30:42Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13346,7 +13346,7 @@
         "created_at": "2026-05-18T18:59:14Z",
         "pushed_at": "2026-09-29T02:40:51Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13433,7 +13433,7 @@
         "created_at": "2026-08-07T12:22:06Z",
         "pushed_at": "2026-09-30T08:44:03Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13520,7 +13520,7 @@
         "created_at": "2026-07-16T09:46:51Z",
         "pushed_at": "2026-08-23T09:47:19Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13612,7 +13612,7 @@
         "created_at": "2026-08-07T08:24:25Z",
         "pushed_at": "2026-09-18T06:30:59Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13716,7 +13716,7 @@
         "created_at": "2026-08-08T09:10:52Z",
         "pushed_at": "2026-09-28T03:56:36Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13808,7 +13808,7 @@
         "created_at": "2024-08-22T19:49:17Z",
         "pushed_at": "2026-09-13T13:14:33Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -13900,7 +13900,7 @@
         "created_at": "2026-03-07T19:00:41Z",
         "pushed_at": "2026-09-30T12:35:32Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14002,9 +14002,9 @@
         "stars": 9,
         "forks": 0,
         "created_at": "2026-08-02T03:51:32Z",
-        "pushed_at": "2026-09-28T02:55:42Z",
+        "pushed_at": "2026-10-02T12:52:09Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14086,12 +14086,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 91,
+        "stars": 92,
         "forks": 8,
         "created_at": "2026-05-09T17:07:47Z",
-        "pushed_at": "2026-10-01T17:44:50Z",
+        "pushed_at": "2026-10-02T17:29:33Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14193,7 +14193,7 @@
         "created_at": "2026-07-30T13:01:15Z",
         "pushed_at": "2026-08-17T20:32:39Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14279,12 +14279,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 544,
+        "stars": 545,
         "forks": 53,
         "created_at": "2019-03-06T15:37:50Z",
         "pushed_at": "2026-10-01T02:30:59Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14375,12 +14375,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 424,
+        "stars": 425,
         "forks": 29,
         "created_at": "2025-10-08T10:24:16Z",
         "pushed_at": "2026-09-29T08:00:26Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14478,12 +14478,12 @@
         "weights_file_inventory_verified": false
       },
       "metrics": {
-        "stars": 170,
+        "stars": 171,
         "forks": 14,
         "created_at": "2026-09-13T01:27:23Z",
-        "pushed_at": "2026-10-01T20:37:11Z",
+        "pushed_at": "2026-10-02T19:12:01Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14546,9 +14546,9 @@
           }
         ],
         "latest_github_release": {
-          "tag_name": "v0.1.4",
-          "html_url": "https://github.com/Pal-AI-Lab/Cortico/releases/tag/v0.1.4",
-          "published_at": "2026-09-25T02:29:48Z",
+          "tag_name": "v0.1.5",
+          "html_url": "https://github.com/Pal-AI-Lab/Cortico/releases/tag/v0.1.5",
+          "published_at": "2026-10-02T03:59:53Z",
           "prerelease": false
         },
         "default_branch_commit_at": "2026-10-01T17:10:50Z",
@@ -14591,7 +14591,7 @@
         "created_at": "2026-06-10T20:08:45Z",
         "pushed_at": "2026-07-12T17:50:47Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14687,7 +14687,7 @@
         "created_at": "2026-05-03T05:02:15Z",
         "pushed_at": "2026-05-09T21:04:39Z",
         "archived": false,
-        "checked_on": "2026-10-01",
+        "checked_on": "2026-10-02",
         "star_growth": null,
         "snapshot_path": null
       },
@@ -14747,6 +14747,761 @@
         "default_branch_commit_at": "2026-05-09T21:04:17Z",
         "tree_truncated": false,
         "repository_file_count": 85,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "comfyui-neuralbooru",
+      "name": "ComfyUI-NeuralBooru",
+      "repository": "ChrisJohnson89/ComfyUI-NeuralBooru",
+      "url": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru",
+      "category": "image",
+      "kind": "integration",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "英語のシーン説明文、system prompt、プロンプトテンプレート、ローカルLLMのモデル名",
+      "outputs_ja": "検証済みのDanbooruタグ文字列、除外されたタグ一覧",
+      "summary_ja": "自然文のシーン記述をローカルLLMでDanbooruタグに変換するComfyUIノード。約14万件の実在タグ語彙で検証・別名変換・語形修正・並び替えを行い、テンプレートで包んでサンプラーへ渡す。",
+      "assessment_ja": "タグ語彙を重みに焼き込まず、汎用LLMの提案を同梱のタグ辞書で検証する設計が特徴。LLMを差し替えても検証側が効く。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "ComfyUI本体と、LM Studio/Ollama等のOpenAI互換ローカルサーバ（READMEはQwen3-1.7Bを推奨）。ノード自体はPython標準ライブラリのみで追加依存なし。",
+      "limitations_ja": "READMEの想定はSDXL系チェックポイントと英語Danbooru語彙。日本語入力の扱いやタグ辞書の網羅性は記載されていない。fuzzy matchは既定で無効。",
+      "dependencies_ja": "ComfyUI、ローカルLLMサーバ（LM Studio/Ollama/llama.cpp/vLLM等）",
+      "checked_on": "2026-10-02",
+      "code_revision": "e3376e5fcea10d38c52e8261f81f73fab6ef3352",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 19,
+        "forks": 2,
+        "created_at": "2026-06-29T07:16:37Z",
+        "pushed_at": "2026-07-10T03:25:47Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/tree/e3376e5fcea10d38c52e8261f81f73fab6ef3352"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/blob/e3376e5fcea10d38c52e8261f81f73fab6ef3352/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/ChrisJohnson89/ComfyUI-NeuralBooru",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/tree/e3376e5fcea10d38c52e8261f81f73fab6ef3352",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "comfyui",
+        "danbooru",
+        "prompt",
+        "llm",
+        "local"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "大量のプロンプト作成・表記ゆれ統一をワークフロー内で自動化する用途。",
+        "next_validation_ja": "手元のワークフローに接続し、Qwen3-1.7Bで同じ日本語記述からタグが再現するか、dropped_tagsの傾向を確認する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/blob/e3376e5fcea10d38c52e8261f81f73fab6ef3352/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": {
+          "tag_name": "v1.4.0",
+          "html_url": "https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/releases/tag/v1.4.0",
+          "published_at": "2026-07-10T03:25:57Z",
+          "prerelease": false
+        },
+        "default_branch_commit_at": "2026-07-10T03:15:04Z",
+        "tree_truncated": false,
+        "repository_file_count": 33,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "vlog2anime-kit",
+      "name": "vlog2anime-kit",
+      "repository": "mincad/vlog2anime-kit",
+      "url": "https://github.com/mincad/vlog2anime-kit",
+      "category": "video",
+      "kind": "pipeline",
+      "ai_role": "core",
+      "maturity": "early_candidate",
+      "inputs_ja": "実写動画（16fps等に整形）、キャラクター参照画像、プロンプト／ネガティブ",
+      "outputs_ja": "合成済みmp4、キャラクター／元人物／安全マットの各mp4、QC結果JSON",
+      "summary_ja": "実写動画の人物を参照画像のアニメキャラへ置換し、元人物を露出させずに実写背景へ戻すComfyUIワークフロー集。Wan2.2 Animate/SCAIL-2で変換し、SAM3追跡＋MatAnyone2でマットを作る。",
+      "assessment_ja": "元人物マットを3段階に拡張する安全合成と、保護領域のリーク検査スクリプトまで用意している点が具体的。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "ComfyUI（WanSCAILToVideo／SAM3系ノード）とComfyUI-MatAnyone、python3・ffmpeg・ffprobe。モデル重みとLoRAは同梱されない。",
+      "limitations_ja": "キャラ固有の参照画像・プロンプト・LoRA、モデル本体は含まず、特定キャラの同一性は保証しない。81フレーム超は分割推奨。必要VRAM・速度は環境依存。",
+      "dependencies_ja": "SCAIL-2／Wan2.1、SAM3、MatAnyone2、LTX-2.3、umt5系テキストエンコーダ、VAE",
+      "checked_on": "2026-10-02",
+      "code_revision": "184f867dfd82d97913952f2087234d7d6d10b6ee",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1,
+        "forks": 0,
+        "created_at": "2026-07-12T13:04:40Z",
+        "pushed_at": "2026-08-04T12:40:44Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/mincad/vlog2anime-kit/tree/184f867dfd82d97913952f2087234d7d6d10b6ee"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/mincad/vlog2anime-kit/blob/184f867dfd82d97913952f2087234d7d6d10b6ee/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/mincad/vlog2anime-kit",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/mincad/vlog2anime-kit/tree/184f867dfd82d97913952f2087234d7d6d10b6ee",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "comfyui",
+        "v2v",
+        "wan2.2",
+        "matting",
+        "after-effects"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "実写素材をアニメ調へ寄せるショット単位の変換と、その安全確認。",
+        "next_validation_ja": "短尺クリップでvalidate_masks.pyを回し、protection_leak_ratioと合成品質を確認する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/mincad/vlog2anime-kit/blob/184f867dfd82d97913952f2087234d7d6d10b6ee/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": null,
+        "default_branch_commit_at": "2026-07-27T14:23:53Z",
+        "tree_truncated": false,
+        "repository_file_count": 30,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "vedgen",
+      "name": "vedGen",
+      "repository": "HarisUmer/vedGen",
+      "url": "https://github.com/HarisUmer/vedGen",
+      "category": "animation",
+      "kind": "pipeline",
+      "ai_role": "core",
+      "maturity": "early_candidate",
+      "inputs_ja": "あらすじ（premise）文、YAML設定、Comfy API形式のワークフローJSON",
+      "outputs_ja": "ショット別キーフレーム画像、ショット別クリップ、結合済みstory.mp4",
+      "summary_ja": "一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。",
+      "assessment_ja": "plan_story→render_keyframes→animate_shots→assembleの一貫APIと、fast/finalの二段構成＋OOM時フォールバックで12GB GPUを狙う設計。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "READMEの想定はRTX 3060 12GB＋32GB RAM。CUDA版PyTorch、requirements.txt、vendor/ComfyUIのrequirements、重みDL時はCIVITAI_API_TOKEN。",
+      "limitations_ja": "既定ではインストールも重みDLも行わない。リポジトリは小規模・初期段階で、READMEにLICENSEファイルの実体はない。finalはT5をCPU/RAMへ逃がす構成を含む。",
+      "dependencies_ja": "ComfyUI（headless）とカスタムノード、Animagine XL、Wan 2.1 I2V、ffmpeg、Civitai/HF",
+      "checked_on": "2026-10-02",
+      "code_revision": "596f32ade8967725a3f8c54ba00d0f7ab288112d",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 1,
+        "forks": 0,
+        "created_at": "2026-07-22T05:34:33Z",
+        "pushed_at": "2026-07-22T05:34:37Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "NOASSERTION",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/HarisUmer/vedGen/tree/596f32ade8967725a3f8c54ba00d0f7ab288112d"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/HarisUmer/vedGen",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/HarisUmer/vedGen/tree/596f32ade8967725a3f8c54ba00d0f7ab288112d",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "anime",
+        "storyboard",
+        "i2v",
+        "comfyui",
+        "headless"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "短編のプリビズ／キーフレーム検討から動画化までの試作。",
+        "next_validation_ja": "plan_storyのみ実行し、ショット分割の妥当性と再現性を確認する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": null,
+        "default_branch_commit_at": "2026-07-22T05:34:31Z",
+        "tree_truncated": false,
+        "repository_file_count": 22,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "video-regen-recipes",
+      "name": "video-regen-recipes",
+      "repository": "Shenrui-Ma/video-regen-recipes",
+      "url": "https://github.com/Shenrui-Ma/video-regen-recipes",
+      "category": "video",
+      "kind": "workflow_tool",
+      "ai_role": "core",
+      "maturity": "active_candidate",
+      "inputs_ja": "再現したい動画の指定、キャラ参照画像、プロンプト、既存の生成AIログイン状況",
+      "outputs_ja": "二創動画、テンプレート形式の再現手順、検証記録",
+      "summary_ja": "Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創動画を再現するためのテンプレート集（20件）とSkills。参考図生成・音声クローン・後期編集まで手順書と検証プロンプトを同梱する。",
+      "assessment_ja": "Codex／Claude Code／Hermes Agent等から使う前提で、テンプレート書式と再現テストのプロンプトまで定義しているのが特徴。",
+      "status_ja": "小規模・初期評価候補",
+      "requirements_ja": "リポジトリをAgentで開ける環境、ComfyUI（ローカルまたはリモート）、モデルDL・生図バックエンドの設定。",
+      "limitations_ja": "品質・再現性は保証されず、TODOにWindows側テスト未完了と他Agent製品への適配が残る。テンプレートは第三者の素材・権利に依存する。",
+      "dependencies_ja": "ComfyUI、MiniMax H3、GPT-Image/Nano Banana等の画像生成、shenrui-comfyui-toolkit",
+      "checked_on": "2026-10-02",
+      "code_revision": "47cc68e1fe7a04213eb9aa53db9f08cb9a06d317",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 9,
+        "forks": 2,
+        "created_at": "2026-09-10T09:59:48Z",
+        "pushed_at": "2026-09-18T05:37:43Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/Shenrui-Ma/video-regen-recipes/tree/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Shenrui-Ma/video-regen-recipes/blob/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/Shenrui-Ma/video-regen-recipes",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/Shenrui-Ma/video-regen-recipes/tree/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "agent",
+        "comfyui",
+        "minimax-h3",
+        "meme",
+        "templates"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "ショート二創動画のレシピ管理と再現手順の共有。",
+        "next_validation_ja": "1テンプレートを手元環境で指示どおり再現し、手順の抜けを記録する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/Shenrui-Ma/video-regen-recipes/blob/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": null,
+        "default_branch_commit_at": "2026-09-18T05:37:42Z",
+        "tree_truncated": false,
+        "repository_file_count": 332,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "live2d-py",
+      "name": "live2d-py",
+      "repository": "EasyLive2D/live2d-py",
+      "url": "https://github.com/EasyLive2D/live2d-py",
+      "category": "rig2d",
+      "kind": "library",
+      "ai_role": "none",
+      "maturity": "established_tool",
+      "inputs_ja": "Cubism 2.1／3.0以降のモデルファイル、モデルパラメータ、口パク用の音声",
+      "outputs_ja": "OpenGLウィンドウへの描画、パラメータ・透明度操作の結果",
+      "summary_ja": "Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。",
+      "assessment_ja": "Pygame／PyQt5／PySide6／GLFW等へ組み込めるため、自作VTuberやコンパニオンの描画層を自前実装する土台になる。",
+      "status_ja": "実運用段階のライブラリ",
+      "requirements_ja": "Python 3.11以上。whl配布またはPyPIから導入、もしくはCMake 3.26以上でソースビルド。Live2D Cubism Core/Frameworkはライセンスの都合で同梱されず、公式から別途取得が必要。",
+      "limitations_ja": "Cubism Coreを同梱できないため、ソースビルド時はSDKを自分で用意する必要がある。READMEにモーション編集やモデル制作機能の記載はない。",
+      "dependencies_ja": "Live2D Cubism Native SDK、OpenGL対応のUIライブラリ",
+      "checked_on": "2026-10-02",
+      "code_revision": "35f686412470ea25718fa9c76ee4f1809f6a8506",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 576,
+        "forks": 55,
+        "created_at": "2024-06-04T10:44:33Z",
+        "pushed_at": "2026-09-30T11:50:34Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/EasyLive2D/live2d-py/tree/35f686412470ea25718fa9c76ee4f1809f6a8506"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/EasyLive2D/live2d-py/blob/35f686412470ea25718fa9c76ee4f1809f6a8506/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/EasyLive2D/live2d-py",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/EasyLive2D/live2d-py/tree/35f686412470ea25718fa9c76ee4f1809f6a8506",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "live2d",
+        "python",
+        "opengl",
+        "lip-sync",
+        "vtuber"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "tests/v2/main.cpp"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "デスクトップコンパニオン／VTuberアプリの描画・口パク・クリック判定。",
+        "next_validation_ja": "手元のLive2Dモデルで読み込み・視線追跡・口パク・パーツ単位クリック判定を確認する。",
+        "entry_points": [
+          {
+            "path": "tests/v2/main.cpp",
+            "url": "https://github.com/EasyLive2D/live2d-py/blob/35f686412470ea25718fa9c76ee4f1809f6a8506/tests/v2/main.cpp",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": {
+          "tag_name": "v1.0.0",
+          "html_url": "https://github.com/EasyLive2D/live2d-py/releases/tag/v1.0.0",
+          "published_at": "2026-09-30T11:50:35Z",
+          "prerelease": false
+        },
+        "default_branch_commit_at": "2026-09-30T11:48:39Z",
+        "tree_truncated": false,
+        "repository_file_count": 791,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "ayagami",
+      "name": "ayagami",
+      "repository": "AyagamiDev/ayagami",
+      "url": "https://github.com/AyagamiDev/ayagami",
+      "category": "rig2d",
+      "kind": "library",
+      "ai_role": "none",
+      "maturity": "early_candidate",
+      "inputs_ja": "MOC3ファイル、テクスチャ、モデルパラメータ、ZIPアーカイブ（デモ）",
+      "outputs_ja": "ウィンドウ／テクスチャへの描画結果、任意パラメータでのポーズ",
+      "summary_ja": "Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。",
+      "assessment_ja": "ブラックボックス解析のみで書かれた独立実装で、ゲーム組込みや自作VTuberソフトの描画基盤に使える。",
+      "status_ja": "初期評価候補",
+      "requirements_ja": "Rust/Cargo。Webデモはブラウザで動作しモデルはローカル処理。ネイティブはcargo run、Webはtrunkを使用。",
+      "limitations_ja": "API未安定・ドキュメント未整備で、表情ファイル／ポーズファイル／モーションの対応はTODOのまま。現状PRは受け付けておらず、crates.io公開も未実施。",
+      "dependencies_ja": "wgpu、egui（デモ）、Godot（ayagami-gd）",
+      "checked_on": "2026-10-02",
+      "code_revision": "0d1d7aa3efe57b1b363b72e672e353c52a9c15d6",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 342,
+        "forks": 17,
+        "created_at": "2026-07-11T13:51:22Z",
+        "pushed_at": "2026-09-14T14:19:06Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/AyagamiDev/ayagami/tree/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/AyagamiDev/ayagami",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/AyagamiDev/ayagami/tree/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "live2d",
+        "moc3",
+        "rust",
+        "wgpu",
+        "godot"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "ayagami-demo/src/app.rs",
+        "ayagami-demo/src/main.rs",
+        "ayagami-render/src/main.rs"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "エンジンへ組み込みたい場合のLive2D描画層。",
+        "next_validation_ja": "Webデモでモデル読込とパラメータ操作を行い、Godotコンポーネントがビルドできるか確認する。",
+        "entry_points": [
+          {
+            "path": "ayagami-demo/src/app.rs",
+            "url": "https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-demo/src/app.rs",
+            "verification": "tree_presence_only"
+          },
+          {
+            "path": "ayagami-demo/src/main.rs",
+            "url": "https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-demo/src/main.rs",
+            "verification": "tree_presence_only"
+          },
+          {
+            "path": "ayagami-render/src/main.rs",
+            "url": "https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/ayagami-render/src/main.rs",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": null,
+        "default_branch_commit_at": "2026-09-14T14:15:47Z",
+        "tree_truncated": false,
+        "repository_file_count": 44,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "open-vt",
+      "name": "open-vt",
+      "repository": "erodozer/open-vt",
+      "url": "https://github.com/erodozer/open-vt",
+      "category": "vtuber",
+      "kind": "desktop_tool",
+      "ai_role": "none",
+      "maturity": "active_candidate",
+      "inputs_ja": "Live2Dモデルとアセット、フェイストラッキング入力（OpenSeeFace／VTubeStudio）",
+      "outputs_ja": "配信・録画向けのアバター表示",
+      "summary_ja": "Godotで作られたオープンソースの2D VTuberソフト。OpenSeeFaceとVTubeStudioのトラッカーに対応し、OBSで取り込みやすい透過ウィンドウや複数ウィンドウのポップアウト操作を持つ。",
+      "assessment_ja": "VTube Studio互換のアセット運用を掲げ、Linuxネイティブ対応とピクセルアート向けのスケーリング調整を特徴とする。",
+      "status_ja": "実運用候補",
+      "requirements_ja": "Godot。thirdparty/のサブモジュールをbuild_dependencies.shでビルドする必要があり、OpenSeeFaceは別途実行ファイルを用意する。",
+      "limitations_ja": "VTSのプラグイン互換やVNetは対象外。AI対話や音声合成などは含まず、アバター表示に限定される。",
+      "dependencies_ja": "Ayagami、OpenSeeFace、VTubeStudio（任意）",
+      "checked_on": "2026-10-02",
+      "code_revision": "89f2f0f4119a21c96a8b9e1222850b558ffcb62e",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 277,
+        "forks": 9,
+        "created_at": "2025-01-12T03:29:16Z",
+        "pushed_at": "2026-09-25T02:18:59Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "MIT",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/erodozer/open-vt/tree/89f2f0f4119a21c96a8b9e1222850b558ffcb62e"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/erodozer/open-vt/blob/89f2f0f4119a21c96a8b9e1222850b558ffcb62e/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/erodozer/open-vt",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/erodozer/open-vt/tree/89f2f0f4119a21c96a8b9e1222850b558ffcb62e",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "live2d",
+        "vtuber",
+        "godot",
+        "openseeface",
+        "linux"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "Live2Dアバターでの配信運用と、透過合成を含むキャプチャ。",
+        "next_validation_ja": "手元のモデルでOpenSeeFace入力の追従と透過ウィンドウ出力を確認する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/erodozer/open-vt/blob/89f2f0f4119a21c96a8b9e1222850b558ffcb62e/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": null,
+        "default_branch_commit_at": "2026-09-25T02:18:47Z",
+        "tree_truncated": false,
+        "repository_file_count": 452,
+        "source_inspections": [],
+        "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
+        "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
+      }
+    },
+    {
+      "id": "openutaumobile",
+      "name": "OpenUtauMobile",
+      "repository": "vocoder712/OpenUtauMobile",
+      "url": "https://github.com/vocoder712/OpenUtauMobile",
+      "category": "music",
+      "kind": "desktop_tool",
+      "ai_role": "integration",
+      "maturity": "early_candidate",
+      "inputs_ja": "USTXプロジェクト、歌声音源（ZIP）、歌詞と音符",
+      "outputs_ja": "歌声の合成結果、USTXファイル",
+      "summary_ja": "モバイル向けのオープンソース歌声合成エディタ。OpenUtau CoreをベースにUSTXプロジェクトファイルを扱い、DiffSinger／UTAU／Vogenの音源を読み込める。",
+      "assessment_ja": "スマートフォンでDiffSinger系音源を使える点が実用的。V2書き換え中でmasterはlegacy扱いとの注意がある。",
+      "status_ja": "初期評価候補",
+      "requirements_ja": "Android 5.0以上。iOSは.NET 9 SDK・MAUI・Xcode 15以降を備えたmacOSでの自前ビルドが必要。音源は別途入手する。",
+      "limitations_ja": "READMEは現状かなり不安定でメモリ管理問題が起きうるとして頻繁な保存を推奨。非公式アプリであり、公式OpenUtauを名乗ってはいけない。他音源形式の動作は非保証。",
+      "dependencies_ja": "OpenUtau Core、DiffSinger／UTAU／Vogen音源",
+      "checked_on": "2026-10-02",
+      "code_revision": "17a86f602e054c345841684224903004eff1f536",
+      "verification": {
+        "readme_reviewed": true,
+        "repository_tree_checked": true,
+        "runtime_tested": false,
+        "weights_downloaded": false,
+        "weights_file_inventory_verified": false
+      },
+      "metrics": {
+        "stars": 327,
+        "forks": 67,
+        "created_at": "2025-10-14T14:37:26Z",
+        "pushed_at": "2026-10-02T15:33:24Z",
+        "archived": false,
+        "checked_on": "2026-10-02",
+        "star_growth": null,
+        "snapshot_path": null
+      },
+      "license": {
+        "github_detected_spdx": "Apache-2.0",
+        "independently_reviewed": false,
+        "commercial_use": "not_assessed",
+        "source": "https://github.com/vocoder712/OpenUtauMobile/tree/17a86f602e054c345841684224903004eff1f536"
+      },
+      "sources": [
+        {
+          "url": "https://github.com/vocoder712/OpenUtauMobile/blob/17a86f602e054c345841684224903004eff1f536/README.md",
+          "supports": "機能・入出力・環境・制約についての公式説明"
+        },
+        {
+          "url": "https://api.github.com/repos/vocoder712/OpenUtauMobile",
+          "supports": "累計スター・作成日・最終push・アーカイブ・自動ライセンス判定"
+        },
+        {
+          "url": "https://github.com/vocoder712/OpenUtauMobile/tree/17a86f602e054c345841684224903004eff1f536",
+          "supports": "確認コミットのファイル構成"
+        }
+      ],
+      "tags": [
+        "singing-synthesis",
+        "diffsinger",
+        "utau",
+        "openutau",
+        "android"
+      ],
+      "repository_role": "implementation",
+      "evidence_files": [
+        "README.md"
+      ],
+      "evidence_files_verification": "tree_presence_only",
+      "model_resources": [],
+      "model_scope_ja": "自動追加。モデル配布先のファイル一覧は未確認。",
+      "relations": [],
+      "deep_dive": {
+        "reviewed_on": "2026-10-02",
+        "production_fit_ja": "外出先での歌わせ調整・プレビュー。",
+        "next_validation_ja": "Android版にDiffSinger音源を入れ、USTXを開いて保存・書き出しまで通るか確認する。",
+        "entry_points": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/vocoder712/OpenUtauMobile/blob/17a86f602e054c345841684224903004eff1f536/README.md",
+            "verification": "tree_presence_only"
+          }
+        ],
+        "latest_github_release": {
+          "tag_name": "1.1.7",
+          "html_url": "https://github.com/vocoder712/OpenUtauMobile/releases/tag/1.1.7",
+          "published_at": "2025-12-31T16:25:36Z",
+          "prerelease": false
+        },
+        "default_branch_commit_at": "2026-09-08T02:05:39Z",
+        "tree_truncated": false,
+        "repository_file_count": 551,
         "source_inspections": [],
         "scope_note_ja": "AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。",
         "license_notes_ja": "コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。"
@@ -14828,5 +15583,5 @@
       "name_ja": "絵コンテ・制作管理・評価"
     }
   ],
-  "metrics_refreshed_on": "2026-10-01"
+  "metrics_refreshed_on": "2026-10-02"
 }

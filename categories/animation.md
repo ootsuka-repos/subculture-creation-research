@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-01。**143件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -15,12 +15,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [AniDoc](https://github.com/robbyant-research/AniDoc) · [詳細](#anidoc) | 設定画を参照してスケッチ列を彩色するアニメ制作研究。 | AIモデル・学習 / モデル・研究候補 | 572 / 2025-04-15 |
 | [AnimeColor](https://github.com/IamCreateAI/AnimeColor) · [詳細](#animecolor) | 設定画参照とスケッチ動画からアニメを彩色する拡散Transformer。 | AIモデル・学習 / 小規模・初期候補 | 9 / 2025-08-04 |
 | [BasicPBC](https://github.com/ykdai/BasicPBC) · [詳細](#basicpbc) | 閉領域の対応付けによってアニメ線画の塗りを支援するペイントバケット彩色。 | AIモデル・学習 / モデル・研究候補 | 307 / 2025-06-26 |
-| [ECCV2022-RIFE](https://github.com/hzwer/ECCV2022-RIFE) · [詳細](#eccv2022-rife) | フレーム間の中間画像を推定する動画補間モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 5,597 / 2025-09-10 |
+| [ECCV2022-RIFE](https://github.com/hzwer/ECCV2022-RIFE) · [詳細](#eccv2022-rife) | フレーム間の中間画像を推定する動画補間モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 5,598 / 2025-09-10 |
 | [LatentSync](https://github.com/bytedance/LatentSync) · [詳細](#latentsync) | 音声条件で口の動きを同期させる動画処理モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 6,105 / 2025-06-20 |
-| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,773 / 2026-10-01 |
-| [ToonComposer](https://github.com/TencentARC/ToonComposer) · [詳細](#tooncomposer) | キーフレーム後の中割りと彩色を生成AIでまとめて処理する。 | AIモデル・学習 / 研究・技術評価候補 | 588 / 2025-08-20 |
+| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,774 / 2026-10-02 |
+| [ToonComposer](https://github.com/TencentARC/ToonComposer) · [詳細](#tooncomposer) | キーフレーム後の中割りと彩色を生成AIでまとめて処理する。 | AIモデル・学習 / 研究・技術評価候補 | 589 / 2025-08-20 |
 | [ToonCrafter](https://github.com/Doubiiu/ToonCrafter) · [詳細](#tooncrafter) | 二枚のアニメ画像の間を生成する補間モデル。 | AIモデル・学習 / モデル・研究候補 | 6,030 / 2025-03-19 |
 | [comic-manga-narrator](https://github.com/MushiSenpai/comic-manga-narrator) · [詳細](#comic-manga-narrator) | 漫画/コミックページを、コマ検出・セリフの音声化・ナレーション・Ken Burnsと2.5Dパララックスで演出したナレーション付きMP4に変換するローカルパイプライン。 | AIモデル・学習 / 小規模・初期評価候補 | 0 / 2026-07-12 |
+| [vedGen](https://github.com/HarisUmer/vedGen) · [詳細](#vedgen) | 一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-07-22 |
 
 <a id="anidoc"></a>
 
@@ -155,7 +156,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: RIFEモデル
 - **制約・未確認**: 作者がアニメ向けモデルを案内。原画の演技設計やタイミングを自動で正しく決めるものではない。
 - **編集者評価**: 少枚数アニメや生成動画の補間を検討する基盤。
-- **メトリクス**: ★5,597、fork 570、作成 2020-11-12、最終push 2025-09-10T06:32:03Z、archived=False
+- **メトリクス**: ★5,598、fork 570、作成 2020-11-12、最終push 2025-09-10T06:32:03Z、archived=False
 - **確認**: 2026-09-09 / コミット `5d8adbdd40e12c2c8f91930eff838aebe561c086`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/hzwer/ECCV2022-RIFE/tree/5d8adbdd40e12c2c8f91930eff838aebe561c086)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -229,7 +230,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: 通常制作にAIモデル不要
 - **制約・未確認**: 生成AIモデルそのものではない。既存の制作工程への適合性を確認する。
 - **編集者評価**: AI生成素材を手で仕上げる制作基盤として有用。
-- **メトリクス**: ★7,773、fork 880、作成 2016-03-18、最終push 2026-10-01T17:24:34Z、archived=False
+- **メトリクス**: ★7,774、fork 879、作成 2016-03-18、最終push 2026-10-02T05:05:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `1ef22259b9cf64c9d8710daebc131b401932e81b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/opentoonz/opentoonz/tree/1ef22259b9cf64c9d8710daebc131b401932e81b)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -264,7 +265,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: ToonComposer重みと基盤モデル。配布条件は公式参照
 - **制約・未確認**: 最終pushは2025年8月。最近の開発活発度は低く、研究上の有望性と区別する。
 - **編集者評価**: 原画以降の制作工程への関連が高い。READMEはICLR 2026と記載。
-- **メトリクス**: ★588、fork 60、作成 2025-08-12、最終push 2025-08-20T06:21:56Z、archived=False
+- **メトリクス**: ★589、fork 60、作成 2025-08-12、最終push 2025-08-20T06:21:56Z、archived=False
 - **確認**: 2026-09-09 / コミット `53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/TencentARC/ToonComposer/tree/53dc3df95eca4f6a2e3e4c9dea0160a339b12f1c)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -362,3 +363,38 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 **最新GitHub Release**: [v0.7.0](https://github.com/MushiSenpai/comic-manga-narrator/releases/tag/v0.7.0) / 2026-06-11T16:02:35Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-07-12T17:50:36Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="vedgen"></a>
+
+## vedGen
+
+一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。
+
+- **リポジトリ**: https://github.com/HarisUmer/vedGen
+- **分類**: pipeline / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: あらすじ（premise）文、YAML設定、Comfy API形式のワークフローJSON
+- **出力**: ショット別キーフレーム画像、ショット別クリップ、結合済みstory.mp4
+- **環境**: READMEの想定はRTX 3060 12GB＋32GB RAM。CUDA版PyTorch、requirements.txt、vendor/ComfyUIのrequirements、重みDL時はCIVITAI_API_TOKEN。
+- **依存**: ComfyUI（headless）とカスタムノード、Animagine XL、Wan 2.1 I2V、ffmpeg、Civitai/HF
+- **制約・未確認**: 既定ではインストールも重みDLも行わない。リポジトリは小規模・初期段階で、READMEにLICENSEファイルの実体はない。finalはT5をCPU/RAMへ逃がす構成を含む。
+- **編集者評価**: plan_story→render_keyframes→animate_shots→assembleの一貫APIと、fast/finalの二段構成＋OOM時フォールバックで12GB GPUを狙う設計。
+- **メトリクス**: ★1、fork 0、作成 2026-07-22、最終push 2026-07-22T05:34:37Z、archived=False
+- **確認**: 2026-10-02 / コミット `596f32ade8967725a3f8c54ba00d0f7ab288112d`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/HarisUmer/vedGen/tree/596f32ade8967725a3f8c54ba00d0f7ab288112d)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md) / [GitHub API](https://api.github.com/repos/HarisUmer/vedGen) / [固定ツリー](https://github.com/HarisUmer/vedGen/tree/596f32ade8967725a3f8c54ba00d0f7ab288112d)
+
+### 制作に使う際の検討
+
+短編のプリビズ／キーフレーム検討から動画化までの試作。
+
+**次に確かめること（実施前）**: plan_storyのみ実行し、ショット分割の妥当性と再現性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-07-22T05:34:31Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
