@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,13 +12,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 135,880 / 2026-10-02 |
-| [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) · [詳細](#comfyui-wanvideowrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,719 / 2026-05-24 |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) · [詳細](#comfyui) | 画像・動画などのモデルをノードで接続して制作工程を構成する。 | AI連携 / 更新のある導入・評価候補 | 136,000 / 2026-10-03 |
+| [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) · [詳細](#comfyui-wanvideowrapper) | Wan系および関連動画モデルをComfyUIで使うためのラッパーノード。 | AI連携 / 連携の評価候補 | 6,720 / 2026-05-24 |
 | [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) · [詳細](#diffsynth-studio) | 画像・動画の生成と追加学習を複数モデルで扱う統合実装。 | AIモデル・学習 / モデル・研究候補 | 13,200 / 2026-09-30 |
 | [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) · [詳細](#musubi-tuner) | 画像・動画モデル向けのLoRA学習スクリプト群。 | AIモデル・学習 / 更新のある導入・評価候補 | 2,077 / 2026-09-30 |
-| [sd-scripts](https://github.com/kohya-ss/sd-scripts) · [詳細](#sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,242 / 2026-09-24 |
-| [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) · [詳細](#comfyui-anime-extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-10-02 |
+| [sd-scripts](https://github.com/kohya-ss/sd-scripts) · [詳細](#sd-scripts) | 画像生成モデルの追加学習・LoRAを扱うスクリプト群。 | AIモデル・学習 / 連携・制作ツール候補 | 7,243 / 2026-09-24 |
+| [ComfyUI-Anime-Extensions](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions) · [詳細](#comfyui-anime-extensions) | ComfyUI向けのノード集で、音声合成、画像条件付きキャラクター音声、画像解析・切り抜き、音楽生成、動画生成、漫画ページ組み、VRM処理をまとめて扱う。 | AIモデル・学習 / 初期評価候補 | 1 / 2026-10-03 |
 | [comfyui-stylebook](https://github.com/EnragedAntelope/comfyui-stylebook) · [詳細](#comfyui-stylebook) | ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ済みプレビュー、1000以上の作家記述子、130以上のモディファイアを同梱する。 | AIは任意 / 小規模・初期評価候補 | 9 / 2026-10-02 |
+| [comfyui-imgutils](https://github.com/xiaden/comfyui-imgutils) · [詳細](#comfyui-imgutils) | deepghs/imgutilsをComfyUI V3 APIでラップしたノード集。アニメ画像のタグ付け・検出・姿勢推定・分割など34ノードを提供する。 | AI連携 / 小規模・初期評価候補 | 0 / 2026-07-05 |
 
 <a id="comfyui"></a>
 
@@ -34,7 +35,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 各種生成モデル、任意のカスタムノード
 - **制約・未確認**: カスタムノードとモデルの互換性は個別確認が必要。ワークフロー公開だけで再現済みとはしない。
 - **編集者評価**: 複数分野のモデルと制作補助ノードを集約できる共通基盤。
-- **メトリクス**: ★135,880、fork 16,110、作成 2023-01-17、最終push 2026-10-02T21:19:14Z、archived=False
+- **メトリクス**: ★136,000、fork 16,119、作成 2023-01-17、最終push 2026-10-03T14:22:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `4989cdd95487531b50438c6a091dffa06e4af4b2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Comfy-Org/ComfyUI/tree/4989cdd95487531b50438c6a091dffa06e4af4b2)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -69,7 +70,7 @@ Wan系および関連動画モデルをComfyUIで使うためのラッパーノ�
 - **依存**: ComfyUI、Wan系モデル
 - **制約・未確認**: 公式Wan実装ではない。対応版と既存ワークフローの互換性を確認する。
 - **編集者評価**: 動画制作のモデル操作・省メモリ設定を工程に組み込める。
-- **メトリクス**: ★6,719、fork 694、作成 2025-02-25、最終push 2026-05-24T13:07:20Z、archived=False
+- **メトリクス**: ★6,720、fork 694、作成 2025-02-25、最終push 2026-05-24T13:07:20Z、archived=False
 - **確認**: 2026-09-09 / コミット `088128b224242e110d3906c6750e9a3a348a659b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/kijai/ComfyUI-WanVideoWrapper/tree/088128b224242e110d3906c6750e9a3a348a659b)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -176,7 +177,7 @@ Wan派生をComfyUIへ接続する第三者統合。公式重みそのままと�
 - **依存**: SD/SDXL等の対応する基盤重み
 - **制約・未確認**: 生成UIではない。モデル版と学習方式の組み合わせを確認する。
 - **編集者評価**: キャラ・画風の再現性を制作側で調整する学習基盤。
-- **メトリクス**: ★7,242、fork 1,217、作成 2022-12-18、最終push 2026-09-24T10:35:53Z、archived=False
+- **メトリクス**: ★7,243、fork 1,218、作成 2022-12-18、最終push 2026-09-24T10:35:53Z、archived=False
 - **確認**: 2026-09-09 / コミット `4e624302e0088e39933b31cbc71f24212e900f5f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/kohya-ss/sd-scripts/tree/4e624302e0088e39933b31cbc71f24212e900f5f)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -211,7 +212,7 @@ ComfyUI向けのノード集で、音声合成、画像条件付きキャラク�
 - **依存**: Irodori-TTS、YuE2、Sol-H3-Spark、dghs-imgutils等。
 - **制約・未確認**: モデルとランタイムは同梱されず別途準備。YuE2の重みは非商用ライセンスとREADMEが記載。
 - **編集者評価**: Irodori-TTSの音声合成や画像条件付きキャラクター音声、VRMのダンス生成、漫画ページ組みなど制作寄りの機能を1パッケージで提供する点が特徴。
-- **メトリクス**: ★1、fork 0、作成 2026-08-30、最終push 2026-10-02T19:20:22Z、archived=False
+- **メトリクス**: ★1、fork 0、作成 2026-08-30、最終push 2026-10-03T18:28:00Z、archived=False
 - **確認**: 2026-09-30 / コミット `aa21a682ea509bab0fa3f17ba877a3867647d4eb`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ootsuka-repos/ComfyUI-Anime-Extensions/tree/aa21a682ea509bab0fa3f17ba877a3867647d4eb)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -266,3 +267,38 @@ ComfyUI向けの画風プリセット集。650以上のスタイルにレンダ�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-09-28T02:55:42Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="comfyui-imgutils"></a>
+
+## comfyui-imgutils
+
+deepghs/imgutilsをComfyUI V3 APIでラップしたノード集。アニメ画像のタグ付け・検出・姿勢推定・分割など34ノードを提供する。
+
+- **リポジトリ**: https://github.com/xiaden/comfyui-imgutils
+- **分類**: integration / AI連携 / 小規模・初期評価候補
+- **入力**: アニメ画像（バッチ）
+- **出力**: タグ、JSON、マスク、スケルトン、分類スコアなど
+- **環境**: ComfyUI 0.25.0以上、Python 3.10+、dghs-imgutils[gpu] 0.19.0以上。
+- **依存**: dghs-imgutils、onnxruntime
+- **制約・未確認**: READMEに列挙されたノードのみ。モデルは初回にHugging Faceから自動DLされキャッシュされる。
+- **編集者評価**: アニメ画像の解析・筛选をComfyUI内で完結できる。タガーや判定モードを多数用意する。
+- **メトリクス**: ★0、fork 1、作成 2026-07-02、最終push 2026-07-05T10:55:56Z、archived=False
+- **確認**: 2026-10-03 / コミット `f88cd73d17a549281dce4149da0d47c7e09ab870`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/xiaden/comfyui-imgutils/tree/f88cd73d17a549281dce4149da0d47c7e09ab870)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/xiaden/comfyui-imgutils/blob/f88cd73d17a549281dce4149da0d47c7e09ab870/README.md) / [GitHub API](https://api.github.com/repos/xiaden/comfyui-imgutils) / [固定ツリー](https://github.com/xiaden/comfyui-imgutils/tree/f88cd73d17a549281dce4149da0d47c7e09ab870)
+
+### 制作に使う際の検討
+
+データセット作成や生成物の自動判定・前処理に使える。
+
+**次に確かめること（実施前）**: 代表ノードでタグ付けと分割を実行し、出力形式と処理時間を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/xiaden/comfyui-imgutils/blob/f88cd73d17a549281dce4149da0d47c7e09ab870/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-07-05T10:55:48Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

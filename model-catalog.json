@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-02",
+  "updated_on": "2026-10-03",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1238203,
-        "likes": 2341,
+        "downloads_last_month": 1222461,
+        "likes": 2345,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 386736,
-        "likes": 533,
+        "downloads_last_month": 362574,
+        "likes": 535,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 85185,
-        "likes": 433,
+        "downloads_last_month": 86869,
+        "likes": 434,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 146140,
-        "likes": 178,
+        "downloads_last_month": 152669,
+        "likes": 180,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1495,
+        "downloads_last_month": 1519,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1193,
+        "downloads_last_month": 1160,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -378,9 +378,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 229,
+        "likes": 231,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 876,
+        "downloads_last_month": 823,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 696,
+        "downloads_last_month": 683,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 911,
+        "downloads_last_month": 989,
         "likes": 96,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 13966,
-        "likes": 228,
+        "downloads_last_month": 14103,
+        "likes": 229,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 5964,
+        "downloads_last_month": 6002,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 79,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -983,10 +983,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 29,
+        "downloads_last_month": 30,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 426,
+        "downloads_last_month": 434,
         "likes": 27,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-02"
+        "checked_on": "2026-10-03"
       },
       "sources": [
         {
@@ -1052,7 +1052,283 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "galgame-llasa-3b-v3",
+      "name": "Galgame-Llasa-3B-v3",
+      "hub_repository": "OmniAICreator/Galgame-Llasa-3B-v3",
+      "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B-v3",
+      "category": "tts",
+      "checked_on": "2026-10-03",
+      "architecture_ja": "HKUSTAudio/Llasa-3Bを基に、ギャルゲー系の日本語音声データで微調整した日本語テキスト音声合成モデル。",
+      "variants_ja": "3B版にはv1/v2/v3があり、本項目はv3。v3は学習時のテキスト正規化を変更し一貫性を改善したと記載。1B版も別途公開されている。",
+      "prompting_ja": "日本語テキストを入力する。詳細なプロンプト書式はモデルカードに記載がない。",
+      "requirements_ja": "Llasa系列の推論環境が必要。具体的なVRAM要件はモデルカードに記載がない。3BのデモがHugging Face Spacesで公開されている。",
+      "limitations_ja": "cc-by-nc-4.0で商用利用は不可。日本語のみを対象とする。話者・感情制御の仕様はカードに記載がない。",
+      "license_notes_ja": "metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。",
+      "assessment_ja": "ギャルゲー/アニメ調の日本語音声合成をローカルで試す候補。既存の3B（v1）とは別のv3チェックポイント。",
+      "next_validation_ja": "公開デモと同じテキストで3B-v3と1B-v3を比較し、読みと韻律・速度を記録する。",
+      "distribution": {
+        "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B-v3",
+        "api_url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B-v3",
+        "checked_on": "2026-10-03",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "880454ae1697e6a397df39c7bdc0d16a3b21d543",
+        "gated": false,
+        "license_metadata": "cc-by-nc-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model-00001-of-00003.safetensors",
+          "model-00002-of-00003.safetensors",
+          "model-00003-of-00003.safetensors"
+        ],
+        "matching_weight_file_count": 3
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 48,
+        "likes": 5,
+        "last_modified": "2025-08-12T05:27:46.000Z",
+        "checked_on": "2026-10-03"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-3B-v3/blob/880454ae1697e6a397df39c7bdc0d16a3b21d543/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B-v3",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "galgame-llasa-1b-v3",
+      "name": "Galgame-Llasa-1B-v3",
+      "hub_repository": "OmniAICreator/Galgame-Llasa-1B-v3",
+      "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-1B-v3",
+      "category": "tts",
+      "checked_on": "2026-10-03",
+      "architecture_ja": "HKUSTAudio/Llasa-1B-Multilingualを基に、ギャルゲー音声や日本語アニメ音声データで微調整した日本語テキスト音声合成モデル。",
+      "variants_ja": "1B版にはv1/v2/v3があり、本項目はv3。学習データにEmilia・ehehe-corpus・japanese-anime-speech等を追加したと記載。3B版も別途公開されている。",
+      "prompting_ja": "日本語テキストを入力する。詳細なプロンプト書式はモデルカードに記載がない。",
+      "requirements_ja": "Llasa系列の推論環境が必要。具体的なVRAM要件はモデルカードに記載がない。",
+      "limitations_ja": "cc-by-nc-4.0で商用利用は不可。日本語のみを対象とする。話者・感情制御の仕様はカードに記載がない。",
+      "license_notes_ja": "metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。",
+      "assessment_ja": "軽量な1Bクラスで日本語キャラ音声を作る候補。3B版より小さいぶん試しやすい。",
+      "next_validation_ja": "1B-v3と3B-v3で同一台詞を合成し、品質と速度の差を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-1B-v3",
+        "api_url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-1B-v3",
+        "checked_on": "2026-10-03",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e3f797a5a51bf6811e28b6e2be8650dba7322aa3",
+        "gated": false,
+        "license_metadata": "cc-by-nc-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 37,
+        "likes": 2,
+        "last_modified": "2025-08-12T05:26:43.000Z",
+        "checked_on": "2026-10-03"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/OmniAICreator/Galgame-Llasa-1B-v3/blob/e3f797a5a51bf6811e28b6e2be8650dba7322aa3/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-1B-v3",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "manga-bubble-yolo",
+      "name": "Manga-Bubble-YOLO",
+      "hub_repository": "Kiuyha/Manga-Bubble-YOLO",
+      "url": "https://huggingface.co/Kiuyha/Manga-Bubble-YOLO",
+      "category": "manga",
+      "checked_on": "2026-10-03",
+      "architecture_ja": "Manga109-sとMangadex由来画像で学習したYOLO26ベースのテキスト領域検出モデル。NMS不要のend-to-endヘッドを持つ。",
+      "variants_ja": "yolo26nとyolo26sのPyTorch(.pt)とONNXを同梱。学習は英語・ベトナム語・日本語の混合データ（5,595画像）。",
+      "prompting_ja": "該当なし（検出モデル）。imgsz=1280、conf=0.25を推奨と記載。",
+      "requirements_ja": "ultralytics、またはONNX Runtime。推論はT4でn約11.0ms/画像、s約27.5ms/画像と記載。",
+      "limitations_ja": "データセットは著作権の都合で非公開。検出対象はテキスト領域/吹き出しに限る。",
+      "license_notes_ja": "カード表記のlicenseはapache-2.0。学習元データのManga109-sには別途利用条件がある。",
+      "assessment_ja": "漫画翻訳パイプラインの吹き出し検出前段に組み込める軽量モデル。",
+      "next_validation_ja": "実ページでnとsの再現率・誤検出を比較し、OCR前段としての実用性を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Kiuyha/Manga-Bubble-YOLO",
+        "api_url": "https://huggingface.co/api/models/Kiuyha/Manga-Bubble-YOLO",
+        "checked_on": "2026-10-03",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "fb646500455e8a8a3a807fd27b855c8e4fc63766",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "onnx/yolo26n.onnx",
+          "onnx/yolo26s.onnx",
+          "weights/yolo26n.pt",
+          "weights/yolo26s.pt"
+        ],
+        "matching_weight_file_count": 4
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 3,
+        "last_modified": "2026-02-17T00:28:51.000Z",
+        "checked_on": "2026-10-03"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Kiuyha/Manga-Bubble-YOLO/blob/fb646500455e8a8a3a807fd27b855c8e4fc63766/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Kiuyha/Manga-Bubble-YOLO",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "minimax-h3-rough-2d-cartoon-illustration",
+      "name": "MiniMax-H3-Rough-2D-Cartoon-Illustration",
+      "hub_repository": "prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration",
+      "url": "https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration",
+      "category": "video",
+      "checked_on": "2026-10-03",
+      "architecture_ja": "MiniMax-H3をベースに、2Dカートゥーン風の動的イラスト動画データで学習したLoRAアダプタ。",
+      "variants_ja": "チェックポイント1000/1200を推奨と記載。リポジトリには1000/1200のsafetensorsが置かれている。",
+      "prompting_ja": "トリガーワード「rough 2D cartoon illustration」を用いる。",
+      "requirements_ja": "MiniMax-H3の推論環境。解像度は既定480x832で、映像フレーム数に応じて調整されると記載。",
+      "limitations_ja": "作者が実験的でアーティファクトが出ると明記。学習データはPexelsの動画を素材にしている。",
+      "license_notes_ja": "metadataはother、license_nameはminimax-h3-community-license。ベースモデルの条件に従う。",
+      "assessment_ja": "2Dカートゥーン調の動きを付与する実験的LoRA。既存のMiniMax-H3系項目とは別のスタイル。",
+      "next_validation_ja": "同一シードでベースと比較し、動きの自由度と破綻の程度を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration",
+        "api_url": "https://huggingface.co/api/models/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration",
+        "checked_on": "2026-10-03",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "fc40d010a2b44fd4caa4b750b6f503eca5d61577",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "minimax-h3-community-license",
+        "evidence_files": [
+          "1000/minimax-h3-rough-2d-cartoon-illustration-1000.safetensors",
+          "minimax-h3-rough-2d-cartoon-illustration-1200.safetensors"
+        ],
+        "matching_weight_file_count": 2
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 377,
+        "likes": 6,
+        "last_modified": "2026-09-21T08:22:31.000Z",
+        "checked_on": "2026-10-03"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration/blob/fc40d010a2b44fd4caa4b750b6f503eca5d61577/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "animebackgroundgan-shinkai",
+      "name": "AnimeBackgroundGAN-Shinkai",
+      "hub_repository": "akiyamasho/AnimeBackgroundGAN-Shinkai",
+      "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai",
+      "category": "image",
+      "checked_on": "2026-10-03",
+      "architecture_ja": "CartoonGAN（Chen et al., CVPR18）の新海誠スタイル学習済みモデル。PyTorch実装で重みを配布する。",
+      "variants_ja": "新海誠版のほか、細田守・今敏・宮崎駿版が別リポジトリで公開されている。重みは単一の.pthファイル。",
+      "prompting_ja": "該当なし（画像変換モデル）。実写写真を入力する。",
+      "requirements_ja": "PyTorch。README記載のTransform実装で読み込む。",
+      "limitations_ja": "2022年公開のモデルで、実写写真をアニメ風背景へ変換する用途。最新の生成モデルに比べ表現力は限定的。",
+      "license_notes_ja": "metadataのlicenseはmit。",
+      "assessment_ja": "実写写真から新海誠風の背景を作る古典的GANとして参照価値がある。",
+      "next_validation_ja": "実写風景写真で変換し、背景素材として使える品質かを目視確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai",
+        "api_url": "https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Shinkai",
+        "checked_on": "2026-10-03",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "d162ca947aab5aa943c3586bda550812831d5cf4",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "shinkai_makoto.pth"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 66,
+        "last_modified": "2022-04-05T17:11:49.000Z",
+        "checked_on": "2026-10-03"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai/blob/d162ca947aab5aa943c3586bda550812831d5cf4/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Shinkai",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-02"
+  "metrics_refreshed_on": "2026-10-03"
 }

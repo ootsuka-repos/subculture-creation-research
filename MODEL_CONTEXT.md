@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -266,6 +266,24 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: エンジンへ組み込みたい場合のLive2D描画層。
   - 出典（2026-10-02確認）: https://github.com/AyagamiDev/ayagami/blob/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6/README.md
 
+- **Amahane-Hikari-Live2D** [workflow_tool / AI連携 / 活発な候補]
+  - 参考画像・Photoshopレイヤー、Live2D Cubism SDK for Web 5-r.5 → MOC3/MODEL3などのLive2Dモデル、WebGLプレビュー、制作Skill。AIエージェントと協働してLive2Dキャラクターを制作し、TypeScript/WebGLのWebランタイムで再生する制作プロジェクト。制作フローをSkillとして公開する。
+  - 制約: キャラクター資産は自作のNo-AIライセンスで、AI/ML学習への利用が禁止。SDKは同梱されない。
+  - 制作用途: Live2D制作の手順テンプレートと検証手法の参照元として使える。
+  - 出典（2026-10-03確認）: https://github.com/luomo66ccff/Amahane-Hikari-Live2D/blob/246bbd195bf260e6e35f11c0c1c24fdc1b3d097d/README.md
+
+- **live2d-agent-kit** [workflow_tool / AI連携 / 小規模・初期評価候補]
+  - 参考画像、分层PSD/PNGレイヤー、Live2D公式Core → PSD/CMO3/MOC3、図集、パラメータと物理、WebGLプレビュー、運行パッケージ。coding agentが参考図や分层PSDから.moc3を作るためのLive2D制作キット。psd2liveアダプタ、アニメ超分スクリプト、検証手順を含む。
+  - 制約: 肩・腕・指の独立绑定は実装範囲外。示例資産はCC BY 4.0で、作者はLive2D社と無関係と明記。
+  - 制作用途: Live2D绑定の初期検証と手順の型として使える。
+  - 出典（2026-10-03確認）: https://github.com/Ariakage/live2d-agent-kit/blob/94e79e3a94753ae1bd29204d3ed685a3c7b59022/README.md
+
+- **iki** [engine / AI連携 / 初期評価候補]
+  - 役割名付きPNG/PSDレイヤー、画像生成モデル（Claude Codeプラグイン経由） → .ikiモデル（プレーンJSON）、WebGL2での動作。MITの2Dパペットエンジン。AIエージェントが画像モデルでパーツを描き、役割名付きレイヤーから.iki形式へ自動リギングする。
+  - 制約: 作者自身が早期と明記し、スキーマは流動的。Live2D/Inochi2Dより成熟度は低い。
+  - 制作用途: エージェント連携での2Dリギング自動化の検証に向く。
+  - 出典（2026-10-03確認）: https://github.com/zeikar/iki/blob/e0ebdd542212e60847ca3af37965c73e77301ad1/README.md
+
 ## レイヤー分解
 
 - **ComfyUI-See-through** [integration / AI連携 / ComfyUI利用者向け]
@@ -347,6 +365,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEの想定はSDXL系チェックポイントと英語Danbooru語彙。日本語入力の扱いやタグ辞書の網羅性は記載されていない。fuzzy matchは既定で無効。
   - 制作用途: 大量のプロンプト作成・表記ゆれ統一をワークフロー内で自動化する用途。
   - 出典（2026-10-02確認）: https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/blob/e3376e5fcea10d38c52e8261f81f73fab6ef3352/README.md
+
+- **ComfyUI-AnimeRembg** [integration / AI出力の後処理 / 小規模・初期評価候補（beta）]
+  - アニメキャラ動画フレーム（グレー背景など） → RGB（デスピル済）とMASK（ソフトα）。アニメキャラ動画のアルファマットを抽出するComfyUIカスタムノード集。既知背景の差分マッティングとデスピルを実装する。
+  - 制約: v0.1.0-betaでマスク縁の精度改善中。背景色が既知である前提の処理。
+  - 制作用途: Wan等で生成したキャラ動画を実写合成する際のマットに使える。
+  - 出典（2026-10-03確認）: https://github.com/mincad/ComfyUI-AnimeRembg/blob/f179104daed4b74bf04a076cdd43308bf25a3865/README.md
 
 ## 動画生成
 
@@ -770,6 +794,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 画風の探索・統一、作品ごとのルック固定に。
   - 出典（2026-09-30確認）: https://github.com/EnragedAntelope/comfyui-stylebook/blob/3ccd87219d061fb549e481843be3c680de341e86/README.md
 
+- **comfyui-imgutils** [integration / AI連携 / 小規模・初期評価候補]
+  - アニメ画像（バッチ） → タグ、JSON、マスク、スケルトン、分類スコアなど。deepghs/imgutilsをComfyUI V3 APIでラップしたノード集。アニメ画像のタグ付け・検出・姿勢推定・分割など34ノードを提供する。
+  - 制約: READMEに列挙されたノードのみ。モデルは初回にHugging Faceから自動DLされキャッシュされる。
+  - 制作用途: データセット作成や生成物の自動判定・前処理に使える。
+  - 出典（2026-10-03確認）: https://github.com/xiaden/comfyui-imgutils/blob/f88cd73d17a549281dce4149da0d47c7e09ab870/README.md
+
 ## 字幕・翻訳・ローカライズ
 
 - **ASMR Dubber** [pipeline / AI連携 / 小規模・制作連携候補]
@@ -855,6 +885,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 対応OSはWindowsのみ。OCRはRapidOcrNetのONNXモデルで、翻訳は外部サービスまたはローカルLLMに依存する。READMEに翻訳品質の数値評価の記載はない。
   - 制作用途: 漫画・ゲーム画面を読むための補助ツールとして試しやすい。
   - 出典（2026-10-01確認）: https://github.com/Hon-Lu/OverTranslate/blob/2c9d1ab98e0327837a4df009f6f404fe5b494d18/README.md
+
+- **FumetoReaderPlus** [desktop_tool / AIモデル・学習 / 活発な候補]
+  - CBZ/CBR/PDF/EPUB、Komga/Kavita/YACReaderLibraryServerのサーバ → 翻訳済みページ表示、翻訳CBZ。Android向け漫画リーダー。吹き出し検出・OCR・漫画向けLLM翻訳・風船内への再レタリングを端末上で行い、タップで原文に戻せる。
+  - 制約: テスト・評価用コードとコーパスは非公開。デスクトップ版は実験的で未対応と明記。
+  - 制作用途: 権利を有する漫画の端末内翻訳・閲覧に使える。
+  - 出典（2026-10-03確認）: https://github.com/fumetodev/FumetoReaderPlus/blob/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677/README.md
+
+- **Solar-Manga-Translator** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 画像、画像フォルダ、ZIP、CBZ → 処理済み画像、アーカイブ、プロジェクト（スナップショット）。中国語話者向けのローカル漫画翻訳・校正ワークベンチ。OCR、AI翻訳、擦字補修、自動嵌字、人手校正、導出を一流程にまとめる。
+  - 制約: 配布用インストーラ未公開、Windows打包は実験的。翻訳・補修結果は人手確認が必要と明記。
+  - 制作用途: 権利を有する画像の翻訳・校正に使える。
+  - 出典（2026-10-03確認）: https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/README.md
 
 ## モーション・身体演技
 
@@ -985,6 +1027,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [Irodori-TTS-500M-v2-VoiceDesign](https://huggingface.co/Aratako/Irodori-TTS-500M-v2-VoiceDesign/blob/456e55708e7183f5c7faa1448209d54aa8991451/README.md): 約500MのRectified Flow Diffusion Transformer（RF-DiT）による日本語TTS。v2系の参照音声エンコーダをキャプションエンコーダに置き換え、話者・感情・話し方をテキスト記述だけで設計できる。音声はSemantic-DACVAE-Japanese-32dimの32次元潜在で48kHz再構成。 MIT。加えて、実在人物の声の模倣や誤情報生成を禁じる倫理制限がカードに明記されている。キャプションには話者名は含まれない。
 - [anime-censorship-tagger-mnv3-384](https://huggingface.co/Maltox/anime-censorship-tagger-mnv3-384/blob/b6c017a5c9ee4273f27db51b0fe96956184ffa0e/README.md): MobileNetV3-Large（約4.2M）をEVA-02-Large教師から蒸留したONNX分類器。384×384のsquash入力を共有し、censored／bar／mosaicを独立シグモイドで出力する。 Apache-2.0（教師モデルwd-eva02-large-tagger-v3とバックボーンtimmもApache-2.0）。再配布時は帰属表示が必要。
 - [asmr-trigger-audio-h3-lora](https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/blob/9369cad86bc549caa9e0d8f6f1c812aad4fc2e33/README.md): MiniMaxAI/MiniMax-H3をベースにしたLoRAアダプタ。囁き系ASMRの音響と、それに対応する映像（T2V/I2V）を生成する。 Apache-2.0。ベースのMiniMax H3およびその他アダプタの条件は別途確認が必要。
+- [Galgame-Llasa-3B-v3](https://huggingface.co/OmniAICreator/Galgame-Llasa-3B-v3/blob/880454ae1697e6a397df39c7bdc0d16a3b21d543/README.md): HKUSTAudio/Llasa-3Bを基に、ギャルゲー系の日本語音声データで微調整した日本語テキスト音声合成モデル。 metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。
+- [Galgame-Llasa-1B-v3](https://huggingface.co/OmniAICreator/Galgame-Llasa-1B-v3/blob/e3f797a5a51bf6811e28b6e2be8650dba7322aa3/README.md): HKUSTAudio/Llasa-1B-Multilingualを基に、ギャルゲー音声や日本語アニメ音声データで微調整した日本語テキスト音声合成モデル。 metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。
+- [Manga-Bubble-YOLO](https://huggingface.co/Kiuyha/Manga-Bubble-YOLO/blob/fb646500455e8a8a3a807fd27b855c8e4fc63766/README.md): Manga109-sとMangadex由来画像で学習したYOLO26ベースのテキスト領域検出モデル。NMS不要のend-to-endヘッドを持つ。 カード表記のlicenseはapache-2.0。学習元データのManga109-sには別途利用条件がある。
+- [MiniMax-H3-Rough-2D-Cartoon-Illustration](https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration/blob/fc40d010a2b44fd4caa4b750b6f503eca5d61577/README.md): MiniMax-H3をベースに、2Dカートゥーン風の動的イラスト動画データで学習したLoRAアダプタ。 metadataはother、license_nameはminimax-h3-community-license。ベースモデルの条件に従う。
+- [AnimeBackgroundGAN-Shinkai](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai/blob/d162ca947aab5aa943c3586bda550812831d5cf4/README.md): CartoonGAN（Chen et al., CVPR18）の新海誠スタイル学習済みモデル。PyTorch実装で重みを配布する。 metadataのlicenseはmit。
 
 ## 保留情報
 

@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（67件）
+# 会話できるアニメ系AIキャラクター（70件）
 
-最終確認日: 2026-10-02。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-03。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -43,6 +43,8 @@
 - [alicization](https://github.com/TouHouQing/alicization) — SOUL.mdとSQLiteを核にしたlocal-firstの自律デジタル存在アーキテクチャ。Electronデスクトップで長期記憶・能動対話・MCP権限ゲート・Live2D表現を扱う。
 - [FaustBot-llm-vtuber](https://github.com/liwusen/FaustBot-llm-vtuber) — LangGraphベースのエージェントを中核にしたWindows向けデスクトップAI VTuber。GPT-SoVITSの専用声、Seed-VCによる歌、Live2D/VRMの形象、B站直播への弾幕応答、自動整理される長期記憶とDesktop Moodによる自発的な話しかけを備える。
 - [YUI](https://github.com/yw0nam/YUI) — VRMキャラクターをデスクトップ上の透過オーバーレイとして表示し、OpenAI互換の任意バックエンドを接続して声・表情・モーション付きで応答するTauri製コンパニオン。モデルは内蔵せず、generate_expressのキューで感情・モーション・音声タグを受け取る。
+- [LiraVtuber](https://github.com/Rukafuu/LiraVtuber) — Windowsデスクトップで動くオープンソースのAI VTuberアシスタント。音声対話、SQLite/RAG/知識グラフの記憶、Live2D（VTube Studio連携）、複数LLM/TTSプロバイダ、デスクトップ操作ツールを備える。
+- [Mandarin](https://github.com/Mandarin715/Mandarin) — Galgame風の立絵/Live2D演出と大規模モデル対話、VITS音声合成、SenseVoice音声認識・呼びかけ検出を組み合わせたWindows/Linux/macOS向けデスクトップ伴走アプリ。亜托莉（atri）モデルを主に整備する。
 
 ## AI VTuber・配信
 
@@ -85,6 +87,7 @@
 - [CardGenV2](https://github.com/zebede1980/CardGenV2) — SillyTavern互換のキャラカードを生成・編集してPNG/JSONで出力する環境。複数キャラのテキストRP会話と会話要約・記憶も試せる。LLM接続が必要。
 - [Corvus Story Core](https://github.com/JustLateNightAI/Corvus-Story-Core) — テキストRPG向けのGM/NPC会話エンジン。NPCカード、個別記憶、章要約と関係値などの状態を保持する。会話用LLMは別途用意。
 - [Project Riko](https://github.com/rayenfeng/riko_project) — アニメ風の人格設定、対話履歴、Faster-WhisperとGPT-SoVITSを組み合わせた音声会話スクリプト。**GUIとVRM表示は未実装**で、外部の音声合成サービスを起動する。
+- [YuriOS](https://github.com/yuri-os/YuriOS) — VRM/Live2Dのボディ、ローカル音声対話、自編集記憶、SENSE→…→REGULATEの自律ループを持つローカル志向のAIコンパニオン基盤。SillyTavernのキャラカード入出力と複数キャラ管理に対応する。
 
 ## 人格・キャラカード・会話記憶の制作
 

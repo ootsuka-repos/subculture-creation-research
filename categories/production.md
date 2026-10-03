@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,9 +13,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [Kitsu](https://github.com/cgwire/kitsu) · [詳細](#kitsu) | アニメ・VFX・ゲーム制作の成果物、レビュー、進行を管理するWebアプリ。 | 非AI制作 / 制作基盤として比較 | 726 / 2026-10-02 |
-| [Storyboarder](https://github.com/wonderunit/storyboarder) · [詳細](#storyboarder) | 絵コンテを描き、ショットの順序と時間を試すアニマティクス制作ツール。 | 非AI制作 / 既存研究・制作の参考 | 3,862 / 2024-03-17 |
+| [Storyboarder](https://github.com/wonderunit/storyboarder) · [詳細](#storyboarder) | 絵コンテを描き、ショットの順序と時間を試すアニマティクス制作ツール。 | 非AI制作 / 既存研究・制作の参考 | 3,863 / 2024-03-17 |
 | [StyleID](https://github.com/kwanyun/StyleID) · [詳細](#styleid) | 画風変化に強い顔の同一性特徴を計算し、比較・検索・評価に使う。 | AIモデル・学習 / 小規模・初期候補 | 34 / 2026-08-16 |
-| [Nomi](https://github.com/aqm857886159/Nomi) · [詳細](#nomi) | ローカル優先のAI動画制作スタジオ。エージェントがショット分割・キーフレーム生成・動画化・タイムライン配置を支援する。 | AIモデル・学習 / 活発・候補 | 542 / 2026-10-02 |
+| [Nomi](https://github.com/aqm857886159/Nomi) · [詳細](#nomi) | ローカル優先のAI動画制作スタジオ。エージェントがショット分割・キーフレーム生成・動画化・タイムライン配置を支援する。 | AIモデル・学習 / 活発・候補 | 546 / 2026-10-03 |
 
 <a id="kitsu"></a>
 
@@ -66,7 +66,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 作画素材、外部編集ツールとの受け渡し
 - **制約・未確認**: 最終push2024年。最新OS・配布版の導入状態は再確認が必要。
 - **編集者評価**: 生成回数を増やす前にカット割りを固定する道具として有用。
-- **メトリクス**: ★3,862、fork 395、作成 2016-12-22、最終push 2024-03-17T12:03:55Z、archived=False
+- **メトリクス**: ★3,863、fork 395、作成 2016-12-22、最終push 2024-03-17T12:03:55Z、archived=False
 - **確認**: 2026-09-09 / コミット `8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/wonderunit/storyboarder/tree/8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -144,7 +144,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 各種モデルプロバイダ（APIMart/Kie.ai等）、OpenAI互換中継、ローカルComfyUI。
 - **制約・未確認**: LinuxやWindows arm64のインストーラは未配布。macOSビルドは署名・公証なし。モデル利用は提供元への課金。
 - **編集者評価**: 絵コンテ画面でショットごとにモデルと尺を管理し、キャラクター参照カードで一貫性を保ち、MCPでClaude Code等から操作できる点が具体的。
-- **メトリクス**: ★542、fork 123、作成 2026-05-04、最終push 2026-10-02T19:50:50Z、archived=False
+- **メトリクス**: ★546、fork 123、作成 2026-05-04、最終push 2026-10-03T19:26:46Z、archived=False
 - **確認**: 2026-09-30 / コミット `2094010c4b840314b0fffaea030d8b97e32ff275`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/aqm857886159/Nomi/tree/2094010c4b840314b0fffaea030d8b97e32ff275)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -161,6 +161,6 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 **入口候補（固定ツリーで存在確認）**: [docs/design/mockups/capability-system/app.js](https://github.com/aqm857886159/Nomi/blob/2094010c4b840314b0fffaea030d8b97e32ff275/docs/design/mockups/capability-system/app.js) / [electron/main.ts](https://github.com/aqm857886159/Nomi/blob/2094010c4b840314b0fffaea030d8b97e32ff275/electron/main.ts) / [electron/shared/modelArchetypes/index.ts](https://github.com/aqm857886159/Nomi/blob/2094010c4b840314b0fffaea030d8b97e32ff275/electron/shared/modelArchetypes/index.ts)
 
-**最新GitHub Release**: [v0.22.5](https://github.com/aqm857886159/Nomi/releases/tag/v0.22.5) / 2026-09-30T08:42:21Z / prerelease=False
+**最新GitHub Release**: [v0.23.0](https://github.com/aqm857886159/Nomi/releases/tag/v0.23.0) / 2026-10-03T17:21:56Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-30T16:15:30Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

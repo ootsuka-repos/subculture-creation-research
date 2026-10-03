@@ -152,7 +152,7 @@
 - **最良**: [joelseytre/toonout](https://huggingface.co/joelseytre/toonout/tree/cbf720eca394edcde66b861a8a8c20fbabe9c748)（revision `cbf720ec` / 作成 2025-09-09 / 更新 2026-06-12）
 - **利用条件**: mit。メタデータMIT。データセットはCC-BY 4.0(joelseytre/toonout、帰属表示が必要)。学習画像はSDXL系アニメチェックポイント(Yamer's Anime)生成物で、そのモデルの利用条件は未確認。商用可とは断定しない
 - **選定根拠**: 事実: 決め手は『アニメ画像での実測があるか』。joelseytre/toonout(BiRefNet微調整、MIT)は論文arXiv:2509.06839で自作テスト126枚(SDXL系アニメモデルYamer's Animeの生成画像、BiRefNetが苦手な例を優先収録)にてPixel Accuracy 95.3→99.5%、Mean Boundary IoU 88.5→95.6%、Weighted F 97.8→99.4%(自己報告。比較相手はPhotoroom[99.2/95.2/99.3]・Bria RMBG-2.0[97.8/92.4/98.8]・無改造BiRefNet)。skytnt/anime-remove-background(ISNet-anime)は図1の定性比較のみ(Komikoは序論で言及のみ)で、表の数値比較はない。採用実績はskytnt側が圧倒: rembgの既定アニメ用isnet-anime(rembg★24,932)、HF Space100、コード検索'isnet-anime'2,352件・'skytnt/anime-seg'549件(シード)。ToonOutはHF DL累計3,304・likes23・Space2・コード参照33件(シード)、ただしComfyUI-RMBG(★2,127)がBiRefNet_toonOutを搭載、GGUF/ONNX派生あり、X上の実務者評価は乏しい(isnet-animeの方が実アニメキャラに良いとの個別投稿1件)。評価: 量的証拠はToonOutのみ・skytnt側は量的証拠ゼロで採用実績のみ。ライセンス面もToonOut(MIT・CC-BY-4.0のAI生成データ)がskytnt(学習データにdanbooru収集画像、ウェイトApache-2.0は作者が2026-08-17にHF議論で言及)より明快。よってToonOutを暫定1位としたが、両者の直接比較(同一テストセット)は未確認でlow。実アニメ映像フレームにはZarxrax/BiRefNet-Real_Anime_lite(2026-09-22公開、DL0)という新顔があるが未検証。
-- **指標（確認日時点）**: DL累計 3,340 / 直近30日 495 / likes 24 / Spaces 2
+- **指標（確認日時点）**: DL累計 3,355 / 直近30日 506 / likes 24 / Spaces 2
 - **概要**: BiRefNet(Dichotomous Image Segmentation)をアニメ画像1,228枚(ToonOutデータセット、CC-BY-4.0)で微調整した背景除去モデル。髪の毛先・線画・半透明を狙う。作者はKartoon AI
 - **入力**: アニメ/イラスト画像(1024px前後、RGB)
 - **出力**: 前景アルファマスク(0〜1のグレースケール)→RGBA切り抜き
@@ -165,13 +165,13 @@
 
 関連リポジトリ:
 
-- [danielgatis/rembg](https://github.com/danielgatis/rembg) — 背景除去CLI/ライブラリ(isnet-animeセッション標準搭載)（★24,948 / MIT / 最終push 2026-09-20 / release v2.0.85 (2026-09-20) / 確認コミット [`202e4264`](https://github.com/danielgatis/rembg/blob/202e42649a8492a7c49f808de36608a7d1cbbfe3/README.md)）
+- [danielgatis/rembg](https://github.com/danielgatis/rembg) — 背景除去CLI/ライブラリ(isnet-animeセッション標準搭載)（★24,956 / MIT / 最終push 2026-09-20 / release v2.0.85 (2026-09-20) / 確認コミット [`202e4264`](https://github.com/danielgatis/rembg/blob/202e42649a8492a7c49f808de36608a7d1cbbfe3/README.md)）
   - MIT、★24,932、v2.0.85(2026-09-20)。README記載: isnet-anime=アニメキャラ向け高精度、isnet-general-use等。最も普及した呼び出し口
-- [MatteoKartoon/BiRefNet](https://github.com/MatteoKartoon/BiRefNet) — ToonOutの学習・推論コード(BiRefNetフォーク、デモノートブック)（★102 / MIT / 最終push 2026-06-12 / 確認コミット [`ba5d19a7`](https://github.com/MatteoKartoon/BiRefNet/blob/ba5d19a7bf16b1ea7746bb9e9bec83d97dad9709/README.md)）
+- [MatteoKartoon/BiRefNet](https://github.com/MatteoKartoon/BiRefNet) — ToonOutの学習・推論コード(BiRefNetフォーク、デモノートブック)（★103 / MIT / 最終push 2026-06-12 / 確認コミット [`ba5d19a7`](https://github.com/MatteoKartoon/BiRefNet/blob/ba5d19a7bf16b1ea7746bb9e9bec83d97dad9709/README.md)）
   - MIT、★101、最終push 2026-06-12。論文・重み・データセットを一括公開。リリースタグなし
-- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIの背景除去ノード集(BiRefNet_toonOut、SAM3等)（★2,153 / GPL-3.0 / 最終push 2026-10-01 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
+- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIの背景除去ノード集(BiRefNet_toonOut、SAM3等)（★2,158 / GPL-3.0 / 最終push 2026-10-01 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
   - GPL-3.0、★2,127、push 2026-08-21。READMEにBiRefNet_toonOut追加の記載(v2.9.2)
-- [SkyTNT/anime-segmentation](https://github.com/SkyTNT/anime-segmentation) — ISNet-anime等の学習コード・デモ(HF skytnt/anime-seg)（★845 / Apache-2.0 / 最終push 2025-05-21 / 確認コミット [`55d87401`](https://github.com/SkyTNT/anime-segmentation/blob/55d874013a2811cdf59c365059174c7823acf5b4/README.md) / 制作カタログ: [anime-segmentation](../../categories/image.md#anime-segmentation)）
+- [SkyTNT/anime-segmentation](https://github.com/SkyTNT/anime-segmentation) — ISNet-anime等の学習コード・デモ(HF skytnt/anime-seg)（★846 / Apache-2.0 / 最終push 2025-05-21 / 確認コミット [`55d87401`](https://github.com/SkyTNT/anime-segmentation/blob/55d874013a2811cdf59c365059174c7823acf5b4/README.md) / 制作カタログ: [anime-segmentation](../../categories/image.md#anime-segmentation)）
   - Apache-2.0、★844、最終push 2025-05-21(約16か月更新なし)。READMEの学習済みモデルは'skytnt/anime-seg'に掲載
 
 ### 画像セグメンテーション(キャラクター部位別レイヤー分解・セマンティックパース)
@@ -181,7 +181,7 @@
 - **最良**: [layerdifforg/seethroughv0.0.2_layerdiff3d](https://huggingface.co/layerdifforg/seethroughv0.0.2_layerdiff3d/tree/4477e6ce529bc6a141732e1a55a4932176db3b89)（revision `4477e6ce` / 作成 2026-03-09 / 更新 2026-09-28）
 - **利用条件**: openrail++。Apache-2.0(作者は自リポジトリ準拠と議論#1で2026-04-07回答)かつ継承元ライセンスも適用: Animagine XL 4.0/SDXL=CreativeML Open RAIL++-M、LayerDiffuse=Open RAIL-M、VAE=MIT。カードは『商用利用可・ただしRAILの用途制限(paragraph 5/Attachment A)を再配布・ホスティング時に利用条項へ明記』と記載。メタデータ表記はopenrail++。これを踏まえても商用可とは断定しない
 - **選定根拠**: 事実: layerdifforg/seethroughv0.0.2_layerdiff3dは、論文『See-through』(arXiv:2602.03749、SIGGRAPH 2026 Conference Papers採択)の中核で、1枚のアニメ立ち絵を19部位の半透明RGBAレイヤー(隠れ部補完つき)に分解する。Live2Dモデル由来の9,102体(学習7,404/検証851/テスト847)で学習。論文Table1(自己報告、自作2.5Dテスト)はマスクDice loss 0.3855・Mask MSE 0.0354・LPIPS 0.1549・PSNR 18.30で、SAM+LaMa(Dice loss 0.4336・MSE 0.1020・LPIPS 0.2880)より良い。SAM3は部位プロンプトで『髪やズボンの欠落・マスク重複』が多いとの定性比較(数値はSAM+LaMa行のみ)。採用実績: GitHub shitagaki-lab/see-through ★4,189(push 2026-09-24)、ComfyUI-See-through ★814、HF DL 30日19,507/累計88,354、likes27、Space17、NF4/GGUF派生あり。評価: 部位レベルのアニメ専用パーサとしては実測・採用とも突出。対抗のsuzukimain/AnimeSeg(12クラス顔部位+服、Mask2Former、DL30日6,636)はベンチなし・ライセンス未記載。疑い: 出力は生成モデルなので元画素を保存するセグメンテーションではなく、SDXL級のVRAMが必要(数値は未測定)。論文はCC BY-NC-SA 4.0表記だがコード・重みはApache-2.0宣言。
-- **指標（確認日時点）**: DL累計 89,765 / 直近30日 19,778 / likes 27 / Spaces 17
+- **指標（確認日時点）**: DL累計 90,402 / 直近30日 19,705 / likes 27 / Spaces 17
 - **概要**: SDXL(Animagine XL 4.0)ベースの拡散モデルで、アニメキャラ立ち絵を19部位のRGBAレイヤーに分解し、遮蔽された部位も補完する(See-throughパイプラインの1段目)。深度モデル(seethroughv0.0.1_marigold)とセットで描画順も推定
 - **入力**: アニメキャラ立ち絵1枚(推奨解像度は公式未確認。ggml派生実装は1280px未満・30ステップ未満を拒否と説明)
 - **出力**: 部位別の透過RGBA画像(19部位、ALPHA=部位マスク)。深度モデルと合わせてPSD書き出し
@@ -193,9 +193,9 @@
 
 関連リポジトリ:
 
-- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装(レイヤー分解+擬似深度+PSD出力、ComfyUI/Live2D向け)（★4,217 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
+- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装(レイヤー分解+擬似深度+PSD出力、ComfyUI/Live2D向け)（★4,290 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
   - Apache-2.0、★4,189、push 2026-09-24、SIGGRAPH 2026採択。リリースタグなし
-- [jtydhr88/ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) — See-throughのComfyUIプラグイン（★814 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`98d754bf`](https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md) / 制作カタログ: [comfyui-see-through](../../categories/layer.md#comfyui-see-through)）
+- [jtydhr88/ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) — See-throughのComfyUIプラグイン（★816 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`98d754bf`](https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md) / 制作カタログ: [comfyui-see-through](../../categories/layer.md#comfyui-see-through)）
   - ★814、push 2026-08-20。ライセンス未表示(GitHub上null)
 
 ### 画像セグメンテーション(アニメキャラクターのインスタンス分割)
@@ -227,7 +227,7 @@
 - **最良**: [facebook/sam3](https://huggingface.co/facebook/sam3/tree/3c879f39826c281e95690f02c7821c4de09afae7)（revision `3c879f39` / 作成 2025-11-07 / 更新 2025-11-20）
 - **利用条件**: other / gated。SAM License(2025-11-19版、独自): 使用・複製・配布は許諾されるが、制裁・輸出管理法規および軍事/戦争、核、スパイ活動、銃器等の用途は禁止、再配布には同ライセンス添付が必要(LICENSE本文を確認)。HFはmanualゲート。商用可とは断定しない(HFゲート: manual)
 - **選定根拠**: 事実: HFのmask-generationでアニメ特化の微調整SAMは見つからず(HF検索 anime/manga/illustration/danbooru 等でヒット0)。論文See-throughは『SAMはアニメ画像でドメインギャップがある』とし、自前でSAM-HQの多デコーダ微調整を行って部位セグメンタを作った。汎用の最有力はfacebook/sam3(HF DL累計21.45M・30日2.17M・likes3,629、ComfyUI/ISAT/AnyLabeling等が対応)。日本語X(2026-01〜03)ではComfyUIのSAM3を組み込んだワークフロー(顔補正等)やアニメ用切り抜きに使う投稿があり(例: onsen_hphp 2026-03-17『アニメ用の切り抜きに普通に精度よくて驚く』)、実務で使われている。評価: アニメ専用版がないためsam3をgeneral_onlyで採用。SAM 3.1は動画追跡向けで静止画の優位は未確認。未解決: SAM License(独自・ゲート)とアニメでの定量ベンチの欠如。
-- **指標（確認日時点）**: DL累計 21,582,963 / 直近30日 2,173,304 / likes 3,706 / Spaces 100
+- **指標（確認日時点）**: DL累計 21,649,476 / 直近30日 2,172,511 / likes 3,728 / Spaces 100
 - **概要**: Meta Segment Anything 3。テキスト句・画像例・点/ボックス/マスクのプロンプトで、画像内の該当概念を全インスタンス分割(検出+マスク+動画追跡)する汎用モデル。アニメ専用ではない
 - **入力**: RGB画像(+テキスト句/例示/点・ボックス・マスクのプロンプト)
 - **出力**: インスタンスマスク・ボックス・スコア
@@ -240,13 +240,13 @@
 
 関連リポジトリ:
 
-- [facebookresearch/sam3](https://github.com/facebookresearch/sam3) — 公式実装・学習コード(SAM 3)（★11,854 / NOASSERTION / 最終push 2026-09-18 / 確認コミット [`2345a4ad`](https://github.com/facebookresearch/sam3/blob/2345a4ad109ac29c569da749c91d84f10dc08c40/README.md)）
+- [facebookresearch/sam3](https://github.com/facebookresearch/sam3) — 公式実装・学習コード(SAM 3)（★11,862 / NOASSERTION / 最終push 2026-09-18 / 確認コミット [`2345a4ad`](https://github.com/facebookresearch/sam3/blob/2345a4ad109ac29c569da749c91d84f10dc08c40/README.md)）
   - ★11,850、push 2026-09-18。ライセンスはGitHub上NOASSERTION(SAM License)
 - [PozzettiAndrea/ComfyUI-SAM3](https://github.com/PozzettiAndrea/ComfyUI-SAM3) — ComfyUI向けSAM3ラッパー（★575 / NOASSERTION / 最終push 2026-08-24 / 確認コミット [`de0ff5d2`](https://github.com/PozzettiAndrea/ComfyUI-SAM3/blob/de0ff5d2c2ea435d29f800abfa568cffdfb94773/README.md)）
   - ★575、push 2026-08-24。ライセンスはNOASSERTION
 - [kijai/ComfyUI-segment-anything-2](https://github.com/kijai/ComfyUI-segment-anything-2) — ComfyUI向けSAM2(Apache-2.0)（★1,221 / Apache-2.0 / 最終push 2025-09-28 / 確認コミット [`0c35fff5`](https://github.com/kijai/ComfyUI-segment-anything-2/blob/0c35fff5f382803e2310103357b5e985f5437f32/README.md)）
   - ★1,221、push 2025-09-28。SAM3のライセンス・ゲートを避けたい場合の代替
-- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIのSAM3/背景除去ノード集（★2,153 / GPL-3.0 / 最終push 2026-10-01 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
+- [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) — ComfyUIのSAM3/背景除去ノード集（★2,158 / GPL-3.0 / 最終push 2026-10-01 / 確認コミット [`58f1947a`](https://github.com/1038lab/ComfyUI-RMBG/blob/58f1947a11567a9f8b707223185570850e773856/README.md)）
   - GPL-3.0、★2,127、push 2026-08-21。READMEにSAM3 Segmentation追加(v2.9.4, 2025-11-24)の記載
 
 ### ゼロショット物体検出(テキスト指定・アニメ画像)
@@ -256,7 +256,7 @@
 - **最良**: [facebook/sam3](https://huggingface.co/facebook/sam3/tree/3c879f39826c281e95690f02c7821c4de09afae7)（revision `3c879f39` / 作成 2025-11-07 / 更新 2025-11-20）
 - **利用条件**: other / gated。SAM License(2025-11-19版、独自): 使用・複製・配布は許諾されるが、制裁・輸出管理法規および軍事/戦争、核、スパイ活動、銃器等の用途は禁止、再配布には同ライセンス添付が必要(LICENSE本文を確認)。HFはmanualゲート。商用可とは断定しない(HFゲート: manual)
 - **選定根拠**: 事実: HFのzero-shot-object-detectionにアニメ特化モデルは見つからず(anime/manga等でヒット0)。アニメでの定量ベンチも見つからない。汎用ではIDEA-Research/grounding-dino-base(HF DL累計33.6M)がタスク内の標準だが、2026年の日本語X投稿ではComfyUIでSAM3(テキスト句プロンプトで検出+分割)をアニメ制作の検出・切り抜きに使う例が目立つ(onsen_hphp 2026-03-17、hyperboleonのSAM3ワークフロー等、いずれも実務者の個別投稿で定量ではない)。評価: SAM3はテキストでボックスとマスクを同時に得られ、PixAI Tagger v1.0がSAM3バックボーンを流用して精度を出した点からもアニメ画像への転移性が示唆されるが、ゼロショット検出としてのアニメ精度は[INFERENCE]。固定クラスが使えるならdeepghsの検出器(顔/頭/手/目/半身/人物)の方が実績的に確実。自信度low。
-- **指標（確認日時点）**: DL累計 21,582,963 / 直近30日 2,173,304 / likes 3,706 / Spaces 100
+- **指標（確認日時点）**: DL累計 21,649,476 / 直近30日 2,172,511 / likes 3,728 / Spaces 100
 - **概要**: Meta Segment Anything 3。テキスト句・画像例・点/ボックス/マスクのプロンプトで、画像内の該当概念を全インスタンス分割(検出+マスク+動画追跡)する汎用モデル。アニメ専用ではない
 - **入力**: RGB画像(+テキスト句/例示/点・ボックス・マスクのプロンプト)
 - **出力**: インスタンスマスク・ボックス・スコア
@@ -269,9 +269,9 @@
 
 関連リポジトリ:
 
-- [facebookresearch/sam3](https://github.com/facebookresearch/sam3) — 公式実装(テキスト句プロンプト検出・分割)（★11,854 / NOASSERTION / 最終push 2026-09-18 / 確認コミット [`2345a4ad`](https://github.com/facebookresearch/sam3/blob/2345a4ad109ac29c569da749c91d84f10dc08c40/README.md)）
+- [facebookresearch/sam3](https://github.com/facebookresearch/sam3) — 公式実装(テキスト句プロンプト検出・分割)（★11,862 / NOASSERTION / 最終push 2026-09-18 / 確認コミット [`2345a4ad`](https://github.com/facebookresearch/sam3/blob/2345a4ad109ac29c569da749c91d84f10dc08c40/README.md)）
   - ★11,850、push 2026-09-18、ライセンスNOASSERTION(SAM License)
-- [IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) — Grounding DINO公式実装(Apache-2.0)（★10,644 / Apache-2.0 / 最終push 2024-08-12 / release v0.1.0-alpha2 (2023-04-07) / 確認コミット [`856dde20`](https://github.com/IDEA-Research/GroundingDINO/blob/856dde20aee659246248e20734ef9ba5214f5e44/README.md)）
+- [IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) — Grounding DINO公式実装(Apache-2.0)（★10,646 / Apache-2.0 / 最終push 2024-08-12 / release v0.1.0-alpha2 (2023-04-07) / 確認コミット [`856dde20`](https://github.com/IDEA-Research/GroundingDINO/blob/856dde20aee659246248e20734ef9ba5214f5e44/README.md)）
   - ★10,640、最終push 2024-08-12(約2年更新なし)。リリースはv0.1.0-alpha2(2023-04-07)
 - [ltdrdata/ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) — ComfyUIのDetailer・SAM連携(SAM2対応V8.18〜)（★3,328 / GPL-3.0 / 最終push 2026-04-19 / 確認コミット [`429d0159`](https://github.com/ltdrdata/ComfyUI-Impact-Pack/blob/429d0159ad429e64d2b3916e6e7be9c22d025c3c/README.md)）
   - GPL-3.0、★3,329、push 2026-04-19。READMEにSAM2対応の記載。SAM3対応は未確認
@@ -322,7 +322,7 @@
   - ★265、最終push 2025-02-03。重み・データセットはGoogle Drive配布(READMEの記載)
 - [dalai2/ComfyUI-AnimePose](https://github.com/dalai2/ComfyUI-AnimePose) — ComfyUIのOpenPose前処理ノード(AGPL-3.0)（★3 / AGPL-3.0 / 最終push 2026-08-09 / 確認コミット [`315e758b`](https://github.com/dalai2/ComfyUI-AnimePose/blob/315e758b17a578a7efb9b3eb95fdf4061d256866/README.md)）
   - ★3、2026-08-08作成、push 2026-08-09。検証の薄い新規ラッパー(READMEで8枚検証と記載)
-- [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux) — ComfyUI標準のControlNet前処理集(DWPose・Anime Lineart等)（★4,206 / Apache-2.0 / 最終push 2026-09-28 / 確認コミット [`0cd29047`](https://github.com/Fannovel16/comfyui_controlnet_aux/blob/0cd290477128d42cdc3e76a826a402d866e8c684/README.md)）
+- [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux) — ComfyUI標準のControlNet前処理集(DWPose・Anime Lineart等)（★4,208 / Apache-2.0 / 最終push 2026-09-28 / 確認コミット [`0cd29047`](https://github.com/Fannovel16/comfyui_controlnet_aux/blob/0cd290477128d42cdc3e76a826a402d866e8c684/README.md)）
   - Apache-2.0、★4,207、push 2026-09-28。アニメ専用ポーズはなく、汎用DWPose等。READMEにAnime Lineart等あり
 
 ### 深度推定(アニメキャラの擬似深度=描画順序)
@@ -332,7 +332,7 @@
 - **最良**: [layerdifforg/seethroughv0.0.1_marigold](https://huggingface.co/layerdifforg/seethroughv0.0.1_marigold/tree/4f4ffc46050b6feb764b628859968a26e76e6b6a)（revision `4f4ffc46` / 作成 2026-02-03 / 更新 2026-09-28）
 - **利用条件**: openrail++。Apache-2.0(作者主張)+継承元ライセンス: Marigold Depth v1.1=Open RAIL++-M、Stable Diffusion 2系=CreativeML Open RAIL++-M(Attachment Aの用途制限が適用)。メタデータはopenrail++。商用可とは断定しない
 - **選定根拠**: 事実: layerdifforg/seethroughv0.0.1_marigoldは、論文『See-through』(SIGGRAPH 2026)が分解レイヤーの重なり順を決めるために、Marigold Depth v1.1をアニメキャラ向けに微調整した擬似深度モデル(学習ラベルはLive2D ArtMeshの描画順を0〜1に正規化したもの)。HF DL 30日17,530/累計71,920、likes6、Space17、NF4/GGUF派生あり、GitHub本体★4,189。論文は一貫性モジュールによるAbsRel・δ1の改善を報告(数値は本文抽出で欠落、未確認)し、汎用DA/Marigoldとの定量比較は確認できない。評価: アニメキャラ専用の深度モデルはこれのみ。ただし出力は『描画順序』であり現実の距離ではないため、ControlNet深度や3D化の汎用用途には向かない。汎用の相対深度はDepth Anything V2系を使う(別項)。自信度low。
-- **指標（確認日時点）**: DL累計 73,163 / 直近30日 17,732 / likes 6 / Spaces 17
+- **指標（確認日時点）**: DL累計 73,699 / 直近30日 17,635 / likes 6 / Spaces 17
 - **概要**: Marigold Depth v1.1をアニメキャラ向けに微調整した擬似深度モデル。描画順序(ArtMeshの重なり)を画素単位で推定し、See-throughのレイヤー順序付けに使う
 - **入力**: アニメキャラ立ち絵(See-throughパイプライン経由で部位レイヤーと併用)
 - **出力**: 画素ごとの擬似深度マップ(0〜1の描画順序、現実距離ではない)
@@ -345,7 +345,7 @@
 
 関連リポジトリ:
 
-- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 深度モデルを含むSee-through公式実装（★4,217 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
+- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 深度モデルを含むSee-through公式実装（★4,290 / Apache-2.0 / 最終push 2026-09-24 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
   - Apache-2.0、★4,189、push 2026-09-24
 
 ### 深度推定(アニメ/イラストの汎用相対深度)
@@ -355,7 +355,7 @@
 - **最良**: [depth-anything/Depth-Anything-V2-Large](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/tree/cbbb86a30ce19b5684b7a05155dc7e6cbc7685b9)（revision `cbbb86a3` / 作成 2024-06-13 / 更新 2024-07-08）
 - **利用条件**: cc-by-nc-4.0。CC-BY-NC-4.0(非商用)。商用ならSmall-hf(Apache-2.0)やDA3MONO-LARGE(Apache-2.0)を別途確認
 - **選定根拠**: 事実: アニメ画像向けの汎用(風景・背景を含む)深度モデルはHFで見つからず(anime depth等でヒット0)。汎用ではdepth-anything/Depth-Anything-V2-Large(HF DL累計3.12M・30日147k・likes177、CC-BY-NC-4.0)とSmall-hf(Apache-2.0、DL累計23.8M・30日2.68M・Space100)が標準。2026年のX投稿ではアニメ/イラスト制作でDepth Anything V2が実用されている(oohiro35 2026-03-03『niji画像の動画化にDepth Anything V2で深度マップ→AEでフォーカスシフト』likes1,313、ryo05m/yachimat_mangaも実写→深度→アニメ映像生成に使用)が個別の実務投稿で定量ではない。DA3(DA3MONO-LARGE、Apache-2.0、2025-11、30日DL208k)は『DA2より幾何精度が高い』とカードが自己主張するが、アニメでの利用例・評価は未確認。評価: アニメ適性の一次証拠が弱いため選定はlow。品質優先でV2-Largeをbestにしたが、ライセンスがNCのため商用利用ならSmall-hf(Apache-2.0)またはDA3MONO-LARGEを検討する必要がある。
-- **指標（確認日時点）**: DL累計 3,130,199 / 直近30日 104,364 / likes 178 / Spaces 24
+- **指標（確認日時点）**: DL累計 3,132,414 / 直近30日 93,374 / likes 178 / Spaces 24
 - **概要**: 単眼相対深度推定(ViT-L、vitlエンコーダ)。カード記載: 合成ラベル画像595K+実画像62M超(ラベルなし)で学習、V1やSD系(Marigold等)よりロバストかつ約10倍高速と自己主張(自己報告)。アニメ特化ではない汎用モデルで、イラスト/アニメ画像に流用して深度マップを作る用途が多い
 - **入力**: RGB画像
 - **出力**: 相対深度(視差型)マップ
@@ -368,11 +368,11 @@
 
 関連リポジトリ:
 
-- [DepthAnything/Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) — 公式実装(NeurIPS 2024)（★8,895 / Apache-2.0 / 最終push 2026-03-24 / 確認コミット [`a561b849`](https://github.com/DepthAnything/Depth-Anything-V2/blob/a561b849ebae10a6f5ef49e26c83cbbcd36c71bf/README.md)）
+- [DepthAnything/Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) — 公式実装(NeurIPS 2024)（★8,897 / Apache-2.0 / 最終push 2026-03-24 / 確認コミット [`a561b849`](https://github.com/DepthAnything/Depth-Anything-V2/blob/a561b849ebae10a6f5ef49e26c83cbbcd36c71bf/README.md)）
   - Apache-2.0(コード)、★8,887、push 2026-03-24
-- [ByteDance-Seed/Depth-Anything-3](https://github.com/ByteDance-Seed/Depth-Anything-3) — DA3公式実装（★6,424 / Apache-2.0 / 最終push 2026-07-27 / 確認コミット [`3d835ec1`](https://github.com/ByteDance-Seed/Depth-Anything-3/blob/3d835ec1a5802d64a8b8b15f817a1ab54809bfe4/README.md)）
+- [ByteDance-Seed/Depth-Anything-3](https://github.com/ByteDance-Seed/Depth-Anything-3) — DA3公式実装（★6,426 / Apache-2.0 / 最終push 2026-07-27 / 確認コミット [`3d835ec1`](https://github.com/ByteDance-Seed/Depth-Anything-3/blob/3d835ec1a5802d64a8b8b15f817a1ab54809bfe4/README.md)）
   - Apache-2.0、★6,414、push 2026-07-27
-- [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux) — ComfyUI前処理(Depth Anything V2等)（★4,206 / Apache-2.0 / 最終push 2026-09-28 / 確認コミット [`0cd29047`](https://github.com/Fannovel16/comfyui_controlnet_aux/blob/0cd290477128d42cdc3e76a826a402d866e8c684/README.md)）
+- [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux) — ComfyUI前処理(Depth Anything V2等)（★4,208 / Apache-2.0 / 最終push 2026-09-28 / 確認コミット [`0cd29047`](https://github.com/Fannovel16/comfyui_controlnet_aux/blob/0cd290477128d42cdc3e76a826a402d866e8c684/README.md)）
   - Apache-2.0、★4,207、push 2026-09-28。READMEにDepth Anything/V2の記載
 
 ### 画像分類(アニメ画像マルチラベルタガー / Danbooruタグ)
@@ -382,7 +382,7 @@
 - **最良**: [pixai-labs/pixai-tagger-v1.0](https://huggingface.co/pixai-labs/pixai-tagger-v1.0/tree/9fe10addf9326e292da8a85a98ea74cd91b41771)（revision `9fe10add` / 作成 2026-09-15 / 更新 2026-09-22）
 - **利用条件**: apache-2.0。Apache-2.0(メタデータ)。v0.9のカードは『Danbooru content has its own licenses』と注記しており、学習データ由来の権利は別。v1.0カードに追加の使用条件は見当たらない(確認範囲)。商用可とは断定しない
 - **選定根拠**: 事実: pixai-labs/pixai-tagger-v1.0(2026-09-15公開、Apache-2.0、SAM3微調整バックボーン486.3M・入力1008px・30,877タグ[general15,043/character8,308/style4,917/copyright2,460/meta145/rating4]、知識カットオフ2026-05)のカード自己報告ベンチ(PixAI自社の2026-06〜08画像99,999枚、共有タグのみ、7モデル比較): General micro F1 0.6660(2位AnimeTIMM CAFormer B36 0.6435)、Character micro F1 0.9242(1位はAnimeTIMM SigLIP Giant 0.9265)、Style 0.8143(比較相手Camie v2は0.3764)。全カテゴリ完全語彙では総合micro F1 0.723。v0.9比でGeneral +6.8pt/Character +10.44pt。注意: 比較表にWD Tagger v3は含まれない(主張は『評価した8モデル内』に限定)。採用実績: HF DL 30日3,348/累計3,348(公開2週間)、likes66、Space2、discussions0。ComfyUIノード(sln77/ComfyUI-Tagger ★9)が生まれ始め、Xでもtoyxyz3(2026-09-24、likes102)が試験投稿。旧v0.9はlikes215・コード参照'pixai-tagger'299件(シード/本調査)。対するSmilingWolf/wd-*-tagger-v3は事実上の標準: swinv2は30日762k・累計3.25M・Space100・コード参照996件、eva02-largeは累計698k・likes218・コード参照778件、Apache-2.0。ただしデータは2024-02-28で停止、検証マクロF1 0.4772(自社検証)。評価: 品質・鮮度・タグ語彙はPixAI v1.0が上、互換性・安定度・導入容易性はWD v3が上。WDとの直接比較が未公開という未解決点があるため選定はmedium。互換性重視ならWD EVA02 Large v3/SwinV2 v3を既定に。
-- **指標（確認日時点）**: DL累計 3,716 / 直近30日 3,716 / likes 71 / Spaces 2
+- **指標（確認日時点）**: DL累計 4,647 / 直近30日 4,647 / likes 76 / Spaces 2
 - **概要**: アニメ画像向けマルチラベルタガー(Danbooru系タグ30,877種)。SAM3バックボーンを微調整し1008pxで入力、カテゴリ別推奨閾値(General0.17/Character0.27/Style0.15/Copyright0.24/Meta0.17/Rating0.41)を既定とする。PixAI Labs(PixAIは画像生成サービス)公開
 - **入力**: アニメ/イラスト画像(縦横比維持で1008×1008にリサイズ+パディング)
 - **出力**: カテゴリ別(general/character/style/copyright/meta/rating)のタグと確信度
@@ -399,7 +399,7 @@
   - MIT、★1,243、最終push 2025-07-11。READMEはWD 1.4ベース。PixAI v1.0は直接非対応(sln77/ComfyUI-Tagger等を使う)
 - [sln77/ComfyUI-Tagger](https://github.com/sln77/ComfyUI-Tagger) — ComfyUIでPixAI v1.0・Camie・Taggerineを使うノード（★9 / MIT / 最終push 2026-09-20 / 確認コミット [`0094e546`](https://github.com/sln77/ComfyUI-Tagger/blob/0094e546d6c90022fb3247bc679b683cdd134581/README.md)）
   - MIT、★9、push 2026-09-20。PixAI v1.0対応が確認できる数少ないノードだが新規で実績は薄い
-- [jhc13/taggui](https://github.com/jhc13/taggui) — 画像キャプション/タグ編集GUI(WD系タガー含む)（★1,351 / GPL-3.0 / 最終push 2025-10-11 / release v1.34.0 (2025-10-11) / 確認コミット [`cb8cca71`](https://github.com/jhc13/taggui/blob/cb8cca712c066cf3d7f4248a21322187f8eae63e/README.md)）
+- [jhc13/taggui](https://github.com/jhc13/taggui) — 画像キャプション/タグ編集GUI(WD系タガー含む)（★1,352 / GPL-3.0 / 最終push 2025-10-11 / release v1.34.0 (2025-10-11) / 確認コミット [`cb8cca71`](https://github.com/jhc13/taggui/blob/cb8cca712c066cf3d7f4248a21322187f8eae63e/README.md)）
   - GPL-3.0、★1,351、v1.34.0(2025-10-11)。READMEにWD Taggerモデルのタグ除外設定の記載
 - [deepghs/imgutils](https://github.com/deepghs/imgutils) — deepghs系タガーのローダ(imgutils.tagging)。PixAI v0.9 ONNX、WD v3、Camie等に対応(v0.9カード記載)（★417 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
   - MIT。★415、最新リリースv0.19.0(2025-09-10)、最終push 2025-10-11(約1年更新なし=保守停滞の懸念)。READMEに物体検出・CCIP・画像タグ付け・キャラ抽出を記載。GitHubコード検索'imgutils.detect'232件(シード計測)。PixAI v1.0への対応は未確認。imgutils/tagging/にpixai.py・wd14.py・camie.pyが存在(GitHub APIで確認)
@@ -425,7 +425,7 @@
 
 - [deepghs/imgutils](https://github.com/deepghs/imgutils) — deepghs分類器・検出器のローダ(imgutils.metrics.dbaesthetic等)（★417 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
   - MIT。★415、最新リリースv0.19.0(2025-09-10)、最終push 2025-10-11(約1年更新なし=保守停滞の懸念)。READMEに物体検出・CCIP・画像タグ付け・キャラ抽出を記載。GitHubコード検索'imgutils.detect'232件(シード計測)。imgutils/metrics/dbaesthetic.pyの存在をGitHub APIで確認
-- [deepghs/waifuc](https://github.com/deepghs/waifuc) — アニメ画像データセット収集パイプライン(フィルタにdeepghs分類器を利用)（★410 / MIT / 最終push 2024-08-24 / 確認コミット [`efe5c491`](https://github.com/deepghs/waifuc/blob/efe5c49171a94a6441a79b7d7b595d4b3a4eb51f/README.md)）
+- [deepghs/waifuc](https://github.com/deepghs/waifuc) — アニメ画像データセット収集パイプライン(フィルタにdeepghs分類器を利用)（★412 / MIT / 最終push 2024-08-24 / 確認コミット [`efe5c491`](https://github.com/deepghs/waifuc/blob/efe5c49171a94a6441a79b7d7b595d4b3a4eb51f/README.md)）
   - MIT、★409、最終push 2024-08-24(約2年更新なし)。READMEに'Efficient Train Data Collector for Anime Waifu'、『PyPI版は未整備でソースからインストール』と記載
 
 ### 画像分類(AI生成アニメ画像 vs 人間作画の判定)
@@ -479,7 +479,7 @@
 - **最良**: [OysterQAQ/DanbooruCLIP](https://huggingface.co/OysterQAQ/DanbooruCLIP/tree/aa2e603035bdf3e414e349f98ab2f9d3f6b43c5d)（revision `aa2e6030` / 作成 2023-05-18 / 更新 2023-07-17）
 - **利用条件**: 未記載。ライセンス表記なし(メタデータ空)。学習データはDanbooru2021とpixiv(権利は投稿者に帰属し利用条件は別途)。ベースのOpenAI CLIPの条件はカード未記載(要確認)。商用可とは断定しない
 - **選定根拠**: 事実: OysterQAQ/DanbooruCLIPはOpenAI CLIP ViT-L/14をDanbooru2021(2023-07-17更新でpixivデータを追加)で微調整し、キャラ名・作品名・一般タグを含む英文キャプションで学習(カードに前処理コード)。HF DL 30日1,234/累計52,553、likes16、Space1、discussions1(safetensors要望)。ライセンス表記なし、ベンチ数値なし。競合: deepghs/siglip_beta(2025-05、Apache-2.0、カード冒頭が『本番利用不可』と明記、WD SwinV2タガーを凍結したSigLIT風、Space1)、dudcjs2779/anime-style-tag-clip(EVA02 base、学習2.9万枚・検証R@1 0.877、DL累計550)、aki-0421/clip-anime-patch400-10k-v1(日本語のキャラ検索用、Apache-2.0、DL累計697)。評価: アニメ専用のCLIP系ゼロショット分類で最も普及しているのがDanbooruCLIPだが、2年以上前で定量評価がなく、ライセンス不明・Danbooru由来データの権利が曖昧。汎用SigLIP2はアニメ細部に弱い可能性があるが検証未了。自信度low。
-- **指標（確認日時点）**: DL累計 52,568 / 直近30日 1,136 / likes 16 / Spaces 1
+- **指標（確認日時点）**: DL累計 52,571 / 直近30日 1,118 / likes 16 / Spaces 1
 - **概要**: CLIP ViT-L/14をDanbooru2021(+pixiv)で微調整したアニメ画像-テキスト対照モデル。キャラ名・作品名・タグ文でゼロショット分類/検索ができる
 - **入力**: アニメ画像+候補テキスト(英語タグ・キャラ名)
 - **出力**: 画像-テキスト類似度(ロジット)
@@ -516,7 +516,7 @@
 
 - [deepghs/imgutils](https://github.com/deepghs/imgutils) — deepghs全モデルのローダ(detect_faces等・CCIP・タグ付け・キャラ抽出を同梱)（★417 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
   - MIT。★415、最新リリースv0.19.0(2025-09-10)、最終push 2025-10-11(約1年更新なし=保守停滞の懸念)。READMEに物体検出・CCIP・画像タグ付け・キャラ抽出を記載。GitHubコード検索'imgutils.detect'232件(シード計測)。imgutils/metrics/ccip.pyの存在をGitHub APIで確認
-- [deepghs/waifuc](https://github.com/deepghs/waifuc) — キャラ別データセット作成パイプライン(CCIP等)（★410 / MIT / 最終push 2024-08-24 / 確認コミット [`efe5c491`](https://github.com/deepghs/waifuc/blob/efe5c49171a94a6441a79b7d7b595d4b3a4eb51f/README.md)）
+- [deepghs/waifuc](https://github.com/deepghs/waifuc) — キャラ別データセット作成パイプライン(CCIP等)（★412 / MIT / 最終push 2024-08-24 / 確認コミット [`efe5c491`](https://github.com/deepghs/waifuc/blob/efe5c49171a94a6441a79b7d7b595d4b3a4eb51f/README.md)）
   - MIT、★409、最終push 2024-08-24(約2年更新なし)。READMEは『PyPI版未整備、ソースからインストール』
 
 ### 特徴量抽出(アニメ画像の類似検索・重複検出の汎用埋め込み)
@@ -526,7 +526,7 @@
 - **最良**: [facebook/dinov3-vitl16-pretrain-lvd1689m](https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m/tree/ea8dc2863c51be0a264bab82070e3e8836b02d51)（revision `ea8dc286` / 作成 2025-08-06 / 更新 2025-08-19）
 - **利用条件**: other/dinov3-license / gated。DINOv3 License(独自、gated manual)。条件の細部は本文(LICENSE)未精査。商用可とは断定しない(HFゲート: manual)
 - **選定根拠**: 事実: HFのimage-feature-extractionにアニメ特化の汎用埋め込み(illustration2vec系)は見つからず(anime/illustration embedding/danbooru embedding/anime dinov2等のHF検索でヒット0)。アニメ画像のタグ空間埋め込みを出すdeepghs/wd14_tagger_with_embeddings(2024-05、likes26)やdeepghs/anime_sites_indices(検索用インデックスと推測)が存在するが汎用ベンチはない。汎用ではfacebook/dinov3-vitl16-pretrain-lvd1689m(HF DL30日628k・累計7.65M・likes967、ViT-L/16)がタスク内で最多級で、カードは『専門SOTAを微調整なしで上回る』と自己主張。アニメでの評価は未確認。評価: 完全一致/近似重複はpHash・LPIPS(imgutils.metrics)で足りるが、意味的類似検索にはDINOv3/SigLIP2の選択肢があり、アニメでの優劣は検証未了。ライセンスはDINOv3独自(gated manual)で、緩さ重視ならSigLIP2(Apache-2.0)。自信度low。
-- **指標（確認日時点）**: DL累計 7,727,298 / 直近30日 654,941 / likes 1,005 / Spaces 82
+- **指標（確認日時点）**: DL累計 7,763,325 / 直近30日 662,215 / likes 1,020 / Spaces 82
 - **概要**: DINOv3の蒸留ViT-L/16(LVD-1689M事前学習)。クラストークン/パッチ特徴を抽出し、類似画像検索・重複検出・クラスタリング等に使う汎用自己教師あり埋め込み。アニメ特化ではない
 - **入力**: RGB画像(16の倍数サイズ。224でcls1+register4+patch196トークン)
 - **出力**: クラストークン・パッチトークン埋め込み
@@ -539,7 +539,7 @@
 
 関連リポジトリ:
 
-- [facebookresearch/dinov3](https://github.com/facebookresearch/dinov3) — DINOv3公式実装（★11,483 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`6876159a`](https://github.com/facebookresearch/dinov3/blob/6876159a11b4df116f30f667f8c9888617df0751/README.md)）
+- [facebookresearch/dinov3](https://github.com/facebookresearch/dinov3) — DINOv3公式実装（★11,484 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`6876159a`](https://github.com/facebookresearch/dinov3/blob/6876159a11b4df116f30f667f8c9888617df0751/README.md)）
   - ★11,471、push 2026-07-15、ライセンスNOASSERTION(DINOv3 License)
 - [deepghs/imgutils](https://github.com/deepghs/imgutils) — deepghs全モデルのローダ(detect_faces等・CCIP・タグ付け・キャラ抽出を同梱)（★417 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
   - MIT。★415、最新リリースv0.19.0(2025-09-10)、最終push 2025-10-11(約1年更新なし=保守停滞の懸念)。READMEに物体検出・CCIP・画像タグ付け・キャラ抽出を記載。GitHubコード検索'imgutils.detect'232件(シード計測)。imgutils/metrics(lpips_clustering等)で差分・重複検出を提供

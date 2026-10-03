@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,7 +14,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,783 / 2026-09-14 |
 | [GenCompositor](https://github.com/TencentARC/GenCompositor) · [詳細](#gencompositor) | 前景・背景と制御条件を用いて動画を生成合成する。 | AIモデル・学習 / 小規模・初期候補 | 157 / 2026-06-30 |
-| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,962 / 2026-09-20 |
+| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,962 / 2026-10-03 |
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 797 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 7 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
@@ -108,7 +108,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Godot、任意のユーザー素材
 - **制約・未確認**: 生成AIモデルではない。出力先のPBRチャンネルと色空間を合わせる必要がある。
 - **編集者評価**: ゲーム・背景・トゥーン素材の反復制作に向く。
-- **メトリクス**: ★5,962、fork 380、作成 2018-07-22、最終push 2026-09-20T14:30:12Z、archived=False
+- **メトリクス**: ★5,962、fork 380、作成 2018-07-22、最終push 2026-10-03T02:59:03Z、archived=False
 - **確認**: 2026-09-09 / コミット `ad19fcf0ee34a7caf74df709dc4de7112f0d467d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RodZill4/material-maker/tree/ad19fcf0ee34a7caf74df709dc4de7112f0d467d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

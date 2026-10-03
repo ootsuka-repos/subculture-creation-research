@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-02。**151件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,20 +12,22 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ASMR Dubber](https://github.com/EveningStudy/asmr-dubber) · [詳細](#asmr-dubber) | 日本語・英語の音声や動画を、校正可能な字幕・中国語吹替・二言語音声へ変換する制作ツール。 | AI連携 / 小規模・制作連携候補 | 222 / 2026-10-01 |
-| [Manga OCR](https://github.com/kha-white/manga-ocr) · [詳細](#manga-ocr) | 日本語漫画の縦書き・横書き・ルビ付き文字を認識する。 | AIモデル・学習 / モデル・研究候補 | 2,792 / 2026-07-19 |
-| [manga-image-translator](https://github.com/zyddnys/manga-image-translator) · [詳細](#manga-image-translator) | 画像内の文字を検出・認識・翻訳し、元の文字を修復して訳文を組版する。 | AIモデル・学習 / 比較・既存工程の参考 | 10,466 / 2026-09-25 |
+| [ASMR Dubber](https://github.com/EveningStudy/asmr-dubber) · [詳細](#asmr-dubber) | 日本語・英語の音声や動画を、校正可能な字幕・中国語吹替・二言語音声へ変換する制作ツール。 | AI連携 / 小規模・制作連携候補 | 224 / 2026-10-01 |
+| [Manga OCR](https://github.com/kha-white/manga-ocr) · [詳細](#manga-ocr) | 日本語漫画の縦書き・横書き・ルビ付き文字を認識する。 | AIモデル・学習 / モデル・研究候補 | 2,793 / 2026-07-19 |
+| [manga-image-translator](https://github.com/zyddnys/manga-image-translator) · [詳細](#manga-image-translator) | 画像内の文字を検出・認識・翻訳し、元の文字を修復して訳文を組版する。 | AIモデル・学習 / 比較・既存工程の参考 | 10,471 / 2026-09-25 |
 | [mokuro](https://github.com/kha-white/mokuro) · [詳細](#mokuro) | 漫画ページの文字位置とOCR結果をまとめ、選択可能なテキストとして閲覧できる形式へ変換。 | AI連携 / 連携・制作ツール候補 | 1,738 / 2026-07-20 |
-| [VoiceTransl](https://github.com/shinnpuru/VoiceTransl) · [詳細](#voicetransl) | 音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。 | AI連携 / 連携の評価候補 | 1,298 / 2026-08-28 |
-| [xianscan-rust](https://github.com/ArbenApura/xianscan-rust) · [詳細](#xianscan-rust) | 漫画・韓漫・国漫向けのローカル完結型翻訳スタジオ。吹き出し検出、多言語OCR、LLM翻訳、LaMaによるインペイント、組版までを単体バイナリで実行する。 | AIモデル・学習 / 更新が活発な実装候補 | 77 / 2026-09-29 |
+| [VoiceTransl](https://github.com/shinnpuru/VoiceTransl) · [詳細](#voicetransl) | 音声認識、字幕翻訳、字幕と動画の処理を組み合わせる。 | AI連携 / 連携の評価候補 | 1,300 / 2026-08-28 |
+| [xianscan-rust](https://github.com/ArbenApura/xianscan-rust) · [詳細](#xianscan-rust) | 漫画・韓漫・国漫向けのローカル完結型翻訳スタジオ。吹き出し検出、多言語OCR、LLM翻訳、LaMaによるインペイント、組版までを単体バイナリで実行する。 | AIモデル・学習 / 更新が活発な実装候補 | 77 / 2026-10-03 |
 | [BallonsTranslator-Pro](https://github.com/thomaswantstobeaskeleton/BallonsTranslator-Pro) · [詳細](#ballonstranslator-pro) | BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで、検出・OCR・翻訳・インペイント・植字を組み替え可能なモジュール群で処理する。 | AIモデル・学習 / 活発・候補 | 96 / 2026-07-31 |
-| [CarrotMangaTranslator](https://github.com/ucx0204/CarrotMangaTranslator) · [詳細](#carrotmangatranslator) | 漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。 | AIモデル・学習 / 活発・候補 | 78 / 2026-10-02 |
+| [CarrotMangaTranslator](https://github.com/ucx0204/CarrotMangaTranslator) · [詳細](#carrotmangatranslator) | 漫画原稿のOCR→翻訳→原文消去→植字・検品→出力を扱うデスクトップアプリ。局所GemmaやOpenAI互換APIで翻訳する。 | AIモデル・学習 / 活発・候補 | 79 / 2026-10-02 |
 | [Kites](https://github.com/Unheat/Kites) · [詳細](#kites) | ブラウザ拡張として動作し、WebGPU上でOCR・インペイント・翻訳を行って漫画をその場で翻訳表示するツール。 | AIモデル・学習 / 初期評価候補 | 30 / 2026-09-26 |
 | [lumina](https://github.com/lumina-tl/lumina) · [詳細](#lumina) | 漫画・マンファ・マンファ翻訳の無料デスクトップアプリ。テキスト検出・OCR・翻訳・インペイント・組版の全工程を自動化しつつ、各結果を手で修正できる。 | AIモデル・学習 / 活発・候補 | 19 / 2026-09-22 |
-| [yakuyomi-engine](https://github.com/joyeli/yakuyomi-engine) · [詳細](#yakuyomi-engine) | 端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。 | AIモデル・学習 / 活発・候補 | 7 / 2026-10-02 |
+| [yakuyomi-engine](https://github.com/joyeli/yakuyomi-engine) · [詳細](#yakuyomi-engine) | 端末上で動く漫画翻訳エンジン。検出・OCR・文字消去をNCNNでCPU実行し、翻訳のみネットワークLLMに投げる。読み手アプリYakuyomiに組み込まれる。 | AIモデル・学習 / 活発・候補 | 7 / 2026-10-03 |
 | [translate-manga-br](https://github.com/marco0antonio0/translate-manga-br) · [詳細](#translate-manga-br) | ローカルファーストの漫画翻訳フルスタックアプリ。YOLOで吹き出し検出、PaddleOCRでOCR、翻訳、編集可能オーバーレイ付きリーダーまでを1本で提供する。 | AIモデル・学習 / 小規模・初期評価候補 | 31 / 2026-09-29 |
 | [LingoVeil](https://github.com/Gerald-Ha/LingoVeil) · [詳細](#lingoveil) | 漫画・コミック向けのセルフホスト翻訳ツール。画像内のテキストを検出・翻訳し、翻訳ビューで読める。ブックマークや読書進捗も保持する。 | AIモデル・学習 / 小規模・初期評価候補 | 5 / 2026-09-30 |
-| [OverTranslate](https://github.com/Hon-Lu/OverTranslate) · [詳細](#overtranslate) | Windows向けの画面翻訳ツール。スクリーンショット翻訳・リアルタイム翻訳・取詞翻訳・快速翻訳・文字翻訳の5機能を持ち、認識した訳文を元の画面上にそのまま重ねて表示する。 | AIは任意 / 活発・実用候補 | 92 / 2026-10-02 |
+| [OverTranslate](https://github.com/Hon-Lu/OverTranslate) · [詳細](#overtranslate) | Windows向けの画面翻訳ツール。スクリーンショット翻訳・リアルタイム翻訳・取詞翻訳・快速翻訳・文字翻訳の5機能を持ち、認識した訳文を元の画面上にそのまま重ねて表示する。 | AIは任意 / 活発・実用候補 | 95 / 2026-10-03 |
+| [FumetoReaderPlus](https://github.com/fumetodev/FumetoReaderPlus) · [詳細](#fumetoreaderplus) | Android向け漫画リーダー。吹き出し検出・OCR・漫画向けLLM翻訳・風船内への再レタリングを端末上で行い、タップで原文に戻せる。 | AIモデル・学習 / 活発な候補 | 5 / 2026-10-02 |
+| [Solar-Manga-Translator](https://github.com/soluna/Solar-Manga-Translator) · [詳細](#solar-manga-translator) | 中国語話者向けのローカル漫画翻訳・校正ワークベンチ。OCR、AI翻訳、擦字補修、自動嵌字、人手校正、導出を一流程にまとめる。 | AIモデル・学習 / 小規模・初期評価候補 | 4 / 2026-09-30 |
 
 <a id="asmr-dubber"></a>
 
@@ -41,7 +43,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Parakeet/Kotoba/Faster-Whisper等のASR、IndexTTS2/2.5または音声API、翻訳API、FFmpeg等。
 - **制約・未確認**: 主な方向は日英から中国語への制作。ASMR専用生成モデルではない。IndexTTS2.5は任意追加で、基本パッケージへの同梱と混同しない。
 - **編集者評価**: ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な連携候補。
-- **メトリクス**: ★222、fork 13、作成 2026-07-23、最終push 2026-10-01T00:45:05Z、archived=False
+- **メトリクス**: ★224、fork 13、作成 2026-07-23、最終push 2026-10-01T00:45:05Z、archived=False
 - **確認**: 2026-09-09 / コミット `bc088faceec743d51f2914e9f7efd98d7b19d9e3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/EveningStudy/asmr-dubber/tree/bc088faceec743d51f2914e9f7efd98d7b19d9e3)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -78,7 +80,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: manga-ocr-base、Transformers、形態素関連依存
 - **制約・未確認**: ページ内の文字領域検出や翻訳・組版は別工程。読み取り品質は素材依存。
 - **編集者評価**: 漫画の校正・翻訳素材抽出を構成するOCR部品。
-- **メトリクス**: ★2,792、fork 142、作成 2022-01-15、最終push 2026-07-19T08:43:43Z、archived=False
+- **メトリクス**: ★2,793、fork 142、作成 2022-01-15、最終push 2026-07-19T08:43:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/kha-white/manga-ocr/tree/c333b5d36e88d539d6b040b4c4cf90ad5ecd4f69)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -117,7 +119,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: OCR、インペイント、翻訳モデルまたはAPI
 - **制約・未確認**: 公式説明に公開Webデモの停止記載あり。縦書き・擬音・レイアウト保持の品質は素材で検証が必要。
 - **編集者評価**: 漫画のローカライズと文字処理工程の技術候補。
-- **メトリクス**: ★10,466、fork 1,068、作成 2021-02-18、最終push 2026-09-25T02:45:14Z、archived=False
+- **メトリクス**: ★10,471、fork 1,068、作成 2021-02-18、最終push 2026-09-25T02:45:14Z、archived=False
 - **確認**: 2026-09-09 / コミット `95227a2bb0fd306cd4f0c104d57284026f991b3a`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/zyddnys/manga-image-translator/tree/95227a2bb0fd306cd4f0c104d57284026f991b3a)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -189,7 +191,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: Whisper系、翻訳LLM、FFmpeg等
 - **制約・未確認**: 同名forkと公式配布元を区別。声の生成機能ではない。
 - **編集者評価**: ASMR・キャラ音声・映像の字幕付けとローカライズ候補。
-- **メトリクス**: ★1,298、fork 53、作成 2024-03-15、最終push 2026-08-28T14:44:44Z、archived=False
+- **メトリクス**: ★1,300、fork 53、作成 2024-03-15、最終push 2026-08-28T14:44:44Z、archived=False
 - **確認**: 2026-09-09 / コミット `b5f7e5038763aeb3420ac872c0bd191112f92227`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/shinnpuru/VoiceTransl/tree/b5f7e5038763aeb3420ac872c0bd191112f92227)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -224,7 +226,7 @@ ASMR作品の翻訳・台本校正・吹替・混音までを扱う具体的な�
 - **依存**: 内蔵のONNXモデル/Skia。翻訳にOllama・LM Studio等のローカルLLMやGemini/OpenAI等のクラウドAPIを任意使用。
 - **制約・未確認**: 翻訳品質やOCR精度はREADMEの主張で未検証。GPU無しではCPU推論となる。
 - **編集者評価**: 検出→OCR→翻訳→インペイント→組版を1クリックで自動化し、ONNXモデルとUIを内蔵した単体実行ファイルで動かせる点が実用的。
-- **メトリクス**: ★77、fork 12、作成 2026-08-16、最終push 2026-09-29T22:30:33Z、archived=False
+- **メトリクス**: ★77、fork 12、作成 2026-08-16、最終push 2026-10-03T19:54:18Z、archived=False
 - **確認**: 2026-10-01 / コミット `075d36f359cdcad1d08ea88d2f4d927640789c26`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ArbenApura/xianscan-rust/tree/075d36f359cdcad1d08ea88d2f4d927640789c26)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -294,7 +296,7 @@ BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで
 - **依存**: Gemma/OCR/インペイントのモデル、OpenAI互換APIキーなど。
 - **制約・未確認**: Intel Mac非対応。初回準備にネット接続と空き容量が必要。
 - **編集者評価**: 翻訳エンジン・OCR・原文消去を個別に設定でき、MCP経由で外部AIアプリから編集や出力を依頼できる点が用途に合う。
-- **メトリクス**: ★78、fork 15、作成 2026-04-20、最終push 2026-10-02T18:15:09Z、archived=False
+- **メトリクス**: ★79、fork 15、作成 2026-04-20、最終push 2026-10-02T18:15:09Z、archived=False
 - **確認**: 2026-09-30 / コミット `a6454549af83d424dc47d871d76734fb8a33187d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ucx0204/CarrotMangaTranslator/tree/a6454549af83d424dc47d871d76734fb8a33187d)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -399,7 +401,7 @@ BallonsTranslatorを元にした漫画・コミック翻訳ツールキットで
 - **依存**: NCNNモデル(DBNet/OCR/AOT-GAN)一式、任意のLLM API
 - **制約・未確認**: アプリではなくライブラリ本体。速度優先で画質は天井を取らない。GPU/NPUは使わずCPU実行とREADMEが明記。
 - **編集者評価**: スマホでの待ち時間を基準に各段を速度優先で設計しており、ページ間並行処理まで作り込まれている。
-- **メトリクス**: ★7、fork 1、作成 2026-06-01、最終push 2026-10-02T06:30:42Z、archived=False
+- **メトリクス**: ★7、fork 1、作成 2026-06-01、最終push 2026-10-03T11:20:13Z、archived=False
 - **確認**: 2026-09-30 / コミット `3d64c43380ff0fd38ead58a35949825ecd9edfcc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/joyeli/yakuyomi-engine/tree/3d64c43380ff0fd38ead58a35949825ecd9edfcc)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -504,7 +506,7 @@ Windows向けの画面翻訳ツール。スクリーンショット翻訳・リ�
 - **依存**: PP-OCRv6系ONNXモデル（RapidOcrNet）、Google/Bing/Microsoft/DeepL/OpenAI互換の翻訳サービス
 - **制約・未確認**: 対応OSはWindowsのみ。OCRはRapidOcrNetのONNXモデルで、翻訳は外部サービスまたはローカルLLMに依存する。READMEに翻訳品質の数値評価の記載はない。
 - **編集者評価**: 漫画・ゲーム・動画字幕のその場翻訳という用途が具体的で、OCRは端末内CPU処理、翻訳は複数サービスを自動で切り替える備援機構を持つ。
-- **メトリクス**: ★92、fork 8、作成 2026-05-09、最終push 2026-10-02T17:29:33Z、archived=False
+- **メトリクス**: ★95、fork 8、作成 2026-05-09、最終push 2026-10-03T18:41:57Z、archived=False
 - **確認**: 2026-10-01 / コミット `2c9d1ab98e0327837a4df009f6f404fe5b494d18`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Hon-Lu/OverTranslate/tree/2c9d1ab98e0327837a4df009f6f404fe5b494d18)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -521,6 +523,76 @@ Windows向けの画面翻訳ツール。スクリーンショット翻訳・リ�
 
 **入口候補（固定ツリーで存在確認）**: [docs/site/app.js](https://github.com/Hon-Lu/OverTranslate/blob/2c9d1ab98e0327837a4df009f6f404fe5b494d18/docs/site/app.js) / [src/OverTranslate.Launcher/src/main.rs](https://github.com/Hon-Lu/OverTranslate/blob/2c9d1ab98e0327837a4df009f6f404fe5b494d18/src/OverTranslate.Launcher/src/main.rs)
 
-**最新GitHub Release**: [2.5.0](https://github.com/Hon-Lu/OverTranslate/releases/tag/2.5.0) / 2026-09-24T14:19:46Z / prerelease=False
+**最新GitHub Release**: [2.6.0](https://github.com/Hon-Lu/OverTranslate/releases/tag/2.6.0) / 2026-10-03T08:33:30Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-10-01T16:59:10Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="fumetoreaderplus"></a>
+
+## FumetoReaderPlus
+
+Android向け漫画リーダー。吹き出し検出・OCR・漫画向けLLM翻訳・風船内への再レタリングを端末上で行い、タップで原文に戻せる。
+
+- **リポジトリ**: https://github.com/fumetodev/FumetoReaderPlus
+- **分類**: desktop_tool / AIモデル・学習 / 活発な候補
+- **入力**: CBZ/CBR/PDF/EPUB、Komga/Kavita/YACReaderLibraryServerのサーバ
+- **出力**: 翻訳済みページ表示、翻訳CBZ
+- **環境**: Android。ビルドにはJDK 21、Android SDK/NDK 29.0.13846066、Rust、Node 22/24/26が必要。
+- **依存**: PP-OCR、Hy-MT2 1.8B漫画向けFT（ONNX Runtime/llama.cpp）、rtmdetレイアウトモデル
+- **制約・未確認**: テスト・評価用コードとコーパスは非公開。デスクトップ版は実験的で未対応と明記。
+- **編集者評価**: 端末内で完結する漫画翻訳リーダーで、レタリングや一括翻訳まで実装されている。
+- **メトリクス**: ★5、fork 1、作成 2026-09-02、最終push 2026-10-02T16:42:29Z、archived=False
+- **確認**: 2026-10-03 / コミット `a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/fumetodev/FumetoReaderPlus/tree/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/fumetodev/FumetoReaderPlus/blob/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677/README.md) / [GitHub API](https://api.github.com/repos/fumetodev/FumetoReaderPlus) / [固定ツリー](https://github.com/fumetodev/FumetoReaderPlus/tree/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677)
+
+### 制作に使う際の検討
+
+権利を有する漫画の端末内翻訳・閲覧に使える。
+
+**次に確かめること（実施前）**: 実機で1ページ翻訳を試し、風船内レタリングと所要時間（1ページ6〜16秒と記載）を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [src-tauri/llama-bridge/llama.cpp/tools/cli/cli.cpp](https://github.com/fumetodev/FumetoReaderPlus/blob/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677/src-tauri/llama-bridge/llama.cpp/tools/cli/cli.cpp) / [src-tauri/llama-bridge/llama.cpp/tools/server/server.cpp](https://github.com/fumetodev/FumetoReaderPlus/blob/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677/src-tauri/llama-bridge/llama.cpp/tools/server/server.cpp) / [src-tauri/llama-bridge/llama.cpp/tools/server/webui/.storybook/main.ts](https://github.com/fumetodev/FumetoReaderPlus/blob/a56a4c621b3b6a5a6eb89fa01e0a0a0526cdb677/src-tauri/llama-bridge/llama.cpp/tools/server/webui/.storybook/main.ts)
+
+**最新GitHub Release**: [v0.7.3-vc7003](https://github.com/fumetodev/FumetoReaderPlus/releases/tag/v0.7.3-vc7003) / 2026-09-04T16:43:38Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-04T16:54:27Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="solar-manga-translator"></a>
+
+## Solar-Manga-Translator
+
+中国語話者向けのローカル漫画翻訳・校正ワークベンチ。OCR、AI翻訳、擦字補修、自動嵌字、人手校正、導出を一流程にまとめる。
+
+- **リポジトリ**: https://github.com/soluna/Solar-Manga-Translator
+- **分類**: desktop_tool / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 画像、画像フォルダ、ZIP、CBZ
+- **出力**: 処理済み画像、アーカイブ、プロジェクト（スナップショット）
+- **環境**: Python 3.10/3.11、Node.js 22.12以上、実翻訳にはWindows + NVIDIA GPU推奨。初回にモデル・依存をダウンロード。
+- **依存**: FastAPI、Vue3+Vite、Electron、翻訳サービスAPIキー（Gemini/豆包Ark等）
+- **制約・未確認**: 配布用インストーラ未公開、Windows打包は実験的。翻訳・補修結果は人手確認が必要と明記。
+- **編集者評価**: 翻訳初稿を人がページ単位で校正できる作業台として構成されている。
+- **メトリクス**: ★4、fork 0、作成 2026-07-02、最終push 2026-09-30T14:51:19Z、archived=False
+- **確認**: 2026-10-03 / コミット `88864b95044b29ae9e4997594b2c61bc2f066c07`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/soluna/Solar-Manga-Translator/tree/88864b95044b29ae9e4997594b2c61bc2f066c07)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/README.md) / [GitHub API](https://api.github.com/repos/soluna/Solar-Manga-Translator) / [固定ツリー](https://github.com/soluna/Solar-Manga-Translator/tree/88864b95044b29ae9e4997594b2c61bc2f066c07)
+
+### 制作に使う際の検討
+
+権利を有する画像の翻訳・校正に使える。
+
+**次に確かめること（実施前）**: 合成素材で導入→OCR→翻訳→嵌字→導出を一通り実行し、再現性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [backend/main.py](https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/backend/main.py) / [frontend-v3/src/main.js](https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/frontend-v3/src/main.js) / [frontend/src/main.js](https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/frontend/src/main.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-24T12:58:57Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

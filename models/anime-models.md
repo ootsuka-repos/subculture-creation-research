@@ -309,3 +309,83 @@ MiniMaxAI/MiniMax-H3をベースにしたLoRAアダプタ。囁き系ASMRの音�
 確認日: 2026-10-02 / revision `9369cad86bc549caa9e0d8f6f1c812aad4fc2e33` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `asmr_trigger_audio_h3_lora_v1_500.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/blob/9369cad86bc549caa9e0d8f6f1c812aad4fc2e33/README.md) / [モデルAPI](https://huggingface.co/api/models/vpakarinen/asmr-trigger-audio-h3-lora)
+
+## Galgame-Llasa-3B-v3
+
+HKUSTAudio/Llasa-3Bを基に、ギャルゲー系の日本語音声データで微調整した日本語テキスト音声合成モデル。
+
+- **版の区別**: 3B版にはv1/v2/v3があり、本項目はv3。v3は学習時のテキスト正規化を変更し一貫性を改善したと記載。1B版も別途公開されている。
+- **入力・設定**: 日本語テキストを入力する。詳細なプロンプト書式はモデルカードに記載がない。
+- **必要構成**: Llasa系列の推論環境が必要。具体的なVRAM要件はモデルカードに記載がない。3BのデモがHugging Face Spacesで公開されている。
+- **制約**: cc-by-nc-4.0で商用利用は不可。日本語のみを対象とする。話者・感情制御の仕様はカードに記載がない。
+- **利用条件**: metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。
+- **編集者評価**: ギャルゲー/アニメ調の日本語音声合成をローカルで試す候補。既存の3B（v1）とは別のv3チェックポイント。
+- **次の検証（未実施）**: 公開デモと同じテキストで3B-v3と1B-v3を比較し、読みと韻律・速度を記録する。
+
+確認日: 2026-10-03 / revision `880454ae1697e6a397df39c7bdc0d16a3b21d543` / gated=False。ファイル名候補3件の一覧確認。代表ファイル: `model-00001-of-00003.safetensors`、`model-00002-of-00003.safetensors`、`model-00003-of-00003.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/OmniAICreator/Galgame-Llasa-3B-v3/blob/880454ae1697e6a397df39c7bdc0d16a3b21d543/README.md) / [モデルAPI](https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-3B-v3)
+
+## Galgame-Llasa-1B-v3
+
+HKUSTAudio/Llasa-1B-Multilingualを基に、ギャルゲー音声や日本語アニメ音声データで微調整した日本語テキスト音声合成モデル。
+
+- **版の区別**: 1B版にはv1/v2/v3があり、本項目はv3。学習データにEmilia・ehehe-corpus・japanese-anime-speech等を追加したと記載。3B版も別途公開されている。
+- **入力・設定**: 日本語テキストを入力する。詳細なプロンプト書式はモデルカードに記載がない。
+- **必要構成**: Llasa系列の推論環境が必要。具体的なVRAM要件はモデルカードに記載がない。
+- **制約**: cc-by-nc-4.0で商用利用は不可。日本語のみを対象とする。話者・感情制御の仕様はカードに記載がない。
+- **利用条件**: metadataのlicenseはcc-by-nc-4.0。商用利用は不可として扱う。
+- **編集者評価**: 軽量な1Bクラスで日本語キャラ音声を作る候補。3B版より小さいぶん試しやすい。
+- **次の検証（未実施）**: 1B-v3と3B-v3で同一台詞を合成し、品質と速度の差を確認する。
+
+確認日: 2026-10-03 / revision `e3f797a5a51bf6811e28b6e2be8650dba7322aa3` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/OmniAICreator/Galgame-Llasa-1B-v3/blob/e3f797a5a51bf6811e28b6e2be8650dba7322aa3/README.md) / [モデルAPI](https://huggingface.co/api/models/OmniAICreator/Galgame-Llasa-1B-v3)
+
+## Manga-Bubble-YOLO
+
+Manga109-sとMangadex由来画像で学習したYOLO26ベースのテキスト領域検出モデル。NMS不要のend-to-endヘッドを持つ。
+
+- **版の区別**: yolo26nとyolo26sのPyTorch(.pt)とONNXを同梱。学習は英語・ベトナム語・日本語の混合データ（5,595画像）。
+- **入力・設定**: 該当なし（検出モデル）。imgsz=1280、conf=0.25を推奨と記載。
+- **必要構成**: ultralytics、またはONNX Runtime。推論はT4でn約11.0ms/画像、s約27.5ms/画像と記載。
+- **制約**: データセットは著作権の都合で非公開。検出対象はテキスト領域/吹き出しに限る。
+- **利用条件**: カード表記のlicenseはapache-2.0。学習元データのManga109-sには別途利用条件がある。
+- **編集者評価**: 漫画翻訳パイプラインの吹き出し検出前段に組み込める軽量モデル。
+- **次の検証（未実施）**: 実ページでnとsの再現率・誤検出を比較し、OCR前段としての実用性を確認する。
+
+確認日: 2026-10-03 / revision `fb646500455e8a8a3a807fd27b855c8e4fc63766` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `onnx/yolo26n.onnx`、`onnx/yolo26s.onnx`、`weights/yolo26n.pt`、`weights/yolo26s.pt`
+
+根拠: [固定モデルカード](https://huggingface.co/Kiuyha/Manga-Bubble-YOLO/blob/fb646500455e8a8a3a807fd27b855c8e4fc63766/README.md) / [モデルAPI](https://huggingface.co/api/models/Kiuyha/Manga-Bubble-YOLO)
+
+## MiniMax-H3-Rough-2D-Cartoon-Illustration
+
+MiniMax-H3をベースに、2Dカートゥーン風の動的イラスト動画データで学習したLoRAアダプタ。
+
+- **版の区別**: チェックポイント1000/1200を推奨と記載。リポジトリには1000/1200のsafetensorsが置かれている。
+- **入力・設定**: トリガーワード「rough 2D cartoon illustration」を用いる。
+- **必要構成**: MiniMax-H3の推論環境。解像度は既定480x832で、映像フレーム数に応じて調整されると記載。
+- **制約**: 作者が実験的でアーティファクトが出ると明記。学習データはPexelsの動画を素材にしている。
+- **利用条件**: metadataはother、license_nameはminimax-h3-community-license。ベースモデルの条件に従う。
+- **編集者評価**: 2Dカートゥーン調の動きを付与する実験的LoRA。既存のMiniMax-H3系項目とは別のスタイル。
+- **次の検証（未実施）**: 同一シードでベースと比較し、動きの自由度と破綻の程度を確認する。
+
+確認日: 2026-10-03 / revision `fc40d010a2b44fd4caa4b750b6f503eca5d61577` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `1000/minimax-h3-rough-2d-cartoon-illustration-1000.safetensors`、`minimax-h3-rough-2d-cartoon-illustration-1200.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration/blob/fc40d010a2b44fd4caa4b750b6f503eca5d61577/README.md) / [モデルAPI](https://huggingface.co/api/models/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration)
+
+## AnimeBackgroundGAN-Shinkai
+
+CartoonGAN（Chen et al., CVPR18）の新海誠スタイル学習済みモデル。PyTorch実装で重みを配布する。
+
+- **版の区別**: 新海誠版のほか、細田守・今敏・宮崎駿版が別リポジトリで公開されている。重みは単一の.pthファイル。
+- **入力・設定**: 該当なし（画像変換モデル）。実写写真を入力する。
+- **必要構成**: PyTorch。README記載のTransform実装で読み込む。
+- **制約**: 2022年公開のモデルで、実写写真をアニメ風背景へ変換する用途。最新の生成モデルに比べ表現力は限定的。
+- **利用条件**: metadataのlicenseはmit。
+- **編集者評価**: 実写写真から新海誠風の背景を作る古典的GANとして参照価値がある。
+- **次の検証（未実施）**: 実写風景写真で変換し、背景素材として使える品質かを目視確認する。
+
+確認日: 2026-10-03 / revision `d162ca947aab5aa943c3586bda550812831d5cf4` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `shinkai_makoto.pth`
+
+根拠: [固定モデルカード](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai/blob/d162ca947aab5aa943c3586bda550812831d5cf4/README.md) / [モデルAPI](https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Shinkai)
