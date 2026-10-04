@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -15,11 +15,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [AniDoc](https://github.com/robbyant-research/AniDoc) · [詳細](#anidoc) | 設定画を参照してスケッチ列を彩色するアニメ制作研究。 | AIモデル・学習 / モデル・研究候補 | 572 / 2025-04-15 |
 | [AnimeColor](https://github.com/IamCreateAI/AnimeColor) · [詳細](#animecolor) | 設定画参照とスケッチ動画からアニメを彩色する拡散Transformer。 | AIモデル・学習 / 小規模・初期候補 | 9 / 2025-08-04 |
 | [BasicPBC](https://github.com/ykdai/BasicPBC) · [詳細](#basicpbc) | 閉領域の対応付けによってアニメ線画の塗りを支援するペイントバケット彩色。 | AIモデル・学習 / モデル・研究候補 | 307 / 2025-06-26 |
-| [ECCV2022-RIFE](https://github.com/hzwer/ECCV2022-RIFE) · [詳細](#eccv2022-rife) | フレーム間の中間画像を推定する動画補間モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 5,598 / 2025-09-10 |
+| [ECCV2022-RIFE](https://github.com/hzwer/ECCV2022-RIFE) · [詳細](#eccv2022-rife) | フレーム間の中間画像を推定する動画補間モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 5,602 / 2025-09-10 |
 | [LatentSync](https://github.com/bytedance/LatentSync) · [詳細](#latentsync) | 音声条件で口の動きを同期させる動画処理モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 6,106 / 2025-06-20 |
-| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,779 / 2026-10-03 |
+| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,784 / 2026-10-04 |
 | [ToonComposer](https://github.com/TencentARC/ToonComposer) · [詳細](#tooncomposer) | キーフレーム後の中割りと彩色を生成AIでまとめて処理する。 | AIモデル・学習 / 研究・技術評価候補 | 589 / 2025-08-20 |
-| [ToonCrafter](https://github.com/Doubiiu/ToonCrafter) · [詳細](#tooncrafter) | 二枚のアニメ画像の間を生成する補間モデル。 | AIモデル・学習 / モデル・研究候補 | 6,031 / 2025-03-19 |
+| [ToonCrafter](https://github.com/Doubiiu/ToonCrafter) · [詳細](#tooncrafter) | 二枚のアニメ画像の間を生成する補間モデル。 | AIモデル・学習 / モデル・研究候補 | 6,032 / 2025-03-19 |
 | [comic-manga-narrator](https://github.com/MushiSenpai/comic-manga-narrator) · [詳細](#comic-manga-narrator) | 漫画/コミックページを、コマ検出・セリフの音声化・ナレーション・Ken Burnsと2.5Dパララックスで演出したナレーション付きMP4に変換するローカルパイプライン。 | AIモデル・学習 / 小規模・初期評価候補 | 0 / 2026-07-12 |
 | [vedGen](https://github.com/HarisUmer/vedGen) · [詳細](#vedgen) | 一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-07-22 |
 
@@ -156,7 +156,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: RIFEモデル
 - **制約・未確認**: 作者がアニメ向けモデルを案内。原画の演技設計やタイミングを自動で正しく決めるものではない。
 - **編集者評価**: 少枚数アニメや生成動画の補間を検討する基盤。
-- **メトリクス**: ★5,598、fork 570、作成 2020-11-12、最終push 2025-09-10T06:32:03Z、archived=False
+- **メトリクス**: ★5,602、fork 570、作成 2020-11-12、最終push 2025-09-10T06:32:03Z、archived=False
 - **確認**: 2026-09-09 / コミット `5d8adbdd40e12c2c8f91930eff838aebe561c086`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/hzwer/ECCV2022-RIFE/tree/5d8adbdd40e12c2c8f91930eff838aebe561c086)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -230,7 +230,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: 通常制作にAIモデル不要
 - **制約・未確認**: 生成AIモデルそのものではない。既存の制作工程への適合性を確認する。
 - **編集者評価**: AI生成素材を手で仕上げる制作基盤として有用。
-- **メトリクス**: ★7,779、fork 880、作成 2016-03-18、最終push 2026-10-03T03:37:47Z、archived=False
+- **メトリクス**: ★7,784、fork 882、作成 2016-03-18、最終push 2026-10-04T19:55:38Z、archived=False
 - **確認**: 2026-09-09 / コミット `1ef22259b9cf64c9d8710daebc131b401932e81b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/opentoonz/opentoonz/tree/1ef22259b9cf64c9d8710daebc131b401932e81b)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -304,7 +304,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: 独自チェックポイント、PyTorch、Gradio
 - **制約・未確認**: 第三者の軽量化版と公式実装の必要メモリを混同しない。2025年から更新が少ない。
 - **編集者評価**: 二枚の決定原画の間を試作する比較基準。完成カットのタイミングは編集で決める。
-- **メトリクス**: ★6,031、fork 530、作成 2024-05-28、最終push 2025-03-19T06:43:54Z、archived=False
+- **メトリクス**: ★6,032、fork 530、作成 2024-05-28、最終push 2025-03-19T06:43:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `b0c47ff339c5e5ec45b84d0c6587850f242d41ef`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Doubiiu/ToonCrafter/tree/b0c47ff339c5e5ec45b84d0c6587850f242d41ef)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。

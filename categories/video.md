@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,15 +12,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,265 / 2025-10-16 |
-| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,520 / 2026-07-16 |
-| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,579 / 2026-10-02 |
-| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 11,013 / 2026-01-05 |
-| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,237 / 2026-08-24 |
+| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,268 / 2025-10-16 |
+| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,521 / 2026-07-16 |
+| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,588 / 2026-10-02 |
+| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 11,019 / 2026-01-05 |
+| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,239 / 2026-08-24 |
 | [Wan-Move](https://github.com/ali-vilab/Wan-Move) · [詳細](#wan-move) | 動きの軌跡を条件に動画を生成するWan系実装。 | AIモデル・学習 / モデル・研究候補 | 659 / 2026-01-05 |
-| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,708 / 2026-09-21 |
-| [vlog2anime-kit](https://github.com/mincad/vlog2anime-kit) · [詳細](#vlog2anime-kit) | 実写動画の人物を参照画像のアニメキャラへ置換し、元人物を露出させずに実写背景へ戻すComfyUIワークフロー集。Wan2.2 Animate/SCAIL-2で変換し、SAM3追跡＋MatAnyone2でマットを作る。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-08-04 |
-| [video-regen-recipes](https://github.com/Shenrui-Ma/video-regen-recipes) · [詳細](#video-regen-recipes) | Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創動画を再現するためのテンプレート集（20件）とSkills。参考図生成・音声クローン・後期編集まで手順書と検証プロンプトを同梱する。 | AIモデル・学習 / 小規模・初期評価候補 | 9 / 2026-09-18 |
+| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,726 / 2026-09-21 |
+| [vlog2anime-kit](https://github.com/mincad/vlog2anime-kit) · [詳細](#vlog2anime-kit) | 実写動画の人物を参照画像のアニメキャラへ置換し、元人物を露出させずに実写背景へ戻すComfyUIワークフロー集。Wan2.2 Animate/SCAIL-2で変換し、SAM3追跡＋MatAnyone2でマットを作る。 | AIモデル・学習 / 小規模・初期評価候補 | 2 / 2026-08-04 |
+| [video-regen-recipes](https://github.com/Shenrui-Ma/video-regen-recipes) · [詳細](#video-regen-recipes) | Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創動画を再現するためのテンプレート集（20件）とSkills。参考図生成・音声クローン・後期編集まで手順書と検証プロンプトを同梱する。 | AIモデル・学習 / 小規模・初期評価候補 | 10 / 2026-09-18 |
 
 <a id="framepack"></a>
 
@@ -36,7 +36,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: HunyuanVideo系、FramePack重み、PyTorch
 - **制約・未確認**: 少ないVRAMは短い生成時間を保証しない。長尺の人物・背景一貫性は未評価。
 - **編集者評価**: 個人GPUで長さを伸ばす実験候補。生成時間を含めて採用を決めたい。
-- **メトリクス**: ★17,265、fork 1,732、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
+- **メトリクス**: ★17,268、fork 1,732、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
 - **確認**: 2026-09-09 / コミット `97fe5dbe06ac1f337ece08935b1076a35eefeeb9`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/lllyasviel/FramePack/tree/97fe5dbe06ac1f337ece08935b1076a35eefeeb9)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -75,7 +75,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Wan系基盤、Index-anisoraの版別重み
 - **制約・未確認**: V3.1の12GB配布パッケージをV3.2の一般要件としない。「3Dキャラ動画」は編集可能なメッシュではない。
 - **編集者評価**: アニメ特化の比較対象として優先度が高い。汎用Wanと同じカットを比較すると価値を判断しやすい。
-- **メトリクス**: ★2,520、fork 154、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
+- **メトリクス**: ★2,521、fork 154、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cdce3a17548d7ff0f2e05978469f134da25e68e`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/bilibili/Index-anisora/tree/6cdce3a17548d7ff0f2e05978469f134da25e68e)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -116,7 +116,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LTXモデル、テキストエンコーダ、VAE、アップスケーラ
 - **制約・未確認**: LTX-2と2.5の版・必要モデル・利用条件を分ける。全環境での動作は未検証。
 - **編集者評価**: 音と映像を一緒に制作する候補。旧LTX-Videoから開発の主軸が移った。
-- **メトリクス**: ★9,579、fork 1,520、作成 2026-01-03、最終push 2026-10-02T10:38:06Z、archived=False
+- **メトリクス**: ★9,588、fork 1,521、作成 2026-01-03、最終push 2026-10-02T10:38:06Z、archived=False
 - **確認**: 2026-09-09 / コミット `a95ab856bf29407b6b066ede0abe1846050db56c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-2/tree/a95ab856bf29407b6b066ede0abe1846050db56c)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -155,7 +155,7 @@ LTXの旧世代動画生成実装。
 - **依存**: LTX-Videoモデル
 - **制約・未確認**: 公式READMEはLTX-2への移行を案内。現在の主開発先として推薦しない。
 - **編集者評価**: 既存ワークフローの保守・比較資料として残す。
-- **メトリクス**: ★11,013、fork 1,157、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
+- **メトリクス**: ★11,019、fork 1,158、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `4b2d053057623ddd4d0a1d3e9cd28890e9ef487f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-Video/tree/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -192,7 +192,7 @@ LTXの旧世代動画生成実装。
 - **依存**: SCAIL-2重み、Wan VAE、T5、前処理モデル
 - **制約・未確認**: アニメ専用ではない。入力マスクが重要で、複数参照は品質低下の場合がある。
 - **編集者評価**: 2026年6月に推論コード・モデル、8月に学習コード公開。ComfyUI連携あり。
-- **メトリクス**: ★1,237、fork 89、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
+- **メトリクス**: ★1,239、fork 89、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
 - **確認**: 2026-09-09 / コミット `78fe19576bb06be96c2375e088574a262a300edb`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/zai-org/SCAIL-2/tree/78fe19576bb06be96c2375e088574a262a300edb)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -272,7 +272,7 @@ LTXの旧世代動画生成実装。
 - **依存**: Wan2.2の対応モデル
 - **制約・未確認**: アニメ専用ではない。5BとA14B等の機能・メモリ要件を一括りにしない。
 - **編集者評価**: 短編アニメ・背景動画・動作素材の生成基盤候補。
-- **メトリクス**: ★17,708、fork 2,282、作成 2025-07-28、最終push 2026-09-21T06:16:22Z、archived=False
+- **メトリクス**: ★17,726、fork 2,282、作成 2025-07-28、最終push 2026-09-21T06:16:22Z、archived=False
 - **確認**: 2026-09-09 / コミット `42bf4cfaa384bc21833865abc2f9e6c0e67233dc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Wan-Video/Wan2.2/tree/42bf4cfaa384bc21833865abc2f9e6c0e67233dc)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -311,7 +311,7 @@ LTXの旧世代動画生成実装。
 - **依存**: SCAIL-2／Wan2.1、SAM3、MatAnyone2、LTX-2.3、umt5系テキストエンコーダ、VAE
 - **制約・未確認**: キャラ固有の参照画像・プロンプト・LoRA、モデル本体は含まず、特定キャラの同一性は保証しない。81フレーム超は分割推奨。必要VRAM・速度は環境依存。
 - **編集者評価**: 元人物マットを3段階に拡張する安全合成と、保護領域のリーク検査スクリプトまで用意している点が具体的。
-- **メトリクス**: ★1、fork 0、作成 2026-07-12、最終push 2026-08-04T12:40:44Z、archived=False
+- **メトリクス**: ★2、fork 0、作成 2026-07-12、最終push 2026-08-04T12:40:44Z、archived=False
 - **確認**: 2026-10-02 / コミット `184f867dfd82d97913952f2087234d7d6d10b6ee`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/mincad/vlog2anime-kit/tree/184f867dfd82d97913952f2087234d7d6d10b6ee)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -346,7 +346,7 @@ Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創�
 - **依存**: ComfyUI、MiniMax H3、GPT-Image/Nano Banana等の画像生成、shenrui-comfyui-toolkit
 - **制約・未確認**: 品質・再現性は保証されず、TODOにWindows側テスト未完了と他Agent製品への適配が残る。テンプレートは第三者の素材・権利に依存する。
 - **編集者評価**: Codex／Claude Code／Hermes Agent等から使う前提で、テンプレート書式と再現テストのプロンプトまで定義しているのが特徴。
-- **メトリクス**: ★9、fork 2、作成 2026-09-10、最終push 2026-09-18T05:37:43Z、archived=False
+- **メトリクス**: ★10、fork 2、作成 2026-09-10、最終push 2026-09-18T05:37:43Z、archived=False
 - **確認**: 2026-10-02 / コミット `47cc68e1fe7a04213eb9aa53db9f08cb9a06d317`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Shenrui-Ma/video-regen-recipes/tree/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

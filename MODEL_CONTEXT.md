@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -165,6 +165,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: ゲームの実行エンジンは別。独自属性の読み込みをゲーム側で実装する。
   - 制作用途: AI生成タイルを遊べる地形へ整理する工程の基盤。
   - 出典（2026-09-09確認）: https://github.com/mapeditor/tiled/blob/395619407b39a34fccf45dc9e6e7dd0c34b6feb5/README.md
+
+- **character-animation-creator-skill** [workflow_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - キャラクターのテキスト指示、または参照画像 → スプライトシート（既定384×1536、6列×24行×64px）、コンタクトシート、検証JSON。Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定や参照画像から64×64ピクセルアートのキャラクタースプライトシートを、8方向×idle/walk/attackのアニメーション込みで生成し、パレット量子化や検証まで行う。
+  - 制約: 64×64のピクセルアート前提。最終品質は画像生成バックエンド依存。ライセンスはMITとREADMEに記載。
+  - 制作用途: 少ない手数でキャラのアニメーション素材を揃えたい小〜中規模のゲーム開発に向く。
+  - 出典（2026-10-04確認）: https://github.com/tachikomared/character-animation-creator-skill/blob/9ce98dffb98c84488fe7b99b62c49fabee20abd6/README.md
+
+- **spritebrew** [web_app / AIモデル・学習 / 稼働中・実運用候補]
+  - テキストプロンプト、または既存のピクセルアート画像・スプライトシートPNG → スプライトシート、TexturePacker/Aseprite/GameMaker/RPG Maker MV・MZ/Godot SpriteFrames形式、フレームPNGのZIP。テキストや既存画像からピクセルアートのキャラクターを生成し、アニメーション化・スライス・プレビュー・エクスポートまで一貫して行うWebツール。21種のスタイルと複数エンジン向け書き出しに対応する。
+  - 制約: AI生成はRetro DiffusionのAPI依存でトークン消費制。ローカル完結ではない。ライセンスはAGPL-3.0。
+  - 制作用途: スプライト素材の生成〜書き出しを1ツールで完結させたい個人〜小規模チームに向く。
+  - 出典（2026-10-04確認）: https://github.com/GAlbanese09/spritebrew/blob/8d55e758b4b76ac2c78222d83cc3eb9b933c7b1f/README.md
 
 ## アニメ制作・中割り・彩色・リップシンク
 
@@ -371,6 +383,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: v0.1.0-betaでマスク縁の精度改善中。背景色が既知である前提の処理。
   - 制作用途: Wan等で生成したキャラ動画を実写合成する際のマットに使える。
   - 出典（2026-10-03確認）: https://github.com/mincad/ComfyUI-AnimeRembg/blob/f179104daed4b74bf04a076cdd43308bf25a3865/README.md
+
+- **CYKSM** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 二次元画像（小〜中サイズ） → 超解像済み画像（コピーまたは名前を付けて保存）。realesrgan-x4plus-animeモデルを手軽に使うためのGUIツール。画像を左側にドラッグ&ドロップしてボタンを押すと超解像し、結果を右側にプレビューする。
+  - 制約: 小さい二次元画像向けで、他種別や大サイズ画像への効果は限定的と記載。巨大サイズはVRAM不足の可能性。ライセンスMIT。
+  - 制作用途: ラフや小さい素材を手早く拡大したい単発作業に向く。
+  - 出典（2026-10-04確認）: https://github.com/Nigh/CYKSM/blob/cccdccafabca8ae0e192c1a749802306cb1dfd96/README.md
 
 ## 動画生成
 
@@ -652,6 +670,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 外出先での歌わせ調整・プレビュー。
   - 出典（2026-10-02確認）: https://github.com/vocoder712/OpenUtauMobile/blob/17a86f602e054c345841684224903004eff1f536/README.md
 
+- **SoulX-Singer** [model_toolkit / AIモデル・学習 / モデル候補]
+  - 歌詞、メロディまたはMIDI、話者プロンプト音声（SVCは変換元の歌声波形とF0） → 歌声波形（wav）。未見の歌声を生成するゼロショット歌声合成（SVS）モデルの公式推論コード。メロディ（F0）条件と楽譜（MIDI）条件に対応し、歌声変換（SVC）版も提供する。
+  - 制約: 自動前処理のメタデータは歌唱音声と歌詞・音符の対応がずれることがあり、MIDIエディタでの手修正を推奨。ライセンスはApache-2.0。
+  - 制作用途: キャラクターソングや歌声素材を、話者ごとの追加学習なしで試作したい用途に向く。
+  - 出典（2026-10-04確認）: https://github.com/Soul-AILab/SoulX-Singer/blob/81aeb3ae772c70093c3de74dc23c92d983801ae4/README.md
+
+- **DiffSinger** [model_toolkit / AIモデル・学習 / 確立した参照実装]
+  - 歌詞、F0またはMIDI、テキスト（TTS構成） → 音声波形（wav）、音響特徴量（メル）。Shallow Diffusion機構を用いた歌声合成（DiffSinger）と音声合成（DiffSpeech）の公式PyTorch実装。歌詞+MIDI/F0からメルへ、メルから波形へ変換する複数構成を提供する。
+  - 制約: 公開データセット（PopCS/OpenCpop/Ljspeech）ベースで、任意キャラの歌声には追加学習が必要。環境はやや古め。ライセンスはMIT。
+  - 制作用途: 歌声合成モデルを自作・追加学習する際の参照基盤として使える。
+  - 出典（2026-10-04確認）: https://github.com/MoonInTheRiver/DiffSinger/blob/4662c53a27a5ac662821eae23a7d71cfcff7356d/README.md
+
 ## VTuber・AIキャラクター・VRM
 
 - **AIRI** [web_app / AI連携 / 更新のある導入・評価候補]
@@ -749,6 +779,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: VTSのプラグイン互換やVNetは対象外。AI対話や音声合成などは含まず、アバター表示に限定される。
   - 制作用途: Live2Dアバターでの配信運用と、透過合成を含むキャプチャ。
   - 出典（2026-10-02確認）: https://github.com/erodozer/open-vt/blob/89f2f0f4119a21c96a8b9e1222850b558ffcb62e/README.md
+
+- **A.R.I.A** [desktop_tool / 非AI制作 / Alpha・初期評価候補]
+  - Live2Dモデル（.model3.json/.moc3等）、VRMファイル、スキン済みGLB、PNG/GIF画像、カメラやiPhone等のトラッキング入力 → OBS向けの複数アバター表示、配信画面。Live2D・VRM・GLB・PNG/GIFアバターをまとめて扱うクロスプラットフォームのアバタースタジオ。顔トラッキング、物理、ライティング、視覚アクション、複数アバターのOBS出力に対応する。
+  - 制約: Alpha版で一部のデバイス組合せは検証不足。VTube Studio/VBridger/VRC・GLBインポートや生成スプリングチェーンは実験的。モデル素材の利用規約は別途。ライセンスMIT。
+  - 制作用途: 複数アバターを1配信画面にまとめたいVTuber/配信者に向く。
+  - 出典（2026-10-04確認）: https://github.com/NekoUnix/A.R.I.A/blob/14973e63e85d4b590ab104ba51dd1acdee24ffb9/README.md
+
+- **Seidr-Smidja** [pipeline / AI連携 / Genesis・初期評価候補]
+  - アバター仕様のYAML（身長・髪・服・表情・ライセンス情報等）、VRoidベーステンプレート → .vrmファイル、プレビューPNG（正面・斜め・横・顔クローズアップ・Tポーズ・表情）。AIエージェントがYAML仕様からVRMアバターを設計・構築・検証・レンダリングするヘッドレスなパイプライン。VRoidベーステンプレートにBlenderをヘッドレスで適用し、VRChat/VTube Studio互換を検査して.vrmを出力する。
+  - 制約: 人間向けGUIは無くagent/CLI専用。VRM以外の形式は対象外。READMEのステータスバッジはGenesis Phaseで、ライセンスバッジはTBD表記だがリポジトリ表記はApache-2.0。
+  - 制作用途: VRMアバターの量産や、エージェント主導の反復的なアバター制作を試したい用途に向く。
+  - 出典（2026-10-04確認）: https://github.com/hrabanazviking/Seidr-Smidja/blob/482c8f0032b28c4ceb323478e7854adae3715f72/README.md
 
 ## 制作ワークフロー・追加学習
 
@@ -898,6 +940,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 権利を有する画像の翻訳・校正に使える。
   - 出典（2026-10-03確認）: https://github.com/soluna/Solar-Manga-Translator/blob/88864b95044b29ae9e4997594b2c61bc2f066c07/README.md
 
+- **UGTLive** [desktop_tool / AIモデル・学習 / 稼働中・実運用候補]
+  - 画面キャプチャ、画像、PDF/CBZファイル → 翻訳テキスト/オーバーレイ、音声読み上げ、HTMLエクスポート、翻訳済み画像。Windows向けGUIツールで、画面や画像の文字を「ライブ」でOCR・翻訳する。縦書き日本語の漫画読み上げ、PDF/CBZ/画像の一括変換、音声読み上げ、リアルタイム字幕にも対応する。
+  - 制約: Windows/NVIDIA前提でAMD/Intelは未検証。高品質翻訳や音声はOpenAI/Gemini/ElevenLabs等の外部APIキーが必要。ライセンスはBSD系の帰属表示。
+  - 制作用途: 漫画やゲーム画面の翻訳を手元で高速に回したいローカライズ作業に向く。
+  - 出典（2026-10-04確認）: https://github.com/SethRobinson/UGTLive/blob/f647679dcc384aba2ed9178172d227db8e79effd/README.md
+
+- **manga-translator** [desktop_tool / AI連携 / 稼働中]
+  - 画像ファイル、画像URL、クリップボードの画像 → 原文/訳文テキスト（コピー可能）、複数画像のナビゲーション表示。Gio製GUIのデスクトップアプリで、画像内のテキストをOCRして翻訳する。検出した全テキストに色付きボックスを表示し、クリックで原文と訳文を確認・コピーできる。
+  - 制約: クラウドAPIキーが必須でローカル完結しない。OCR/翻訳はGoogle/DeepL依存。ライセンスはMIT。
+  - 制作用途: 大量処理よりも、数枚の画像を目視で確認しながら訳したい作業に向く。
+  - 出典（2026-10-04確認）: https://github.com/cameronkinsella/manga-translator/blob/3b1139c8f446ef4e9e5b3776e415038ec2a73f4c/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -1032,6 +1086,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [Manga-Bubble-YOLO](https://huggingface.co/Kiuyha/Manga-Bubble-YOLO/blob/fb646500455e8a8a3a807fd27b855c8e4fc63766/README.md): Manga109-sとMangadex由来画像で学習したYOLO26ベースのテキスト領域検出モデル。NMS不要のend-to-endヘッドを持つ。 カード表記のlicenseはapache-2.0。学習元データのManga109-sには別途利用条件がある。
 - [MiniMax-H3-Rough-2D-Cartoon-Illustration](https://huggingface.co/prithivMLmods/MiniMax-H3-Rough-2D-Cartoon-Illustration/blob/fc40d010a2b44fd4caa4b750b6f503eca5d61577/README.md): MiniMax-H3をベースに、2Dカートゥーン風の動的イラスト動画データで学習したLoRAアダプタ。 metadataはother、license_nameはminimax-h3-community-license。ベースモデルの条件に従う。
 - [AnimeBackgroundGAN-Shinkai](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai/blob/d162ca947aab5aa943c3586bda550812831d5cf4/README.md): CartoonGAN（Chen et al., CVPR18）の新海誠スタイル学習済みモデル。PyTorch実装で重みを配布する。 metadataのlicenseはmit。
+- [CharacterSheet](https://huggingface.co/Alissonerdx/CharacterSheet/blob/3dc4295163dacc924d213168d67bf16850fd954f/README.md): 画像編集ベースのLoRA群。FLUX.2 Klein 9BとKrea 2向けに、参照キャラ画像からマルチビューのキャラクターシートを生成する。学習は約300例のキャラクターシートで、人間キャラ中心。 metadataはother、license_nameはcivitai-model-license、license_linkはcivitai。無条件の商用利用可とは扱わない。
+- [Live2Diff](https://huggingface.co/Leoxing/Live2Diff/blob/0e6801b3e805e37a6e27f99aa9e8ee6574d748c6/README.md): 単方向テンポラルアテンションとマルチタイムステップKVキャッシュを用いた動画拡散モデル（Stable Diffusion系）。リアルタイムのストリーム翻訳（video-to-video）を目的とし、LCM-LoRAとStreamDiffusionで高速化する。 Apache-2.0。
+- [japanese_speecht5_tts](https://huggingface.co/esnya/japanese_speecht5_tts/blob/21d6e52032f74123966ac8a3717e23fdfb7809b0/README.md): microsoft/speecht5_ttsをベースに、Open JTalk（pyopenjtalk）ベースの改修トークナイザを組み合わせた日本語TTS。JVSコーパス（100話者）でファインチューニングしている。 モデルカードのlicenseは未設定。JVS Corpusのライセンスを継承すると記載され、商用利用可否は明記されていない。
+- [noob-sdxl-controlnet-lineart_anime](https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime/blob/61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4/README.md): Laxhar/sdxl_noob（NoobAI-XL）をベースにしたSDXL向けlineart ControlNet。pipeline_tagはtext-to-imageで、controlnet形式の重みを含む。 metadataはother、license_nameはfair-ai-public-license-1.0-sd、license_linkはfreedevproject.org。無条件の商用利用可とは扱わない。
+- [storyboard-sketch](https://huggingface.co/blink7630/storyboard-sketch/blob/be328fecdfe3fb053a500376283013f34f99eebb/README.md): SDXL Baseをベースに、60枚のグレースケール絵コンテスケッチとキャラクター肖像で学習したLoRA。21:9・16:9・1:1の比率を含む。 metadataはother。ベースはstabilityai/stable-diffusion-xl-base-1.0。無条件の商用利用可とは扱わない。
 
 ## 保留情報
 

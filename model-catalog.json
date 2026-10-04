@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-03",
+  "updated_on": "2026-10-04",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1222461,
-        "likes": 2345,
+        "downloads_last_month": 1235640,
+        "likes": 2352,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 362574,
-        "likes": 535,
+        "downloads_last_month": 363807,
+        "likes": 536,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 86869,
+        "downloads_last_month": 87846,
         "likes": 434,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 152669,
-        "likes": 180,
+        "downloads_last_month": 158445,
+        "likes": 181,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1519,
+        "downloads_last_month": 1492,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1160,
+        "downloads_last_month": 1149,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -378,9 +378,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 231,
+        "likes": 230,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 823,
+        "downloads_last_month": 852,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 683,
+        "downloads_last_month": 696,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 989,
+        "downloads_last_month": 1060,
         "likes": 96,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14103,
-        "likes": 229,
+        "downloads_last_month": 14132,
+        "likes": 231,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 6002,
+        "downloads_last_month": 6009,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 79,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -983,10 +983,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 30,
+        "downloads_last_month": 32,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 434,
+        "downloads_last_month": 441,
         "likes": 27,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1093,10 +1093,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 48,
+        "downloads_last_month": 49,
         "likes": 5,
         "last_modified": "2025-08-12T05:27:46.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1150,7 +1150,7 @@
         "downloads_last_month": 37,
         "likes": 2,
         "last_modified": "2025-08-12T05:26:43.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1207,7 +1207,7 @@
         "downloads_last_month": 0,
         "likes": 3,
         "last_modified": "2026-02-17T00:28:51.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1259,10 +1259,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 377,
+        "downloads_last_month": 386,
         "likes": 6,
         "last_modified": "2026-09-21T08:22:31.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1316,7 +1316,7 @@
         "downloads_last_month": 0,
         "likes": 66,
         "last_modified": "2022-04-05T17:11:49.000Z",
-        "checked_on": "2026-10-03"
+        "checked_on": "2026-10-04"
       },
       "sources": [
         {
@@ -1328,7 +1328,282 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "charactersheet",
+      "name": "CharacterSheet",
+      "hub_repository": "Alissonerdx/CharacterSheet",
+      "url": "https://huggingface.co/Alissonerdx/CharacterSheet",
+      "category": "image",
+      "checked_on": "2026-10-04",
+      "architecture_ja": "画像編集ベースのLoRA群。FLUX.2 Klein 9BとKrea 2向けに、参照キャラ画像からマルチビューのキャラクターシートを生成する。学習は約300例のキャラクターシートで、人間キャラ中心。",
+      "variants_ja": "TripleView_klein9b（前/横/後）、QuadView_klein9b（顔クローズアップ追加）、QuadView_krea2、DynamicCharacterSheet_krea2（実験的）の計4ファイル。各ファイルで対応ベースモデルと同梱ワークフローJSONが異なる。",
+      "prompting_ja": "レイアウトごとの定型キャプション（例: \"Convert the character in the image to a Character Sheet showing front, side and back full body views\"）を使う。Dynamic版は構造化ブラケットプロンプトが必要で、同梱のQwen3-VLノードで生成するのが推奨。",
+      "requirements_ja": "ComfyUI。LoRAをmodels/lorasへ配置し、同梱のworkflow JSONを開いて使用。既定は1536×1024・8〜10ステップ・CFG1。",
+      "limitations_ja": "学習例は約300で人間キャラ中心のため、アニメ等の様式では一貫性が落ちる場合がある。Dynamic版はシート内文字の生成が未成熟で、ビュー間の一貫性も100%ではない。",
+      "license_notes_ja": "metadataはother、license_nameはcivitai-model-license、license_linkはcivitai。無条件の商用利用可とは扱わない。",
+      "assessment_ja": "1枚のキャラ画像からターンアラウンドや資料シートを作る用途が具体的で、キャラ設定資料やデータセット準備に向く。",
+      "next_validation_ja": "アニメ調の参照画像でTripleView/QuadViewを回し、ビュー間の同一性・衣装保持・解像度別の破綻を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Alissonerdx/CharacterSheet",
+        "api_url": "https://huggingface.co/api/models/Alissonerdx/CharacterSheet",
+        "checked_on": "2026-10-04",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "3dc4295163dacc924d213168d67bf16850fd954f",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "civitai-model-license",
+        "evidence_files": [
+          "DynamicCharacterSheet_krea2_v1.safetensors",
+          "QuadView_klein9b_v1.safetensors",
+          "QuadView_krea2_v1.safetensors",
+          "TripleView_klein9b_v1.safetensors"
+        ],
+        "matching_weight_file_count": 4
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 311,
+        "last_modified": "2026-08-07T17:43:22.000Z",
+        "checked_on": "2026-10-04"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Alissonerdx/CharacterSheet/blob/3dc4295163dacc924d213168d67bf16850fd954f/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Alissonerdx/CharacterSheet",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "live2diff",
+      "name": "Live2Diff",
+      "hub_repository": "Leoxing/Live2Diff",
+      "url": "https://huggingface.co/Leoxing/Live2Diff",
+      "category": "video",
+      "checked_on": "2026-10-04",
+      "architecture_ja": "単方向テンポラルアテンションとマルチタイムステップKVキャッシュを用いた動画拡散モデル（Stable Diffusion系）。リアルタイムのストリーム翻訳（video-to-video）を目的とし、LCM-LoRAとStreamDiffusionで高速化する。",
+      "variants_ja": "live2diff.ckpt（ckpt形式の1ファイル）。",
+      "prompting_ja": "モデルカードにプロンプト仕様の記載はない。デモではWebカメラ入力（人の顔）やアニメキャラ映像のリアルタイム変換例が示される。",
+      "requirements_ja": "PyTorch 2.2.2。RTX 4090での速度評価で、2ステップdenoising時512×512はTensorRT有効で16.43FPS。TensorRT対応。",
+      "limitations_ja": "モデルカードは性能・制約の詳細を記述していない。リアルタイム実行にはWebカメラ等の入力と相応のGPUが必要。",
+      "license_notes_ja": "Apache-2.0。",
+      "assessment_ja": "映像をリアルタイムにアニメ調へ変換でき、配信やVTuber的な映像演出の実験に向く。",
+      "next_validation_ja": "入力映像を用意し、TensorRT有無でのFPS・構造一貫性・スタイルの安定性を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/Leoxing/Live2Diff",
+        "api_url": "https://huggingface.co/api/models/Leoxing/Live2Diff",
+        "checked_on": "2026-10-04",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "0e6801b3e805e37a6e27f99aa9e8ee6574d748c6",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "live2diff.ckpt"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 13,
+        "last_modified": "2024-07-17T13:00:34.000Z",
+        "checked_on": "2026-10-04"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Leoxing/Live2Diff/blob/0e6801b3e805e37a6e27f99aa9e8ee6574d748c6/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Leoxing/Live2Diff",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "japanese-speecht5-tts",
+      "name": "japanese_speecht5_tts",
+      "hub_repository": "esnya/japanese_speecht5_tts",
+      "url": "https://huggingface.co/esnya/japanese_speecht5_tts",
+      "category": "tts",
+      "checked_on": "2026-10-04",
+      "architecture_ja": "microsoft/speecht5_ttsをベースに、Open JTalk（pyopenjtalk）ベースの改修トークナイザを組み合わせた日本語TTS。JVSコーパス（100話者）でファインチューニングしている。",
+      "variants_ja": "model.safetensors（1ファイル）と、改修トークナイザのPythonコード（speecht5_openjtalk_tokenizer.py）。",
+      "prompting_ja": "プロンプトではなく入力テキストを渡す。16次元の話者埋め込みで声質を制御し、第1次元が男性寄り（-1.0）〜女性寄り（1.0）を表す。",
+      "requirements_ja": "transformers、sentencepiece、pyopenjtalk。改修トークナイザをダウンロードして使用。vocoderはmicrosoft/speecht5_hifigan。",
+      "limitations_ja": "複数文を一度に入力すると後半が長い無音になる既知問題があり、文単位での分割生成が推奨されている。",
+      "license_notes_ja": "モデルカードのlicenseは未設定。JVS Corpusのライセンスを継承すると記載され、商用利用可否は明記されていない。",
+      "assessment_ja": "日本語の読み上げ音声を作る軽量な選択肢で、キャラ音声の下地づくりに使える。",
+      "next_validation_ja": "同一テキストで話者埋め込みを振り、声質変化と複数文入力時の無音問題を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/esnya/japanese_speecht5_tts",
+        "api_url": "https://huggingface.co/api/models/esnya/japanese_speecht5_tts",
+        "checked_on": "2026-10-04",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "21d6e52032f74123966ac8a3717e23fdfb7809b0",
+        "gated": false,
+        "license_metadata": null,
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 1161,
+        "likes": 21,
+        "last_modified": "2023-08-09T09:25:38.000Z",
+        "checked_on": "2026-10-04"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/esnya/japanese_speecht5_tts/blob/21d6e52032f74123966ac8a3717e23fdfb7809b0/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/esnya/japanese_speecht5_tts",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "noob-sdxl-controlnet-lineart-anime",
+      "name": "noob-sdxl-controlnet-lineart_anime",
+      "hub_repository": "Eugeoter/noob-sdxl-controlnet-lineart_anime",
+      "url": "https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime",
+      "category": "image",
+      "checked_on": "2026-10-04",
+      "architecture_ja": "Laxhar/sdxl_noob（NoobAI-XL）をベースにしたSDXL向けlineart ControlNet。pipeline_tagはtext-to-imageで、controlnet形式の重みを含む。",
+      "variants_ja": "diffusion_pytorch_model.safetensors と diffusion_pytorch_model.fp16.safetensors（diffusers形式）、および noob-sdxl-controlnet-lineart_anime.safetensors。",
+      "prompting_ja": "モデルカードにプロンプト例・推奨設定の記載はない。",
+      "requirements_ja": "diffusersまたは対応するWebUI。fp16版が同梱。必要VRAMや推奨解像度はカードに記載がない。",
+      "limitations_ja": "モデルカードは記述がほぼ無く、性能・制約・推奨パラメータは不明。利用条件はFair AI Public License 1.0-SD。",
+      "license_notes_ja": "metadataはother、license_nameはfair-ai-public-license-1.0-sd、license_linkはfreedevproject.org。無条件の商用利用可とは扱わない。",
+      "assessment_ja": "アニメ調イラストの線画制御に使えるNoobAI系ControlNetで、既存のSDXLワークフローへ組み込みやすい。",
+      "next_validation_ja": "線画を入力に、NoobAI-XL系チェックポイントと組み合わせて塗りの品質・構図保持・fp16精度の差を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime",
+        "api_url": "https://huggingface.co/api/models/Eugeoter/noob-sdxl-controlnet-lineart_anime",
+        "checked_on": "2026-10-04",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "fair-ai-public-license-1.0-sd",
+        "evidence_files": [
+          "diffusion_pytorch_model.fp16.safetensors",
+          "diffusion_pytorch_model.safetensors",
+          "noob-sdxl-controlnet-lineart_anime.safetensors"
+        ],
+        "matching_weight_file_count": 3
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 7726,
+        "likes": 7,
+        "last_modified": "2024-11-11T01:39:36.000Z",
+        "checked_on": "2026-10-04"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime/blob/61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Eugeoter/noob-sdxl-controlnet-lineart_anime",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "storyboard-sketch",
+      "name": "storyboard-sketch",
+      "hub_repository": "blink7630/storyboard-sketch",
+      "url": "https://huggingface.co/blink7630/storyboard-sketch",
+      "category": "production",
+      "checked_on": "2026-10-04",
+      "architecture_ja": "SDXL Baseをベースに、60枚のグレースケール絵コンテスケッチとキャラクター肖像で学習したLoRA。21:9・16:9・1:1の比率を含む。",
+      "variants_ja": "Storyboard_sketch.safetensors（1ファイル）。適用強度で抽象度と整合性が変わる。",
+      "prompting_ja": "instance_promptは\"storyboard sketch of\"。強度1.0で最も抽象的、0.8で整合性が上がり、0.5でより詳細・写実寄りになる。",
+      "requirements_ja": "Stable Diffusion XL（diffusers）環境。21:9などの横長比率を想定。",
+      "limitations_ja": "学習例は約60枚と小さく、作風はスケッチ調に限定される。ライセンスはotherで、ベースモデルの条件に従う。",
+      "license_notes_ja": "metadataはother。ベースはstabilityai/stable-diffusion-xl-base-1.0。無条件の商用利用可とは扱わない。",
+      "assessment_ja": "シーンやカット割りのラフスケッチを出す用途に向き、絵コンテ検討のたたき台づくりに使える。",
+      "next_validation_ja": "同一カット指定で強度0.5/0.8/1.0を比較し、構図の読みやすさとプロンプト追従を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/blink7630/storyboard-sketch",
+        "api_url": "https://huggingface.co/api/models/blink7630/storyboard-sketch",
+        "checked_on": "2026-10-04",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "be328fecdfe3fb053a500376283013f34f99eebb",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "Storyboard_sketch.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 260,
+        "likes": 104,
+        "last_modified": "2023-11-14T18:09:01.000Z",
+        "checked_on": "2026-10-04"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/blink7630/storyboard-sketch/blob/be328fecdfe3fb053a500376283013f34f99eebb/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/blink7630/storyboard-sketch",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-03"
+  "metrics_refreshed_on": "2026-10-04"
 }

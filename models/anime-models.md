@@ -389,3 +389,83 @@ CartoonGAN（Chen et al., CVPR18）の新海誠スタイル学習済みモデル
 確認日: 2026-10-03 / revision `d162ca947aab5aa943c3586bda550812831d5cf4` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `shinkai_makoto.pth`
 
 根拠: [固定モデルカード](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Shinkai/blob/d162ca947aab5aa943c3586bda550812831d5cf4/README.md) / [モデルAPI](https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Shinkai)
+
+## CharacterSheet
+
+画像編集ベースのLoRA群。FLUX.2 Klein 9BとKrea 2向けに、参照キャラ画像からマルチビューのキャラクターシートを生成する。学習は約300例のキャラクターシートで、人間キャラ中心。
+
+- **版の区別**: TripleView_klein9b（前/横/後）、QuadView_klein9b（顔クローズアップ追加）、QuadView_krea2、DynamicCharacterSheet_krea2（実験的）の計4ファイル。各ファイルで対応ベースモデルと同梱ワークフローJSONが異なる。
+- **入力・設定**: レイアウトごとの定型キャプション（例: "Convert the character in the image to a Character Sheet showing front, side and back full body views"）を使う。Dynamic版は構造化ブラケットプロンプトが必要で、同梱のQwen3-VLノードで生成するのが推奨。
+- **必要構成**: ComfyUI。LoRAをmodels/lorasへ配置し、同梱のworkflow JSONを開いて使用。既定は1536×1024・8〜10ステップ・CFG1。
+- **制約**: 学習例は約300で人間キャラ中心のため、アニメ等の様式では一貫性が落ちる場合がある。Dynamic版はシート内文字の生成が未成熟で、ビュー間の一貫性も100%ではない。
+- **利用条件**: metadataはother、license_nameはcivitai-model-license、license_linkはcivitai。無条件の商用利用可とは扱わない。
+- **編集者評価**: 1枚のキャラ画像からターンアラウンドや資料シートを作る用途が具体的で、キャラ設定資料やデータセット準備に向く。
+- **次の検証（未実施）**: アニメ調の参照画像でTripleView/QuadViewを回し、ビュー間の同一性・衣装保持・解像度別の破綻を確認する。
+
+確認日: 2026-10-04 / revision `3dc4295163dacc924d213168d67bf16850fd954f` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `DynamicCharacterSheet_krea2_v1.safetensors`、`QuadView_klein9b_v1.safetensors`、`QuadView_krea2_v1.safetensors`、`TripleView_klein9b_v1.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Alissonerdx/CharacterSheet/blob/3dc4295163dacc924d213168d67bf16850fd954f/README.md) / [モデルAPI](https://huggingface.co/api/models/Alissonerdx/CharacterSheet)
+
+## Live2Diff
+
+単方向テンポラルアテンションとマルチタイムステップKVキャッシュを用いた動画拡散モデル（Stable Diffusion系）。リアルタイムのストリーム翻訳（video-to-video）を目的とし、LCM-LoRAとStreamDiffusionで高速化する。
+
+- **版の区別**: live2diff.ckpt（ckpt形式の1ファイル）。
+- **入力・設定**: モデルカードにプロンプト仕様の記載はない。デモではWebカメラ入力（人の顔）やアニメキャラ映像のリアルタイム変換例が示される。
+- **必要構成**: PyTorch 2.2.2。RTX 4090での速度評価で、2ステップdenoising時512×512はTensorRT有効で16.43FPS。TensorRT対応。
+- **制約**: モデルカードは性能・制約の詳細を記述していない。リアルタイム実行にはWebカメラ等の入力と相応のGPUが必要。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: 映像をリアルタイムにアニメ調へ変換でき、配信やVTuber的な映像演出の実験に向く。
+- **次の検証（未実施）**: 入力映像を用意し、TensorRT有無でのFPS・構造一貫性・スタイルの安定性を比較する。
+
+確認日: 2026-10-04 / revision `0e6801b3e805e37a6e27f99aa9e8ee6574d748c6` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `live2diff.ckpt`
+
+根拠: [固定モデルカード](https://huggingface.co/Leoxing/Live2Diff/blob/0e6801b3e805e37a6e27f99aa9e8ee6574d748c6/README.md) / [モデルAPI](https://huggingface.co/api/models/Leoxing/Live2Diff)
+
+## japanese_speecht5_tts
+
+microsoft/speecht5_ttsをベースに、Open JTalk（pyopenjtalk）ベースの改修トークナイザを組み合わせた日本語TTS。JVSコーパス（100話者）でファインチューニングしている。
+
+- **版の区別**: model.safetensors（1ファイル）と、改修トークナイザのPythonコード（speecht5_openjtalk_tokenizer.py）。
+- **入力・設定**: プロンプトではなく入力テキストを渡す。16次元の話者埋め込みで声質を制御し、第1次元が男性寄り（-1.0）〜女性寄り（1.0）を表す。
+- **必要構成**: transformers、sentencepiece、pyopenjtalk。改修トークナイザをダウンロードして使用。vocoderはmicrosoft/speecht5_hifigan。
+- **制約**: 複数文を一度に入力すると後半が長い無音になる既知問題があり、文単位での分割生成が推奨されている。
+- **利用条件**: モデルカードのlicenseは未設定。JVS Corpusのライセンスを継承すると記載され、商用利用可否は明記されていない。
+- **編集者評価**: 日本語の読み上げ音声を作る軽量な選択肢で、キャラ音声の下地づくりに使える。
+- **次の検証（未実施）**: 同一テキストで話者埋め込みを振り、声質変化と複数文入力時の無音問題を確認する。
+
+確認日: 2026-10-04 / revision `21d6e52032f74123966ac8a3717e23fdfb7809b0` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/esnya/japanese_speecht5_tts/blob/21d6e52032f74123966ac8a3717e23fdfb7809b0/README.md) / [モデルAPI](https://huggingface.co/api/models/esnya/japanese_speecht5_tts)
+
+## noob-sdxl-controlnet-lineart_anime
+
+Laxhar/sdxl_noob（NoobAI-XL）をベースにしたSDXL向けlineart ControlNet。pipeline_tagはtext-to-imageで、controlnet形式の重みを含む。
+
+- **版の区別**: diffusion_pytorch_model.safetensors と diffusion_pytorch_model.fp16.safetensors（diffusers形式）、および noob-sdxl-controlnet-lineart_anime.safetensors。
+- **入力・設定**: モデルカードにプロンプト例・推奨設定の記載はない。
+- **必要構成**: diffusersまたは対応するWebUI。fp16版が同梱。必要VRAMや推奨解像度はカードに記載がない。
+- **制約**: モデルカードは記述がほぼ無く、性能・制約・推奨パラメータは不明。利用条件はFair AI Public License 1.0-SD。
+- **利用条件**: metadataはother、license_nameはfair-ai-public-license-1.0-sd、license_linkはfreedevproject.org。無条件の商用利用可とは扱わない。
+- **編集者評価**: アニメ調イラストの線画制御に使えるNoobAI系ControlNetで、既存のSDXLワークフローへ組み込みやすい。
+- **次の検証（未実施）**: 線画を入力に、NoobAI-XL系チェックポイントと組み合わせて塗りの品質・構図保持・fp16精度の差を確認する。
+
+確認日: 2026-10-04 / revision `61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4` / gated=False。ファイル名候補3件の一覧確認。代表ファイル: `diffusion_pytorch_model.fp16.safetensors`、`diffusion_pytorch_model.safetensors`、`noob-sdxl-controlnet-lineart_anime.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime/blob/61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4/README.md) / [モデルAPI](https://huggingface.co/api/models/Eugeoter/noob-sdxl-controlnet-lineart_anime)
+
+## storyboard-sketch
+
+SDXL Baseをベースに、60枚のグレースケール絵コンテスケッチとキャラクター肖像で学習したLoRA。21:9・16:9・1:1の比率を含む。
+
+- **版の区別**: Storyboard_sketch.safetensors（1ファイル）。適用強度で抽象度と整合性が変わる。
+- **入力・設定**: instance_promptは"storyboard sketch of"。強度1.0で最も抽象的、0.8で整合性が上がり、0.5でより詳細・写実寄りになる。
+- **必要構成**: Stable Diffusion XL（diffusers）環境。21:9などの横長比率を想定。
+- **制約**: 学習例は約60枚と小さく、作風はスケッチ調に限定される。ライセンスはotherで、ベースモデルの条件に従う。
+- **利用条件**: metadataはother。ベースはstabilityai/stable-diffusion-xl-base-1.0。無条件の商用利用可とは扱わない。
+- **編集者評価**: シーンやカット割りのラフスケッチを出す用途に向き、絵コンテ検討のたたき台づくりに使える。
+- **次の検証（未実施）**: 同一カット指定で強度0.5/0.8/1.0を比較し、構図の読みやすさとプロンプト追従を確認する。
+
+確認日: 2026-10-04 / revision `be328fecdfe3fb053a500376283013f34f99eebb` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `Storyboard_sketch.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/blink7630/storyboard-sketch/blob/be328fecdfe3fb053a500376283013f34f99eebb/README.md) / [モデルAPI](https://huggingface.co/api/models/blink7630/storyboard-sketch)

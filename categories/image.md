@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-03。**158件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,14 +13,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [anime-segmentation](https://github.com/SkyTNT/anime-segmentation) · [詳細](#anime-segmentation) | アニメ絵のキャラクター領域を抽出し、背景除去や合成用マスクを作る。 | AIモデル・学習 / 比較・既存工程の参考 | 846 / 2025-05-21 |
-| [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) · [詳細](#krita-ai-diffusion) | Kritaの描画工程へ画像生成・インペイント・アウトペイントを組み込む。 | AI連携 / 更新のある導入・評価候補 | 10,666 / 2026-10-03 |
-| [Qwen-Image](https://github.com/QwenLM/Qwen-Image) · [詳細](#qwen-image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,381 / 2026-02-10 |
-| [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,059 / 2026-02-09 |
-| [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) · [詳細](#comfyui-forbidden-vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 103 / 2026-07-19 |
-| [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) · [詳細](#comfyui-ultimate-face-fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 25 / 2026-07-21 |
+| [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) · [詳細](#krita-ai-diffusion) | Kritaの描画工程へ画像生成・インペイント・アウトペイントを組み込む。 | AI連携 / 更新のある導入・評価候補 | 10,668 / 2026-10-03 |
+| [Qwen-Image](https://github.com/QwenLM/Qwen-Image) · [詳細](#qwen-image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,383 / 2026-02-10 |
+| [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,064 / 2026-02-09 |
+| [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) · [詳細](#comfyui-forbidden-vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 104 / 2026-07-19 |
+| [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) · [詳細](#comfyui-ultimate-face-fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 26 / 2026-07-21 |
 | [Colortina](https://github.com/Amster-Ilvil/Colortina) · [詳細](#colortina) | manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-08-23 |
-| [ComfyUI-NeuralBooru](https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru) · [詳細](#comfyui-neuralbooru) | 自然文のシーン記述をローカルLLMでDanbooruタグに変換するComfyUIノード。約14万件の実在タグ語彙で検証・別名変換・語形修正・並び替えを行い、テンプレートで包んでサンプラーへ渡す。 | AIモデル・学習 / 小規模・初期評価候補 | 19 / 2026-07-10 |
-| [ComfyUI-AnimeRembg](https://github.com/mincad/ComfyUI-AnimeRembg) · [詳細](#comfyui-animerembg) | アニメキャラ動画のアルファマットを抽出するComfyUIカスタムノード集。既知背景の差分マッティングとデスピルを実装する。 | AI出力の後処理 / 小規模・初期評価候補（beta） | 0 / 2026-08-04 |
+| [ComfyUI-NeuralBooru](https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru) · [詳細](#comfyui-neuralbooru) | 自然文のシーン記述をローカルLLMでDanbooruタグに変換するComfyUIノード。約14万件の実在タグ語彙で検証・別名変換・語形修正・並び替えを行い、テンプレートで包んでサンプラーへ渡す。 | AIモデル・学習 / 小規模・初期評価候補 | 20 / 2026-07-10 |
+| [ComfyUI-AnimeRembg](https://github.com/mincad/ComfyUI-AnimeRembg) · [詳細](#comfyui-animerembg) | アニメキャラ動画のアルファマットを抽出するComfyUIカスタムノード集。既知背景の差分マッティングとデスピルを実装する。 | AI出力の後処理 / 小規模・初期評価候補（beta） | 1 / 2026-08-04 |
+| [CYKSM](https://github.com/Nigh/CYKSM) · [詳細](#cyksm) | realesrgan-x4plus-animeモデルを手軽に使うためのGUIツール。画像を左側にドラッグ&ドロップしてボタンを押すと超解像し、結果を右側にプレビューする。 | AIモデル・学習 / 小規模・初期評価候補 | 102 / 2026-08-21 |
 
 <a id="anime-segmentation"></a>
 
@@ -75,7 +76,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: Krita、ComfyUI等の対応生成環境
 - **制約・未確認**: 生成モデルとサービスによって費用・実行環境が変わる。
 - **編集者評価**: 画師が手で直しながらAIを使う工程に適している。
-- **メトリクス**: ★10,666、fork 637、作成 2023-09-01、最終push 2026-10-03T10:54:01Z、archived=False
+- **メトリクス**: ★10,668、fork 637、作成 2023-09-01、最終push 2026-10-03T10:54:01Z、archived=False
 - **確認**: 2026-09-09 / コミット `dda58d1c63e361207ccec085efbc34dbd32f1654`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Acly/krita-ai-diffusion/tree/dda58d1c63e361207ccec085efbc34dbd32f1654)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -112,7 +113,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: Qwen-Imageモデル、編集用モデル。モデル中核は外部Diffusers実装に依存。
 - **制約・未確認**: 2.0の告知と公開重みの版を混同しない。本調査の重み候補は2512とEdit-2511。
 - **編集者評価**: イラスト制作と文字入り素材の基盤として評価する。
-- **メトリクス**: ★8,381、fork 560、作成 2025-08-03、最終push 2026-02-10T07:37:37Z、archived=False
+- **メトリクス**: ★8,383、fork 560、作成 2025-08-03、最終push 2026-02-10T07:37:37Z、archived=False
 - **確認**: 2026-09-09 / コミット `6b5e1f5cec987d404be5ac6657db3b9aacb56a89`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/QwenLM/Qwen-Image/tree/6b5e1f5cec987d404be5ac6657db3b9aacb56a89)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -156,7 +157,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: 対応するZ-Imageモデル
 - **制約・未確認**: アニメ専用ではない。Turbo・Base・Omni等の能力と公開範囲を分ける。
 - **編集者評価**: 背景・素材・イラスト試作の生成基盤候補。
-- **メトリクス**: ★12,059、fork 821、作成 2025-11-26、最終push 2026-02-09T12:49:43Z、archived=False
+- **メトリクス**: ★12,064、fork 822、作成 2025-11-26、最終push 2026-02-09T12:49:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `26f23eda626ffadda020b04ff79488e1d72004cd`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Tongyi-MAI/Z-Image/tree/26f23eda626ffadda020b04ff79488e1d72004cd)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -195,7 +196,7 @@ Turboで試作速度、Baseで学習・制御の適性を分けて調べる。�
 - **依存**: ComfyUI本体、luxdelux7の検出・セグメンテーションモデル（HuggingFace）
 - **制約・未確認**: 強い様式化・遮蔽・特殊構図では検出失敗があり得るとREADMEに明記。モデル精度は未検証。
 - **編集者評価**: 顔検出・マスク生成・コンテキスト対応インペイント・色調補正を単一ノードにまとめており、顔の修正工程を簡略化できる。
-- **メトリクス**: ★103、fork 7、作成 2025-07-06、最終push 2026-07-19T14:34:33Z、archived=False
+- **メトリクス**: ★104、fork 7、作成 2025-07-06、最終push 2026-07-19T14:34:33Z、archived=False
 - **確認**: 2026-10-01 / コミット `b474d579c7749c8046d267c75512484120626b6d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision/tree/b474d579c7749c8046d267c75512484120626b6d)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -230,7 +231,7 @@ Turboで試作速度、Baseで学習・制御の適性を分けて調べる。�
 - **依存**: 同梱の顔解析モデル、使用する生成チェックポイント。
 - **制約・未確認**: 生成モデルと素材は利用者が用意。モデル重みは別途取得で上流ライセンスに従う。
 - **編集者評価**: アニメ・イラスト・実写のチェックポイントに対応し、複数顔を順に処理して「修復」「再構成」などのデノイズプリセットで調整できる点が実用的。
-- **メトリクス**: ★25、fork 6、作成 2026-07-20、最終push 2026-07-21T17:06:53Z、archived=False
+- **メトリクス**: ★26、fork 6、作成 2026-07-20、最終push 2026-07-21T17:06:53Z、archived=False
 - **確認**: 2026-09-30 / コミット `98a00ad332803f4adf9e2154a211e3641971d7ef`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix/tree/98a00ad332803f4adf9e2154a211e3641971d7ef)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -300,7 +301,7 @@ manga-colorization-v2を基にしたローカル漫画自動彩色デスクト�
 - **依存**: ComfyUI、ローカルLLMサーバ（LM Studio/Ollama/llama.cpp/vLLM等）
 - **制約・未確認**: READMEの想定はSDXL系チェックポイントと英語Danbooru語彙。日本語入力の扱いやタグ辞書の網羅性は記載されていない。fuzzy matchは既定で無効。
 - **編集者評価**: タグ語彙を重みに焼き込まず、汎用LLMの提案を同梱のタグ辞書で検証する設計が特徴。LLMを差し替えても検証側が効く。
-- **メトリクス**: ★19、fork 2、作成 2026-06-29、最終push 2026-07-10T03:25:47Z、archived=False
+- **メトリクス**: ★20、fork 2、作成 2026-06-29、最終push 2026-07-10T03:25:47Z、archived=False
 - **確認**: 2026-10-02 / コミット `e3376e5fcea10d38c52e8261f81f73fab6ef3352`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ChrisJohnson89/ComfyUI-NeuralBooru/tree/e3376e5fcea10d38c52e8261f81f73fab6ef3352)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -335,7 +336,7 @@ manga-colorization-v2を基にしたローカル漫画自動彩色デスクト�
 - **依存**: rembg、scipy、ComfyUI
 - **制約・未確認**: v0.1.0-betaでマスク縁の精度改善中。背景色が既知である前提の処理。
 - **編集者評価**: グレー背景で生成したキャラ動画の合成向けに、時間安定マットとデスピルを提供する。実運用済みと記載。
-- **メトリクス**: ★0、fork 0、作成 2026-07-12、最終push 2026-08-04T12:40:51Z、archived=False
+- **メトリクス**: ★1、fork 0、作成 2026-07-12、最終push 2026-08-04T12:40:51Z、archived=False
 - **確認**: 2026-10-03 / コミット `f179104daed4b74bf04a076cdd43308bf25a3865`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/mincad/ComfyUI-AnimeRembg/tree/f179104daed4b74bf04a076cdd43308bf25a3865)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -355,3 +356,38 @@ Wan等で生成したキャラ動画を実写合成する際のマットに使�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-07-12T08:06:28Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="cyksm"></a>
+
+## CYKSM
+
+realesrgan-x4plus-animeモデルを手軽に使うためのGUIツール。画像を左側にドラッグ&ドロップしてボタンを押すと超解像し、結果を右側にプレビューする。
+
+- **リポジトリ**: https://github.com/Nigh/CYKSM
+- **分類**: desktop_tool / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 二次元画像（小〜中サイズ）
+- **出力**: 超解像済み画像（コピーまたは名前を付けて保存）
+- **環境**: 実行手順の詳細はREADMEに記載なし（AutoHotkey製GUIと記載）。Real-ESRGANのrealesrgan-x4plus-animeモデルを使用。
+- **依存**: Real-ESRGAN（realesrgan-x4plus-anime）
+- **制約・未確認**: 小さい二次元画像向けで、他種別や大サイズ画像への効果は限定的と記載。巨大サイズはVRAM不足の可能性。ライセンスMIT。
+- **編集者評価**: 小さい二次元画像の超解像をGUIで手早く回せる。AIモデルはReal-ESRGANのrealesrgan-x4plus-animeを使用。
+- **メトリクス**: ★102、fork 0、作成 2022-03-06、最終push 2026-08-21T09:41:08Z、archived=False
+- **確認**: 2026-10-04 / コミット `cccdccafabca8ae0e192c1a749802306cb1dfd96`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Nigh/CYKSM/tree/cccdccafabca8ae0e192c1a749802306cb1dfd96)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Nigh/CYKSM/blob/cccdccafabca8ae0e192c1a749802306cb1dfd96/README.md) / [GitHub API](https://api.github.com/repos/Nigh/CYKSM) / [固定ツリー](https://github.com/Nigh/CYKSM/tree/cccdccafabca8ae0e192c1a749802306cb1dfd96)
+
+### 制作に使う際の検討
+
+ラフや小さい素材を手早く拡大したい単発作業に向く。
+
+**次に確かめること（実施前）**: 同一画像で本ツールと他のアップスケーラを比較し、線の保持と破綻の差を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [frontend/src/app.js](https://github.com/Nigh/CYKSM/blob/cccdccafabca8ae0e192c1a749802306cb1dfd96/frontend/src/app.js) / [frontend/src/main.js](https://github.com/Nigh/CYKSM/blob/cccdccafabca8ae0e192c1a749802306cb1dfd96/frontend/src/main.js)
+
+**最新GitHub Release**: [v2.0.0](https://github.com/Nigh/CYKSM/releases/tag/v2.0.0) / 2026-03-27T18:28:04Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-08-21T09:26:28Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
