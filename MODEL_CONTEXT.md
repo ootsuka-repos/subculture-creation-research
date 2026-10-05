@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-05。**175件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -77,6 +77,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 学習データの規模や精度指標（mAP等）はREADMEに記載がなく検出精度は未確認。REST API化のコードはREADME内のサンプル記載で、そのまま動く形では同梱されていない。
   - 制作用途: 漫画翻訳のコマ・吹き出し検出の候補として試せる。
   - 出典（2026-10-01確認）: https://github.com/nonillion-studios/Manga-AI-detector/blob/becb02ca3f2e5e01df4822045d001443442cf4ff/readme.md
+
+- **manga-colorizer** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 白黒漫画ページ画像、任意のヒント点や参照カラー画像 → 彩色済み画像（Labのa/bのみ変更し、Lは原稿を保持）。白黒漫画（网点含む）の意味ベース自動彩色ツール。ONNXのSAM誘導ジェネレータで髪/肌/瞳/背景を配色し、Windowsデスクトップ（Tauri 2+Python）、ブラウザ、Dartエンジンで動作する。
+  - 制約: モデル重みはCC BY-NC-SA 4.0でリポジトリ非同梱、別途ダウンロードが必要。コードはApache-2.0。
+  - 制作用途: 漫画の彩色補助・ラフ彩色に使えるが、モデルの商用条件に注意。
+  - 出典（2026-10-05確認）: https://github.com/Mobai0z0/manga-colorizer/blob/f1bbf26d434be05f66a0a5f66ab821a1fd10c78d/readme.md
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -296,6 +302,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: エージェント連携での2Dリギング自動化の検証に向く。
   - 出典（2026-10-03確認）: https://github.com/zeikar/iki/blob/e0ebdd542212e60847ca3af37965c73e77301ad1/README.md
 
+- **spine-parts** [pipeline / AI連携 / 小規模・初期評価候補]
+  - キャラ立ち絵PNG、See-throughのレイヤ（layers.json+PNGまたはPSD）、キャラ設定config.json → Spine 4.3のskeleton.json/atlas/packedページ、パーツPNG、idleのAPNG/GIF等。1枚のアニメ絵からSpine 2Dキャラのパーツを組み立てるCLI。See-throughのレイヤ分解結果を統合し、メッシュ・ボーン・ループidleをspine-rigc仕様で生成、書き出し前に数値で検査する。
+  - 制約: READMEは特定チェックポイント（Pony Diffusion V6 XL）と手作業編集を伴う例を記載。入力は正面・全身で縦長の1キャラに限定。
+  - 制作用途: Spine/Live2D系の2Dリグ工程の自動化・検証の足がかりになる。
+  - 出典（2026-10-05確認）: https://github.com/firejune/spine-parts/blob/774ef0414fdb9e8b045803675d61664339965604/README.md
+
 ## レイヤー分解
 
 - **ComfyUI-See-through** [integration / AI連携 / ComfyUI利用者向け]
@@ -390,6 +402,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: ラフや小さい素材を手早く拡大したい単発作業に向く。
   - 出典（2026-10-04確認）: https://github.com/Nigh/CYKSM/blob/cccdccafabca8ae0e192c1a749802306cb1dfd96/README.md
 
+- **Caelum** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - アニメイラスト画像 → ×4に拡大・クリーンアップした画像。アニメイラスト専用の×4超解像・圧縮劣化復元ツール（Windows GUI）。Pixiv/X/Facebook等の再アップロードで劣化した画像の復元を狙い、PPBUNetという独自構成を採る。
+  - 制約: READMEは開発継続中でPSNR/SSIM等の定量比較は初回安定版まで未公開と明記。コードはAGPL-3.0、モデル/学習はCC BY-NC-SA 4.0。
+  - 制作用途: 手元アニメ画像の復元・拡大に使えるが、ライセンス上商用利用は不可。
+  - 出典（2026-10-05確認）: https://github.com/yumenana/Caelum/blob/cd0e88d6f9d5699971a63e4beb73c4be928cc802/README.md
+
 ## 動画生成
 
 - **FramePack** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -445,6 +463,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 品質・再現性は保証されず、TODOにWindows側テスト未完了と他Agent製品への適配が残る。テンプレートは第三者の素材・権利に依存する。
   - 制作用途: ショート二創動画のレシピ管理と再現手順の共有。
   - 出典（2026-10-02確認）: https://github.com/Shenrui-Ma/video-regen-recipes/blob/47cc68e1fe7a04213eb9aa53db9f08cb9a06d317/README.md
+
+- **NijiLucid** [browser_tool / AIモデル・学習 / 活発・実用候補]
+  - 対応サイト上の動画（Whitelistで対象指定） → 拡大・強調された動画表示（ファイル書き出しではない）。WebGPUでブラウザ上のアニメ動画をリアルタイムに超解像する拡張。動画プレイヤーに「超分」ボタンを出し、2x/4x/8xや目標解像度で拡大する。快速/均衡/質量/極致の性能档位とカスタム効果合成を備える。
+  - 制約: EME/DRM保護動画（Netflix等）には作用しない。書き出し機能の記載はない。核心コードはMITだがCuNNy生成コンポーネントはLGPL-3.0-or-later。
+  - 制作用途: 完成動画の視聴・チェックの画質向上向け。素材の書き出し工程には組み込みにくい。
+  - 出典（2026-10-05確認）: https://github.com/chenmozhijin/NijiLucid/blob/1c9309bac94c991848c1b501eb34ce6642afdabf/README.md
 
 ## 3D生成・モデリング・リギング
 
@@ -792,6 +816,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: VRMアバターの量産や、エージェント主導の反復的なアバター制作を試したい用途に向く。
   - 出典（2026-10-04確認）: https://github.com/hrabanazviking/Seidr-Smidja/blob/482c8f0032b28c4ceb323478e7854adae3715f72/README.md
 
+- **vrm-studio** [web_app / AIは任意 / 小規模・実用候補]
+  - Webカメラ映像、VRMモデル → トラッキング済みアバター表示（OBSのウィンドウキャプチャ経由で合成）。ブラウザで動くVTubingアプリ。Google MediaPipe Holisticで顔・手・全身をトラッキングし、Three.jsでVRMアバターを動かす。グリーンスクリーン、OBS連携、カルマンフィルタによる平滑化を備える。
+  - 制約: ライセンス表記なし。トラッキングはMediaPipe Holisticに依存。READMEの計測はM1で30-50ms/フレーム。
+  - 制作用途: 手軽なVTuber配信・アバター確認に使える。商用条件は未記載で要確認。
+  - 出典（2026-10-05確認）: https://github.com/vucinatim/vrm-studio/blob/30af4abcd417039b4f3d9615a1427402f6d04a2c/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -841,6 +871,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEに列挙されたノードのみ。モデルは初回にHugging Faceから自動DLされキャッシュされる。
   - 制作用途: データセット作成や生成物の自動判定・前処理に使える。
   - 出典（2026-10-03確認）: https://github.com/xiaden/comfyui-imgutils/blob/f88cd73d17a549281dce4149da0d47c7e09ab870/README.md
+
+- **BooruDatasetTagManagerPlus** [desktop_tool / AI連携 / 活発・実用候補]
+  - 画像フォルダ（同名.txtにタグ）、テキスト、OpenAI互換エンドポイント設定 → タグ付き.txt、キャプション、編集済み画像、抽出フレーム。LoRA/キャラ画像データセット用のWindows打標ツール。booruタグ編集、WD14/PixAI/CL/OppaiOracleのONNX自動タグ付け、LLMキャプション、キャラタグ審査、RMBG背景除去、画像編集、動画フレーム抽出を備える。
+  - 制約: cl_tagger_v2はgatedで再配布・同梱不可、アクセストークン等が必要との記載。機能はREADME記載範囲に依存。
+  - 制作用途: キャラLoRA作成のタグ付け・審査・整理工程を省力化できる。
+  - 出典（2026-10-05確認）: https://github.com/storyAura/BooruDatasetTagManagerPlus/blob/94a348f82f41e1e0a3d27a780630df039b560e54/README.md
 
 ## 字幕・翻訳・ローカライズ
 
@@ -952,6 +988,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 大量処理よりも、数枚の画像を目視で確認しながら訳したい作業に向く。
   - 出典（2026-10-04確認）: https://github.com/cameronkinsella/manga-translator/blob/3b1139c8f446ef4e9e5b3776e415038ec2a73f4c/README.md
 
+- **AutoScanlate-AI** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - 漫画/コミックの画像またはZIP → 翻訳済みページ画像。完全ローカル・GPU加速の漫画翻訳パイプライン。YOLOv8で吹き出し検出、MangaOCRで縦書きOCR、Qwen 2.5 7Bで文脈翻訳、マスク付きインペイントと段組みで元画像に描き戻す。Goバックエンド+Next.js UI+Pythonワーカーの構成。
+  - 制約: ライセンスはNOASSERTION。性能値はREADME記載の環境依存。WindowsではMangaOCRをCPU実行する等の制約がある。
+  - 制作用途: 大量ページの下訳・たたき台作成に有効。最終校正は人手前提。
+  - 出典（2026-10-05確認）: https://github.com/P4ST4S/AutoScanlate-AI/blob/fa734c06add489479a306f5923726040a92a467b/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -1034,6 +1076,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 映像素材のアップスケールや補間、視聴環境の画質底上げに。
   - 出典（2026-09-30確認）: https://github.com/animeojisan/cHiDeScaler-Neo/blob/1e8fb3e7378b7df99709393087578ea7bc55d209/README.md
 
+- **ComfyUI-CustomNodePacks** [workflow_tool / AI連携 / 活発・実用候補]
+  - 画像、動画、マスク、プロンプト → マスク、合成画像、EXR/レンダーパス、自動連番出力。ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。
+  - 制約: RMBG-2.0バックエンドは商用不可でBRIAのライセンスが必要と明記。torch/numpy等を再インストールするとComfyUIを壊す恐れがあると注意喚起。
+  - 制作用途: レイヤ分離・マスク処理・VFX工程の自動化に有効。RMBG利用時の商用条件に注意。
+  - 出典（2026-10-05確認）: https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/blob/cbfd4abead2d03c1fb3c619263b135f21c54cc54/README.md
+
 ## 絵コンテ・制作管理・評価
 
 - **Kitsu** [web_app / 非AI制作 / 制作基盤として比較]
@@ -1091,6 +1139,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [japanese_speecht5_tts](https://huggingface.co/esnya/japanese_speecht5_tts/blob/21d6e52032f74123966ac8a3717e23fdfb7809b0/README.md): microsoft/speecht5_ttsをベースに、Open JTalk（pyopenjtalk）ベースの改修トークナイザを組み合わせた日本語TTS。JVSコーパス（100話者）でファインチューニングしている。 モデルカードのlicenseは未設定。JVS Corpusのライセンスを継承すると記載され、商用利用可否は明記されていない。
 - [noob-sdxl-controlnet-lineart_anime](https://huggingface.co/Eugeoter/noob-sdxl-controlnet-lineart_anime/blob/61ed2d40710b32a5a1c9873f7dec89ff0af9f2a4/README.md): Laxhar/sdxl_noob（NoobAI-XL）をベースにしたSDXL向けlineart ControlNet。pipeline_tagはtext-to-imageで、controlnet形式の重みを含む。 metadataはother、license_nameはfair-ai-public-license-1.0-sd、license_linkはfreedevproject.org。無条件の商用利用可とは扱わない。
 - [storyboard-sketch](https://huggingface.co/blink7630/storyboard-sketch/blob/be328fecdfe3fb053a500376283013f34f99eebb/README.md): SDXL Baseをベースに、60枚のグレースケール絵コンテスケッチとキャラクター肖像で学習したLoRA。21:9・16:9・1:1の比率を含む。 metadataはother。ベースはstabilityai/stable-diffusion-xl-base-1.0。無条件の商用利用可とは扱わない。
+- [visual_novel_tts](https://huggingface.co/spow12/visual_novel_tts/blob/e66a75464838470fce23457b9c216a929420237d/README.md): Style-Bert_VITS2をベースにした日本語TTSモデル。ビジュアルノベル（Senren*Banka、Café Stella and the Reaper's Butterflies、Riddle Joker等）のキャラ音声を対象に学習している。 licenseはcc-by-nc-4.0。READMEも研究目的・個人利用限定・商用不可と明記している。
+- [Visual-novel-transcriptor](https://huggingface.co/spow12/Visual-novel-transcriptor/blob/0a51fa1107b6ef36276e33de5d5f6600012e85c8/README.md): distil-whisper/distil-large-v2をファインチューニングした日本語ASR（Seq2Seq）。ビジュアルノベルの音声の文字起こしを目的とする。 metadata上のlicenseはnull。モデルカードは「現在は非商用利用のみ」と記載しており、商用可とは扱わない。
+- [bg-visualnovel-v03](https://huggingface.co/vinesmsuic/bg-visualnovel-v03/blob/4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6/README.md): Anything-V3をベースにしたStable Diffusion系のテキストto画像モデル。ビジュアルノベル背景の生成を目的とする。 licenseはcreativeml-openrail-m。商用利用や再配布は同ライセンスの制限を引き継ぐ条件付き。
+- [Manga109-panel-balloon-text-yolov26-segmentation](https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation/blob/3a860269ee0beb43ce9f31d82c7851441eb178ae/README.md): Ultralytics YOLO26sのインスタンスセグメンテーションモデル。frame/text/balloonの3クラスを検出・分割する。ベースはyolo26s-seg.pt。 モデルリポジトリのlicenseはmit。ただし学習データ（Manga109系）のライセンス/アクセス条件は別途適用されると記載。
+- [controlnet-lineart-anime-sdxl-fp16](https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16/blob/e02330c836049b89f122aa18625ae027537ea143/README.md): SDXL用のControlNet（lineart、anime向け）。fp16のdiffusion_pytorch_modelを配布する。 licenseはcreativeml-openrail-m。商用可否は同ラインモデルの制限に従う。
 
 ## 保留情報
 

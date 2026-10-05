@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-04。**167件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-05。**175件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,15 +12,16 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,268 / 2025-10-16 |
-| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,521 / 2026-07-16 |
-| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,588 / 2026-10-02 |
-| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 11,019 / 2026-01-05 |
-| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,239 / 2026-08-24 |
+| [FramePack](https://github.com/lllyasviel/FramePack) · [詳細](#framepack) | 過去フレームの文脈を圧縮して動画を逐次生成する実装・デスクトップUI。 | AIモデル・学習 / モデル・研究候補 | 17,266 / 2025-10-16 |
+| [Index-anisora](https://github.com/bilibili/Index-anisora) · [詳細](#index-anisora) | アニメ向け動画生成。版ごとに任意フレーム、マスク制御、スタイル変換等を提供。 | AIモデル・学習 / モデル・研究候補 | 2,523 / 2026-07-16 |
+| [LTX-2](https://github.com/Lightricks/LTX-2) · [詳細](#ltx-2) | 音声・動画生成とLoRA学習を扱う公式実装。READMEはLTX-2.5の導入も案内する。 | AIモデル・学習 / 更新のある導入・評価候補 | 9,595 / 2026-10-02 |
+| [LTX-Video](https://github.com/Lightricks/LTX-Video) · [詳細](#ltx-video) | LTXの旧世代動画生成実装。 | AIモデル・学習 / 旧版・履歴資料 | 11,024 / 2026-01-05 |
+| [SCAIL-2](https://github.com/zai-org/SCAIL-2) · [詳細](#scail-2) | 参照キャラクターに動画の動きを移し、複数参照やキャラクター置換にも対応する。 | AIモデル・学習 / 研究・技術評価候補 | 1,242 / 2026-08-24 |
 | [Wan-Move](https://github.com/ali-vilab/Wan-Move) · [詳細](#wan-move) | 動きの軌跡を条件に動画を生成するWan系実装。 | AIモデル・学習 / モデル・研究候補 | 659 / 2026-01-05 |
-| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,726 / 2026-09-21 |
+| [Wan2.2](https://github.com/Wan-Video/Wan2.2) · [詳細](#wan2.2) | テキストや画像から動画を作るWan2.2公式モデル群。 | AIモデル・学習 / 研究モデルの評価候補 | 17,740 / 2026-09-21 |
 | [vlog2anime-kit](https://github.com/mincad/vlog2anime-kit) · [詳細](#vlog2anime-kit) | 実写動画の人物を参照画像のアニメキャラへ置換し、元人物を露出させずに実写背景へ戻すComfyUIワークフロー集。Wan2.2 Animate/SCAIL-2で変換し、SAM3追跡＋MatAnyone2でマットを作る。 | AIモデル・学習 / 小規模・初期評価候補 | 2 / 2026-08-04 |
 | [video-regen-recipes](https://github.com/Shenrui-Ma/video-regen-recipes) · [詳細](#video-regen-recipes) | Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創動画を再現するためのテンプレート集（20件）とSkills。参考図生成・音声クローン・後期編集まで手順書と検証プロンプトを同梱する。 | AIモデル・学習 / 小規模・初期評価候補 | 10 / 2026-09-18 |
+| [NijiLucid](https://github.com/chenmozhijin/NijiLucid) · [詳細](#nijilucid) | WebGPUでブラウザ上のアニメ動画をリアルタイムに超解像する拡張。動画プレイヤーに「超分」ボタンを出し、2x/4x/8xや目標解像度で拡大する。快速/均衡/質量/極致の性能档位とカスタム効果合成を備える。 | AIモデル・学習 / 活発・実用候補 | 233 / 2026-09-10 |
 
 <a id="framepack"></a>
 
@@ -36,7 +37,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: HunyuanVideo系、FramePack重み、PyTorch
 - **制約・未確認**: 少ないVRAMは短い生成時間を保証しない。長尺の人物・背景一貫性は未評価。
 - **編集者評価**: 個人GPUで長さを伸ばす実験候補。生成時間を含めて採用を決めたい。
-- **メトリクス**: ★17,268、fork 1,732、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
+- **メトリクス**: ★17,266、fork 1,732、作成 2025-04-12、最終push 2025-10-16T01:28:50Z、archived=False
 - **確認**: 2026-09-09 / コミット `97fe5dbe06ac1f337ece08935b1076a35eefeeb9`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/lllyasviel/FramePack/tree/97fe5dbe06ac1f337ece08935b1076a35eefeeb9)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -75,7 +76,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Wan系基盤、Index-anisoraの版別重み
 - **制約・未確認**: V3.1の12GB配布パッケージをV3.2の一般要件としない。「3Dキャラ動画」は編集可能なメッシュではない。
 - **編集者評価**: アニメ特化の比較対象として優先度が高い。汎用Wanと同じカットを比較すると価値を判断しやすい。
-- **メトリクス**: ★2,521、fork 154、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
+- **メトリクス**: ★2,523、fork 156、作成 2024-12-16、最終push 2026-07-16T08:14:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cdce3a17548d7ff0f2e05978469f134da25e68e`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/bilibili/Index-anisora/tree/6cdce3a17548d7ff0f2e05978469f134da25e68e)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -116,7 +117,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LTXモデル、テキストエンコーダ、VAE、アップスケーラ
 - **制約・未確認**: LTX-2と2.5の版・必要モデル・利用条件を分ける。全環境での動作は未検証。
 - **編集者評価**: 音と映像を一緒に制作する候補。旧LTX-Videoから開発の主軸が移った。
-- **メトリクス**: ★9,588、fork 1,521、作成 2026-01-03、最終push 2026-10-02T10:38:06Z、archived=False
+- **メトリクス**: ★9,595、fork 1,526、作成 2026-01-03、最終push 2026-10-02T10:38:06Z、archived=False
 - **確認**: 2026-09-09 / コミット `a95ab856bf29407b6b066ede0abe1846050db56c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-2/tree/a95ab856bf29407b6b066ede0abe1846050db56c)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -155,7 +156,7 @@ LTXの旧世代動画生成実装。
 - **依存**: LTX-Videoモデル
 - **制約・未確認**: 公式READMEはLTX-2への移行を案内。現在の主開発先として推薦しない。
 - **編集者評価**: 既存ワークフローの保守・比較資料として残す。
-- **メトリクス**: ★11,019、fork 1,158、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
+- **メトリクス**: ★11,024、fork 1,160、作成 2024-11-20、最終push 2026-01-05T22:37:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `4b2d053057623ddd4d0a1d3e9cd28890e9ef487f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Lightricks/LTX-Video/tree/4b2d053057623ddd4d0a1d3e9cd28890e9ef487f)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -192,7 +193,7 @@ LTXの旧世代動画生成実装。
 - **依存**: SCAIL-2重み、Wan VAE、T5、前処理モデル
 - **制約・未確認**: アニメ専用ではない。入力マスクが重要で、複数参照は品質低下の場合がある。
 - **編集者評価**: 2026年6月に推論コード・モデル、8月に学習コード公開。ComfyUI連携あり。
-- **メトリクス**: ★1,239、fork 89、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
+- **メトリクス**: ★1,242、fork 89、作成 2026-05-28、最終push 2026-08-24T13:30:59Z、archived=False
 - **確認**: 2026-09-09 / コミット `78fe19576bb06be96c2375e088574a262a300edb`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/zai-org/SCAIL-2/tree/78fe19576bb06be96c2375e088574a262a300edb)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -272,7 +273,7 @@ LTXの旧世代動画生成実装。
 - **依存**: Wan2.2の対応モデル
 - **制約・未確認**: アニメ専用ではない。5BとA14B等の機能・メモリ要件を一括りにしない。
 - **編集者評価**: 短編アニメ・背景動画・動作素材の生成基盤候補。
-- **メトリクス**: ★17,726、fork 2,282、作成 2025-07-28、最終push 2026-09-21T06:16:22Z、archived=False
+- **メトリクス**: ★17,740、fork 2,286、作成 2025-07-28、最終push 2026-09-21T06:16:22Z、archived=False
 - **確認**: 2026-09-09 / コミット `42bf4cfaa384bc21833865abc2f9e6c0e67233dc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Wan-Video/Wan2.2/tree/42bf4cfaa384bc21833865abc2f9e6c0e67233dc)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -366,3 +367,38 @@ Agentに指示してローカルMiniMax H3でMAD・手書・鬼畜等の二創�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-09-18T05:37:42Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="nijilucid"></a>
+
+## NijiLucid
+
+WebGPUでブラウザ上のアニメ動画をリアルタイムに超解像する拡張。動画プレイヤーに「超分」ボタンを出し、2x/4x/8xや目標解像度で拡大する。快速/均衡/質量/極致の性能档位とカスタム効果合成を備える。
+
+- **リポジトリ**: https://github.com/chenmozhijin/NijiLucid
+- **分類**: browser_tool / AIモデル・学習 / 活発・実用候補
+- **入力**: 対応サイト上の動画（Whitelistで対象指定）
+- **出力**: 拡大・強調された動画表示（ファイル書き出しではない）
+- **環境**: WebGPU対応ブラウザ（Chrome/Edge/Firefox）。ストア導入が推奨、またはソースをnpmでビルド。
+- **依存**: Anime4K、ArtCNN、ACNetGLSL、CuNNy等の超解像フィルタ/コンポーネント
+- **制約・未確認**: EME/DRM保護動画（Netflix等）には作用しない。書き出し機能の記載はない。核心コードはMITだがCuNNy生成コンポーネントはLGPL-3.0-or-later。
+- **編集者評価**: 視聴・確認段階の画質向上をブラウザだけで行える点が実用的。GPUベンチで档位を自動推薦する仕組みも備える。
+- **メトリクス**: ★233、fork 15、作成 2025-06-01、最終push 2026-09-10T06:58:27Z、archived=False
+- **確認**: 2026-10-05 / コミット `1c9309bac94c991848c1b501eb34ce6642afdabf`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/chenmozhijin/NijiLucid/tree/1c9309bac94c991848c1b501eb34ce6642afdabf)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/chenmozhijin/NijiLucid/blob/1c9309bac94c991848c1b501eb34ce6642afdabf/README.md) / [GitHub API](https://api.github.com/repos/chenmozhijin/NijiLucid) / [固定ツリー](https://github.com/chenmozhijin/NijiLucid/tree/1c9309bac94c991848c1b501eb34ce6642afdabf)
+
+### 制作に使う際の検討
+
+完成動画の視聴・チェックの画質向上向け。素材の書き出し工程には組み込みにくい。
+
+**次に確かめること（実施前）**: 代表的なアニメ動画で各档位・倍率の負荷と見え方を比較し、GPU別の実用性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [src/core/effects/graph/index.ts](https://github.com/chenmozhijin/NijiLucid/blob/1c9309bac94c991848c1b501eb34ce6642afdabf/src/core/effects/graph/index.ts) / [src/core/renderer/index.ts](https://github.com/chenmozhijin/NijiLucid/blob/1c9309bac94c991848c1b501eb34ce6642afdabf/src/core/renderer/index.ts) / [src/core/video-enhancer/index.ts](https://github.com/chenmozhijin/NijiLucid/blob/1c9309bac94c991848c1b501eb34ce6642afdabf/src/core/video-enhancer/index.ts)
+
+**最新GitHub Release**: [v0.5.0](https://github.com/chenmozhijin/NijiLucid/releases/tag/v0.5.0) / 2026-09-01T15:33:50Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-10T06:58:19Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

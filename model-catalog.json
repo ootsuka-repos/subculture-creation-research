@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-04",
+  "updated_on": "2026-10-05",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1235640,
-        "likes": 2352,
+        "downloads_last_month": 1233642,
+        "likes": 2360,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 363807,
-        "likes": 536,
+        "downloads_last_month": 370525,
+        "likes": 538,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 87846,
+        "downloads_last_month": 88292,
         "likes": 434,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 158445,
+        "downloads_last_month": 162966,
         "likes": 181,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1492,
+        "downloads_last_month": 1478,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1149,
+        "downloads_last_month": 1369,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -378,9 +378,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 230,
+        "likes": 231,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 852,
+        "downloads_last_month": 799,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 696,
+        "downloads_last_month": 737,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1060,
-        "likes": 96,
+        "downloads_last_month": 1075,
+        "likes": 97,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14132,
+        "downloads_last_month": 14300,
         "likes": 231,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 6009,
+        "downloads_last_month": 6054,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 79,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -983,10 +983,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 32,
+        "downloads_last_month": 34,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 441,
-        "likes": 27,
+        "downloads_last_month": 455,
+        "likes": 28,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1093,10 +1093,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 49,
+        "downloads_last_month": 48,
         "likes": 5,
         "last_modified": "2025-08-12T05:27:46.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1147,10 +1147,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 37,
+        "downloads_last_month": 36,
         "likes": 2,
         "last_modified": "2025-08-12T05:26:43.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1207,7 +1207,7 @@
         "downloads_last_month": 0,
         "likes": 3,
         "last_modified": "2026-02-17T00:28:51.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1259,10 +1259,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 386,
+        "downloads_last_month": 419,
         "likes": 6,
         "last_modified": "2026-09-21T08:22:31.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1316,7 +1316,7 @@
         "downloads_last_month": 0,
         "likes": 66,
         "last_modified": "2022-04-05T17:11:49.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1371,9 +1371,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 311,
+        "likes": 313,
         "last_modified": "2026-08-07T17:43:22.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1427,7 +1427,7 @@
         "downloads_last_month": 0,
         "likes": 13,
         "last_modified": "2024-07-17T13:00:34.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1478,10 +1478,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1161,
+        "downloads_last_month": 1164,
         "likes": 21,
         "last_modified": "2023-08-09T09:25:38.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1534,10 +1534,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 7726,
+        "downloads_last_month": 7761,
         "likes": 7,
         "last_modified": "2024-11-11T01:39:36.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1588,10 +1588,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 260,
+        "downloads_last_month": 289,
         "likes": 104,
         "last_modified": "2023-11-14T18:09:01.000Z",
-        "checked_on": "2026-10-04"
+        "checked_on": "2026-10-05"
       },
       "sources": [
         {
@@ -1603,7 +1603,281 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "visual-novel-tts",
+      "name": "visual_novel_tts",
+      "hub_repository": "spow12/visual_novel_tts",
+      "url": "https://huggingface.co/spow12/visual_novel_tts",
+      "category": "tts",
+      "checked_on": "2026-10-05",
+      "architecture_ja": "Style-Bert_VITS2をベースにした日本語TTSモデル。ビジュアルノベル（Senren*Banka、Café Stella and the Reaper's Butterflies、Riddle Joker等）のキャラ音声を対象に学習している。",
+      "variants_ja": "公開重みは visual_novel/visual_novel.safetensors の1件。対象キャラとしてムラサメ、茉子、芳乃、レナ、千咲、芦花、愛衣、栞那、ナツメ、希、涼音、あやせ、七海、羽月、茉優、小春が挙げられている。",
+      "prompting_ja": "テキスト入力のみ（キャラ選択はモデル/話者単位）。Style-Bert_VITS2のAPIサーバ経由で他アプリと連携できると記載されている。",
+      "requirements_ja": "Style-Bert_VITS2の実行環境。詳細な導入手順はStyle-Bert_VITS2のリポジトリを参照する旨のみ記載。",
+      "limitations_ja": "研究・個人利用のみで商用不可と明記。カードにはアクセント/感情制御の詳細や評価数値は無い。",
+      "license_notes_ja": "licenseはcc-by-nc-4.0。READMEも研究目的・個人利用限定・商用不可と明記している。",
+      "assessment_ja": "特定のビジュアルノベルキャラ音声を再現する用途が具体的で、ノベル/二次創作の音声試作に使いやすい。",
+      "next_validation_ja": "対象キャラの参照音声と比較し、読み上げの自然さ・固有名詞の読み・キャラらしさを確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/spow12/visual_novel_tts",
+        "api_url": "https://huggingface.co/api/models/spow12/visual_novel_tts",
+        "checked_on": "2026-10-05",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e66a75464838470fce23457b9c216a929420237d",
+        "gated": false,
+        "license_metadata": "cc-by-nc-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "visual_novel/visual_novel.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 4,
+        "last_modified": "2024-08-12T12:38:21.000Z",
+        "checked_on": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/spow12/visual_novel_tts/blob/e66a75464838470fce23457b9c216a929420237d/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/spow12/visual_novel_tts",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "visual-novel-transcriptor",
+      "name": "Visual-novel-transcriptor",
+      "hub_repository": "spow12/Visual-novel-transcriptor",
+      "url": "https://huggingface.co/spow12/Visual-novel-transcriptor",
+      "category": "localization",
+      "checked_on": "2026-10-05",
+      "architecture_ja": "distil-whisper/distil-large-v2をファインチューニングした日本語ASR（Seq2Seq）。ビジュアルノベルの音声の文字起こしを目的とする。",
+      "variants_ja": "配布はmodel.safetensorsの1件。ベースはdistil-large-v2。関連として同作者のvisual_novel_ttsやChatWaifuが挙げられている。",
+      "prompting_ja": "AutoProcessorでlanguage=\\\"ja\\\"、task=\\\"transcribe\\\"を指定する推論例が示されている。",
+      "requirements_ja": "transformers、librosa（16kHz）。カードにCUDA前提の記載がある。",
+      "limitations_ja": "学習データにNSFWのビジュアルノベルが含まれると明記。評価数値は未記載。カードは現状は非商用のみと述べている。",
+      "license_notes_ja": "metadata上のlicenseはnull。モデルカードは「現在は非商用利用のみ」と記載しており、商用可とは扱わない。",
+      "assessment_ja": "ギャルゲー/ノベル音声の文字起こしに特化した軽量ASRとして、字幕・解析の下処理に使える。",
+      "next_validation_ja": "自作のノベル音声でCERと誤変換傾向（固有名詞・非言語発話）を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/spow12/Visual-novel-transcriptor",
+        "api_url": "https://huggingface.co/api/models/spow12/Visual-novel-transcriptor",
+        "checked_on": "2026-10-05",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "0a51fa1107b6ef36276e33de5d5f6600012e85c8",
+        "gated": false,
+        "license_metadata": null,
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 15,
+        "likes": 12,
+        "last_modified": "2024-08-12T12:39:52.000Z",
+        "checked_on": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/spow12/Visual-novel-transcriptor/blob/0a51fa1107b6ef36276e33de5d5f6600012e85c8/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/spow12/Visual-novel-transcriptor",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "bg-visualnovel-v03",
+      "name": "bg-visualnovel-v03",
+      "hub_repository": "vinesmsuic/bg-visualnovel-v03",
+      "url": "https://huggingface.co/vinesmsuic/bg-visualnovel-v03",
+      "category": "game",
+      "checked_on": "2026-10-05",
+      "architecture_ja": "Anything-V3をベースにしたStable Diffusion系のテキストto画像モデル。ビジュアルノベル背景の生成を目的とする。",
+      "variants_ja": "bg-visualnovel-v03（v3）。同名モデルのv02系列も存在する。diffusers形式の重み（unet/vae/text_encoder）を含む。",
+      "prompting_ja": "短いプロンプトでの背景生成を想定（例: \\\"a classroom\\\"、\\\"a hospital building, two trees\\\"、\\\"a street at night with nobody around\\\"）。",
+      "requirements_ja": "diffusersのStableDiffusionPipeline。例は512x512で、1920x1080も生成可能とのコメントがある（VRAM依存）。",
+      "limitations_ja": "2022年公開の旧世代SDモデル。READMEは評価数値や厳密な解像度上限を明記していない。",
+      "license_notes_ja": "licenseはcreativeml-openrail-m。商用利用や再配布は同ライセンスの制限を引き継ぐ条件付き。",
+      "assessment_ja": "ノベル/ゲームの背景素材を少数プロンプトで量産する用途に合うが、旧世代モデルのため画質は要検証。",
+      "next_validation_ja": "教室・街などの背景を同一条件で生成し、解像度・破綻・スタイルの安定性を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/vinesmsuic/bg-visualnovel-v03",
+        "api_url": "https://huggingface.co/api/models/vinesmsuic/bg-visualnovel-v03",
+        "checked_on": "2026-10-05",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6",
+        "gated": false,
+        "license_metadata": "creativeml-openrail-m",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "safety_checker/model.safetensors",
+          "safety_checker/pytorch_model.bin",
+          "text_encoder/model.safetensors",
+          "text_encoder/pytorch_model.bin"
+        ],
+        "matching_weight_file_count": 8
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 26,
+        "likes": 43,
+        "last_modified": "2024-03-17T14:20:51.000Z",
+        "checked_on": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/vinesmsuic/bg-visualnovel-v03/blob/4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/vinesmsuic/bg-visualnovel-v03",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "manga109-panel-balloon-text-yolov26-segmentation",
+      "name": "Manga109-panel-balloon-text-yolov26-segmentation",
+      "hub_repository": "ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+      "url": "https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+      "category": "manga",
+      "checked_on": "2026-10-05",
+      "architecture_ja": "Ultralytics YOLO26sのインスタンスセグメンテーションモデル。frame/text/balloonの3クラスを検出・分割する。ベースはyolo26s-seg.pt。",
+      "variants_ja": "best.pt と last.pt（約23.4MB、パラメータ約11.4M）。クラス順は 0:frame、1:text、2:balloon。",
+      "prompting_ja": "テキストプロンプトではなく画像入力。推論例はimgsz=1280、conf=0.25、retina_masks=True。",
+      "requirements_ja": "ultralytics、pillow、opencv-python。学習データはMangaSegmentationとManga109_RegionLevelTextSegmentation。",
+      "limitations_ja": "OCR/翻訳モデルではなく可視領域の分割のみ。カードはOCR・読み順・翻訳品質は対象外と明記。データセットのライセンスは別途適用。",
+      "license_notes_ja": "モデルリポジトリのlicenseはmit。ただし学習データ（Manga109系）のライセンス/アクセス条件は別途適用されると記載。",
+      "assessment_ja": "漫画翻訳パイプラインの領域検出（フレーム/吹き出し/テキスト）を担う部品として前処理の再利用価値が高い。",
+      "next_validation_ja": "自作の漫画ページでクラス別マスク精度と、読み順・OCR前処理への効果を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+        "api_url": "https://huggingface.co/api/models/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+        "checked_on": "2026-10-05",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "3a860269ee0beb43ce9f31d82c7851441eb178ae",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "best.pt",
+          "last.pt"
+        ],
+        "matching_weight_file_count": 2
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 3597,
+        "likes": 9,
+        "last_modified": "2026-06-10T17:10:07.000Z",
+        "checked_on": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation/blob/3a860269ee0beb43ce9f31d82c7851441eb178ae/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "controlnet-lineart-anime-sdxl-fp16",
+      "name": "controlnet-lineart-anime-sdxl-fp16",
+      "hub_repository": "r3gm/controlnet-lineart-anime-sdxl-fp16",
+      "url": "https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16",
+      "category": "image",
+      "checked_on": "2026-10-05",
+      "architecture_ja": "SDXL用のControlNet（lineart、anime向け）。fp16のdiffusion_pytorch_modelを配布する。",
+      "variants_ja": "配布はdiffusion_pytorch_model.fp16.safetensorsの1件（variant=fp16）。",
+      "prompting_ja": "ControlNetModel.from_pretrainedでvariant=fp16を指定して読み込む例のみが示される。プロンプト指示の記載は薄い。",
+      "requirements_ja": "diffusersのControlNetModel。SDXL系ベースモデルと組み合わせる想定。",
+      "limitations_ja": "モデルカードは読み込み例のみで、学習データ・評価・適用解像度の記載は無い。",
+      "license_notes_ja": "licenseはcreativeml-openrail-m。商用可否は同ラインモデルの制限に従う。",
+      "assessment_ja": "線画からのアニメ画像生成・彩色のControlとして使えるが、情報が少なく出自は要確認。",
+      "next_validation_ja": "線画入力でSDXLアニメベースと組み合わせ、構図保持と破綻を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16",
+        "api_url": "https://huggingface.co/api/models/r3gm/controlnet-lineart-anime-sdxl-fp16",
+        "checked_on": "2026-10-05",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e02330c836049b89f122aa18625ae027537ea143",
+        "gated": false,
+        "license_metadata": "creativeml-openrail-m",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 411,
+        "likes": 3,
+        "last_modified": "2024-06-06T22:55:08.000Z",
+        "checked_on": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16/blob/e02330c836049b89f122aa18625ae027537ea143/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/r3gm/controlnet-lineart-anime-sdxl-fp16",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-04"
+  "metrics_refreshed_on": "2026-10-05"
 }

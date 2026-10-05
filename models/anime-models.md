@@ -469,3 +469,83 @@ SDXL Baseをベースに、60枚のグレースケール絵コンテスケッチ
 確認日: 2026-10-04 / revision `be328fecdfe3fb053a500376283013f34f99eebb` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `Storyboard_sketch.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/blink7630/storyboard-sketch/blob/be328fecdfe3fb053a500376283013f34f99eebb/README.md) / [モデルAPI](https://huggingface.co/api/models/blink7630/storyboard-sketch)
+
+## visual_novel_tts
+
+Style-Bert_VITS2をベースにした日本語TTSモデル。ビジュアルノベル（Senren*Banka、Café Stella and the Reaper's Butterflies、Riddle Joker等）のキャラ音声を対象に学習している。
+
+- **版の区別**: 公開重みは visual_novel/visual_novel.safetensors の1件。対象キャラとしてムラサメ、茉子、芳乃、レナ、千咲、芦花、愛衣、栞那、ナツメ、希、涼音、あやせ、七海、羽月、茉優、小春が挙げられている。
+- **入力・設定**: テキスト入力のみ（キャラ選択はモデル/話者単位）。Style-Bert_VITS2のAPIサーバ経由で他アプリと連携できると記載されている。
+- **必要構成**: Style-Bert_VITS2の実行環境。詳細な導入手順はStyle-Bert_VITS2のリポジトリを参照する旨のみ記載。
+- **制約**: 研究・個人利用のみで商用不可と明記。カードにはアクセント/感情制御の詳細や評価数値は無い。
+- **利用条件**: licenseはcc-by-nc-4.0。READMEも研究目的・個人利用限定・商用不可と明記している。
+- **編集者評価**: 特定のビジュアルノベルキャラ音声を再現する用途が具体的で、ノベル/二次創作の音声試作に使いやすい。
+- **次の検証（未実施）**: 対象キャラの参照音声と比較し、読み上げの自然さ・固有名詞の読み・キャラらしさを確認する。
+
+確認日: 2026-10-05 / revision `e66a75464838470fce23457b9c216a929420237d` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `visual_novel/visual_novel.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/spow12/visual_novel_tts/blob/e66a75464838470fce23457b9c216a929420237d/README.md) / [モデルAPI](https://huggingface.co/api/models/spow12/visual_novel_tts)
+
+## Visual-novel-transcriptor
+
+distil-whisper/distil-large-v2をファインチューニングした日本語ASR（Seq2Seq）。ビジュアルノベルの音声の文字起こしを目的とする。
+
+- **版の区別**: 配布はmodel.safetensorsの1件。ベースはdistil-large-v2。関連として同作者のvisual_novel_ttsやChatWaifuが挙げられている。
+- **入力・設定**: AutoProcessorでlanguage=\"ja\"、task=\"transcribe\"を指定する推論例が示されている。
+- **必要構成**: transformers、librosa（16kHz）。カードにCUDA前提の記載がある。
+- **制約**: 学習データにNSFWのビジュアルノベルが含まれると明記。評価数値は未記載。カードは現状は非商用のみと述べている。
+- **利用条件**: metadata上のlicenseはnull。モデルカードは「現在は非商用利用のみ」と記載しており、商用可とは扱わない。
+- **編集者評価**: ギャルゲー/ノベル音声の文字起こしに特化した軽量ASRとして、字幕・解析の下処理に使える。
+- **次の検証（未実施）**: 自作のノベル音声でCERと誤変換傾向（固有名詞・非言語発話）を確認する。
+
+確認日: 2026-10-05 / revision `0a51fa1107b6ef36276e33de5d5f6600012e85c8` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/spow12/Visual-novel-transcriptor/blob/0a51fa1107b6ef36276e33de5d5f6600012e85c8/README.md) / [モデルAPI](https://huggingface.co/api/models/spow12/Visual-novel-transcriptor)
+
+## bg-visualnovel-v03
+
+Anything-V3をベースにしたStable Diffusion系のテキストto画像モデル。ビジュアルノベル背景の生成を目的とする。
+
+- **版の区別**: bg-visualnovel-v03（v3）。同名モデルのv02系列も存在する。diffusers形式の重み（unet/vae/text_encoder）を含む。
+- **入力・設定**: 短いプロンプトでの背景生成を想定（例: \"a classroom\"、\"a hospital building, two trees\"、\"a street at night with nobody around\"）。
+- **必要構成**: diffusersのStableDiffusionPipeline。例は512x512で、1920x1080も生成可能とのコメントがある（VRAM依存）。
+- **制約**: 2022年公開の旧世代SDモデル。READMEは評価数値や厳密な解像度上限を明記していない。
+- **利用条件**: licenseはcreativeml-openrail-m。商用利用や再配布は同ライセンスの制限を引き継ぐ条件付き。
+- **編集者評価**: ノベル/ゲームの背景素材を少数プロンプトで量産する用途に合うが、旧世代モデルのため画質は要検証。
+- **次の検証（未実施）**: 教室・街などの背景を同一条件で生成し、解像度・破綻・スタイルの安定性を比較する。
+
+確認日: 2026-10-05 / revision `4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6` / gated=False。ファイル名候補8件の一覧確認。代表ファイル: `safety_checker/model.safetensors`、`safety_checker/pytorch_model.bin`、`text_encoder/model.safetensors`、`text_encoder/pytorch_model.bin`
+
+根拠: [固定モデルカード](https://huggingface.co/vinesmsuic/bg-visualnovel-v03/blob/4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6/README.md) / [モデルAPI](https://huggingface.co/api/models/vinesmsuic/bg-visualnovel-v03)
+
+## Manga109-panel-balloon-text-yolov26-segmentation
+
+Ultralytics YOLO26sのインスタンスセグメンテーションモデル。frame/text/balloonの3クラスを検出・分割する。ベースはyolo26s-seg.pt。
+
+- **版の区別**: best.pt と last.pt（約23.4MB、パラメータ約11.4M）。クラス順は 0:frame、1:text、2:balloon。
+- **入力・設定**: テキストプロンプトではなく画像入力。推論例はimgsz=1280、conf=0.25、retina_masks=True。
+- **必要構成**: ultralytics、pillow、opencv-python。学習データはMangaSegmentationとManga109_RegionLevelTextSegmentation。
+- **制約**: OCR/翻訳モデルではなく可視領域の分割のみ。カードはOCR・読み順・翻訳品質は対象外と明記。データセットのライセンスは別途適用。
+- **利用条件**: モデルリポジトリのlicenseはmit。ただし学習データ（Manga109系）のライセンス/アクセス条件は別途適用されると記載。
+- **編集者評価**: 漫画翻訳パイプラインの領域検出（フレーム/吹き出し/テキスト）を担う部品として前処理の再利用価値が高い。
+- **次の検証（未実施）**: 自作の漫画ページでクラス別マスク精度と、読み順・OCR前処理への効果を確認する。
+
+確認日: 2026-10-05 / revision `3a860269ee0beb43ce9f31d82c7851441eb178ae` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `best.pt`、`last.pt`
+
+根拠: [固定モデルカード](https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation/blob/3a860269ee0beb43ce9f31d82c7851441eb178ae/README.md) / [モデルAPI](https://huggingface.co/api/models/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation)
+
+## controlnet-lineart-anime-sdxl-fp16
+
+SDXL用のControlNet（lineart、anime向け）。fp16のdiffusion_pytorch_modelを配布する。
+
+- **版の区別**: 配布はdiffusion_pytorch_model.fp16.safetensorsの1件（variant=fp16）。
+- **入力・設定**: ControlNetModel.from_pretrainedでvariant=fp16を指定して読み込む例のみが示される。プロンプト指示の記載は薄い。
+- **必要構成**: diffusersのControlNetModel。SDXL系ベースモデルと組み合わせる想定。
+- **制約**: モデルカードは読み込み例のみで、学習データ・評価・適用解像度の記載は無い。
+- **利用条件**: licenseはcreativeml-openrail-m。商用可否は同ラインモデルの制限に従う。
+- **編集者評価**: 線画からのアニメ画像生成・彩色のControlとして使えるが、情報が少なく出自は要確認。
+- **次の検証（未実施）**: 線画入力でSDXLアニメベースと組み合わせ、構図保持と破綻を確認する。
+
+確認日: 2026-10-05 / revision `e02330c836049b89f122aa18625ae027537ea143` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `diffusion_pytorch_model.fp16.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16/blob/e02330c836049b89f122aa18625ae027537ea143/README.md) / [モデルAPI](https://huggingface.co/api/models/r3gm/controlnet-lineart-anime-sdxl-fp16)

@@ -12,13 +12,13 @@
 
 関連リポジトリ:
 
-- [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts) — SDXL/Anima/FLUX等のLoRA・LLLite学習CLI(標準的存在)（★7,245 / Apache-2.0 / 最終push 2026-09-24 / release v0.12.0 (2026-09-24) / 確認コミット [`690ea7f9`](https://github.com/kohya-ss/sd-scripts/blob/690ea7f96c23182352ec63def76d431c6120bd2f/README.md) / 制作カタログ: [sd-scripts](../categories/workflow.md#sd-scripts)）
+- [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts) — SDXL/Anima/FLUX等のLoRA・LLLite学習CLI(標準的存在)（★7,242 / Apache-2.0 / 最終push 2026-09-24 / release v0.12.0 (2026-09-24) / 確認コミット [`690ea7f9`](https://github.com/kohya-ss/sd-scripts/blob/690ea7f96c23182352ec63def76d431c6120bd2f/README.md) / 制作カタログ: [sd-scripts](../categories/workflow.md#sd-scripts)）
   - 公式docsにAnima LoRA/LLLite学習ガイド、torch.compile対応の更新履歴がREADMEにある。v0.12.0=2026-09-24。【catalog.json収録: id=sd-scripts】
-- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — 多モデル対応のLoRA学習(GUI/CLI)（★12,198 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
+- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — 多モデル対応のLoRA学習(GUI/CLI)（★12,206 / MIT / 最終push 2026-09-27 / 確認コミット [`ecee894e`](https://github.com/ostris/ai-toolkit/blob/ecee894ed2b1f3716d9d7326693061ec1a3105bb/README.md)）
   - ★12164で本スライス最大の学習ツール。READMEがAnima-Base-v1.0-Diffusersを対応モデルとして列挙。リリースタグ無し(mainを追う)。MIT。【catalog.json未収録(新規)】
-- [Nerogar/OneTrainer](https://github.com/Nerogar/OneTrainer) — GUI中心の学習(LoRA/FineTune/Embedding)（★3,229 / AGPL-3.0 / 最終push 2026-09-28 / 確認コミット [`23df3832`](https://github.com/Nerogar/OneTrainer/blob/23df3832e8f213d64c337e39f9365ba46e99fed0/README.md)）
+- [Nerogar/OneTrainer](https://github.com/Nerogar/OneTrainer) — GUI中心の学習(LoRA/FineTune/Embedding)（★3,227 / AGPL-3.0 / 最終push 2026-10-05 / 確認コミット [`23df3832`](https://github.com/Nerogar/OneTrainer/blob/23df3832e8f213d64c337e39f9365ba46e99fed0/README.md)）
   - modules/modelSetupにAnima用Setupが存在。最新コミット2026-08-19、リリースタグ無し。AGPL-3.0で組み込み配布時は注意。【catalog.json未収録(新規)】
-- [gazingstars123/Anima-Standalone-Trainer](https://github.com/gazingstars123/Anima-Standalone-Trainer) — Anima/Anima-2.9B専用LoRA学習GUI(sd-scripts派生)（★331 / Apache-2.0 / 最終push 2026-08-28 / release v2.2.0 (2026-04-30) / 確認コミット [`7f5c336f`](https://github.com/gazingstars123/Anima-Standalone-Trainer/blob/7f5c336f3c61802e9b7a64fb4a4492d50362a90f/README.md)）
+- [gazingstars123/Anima-Standalone-Trainer](https://github.com/gazingstars123/Anima-Standalone-Trainer) — Anima/Anima-2.9B専用LoRA学習GUI(sd-scripts派生)（★332 / Apache-2.0 / 最終push 2026-08-28 / release v2.2.0 (2026-04-30) / 確認コミット [`7f5c336f`](https://github.com/gazingstars123/Anima-Standalone-Trainer/blob/7f5c336f3c61802e9b7a64fb4a4492d50362a90f/README.md)）
   - READMEでAnima 2.9B LoRA学習対応を明記。v2.2.0=2026-04-30、個人プロジェクトで★329と小規模。Anima専用で手軽だが保守体制は小さい。【catalog.json未収録(新規)】
 
 ## 学習フレームワーク(動画・Wan/MiniMax等、音声は対象外)
@@ -33,9 +33,9 @@
   - 2026-09-30push、v0.3.6=2026-09-27と最も更新が速い。ライセンスはGitHub APIで未検出のため要確認。【catalog.json収録: id=musubi-tuner】
 - [tdrussell/diffusion-pipe](https://github.com/tdrussell/diffusion-pipe) — パイプライン並列のdiffusion学習(Wan2.2等)（★2,027 / GPL-3.0 / 最終push 2026-09-28 / 確認コミット [`334106c2`](https://github.com/tdrussell/diffusion-pipe/blob/334106c2d0e29131b53d504b80e211942dac147e/README.md)）
   - ★2028。Wan2.2対応、更新履歴にAnima対応。2026-09-28push。GPL-3.0。リリースタグ無し。【catalog.json未収録(新規)】
-- [bghira/SimpleTuner](https://github.com/bghira/SimpleTuner) — image/video/audio対応の汎用学習キット（★2,932 / AGPL-3.0 / 最終push 2026-10-01 / release v4.9.3 (2026-10-01) / 確認コミット [`f1cb3800`](https://github.com/bghira/SimpleTuner/blob/f1cb3800c9d32b888d5e391ab74b6101ecb4acd8/README.md)）
+- [bghira/SimpleTuner](https://github.com/bghira/SimpleTuner) — image/video/audio対応の汎用学習キット（★2,932 / AGPL-3.0 / 最終push 2026-10-05 / release v4.9.3 (2026-10-01) / 確認コミット [`f1cb3800`](https://github.com/bghira/SimpleTuner/blob/f1cb3800c9d32b888d5e391ab74b6101ecb4acd8/README.md)）
   - ★2930、v4.9.2=2026-09-07。READMEにAnimaのライセンス行(非商用)が載る。AGPL-3.0。【catalog.json未収録(新規)】
-- [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) — Wan等の推論+学習基盤（★13,205 / Apache-2.0 / 最終push 2026-09-30 / release v1.1.9 (2025-11-18) / 確認コミット [`974cfa37`](https://github.com/modelscope/DiffSynth-Studio/blob/974cfa37f27ac55eba3b6d10efa21f876900572d/README.md) / 制作カタログ: [diffsynth-studio](../categories/workflow.md#diffsynth-studio)）
+- [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) — Wan等の推論+学習基盤（★13,203 / Apache-2.0 / 最終push 2026-09-30 / release v1.1.9 (2025-11-18) / 確認コミット [`974cfa37`](https://github.com/modelscope/DiffSynth-Studio/blob/974cfa37f27ac55eba3b6d10efa21f876900572d/README.md) / 制作カタログ: [diffsynth-studio](../categories/workflow.md#diffsynth-studio)）
   - ★13200、2026-09-30push。最新リリースは2025-11-18で、mainが先行。【catalog.json収録: id=diffsynth-studio】
 
 ## ComfyUIのアニメ関連エコシステム(本体・テンプレ・Anima拡張)
@@ -46,13 +46,13 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★136,092 / GPL-3.0 / 最終push 2026-10-04 / release v0.38.0 (2026-09-29) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
+- [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) — ノードベース生成UI/エンジン本体（★136,200 / GPL-3.0 / 最終push 2026-10-05 / release v0.39.0 (2026-10-05) / 確認コミット [`83071e1a`](https://github.com/Comfy-Org/ComfyUI/blob/83071e1aec311d31e773d64d6872181b3bad0fe2/README.md) / 制作カタログ: [comfyui](../categories/workflow.md#comfyui)）
   - READMEがAnimaを対応モデルとして列挙、v0.38.0=2026-09-29。ComfyUIはcatalog収録の本体。【catalog.json収録: id=comfyui】
-- [Comfy-Org/workflow_templates](https://github.com/Comfy-Org/workflow_templates) — 公式ワークフロー雛形（★1,243 / MIT / 最終push 2026-10-04 / release v0.11.76 (2026-10-02) / 確認コミット [`0bfbbbfa`](https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/README.md)）
+- [Comfy-Org/workflow_templates](https://github.com/Comfy-Org/workflow_templates) — 公式ワークフロー雛形（★1,246 / MIT / 最終push 2026-10-05 / release v0.11.76 (2026-10-02) / 確認コミット [`0bfbbbfa`](https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/README.md)）
   - v0.11.73=2026-09-30と更新が頻繁。Animaテンプレの有無は個別に未確認。【catalog.json未収録(新規)】
 - [kohya-ss/ComfyUI-Anima-LLLite](https://github.com/kohya-ss/ComfyUI-Anima-LLLite) — Anima用ControlNet-LLLiteノード（★219 / Apache-2.0 / 最終push 2026-08-02 / 確認コミット [`b7495bd8`](https://github.com/kohya-ss/ComfyUI-Anima-LLLite/blob/b7495bd8eb876e334509976896702484ed19cdbb/README.md)）
   - sd-scripts側のLLLite学習(docs/anima_train_control_net_lllite.md)と対。★215、最終push 2026-08-02。【catalog.json未収録(新規)】
-- [Ararararararaki/comfyui-anima-toolkit](https://github.com/Ararararararaki/comfyui-anima-toolkit) — Anima向けLoRA管理・Danbooruタグ・出力ギャラリー（★32 / MIT / 最終push 2026-10-03 / release v2.15.1 (2026-09-18) / 確認コミット [`d95f5b50`](https://github.com/Ararararararaki/comfyui-anima-toolkit/blob/d95f5b50c224ab5d7f01a7cac7164f06bf212213/README.md)）
+- [Ararararararaki/comfyui-anima-toolkit](https://github.com/Ararararararaki/comfyui-anima-toolkit) — Anima向けLoRA管理・Danbooruタグ・出力ギャラリー（★33 / MIT / 最終push 2026-10-05 / release v2.15.1 (2026-09-18) / 確認コミット [`d95f5b50`](https://github.com/Ararararararaki/comfyui-anima-toolkit/blob/d95f5b50c224ab5d7f01a7cac7164f06bf212213/README.md)）
   - 2026-09-30pushで更新活発だが★31と小規模。中国語中心。MIT。【catalog.json未収録(新規)】
 
 ## データセット構築(収集・タグ付け・キュレーション)
@@ -63,13 +63,13 @@
 
 関連リポジトリ:
 
-- [mikf/gallery-dl](https://github.com/mikf/gallery-dl) — booru/Pixiv等の一括ダウンロード（★19,944 / GPL-2.0 / 最終push 2026-10-03 / release v1.32.15 (2026-10-03) / 確認コミット [`8b9a56d6`](https://github.com/mikf/gallery-dl/blob/8b9a56d6b1a53bc13a80894625fd58b24de3063a/README.md)）
+- [mikf/gallery-dl](https://github.com/mikf/gallery-dl) — booru/Pixiv等の一括ダウンロード（★19,953 / GPL-2.0 / 最終push 2026-10-03 / release v1.32.15 (2026-10-03) / 確認コミット [`8b9a56d6`](https://github.com/mikf/gallery-dl/blob/8b9a56d6b1a53bc13a80894625fd58b24de3063a/README.md)）
   - ★19893、リリース2026-09-27。ライセンスGPL-2.0。【catalog.json未収録(新規)】
-- [Bionus/imgbrd-grabber](https://github.com/Bionus/imgbrd-grabber) — booruクライアント兼ダウンローダ（★3,216 / Apache-2.0 / 最終push 2026-09-26 / release v7.14.0 (2026-08-14) / 確認コミット [`56f673c6`](https://github.com/Bionus/imgbrd-grabber/blob/56f673c6e821567e5a8af5361bf8004c62a55052/README.md)）
+- [Bionus/imgbrd-grabber](https://github.com/Bionus/imgbrd-grabber) — booruクライアント兼ダウンローダ（★3,218 / Apache-2.0 / 最終push 2026-09-26 / release v7.14.0 (2026-08-14) / 確認コミット [`56f673c6`](https://github.com/Bionus/imgbrd-grabber/blob/56f673c6e821567e5a8af5361bf8004c62a55052/README.md)）
   - ★3210、Apache-2.0、リリース2026-08-14。【catalog.json未収録(新規)】
-- [deepghs/imgutils](https://github.com/deepghs/imgutils) — アニメ画像の検出・タグ付け・切り出し共通ライブラリ（★418 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
+- [deepghs/imgutils](https://github.com/deepghs/imgutils) — アニメ画像の検出・タグ付け・切り出し共通ライブラリ（★419 / MIT / 最終push 2025-10-11 / release v0.19.0 (2025-09-10) / 確認コミット [`46df848d`](https://github.com/deepghs/imgutils/blob/46df848dc4d20ac93f4919a40e2636d5f7c19766/README.md)）
   - ★415。最終push 2025-10-11で更新は鈍化(12か月手前)。ローカルComfyUI-Anime-Extensionsが依存(READMEの要件に記載)。【catalog.json未収録(新規)】
-- [starik222/BooruDatasetTagManager](https://github.com/starik222/BooruDatasetTagManager) — LoRA用タグ編集GUI（★1,949 / MIT / 最終push 2026-02-25 / release v2.6.3 (2026-02-25) / 確認コミット [`953e1856`](https://github.com/starik222/BooruDatasetTagManager/blob/953e1856caa846ae0b4a62a81a24219d8df4b50b/README.md)）
+- [starik222/BooruDatasetTagManager](https://github.com/starik222/BooruDatasetTagManager) — LoRA用タグ編集GUI（★1,948 / MIT / 最終push 2026-02-25 / release v2.6.3 (2026-02-25) / 確認コミット [`953e1856`](https://github.com/starik222/BooruDatasetTagManager/blob/953e1856caa846ae0b4a62a81a24219d8df4b50b/README.md)）
   - ★1947、MIT、2026-02-25リリース。【catalog.json未収録(新規)】
 
 ## アニメ動画の超解像・フレーム補間
@@ -80,13 +80,13 @@
 
 関連リポジトリ:
 
-- [AaronFeng753/Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI) — 超解像+補間の総合GUI（★17,089 / NOASSERTION / 最終push 2026-10-02 / release v3.142.01 (2026-10-02) / 確認コミット [`f73d2415`](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/blob/f73d24156e843807cb99d5d4f8d4c595479c690a/README.md)）
+- [AaronFeng753/Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI) — 超解像+補間の総合GUI（★17,088 / NOASSERTION / 最終push 2026-10-02 / release v3.142.01 (2026-10-02) / 確認コミット [`f73d2415`](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/blob/f73d24156e843807cb99d5d4f8d4c595479c690a/README.md)）
   - ★17060、2026-09-02リリース。ライセンスはAPI上NOASSERTION(カスタム)なので要確認。【catalog.json未収録(新規)】
-- [NevermindNilas/TheAnimeScripter](https://github.com/NevermindNilas/TheAnimeScripter) — 超解像・RIFE補間・復元のCLI/GUI（★331 / AGPL-3.0 / 最終push 2026-09-28 / release v2.10.0 (2026-09-20) / 確認コミット [`a4913ca9`](https://github.com/NevermindNilas/TheAnimeScripter/blob/a4913ca99e0ef4a8d7253f11f2ee6735752664b4/README.md)）
+- [NevermindNilas/TheAnimeScripter](https://github.com/NevermindNilas/TheAnimeScripter) — 超解像・RIFE補間・復元のCLI/GUI（★331 / AGPL-3.0 / 最終push 2026-10-05 / release v2.10.0 (2026-09-20) / 確認コミット [`a4913ca9`](https://github.com/NevermindNilas/TheAnimeScripter/blob/a4913ca99e0ef4a8d7253f11f2ee6735752664b4/README.md)）
   - v2.10.0=2026-09-20、2026-09-28push。★329と小規模だが更新最速。AGPL-3.0。【catalog.json未収録(新規)】
 - [the-database/VideoJaNai](https://github.com/the-database/VideoJaNai) — ONNX/TensorRT超解像+RIFE補間GUI（★280 / GPL-3.0 / 最終push 2026-06-18 / release 2.1.0 (2026-06-18) / 確認コミット [`68f6060c`](https://github.com/the-database/VideoJaNai/blob/68f6060c3971dfc0f2423b5702f2d259013eca60/README.md)）
   - 2026-06-18リリース。GPL-3.0。Windows GUI。【catalog.json未収録(新規)】
-- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K/Real-ESRGAN/RIFE統合フレームワーク（★21,969 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
+- [k4yt3x/video2x](https://github.com/k4yt3x/video2x) — Anime4K/Real-ESRGAN/RIFE統合フレームワーク（★21,977 / AGPL-3.0 / 最終push 2026-03-07 / release 6.4.0 (2025-01-24) / 確認コミット [`7db9c18d`](https://github.com/k4yt3x/video2x/blob/7db9c18d6278bbad9c3eda0e4e4ae210f9a688eb/README.md)）
   - ★21897でX上の実利用例も多いが、最新リリース6.4.0は2025-01-24で、最終push 2026-03-07と鈍化。AGPL-3.0。【catalog.json未収録(新規)】
 
 ## 漫画翻訳(検出・OCR以外のアプリ層)
@@ -97,13 +97,13 @@
 
 関連リポジトリ:
 
-- [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — ローカル完結の漫画翻訳(検出→OCR→消去→翻訳→植字)（★5,718 / Apache-2.0 / 最終push 2026-10-02 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
+- [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — ローカル完結の漫画翻訳(検出→OCR→消去→翻訳→植字)（★5,725 / Apache-2.0 / 最終push 2026-10-05 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
   - ★5693、2026-09-22リリース、Apache-2.0。【catalog.json未収録(新規)】
 - [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator) — 編集UI付き漫画翻訳支援（★5,182 / GPL-3.0 / 最終push 2026-10-04 / release v1.5.19 (2026-10-04) / 確認コミット [`9c7863c1`](https://github.com/dmMaze/BallonsTranslator/blob/9c7863c1e10c5bd927312eca0a0860177b0e5539/README.md)）
   - ★5171、v1.5.17=2026-09-27。GPL-3.0。【catalog.json未収録(新規)】
-- [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator) — バッチ/API向け自動翻訳パイプライン（★10,477 / GPL-3.0 / 最終push 2026-09-25 / release beta-0.3 (2022-04-23) / 確認コミット [`441d07c5`](https://github.com/zyddnys/manga-image-translator/blob/441d07c59a735c7db3db2e7bb8b07920afd8a9cc/README.md) / 制作カタログ: [manga-image-translator](../categories/localization.md#manga-image-translator)）
+- [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator) — バッチ/API向け自動翻訳パイプライン（★10,478 / GPL-3.0 / 最終push 2026-09-25 / release beta-0.3 (2022-04-23) / 確認コミット [`441d07c5`](https://github.com/zyddnys/manga-image-translator/blob/441d07c59a735c7db3db2e7bb8b07920afd8a9cc/README.md) / 制作カタログ: [manga-image-translator](../categories/localization.md#manga-image-translator)）
   - ★10457で最大。リリースタグは2022-04止まりだがコミットは2026-09-25。GPL-3.0。【catalog.json収録: id=manga-image-translator】
-- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 多言語コミック翻訳デスクトップアプリ（★2,965 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
+- [ogkalu2/comic-translate](https://github.com/ogkalu2/comic-translate) — 多言語コミック翻訳デスクトップアプリ（★2,967 / Apache-2.0 / 最終push 2026-09-11 / release v2.8.9 (2026-09-11) / 確認コミット [`8977b91a`](https://github.com/ogkalu2/comic-translate/blob/8977b91a4f7a40c3917c5a268e9e7d78e1d818da/README.md)）
   - ★2959、v2.8.9=2026-09-11、Apache-2.0。【catalog.json未収録(新規)】
 
 ## ビジュアルノベル・ゲーム翻訳/テキストフック
@@ -114,13 +114,13 @@
 
 関連リポジトリ:
 
-- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — VN向けフック/OCR/翻訳オーバーレイ（★13,547 / GPL-3.0 / 最終push 2026-10-03 / release v12.0.0 (2026-10-03) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/README.md)）
+- [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) — VN向けフック/OCR/翻訳オーバーレイ（★13,568 / GPL-3.0 / 最終push 2026-10-05 / release v12.0.0.1 (2026-10-05) / 確認コミット [`363de635`](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/README.md)）
   - ★13485、2026-09-26リリース。GPL-3.0。【catalog.json未収録(新規)】
-- [GalTransl/GalTransl](https://github.com/GalTransl/GalTransl) — LLMによるGalgame翻訳パッチ自動化（★2,299 / GPL-3.0 / 最終push 2026-10-04 / release 8.2.0 (2026-10-04) / 確認コミット [`ad04d23e`](https://github.com/GalTransl/GalTransl/blob/ad04d23e187dbc37db2de588e99a13b785127a3e/README.md)）
+- [GalTransl/GalTransl](https://github.com/GalTransl/GalTransl) — LLMによるGalgame翻訳パッチ自動化（★2,302 / GPL-3.0 / 最終push 2026-10-04 / release 8.2.0 (2026-10-04) / 確認コミット [`ad04d23e`](https://github.com/GalTransl/GalTransl/blob/ad04d23e187dbc37db2de588e99a13b785127a3e/README.md)）
   - ★2293、8.1.0=2026-09-27、README中国語。【catalog.json未収録(新規)】
-- [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) — Galgame/軽小説向け日中翻訳LLM（★4,799 / GPL-3.0 / 最終push 2026-07-23 / release v1.1.0 (2024-05-10) / 確認コミット [`0ff69116`](https://github.com/SakuraLLM/SakuraLLM/blob/0ff69116222ca66c7a15dcff00fd4f9f86b18d5c/README.md)）
+- [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) — Galgame/軽小説向け日中翻訳LLM（★4,800 / GPL-3.0 / 最終push 2026-07-23 / release v1.1.0 (2024-05-10) / 確認コミット [`0ff69116`](https://github.com/SakuraLLM/SakuraLLM/blob/0ff69116222ca66c7a15dcff00fd4f9f86b18d5c/README.md)）
   - ★4793。リリースは2024-05だがpushは2026-07。モデル重みはHF側。【catalog.json未収録(新規)】
-- [bpwhelan/GameSentenceMiner](https://github.com/bpwhelan/GameSentenceMiner) — ゲーム文のAnki連携・学習ツール（★865 / GPL-3.0 / 最終push 2026-10-04 / release v2026.10.0 (2026-10-04) / 確認コミット [`7dac58bc`](https://github.com/bpwhelan/GameSentenceMiner/blob/7dac58bc1a54b2f2b953787f36d587a2aedeb176/README.md)）
+- [bpwhelan/GameSentenceMiner](https://github.com/bpwhelan/GameSentenceMiner) — ゲーム文のAnki連携・学習ツール（★865 / GPL-3.0 / 最終push 2026-10-05 / release v2026.10.0 (2026-10-04) / 確認コミット [`7dac58bc`](https://github.com/bpwhelan/GameSentenceMiner/blob/7dac58bc1a54b2f2b953787f36d587a2aedeb176/README.md)）
   - ★859、v2026.9.4=2026-09-26。翻訳ではなく学習用途。【catalog.json未収録(新規)】
 
 ## VTuber/Live2D/VRM/アバター基盤
@@ -131,11 +131,11 @@
 
 関連リポジトリ:
 
-- [pixiv/three-vrm](https://github.com/pixiv/three-vrm) — Three.jsでVRMを扱う（★2,198 / MIT / 最終push 2026-10-02 / release v3.5.5 (2026-07-09) / 確認コミット [`1b4fc0cc`](https://github.com/pixiv/three-vrm/blob/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7/README.md) / 制作カタログ: [three-vrm](../categories/vtuber.md#three-vrm)）
+- [pixiv/three-vrm](https://github.com/pixiv/three-vrm) — Three.jsでVRMを扱う（★2,199 / MIT / 最終push 2026-10-02 / release v3.5.5 (2026-07-09) / 確認コミット [`1b4fc0cc`](https://github.com/pixiv/three-vrm/blob/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7/README.md) / 制作カタログ: [three-vrm](../categories/vtuber.md#three-vrm)）
   - ★2192、MIT。【catalog.json収録: id=three-vrm】
-- [vrm-c/UniVRM](https://github.com/vrm-c/UniVRM) — Unity VRM実装（★3,393 / MIT / 最終push 2026-10-02 / release v0.131.3 (2026-10-02) / 確認コミット [`9750dadc`](https://github.com/vrm-c/UniVRM/blob/9750dadc592f421c356bf0376c73e61abbe323e3/README.md) / 制作カタログ: [univrm](../categories/vtuber.md#univrm)）
+- [vrm-c/UniVRM](https://github.com/vrm-c/UniVRM) — Unity VRM実装（★3,391 / MIT / 最終push 2026-10-02 / release v0.131.3 (2026-10-02) / 確認コミット [`9750dadc`](https://github.com/vrm-c/UniVRM/blob/9750dadc592f421c356bf0376c73e61abbe323e3/README.md) / 制作カタログ: [univrm](../categories/vtuber.md#univrm)）
   - ★3392、MIT。【catalog.json収録: id=univrm】
-- [saturday06/VRM-Addon-for-Blender](https://github.com/saturday06/VRM-Addon-for-Blender) — BlenderでのVRM入出力（★1,720 / MIT / 最終push 2026-10-03 / release v4.7.2 (2026-09-23) / 確認コミット [`6502ad98`](https://github.com/saturday06/VRM-Addon-for-Blender/blob/6502ad9852816ec2a391ed321a4932d45711c105/README.md)）
+- [saturday06/VRM-Addon-for-Blender](https://github.com/saturday06/VRM-Addon-for-Blender) — BlenderでのVRM入出力（★1,721 / MIT / 最終push 2026-10-05 / release v4.7.2 (2026-09-23) / 確認コミット [`6502ad98`](https://github.com/saturday06/VRM-Addon-for-Blender/blob/6502ad9852816ec2a391ed321a4932d45711c105/README.md)）
   - ★1716、v4.7.2=2026-09-23、MIT。【catalog.json未収録(新規)】
 - [emilianavt/OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) — CPU顔トラッキング（★2,082 / BSD-2-Clause / 最終push 2026-09-18 / release v1.20.5 (2026-09-14) / 確認コミット [`50c09741`](https://github.com/emilianavt/OpenSeeFace/blob/50c09741897010faad721a218b2bbe14ecad6251/README.md) / 制作カタログ: [openseeface](../categories/vtuber.md#openseeface)）
   - ★2080、v1.20.5=2026-09-14、BSD-2-Clause。【catalog.json収録: id=openseeface】
@@ -148,13 +148,13 @@
 
 関連リポジトリ:
 
-- [moeru-ai/airi](https://github.com/moeru-ai/airi) — VRM/Live2D対応の自己ホスト型AIコンパニオン（★50,027 / MIT / 最終push 2026-10-04 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../categories/vtuber.md#airi)）
+- [moeru-ai/airi](https://github.com/moeru-ai/airi) — VRM/Live2D対応の自己ホスト型AIコンパニオン（★50,066 / MIT / 最終push 2026-10-05 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../categories/vtuber.md#airi)）
   - ★49887。v0.12.0-beta.5=2026-08-29(ベータ)。MIT。【catalog.json収録: id=airi】
-- [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラクターカード/ロールプレイチャットUI（★34,089 / AGPL-3.0 / 最終push 2026-10-02 / release 1.19.0 (2026-09-14) / 確認コミット [`06bde939`](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md) / 制作カタログ: [sillytavern](../categories/story.md#sillytavern)）
+- [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) — キャラクターカード/ロールプレイチャットUI（★34,118 / AGPL-3.0 / 最終push 2026-10-02 / release 1.19.0 (2026-09-14) / 確認コミット [`06bde939`](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md) / 制作カタログ: [sillytavern](../categories/story.md#sillytavern)）
   - ★33968、1.19.0=2026-09-14、AGPL-3.0。【catalog.json収録: id=sillytavern】
-- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの自己ホストVTuber（★13,979 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../categories/vtuber.md#open-llm-vtuber)）
+- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの自己ホストVTuber（★13,991 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../categories/vtuber.md#open-llm-vtuber)）
   - ★13961。最終push 2026-05-15と約4.5か月停滞、ライセンスは独自(NOASSERTION)。【catalog.json収録: id=open-llm-vtuber】
-- [tegnike/aituber-kit](https://github.com/tegnike/aituber-kit) — 日本語圏AITuber構築キット（★1,115 / NOASSERTION / 最終push 2026-10-04 / release v2.79.0 (2026-10-04) / 確認コミット [`c7ea2b65`](https://github.com/tegnike/aituber-kit/blob/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/README.md)）
+- [tegnike/aituber-kit](https://github.com/tegnike/aituber-kit) — 日本語圏AITuber構築キット（★1,117 / NOASSERTION / 最終push 2026-10-04 / release v2.79.0 (2026-10-04) / 確認コミット [`c7ea2b65`](https://github.com/tegnike/aituber-kit/blob/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/README.md)）
   - ★1114、2026-09-30push。v2.0.0以降カスタムライセンスで商用は利用規約確認が必須。【catalog.json未収録(新規)】
 
 ## 日本語キャラクター向けTTS/音声エンジン
@@ -165,13 +165,13 @@
 
 関連リポジトリ:
 
-- [Aratako/Irodori-TTS](https://github.com/Aratako/Irodori-TTS) — 日本語TTS(キャラ声・VoiceDesign対応)（★1,384 / MIT / 最終push 2026-09-12 / 確認コミット [`89f9d8fb`](https://github.com/Aratako/Irodori-TTS/blob/89f9d8fbd4d51ea019867ee1197725ede1df13c5/README.md)）
+- [Aratako/Irodori-TTS](https://github.com/Aratako/Irodori-TTS) — 日本語TTS(キャラ声・VoiceDesign対応)（★1,391 / MIT / 最終push 2026-09-12 / 確認コミット [`89f9d8fb`](https://github.com/Aratako/Irodori-TTS/blob/89f9d8fbd4d51ea019867ee1197725ede1df13c5/README.md)）
   - ★1363、MIT、2026-09-12push。ローカルのComfyUI-Anime-Extensionsが利用。【catalog.json未収録(新規)】
 - [VOICEVOX/voicevox_engine](https://github.com/VOICEVOX/voicevox_engine) — HTTP APIの日本語音声合成エンジン（★1,765 / NOASSERTION / 最終push 2026-10-02 / release 0.25.2 (2026-04-30) / 確認コミット [`bfa93039`](https://github.com/VOICEVOX/voicevox_engine/blob/bfa9303947090b5e91e9917a43b997a5e27683a8/README.md)）
   - ★1764、2026-09-26push。ライセンスは独自(NOASSERTION)で音声ごとの規約を要確認。【catalog.json未収録(新規)】
-- [Aivis-Project/AivisSpeech-Engine](https://github.com/Aivis-Project/AivisSpeech-Engine) — VOICEVOX互換APIのSBV2系エンジン（★181 / LGPL-3.0 / 最終push 2026-10-04 / release 1.2.0 (2026-04-30) / 確認コミット [`0cf0635d`](https://github.com/Aivis-Project/AivisSpeech-Engine/blob/0cf0635d5f74de4cf07e5fb87b25c4c1d0c8a331/README.md)）
+- [Aivis-Project/AivisSpeech-Engine](https://github.com/Aivis-Project/AivisSpeech-Engine) — VOICEVOX互換APIのSBV2系エンジン（★180 / LGPL-3.0 / 最終push 2026-10-04 / release 1.2.0 (2026-04-30) / 確認コミット [`0cf0635d`](https://github.com/Aivis-Project/AivisSpeech-Engine/blob/0cf0635d5f74de4cf07e5fb87b25c4c1d0c8a331/README.md)）
   - ★181と小規模だが2026-09-18push、LGPL-3.0。【catalog.json未収録(新規)】
-- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 少数ショット声クローンTTS(多言語)（★62,339 / MIT / 最終push 2026-10-04 / release 20250606v2pro (2025-06-06) / 確認コミット [`48b1a016`](https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/README.md) / 制作カタログ: [gpt-sovits](../categories/tts.md#gpt-sovits)）
+- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 少数ショット声クローンTTS(多言語)（★62,377 / MIT / 最終push 2026-10-05 / release 20250606v2pro (2025-06-06) / 確認コミット [`48b1a016`](https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/README.md) / 制作カタログ: [gpt-sovits](../categories/tts.md#gpt-sovits)）
   - ★62272、MIT。最終リリース2025-06だがpush 2026-08-18。【catalog.json収録: id=gpt-sovits】
 
 ## アニメ制作向けエージェント・スキル・MCP
@@ -182,9 +182,9 @@
 
 関連リポジトリ:
 
-- [Comfy-Org/comfy-mcp](https://github.com/Comfy-Org/comfy-mcp) — ComfyUI公式ローカルMCPサーバ（★250 / NOASSERTION / 最終push 2026-10-01 / release v0.10.0 (2026-08-10) / 確認コミット [`e5f768d3`](https://github.com/Comfy-Org/comfy-mcp/blob/e5f768d31de21ea32829381cebdda5336492a8ac/README.md)）
+- [Comfy-Org/comfy-mcp](https://github.com/Comfy-Org/comfy-mcp) — ComfyUI公式ローカルMCPサーバ（★253 / NOASSERTION / 最終push 2026-10-05 / release v0.10.0 (2026-08-10) / 確認コミット [`e5f768d3`](https://github.com/Comfy-Org/comfy-mcp/blob/e5f768d31de21ea32829381cebdda5336492a8ac/README.md)）
   - 公式、★242、2026-09-20push。ライセンスはAPI上NOASSERTIONで要確認。【catalog.json未収録(新規)】
-- [Comfy-Org/comfy-skills](https://github.com/Comfy-Org/comfy-skills) — ComfyUI公式スキル(Comfy Cloud向け)（★216 / MIT / 最終push 2026-09-16 / 確認コミット [`d50722a5`](https://github.com/Comfy-Org/comfy-skills/blob/d50722a53585d0ab4fd1909fd59294b978aad449/README.md)）
+- [Comfy-Org/comfy-skills](https://github.com/Comfy-Org/comfy-skills) — ComfyUI公式スキル(Comfy Cloud向け)（★217 / MIT / 最終push 2026-10-05 / 確認コミット [`d50722a5`](https://github.com/Comfy-Org/comfy-skills/blob/d50722a53585d0ab4fd1909fd59294b978aad449/README.md)）
   - 公式、★213、MIT。タグ無し。Comfy Cloud向けでローカル用途とは異なる可能性。【catalog.json未収録(新規)】
 - [Moeblack/ComfyUI-AnimaTool](https://github.com/Moeblack/ComfyUI-AnimaTool) — Anima画像生成のツール呼び出しAPI（★137 / AGPL-3.0 / 最終push 2026-03-26 / 確認コミット [`2a9c5fcb`](https://github.com/Moeblack/ComfyUI-AnimaTool/blob/2a9c5fcbbb5349956f93b16b74cfe94214e78b44/README.md)）
   - ★137。最終push 2026-03-26(約6か月前)、AGPL-3.0。【catalog.json未収録(新規)】
@@ -212,9 +212,9 @@
 
 関連リポジトリ:
 
-- [cvat-ai/cvat](https://github.com/cvat-ai/cvat) — 画像アノテーション基盤(BBox/ポリゴン)（★16,858 / MIT / 最終push 2026-10-02 / release v2.77.0 (2026-09-28) / 確認コミット [`fadcbac2`](https://github.com/cvat-ai/cvat/blob/fadcbac254ba83436afefe7dbeff8c752d83608d/README.md)）
+- [cvat-ai/cvat](https://github.com/cvat-ai/cvat) — 画像アノテーション基盤(BBox/ポリゴン)（★16,861 / MIT / 最終push 2026-10-05 / release v2.77.0 (2026-09-28) / 確認コミット [`fadcbac2`](https://github.com/cvat-ai/cvat/blob/fadcbac254ba83436afefe7dbeff8c752d83608d/README.md)）
   - ★16827、MIT、2026-09-28リリース。【catalog.json未収録(新規)】
-- [HumanSignal/label-studio](https://github.com/HumanSignal/label-studio) — 汎用アノテーション(画像/テキスト/音声)（★28,400 / Apache-2.0 / 最終push 2026-10-02 / release 1.23.2 (2026-09-29) / 確認コミット [`a6387435`](https://github.com/HumanSignal/label-studio/blob/a63874354e5fd18f4613d59c47dee136f8b29b5f/README.md)）
+- [HumanSignal/label-studio](https://github.com/HumanSignal/label-studio) — 汎用アノテーション(画像/テキスト/音声)（★28,401 / Apache-2.0 / 最終push 2026-10-05 / release 1.23.2 (2026-09-29) / 確認コミット [`a6387435`](https://github.com/HumanSignal/label-studio/blob/a63874354e5fd18f4613d59c47dee136f8b29b5f/README.md)）
   - ★28383、Apache-2.0。【catalog.json未収録(新規)】
 - [manga109/public-annotations](https://github.com/manga109/public-annotations) — Manga109注釈データ（★14 / CC-BY-4.0 / 最終push 2025-04-23 / 確認コミット [`fd20965a`](https://github.com/manga109/public-annotations/blob/fd20965a079c309deeb4f44bbed5d2ebabb2b493/README.md)）
   - ★14、CC-BY-4.0。画像自体の条件は別。【catalog.json未収録(新規)】 【要注意: pushed_atが12か月超で停滞】
@@ -229,13 +229,13 @@
 
 関連リポジトリ:
 
-- [gotson/komga](https://github.com/gotson/komga) — 漫画・コミックサーバ（★6,708 / MIT / 最終push 2026-10-02 / release 1.28.1 (2026-10-02) / 確認コミット [`4fbcb1aa`](https://github.com/gotson/komga/blob/4fbcb1aa8a4990421f58b953c7aec3ba68b4de6f/README.md)）
+- [gotson/komga](https://github.com/gotson/komga) — 漫画・コミックサーバ（★6,713 / MIT / 最終push 2026-10-05 / release 1.28.1 (2026-10-02) / 確認コミット [`4fbcb1aa`](https://github.com/gotson/komga/blob/4fbcb1aa8a4990421f58b953c7aec3ba68b4de6f/README.md)）
   - ★6703、2026-09-29リリース、MIT。【catalog.json未収録(新規)】
-- [hydrusnetwork/hydrus](https://github.com/hydrusnetwork/hydrus) — ローカル画像のタグ管理(booru型)（★3,221 / NOASSERTION / 最終push 2026-10-03 / release v689 (2026-09-30) / 確認コミット [`48194310`](https://github.com/hydrusnetwork/hydrus/blob/4819431092ed000c13011f17272c5222aec4ed2d/README.md)）
+- [hydrusnetwork/hydrus](https://github.com/hydrusnetwork/hydrus) — ローカル画像のタグ管理(booru型)（★3,223 / NOASSERTION / 最終push 2026-10-03 / release v689 (2026-09-30) / 確認コミット [`48194310`](https://github.com/hydrusnetwork/hydrus/blob/4819431092ed000c13011f17272c5222aec4ed2d/README.md)）
   - ★3218、リリース頻繁(v688=2026-09-23)。ライセンスはAPI上NOASSERTIONで要確認。【catalog.json未収録(新規)】
 - [kha-white/mokuro](https://github.com/kha-white/mokuro) — OCR付き漫画リーダ生成（★1,739 / GPL-3.0 / 最終push 2026-07-20 / release v0.2.5 (2026-07-20) / 確認コミット [`9f79b128`](https://github.com/kha-white/mokuro/blob/9f79b1281066f953ec6e5d1e7086c401fa8da159/README.md) / 制作カタログ: [mokuro](../categories/localization.md#mokuro)）
   - ★1738、v0.2.5=2026-07-20、GPL-3.0。【catalog.json収録: id=mokuro】
-- [monbooru/monbooru](https://github.com/monbooru/monbooru) — AI生成画像対応のセルフホストbooru（★89 / AGPL-3.0 / 最終push 2026-09-28 / release v1.22.0 (2026-09-28) / 確認コミット [`f49d97e4`](https://github.com/monbooru/monbooru/blob/f49d97e45de899e4413bc5239c4efe3e799fdf2d/README.md)）
+- [monbooru/monbooru](https://github.com/monbooru/monbooru) — AI生成画像対応のセルフホストbooru（★91 / AGPL-3.0 / 最終push 2026-09-28 / release v1.22.0 (2026-09-28) / 確認コミット [`f49d97e4`](https://github.com/monbooru/monbooru/blob/f49d97e45de899e4413bc5239c4efe3e799fdf2d/README.md)）
   - ★82と小規模、AGPL-3.0、2026-09-28リリース。【catalog.json未収録(新規)】
 
 ## アニメ制作(作画・中割り・彩色・2D制作ツール)
@@ -246,9 +246,9 @@
 
 関連リポジトリ:
 
-- [opentoonz/opentoonz](https://github.com/opentoonz/opentoonz) — 2Dアニメ制作ソフト（★7,784 / NOASSERTION / 最終push 2026-10-04 / release v1.8.0 (2026-06-19) / 確認コミット [`58f2ed14`](https://github.com/opentoonz/opentoonz/blob/58f2ed1413ee1041f6f643cd91c807318a323009/README.md) / 制作カタログ: [opentoonz](../categories/animation.md#opentoonz)）
+- [opentoonz/opentoonz](https://github.com/opentoonz/opentoonz) — 2Dアニメ制作ソフト（★7,787 / NOASSERTION / 最終push 2026-10-04 / release v1.8.0 (2026-06-19) / 確認コミット [`58f2ed14`](https://github.com/opentoonz/opentoonz/blob/58f2ed1413ee1041f6f643cd91c807318a323009/README.md) / 制作カタログ: [opentoonz](../categories/animation.md#opentoonz)）
   - ★7775、v1.8.0=2026-06-19。GitHub API上ライセンスはNOASSERTION(要確認)。【catalog.json収録: id=opentoonz】
-- [KDE/krita](https://github.com/KDE/krita) — デジタルペイント本体（★10,474 / GPL-3.0 / 最終push 2026-10-03 / 確認コミット [`4216dd34`](https://github.com/KDE/krita/blob/4216dd347f843d59ca51c1e097a0dc8af7c753aa/README.md) / 制作カタログ: [krita](../categories/manga.md#krita)）
+- [KDE/krita](https://github.com/KDE/krita) — デジタルペイント本体（★10,479 / GPL-3.0 / 最終push 2026-10-05 / 確認コミット [`4216dd34`](https://github.com/KDE/krita/blob/4216dd347f843d59ca51c1e097a0dc8af7c753aa/README.md) / 制作カタログ: [krita](../categories/manga.md#krita)）
   - ★10456、GPL-3.0。catalog収録。【catalog.json収録: id=krita】
 - [Acly/krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) — KritaのAI生成プラグイン（★10,668 / GPL-3.0 / 最終push 2026-10-03 / release v1.53.0 (2026-08-22) / 確認コミット [`26aec6c6`](https://github.com/Acly/krita-ai-diffusion/blob/26aec6c6d8e1b7c1a3cf63880fda84360f6d5b0d/README.md) / 制作カタログ: [krita-ai-diffusion](../categories/image.md#krita-ai-diffusion)）
   - ★10655、v1.53.0=2026-08-22、GPL-3.0。【catalog.json収録: id=krita-ai-diffusion】
@@ -263,11 +263,11 @@
 
 関連リポジトリ:
 
-- [Forget-C/Jellyfish](https://github.com/Forget-C/Jellyfish) — 脚本→絵コンテ→動画のAI短編制作ワークスペース（★6,607 / Apache-2.0 / 最終push 2026-07-30 / release v0.3.2 (2026-04-17) / 確認コミット [`a9678194`](https://github.com/Forget-C/Jellyfish/blob/a9678194ddf2d9be3ccbe78d4287d87d5089e123/README.md)）
+- [Forget-C/Jellyfish](https://github.com/Forget-C/Jellyfish) — 脚本→絵コンテ→動画のAI短編制作ワークスペース（★6,611 / Apache-2.0 / 最終push 2026-07-30 / release v0.3.2 (2026-04-17) / 確認コミット [`a9678194`](https://github.com/Forget-C/Jellyfish/blob/a9678194ddf2d9be3ccbe78d4287d87d5089e123/README.md)）
   - ★6529、Apache-2.0。最終push 2026-07-30。【catalog.json未収録(新規)】
-- [ArcReel/ArcReel](https://github.com/ArcReel/ArcReel) — 小説/脚本→動画のセルフホスト制作台（★5,295 / AGPL-3.0 / 最終push 2026-10-04 / release v0.32.0 (2026-10-02) / 確認コミット [`ff809bca`](https://github.com/ArcReel/ArcReel/blob/ff809bcab6480892cf135a5951b011201bb1e3d6/README.md)）
+- [ArcReel/ArcReel](https://github.com/ArcReel/ArcReel) — 小説/脚本→動画のセルフホスト制作台（★5,308 / AGPL-3.0 / 最終push 2026-10-05 / release v0.32.0 (2026-10-02) / 確認コミット [`ff809bca`](https://github.com/ArcReel/ArcReel/blob/ff809bcab6480892cf135a5951b011201bb1e3d6/README.md)）
   - ★5253、2026-09-30push。READMEにスポンサー/販促あり、AGPL-3.0。【catalog.json未収録(新規)】
-- [wonderunit/storyboarder](https://github.com/wonderunit/storyboarder) — 絵コンテ作成ソフト（★3,865 / ライセンス未表示 / 最終push 2024-03-17 / release v2.1.0 (2020-09-03) / 確認コミット [`8b81a25c`](https://github.com/wonderunit/storyboarder/blob/8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2/README.md) / 制作カタログ: [storyboarder](../categories/production.md#storyboarder)）
+- [wonderunit/storyboarder](https://github.com/wonderunit/storyboarder) — 絵コンテ作成ソフト（★3,866 / ライセンス未表示 / 最終push 2024-03-17 / release v2.1.0 (2020-09-03) / 確認コミット [`8b81a25c`](https://github.com/wonderunit/storyboarder/blob/8b81a25c71d5f7ca46e8d5b8e3d4f7b3968f95c2/README.md) / 制作カタログ: [storyboarder](../categories/production.md#storyboarder)）
   - ★3859だが最終push 2024-03-17で停滞。catalog収録のため参照用。【catalog.json収録: id=storyboarder】 【要注意: pushed_atが12か月超で停滞】
 
 ## 漫画の植字・フォント・テキスト描画
@@ -278,7 +278,7 @@
 
 関連リポジトリ:
 
-- [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — 翻訳一体型の植字（★5,718 / Apache-2.0 / 最終push 2026-10-02 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
+- [koharu-rs/koharu](https://github.com/koharu-rs/koharu) — 翻訳一体型の植字（★5,725 / Apache-2.0 / 最終push 2026-10-05 / release 0.83.5 (2026-09-22) / 確認コミット [`45b4cae1`](https://github.com/koharu-rs/koharu/blob/45b4cae150dcf280c0ccdf87d750af76f0811c7d/README.md)）
   - 植字機能を含む。★5693、Apache-2.0、2026-09-22リリース。【catalog.json未収録(新規)】
 - [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator) — テキスト編集UI付き植字（★5,182 / GPL-3.0 / 最終push 2026-10-04 / release v1.5.19 (2026-10-04) / 確認コミット [`9c7863c1`](https://github.com/dmMaze/BallonsTranslator/blob/9c7863c1e10c5bd927312eca0a0860177b0e5539/README.md)）
   - ★5171、v1.5.17=2026-09-27、GPL-3.0。【catalog.json未収録(新規)】
