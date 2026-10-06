@@ -81,3 +81,19 @@ GitHubに対応する代表モデル配布のファイル一覧は合計52件。
 - Koharuのレイアウト検出モデルはManga109全巻で学習しており、Manga109の学術・非商用条件の影響が残る。
 
 残る範囲: すべて重みの取得・推論・品質比較は未実施。ベンチマーク数値の多くは各カードの自己報告。アニメ特化モデルが見つからないタスク（要約、QA、テキスト分類、表形式、時系列、強化学習、ロボティクス等）は「該当なし」とし、汎用モデルでの実測は行っていない。Xの評判は検索回数の制約で薄い項目がある。次回は、確度が低の項目（OCR・抜き・超解像・着色・3D・歌生成）を同一の自前素材で比較する。
+
+## 2026-10-05: CLIでの根拠付きコンテキスト収集
+
+`scripts/context-search.mjs` は調査資料の読み取り専用MCP、認証済み`gh`、既存ChromeのX検索を共通のJSON/Markdown形式で保存する。カタログ更新・生成・投稿はしない。ローカルでは`~/.local/bin/context-search`から呼べる。
+
+```sh
+context-search catalog VRM --limit 5 --output context-vrm.json
+context-search github 'three-vrm in:name' --format markdown --output context-github.md
+context-search x Tripo --from sayaka_aiart --since 2026-09-01 --limit 10 --output context-x.json
+```
+
+XはChrome DevTools MCPの自動接続を使用する。別のローカルChromeを明示する場合は、そのブラウザの**実際の**CDP HTTPエンドポイントを`--cdp http://127.0.0.1:PORT`で指定する。別ブラウザのポート番号を流用しない。指定したChrome自身にXログインが必要で、別プロファイルの認証は共有されない。ログイン要求・検索失敗・時間切れは異常終了し、検索結果0件として保存しない。閲覧用の新規タブを閉じ、Cookie・トークンは読まない／出力しない。
+
+確認済み: `catalog VRM`でthree-vrm/UniVRMの根拠URL・`checked_on`を取得し、`github 'three-vrm in:name'`で実際のGitHub検索結果をMarkdown保存。Xは実在のCDP接続後、未ログインのため認証要求で異常終了する経路を確認。ログイン済みX検索の結果取得は未確認であり、成功扱いにしない。
+
+検索結果は発見用の要約。固定コミット、ライセンス、複数の根拠まで必要なら、結果の`dataset`/`id`でMCP `get_item`を取得する。取得時刻と資料の確認日は別で、投稿者の主張・編集判断・実行検証も別。公開コード／公開重み／商用利用可／再現済みを混同しない。Xの画像・動画URLを保存しても、その内容の検証にはならない。GitHub検索で返るライセンス識別子だけでは使用条件を確定しない。
