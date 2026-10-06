@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-05。**175件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-06。**185件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,25 +12,28 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 50,066 / 2026-10-05 |
+| [AIRI](https://github.com/moeru-ai/airi) · [詳細](#airi) | 会話するバーチャルキャラクターを構築する環境。 | AI連携 / 更新のある導入・評価候補 | 50,101 / 2026-10-06 |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) · [詳細](#babylon-mmd) | Babylon.jsでMMDモデル・モーションを読み込み、物理・IK・モーフを再生する。 | 非AI制作 / 制作基盤として比較 | 256 / 2026-09-09 |
-| [inochi-creator](https://github.com/Inochi2D/inochi-creator) · [詳細](#inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,236 / 2025-06-16 |
-| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 77,006 / 2026-10-05 |
-| [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) · [詳細](#open-llm-vtuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,991 / 2026-05-15 |
-| [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) · [詳細](#openseeface) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,082 / 2026-09-18 |
-| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,926 / 2026-08-28 |
-| [three-vrm](https://github.com/pixiv/three-vrm) · [詳細](#three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,199 / 2026-10-02 |
-| [UniVRM](https://github.com/vrm-c/UniVRM) · [詳細](#univrm) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,391 / 2026-10-02 |
-| [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) · [詳細](#vtubestudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,309 / 2026-09-28 |
+| [inochi-creator](https://github.com/Inochi2D/inochi-creator) · [詳細](#inochi-creator) | レイヤー画像を変形させ、ゲームやVTuberで動かす2Dモデルを作るエディタ。 | 非AI制作 / 比較・既存工程の参考 | 1,238 / 2025-06-16 |
+| [OBS Studio](https://github.com/obsproject/obs-studio) · [詳細](#obs-studio) | 画面・カメラ・音声を合成して録画・配信する。 | 非AI制作 / 制作基盤として比較 | 77,057 / 2026-10-06 |
+| [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) · [詳細](#open-llm-vtuber) | 音声会話・視覚認識・Live2D表示を組み合わせるAIキャラクター環境。 | AI連携 / 連携の評価候補 | 13,994 / 2026-05-15 |
+| [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) · [詳細](#openseeface) | Webカメラから顔のランドマークを推定し、アバター駆動へ渡す。 | AIモデル・学習 / 連携・制作ツール候補 | 2,081 / 2026-09-18 |
+| [PersonaLive](https://github.com/GVCLab/PersonaLive) · [詳細](#personalive) | 参照人物の画像を動作入力に従ってストリーミングでアニメーションする。 | AIモデル・学習 / モデル・研究候補 | 3,938 / 2026-08-28 |
+| [three-vrm](https://github.com/pixiv/three-vrm) · [詳細](#three-vrm) | three.jsでVRMアバターを読み込み表示するライブラリ。 | 非AI制作 / 制作基盤として比較 | 2,202 / 2026-10-02 |
+| [UniVRM](https://github.com/vrm-c/UniVRM) · [詳細](#univrm) | Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱う。 | 非AI制作 / 定番の制作基盤 | 3,392 / 2026-10-06 |
+| [VTubeStudio](https://github.com/DenchiSoft/VTubeStudio) · [詳細](#vtubestudio) | VTube Studioを外部から制御する公式API文書・開発資料。 | AI連携 / 連携用文書資料 | 1,310 / 2026-09-28 |
 | [prometheus-avatar](https://github.com/myths-labs/prometheus-avatar) · [詳細](#prometheus-avatar) | LLM出力でLive2D/3Dアバターを動かすオープンソースSDK。口パク、感情表現、リアルタイム音声、TTS、VTuberモード、MCPサーバをまとめる。 | AI連携 / 小規模・初期評価候補 | 17 / 2026-09-30 |
 | [VMagicMirror](https://github.com/malaybaku/VMagicMirror) · [詳細](#vmagicmirror) | WindowsでVRMモデルを読み込み、追加デバイスなしにキーボードとマウス操作をモーションとしてアバターの上半身に反映するアプリ。可変クロマキーに対応し、配信・ライブコーディング・デスクトップマスコットに使える。 | 非AI制作 / 確立済み | 544 / 2026-10-01 |
-| [gaussian-vrm](https://github.com/naruya/gaussian-vrm) · [詳細](#gaussian-vrm) | three.js上でVRM形式のスキニング付きガウシアンアバター(GVRM)を扱う実装。three-vrmとgaussian-splats-3dを基盤に、VRMの操作（移動やアニメーション）をそのまま再利用できる。 | 非AI制作 / 研究実装・活発 | 425 / 2026-09-29 |
-| [Cortico](https://github.com/Pal-AI-Lab/Cortico) · [詳細](#cortico) | イベントストリームを中心に設計したエージェント基盤。ペルソナbot・AI配信者・ロールプレイ・コンパニオン向けで、Core/Persona/Memory/World/Botの4層構成と、外部環境を隔離して接続するWorld拡張機構を持つ。 | AIモデル・学習 / 活発・pre-release | 183 / 2026-10-04 |
+| [gaussian-vrm](https://github.com/naruya/gaussian-vrm) · [詳細](#gaussian-vrm) | three.js上でVRM形式のスキニング付きガウシアンアバター(GVRM)を扱う実装。three-vrmとgaussian-splats-3dを基盤に、VRMの操作（移動やアニメーション）をそのまま再利用できる。 | 非AI制作 / 研究実装・活発 | 425 / 2026-10-06 |
+| [Cortico](https://github.com/Pal-AI-Lab/Cortico) · [詳細](#cortico) | イベントストリームを中心に設計したエージェント基盤。ペルソナbot・AI配信者・ロールプレイ・コンパニオン向けで、Core/Persona/Memory/World/Botの4層構成と、外部環境を隔離して接続するWorld拡張機構を持つ。 | AIモデル・学習 / 活発・pre-release | 186 / 2026-10-06 |
 | [Anima](https://github.com/Yun-0000/Anima) · [詳細](#anima) | ブラウザで動くVRMキャラクタースタジオ。テキストまたはリアルタイム音声でキャラと対話し、表情・リップシンク・身体モーションを付けて演技させる。 | AIモデル・学習 / 小規模・初期評価候補 | 3 / 2026-05-09 |
-| [open-vt](https://github.com/erodozer/open-vt) · [詳細](#open-vt) | Godotで作られたオープンソースの2D VTuberソフト。OpenSeeFaceとVTubeStudioのトラッカーに対応し、OBSで取り込みやすい透過ウィンドウや複数ウィンドウのポップアウト操作を持つ。 | 非AI制作 / 実運用候補 | 281 / 2026-09-25 |
+| [open-vt](https://github.com/erodozer/open-vt) · [詳細](#open-vt) | Godotで作られたオープンソースの2D VTuberソフト。OpenSeeFaceとVTubeStudioのトラッカーに対応し、OBSで取り込みやすい透過ウィンドウや複数ウィンドウのポップアウト操作を持つ。 | 非AI制作 / 実運用候補 | 282 / 2026-09-25 |
 | [A.R.I.A](https://github.com/NekoUnix/A.R.I.A) · [詳細](#a-r-i-a) | Live2D・VRM・GLB・PNG/GIFアバターをまとめて扱うクロスプラットフォームのアバタースタジオ。顔トラッキング、物理、ライティング、視覚アクション、複数アバターのOBS出力に対応する。 | 非AI制作 / Alpha・初期評価候補 | 9 / 2026-10-05 |
 | [Seidr-Smidja](https://github.com/hrabanazviking/Seidr-Smidja) · [詳細](#seidr-smidja) | AIエージェントがYAML仕様からVRMアバターを設計・構築・検証・レンダリングするヘッドレスなパイプライン。VRoidベーステンプレートにBlenderをヘッドレスで適用し、VRChat/VTube Studio互換を検査して.vrmを出力する。 | AI連携 / Genesis・初期評価候補 | 21 / 2026-10-05 |
 | [vrm-studio](https://github.com/vucinatim/vrm-studio) · [詳細](#vrm-studio) | ブラウザで動くVTubingアプリ。Google MediaPipe Holisticで顔・手・全身をトラッキングし、Three.jsでVRMアバターを動かす。グリーンスクリーン、OBS連携、カルマンフィルタによる平滑化を備える。 | AIは任意 / 小規模・実用候補 | 21 / 2025-12-09 |
+| [CharacterStudio](https://github.com/M3-org/CharacterStudio) · [詳細](#characterstudio) | ブラウザ上でglTF/VRMアバターを組み立てるオープンソースの3Dアバター制作スタジオ。パーツのドラッグ＆ドロップ配置、色変更、VRM最適化、glb/VRM書き出しに対応。 | 非AI制作 / 活発・実用段階 | 351 / 2026-08-11 |
+| [ndmf-vrm-exporter](https://github.com/hkrn/ndmf-vrm-exporter) · [詳細](#ndmf-vrm-exporter) | NDMFベースでVRChatアバターをVRM 1.0として書き出すUnityプラグイン。PhysBone→SpringBone、Constraint→VRM Constraint、lilToon→MToon互換設定の自動変換に対応。 | 非AI制作 / 活発・実用段階 | 78 / 2026-09-29 |
+| [app](https://github.com/vcamapp/app) · [詳細](#app) | macOSでVRMアバターを仮想カメラとして表示するアプリ。ZoomやGoogle Meetなどでアバターを映像として映せる。 | 非AI制作 / 活発・実用段階 | 277 / 2026-10-04 |
 
 <a id="airi"></a>
 
@@ -46,7 +49,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、TTS、ASR、キャラモデル
 - **制約・未確認**: 対応機能はプラットフォームとプロバイダに依存。全ゲームで自律動作するという意味ではない。
 - **編集者評価**: キャラ表示・会話・ゲーム操作の接続を扱う活動的な候補。
-- **メトリクス**: ★50,066、fork 5,000、作成 2024-12-01、最終push 2026-10-05T19:02:50Z、archived=False
+- **メトリクス**: ★50,101、fork 5,008、作成 2024-12-01、最終push 2026-10-06T19:48:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `dfc6951a55bf4fdd66a68a0c881ae880ddd95f77`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/moeru-ai/airi/tree/dfc6951a55bf4fdd66a68a0c881ae880ddd95f77)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -116,7 +119,7 @@ MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
 - **依存**: Inochi2D、キャラ素材
 - **制約・未確認**: 最終pushは2025年6月。Live2D Cubism形式と同じものではない。
 - **編集者評価**: AIなしでも使える2Dリギングの比較基盤。
-- **メトリクス**: ★1,236、fork 91、作成 2020-11-19、最終push 2025-06-16T20:39:43Z、archived=False
+- **メトリクス**: ★1,238、fork 91、作成 2020-11-19、最終push 2025-06-16T20:39:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `dba60811cff224f8cc9ce367b1d9291bfa5f7640`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Inochi2D/inochi-creator/tree/dba60811cff224f8cc9ce367b1d9291bfa5f7640)。GitHub自動判定=BSD-2-Clause。独立レビュー・商用可否判定は未実施。
@@ -151,7 +154,7 @@ MMD資産をWeb作品やキャラ表示に展開する具体的な接続先。
 - **依存**: 各配信先、アバター表示アプリ、任意プラグイン
 - **制約・未確認**: 顔追跡やモデル生成は別アプリ。プラグインの対応版を確認する。
 - **編集者評価**: VTuber制作物を実際の配信画面へまとめる基本工程。
-- **メトリクス**: ★77,006、fork 10,457、作成 2013-10-01、最終push 2026-10-05T21:50:19Z、archived=False
+- **メトリクス**: ★77,057、fork 10,467、作成 2013-10-01、最終push 2026-10-06T01:09:45Z、archived=False
 - **確認**: 2026-09-09 / コミット `012c6c23c73283ee5591ae00d08af14d9eeb8279`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/obsproject/obs-studio/tree/012c6c23c73283ee5591ae00d08af14d9eeb8279)。GitHub自動判定=GPL-2.0。独立レビュー・商用可否判定は未実施。
@@ -186,7 +189,7 @@ VTuber制作物を実際の配信画面へまとめる基本工程。
 - **依存**: LLM、TTS、ASR、Live2D素材
 - **制約・未確認**: ローカル完結はバックエンドの選択に依存。Live2Dモデル制作機能とは別。
 - **編集者評価**: 会話するVTuberやデスクトップキャラの実装候補。
-- **メトリクス**: ★13,991、fork 1,674、作成 2023-11-24、最終push 2026-05-15T07:18:04Z、archived=False
+- **メトリクス**: ★13,994、fork 1,677、作成 2023-11-24、最終push 2026-05-15T07:18:04Z、archived=False
 - **確認**: 2026-09-09 / コミット `992309c0aa19845960228f880013d4685fde93b5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/tree/992309c0aa19845960228f880013d4685fde93b5)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -221,7 +224,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 - **依存**: 同梱・配布ONNXモデル、別途アバター描画ソフト
 - **制約・未確認**: 単体のアバター表示ソフトではない。作者の30〜60fpsは環境依存。
 - **編集者評価**: 生成モデルを増やす前に安定した表情入力を作る候補。
-- **メトリクス**: ★2,082、fork 209、作成 2020-01-01、最終push 2026-09-18T17:30:40Z、archived=False
+- **メトリクス**: ★2,081、fork 209、作成 2020-01-01、最終push 2026-09-18T17:30:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `85aa70fc67582d046e771ea73625182a0d8f7475`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/emilianavt/OpenSeeFace/tree/85aa70fc67582d046e771ea73625182a0d8f7475)。GitHub自動判定=BSD-2-Clause。独立レビュー・商用可否判定は未実施。
@@ -258,7 +261,7 @@ Webカメラから顔のランドマークを推定し、アバター駆動へ�
 - **依存**: 独自重み、SD image variations、VAE等
 - **制約・未確認**: 出力は動画であり編集可能なLive2D・VRMモデルではない。二次元適性は未評価。
 - **編集者評価**: 画像ベースの配信アバターを試す研究候補。
-- **メトリクス**: ★3,926、fork 587、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
+- **メトリクス**: ★3,938、fork 588、作成 2025-11-25、最終push 2026-08-28T04:01:07Z、archived=False
 - **確認**: 2026-09-09 / コミット `abdd112e01dcf7d89122c2e5efa29fcff0669740`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/GVCLab/PersonaLive/tree/abdd112e01dcf7d89122c2e5efa29fcff0669740)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -297,7 +300,7 @@ three.jsでVRMアバターを読み込み表示するライブラリ。
 - **依存**: VRM素材、ブラウザWebGL
 - **制約・未確認**: アバター生成や顔追跡は含まない。VRM・three.jsの対応版を確認する。
 - **編集者評価**: WebのAIキャラクターUIへ既存VRMを組み込む基盤。
-- **メトリクス**: ★2,199、fork 191、作成 2019-06-04、最終push 2026-10-02T10:33:21Z、archived=False
+- **メトリクス**: ★2,202、fork 191、作成 2019-06-04、最終push 2026-10-02T10:33:21Z、archived=False
 - **確認**: 2026-09-09 / コミット `1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/pixiv/three-vrm/tree/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -332,7 +335,7 @@ Unity用のVRM形式実装。3Dアバターの読み込み・書き出しを扱�
 - **依存**: Unity、VRM素材
 - **制約・未確認**: VRM 0.x/1.0等の互換性は個別確認。モデル生成・自動リギング機能ではない。
 - **編集者評価**: 生成・制作した3DキャラをVTuberやゲームへ接続する基盤。
-- **メトリクス**: ★3,391、fork 490、作成 2018-04-16、最終push 2026-10-02T08:22:37Z、archived=False
+- **メトリクス**: ★3,392、fork 490、作成 2018-04-16、最終push 2026-10-06T04:17:59Z、archived=False
 - **確認**: 2026-09-09 / コミット `928b30e96439c1c11a49b172efb72eb96d2cad8b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/vrm-c/UniVRM/tree/928b30e96439c1c11a49b172efb72eb96d2cad8b)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -367,7 +370,7 @@ VTube Studioを外部から制御する公式API文書・開発資料。
 - **依存**: VTube Studio、Live2Dモデル
 - **制約・未確認**: アプリ本体のソース公開ではない。文書リポジトリとして掲載。
 - **編集者評価**: AI会話や演出制御を既存のLive2D配信へ接続する参考。
-- **メトリクス**: ★1,309、fork 145、作成 2019-11-11、最終push 2026-09-28T23:12:53Z、archived=False
+- **メトリクス**: ★1,310、fork 145、作成 2019-11-11、最終push 2026-09-28T23:12:53Z、archived=False
 - **確認**: 2026-09-09 / コミット `0f46ef44b487fa17c8120db572ebd925924b93a3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/DenchiSoft/VTubeStudio/tree/0f46ef44b487fa17c8120db572ebd925924b93a3)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -472,7 +475,7 @@ three.js上でVRM形式のスキニング付きガウシアンアバター(GVRM)
 - **依存**: three-vrm、GaussianSplats3D、Mixamoのアニメーション（任意）
 - **制約・未確認**: assets/ 配下のファイルはMIT対象外で研究用途のみ。制作パイプラインへの組み込み手順や性能の記載はREADMEにない。
 - **編集者評価**: SUI 2025 Demo Trackの公式実装で、サンプルアバターとスキャンデータが公開されている。SMPL等の制約ライセンスを使わない構成。
-- **メトリクス**: ★425、fork 29、作成 2025-10-08、最終push 2026-09-29T08:00:26Z、archived=False
+- **メトリクス**: ★425、fork 29、作成 2025-10-08、最終push 2026-10-06T10:28:36Z、archived=False
 - **確認**: 2026-10-01 / コミット `f6f552a24f7c2b7fb0d8c73f9c0b5581273b1e4c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/naruya/gaussian-vrm/tree/f6f552a24f7c2b7fb0d8c73f9c0b5581273b1e4c)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -507,7 +510,7 @@ Web向けアバター表現の選択肢として検討できる。
 - **依存**: Node.js/pnpm、外部LLMプロバイダ、cortico-world-vtuber（任意）
 - **制約・未確認**: READMEにpre-releaseと明記されている。VTuber向けWorldは本体と別ライセンス(AGPL-3.0+CLA)の別リポジトリで配布される。
 - **編集者評価**: Live2D(VTube Studio)・配信TTS・字幕・OBS連携を行うcortico-world-vtuberが別リポジトリで公開されており、AI VTuber構築の土台として具体性がある。
-- **メトリクス**: ★183、fork 15、作成 2026-09-13、最終push 2026-10-04T22:43:04Z、archived=False
+- **メトリクス**: ★186、fork 15、作成 2026-09-13、最終push 2026-10-06T04:05:05Z、archived=False
 - **確認**: 2026-10-01 / コミット `02f2936c89ac783675645f95cd87ff8c25305d46`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Pal-AI-Lab/Cortico/tree/02f2936c89ac783675645f95cd87ff8c25305d46)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -524,7 +527,7 @@ Web向けアバター表現の選択肢として検討できる。
 
 **入口候補（固定ツリーで存在確認）**: [bots/cormini/index.ts](https://github.com/Pal-AI-Lab/Cortico/blob/02f2936c89ac783675645f95cd87ff8c25305d46/bots/cormini/index.ts) / [bots/corti-soulmate/index.ts](https://github.com/Pal-AI-Lab/Cortico/blob/02f2936c89ac783675645f95cd87ff8c25305d46/bots/corti-soulmate/index.ts) / [bots/corti-soulmate/persona/index.ts](https://github.com/Pal-AI-Lab/Cortico/blob/02f2936c89ac783675645f95cd87ff8c25305d46/bots/corti-soulmate/persona/index.ts)
 
-**最新GitHub Release**: [v0.1.6](https://github.com/Pal-AI-Lab/Cortico/releases/tag/v0.1.6) / 2026-10-04T03:43:53Z / prerelease=False
+**最新GitHub Release**: [v0.1.7](https://github.com/Pal-AI-Lab/Cortico/releases/tag/v0.1.7) / 2026-10-06T04:05:05Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-10-01T17:10:50Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
 
@@ -577,7 +580,7 @@ Godotで作られたオープンソースの2D VTuberソフト。OpenSeeFaceとV
 - **依存**: Ayagami、OpenSeeFace、VTubeStudio（任意）
 - **制約・未確認**: VTSのプラグイン互換やVNetは対象外。AI対話や音声合成などは含まず、アバター表示に限定される。
 - **編集者評価**: VTube Studio互換のアセット運用を掲げ、Linuxネイティブ対応とピクセルアート向けのスケーリング調整を特徴とする。
-- **メトリクス**: ★281、fork 9、作成 2025-01-12、最終push 2026-09-25T02:18:59Z、archived=False
+- **メトリクス**: ★282、fork 9、作成 2025-01-12、最終push 2026-09-25T02:18:59Z、archived=False
 - **確認**: 2026-10-02 / コミット `89f2f0f4119a21c96a8b9e1222850b558ffcb62e`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/erodozer/open-vt/tree/89f2f0f4119a21c96a8b9e1222850b558ffcb62e)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -702,3 +705,108 @@ VRMアバターの量産や、エージェント主導の反復的なアバタ�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2025-12-09T08:30:52Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="characterstudio"></a>
+
+## CharacterStudio
+
+ブラウザ上でglTF/VRMアバターを組み立てるオープンソースの3Dアバター制作スタジオ。パーツのドラッグ＆ドロップ配置、色変更、VRM最適化、glb/VRM書き出しに対応。
+
+- **リポジトリ**: https://github.com/M3-org/CharacterStudio
+- **分類**: web_app / 非AI制作 / 活発・実用段階
+- **入力**: ローカルのVRM/3Dファイルとテクスチャ、アセットパック
+- **出力**: glb、VRM、スクリーンショット
+- **環境**: Node.js/npm。アセットはloot-assetsの取り込みが必要。Three.js/WebGL/Reactベース。
+- **依存**: loot-assets等のアセットパック、Node.js、Three.js
+- **制約・未確認**: READMEはプログラムとアセットパックを分離しており、独自モデルの追加はドキュメント参照。最適化や描画品質の定量評価は記載なし。
+- **編集者評価**: ノーコードでVRMアバターを編集・最適化・書き出しできるため、VTuberや3Dキャラ制作の下地づくりに使いやすい。AI生成機能は含まない編集ツール。
+- **メトリクス**: ★351、fork 96、作成 2023-09-29、最終push 2026-08-11T22:22:48Z、archived=False
+- **確認**: 2026-10-06 / コミット `293182bf4a6087f4a4a7fd00e4fbdfb590029da7`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/M3-org/CharacterStudio/tree/293182bf4a6087f4a4a7fd00e4fbdfb590029da7)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/M3-org/CharacterStudio/blob/293182bf4a6087f4a4a7fd00e4fbdfb590029da7/README.md) / [GitHub API](https://api.github.com/repos/M3-org/CharacterStudio) / [固定ツリー](https://github.com/M3-org/CharacterStudio/tree/293182bf4a6087f4a4a7fd00e4fbdfb590029da7)
+
+### 制作に使う際の検討
+
+アバターの組み立て・最適化・一括書き出し工程の候補。
+
+**次に確かめること（実施前）**: 手持ちVRMを読み込み、テクスチャアトラス化とVRM再書き出しが期待通りか試す。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [docs/src/components/HomepageFeatures/index.js](https://github.com/M3-org/CharacterStudio/blob/293182bf4a6087f4a4a7fd00e4fbdfb590029da7/docs/src/components/HomepageFeatures/index.js) / [docs/src/pages/index.js](https://github.com/M3-org/CharacterStudio/blob/293182bf4a6087f4a4a7fd00e4fbdfb590029da7/docs/src/pages/index.js)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-05-08T19:43:29Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="ndmf-vrm-exporter"></a>
+
+## ndmf-vrm-exporter
+
+NDMFベースでVRChatアバターをVRM 1.0として書き出すUnityプラグイン。PhysBone→SpringBone、Constraint→VRM Constraint、lilToon→MToon互換設定の自動変換に対応。
+
+- **リポジトリ**: https://github.com/hkrn/ndmf-vrm-exporter
+- **分類**: integration / 非AI制作 / 活発・実用段階
+- **入力**: Unity上のVRChatアバター（Modular Avatar/lilToon構成）
+- **出力**: VRM 1.0ファイル
+- **環境**: Unity環境、NDMF、Modular Avatar。lilToon併用を想定し、Avatar Optimizer併用を強く推奨。
+- **依存**: NDMF、Modular Avatar、lilToon、Avatar Optimizer
+- **制約・未確認**: READMEはModular Avatar/lilToon前提の設計と、VRChatアバターのブレンドシェイプ過多がVRM変換時の負荷になりやすい点を挙げている。ライセンスはMPL-2.0。
+- **編集者評価**: VRChat用に作ったアバターをVRMへ流用したい制作で有用。コンポーネントを付けるだけで出力でき、0.xより互換性の高いVRM 1.0形式で書き出せる。
+- **メトリクス**: ★78、fork 4、作成 2025-01-23、最終push 2026-09-29T14:30:19Z、archived=False
+- **確認**: 2026-10-06 / コミット `a776be244cd7066bd1c51a28286e1334738a361c`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/hkrn/ndmf-vrm-exporter/tree/a776be244cd7066bd1c51a28286e1334738a361c)。GitHub自動判定=MPL-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/hkrn/ndmf-vrm-exporter/blob/a776be244cd7066bd1c51a28286e1334738a361c/README.md) / [GitHub API](https://api.github.com/repos/hkrn/ndmf-vrm-exporter) / [固定ツリー](https://github.com/hkrn/ndmf-vrm-exporter/tree/a776be244cd7066bd1c51a28286e1334738a361c)
+
+### 制作に使う際の検討
+
+アバターのフォーマット変換・再利用工程の候補。
+
+**次に確かめること（実施前）**: 代表アバターをVRM1.0で出力し、SpringBone/Constraint変換の再現性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/hkrn/ndmf-vrm-exporter/blob/a776be244cd7066bd1c51a28286e1334738a361c/README.md)
+
+**最新GitHub Release**: [1.4.0](https://github.com/hkrn/ndmf-vrm-exporter/releases/tag/1.4.0) / 2026-07-12T08:24:57Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-09-29T14:30:18Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="app"></a>
+
+## app
+
+macOSでVRMアバターを仮想カメラとして表示するアプリ。ZoomやGoogle Meetなどでアバターを映像として映せる。
+
+- **リポジトリ**: https://github.com/vcamapp/app
+- **分類**: desktop_tool / 非AI制作 / 活発・実用段階
+- **入力**: VRMアバター
+- **出力**: 仮想カメラ映像
+- **環境**: macOS 15以上（26以上推奨）、Apple Silicon最適化。Intel Macも可。
+- **依存**: macOS環境（CoreMedia I/O）
+- **制約・未確認**: READMEはWindows等の他プラットフォーム非対応と明記。ソースはMITだが利用条件は公式サイト参照と記載。
+- **編集者評価**: mac環境でアバターを会議・配信に載せる用途が具体的。AI機能は含まない。
+- **メトリクス**: ★277、fork 20、作成 2022-02-08、最終push 2026-10-04T17:39:22Z、archived=False
+- **確認**: 2026-10-06 / コミット `aa6f24e864ec713270425efab8182a60dbbd8b52`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/vcamapp/app/tree/aa6f24e864ec713270425efab8182a60dbbd8b52)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/vcamapp/app/blob/aa6f24e864ec713270425efab8182a60dbbd8b52/README.md) / [GitHub API](https://api.github.com/repos/vcamapp/app) / [固定ツリー](https://github.com/vcamapp/app/tree/aa6f24e864ec713270425efab8182a60dbbd8b52)
+
+### 制作に使う際の検討
+
+VTuber配信・収録の映像入力工程の候補。
+
+**次に確かめること（実施前）**: VRMを読み込み、仮想カメラ出力の解像度・遅延・安定性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/vcamapp/app/blob/aa6f24e864ec713270425efab8182a60dbbd8b52/README.md)
+
+**最新GitHub Release**: [0.15.5](https://github.com/vcamapp/app/releases/tag/0.15.5) / 2026-09-16T11:19:32Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-10-04T17:39:20Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

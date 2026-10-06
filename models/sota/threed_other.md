@@ -11,7 +11,7 @@
 - **最良**: [layerdifforg/seethroughv0.0.2_layerdiff3d](https://huggingface.co/layerdifforg/seethroughv0.0.2_layerdiff3d/tree/4477e6ce529bc6a141732e1a55a4932176db3b89)（revision `4477e6ce` / 作成 2026-03-09 / 更新 2026-09-28）
 - **利用条件**: openrail++。メタデータは openrail++。カード本文: 自作部分はApache-2.0、ただしAnimagine XL 4.0/SDXL(CreativeML Open RAIL++-M)・LayerDiffuse(Open RAIL-M)・SDXL-VAE-FP16-Fix(MIT)のライセンスを継承し、Open RAILの使用制限(para.5・Attachment A)が全利用に及ぶ。『商用利用は許可』とカードは書くが、配布・サービス提供時は制限条項の転記義務あり。論文本文は CC BY-NC-SA 4.0 表記(arXiv HTML)。学習データは商用Live2Dモデルのレイヤから生成したと論文が記述しており、データ権利の扱いは未確認。コード(GitHub)はApache-2.0。
 - **選定根拠**: 【事実】アニメ専用・単一画像→最大23意味レイヤ(補完済み)+描画順→PSD。SIGGRAPH 2026論文。自己報告(論文・自作2.5Dテストセット): Ours Full LPIPS 0.1549/PSNR 18.30/SSIM 0.923/Mask Dice 0.3855/FID 18.37、ベースラインSAM+LaMa LPIPS 0.2880/PSNR 12.28/FID 81.14。Qwen-Image-Layeredとは定性比較のみで数値比較なし。採用指標: HF 30日DL 19,507/累計88,354/likes 27/spaces 17、GitHub ★4,189(Apache-2.0)、コード参照92件、Xで2026-03〜09に2,638/2,213/1,088/831 likes級の実使用報告(ComfyUI・WebUI・PSD→Live2D/2.5Dリグ連携)。【評価】アニメ向けレイヤ分解ではOSSの事実上の標準で対抗馬なし。【疑い】Live2Dリグまでは自動化されない(公式が明言)、学習データが商用Live2Dモデル由来でデータ権利は不明、ライセンスはOpenRAIL制限継承。
-- **指標（確認日時点）**: DL累計 92,391 / 直近30日 20,338 / likes 27 / Spaces 17
+- **指標（確認日時点）**: DL累計 93,253 / 直近30日 20,263 / likes 28 / Spaces 17
 - **概要**: アニメ・イラスト1枚を、髪・顔・目・服などの意味パーツ(最大23レイヤ)に分解し、隠れ部分を補完した透過レイヤと描画順を出力する See-through パイプラインの LayerDiff 3D(SDXL系、Animagine XL 4.0派生)。深度モデル(Marigold派生)と併用して PSD を出力する。
 - **入力**: アニメ調キャラクター1枚絵(GitHub READMEの例は1280解像度)
 - **出力**: 意味パーツ別の補完済み透過レイヤ、擬似深度による描画順、レイヤ付きPSD(パイプライン全体の出力。GitHub README記載)
@@ -24,13 +24,13 @@
 
 関連リポジトリ:
 
-- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装・学習スクリプト・PSD出力パイプライン（★4,376 / Apache-2.0 / 最終push 2026-10-05 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
+- [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) — 公式実装・学習スクリプト・PSD出力パイプライン（★4,399 / Apache-2.0 / 最終push 2026-10-05 / 確認コミット [`a25a5498`](https://github.com/shitagaki-lab/see-through/blob/a25a5498e031dc7fe01232d05dadaf67736277fb/README.md) / 制作カタログ: [see-through](../../categories/layer.md#see-through)）
   - ★4,189、Apache-2.0、最終push 2026-09-24。SIGGRAPH 2026論文の公式実装で、学習コード/データパイプラインは2026-04-14公開(READMEのChangelog)。リリースタグなし。
-- [jtydhr88/ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) — ComfyUIノード(PSD出力、ネイティブレイヤエディタ対応)（★820 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`98d754bf`](https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md) / 制作カタログ: [comfyui-see-through](../../categories/layer.md#comfyui-see-through)）
+- [jtydhr88/ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) — ComfyUIノード(PSD出力、ネイティブレイヤエディタ対応)（★824 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`98d754bf`](https://github.com/jtydhr88/ComfyUI-See-through/blob/98d754bf04f668647919ab750eccb0e0640faa81/README.md) / 制作カタログ: [comfyui-see-through](../../categories/layer.md#comfyui-see-through)）
   - ★814、最終push 2026-08-20。公式READMEが推奨派生として掲載、Xでも753/355 likesの告知。ライセンス未設定(GitHub上null)のため再利用条件は要確認。
-- [MangoLion/stretchystudio](https://github.com/MangoLion/stretchystudio) — See-through PSDを自動リグするブラウザ2Dパペット工具（★498 / MIT / 最終push 2026-04-28 / 確認コミット [`24a83a27`](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md) / 制作カタログ: [stretchystudio](../../categories/rig2d.md#stretchystudio)）
+- [MangoLion/stretchystudio](https://github.com/MangoLion/stretchystudio) — See-through PSDを自動リグするブラウザ2Dパペット工具（★501 / MIT / 最終push 2026-04-28 / 確認コミット [`24a83a27`](https://github.com/MangoLion/stretchystudio/blob/24a83a27ba43e43e9d2e3de5e33994594e6199c2/README.md) / 制作カタログ: [stretchystudio](../../categories/rig2d.md#stretchystudio)）
   - ★494、MIT、最終push 2026-04-28。公式READMEが『PSD出力をドロップするだけで動く』派生として掲載。
-- [852wa/Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) — レイヤPSD→2.5D VTuber風アバター(瞬き・リップシンク・髪物理)のブラウザ工具（★235 / MIT / 最終push 2026-09-23 / 確認コミット [`7ddbd994`](https://github.com/852wa/Anime2.5DRig/blob/7ddbd9943ea3152561b3dc8348fd752c850f3e95/README.md) / 制作カタログ: [anime2.5drig](../../categories/rig2d.md#anime2.5drig)）
+- [852wa/Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) — レイヤPSD→2.5D VTuber風アバター(瞬き・リップシンク・髪物理)のブラウザ工具（★237 / MIT / 最終push 2026-09-23 / 確認コミット [`7ddbd994`](https://github.com/852wa/Anime2.5DRig/blob/7ddbd9943ea3152561b3dc8348fd752c850f3e95/README.md) / 制作カタログ: [anime2.5drig](../../categories/rig2d.md#anime2.5drig)）
   - ★231、MIT、最終push 2026-09-23。公式READMEが派生として掲載(レイヤ命名がSee-through準拠)。
 
 ### 画像から3D(アニメキャラ単体のメッシュ生成)
@@ -57,9 +57,9 @@
   - ★395、Apache-2.0、最終push 2026-04-17。CVPR 2025公式。リリースタグなし。
 - [zjp-shadow/CharacterGen](https://github.com/zjp-shadow/CharacterGen) — 前世代のアニメキャラ3D生成(VRMレンダリングスクリプト同梱)（★834 / Apache-2.0 / 最終push 2025-04-11 / 確認コミット [`f329a835`](https://github.com/zjp-shadow/CharacterGen/blob/f329a835dbd5003060a5653eafd83d4d8868b043/README.md)）
   - ★835、Apache-2.0、最終push 2025-04-11。Blender/three-vrm用VRMレンダリングスクリプトを公開(READMEのAnime3Dデータ準備手順)。更新は停滞。
-- [VAST-AI-Research/AniGen](https://github.com/VAST-AI-Research/AniGen) — リグ付き3Dアセットを1枚から生成(汎用)（★514 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`c49db3d6`](https://github.com/VAST-AI-Research/AniGen/blob/c49db3d6b466537a02ccf2286688903d77af7e4f/README.md) / 制作カタログ: [anigen](../../categories/3d.md#anigen)）
+- [VAST-AI-Research/AniGen](https://github.com/VAST-AI-Research/AniGen) — リグ付き3Dアセットを1枚から生成(汎用)（★515 / NOASSERTION / 最終push 2026-07-15 / 確認コミット [`c49db3d6`](https://github.com/VAST-AI-Research/AniGen/blob/c49db3d6b466537a02ccf2286688903d77af7e4f/README.md) / 制作カタログ: [anigen](../../categories/3d.md#anigen)）
   - ★506、最終push 2026-07-15。SIGGRAPH 2026。汎用でありアニメ専用ではない。GitHubライセンスはNOASSERTION、HF側はMIT表記で不一致。
-- [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) — 汎用image-to-3d(実務の比較基準)（★11,475 / MIT / 最終push 2026-07-10 / 確認コミット [`75fbf018`](https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md) / 制作カタログ: [trellis.2](../../categories/3d.md#trellis.2)）
+- [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) — 汎用image-to-3d(実務の比較基準)（★11,483 / MIT / 最終push 2026-07-10 / 確認コミット [`75fbf018`](https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md) / 制作カタログ: [trellis.2](../../categories/3d.md#trellis.2)）
   - ★11,411、MIT、最終push 2026-07-10。アニメ専用ではないが日本語圏の実例が多い。
 
 ### アニメ3Dキャラの自動リギング(骨格・スキニング)
@@ -81,11 +81,11 @@
 
 関連リポジトリ:
 
-- [VAST-AI-Research/SkinTokens](https://github.com/VAST-AI-Research/SkinTokens) — 骨格+スキニング統合リギングの公式実装（★454 / MIT / 最終push 2026-05-12 / 確認コミット [`273b691d`](https://github.com/VAST-AI-Research/SkinTokens/blob/273b691d35989d71cd17ff2895fdc735097b92d1/README.md) / 制作カタログ: [skintokens](../../categories/3d.md#skintokens)）
+- [VAST-AI-Research/SkinTokens](https://github.com/VAST-AI-Research/SkinTokens) — 骨格+スキニング統合リギングの公式実装（★458 / MIT / 最終push 2026-05-12 / 確認コミット [`273b691d`](https://github.com/VAST-AI-Research/SkinTokens/blob/273b691d35989d71cd17ff2895fdc735097b92d1/README.md) / 制作カタログ: [skintokens](../../categories/3d.md#skintokens)）
   - ★440、MIT、最終push 2026-05-12。UniRigの後継と明記。
-- [VAST-AI-Research/UniRig](https://github.com/VAST-AI-Research/UniRig) — 先行する自動リギング(.vrm入出力とBlender VRMアドオン改造版を同梱)（★1,793 / MIT / 最終push 2026-06-04 / 確認コミット [`6793c664`](https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/README.md) / 制作カタログ: [unirig](../../categories/3d.md#unirig)）
+- [VAST-AI-Research/UniRig](https://github.com/VAST-AI-Research/UniRig) — 先行する自動リギング(.vrm入出力とBlender VRMアドオン改造版を同梱)（★1,798 / MIT / 最終push 2026-06-04 / 確認コミット [`6793c664`](https://github.com/VAST-AI-Research/UniRig/blob/6793c6640ff01c8fb389f3993434124bb43d2933/README.md) / 制作カタログ: [unirig](../../categories/3d.md#unirig)）
   - ★1,781、MIT、最終push 2026-06-04。READMEが後継SkinTokensを告知。
-- [jasongzy/Make-It-Animatable](https://github.com/jasongzy/Make-It-Animatable) — ヒューマノイド向けの高速リギング(Mixamo互換)（★459 / MIT / 最終push 2026-09-08 / 確認コミット [`8fb51382`](https://github.com/jasongzy/Make-It-Animatable/blob/8fb51382ff6da556cdb95cc03a48200603f3a493/README.md)）
+- [jasongzy/Make-It-Animatable](https://github.com/jasongzy/Make-It-Animatable) — ヒューマノイド向けの高速リギング(Mixamo互換)（★460 / MIT / 最終push 2026-09-08 / 確認コミット [`8fb51382`](https://github.com/jasongzy/Make-It-Animatable/blob/8fb51382ff6da556cdb95cc03a48200603f3a493/README.md)）
   - ★458、MIT、最終push 2026-09-08。CVPR 2025 Highlight。
 - [saturday06/VRM-Addon-for-Blender](https://github.com/saturday06/VRM-Addon-for-Blender) — リグ結果をVRMへ変換・書き出しするBlenderアドオン（★1,721 / MIT / 最終push 2026-10-05 / release v4.7.2 (2026-09-23) / 確認コミット [`6502ad98`](https://github.com/saturday06/VRM-Addon-for-Blender/blob/6502ad9852816ec2a391ed321a4932d45711c105/README.md)）
   - ★1,716、MIT、最終push 2026-09-30、最新リリース v4.7.2(2026-09-23)。UniRig/CharacterGen/StdGENの手順が依拠するVRM入出力。
@@ -97,7 +97,7 @@
 - **最良**: [nvidia/Kimodo-SOMA-RP-v1.1](https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1/tree/6c9233af1180b8151e3c4703477104af5dce9dd5)（revision `6c9233af` / 作成 2026-04-07 / 更新 2026-04-10）
 - **利用条件**: other/nvidia-open-model-license。メタデータは other/nvidia-open-model-license。カードは『商用利用可(ready for commercial use)』と記述するが、NVIDIA Open Model License の条項は別途確認が必要(商用可と断定しない)。SMPLX版は別の研究用ライセンス。
 - **選定根拠**: 【事実】アニメ専用のtext-to-motionモデルはHF・GitHubで未確認。HFでtext-to-3dに分類されるモーションモデルは tencent/HY-Motion-1.0(likes 441、累計DL 4,683)。実務での採用はNVIDIA Kimodoが上: nvidia/Kimodo-SOMA-RP-v1.1 は累計DL 20,316/30日4,857/likes 67、GitHub ★3,667(Apache-2.0、最終push 2026-09-22)、派生(kimodo.cpp ★883、ComfyUI/Blender/Unity橋渡し、MMD用VMD版、Text-To-VRMA ★183)が2026-07〜09に日本語圏Xで多数(1,944/1,094/671 likes)。HY-Motionは Tencent Hunyuan Community License で EU・英国・韓国が対象外(LICENSE.txt)なのに対し、Kimodoは『商用利用可』とカードに記載。ベンチマーク: Kimodoは公開ベンチマーク(BONES-SEED)を同梱、HY-Motionは自社比較図のみ(いずれも自己報告)。【評価】Kimodo採用。アニメ専用でなく人体モーションで、VRM/MMDへはリターゲット必要。音楽→ダンス専用の有力OSSは未確認(HF上はedge-dance-generation/EDGEがDL 0、GitHubのOdoriVRMは★0)。
-- **指標（確認日時点）**: DL累計 21,701 / 直近30日 5,389 / likes 71 / Spaces 11
+- **指標（確認日時点）**: DL累計 22,033 / 直近30日 5,583 / likes 71 / Spaces 11
 - **概要**: テキストと運動制約(全身ポーズ・2Dルート・エンドエフェクタ)から3D人体スケルトンアニメーションを生成するモーション拡散モデル。SOMAスケルトン、Bones Rigplay 1(700時間の光学モーキャプ)で学習。
 - **入力**: テキストプロンプト(英語)、任意でキーフレーム/ルート/手足の制約
 - **出力**: SOMAスケルトンの関節回転・ルート並進(VRM・MMD・Mixamo等へは別途リターゲットが必要)
@@ -109,13 +109,13 @@
 
 関連リポジトリ:
 
-- [nv-tlabs/kimodo](https://github.com/nv-tlabs/kimodo) — Kimodo公式実装(CLI・対話デモ・ベンチマーク)（★3,721 / Apache-2.0 / 最終push 2026-09-22 / 確認コミット [`58e78189`](https://github.com/nv-tlabs/kimodo/blob/58e781898b3d7e328a676a75d3e338c45dce3ad9/README.md)）
+- [nv-tlabs/kimodo](https://github.com/nv-tlabs/kimodo) — Kimodo公式実装(CLI・対話デモ・ベンチマーク)（★3,724 / Apache-2.0 / 最終push 2026-09-22 / 確認コミット [`58e78189`](https://github.com/nv-tlabs/kimodo/blob/58e781898b3d7e328a676a75d3e338c45dce3ad9/README.md)）
   - ★3,667、Apache-2.0、最終push 2026-09-22。ARDY公開(2026-07-10)もREADMEに記載。
-- [Kirakun0328/text-to-vrma](https://github.com/Kirakun0328/text-to-vrma) — テキスト→VRMA(VRMアニメーション)生成ツール(VRM特化)（★189 / MIT / 最終push 2026-09-05 / release v1.1.8 (2026-09-05) / 確認コミット [`b8081875`](https://github.com/Kirakun0328/text-to-vrma/blob/b8081875916c8621c7ec226b4adcb2c70e7b13b7/README.md)）
+- [Kirakun0328/text-to-vrma](https://github.com/Kirakun0328/text-to-vrma) — テキスト→VRMA(VRMアニメーション)生成ツール(VRM特化)（★190 / MIT / 最終push 2026-09-05 / release v1.1.8 (2026-09-05) / 確認コミット [`b8081875`](https://github.com/Kirakun0328/text-to-vrma/blob/b8081875916c8621c7ec226b4adcb2c70e7b13b7/README.md)）
   - ★183、MIT、最終push 2026-09-05、最新 v1.1.8。ARDY/OpenAI/Claudeエンジン対応、ローカルHTTP API。X告知 671 likes(2026-07-16)。
 - [localai-org/kimodo.cpp](https://github.com/localai-org/kimodo.cpp) — Kimodoを C++/GGML 化(CPU/Vulkan、PyTorch・CUDA不要)（★897 / Apache-2.0 / 最終push 2026-09-17 / 確認コミット [`5679ff19`](https://github.com/localai-org/kimodo.cpp/blob/5679ff19ba0a522c0b0516e9a9d402fe1af2c027/README.md)）
   - ★883、Apache-2.0、最終push 2026-09-17。X告知 1,944 likes。
-- [jtydhr88/ComfyUI-HY-Motion1](https://github.com/jtydhr88/ComfyUI-HY-Motion1) — HY-Motion 1.0 の ComfyUIノード（★311 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`60843a4d`](https://github.com/jtydhr88/ComfyUI-HY-Motion1/blob/60843a4d631efa3989b5c512ae547f996c30dcc3/README.md)）
+- [jtydhr88/ComfyUI-HY-Motion1](https://github.com/jtydhr88/ComfyUI-HY-Motion1) — HY-Motion 1.0 の ComfyUIノード（★310 / ライセンス未表示 / 最終push 2026-08-20 / 確認コミット [`60843a4d`](https://github.com/jtydhr88/ComfyUI-HY-Motion1/blob/60843a4d631efa3989b5c512ae547f996c30dcc3/README.md)）
   - ★313、最終push 2026-08-20、ライセンス未設定。HY-Motionを使う場合の実用経路(ライセンス制限は本体に従う)。
 
 ### アニメゲーム/ワールドモデル(次状態予測による対話的アニメ生成)
@@ -125,7 +125,7 @@
 - **最良**: [TencentARC/AnimeGamer](https://huggingface.co/TencentARC/AnimeGamer/tree/a9a2384ac0aae03d32df2b1c6ce6e9c3291baa26)（revision `a9a2384a` / 作成 2025-03-30 / 更新 2025-04-10）
 - **利用条件**: other/animegamer-lisence。メタデータは other/animegamer-lisence。ライセンス条項0に『EUでの利用は想定しない(NOT INTENDED FOR USE WITHIN THE EUROPEAN UNION)』とあり領土制限つき。学習データは商業アニメ映画由来で著作権の扱いは明記なし。商用可とは断定しない。
 - **選定根拠**: 【事実】アニメ世界を対象にした公開重みのゲーム/ワールドモデルは TencentARC/AnimeGamer が唯一(HF検索 anime game/world model/interactive anime で他に該当なし)。累計DL 295/30日27/likes 46/spaces 0、GitHub ★350(ライセンスNOASSERTION)、論文はHF papers upvotes 70。公開重みは『魔女の宅急便』『崖の上のポニョ』個別版のみで、混合版・学習コードは未公開。ジブリ作品IP前提のためオリジナルキャラの制作には転用不可。【評価】比較対象がないため暫定選定。実用採用の証拠は乏しく(Xでも実使用報告は未確認)、アニメ制作の開発基盤としては研究参考に留まる。
-- **指標（確認日時点）**: DL累計 298 / 直近30日 23 / likes 46 / Spaces 0
+- **指標（確認日時点）**: DL累計 298 / 直近30日 18 / likes 46 / Spaces 0
 - **概要**: マルチモーダルLLMが『次のゲーム状態(アニメ調の動画クリップ+体力・社交・娯楽などのキャラ状態)』を予測し、拡散デコーダで動画化する、アニメ世界のライフシミュレーション(ICCV 2025)。
 - **入力**: 自然言語の行動指示、キャラ/シーンの参照、履歴(過去のゲーム状態表現)
 - **出力**: 動画クリップ(アニメーションショット)とキャラクターステータスの更新
@@ -146,7 +146,7 @@
 - **最良**: [nerijs/pixel-art-xl](https://huggingface.co/nerijs/pixel-art-xl/tree/8bf4a4d9ea283e00a51fafda8e0539f8248ea037)（revision `8bf4a4d9` / 作成 2023-08-03 / 更新 2023-11-09）
 - **利用条件**: creativeml-openrail-m。メタデータは creativeml-openrail-m(SDXL baseのOpenRAIL系)。使用制限条項は適用される。商用可とは断定しない。
 - **選定根拠**: 【事実】アニメ専用のスプライト/ピクセルアート生成モデルは見つからず(HF検索 sprite・pixel art・tachie・character sheet・visual novel 等。歩行スプライトLoRAは汎用ゲーム向け)。汎用では nerijs/pixel-art-xl が累計DL 945,353/30日32,460/likes 656/spaces 100/討議23件で突出し、tarn59のZ-Image-Turbo版(累計935,604/30日11,118/likes 56)が並ぶ。【評価】利用実績で nerijs を選ぶが、2023-11から更新がなく『老舗の事実上標準』であって最新品質の裏付けはない。ベンチ比較は見つからず、ピクセルアートはアニメ固有でもないため confidence=low。立ち絵の表情差分(瞬き・口形)はレイヤ分解+PachiPakuGen系の別経路が現実的。
-- **指標（確認日時点）**: DL累計 950,089 / 直近30日 34,594 / likes 656 / Spaces 100
+- **指標（確認日時点）**: DL累計 950,713 / 直近30日 34,785 / likes 656 / Spaces 100
 - **概要**: SDXL用のピクセルアート LoRA(1ファイル)。8倍縮小+最近傍補間でピクセル整列画像を得る運用。トリガーワード不要、LCM LoRA併用で8ステップ生成も可。
 - **入力**: テキストプロンプト(SDXL系パイプライン、固定VAE推奨)
 - **出力**: ピクセルアート調の画像(ドット整列には8倍縮小が必要)
@@ -164,7 +164,7 @@
 
 関連リポジトリ:
 
-- [yuyuyzl/EasyVtuber](https://github.com/yuyuyzl/EasyVtuber) — Talking-head-anime-3 を使ったVTuber配信ツール(Vtube Studio相当)（★3,073 / MIT / 最終push 2026-02-12 / 確認コミット [`f7dd2de4`](https://github.com/yuyuyzl/EasyVtuber/blob/f7dd2de4df93c878b0171f47346ff66414a863e6/README.md)）
+- [yuyuyzl/EasyVtuber](https://github.com/yuyuyzl/EasyVtuber) — Talking-head-anime-3 を使ったVTuber配信ツール(Vtube Studio相当)（★3,074 / MIT / 最終push 2026-02-12 / 確認コミット [`f7dd2de4`](https://github.com/yuyuyzl/EasyVtuber/blob/f7dd2de4df93c878b0171f47346ff66414a863e6/README.md)）
   - ★3,071、MIT、最終push 2026-02-12。THA3の実用フロントエンドとして最大。
 - [pkhungurn/talking-head-anime-4-demo](https://github.com/pkhungurn/talking-head-anime-4-demo) — 1枚絵から表情・頭部を駆動する研究実装(THA4)（★355 / MIT / 最終push 2024-03-01 / 確認コミット [`32064011`](https://github.com/pkhungurn/talking-head-anime-4-demo/blob/320640116abd604de22d7b56faec85b4d95770e0/README.md)）
   - ★355、MIT、最終push 2024-03-01。更新停止。重みはGitHub側手順で取得(HF公式なし)。
@@ -181,11 +181,11 @@
 
 関連リポジトリ:
 
-- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★50,066 / MIT / 最終push 2026-10-05 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
+- [moeru-ai/airi](https://github.com/moeru-ai/airi) — 自己ホスト型AIコンパニオン/VTuber基盤(VRM・Live2D・音声・Minecraft)（★50,101 / MIT / 最終push 2026-10-06 / release v0.12.0-beta.5 (2026-08-29) / 確認コミット [`da2bcbd4`](https://github.com/moeru-ai/airi/blob/da2bcbd46f56c1c6ecb40d44fb60694e6599f11b/README.md) / 制作カタログ: [airi](../../categories/vtuber.md#airi)）
   - ★49,887、MIT、最終push 2026-09-30、最新 v0.12.0-beta.5(2026-08-29)。規模・更新とも首位。
-- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの定番ローカルVTuber(割り込み・ハンズフリー)（★13,991 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../../categories/vtuber.md#open-llm-vtuber)）
+- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — 音声対話+Live2Dの定番ローカルVTuber(割り込み・ハンズフリー)（★13,994 / NOASSERTION / 最終push 2026-05-15 / release v1.2.1 (2025-08-26) / 確認コミット [`992309c0`](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/992309c0aa19845960228f880013d4685fde93b5/README.md) / 制作カタログ: [open-llm-vtuber](../../categories/vtuber.md#open-llm-vtuber)）
   - ★13,961、最終push 2026-05-15、最新 v1.2.1(2025-08-26)。GitHubライセンスはNOASSERTION(READMEはMITと別の第三者ライセンスを併記、Live2Dサンプルは別条件)。更新は鈍化。
-- [tegnike/aituber-kit](https://github.com/tegnike/aituber-kit) — 日本語圏で使われるAITuber向けWebアプリ(VRM/Live2D・多数のLLM/TTS)（★1,117 / NOASSERTION / 最終push 2026-10-04 / release v2.79.0 (2026-10-04) / 確認コミット [`c7ea2b65`](https://github.com/tegnike/aituber-kit/blob/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/README.md)）
+- [tegnike/aituber-kit](https://github.com/tegnike/aituber-kit) — 日本語圏で使われるAITuber向けWebアプリ(VRM/Live2D・多数のLLM/TTS)（★1,118 / NOASSERTION / 最終push 2026-10-04 / release v2.79.0 (2026-10-04) / 確認コミット [`c7ea2b65`](https://github.com/tegnike/aituber-kit/blob/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/README.md)）
   - ★1,114、最終push 2026-09-30、v2.78.1(2026-09-13)。ライセンスNOASSERTION(要確認)。
 
 ### VRM/MMD/3Dアバター基盤ツール(ビューア・DCC連携・ゲームエンジン)
@@ -196,13 +196,13 @@
 
 関連リポジトリ:
 
-- [pixiv/three-vrm](https://github.com/pixiv/three-vrm) — Three.js用VRMローダ・ビューア(Web/ComfyUI/AITuber系の標準)（★2,199 / MIT / 最終push 2026-10-02 / release v3.5.5 (2026-07-09) / 確認コミット [`1b4fc0cc`](https://github.com/pixiv/three-vrm/blob/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7/README.md) / 制作カタログ: [three-vrm](../../categories/vtuber.md#three-vrm)）
+- [pixiv/three-vrm](https://github.com/pixiv/three-vrm) — Three.js用VRMローダ・ビューア(Web/ComfyUI/AITuber系の標準)（★2,202 / MIT / 最終push 2026-10-02 / release v3.5.5 (2026-07-09) / 確認コミット [`1b4fc0cc`](https://github.com/pixiv/three-vrm/blob/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7/README.md) / 制作カタログ: [three-vrm](../../categories/vtuber.md#three-vrm)）
   - ★2,192、MIT、最終push 2026-09-30、最新 v3.5.5(2026-07-09)。CharacterGenのVRMレンダリング手順も使用。
-- [vrm-c/UniVRM](https://github.com/vrm-c/UniVRM) — Unity用VRMインポート/エクスポート(VRM仕様の参照実装)（★3,391 / MIT / 最終push 2026-10-02 / release v0.131.3 (2026-10-02) / 確認コミット [`9750dadc`](https://github.com/vrm-c/UniVRM/blob/9750dadc592f421c356bf0376c73e61abbe323e3/README.md) / 制作カタログ: [univrm](../../categories/vtuber.md#univrm)）
+- [vrm-c/UniVRM](https://github.com/vrm-c/UniVRM) — Unity用VRMインポート/エクスポート(VRM仕様の参照実装)（★3,392 / MIT / 最終push 2026-10-06 / release v0.131.3 (2026-10-02) / 確認コミット [`9750dadc`](https://github.com/vrm-c/UniVRM/blob/9750dadc592f421c356bf0376c73e61abbe323e3/README.md) / 制作カタログ: [univrm](../../categories/vtuber.md#univrm)）
   - ★3,392、MIT、最終push 2026-09-25、最新 v0.131.2(2026-07-24)。
 - [saturday06/VRM-Addon-for-Blender](https://github.com/saturday06/VRM-Addon-for-Blender) — BlenderのVRM入出力(リギング/レンダリング系論文の手順が依拠)（★1,721 / MIT / 最終push 2026-10-05 / release v4.7.2 (2026-09-23) / 確認コミット [`6502ad98`](https://github.com/saturday06/VRM-Addon-for-Blender/blob/6502ad9852816ec2a391ed321a4932d45711c105/README.md)）
   - ★1,716、MIT、最終push 2026-09-30、最新 v4.7.2(2026-09-23)。Blender 2.93〜5.2対応。
-- [ruyo/VRM4U](https://github.com/ruyo/VRM4U) — Unreal Engine 5用VRMランタイムローダ（★1,989 / NOASSERTION / 最終push 2026-09-23 / release v1.2026.09.12 (2026-09-11) / 確認コミット [`615e6323`](https://github.com/ruyo/VRM4U/blob/615e6323d445961b7b0628807fbfd1db3acd2450/README.md)）
+- [ruyo/VRM4U](https://github.com/ruyo/VRM4U) — Unreal Engine 5用VRMランタイムローダ（★1,991 / NOASSERTION / 最終push 2026-09-23 / release v1.2026.09.12 (2026-09-11) / 確認コミット [`615e6323`](https://github.com/ruyo/VRM4U/blob/615e6323d445961b7b0628807fbfd1db3acd2450/README.md)）
   - ★1,989、最終push 2026-09-23、最新 v1.2026.09.12。GitHubライセンスNOASSERTION(要確認)。
 
 ### モーションキャプチャ・リターゲット(VRM/MMD/Mixamo)
@@ -215,7 +215,7 @@
 
 - [xianfei/SysMocap](https://github.com/xianfei/SysMocap) — リアルタイムモーキャプ→3Dキャラ(VRM/MMD等)（★3,223 / MPL-2.0 / 最終push 2026-06-10 / release v0.8.0 (2026-06-10) / 確認コミット [`1472b082`](https://github.com/xianfei/SysMocap/blob/1472b082ad034cde6351c629cabad0f6020eaf7a/README.md)）
   - ★3,224、MPL-2.0、最終push 2026-06-10、v0.8.0。
-- [ButzYung/SystemAnimatorOnline](https://github.com/ButzYung/SystemAnimatorOnline) — XR Animator: AIベース全身モーキャプ+VRM/MMDモデル駆動（★1,907 / ライセンス未表示 / 最終push 2026-09-20 / release XR-Animator_v0.35.0 (2026-09-20) / 確認コミット [`53c20eb9`](https://github.com/ButzYung/SystemAnimatorOnline/blob/53c20eb91517d2807d142c122a868ca9157c3016/README.md)）
+- [ButzYung/SystemAnimatorOnline](https://github.com/ButzYung/SystemAnimatorOnline) — XR Animator: AIベース全身モーキャプ+VRM/MMDモデル駆動（★1,910 / ライセンス未表示 / 最終push 2026-09-20 / release XR-Animator_v0.35.0 (2026-09-20) / 確認コミット [`53c20eb9`](https://github.com/ButzYung/SystemAnimatorOnline/blob/53c20eb91517d2807d142c122a868ca9157c3016/README.md)）
   - ★1,897、ライセンス未設定、最終push 2026-09-20、v0.35.0(2026-09-20)。
 - [AmyangXYZ/reze-mipo](https://github.com/AmyangXYZ/reze-mipo) — ブラウザ上のMMDリアルタイムモーキャプ(VMD出力)（★667 / GPL-3.0 / 最終push 2026-09-08 / release v5.0.0 (2026-08-28) / 確認コミット [`2eb21c09`](https://github.com/AmyangXYZ/reze-mipo/blob/2eb21c09ec563259e20e4edcbb9060ff47ddcf0d/README.md)）
   - ★665、GPL-3.0(コピーレフトに注意)、最終push 2026-09-08、v5.0.0。

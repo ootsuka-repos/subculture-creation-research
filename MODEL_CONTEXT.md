@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-05。**175件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-06。**185件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -308,6 +308,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: Spine/Live2D系の2Dリグ工程の自動化・検証の足がかりになる。
   - 出典（2026-10-05確認）: https://github.com/firejune/spine-parts/blob/774ef0414fdb9e8b045803675d61664339965604/README.md
 
+- **still2rig-psd** [workflow_tool / AIモデル・学習 / 小規模・初期評価候補（READMEはv0.1 alphaと明記）]
+  - アニメキャラの静止画（PNG/JPEG/WebP） → レイヤー化PSD、QAレポート、モーションプレビュー。1枚のアニメキャラ画像をSee-throughで意味的にレイヤー分解し、構造チェック付きのPSDへ組み立てるワークフロー。組み込みWebUIでまばたき・口・髪/体のモーションをプレビューできる。
+  - 制約: READMEは1枚の静止画では閉じ目や別口の立ち絵を用意できず、欠落を報告するとしている。Colab接続はユーザー承認が必要。
+  - 制作用途: イラスト→PSDレイヤー化→2Dリグ準備の前工程候補。
+  - 出典（2026-10-06確認）: https://github.com/shinshin86/still2rig-psd/blob/29f2c086fef408483cdd1650b6b7626e27117600/README.md
+
 ## レイヤー分解
 
 - **ComfyUI-See-through** [integration / AI連携 / ComfyUI利用者向け]
@@ -407,6 +413,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEは開発継続中でPSNR/SSIM等の定量比較は初回安定版まで未公開と明記。コードはAGPL-3.0、モデル/学習はCC BY-NC-SA 4.0。
   - 制作用途: 手元アニメ画像の復元・拡大に使えるが、ライセンス上商用利用は不可。
   - 出典（2026-10-05確認）: https://github.com/yumenana/Caelum/blob/cd0e88d6f9d5699971a63e4beb73c4be928cc802/README.md
+
+- **ComfyUI_LayerStyle** [workflow_tool / AIは任意 / 活発・実用段階]
+  - 画像、マスク、テキスト、各種モデルファイル → 合成画像、マスク、プロンプト、QA用中間出力。ComfyUIにPhotoshop風のレイヤー合成・マスク処理ノード群を追加するカスタムノード。合成・マスク・切り抜き・プロンプト補助などのノードをまとめて提供する。
+  - 制約: READMEは日本語UIや分割移行により、更新時にAdvance側の導入が必要になる場合があると説明。動作は環境依存で、全ノードの検証は未実施。
+  - 制作用途: 生成画像のマスク処理・レイヤー合成・書き出し工程の自動化候補。
+  - 出典（2026-10-06確認）: https://github.com/chflame163/ComfyUI_LayerStyle/blob/a3459a7638c4c2839878089c105c73af0eb2edd2/README.MD
+
+- **QualityScaler** [desktop_tool / AIモデル・学習 / 活発・実用段階]
+  - 画像（jpg/png/tif/bmp/webp/heic）、動画（mp4/mkv/avi/mov等） → 拡大画像、拡大動画。画像・動画をAIで拡大・ノイズ除去するWindows向けGUIアプリ。タイル分割でVRAM制限を回避し、動画の停止再開や補間、マルチGPUにも対応。
+  - 制約: READMEはWindows専用。無料版はNVIDIA、Steam版はAMD/Intel対応と記載。拡大結果は素材依存で品質の断定はできない。
+  - 制作用途: ラフ・素材の解像度引き上げ工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/Djdefrag/QualityScaler/blob/8c4c7410e641daa7580133e6f90ff7cd7ef73532/README.md
 
 ## 動画生成
 
@@ -538,6 +556,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: MMDモデルの再利用やモーション流用、MMD風ルックのレンダリングに。
   - 出典（2026-09-30確認）: https://github.com/ShiJieWorld/SekaiBlender/blob/3d92799c6a87372d5bf98f7ee4891bfa536665c8/README.md
 
+- **godot-vrm** [integration / 非AI制作 / 活発・実用段階]
+  - VRMアバター、glTFファイル → Godotシーン内のアバター、VRM/glTF出力。Godot 4.1+/3.2+向けにVRMアバターとMToonシェーダのインポート/エクスポートを提供するプラグイン。Asset Libraryから入手できる。
+  - 制約: READMEはGodot向けの機能範囲にとどまり、AI生成は含まない。バージョン差で挙動が異なる可能性がある。
+  - 制作用途: アバターをゲーム・リアルタイム演出へ組み込む工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/V-Sekai/godot-vrm/blob/e15199f980064028bfa4fbee5e70dddb82dd55c3/README.md
+
 ## TTS・キャラクター音声
 
 - **CosyVoice** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -593,6 +617,24 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: このリポジトリはエディタ。エンジン・音声ライブラリ・キャラの条件は別。
   - 制作用途: 台詞をGUIで校正しやすい日本語音声編集の候補。UIのライセンスだけで話者の条件を判断しない。
   - 出典（2026-09-09確認）: https://github.com/VOICEVOX/voicevox/blob/b7258250fe90c82f112d0f51e43f2a1b67992d36/README.md
+
+- **Genie-TTS** [model_toolkit / AIモデル・学習 / 活発・実用段階]
+  - テキスト、キャラクターのONNXモデル、参照音声 → 合成音声、ONNXモデル、API応答。GPT-SoVITS（V2/V2ProPlus）をONNX化してCPUで動かす軽量推論エンジン。TTS推論・モデル変換・FastAPIサーバーをまとめて提供する。
+  - 制約: READMEは対応モデルがV2/V2ProPlusで、V3/V4は未対応と記載。性能値は作者のCPU計測で環境依存。
+  - 制作用途: ローカル/サーバーでのキャラ音声合成API配備候補。
+  - 出典（2026-10-06確認）: https://github.com/High-Logic/Genie-TTS/blob/d347fd0f8683e9a362b69f59fa0a4799ddb5e828/README.md
+
+- **TTS-WebUI** [web_app / AIモデル・学習 / 活発・実用段階]
+  - テキスト、参照音声、音声ファイル → 合成音声、変換音声、生成音楽。多数のTTS/音声生成モデルを1つのGradio+React UIで扱うWebUI。GPT-SoVITS、XTTSv2、Kokoro、StyleTTS2、RVC、MusicGen、Demucs等の拡張を備える。
+  - 制約: READMEはモデルごとに拡張が必要で、依存やライセンスは各モデルに従うと説明。動作はGPU/環境依存。
+  - 制作用途: 音声制作の試作・比較環境の候補。
+  - 出典（2026-10-06確認）: https://github.com/rsxdalv/TTS-WebUI/blob/2e5701387c423307d73972a45496bfdcb6a7d8e1/README.md
+
+- **vits-simple-api** [api_reference / AIモデル・学習 / 活発・実用段階]
+  - テキスト、モデルID、話者・感情パラメータ → 音声ファイル。VITS系TTSをHTTP APIとして提供するサーバー。VITS/Bert-VITS2/GPT-SoVITS/emotion-vits等の複数モデルを読み込み、GETで音声合成できる。
+  - 制約: ライセンスはAGPL-3.0。READMEはSSML対応が作業中と記載。モデルごとにクリーンアーと言語対応が異なる。
+  - 制作用途: キャラ音声をAPIでサービス連携する工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/Artrajz/vits-simple-api/blob/c3d179ffabff711e6697c6eb16298ac66a250406/README.md
 
 ## ASMR・効果音・環境音
 
@@ -821,6 +863,24 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: ライセンス表記なし。トラッキングはMediaPipe Holisticに依存。READMEの計測はM1で30-50ms/フレーム。
   - 制作用途: 手軽なVTuber配信・アバター確認に使える。商用条件は未記載で要確認。
   - 出典（2026-10-05確認）: https://github.com/vucinatim/vrm-studio/blob/30af4abcd417039b4f3d9615a1427402f6d04a2c/README.md
+
+- **CharacterStudio** [web_app / 非AI制作 / 活発・実用段階]
+  - ローカルのVRM/3Dファイルとテクスチャ、アセットパック → glb、VRM、スクリーンショット。ブラウザ上でglTF/VRMアバターを組み立てるオープンソースの3Dアバター制作スタジオ。パーツのドラッグ＆ドロップ配置、色変更、VRM最適化、glb/VRM書き出しに対応。
+  - 制約: READMEはプログラムとアセットパックを分離しており、独自モデルの追加はドキュメント参照。最適化や描画品質の定量評価は記載なし。
+  - 制作用途: アバターの組み立て・最適化・一括書き出し工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/M3-org/CharacterStudio/blob/293182bf4a6087f4a4a7fd00e4fbdfb590029da7/README.md
+
+- **ndmf-vrm-exporter** [integration / 非AI制作 / 活発・実用段階]
+  - Unity上のVRChatアバター（Modular Avatar/lilToon構成） → VRM 1.0ファイル。NDMFベースでVRChatアバターをVRM 1.0として書き出すUnityプラグイン。PhysBone→SpringBone、Constraint→VRM Constraint、lilToon→MToon互換設定の自動変換に対応。
+  - 制約: READMEはModular Avatar/lilToon前提の設計と、VRChatアバターのブレンドシェイプ過多がVRM変換時の負荷になりやすい点を挙げている。ライセンスはMPL-2.0。
+  - 制作用途: アバターのフォーマット変換・再利用工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/hkrn/ndmf-vrm-exporter/blob/a776be244cd7066bd1c51a28286e1334738a361c/README.md
+
+- **app** [desktop_tool / 非AI制作 / 活発・実用段階]
+  - VRMアバター → 仮想カメラ映像。macOSでVRMアバターを仮想カメラとして表示するアプリ。ZoomやGoogle Meetなどでアバターを映像として映せる。
+  - 制約: READMEはWindows等の他プラットフォーム非対応と明記。ソースはMITだが利用条件は公式サイト参照と記載。
+  - 制作用途: VTuber配信・収録の映像入力工程の候補。
+  - 出典（2026-10-06確認）: https://github.com/vcamapp/app/blob/aa6f24e864ec713270425efab8182a60dbbd8b52/README.md
 
 ## 制作ワークフロー・追加学習
 
@@ -1144,6 +1204,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [bg-visualnovel-v03](https://huggingface.co/vinesmsuic/bg-visualnovel-v03/blob/4fe98d1d8d6b0b518fe40023e1c5c06e171edaa6/README.md): Anything-V3をベースにしたStable Diffusion系のテキストto画像モデル。ビジュアルノベル背景の生成を目的とする。 licenseはcreativeml-openrail-m。商用利用や再配布は同ライセンスの制限を引き継ぐ条件付き。
 - [Manga109-panel-balloon-text-yolov26-segmentation](https://huggingface.co/ShadowB/Manga109-panel-balloon-text-yolov26-segmentation/blob/3a860269ee0beb43ce9f31d82c7851441eb178ae/README.md): Ultralytics YOLO26sのインスタンスセグメンテーションモデル。frame/text/balloonの3クラスを検出・分割する。ベースはyolo26s-seg.pt。 モデルリポジトリのlicenseはmit。ただし学習データ（Manga109系）のライセンス/アクセス条件は別途適用されると記載。
 - [controlnet-lineart-anime-sdxl-fp16](https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16/blob/e02330c836049b89f122aa18625ae027537ea143/README.md): SDXL用のControlNet（lineart、anime向け）。fp16のdiffusion_pytorch_modelを配布する。 licenseはcreativeml-openrail-m。商用可否は同ラインモデルの制限に従う。
+- [Z-Image_Anime_VAE](https://huggingface.co/Anzhc/Z-Image_Anime_VAE/blob/7272e1c80536d207cc294968eb09c8d44e46b3a6/README.md): Z-Image（Flux）のAEをアニメイラストデータでデコーダ微調整したVAE。既存パイプラインのae.safetensorsの代わりに読み込む。 licenseはapache-2.0。base_modelはTongyi-MAI/Z-Image-Turboと記載。
+- [AnimeBackgroundGAN-Miyazaki](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki/blob/c93786c4e4766e43afd2949ca7314ccad61f1d79/README.md): CartoonGAN（Chen et al., CVPR18）を宮崎駿作品の背景で学習した画像変換モデル。PyTorch実装で構成される。 licenseはMIT。モデル/Spacesの再パッケージはShō Akiyama。
+- [girl-style-bert-vits2-JPExtra-models](https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models/blob/bb4f103fa602e4c5b59226b3466e62b6cb09e3f9/README.md): Style-Bert-VITS2 2.1 JP-Extraをベースにした多話者TTS。5人の日本語話者（女性4・男性1）と25種の感情スタイルを持つ。 licenseはmit（カードにlicence FREE(MIT)と記載）。
+- [style_bert_vits2_jp_extra_asmr_original](https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original/blob/1feb9152f9974062d5a32a12aab725e4600c945c/README.md): Style-Bert-VITS2 JP-Extraを作者本人の音声で学習した日本語TTS。ささやき演技向けのASMR版。 licenseはcc-by-sa-4.0。カードは商用・非商用問わず利用可とするが、二次配布禁止・ゾーニング必須などの条件があり、商用可否は断定しない。
 
 ## 保留情報
 

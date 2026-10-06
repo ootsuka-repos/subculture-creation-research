@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-05",
+  "updated_on": "2026-10-06",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1233642,
-        "likes": 2360,
+        "downloads_last_month": 1233120,
+        "likes": 2366,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 370525,
+        "downloads_last_month": 371152,
         "likes": 538,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 88292,
+        "downloads_last_month": 88024,
         "likes": 434,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 162966,
+        "downloads_last_month": 166706,
         "likes": 181,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1478,
+        "downloads_last_month": 1524,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1369,
+        "downloads_last_month": 1266,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -378,9 +378,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 231,
+        "likes": 232,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 799,
+        "downloads_last_month": 727,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 737,
+        "downloads_last_month": 747,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1075,
+        "downloads_last_month": 1099,
         "likes": 97,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14300,
-        "likes": 231,
+        "downloads_last_month": 14479,
+        "likes": 233,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 6054,
+        "downloads_last_month": 5961,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 79,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -986,7 +986,7 @@
         "downloads_last_month": 34,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 455,
+        "downloads_last_month": 467,
         "likes": 28,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1096,7 +1096,7 @@
         "downloads_last_month": 48,
         "likes": 5,
         "last_modified": "2025-08-12T05:27:46.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1147,10 +1147,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 36,
+        "downloads_last_month": 37,
         "likes": 2,
         "last_modified": "2025-08-12T05:26:43.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1207,7 +1207,7 @@
         "downloads_last_month": 0,
         "likes": 3,
         "last_modified": "2026-02-17T00:28:51.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1259,10 +1259,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 419,
+        "downloads_last_month": 453,
         "likes": 6,
         "last_modified": "2026-09-21T08:22:31.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1316,7 +1316,7 @@
         "downloads_last_month": 0,
         "likes": 66,
         "last_modified": "2022-04-05T17:11:49.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1371,9 +1371,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 313,
+        "likes": 315,
         "last_modified": "2026-08-07T17:43:22.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1427,7 +1427,7 @@
         "downloads_last_month": 0,
         "likes": 13,
         "last_modified": "2024-07-17T13:00:34.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1478,10 +1478,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1164,
+        "downloads_last_month": 1178,
         "likes": 21,
         "last_modified": "2023-08-09T09:25:38.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1534,10 +1534,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 7761,
+        "downloads_last_month": 7833,
         "likes": 7,
         "last_modified": "2024-11-11T01:39:36.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1588,10 +1588,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 289,
+        "downloads_last_month": 302,
         "likes": 104,
         "last_modified": "2023-11-14T18:09:01.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1645,7 +1645,7 @@
         "downloads_last_month": 0,
         "likes": 4,
         "last_modified": "2024-08-12T12:38:21.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1699,7 +1699,7 @@
         "downloads_last_month": 15,
         "likes": 12,
         "last_modified": "2024-08-12T12:39:52.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1756,7 +1756,7 @@
         "downloads_last_month": 26,
         "likes": 43,
         "last_modified": "2024-03-17T14:20:51.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1808,10 +1808,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 3597,
+        "downloads_last_month": 3703,
         "likes": 9,
         "last_modified": "2026-06-10T17:10:07.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1862,10 +1862,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 411,
+        "downloads_last_month": 391,
         "likes": 3,
         "last_modified": "2024-06-06T22:55:08.000Z",
-        "checked_on": "2026-10-05"
+        "checked_on": "2026-10-06"
       },
       "sources": [
         {
@@ -1877,7 +1877,223 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "z-image-anime-vae",
+      "name": "Z-Image_Anime_VAE",
+      "hub_repository": "Anzhc/Z-Image_Anime_VAE",
+      "url": "https://huggingface.co/Anzhc/Z-Image_Anime_VAE",
+      "category": "image",
+      "checked_on": "2026-10-06",
+      "architecture_ja": "Z-Image（Flux）のAEをアニメイラストデータでデコーダ微調整したVAE。既存パイプラインのae.safetensorsの代わりに読み込む。",
+      "variants_ja": "重みは「FLUX Anime VAE B2.safetensors」を1本配布。ComfyUI用にはAnzhcのノードパックが案内されている。",
+      "prompting_ja": "プロンプトは対象外。VAE差し替えとして使い、生成側のプロンプトはそのまま。",
+      "requirements_ja": "diffusers形式で読み込み、Z-Image/Flux系パイプラインへ組み込む。カードに必要VRAMの記載はない。",
+      "limitations_ja": "カードは「現時点であまり有用ではない（アニメ用ベースが未整備）」と作者が明記。高周波圧縮アーティファクトと過剰シャープの低減を狙うもので、生成品質そのものを保証しない。",
+      "license_notes_ja": "licenseはapache-2.0。base_modelはTongyi-MAI/Z-Image-Turboと記載。",
+      "assessment_ja": "アニメ生成のVAE差し替え候補として試す価値があるが、効果は限定的と作者が述べている。",
+      "next_validation_ja": "同一プロンプト・シードで標準AEと差し替え比較し、瞳孔など小部位と高周波ノイズの変化を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Anzhc/Z-Image_Anime_VAE",
+        "api_url": "https://huggingface.co/api/models/Anzhc/Z-Image_Anime_VAE",
+        "checked_on": "2026-10-06",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "7272e1c80536d207cc294968eb09c8d44e46b3a6",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "FLUX Anime VAE B2.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 254,
+        "likes": 49,
+        "last_modified": "2025-11-30T19:20:36.000Z",
+        "checked_on": "2026-10-06"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Anzhc/Z-Image_Anime_VAE/blob/7272e1c80536d207cc294968eb09c8d44e46b3a6/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Anzhc/Z-Image_Anime_VAE",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "animebackgroundgan-miyazaki",
+      "name": "AnimeBackgroundGAN-Miyazaki",
+      "hub_repository": "akiyamasho/AnimeBackgroundGAN-Miyazaki",
+      "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki",
+      "category": "image",
+      "checked_on": "2026-10-06",
+      "architecture_ja": "CartoonGAN（Chen et al., CVPR18）を宮崎駿作品の背景で学習した画像変換モデル。PyTorch実装で構成される。",
+      "variants_ja": "監督別に4種類（Shinkai/Hosoda/Kon/Miyazaki）があり、本リポジトリは宮崎駿版の「miyazaki_hayao.pth」。他作風は別リポジトリ。",
+      "prompting_ja": "プロンプトは不要。実写写真を入力し、アニメ背景風へ変換する。",
+      "requirements_ja": "PyTorchで実行。Hugging Face Spacesのデモあり。必要VRAM等の記載はない。",
+      "limitations_ja": "2022年公開。カードに学習データや性能の定量評価はなく、出力品質は非公開。対象は写真→背景の変換に限られる。",
+      "license_notes_ja": "licenseはMIT。モデル/Spacesの再パッケージはShō Akiyama。",
+      "assessment_ja": "実写素材をアニメ背景調に寄せる用途が明確だが、古いモデルで評価情報が少ない。",
+      "next_validation_ja": "背景写真数枚で変換し、作品ごとの4モデルの作風差と破綻の有無を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki",
+        "api_url": "https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Miyazaki",
+        "checked_on": "2026-10-06",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "c93786c4e4766e43afd2949ca7314ccad61f1d79",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "miyazaki_hayao.pth"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 25,
+        "last_modified": "2022-04-05T17:11:21.000Z",
+        "checked_on": "2026-10-06"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki/blob/c93786c4e4766e43afd2949ca7314ccad61f1d79/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Miyazaki",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "girl-style-bert-vits2-jpextra-models",
+      "name": "girl-style-bert-vits2-JPExtra-models",
+      "hub_repository": "Mofa-Xingche/girl-style-bert-vits2-JPExtra-models",
+      "url": "https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models",
+      "category": "tts",
+      "checked_on": "2026-10-06",
+      "architecture_ja": "Style-Bert-VITS2 2.1 JP-Extraをベースにした多話者TTS。5人の日本語話者（女性4・男性1）と25種の感情スタイルを持つ。",
+      "variants_ja": "重みは「NotAnimeJPManySpeaker_e120_s22200.safetensors」1つ。config.jsonとstyle_vectors.npyを併用する。",
+      "prompting_ja": "プロンプトではなくspeaker_idとstyle（例: amazinGood(lol), calmCloud(sad)）で話者と感情を指定。APIではstyle_weight等のパラメータを渡す。",
+      "requirements_ja": "Style-Bert-VITS2環境（model_assets配下に3ファイル配置）またはserver_fastapi.pyで使用。languageタグはen/zh、日本語タグも付く。",
+      "limitations_ja": "2024年公開。カードは「成人済み」「悪用禁止」等を明記し、音声の品質指標は示していない。",
+      "license_notes_ja": "licenseはmit（カードにlicence FREE(MIT)と記載）。",
+      "assessment_ja": "感情スタイル付きの日本語キャラ音声を手早く試せる。多話者・多スタイルの切り替えが用途に合う。",
+      "next_validation_ja": "同一テキストで複数話者・複数スタイルを生成し、感情表現の再現性と安定性を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models",
+        "api_url": "https://huggingface.co/api/models/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models",
+        "checked_on": "2026-10-06",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "bb4f103fa602e4c5b59226b3466e62b6cb09e3f9",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "NotAnimeJPManySpeaker_e120_s22200.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 109,
+        "likes": 25,
+        "last_modified": "2024-05-31T15:29:49.000Z",
+        "checked_on": "2026-10-06"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models/blob/bb4f103fa602e4c5b59226b3466e62b6cb09e3f9/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "style-bert-vits2-jp-extra-asmr-original",
+      "name": "style_bert_vits2_jp_extra_asmr_original",
+      "hub_repository": "RikkaBotan/style_bert_vits2_jp_extra_asmr_original",
+      "url": "https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original",
+      "category": "tts",
+      "checked_on": "2026-10-06",
+      "architecture_ja": "Style-Bert-VITS2 JP-Extraを作者本人の音声で学習した日本語TTS。ささやき演技向けのASMR版。",
+      "variants_ja": "重みは「rikka_botan_asmr.safetensors」。sweet/cool/english/chinese等の姉妹版が別リポジトリで公開されている。",
+      "prompting_ja": "プロンプトは不要。テキストを入力して合成する。感情や話し方は姉妹モデル側で切り替える。",
+      "requirements_ja": "Style-Bert-VITS2環境にconfig.json/safetensors/style_vectors.npyの3ファイルを配置。推論はCUDAまたはCPU。",
+      "limitations_ja": "2024年公開。カードは音声モデルの二次配布禁止・ゾーニング必須などの利用条件を列挙。自然性の数値評価はない。",
+      "license_notes_ja": "licenseはcc-by-sa-4.0。カードは商用・非商用問わず利用可とするが、二次配布禁止・ゾーニング必須などの条件があり、商用可否は断定しない。",
+      "assessment_ja": "ささやき演技のキャラ音声を手軽に生成でき、ASMRやボイスドラマの試作に向く。",
+      "next_validation_ja": "ささやきテキストで生成し、声質・ノイズ・長文での安定性を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original",
+        "api_url": "https://huggingface.co/api/models/RikkaBotan/style_bert_vits2_jp_extra_asmr_original",
+        "checked_on": "2026-10-06",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "1feb9152f9974062d5a32a12aab725e4600c945c",
+        "gated": false,
+        "license_metadata": "cc-by-sa-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "rikka_botan_asmr.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 127,
+        "likes": 5,
+        "last_modified": "2024-05-06T21:29:41.000Z",
+        "checked_on": "2026-10-06"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original/blob/1feb9152f9974062d5a32a12aab725e4600c945c/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/RikkaBotan/style_bert_vits2_jp_extra_asmr_original",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-05"
+  "metrics_refreshed_on": "2026-10-06"
 }

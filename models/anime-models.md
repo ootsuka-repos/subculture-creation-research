@@ -549,3 +549,67 @@ SDXL用のControlNet（lineart、anime向け）。fp16のdiffusion_pytorch_model
 確認日: 2026-10-05 / revision `e02330c836049b89f122aa18625ae027537ea143` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `diffusion_pytorch_model.fp16.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/r3gm/controlnet-lineart-anime-sdxl-fp16/blob/e02330c836049b89f122aa18625ae027537ea143/README.md) / [モデルAPI](https://huggingface.co/api/models/r3gm/controlnet-lineart-anime-sdxl-fp16)
+
+## Z-Image_Anime_VAE
+
+Z-Image（Flux）のAEをアニメイラストデータでデコーダ微調整したVAE。既存パイプラインのae.safetensorsの代わりに読み込む。
+
+- **版の区別**: 重みは「FLUX Anime VAE B2.safetensors」を1本配布。ComfyUI用にはAnzhcのノードパックが案内されている。
+- **入力・設定**: プロンプトは対象外。VAE差し替えとして使い、生成側のプロンプトはそのまま。
+- **必要構成**: diffusers形式で読み込み、Z-Image/Flux系パイプラインへ組み込む。カードに必要VRAMの記載はない。
+- **制約**: カードは「現時点であまり有用ではない（アニメ用ベースが未整備）」と作者が明記。高周波圧縮アーティファクトと過剰シャープの低減を狙うもので、生成品質そのものを保証しない。
+- **利用条件**: licenseはapache-2.0。base_modelはTongyi-MAI/Z-Image-Turboと記載。
+- **編集者評価**: アニメ生成のVAE差し替え候補として試す価値があるが、効果は限定的と作者が述べている。
+- **次の検証（未実施）**: 同一プロンプト・シードで標準AEと差し替え比較し、瞳孔など小部位と高周波ノイズの変化を確認する。
+
+確認日: 2026-10-06 / revision `7272e1c80536d207cc294968eb09c8d44e46b3a6` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `FLUX Anime VAE B2.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Anzhc/Z-Image_Anime_VAE/blob/7272e1c80536d207cc294968eb09c8d44e46b3a6/README.md) / [モデルAPI](https://huggingface.co/api/models/Anzhc/Z-Image_Anime_VAE)
+
+## AnimeBackgroundGAN-Miyazaki
+
+CartoonGAN（Chen et al., CVPR18）を宮崎駿作品の背景で学習した画像変換モデル。PyTorch実装で構成される。
+
+- **版の区別**: 監督別に4種類（Shinkai/Hosoda/Kon/Miyazaki）があり、本リポジトリは宮崎駿版の「miyazaki_hayao.pth」。他作風は別リポジトリ。
+- **入力・設定**: プロンプトは不要。実写写真を入力し、アニメ背景風へ変換する。
+- **必要構成**: PyTorchで実行。Hugging Face Spacesのデモあり。必要VRAM等の記載はない。
+- **制約**: 2022年公開。カードに学習データや性能の定量評価はなく、出力品質は非公開。対象は写真→背景の変換に限られる。
+- **利用条件**: licenseはMIT。モデル/Spacesの再パッケージはShō Akiyama。
+- **編集者評価**: 実写素材をアニメ背景調に寄せる用途が明確だが、古いモデルで評価情報が少ない。
+- **次の検証（未実施）**: 背景写真数枚で変換し、作品ごとの4モデルの作風差と破綻の有無を比較する。
+
+確認日: 2026-10-06 / revision `c93786c4e4766e43afd2949ca7314ccad61f1d79` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `miyazaki_hayao.pth`
+
+根拠: [固定モデルカード](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki/blob/c93786c4e4766e43afd2949ca7314ccad61f1d79/README.md) / [モデルAPI](https://huggingface.co/api/models/akiyamasho/AnimeBackgroundGAN-Miyazaki)
+
+## girl-style-bert-vits2-JPExtra-models
+
+Style-Bert-VITS2 2.1 JP-Extraをベースにした多話者TTS。5人の日本語話者（女性4・男性1）と25種の感情スタイルを持つ。
+
+- **版の区別**: 重みは「NotAnimeJPManySpeaker_e120_s22200.safetensors」1つ。config.jsonとstyle_vectors.npyを併用する。
+- **入力・設定**: プロンプトではなくspeaker_idとstyle（例: amazinGood(lol), calmCloud(sad)）で話者と感情を指定。APIではstyle_weight等のパラメータを渡す。
+- **必要構成**: Style-Bert-VITS2環境（model_assets配下に3ファイル配置）またはserver_fastapi.pyで使用。languageタグはen/zh、日本語タグも付く。
+- **制約**: 2024年公開。カードは「成人済み」「悪用禁止」等を明記し、音声の品質指標は示していない。
+- **利用条件**: licenseはmit（カードにlicence FREE(MIT)と記載）。
+- **編集者評価**: 感情スタイル付きの日本語キャラ音声を手早く試せる。多話者・多スタイルの切り替えが用途に合う。
+- **次の検証（未実施）**: 同一テキストで複数話者・複数スタイルを生成し、感情表現の再現性と安定性を確認する。
+
+確認日: 2026-10-06 / revision `bb4f103fa602e4c5b59226b3466e62b6cb09e3f9` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `NotAnimeJPManySpeaker_e120_s22200.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models/blob/bb4f103fa602e4c5b59226b3466e62b6cb09e3f9/README.md) / [モデルAPI](https://huggingface.co/api/models/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models)
+
+## style_bert_vits2_jp_extra_asmr_original
+
+Style-Bert-VITS2 JP-Extraを作者本人の音声で学習した日本語TTS。ささやき演技向けのASMR版。
+
+- **版の区別**: 重みは「rikka_botan_asmr.safetensors」。sweet/cool/english/chinese等の姉妹版が別リポジトリで公開されている。
+- **入力・設定**: プロンプトは不要。テキストを入力して合成する。感情や話し方は姉妹モデル側で切り替える。
+- **必要構成**: Style-Bert-VITS2環境にconfig.json/safetensors/style_vectors.npyの3ファイルを配置。推論はCUDAまたはCPU。
+- **制約**: 2024年公開。カードは音声モデルの二次配布禁止・ゾーニング必須などの利用条件を列挙。自然性の数値評価はない。
+- **利用条件**: licenseはcc-by-sa-4.0。カードは商用・非商用問わず利用可とするが、二次配布禁止・ゾーニング必須などの条件があり、商用可否は断定しない。
+- **編集者評価**: ささやき演技のキャラ音声を手軽に生成でき、ASMRやボイスドラマの試作に向く。
+- **次の検証（未実施）**: ささやきテキストで生成し、声質・ノイズ・長文での安定性を確認する。
+
+確認日: 2026-10-06 / revision `1feb9152f9974062d5a32a12aab725e4600c945c` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `rikka_botan_asmr.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original/blob/1feb9152f9974062d5a32a12aab725e4600c945c/README.md) / [モデルAPI](https://huggingface.co/api/models/RikkaBotan/style_bert_vits2_jp_extra_asmr_original)
