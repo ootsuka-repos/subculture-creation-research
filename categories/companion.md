@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（72件）
+# 会話できるアニメ系AIキャラクター（73件）
 
-最終確認日: 2026-10-06。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-07。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -46,6 +46,7 @@
 - [LiraVtuber](https://github.com/Rukafuu/LiraVtuber) — Windowsデスクトップで動くオープンソースのAI VTuberアシスタント。音声対話、SQLite/RAG/知識グラフの記憶、Live2D（VTube Studio連携）、複数LLM/TTSプロバイダ、デスクトップ操作ツールを備える。
 - [Mandarin](https://github.com/Mandarin715/Mandarin) — Galgame風の立絵/Live2D演出と大規模モデル対話、VITS音声合成、SenseVoice音声認識・呼びかけ検出を組み合わせたWindows/Linux/macOS向けデスクトップ伴走アプリ。亜托莉（atri）モデルを主に整備する。
 - [rexclaw](https://github.com/Codemarchant/rexclaw) — Windows中心のVRMアバター付きリアルタイム音声AIコンパニオン。永続メモリ・感情・ジェスチャーを持ち、音声/テキストで会話でき、Grok/OpenAI/Claudeやローカルモデルを選択可能。画像・動画生成、MCPツール、Minecraft等のゲームプレイ、会話から漫画ページを作るManga Diaryを備える。
+- [JPet](https://github.com/Xinrea/JPet) — Live2Dデスクトップペット「軸伊」。千問（百煉）のリアルタイム音声対話に対応し、押して話す/割り込みができる。Windows x64とmacOS ARM64向けにビルド配布され、クラウド同期の育成ゲーム要素も持つ。
 
 ## AI VTuber・配信
 

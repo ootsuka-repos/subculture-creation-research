@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-06。**185件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-07。**194件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -109,6 +109,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: コアとUnity向け商品・統合の公開条件を分ける。AI脚本モデルではない。
   - 制作用途: 声付きNPC会話をエンジンの演出と結び付ける候補。
   - 出典（2026-09-09確認）: https://github.com/YarnSpinnerTool/YarnSpinner/blob/c39241c573167ea0157e48d8380c36920c5e50d8/README.md
+
+- **YumingScroll** [web_app / AI連携 / 早期開発]
+  - 物語テキスト/小説、人物・場景設定、ProviderのAPIキー → 分鏡脚本、人物/場景の参照画像、動画タスク、ギャラリー資産。物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。
+  - 制約: MockモードはUI検証用で生成品質の評価には使えない。実生成には外部Provider契約と費用が必要。単一ユーザー想定でアクセス制御なし。
+  - 制作用途: 漫劇・縦型動画の企画から素材生成の試作。
+  - 出典（2026-10-07確認）: https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/README.md
 
 ## ゲーム・ノベル・スプライト
 
@@ -426,6 +432,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: ラフ・素材の解像度引き上げ工程の候補。
   - 出典（2026-10-06確認）: https://github.com/Djdefrag/QualityScaler/blob/8c4c7410e641daa7580133e6f90ff7cd7ef73532/README.md
 
+- **abg-comfyui** [integration / AIモデル・学習 / 公開済み]
+  - 画像 → 背景除去済み画像。アニメ画像の背景除去を行うComfyUIノード。skytntのanime-remove-background系スペースを土台にしている。
+  - 制約: READMEが簡素でライセンス表記がない。髪や細い線の切り抜き品質は今回未検証。
+  - 制作用途: キャラ切り抜き・素材化の後処理。
+  - 出典（2026-10-07確認）: https://github.com/kwaroran/abg-comfyui/blob/b16a21d0d21154648c7172af49a33f23505ccbc8/README.md
+
+- **upscalejs** [library / AIモデル・学習 / 公開済み（v2）]
+  - ImageBitmap（画像） → 拡大後のImageBitmap。ブラウザ内でONNX Runtime Webを使い超解像モデルで画像を拡大するJSライブラリ。Real-ESRGAN anime 4x等をWeb Workerで実行する。
+  - 制約: v2はESM/ブラウザ優先でNode/CJS非対応。WASMマルチスレッドは不安定になり得るとREADMEが注意。
+  - 制作用途: Webアプリでの画像拡大・下書き確認。
+  - 出典（2026-10-07確認）: https://github.com/gqgs/upscalejs/blob/4ead647b5dbb9d031e96d59d8a4d373722e38547/README.md
+
 ## 動画生成
 
 - **FramePack** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -635,6 +653,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: ライセンスはAGPL-3.0。READMEはSSML対応が作業中と記載。モデルごとにクリーンアーと言語対応が異なる。
   - 制作用途: キャラ音声をAPIでサービス連携する工程の候補。
   - 出典（2026-10-06確認）: https://github.com/Artrajz/vits-simple-api/blob/c3d179ffabff711e6697c6eb16298ac66a250406/README.md
+
+- **sukasuka-vocal-dataset-builder** [pipeline / 非AI制作 / コミュニティ運用中]
+  - アニメ動画（mkv等）、.ass/.srt字幕、ドラマCD（flac） → 役柄別に分割した音声ファイル、meta.csv（filename,character,content）。アニメ本編やドラマCDと字幕から、役柄ごとの音声を切り出してデータセット化するスクリプト群。TTS/SVC学習用のキャラクター音声データ作成を想定。
+  - 制約: キャラクターのラベリングは手作業。配布データには非ボーカル音が残る版と除去版がある。元動画・字幕のライセンスはMITとは別に確認が必要。
+  - 制作用途: キャラクターTTS/SVC用データセット構築の下地。
+  - 出典（2026-10-07確認）: https://github.com/Hecate2/sukasuka-vocal-dataset-builder/blob/5b166d5017653f9f79b1e4122e93d1087d4d7dc3/README.md
 
 ## ASMR・効果音・環境音
 
@@ -882,6 +906,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: VTuber配信・収録の映像入力工程の候補。
   - 出典（2026-10-06確認）: https://github.com/vcamapp/app/blob/aa6f24e864ec713270425efab8182a60dbbd8b52/README.md
 
+- **VTubeStudio.Client** [library / 非AI制作 / 公開済み（NuGet）]
+  - VTube StudioのAPIリクエスト/イベント購読 → 型付きレスポンス、イベント通知。VTube Studio公開API（WebSocket）向けの.NET 10/C# 14クライアントライブラリ。型付きメッセージとイベントハブ、DI対応パッケージを提供する。
+  - 制約: VTube Studio本体が必要。初回はAPI側のトークン承認が必要。
+  - 制作用途: VTuber配信ツール・自動化の連携。
+  - 出典（2026-10-07確認）: https://github.com/Agash/VTubeStudio.Client/blob/266ce0fe63c102dc4ec3ce191c301145fc75fb3a/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -937,6 +967,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: cl_tagger_v2はgatedで再配布・同梱不可、アクセストークン等が必要との記載。機能はREADME記載範囲に依存。
   - 制作用途: キャラLoRA作成のタグ付け・審査・整理工程を省力化できる。
   - 出典（2026-10-05確認）: https://github.com/storyAura/BooruDatasetTagManagerPlus/blob/94a348f82f41e1e0a3d27a780630df039b560e54/README.md
+
+- **ComfyUI-BatchAnimeTimm** [integration / AI出力の後処理 / 公開済み]
+  - 画像フォルダ → 画像ごとの.txtキャプション（カンマ区切りタグ、UTF-8）。フォルダ内の画像を一括でAnimeTimmタグ付けし、1画像につき1つの.txtキャプションを書き出すComfyUI出力ノード。モデルは1回ロードして使い回す。
+  - 制約: AnimeTimm本体は同梱されず別途導入が必要。トップレベルフォルダのみ走査する。
+  - 制作用途: LoRA/ファインチューン用データセットのタグ付け。
+  - 出典（2026-10-07確認）: https://github.com/zzczzcx1/ComfyUI-BatchAnimeTimm/blob/7eaf3a94d19712b906c6e9cc60d330a2a6c7e91d/README.md
+
+- **Anima-Portable-Standalone-Trainer** [training_tool / AIモデル・学習 / v1.0.0（初期）]
+  - キャプション付き画像データセット、TOML設定 → 学習済みLoRA/モデル重み、学習中に生成されるサンプル画像。Anima拡散アーキテクチャ（DiT + Qwen3テキストエンコーダ + VAE）向けのLoRA/ファインチューン用スタンドアロン学習UI。kohya-ssの学習スクリプトを改変し、ブラウザUIで操作する。
+  - 制約: Anima base重みは研究・非商用限定とREADMEが明記。構成はバージョン1.0の段階。フォルダ移動時はSetEnv.batの再実行が必要。
+  - 制作用途: Animaベースモデルへのキャラ・画風LoRA学習。
+  - 出典（2026-10-07確認）: https://github.com/official-imvoiid/Anima-Portable-Standalone-Trainer/blob/b07e46a759487b5f96e685325c8213738505d2af/README.md
 
 ## 字幕・翻訳・ローカライズ
 
@@ -1053,6 +1095,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: ライセンスはNOASSERTION。性能値はREADME記載の環境依存。WindowsではMangaOCRをCPU実行する等の制約がある。
   - 制作用途: 大量ページの下訳・たたき台作成に有効。最終校正は人手前提。
   - 出典（2026-10-05確認）: https://github.com/P4ST4S/AutoScanlate-AI/blob/fa734c06add489479a306f5923726040a92a467b/README.md
+
+- **manga-translator-android** [desktop_tool / AIモデル・学習 / 活発に開発中]
+  - 漫画画像（フォルダ/画像ファイル、CBZ/ZIP/PDF） → ページごとの翻訳結果JSON（OCRキャッシュ含む）、翻訳气泡を重ねたページ、フォルダ単位のglossary.json。Android向けの漫画翻訳アプリ。ローカルで气泡・文字検出とOCRを行い、OpenAI互換APIで翻訳。翻訳气泡を原画上に重ね、位置をドラッグで調整できる。屏幕翻訳/悬浮窗にも対応。
+  - 制約: 翻訳にはOpenAI互換APIのKeyが必要。OCR/検出モデルは各自でassetsへ配置する必要がある。翻訳順は画像ファイル名順に依存。
+  - 制作用途: 手元の漫画をスマホで読みながら翻訳する個人用途。
+  - 出典（2026-10-07確認）: https://github.com/jedzqer/manga-translator-android/blob/e4f55e078720c4f033e1c1b97bcef034b01985fc/README.md
+
+- **local_anime_dubber** [pipeline / AIモデル・学習 / 試作（prototype）]
+  - 日本語動画、ボイス参照音声 → 英語吹き替え済み動画（mp4）。日本語動画と短い声サンプルから英語吹き替えをローカル生成するパイプライン。声質をクローンし、BGM/効果音を残したままセリフのタイミングを映像に合わせる。
+  - 制約: 単一話者のみ対応。発音・リップシンク等に多くの課題が残ると作者が明記。ライセンス表記なし。
+  - 制作用途: 吹き替えワークフローの検証・実験。
+  - 出典（2026-10-07確認）: https://github.com/Bugsbunnydev2000/local_anime_dubber/blob/3321d6f202d1e7631e8a64395edf4333377ca002/README.md
 
 ## モーション・身体演技
 
@@ -1208,6 +1262,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [AnimeBackgroundGAN-Miyazaki](https://huggingface.co/akiyamasho/AnimeBackgroundGAN-Miyazaki/blob/c93786c4e4766e43afd2949ca7314ccad61f1d79/README.md): CartoonGAN（Chen et al., CVPR18）を宮崎駿作品の背景で学習した画像変換モデル。PyTorch実装で構成される。 licenseはMIT。モデル/Spacesの再パッケージはShō Akiyama。
 - [girl-style-bert-vits2-JPExtra-models](https://huggingface.co/Mofa-Xingche/girl-style-bert-vits2-JPExtra-models/blob/bb4f103fa602e4c5b59226b3466e62b6cb09e3f9/README.md): Style-Bert-VITS2 2.1 JP-Extraをベースにした多話者TTS。5人の日本語話者（女性4・男性1）と25種の感情スタイルを持つ。 licenseはmit（カードにlicence FREE(MIT)と記載）。
 - [style_bert_vits2_jp_extra_asmr_original](https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original/blob/1feb9152f9974062d5a32a12aab725e4600c945c/README.md): Style-Bert-VITS2 JP-Extraを作者本人の音声で学習した日本語TTS。ささやき演技向けのASMR版。 licenseはcc-by-sa-4.0。カードは商用・非商用問わず利用可とするが、二次配布禁止・ゾーニング必須などの条件があり、商用可否は断定しない。
+- [best-comic-panel-detection](https://huggingface.co/mosesb/best-comic-panel-detection/blob/bbab11504194d0b341ac3f6099f3592aa0604ae3/README.md): YOLOv12xをベースに、コミックページのコマ（Comic Panel）検出用にファインチューニングした物体検出モデル。クラスはComic Panelの1種。 metadataはapache-2.0。学習データはRoboflowのカスタムデータセット。
+- [Waifu-Inpaint-XL](https://huggingface.co/ShinoharaHare/Waifu-Inpaint-XL/blob/a33e08f2ce957d0bd9974edddbe70fcd9b8f1680/README.md): SDXLベースのインペインティング用モデル。unet/text_encoder/text_encoder_2/vaeのdiffusers構成と単一safetensorsを配布する。 metadataはopenrail++。
+- [Qwen3.5-4B-Danbooru-Prompt-Generator](https://huggingface.co/TRYZER01/Qwen3.5-4B-Danbooru-Prompt-Generator/blob/d54023fefd8433c0b27356c146f34d58395001ac/README.md): Qwen3.5-4B系テキスト専用LLMをマージしたモデル。Danbooruタグ列を入力に、タグ列のプロンプトへ展開する。ComfyUIノードからHTTPでモデルサーバー（LM Studio等）に問い合わせる構成。 metadataはapache-2.0。上流Qwen3.5-4Bのライセンスにも従う。
+- [waifu-scorer-v3](https://huggingface.co/Eugeoter/waifu-scorer-v3/blob/c2a747fd61d310a90e9cbbf8fc590c522f234424/README.md): CLIP特徴量にMLPを重ねた美観スコアラ。アニメ風画像を0〜10で採点する。 metadataはopenrailだが、カード本文はApache 2.0と記載され両者で表記が一致しない。商用利用の可否を断定しない。
 
 ## 保留情報
 

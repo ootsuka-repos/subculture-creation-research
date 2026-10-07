@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-06。**185件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-07。**194件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,9 +13,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [BlueFish](https://github.com/bluefish2026/BlueFish) · [詳細](#bluefish) | 複数のAIプロバイダを接続し、脚本から絵コンテ・動画制作まで管理する。 | AI連携 / 小規模・初期評価候補 | 8 / 2026-04-22 |
-| [ink](https://github.com/inkle/ink) · [詳細](#ink) | 分岐する物語を書くスクリプト言語、コンパイラ、実行ランタイム。 | 非AI制作 / 制作基盤として比較 | 4,961 / 2026-05-05 |
-| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,144 / 2026-10-02 |
-| [Yarn Spinner](https://github.com/YarnSpinnerTool/YarnSpinner) · [詳細](#yarnspinner) | ゲームの会話記述をコンパイル・実行する台詞制作基盤。 | 非AI制作 / 制作基盤として比較 | 2,854 / 2026-10-01 |
+| [ink](https://github.com/inkle/ink) · [詳細](#ink) | 分岐する物語を書くスクリプト言語、コンパイラ、実行ランタイム。 | 非AI制作 / 制作基盤として比較 | 4,962 / 2026-05-05 |
+| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,188 / 2026-10-02 |
+| [Yarn Spinner](https://github.com/YarnSpinnerTool/YarnSpinner) · [詳細](#yarnspinner) | ゲームの会話記述をコンパイル・実行する台詞制作基盤。 | 非AI制作 / 制作基盤として比較 | 2,855 / 2026-10-01 |
+| [YumingScroll](https://github.com/tansuanyl/YumingScroll) · [詳細](#yumingscroll) | 物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。 | AI連携 / 早期開発 | 1 / 2026-10-06 |
 
 <a id="bluefish"></a>
 
@@ -66,7 +67,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲームエンジンまたはWebランタイム
 - **制約・未確認**: LLMではない。画面演出・音声・立ち絵表示はホスト側で実装する。
 - **編集者評価**: 生成したシナリオを分岐・変数・セーブ可能な構造へ落とす工程に適する。
-- **メトリクス**: ★4,961、fork 542、作成 2016-01-23、最終push 2026-05-05T11:24:42Z、archived=False
+- **メトリクス**: ★4,962、fork 542、作成 2016-01-23、最終push 2026-05-05T11:24:42Z、archived=False
 - **確認**: 2026-09-09 / コミット `35c63e52f1d36060930dc7ed3cfba38ea224b528`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/inkle/ink/tree/35c63e52f1d36060930dc7ed3cfba38ea224b528)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -101,7 +102,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、任意の画像生成・TTSバックエンド
 - **制約・未確認**: 完成シナリオの整合性を自動保証するものではない。独自LLM重みは提供しない。
 - **編集者評価**: キャラクター設計やシナリオの対話試作に使う候補。
-- **メトリクス**: ★34,144、fork 6,421、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
+- **メトリクス**: ★34,188、fork 6,419、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/SillyTavern/SillyTavern/tree/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -136,7 +137,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Unity等のホスト、音声・ローカライズ資産
 - **制約・未確認**: コアとUnity向け商品・統合の公開条件を分ける。AI脚本モデルではない。
 - **編集者評価**: 声付きNPC会話をエンジンの演出と結び付ける候補。
-- **メトリクス**: ★2,854、fork 235、作成 2015-10-03、最終push 2026-10-01T00:03:23Z、archived=False
+- **メトリクス**: ★2,855、fork 235、作成 2015-10-03、最終push 2026-10-01T00:03:23Z、archived=False
 - **確認**: 2026-09-09 / コミット `c39241c573167ea0157e48d8380c36920c5e50d8`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/YarnSpinnerTool/YarnSpinner/tree/c39241c573167ea0157e48d8380c36920c5e50d8)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -156,3 +157,38 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 **最新GitHub Release**: [v3.2.1](https://github.com/YarnSpinnerTool/YarnSpinner/releases/tag/v3.2.1) / 2026-05-05T02:37:44Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-07T03:49:07Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="yumingscroll"></a>
+
+## YumingScroll
+
+物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。
+
+- **リポジトリ**: https://github.com/tansuanyl/YumingScroll
+- **分類**: web_app / AI連携 / 早期開発
+- **入力**: 物語テキスト/小説、人物・場景設定、ProviderのAPIキー
+- **出力**: 分鏡脚本、人物/場景の参照画像、動画タスク、ギャラリー資産
+- **環境**: Node.js 22+、npm 10+、PostgreSQLまたはローカルJSON、テキスト/画像/動画Providerのサーバー側APIキー
+- **依存**: Next.js/React、NestJS、Prisma、OpenAI/Moonshot互換API、Seedance/Volcengine Ark等
+- **制約・未確認**: MockモードはUI検証用で生成品質の評価には使えない。実生成には外部Provider契約と費用が必要。単一ユーザー想定でアクセス制御なし。
+- **編集者評価**: テキスト→分鏡→画像/動画を一気通貫で扱う構成が参考になる。作者は早期開発段階と明記。
+- **メトリクス**: ★1、fork 0、作成 2026-07-11、最終push 2026-10-06T19:02:20Z、archived=False
+- **確認**: 2026-10-07 / コミット `0255f68bba977599f06ec2f96ef7dcc9ad2732f6`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/tansuanyl/YumingScroll/tree/0255f68bba977599f06ec2f96ef7dcc9ad2732f6)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/README.md) / [GitHub API](https://api.github.com/repos/tansuanyl/YumingScroll) / [固定ツリー](https://github.com/tansuanyl/YumingScroll/tree/0255f68bba977599f06ec2f96ef7dcc9ad2732f6)
+
+### 制作に使う際の検討
+
+漫劇・縦型動画の企画から素材生成の試作。
+
+**次に確かめること（実施前）**: 実Providerキーを設定し、短編1本で分鏡→画像→動画までの通しを試す。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [server/index.ts](https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/server/index.ts) / [server/main.ts](https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/server/main.ts) / [src/main.tsx](https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/src/main.tsx)
+
+**最新GitHub Release**: [v0.1.1](https://github.com/tansuanyl/YumingScroll/releases/tag/v0.1.1) / 2026-07-13T14:44:40Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-07-13T15:45:02Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

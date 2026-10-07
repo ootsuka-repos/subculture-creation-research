@@ -613,3 +613,67 @@ Style-Bert-VITS2 JP-Extraを作者本人の音声で学習した日本語TTS。�
 確認日: 2026-10-06 / revision `1feb9152f9974062d5a32a12aab725e4600c945c` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `rikka_botan_asmr.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/RikkaBotan/style_bert_vits2_jp_extra_asmr_original/blob/1feb9152f9974062d5a32a12aab725e4600c945c/README.md) / [モデルAPI](https://huggingface.co/api/models/RikkaBotan/style_bert_vits2_jp_extra_asmr_original)
+
+## best-comic-panel-detection
+
+YOLOv12xをベースに、コミックページのコマ（Comic Panel）検出用にファインチューニングした物体検出モデル。クラスはComic Panelの1種。
+
+- **版の区別**: 配布はbest.ptとlast.ptの2ファイル。学習はCOCO事前学習のYOLOv12xからの転移学習で、640x640・AdamW・200エポック。
+- **入力・設定**: プロンプトは不要。ultralyticsのYOLOで画像を入力して予測する。READMEは推論時の閾値等の指定を必須としていない。
+- **必要構成**: ultralytics（PyTorch）。READMEは推論に必要なVRAMを明記していない。
+- **制約**: 矩形バウンディングボックス前提で、不規則・重なり合うコマ形状は苦手と明記。検証セットは自作のRoboflowデータセット由来で、公開ベンチマークではない。
+- **利用条件**: metadataはapache-2.0。学習データはRoboflowのカスタムデータセット。
+- **編集者評価**: コマ分割を前処理に使う漫画翻訳・構造化の入り口として有用。
+- **次の検証（未実施）**: 日本語漫画ページでコマ検出の再現率と、非矩形レイアウトでの破綻を確認する。
+
+確認日: 2026-10-07 / revision `bbab11504194d0b341ac3f6099f3592aa0604ae3` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `best.pt`、`last.pt`
+
+根拠: [固定モデルカード](https://huggingface.co/mosesb/best-comic-panel-detection/blob/bbab11504194d0b341ac3f6099f3592aa0604ae3/README.md) / [モデルAPI](https://huggingface.co/api/models/mosesb/best-comic-panel-detection)
+
+## Waifu-Inpaint-XL
+
+SDXLベースのインペインティング用モデル。unet/text_encoder/text_encoder_2/vaeのdiffusers構成と単一safetensorsを配布する。
+
+- **版の区別**: Waifu-Inpaint-XL.safetensorsのほか、text_encoder/text_encoder_2/unet/vaeのdiffusersサブフォルダを配布する。
+- **入力・設定**: モデルカードに本文がなくプロンプト記述はない。利用時はインペイント範囲（マスク）とプロンプトを指定する一般的なSDXLインペイント手順に従う。
+- **必要構成**: diffusers環境。モデルカードにVRAM要件の記載はない。
+- **制約**: モデルカードに本文がなく、学習データや評価の記載がない。gated（auto承認）のため利用には同意が必要。
+- **利用条件**: metadataはopenrail++。
+- **編集者評価**: イラストの修正・消し込み用途でSDXL系のインペイントを選ぶ際の候補。
+- **次の検証（未実施）**: アニメ絵の一部修正で、マスク境界のなじみと再現性を確認する。
+
+確認日: 2026-10-07 / revision `a33e08f2ce957d0bd9974edddbe70fcd9b8f1680` / gated=auto。ファイル名候補5件の一覧確認。代表ファイル: `Waifu-Inpaint-XL.safetensors`、`text_encoder/model.safetensors`、`text_encoder_2/model.safetensors`、`unet/diffusion_pytorch_model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/ShinoharaHare/Waifu-Inpaint-XL/blob/a33e08f2ce957d0bd9974edddbe70fcd9b8f1680/README.md) / [モデルAPI](https://huggingface.co/api/models/ShinoharaHare/Waifu-Inpaint-XL)
+
+## Qwen3.5-4B-Danbooru-Prompt-Generator
+
+Qwen3.5-4B系テキスト専用LLMをマージしたモデル。Danbooruタグ列を入力に、タグ列のプロンプトへ展開する。ComfyUIノードからHTTPでモデルサーバー（LM Studio等）に問い合わせる構成。
+
+- **版の区別**: model/にBF16のsafetensors（2分割）、gguf/Qwen3.5-4B-anime.gguf（約2.7GB）、comfyui-prompt-generator/のComfyUIノードを配布する。
+- **入力・設定**: カンマ区切り・アンダースコアのDanbooruタグをユーザーメッセージで渡す。`-nude`のように先頭`-`で否定、`rating:general`/`rating:explicit`でレーティング指定。thinkingはオフで使う。
+- **必要構成**: transformers>=5.5.0等、またはLM Studioの互換サーバー + ComfyUI。BF16は約8.4GBの重み + KVキャッシュ。
+- **制約**: テキスト専用で画像入力は不可。学習データが主にNSFWで、指定してもSFW出力は保証されないとREADMEが注意。ローカル推論の要件やプライバシーは今回未検証。
+- **利用条件**: metadataはapache-2.0。上流Qwen3.5-4Bのライセンスにも従う。
+- **編集者評価**: Danbooruタグの補完・拡張をローカルで回し、ComfyUIへ直結できる点が制作フローに合う。
+- **次の検証（未実施）**: SFW指定（rating:general + 否定タグ）で生成タグの安全性と再現性を確認する。
+
+確認日: 2026-10-07 / revision `d54023fefd8433c0b27356c146f34d58395001ac` / gated=False。ファイル名候補3件の一覧確認。代表ファイル: `gguf/Qwen3.5-4B-anime.gguf`、`model/model-00001-of-00002.safetensors`、`model/model-00002-of-00002.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/TRYZER01/Qwen3.5-4B-Danbooru-Prompt-Generator/blob/d54023fefd8433c0b27356c146f34d58395001ac/README.md) / [モデルAPI](https://huggingface.co/api/models/TRYZER01/Qwen3.5-4B-Danbooru-Prompt-Generator)
+
+## waifu-scorer-v3
+
+CLIP特徴量にMLPを重ねた美観スコアラ。アニメ風画像を0〜10で採点する。
+
+- **版の区別**: model.safetensorsとmodel.pthの2ファイル。
+- **入力・設定**: プロンプトは不要。画像を入力してスコアを得る。
+- **必要構成**: CLIP系の推論環境。モデルカードにVRAM等の記載はない。
+- **制約**: スコアは学習分布に依存し、モデルカードは用途や評価データを詳述していない。精度は今回未検証。
+- **利用条件**: metadataはopenrailだが、カード本文はApache 2.0と記載され両者で表記が一致しない。商用利用の可否を断定しない。
+- **編集者評価**: アニメ画像の選別・データセット品質管理の補助指標として使える。
+- **次の検証（未実施）**: 手元画像でスコアのばらつきと主観評価との相関を確認する。
+
+確認日: 2026-10-07 / revision `c2a747fd61d310a90e9cbbf8fc590c522f234424` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `model.pth`、`model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Eugeoter/waifu-scorer-v3/blob/c2a747fd61d310a90e9cbbf8fc590c522f234424/README.md) / [モデルAPI](https://huggingface.co/api/models/Eugeoter/waifu-scorer-v3)
