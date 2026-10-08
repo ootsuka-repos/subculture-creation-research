@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-07。**194件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,14 +12,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,794 / 2026-09-14 |
+| [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,795 / 2026-09-14 |
 | [GenCompositor](https://github.com/TencentARC/GenCompositor) · [詳細](#gencompositor) | 前景・背景と制御条件を用いて動画を生成合成する。 | AIモデル・学習 / 小規模・初期候補 | 157 / 2026-06-30 |
-| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,969 / 2026-10-07 |
+| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,974 / 2026-10-07 |
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 798 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 7 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
-| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 20 / 2026-10-05 |
-| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-06 |
+| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 21 / 2026-10-05 |
+| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-08 |
 
 <a id="effekseer"></a>
 
@@ -35,7 +35,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲームエンジン、エフェクト素材
 - **制約・未確認**: 動画生成型VFXとは出力が異なる。実機での描画負荷とシェーダ互換性は別途確認。
 - **編集者評価**: 魔法・攻撃・演出をゲームに組み込む実用候補。
-- **メトリクス**: ★1,794、fork 282、作成 2013-10-19、最終push 2026-09-14T13:05:28Z、archived=False
+- **メトリクス**: ★1,795、fork 282、作成 2013-10-19、最終push 2026-09-14T13:05:28Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cf1cb853383765153219ba5ce9b47eff5ad8398`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/effekseer/Effekseer/tree/6cf1cb853383765153219ba5ce9b47eff5ad8398)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -109,7 +109,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Godot、任意のユーザー素材
 - **制約・未確認**: 生成AIモデルではない。出力先のPBRチャンネルと色空間を合わせる必要がある。
 - **編集者評価**: ゲーム・背景・トゥーン素材の反復制作に向く。
-- **メトリクス**: ★5,969、fork 382、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
+- **メトリクス**: ★5,974、fork 382、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `ad19fcf0ee34a7caf74df709dc4de7112f0d467d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RodZill4/material-maker/tree/ad19fcf0ee34a7caf74df709dc4de7112f0d467d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -265,7 +265,7 @@ Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ON
 - **依存**: ONNXモデル、mpv互換GLSLシェーダ、RIFE/DRBA
 - **制約・未確認**: HDR非対応でSDR前提。一部同梱モデル/シェーダのライセンス情報は整理中と明記。
 - **編集者評価**: アニメ向けシェーダ/ONNXモデルを前提に、DirectML・NeoAMD・TensorRTを選べる構成で、既存のmpv系資産を流用できる。
-- **メトリクス**: ★20、fork 0、作成 2026-08-08、最終push 2026-10-05T05:33:10Z、archived=False
+- **メトリクス**: ★21、fork 0、作成 2026-08-08、最終push 2026-10-05T05:33:10Z、archived=False
 - **確認**: 2026-09-30 / コミット `1e8fb3e7378b7df99709393087578ea7bc55d209`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/animeojisan/cHiDeScaler-Neo/tree/1e8fb3e7378b7df99709393087578ea7bc55d209)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -300,7 +300,7 @@ ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM
 - **依存**: SAM2.1/SAM3、ViTMatte、BiRefNet等の外部モデル
 - **制約・未確認**: RMBG-2.0バックエンドは商用不可でBRIAのライセンスが必要と明記。torch/numpy等を再インストールするとComfyUIを壊す恐れがあると注意喚起。
 - **編集者評価**: マスク編集・インペイント・動画マスク伝搬をComfyUI内で完結でき、アニメ素材のレイヤ/マスク処理に応用しやすい。
-- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-06T08:20:32Z、archived=False
+- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-08T07:54:19Z、archived=False
 - **確認**: 2026-10-05 / コミット `cbfd4abead2d03c1fb3c619263b135f21c54cc54`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/tree/cbfd4abead2d03c1fb3c619263b135f21c54cc54)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。

@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-07。**194件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,16 +13,16 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ControlTile](https://github.com/Junrongh/ControlTile) · [詳細](#controltile) | 条件付きの画像タイル生成を扱う研究実装。 | AIモデル・学習 / 小規模・初期候補 | 12 / 2026-07-27 |
-| [Godot](https://github.com/godotengine/godot) · [詳細](#godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,234 / 2026-10-07 |
-| [LDtk](https://github.com/deepnight/ldtk) · [詳細](#ldtk) | 2Dレベルを設計するオープンソースのエディタ。 | 非AI制作 / 制作基盤として比較 | 4,304 / 2026-10-07 |
-| [OpenGame](https://github.com/leigest519/OpenGame) · [詳細](#opengame) | 指示からWebゲームを制作するエージェント基盤。テンプレートとデバッグ手順を組み込む。 | AI連携 / 連携・制作ツール候補 | 2,969 / 2026-09-03 |
-| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) · [詳細](#pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,479 / 2026-10-06 |
+| [Godot](https://github.com/godotengine/godot) · [詳細](#godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,095 / 2026-10-08 |
+| [LDtk](https://github.com/deepnight/ldtk) · [詳細](#ldtk) | 2Dレベルを設計するオープンソースのエディタ。 | 非AI制作 / 制作基盤として比較 | 4,305 / 2026-10-08 |
+| [OpenGame](https://github.com/leigest519/OpenGame) · [詳細](#opengame) | 指示からWebゲームを制作するエージェント基盤。テンプレートとデバッグ手順を組み込む。 | AI連携 / 連携・制作ツール候補 | 2,976 / 2026-09-03 |
+| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) · [詳細](#pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,482 / 2026-10-08 |
 | [PNGAL](https://github.com/1mm-module/PNGAL) · [詳細](#pngal) | 顔差分生成・PSD分解・目パチと口パクの補間を組み合わせ、立ち絵アニメ素材を制作する。 | AI連携 / 導入経路の追加確認が必要 | 356 / 2026-09-01 |
-| [RenPy](https://github.com/renpy/renpy) · [詳細](#renpy) | テキストとキャラクター素材を組み合わせたノベルゲームを制作する。 | 非AI制作 / 定番の制作基盤 | 6,886 / 2026-10-07 |
+| [RenPy](https://github.com/renpy/renpy) · [詳細](#renpy) | テキストとキャラクター素材を組み合わせたノベルゲームを制作する。 | 非AI制作 / 定番の制作基盤 | 6,893 / 2026-10-07 |
 | [sprite-maker](https://github.com/JohnKinyanjui/sprite-maker) · [詳細](#sprite-maker) | AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。 | AI連携 / 初期評価候補 | 425 / 2026-09-24 |
-| [Terrain Diffusion](https://github.com/xandergos/terrain-diffusion) · [詳細](#terrain-diffusion) | 広域地形を拡散モデルで生成し、地図から地形への変換も扱う。 | AIモデル・学習 / モデル・研究候補 | 1,422 / 2026-08-12 |
-| [Tiled](https://github.com/mapeditor/tiled) · [詳細](#tiled) | タイルとオブジェクトを配置して2Dゲームのマップを作る。 | 非AI制作 / 制作基盤として比較 | 12,948 / 2026-09-25 |
-| [character-animation-creator-skill](https://github.com/tachikomared/character-animation-creator-skill) · [詳細](#character-animation-creator-skill) | Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定や参照画像から64×64ピクセルアートのキャラクタースプライトシートを、8方向×idle/walk/attackのアニメーション込みで生成し、パレット量子化や検証まで行う。 | AIモデル・学習 / 小規模・初期評価候補 | 338 / 2026-05-08 |
+| [Terrain Diffusion](https://github.com/xandergos/terrain-diffusion) · [詳細](#terrain-diffusion) | 広域地形を拡散モデルで生成し、地図から地形への変換も扱う。 | AIモデル・学習 / モデル・研究候補 | 1,425 / 2026-08-12 |
+| [Tiled](https://github.com/mapeditor/tiled) · [詳細](#tiled) | タイルとオブジェクトを配置して2Dゲームのマップを作る。 | 非AI制作 / 制作基盤として比較 | 12,950 / 2026-09-25 |
+| [character-animation-creator-skill](https://github.com/tachikomared/character-animation-creator-skill) · [詳細](#character-animation-creator-skill) | Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定や参照画像から64×64ピクセルアートのキャラクタースプライトシートを、8方向×idle/walk/attackのアニメーション込みで生成し、パレット量子化や検証まで行う。 | AIモデル・学習 / 小規模・初期評価候補 | 342 / 2026-05-08 |
 | [spritebrew](https://github.com/GAlbanese09/spritebrew) · [詳細](#spritebrew) | テキストや既存画像からピクセルアートのキャラクターを生成し、アニメーション化・スライス・プレビュー・エクスポートまで一貫して行うWebツール。21種のスタイルと複数エンジン向け書き出しに対応する。 | AIモデル・学習 / 稼働中・実運用候補 | 61 / 2026-10-07 |
 
 <a id="controltile"></a>
@@ -74,7 +74,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲーム用素材。AIモデルは必須でない
 - **制約・未確認**: AI素材生成機能そのものではない。配布先ごとのビルド要件は別途確認。
 - **編集者評価**: 生成素材を遊べる作品へ統合する定番基盤。
-- **メトリクス**: ★118,234、fork 26,975、作成 2014-01-04、最終push 2026-10-07T18:34:28Z、archived=False
+- **メトリクス**: ★118,095、fork 26,986、作成 2014-01-04、最終push 2026-10-08T18:43:17Z、archived=False
 - **確認**: 2026-09-09 / コミット `9552dfb6859a1aaba1e570b8e0ef5c599b830f19`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/godotengine/godot/tree/9552dfb6859a1aaba1e570b8e0ef5c599b830f19)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -109,7 +109,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 対象エンジン側のインポータ
 - **制約・未確認**: マップを作る道具で、ゲームロジックは生成しない。
 - **編集者評価**: 小規模2Dゲームのレベル反復制作でTiledと比較したい。
-- **メトリクス**: ★4,304、fork 289、作成 2020-05-29、最終push 2026-10-07T08:08:25Z、archived=False
+- **メトリクス**: ★4,305、fork 290、作成 2020-05-29、最終push 2026-10-08T16:14:39Z、archived=False
 - **確認**: 2026-09-09 / コミット `6d69bd1d6be92f01ac30778f6a934f0da8448b16`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/deepnight/ldtk/tree/6d69bd1d6be92f01ac30778f6a934f0da8448b16)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -144,7 +144,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLMプロバイダ、画像・動画・音声の任意API
 - **制約・未確認**: GameCoder-27Bは説明されるが本調査で公式重みは未特定。評価パイプラインはREADMEで公開予定。
 - **編集者評価**: 遊べるゲームのコードを出す対象として、ゲーム風動画生成と区別して比較。
-- **メトリクス**: ★2,969、fork 431、作成 2026-04-20、最終push 2026-09-03T17:11:09Z、archived=False
+- **メトリクス**: ★2,976、fork 432、作成 2026-04-20、最終push 2026-09-03T17:11:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `c9bea37786af524bf3bbe802f2b67d23816fa5c0`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/leigest519/OpenGame/tree/c9bea37786af524bf3bbe802f2b67d23816fa5c0)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -183,7 +183,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 通常制作にAIモデル不要
 - **制約・未確認**: AI画像生成モデルを内蔵するという意味ではない。
 - **編集者評価**: 2Dゲーム素材の手直しと仕上げを担う定番候補。
-- **メトリクス**: ★10,479、fork 554、作成 2019-08-18、最終push 2026-10-06T11:25:06Z、archived=False
+- **メトリクス**: ★10,482、fork 555、作成 2019-08-18、最終push 2026-10-08T18:11:23Z、archived=False
 - **確認**: 2026-09-09 / コミット `9263cf3636efc336aadbcc46c57dc614e57525b0`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Orama-Interactive/Pixelorama/tree/9263cf3636efc336aadbcc46c57dc614e57525b0)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -255,7 +255,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 台本、画像、音声。AIモデル不要
 - **制約・未確認**: LLMシナリオ生成器ではない。生成した素材をゲームへ組み込むためのエンジン。
 - **編集者評価**: 漫画・キャラ音声・背景など複数の生成素材を作品にまとめやすい。
-- **メトリクス**: ★6,886、fork 941、作成 2012-06-28、最終push 2026-10-07T03:23:35Z、archived=False
+- **メトリクス**: ★6,893、fork 941、作成 2012-06-28、最終push 2026-10-07T03:23:35Z、archived=False
 - **確認**: 2026-09-09 / コミット `f6a68a3a77014eca58c799d6663ccae733e5e10f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/renpy/renpy/tree/f6a68a3a77014eca58c799d6663ccae733e5e10f)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -290,7 +290,7 @@ AIエージェントと連携して素材を作り、関節・ボーンとRust�
 - **依存**: 外部エージェントCLI、生成経路に応じた画像モデル
 - **制約・未確認**: 初期段階。全OSでの導入成功や生成品質は未検証。
 - **編集者評価**: 2026年8月作成。エージェント操作とゲーム用素材出力を組み合わせる新規候補。
-- **メトリクス**: ★425、fork 53、作成 2026-08-09、最終push 2026-09-24T22:57:34Z、archived=False
+- **メトリクス**: ★425、fork 54、作成 2026-08-09、最終push 2026-09-24T22:57:34Z、archived=False
 - **確認**: 2026-09-09 / コミット `336c7114f0fce7336ec17f6e9beb93980ed03b1d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/JohnKinyanjui/sprite-maker/tree/336c7114f0fce7336ec17f6e9beb93980ed03b1d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -325,7 +325,7 @@ AIエージェントと連携して素材を作り、関節・ボーンとRust�
 - **依存**: 地形モデル、必要に応じAzgaar地図
 - **制約・未確認**: 標高データの生成であり、完成したゲームレベル・衝突設定ではない。
 - **編集者評価**: RPG世界地図や3D背景の地形案を作る補助工程。
-- **メトリクス**: ★1,422、fork 90、作成 2024-10-08、最終push 2026-08-12T03:58:54Z、archived=False
+- **メトリクス**: ★1,425、fork 90、作成 2024-10-08、最終push 2026-08-12T03:58:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `e8dcb4b1a834ab2f6b1a6f5256ed7c9f2f3e8230`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/xandergos/terrain-diffusion/tree/e8dcb4b1a834ab2f6b1a6f5256ed7c9f2f3e8230)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -364,7 +364,7 @@ RPG世界地図や3D背景の地形案を作る補助工程。
 - **依存**: ゲーム側のマップローダー、素材
 - **制約・未確認**: ゲームの実行エンジンは別。独自属性の読み込みをゲーム側で実装する。
 - **編集者評価**: AI生成タイルを遊べる地形へ整理する工程の基盤。
-- **メトリクス**: ★12,948、fork 1,975、作成 2011-02-27、最終push 2026-09-25T09:23:19Z、archived=False
+- **メトリクス**: ★12,950、fork 1,975、作成 2011-02-27、最終push 2026-09-25T09:23:19Z、archived=False
 - **確認**: 2026-09-09 / コミット `395619407b39a34fccf45dc9e6e7dd0c34b6feb5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/mapeditor/tiled/tree/395619407b39a34fccf45dc9e6e7dd0c34b6feb5)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -399,7 +399,7 @@ Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定�
 - **依存**: Pillow、外部画像生成モデル
 - **制約・未確認**: 64×64のピクセルアート前提。最終品質は画像生成バックエンド依存。ライセンスはMITとREADMEに記載。
 - **編集者評価**: プロンプト1つから8方向アニメのアトラスとQAまでを一連で作る流れが具体的で、RPG・ローグライク・見下ろし型の素材づくりに向く。
-- **メトリクス**: ★338、fork 37、作成 2026-05-03、最終push 2026-05-08T23:42:15Z、archived=False
+- **メトリクス**: ★342、fork 37、作成 2026-05-03、最終push 2026-05-08T23:42:15Z、archived=False
 - **確認**: 2026-10-04 / コミット `9ce98dffb98c84488fe7b99b62c49fabee20abd6`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tachikomared/character-animation-creator-skill/tree/9ce98dffb98c84488fe7b99b62c49fabee20abd6)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。

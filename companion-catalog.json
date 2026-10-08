@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "checked_on": "2026-10-07",
+ "checked_on": "2026-10-08",
  "scope_ja": "アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。",
  "notice_ja": "**注意**: リンク先のコード・モデル・音声・キャラクター素材の権利はそれぞれ別です。掲載は動作・安全性・商用利用の保証ではありません。導入前に各リポジトリのライセンス、同梱素材と外部APIの利用条件を確認してください。版権キャラのモデル・声の再利用や、実在人物の発言・私的な記録を用いた人格作成には権利と同意の確認が必要です。",
  "discovery_md": "調査の入口: [live2d](https://github.com/topics/live2d) · [vtuber](https://github.com/topics/vtuber) · [anime](https://github.com/topics/anime) · [waifu](https://github.com/topics/waifu) · [virtualassistant](https://github.com/topics/virtualassistant) · [ai-companion](https://github.com/topics/ai-companion) · [chatbot](https://github.com/topics/chatbot) · [digital-human](https://github.com/topics/digital-human) のトピック、GitHubの関連語検索、[awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers) と [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion)。候補リストやトピックの掲載だけで採用せず、各プロジェクトのREADME・関連ドキュメントで機能と未実装部分を確認しています（2026-09-23）。",
@@ -792,6 +792,36 @@
    "summary_ja": "Live2Dデスクトップペット「軸伊」。千問（百煉）のリアルタイム音声対話に対応し、押して話す/割り込みができる。Windows x64とmacOS ARM64向けにビルド配布され、クラウド同期の育成ゲーム要素も持つ。",
    "catalog_id": null,
    "checked_on": "2026-10-07"
+  },
+  {
+   "id": "yuuzulight-mana",
+   "name": "Mana",
+   "url": "https://github.com/Yuuzulight/Mana",
+   "repository": "Yuuzulight/Mana",
+   "section_id": "s1",
+   "summary_ja": "Windows向けのローカル完結型AIコンパニオン。llama.cpp推論・Whisper音声認識・ローカルTTS・画面OCRを統合し、Live2D/VRMアバターの口パクと感情反応を備える。既定で外部送信しない。",
+   "catalog_id": null,
+   "checked_on": "2026-10-08"
+  },
+  {
+   "id": "michaelchang-jpg-ff14-ai-companion",
+   "name": "ff14-ai-companion",
+   "url": "https://github.com/michaelchang-jpg/ff14-ai-companion",
+   "repository": "michaelchang-jpg/ff14-ai-companion",
+   "section_id": "s1",
+   "summary_ja": "FFXIVを一緒に遊ぶLive2Dデスクトップコンパニオン。Dalamudプラグインで戦闘・副本・探索イベントを取得し、VOICEVOXの日本語音声と繁体中文字幕で反応する。",
+   "catalog_id": null,
+   "checked_on": "2026-10-08"
+  },
+  {
+   "id": "lulu930128-desktop-agent-runtime",
+   "name": "desktop-agent-runtime",
+   "url": "https://github.com/lulu930128/desktop-agent-runtime",
+   "repository": "lulu930128/desktop-agent-runtime",
+   "section_id": "s1",
+   "summary_ja": "Windows向けlocal-firstの個人AIワークマネージャ。Open-LLM-VTuber・GPT-SoVITS・Live2Dを統合し、Live2D桌寵・Reader・Briefing・受控ツール・ローカル記憶を提供する。",
+   "catalog_id": null,
+   "checked_on": "2026-10-08"
   }
  ]
 }

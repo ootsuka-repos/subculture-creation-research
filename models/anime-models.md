@@ -677,3 +677,67 @@ CLIP特徴量にMLPを重ねた美観スコアラ。アニメ風画像を0〜10�
 確認日: 2026-10-07 / revision `c2a747fd61d310a90e9cbbf8fc590c522f234424` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `model.pth`、`model.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/Eugeoter/waifu-scorer-v3/blob/c2a747fd61d310a90e9cbbf8fc590c522f234424/README.md) / [モデルAPI](https://huggingface.co/api/models/Eugeoter/waifu-scorer-v3)
+
+## Sakura-13B-Galgame
+
+複数のオープンLLM（Baichuan2-13B、Qwen/Qwen1.5系）を日中ACGN語料で継続事前学習・微調整したテキスト生成モデル。軽小説・Galgame領域の日中翻訳向け。
+
+- **版の区別**: カードにはv0.1〜v0.7の複数重み（Baichuan2-13B系、Qwen14B系、4bit/8bit量子化）を同リポジトリに収録。別リポジトリで7B/14B/32BのGGUF版も案内。使用系統とファイル名を固定する。
+- **入力・設定**: カードにシステムプロンプト例があり、軽小説調で日本語を行単位の配列として入力し簡体字中国語へ訳す形式。他プロジェクトが提供する独自プロンプトでは品質を保証しないと明記。
+- **必要構成**: カードはllama.cpp GGUFでの量子化別VRAM目安（Q4_K_Mで16G等）を掲載。llama.cpp/vllm/OpenAI互換API経由の運用が想定される。
+- **制約**: 作者は人称代名詞の誤りや文脈理解の問題が残ると明記。機械翻訳のため公開時は機翻表示を求める。カードはPPL/BLEU/人手評価をTBDとしている。
+- **利用条件**: メタデータはapache-2.0だが、本文はCC BY-NC-SA 4.0と明記し、Sakura全モデルと派生モデルの商用を禁止。公開重みを無条件に商用可と扱わない。
+- **編集者評価**: 軽小説・Galgameの日中翻訳向けに広く使われてきた系統で、漫画・小説のローカライズ検証の比較対象になる。
+- **次の検証（未実施）**: 同一の日本語台本でSakura系と汎用LLMを翻訳比較し、人称・用語一貫性・制御記号の保持を記録する。
+
+確認日: 2026-10-08 / revision `86ebbf223c466c97aaeb503f82d63a49fe341df7` / gated=False。ファイル名候補11件の一覧確認。代表ファイル: `pytorch_model-00001-of-00003.bin`、`pytorch_model-00002-of-00003.bin`、`pytorch_model-00003-of-00003.bin`、`sakura_13b_model_v0.1/sakura-13b-2epoch-260k-0826-v0.1.bin`
+
+根拠: [固定モデルカード](https://huggingface.co/sakuraumi/Sakura-13B-Galgame/blob/86ebbf223c466c97aaeb503f82d63a49fe341df7/README.md) / [モデルAPI](https://huggingface.co/api/models/sakuraumi/Sakura-13B-Galgame)
+
+## Baikal-Anime-Upscaler
+
+アニメ・イラスト向けの2倍超解像モデル。Baikal LoopSR と SwinFIR v31（Transformer系）の2系統を配布する。
+
+- **版の区別**: Baikal_LoopSR_x2.safetensors と Baikal_SwinFIR_Anime_x2_v31.safetensors。LoopSRはloops 1〜4に対応。
+- **入力・設定**: テキストプロンプトはなし。ComfyUIノード（Baikal/Upscale）でモデル読込→拡大→保存の順に接続する。
+- **必要構成**: ComfyUI-Baikal-Animeノードを導入し、重みをComfyUI/models/anime_upscale/に配置。LoopSRの既定タイル/オーバーラップ/ハローは256/32/96。
+- **制約**: 2倍固定。カードは品質を定量比較で示しておらず、入力の劣化具合で結果が変わる。
+- **利用条件**: MIT。カードにMIT表記あり。
+- **編集者評価**: アニメ特化の2倍拡大をComfyUIで扱える実装つきで、生成イラストの仕上げに組み込みやすい。
+- **次の検証（未実施）**: 同一イラストでLoopSR（loops1〜4）とSwinFIRを比較し、速度と線・テクスチャの保持を記録する。
+
+確認日: 2026-10-08 / revision `37a73e6ce75b90fe2103ec95cc2e18115857b723` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `Baikal_LoopSR_x2.safetensors`、`Baikal_SwinFIR_Anime_x2_v31.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/SnJake/Baikal-Anime-Upscaler/blob/37a73e6ce75b90fe2103ec95cc2e18115857b723/README.md) / [モデルAPI](https://huggingface.co/api/models/SnJake/Baikal-Anime-Upscaler)
+
+## Anima-Control-Pose
+
+Anima v1.0画像モデル向けのネイティブなpose制御アダプタ。凍結したAnima DiTにチャネル連結のcontrol-LoRA（rank16）とzero初期化のControlEmbedderを加える。
+
+- **版の区別**: Preview-2（anima_pose_preview2.safetensors、512/768/1024対応）とPreview-1（512のみ）。併せて姿勢検出用ONNX（rtmw-dw-x-l、yolox_m）を配布。
+- **入力・設定**: 参照写真から姿勢を検出し骨格を描画して条件にする。READMEは黒背景の細い骨格が学習条件で最良の既定と説明。strength 0でベース相当、1で骨格追従、範囲0〜2。
+- **必要構成**: ComfyUIにcomfyui/内の2ノード（Anima Control Lora と ComfyUI-anima-pose-control）を配置し、rtmlib/OpenCV/ONNX Runtimeを用意。初回に検出モデル約316MBを取得。
+- **制約**: Preview-2は実験段階で、姿勢を外す・手の融合・体の破綻が残るとカードが明記。動的ポーズが最も不安定で、短いプロンプトでは画風が平坦化する。
+- **利用条件**: metadataはother、license_nameはcirclestone-labs-non-commercial-license。Anima派生としてNVIDIA Open Model Licenseも継承し、非商用のみ。
+- **編集者評価**: Anima系で姿勢を制御する数少ない公開実装で、ポーズ指定の検証候補になる。
+- **次の検証（未実施）**: 同一キャラ・同一プロンプトでcontrol on/offとstrengthを変え、姿勢一致と破綻の頻度を記録する。
+
+確認日: 2026-10-08 / revision `8f559771d5a49a02fa03f7df2a05ccb7eecb3a2a` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `adapter_model.safetensors`、`anima_pose_preview2.safetensors`、`detector/rtmw-dw-x-l_simcc-cocktail14_270e-256x192_20231122.onnx`、`detector/yolox_m_8xb8-300e_humanart-c2c7a14a.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/Claquasse/Anima-Control-Pose/blob/8f559771d5a49a02fa03f7df2a05ccb7eecb3a2a/README.md) / [モデルAPI](https://huggingface.co/api/models/Claquasse/Anima-Control-Pose)
+
+## H3_Ref2V_Anime_Slider_v1
+
+MiniMax-H3をベースにしたスライダーLoRA。正の強度で2Dアニメ寄り、負で写実寄りに全体スタイルを動かす。
+
+- **版の区別**: H3_Ref2V_Anime_Slider_v1.safetensors の単一ファイル。Ref2VとT2Vの両ワークフローに適用。
+- **入力・設定**: 推奨強度は-5〜5で、通常は3または-3でスタイルが定まるとカードが説明。プロンプトや参照画像により調整が必要。
+- **必要構成**: MiniMax-H3ワークフロー上でLoRAとして適用。必要VRAMや手順の詳細はカードに記載なし。
+- **制約**: 主要目的は2Dアニメ寄せで、写実化は主目的ではない。強度は参照画像とプロンプト依存で調整が要る。
+- **利用条件**: カードにライセンス表記なし（metadataはnull）。MiniMax-H3の条件に従う必要があり、商用可否は未確認。
+- **編集者評価**: H3の2Dアニメが3D寄りになる問題への対処として、スタイル寄せの検証に使える。
+- **次の検証（未実施）**: 同一参照画像・プロンプトで強度-3/0/3を比較し、平面感とキャラ保持の差を記録する。
+
+確認日: 2026-10-08 / revision `5a55012c837819edcd1e2f9b67c73ea46921875f` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `H3_Ref2V_Anime_Slider_v1.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1/blob/5a55012c837819edcd1e2f9b67c73ea46921875f/README.md) / [モデルAPI](https://huggingface.co/api/models/adf99/H3_Ref2V_Anime_Slider_v1)

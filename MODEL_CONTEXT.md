@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-07。**194件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -444,6 +444,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: Webアプリでの画像拡大・下書き確認。
   - 出典（2026-10-07確認）: https://github.com/gqgs/upscalejs/blob/4ead647b5dbb9d031e96d59d8a4d373722e38547/README.md
 
+- **Xyether-Anime-Upscaler** [model / AIモデル・学習 / 小規模・初期評価候補]
+  - アニメ・イラストのRGB画像 → 2倍解像度のRGB画像。アニメ・イラスト向けの2倍超解像モデル。SRVGGアーキテクチャで、線画・色・キャラディテールの保持を狙う。GitHub Releaseで重みを配布。
+  - 制約: 2倍固定。READMEは品質の定量比較を示しておらず、対象はアニメ・イラストに限られる。
+  - 制作用途: 生成イラストや動画フレームの下処理として組み込みやすい。
+  - 出典（2026-10-08確認）: https://github.com/XYETHER/Xyether-Anime-Upscaler/blob/b8d089d522a435641257262ae130cf7d0e07c55c/README.md
+
 ## 動画生成
 
 - **FramePack** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -579,6 +585,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEはGodot向けの機能範囲にとどまり、AI生成は含まない。バージョン差で挙動が異なる可能性がある。
   - 制作用途: アバターをゲーム・リアルタイム演出へ組み込む工程の候補。
   - 出典（2026-10-06確認）: https://github.com/V-Sekai/godot-vrm/blob/e15199f980064028bfa4fbee5e70dddb82dd55c3/README.md
+
+- **awesome-astra-blender-characters** [workflow_tool / AI連携 / 小規模・初期評価候補（指示書のみ）]
+  - キャラクター参考図、既存Blenderプロジェクト → 編集可能な.blend、同一バージョンの多視点レンダ、検収メモ。人物参考図から編集可能なBlenderキャラクターを作るAIエージェント向けスキル。九方向ビュー作成、顔・髪の制作、部分修正、多視点検収を手順化する。
+  - 制約: READMEは人物モデル・重み・自動3D再構成プログラムを含まないと明記。全身・服・リギング・アニメーションの端到端検証例は未提供。
+  - 制作用途: Blender作業を手順付きでエージェントに委ねる補助として使える。
+  - 出典（2026-10-08確認）: https://github.com/icesixgod/awesome-astra-blender-characters/blob/2b54222f8d39db7ba7ae7444d6fec985be7ad5b1/README.md
 
 ## TTS・キャラクター音声
 
@@ -772,6 +784,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 歌声合成モデルを自作・追加学習する際の参照基盤として使える。
   - 出典（2026-10-04確認）: https://github.com/MoonInTheRiver/DiffSinger/blob/4662c53a27a5ac662821eae23a7d71cfcff7356d/README.md
 
+- **yinyue** [pipeline / AIモデル・学習 / 小規模・初期評価候補（作者の自作物のみ公開）]
+  - 歌や動画、声色モデル、歌詞・旋律 → キャラ音色へ変換した歌声、混音済み動画。楽曲の原声を二次元キャラの声へ置き換えるローカルGPU向けシステム。RVC・GPT-SoVITS・so-vits-svc・DiffSingerを総控えページと端末間パイプラインで束ねる。
+  - 制約: リポジトリは作者自作部分のみで、エンジン本体・重み・ffmpegは含まない。3エンジン同時起動はVRAMを競合する。
+  - 制作用途: キャラ音色の歌唱素材づくりや動画の吹き替え検証に向く。
+  - 出典（2026-10-08確認）: https://github.com/yishui111/yinyue/blob/0edf42fef95ed4df06cde376800aef97343c6b4e/README.md
+
 ## VTuber・AIキャラクター・VRM
 
 - **AIRI** [web_app / AI連携 / 更新のある導入・評価候補]
@@ -912,6 +930,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: VTuber配信ツール・自動化の連携。
   - 出典（2026-10-07確認）: https://github.com/Agash/VTubeStudio.Client/blob/266ce0fe63c102dc4ec3ce191c301145fc75fb3a/README.md
 
+- **KuroBlob-AI** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - カメラ映像・マイク音声、テキスト対話、自然言語の表情指示 → 60FPSアバター描画、H.264 MP4、表情JSON。HTML5 Canvasで動く手続き生成のゼリー型3D風アバターエンジン。ベジェばね物理、表情タイムライン、Web VTuber面追従、LLM対話、MP4書き出しを備える。
+  - 制約: アバターは手続き生成のCanvas描画で、Live2D/VRMモデルは扱わない。面追従はブラウザのカメラ機能に依存。
+  - 制作用途: 軽量な配信用アバターや表情素材の検証に向く。
+  - 出典（2026-10-08確認）: https://github.com/eykicuihb/KuroBlob-AI/blob/b01884dfe43ea5e14da6d408303fac86b090609c/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -979,6 +1003,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: Anima base重みは研究・非商用限定とREADMEが明記。構成はバージョン1.0の段階。フォルダ移動時はSetEnv.batの再実行が必要。
   - 制作用途: Animaベースモデルへのキャラ・画風LoRA学習。
   - 出典（2026-10-07確認）: https://github.com/official-imvoiid/Anima-Portable-Standalone-Trainer/blob/b07e46a759487b5f96e685325c8213738505d2af/README.md
+
+- **tag-skill** [workflow_tool / AI連携 / 小規模・初期評価候補（指示書のみ）]
+  - キャラクター・動作・構図・環境・画風の指示、任意のOC外貌ライブラリ → 各モデル向けの画像生成プロンプト（タグ・自然言語）。役柄・動作・構図・環境・画風の要件から画像生成プロンプトを組み立てるエージェント向けスキル。SD/NovelAI/Anima/Krea 2など形式別の出力規則をまとめる。
+  - 制約: READMEはAnimaとKrea 2について体系的な検証をしていないと明記。出力品質はクライアントモデルに依存。
+  - 制作用途: 画像生成のプロンプト設計を標準化する補助として使える。
+  - 出典（2026-10-08確認）: https://github.com/1756141021/tag-skill/blob/58270f3a6f3f7756c077f88752bd876c517ddd41/README.md
 
 ## 字幕・翻訳・ローカライズ
 
@@ -1107,6 +1137,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 単一話者のみ対応。発音・リップシンク等に多くの課題が残ると作者が明記。ライセンス表記なし。
   - 制作用途: 吹き替えワークフローの検証・実験。
   - 出典（2026-10-07確認）: https://github.com/Bugsbunnydev2000/local_anime_dubber/blob/3321d6f202d1e7631e8a64395edf4333377ca002/README.md
+
+- **manhua** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - CBZ/ZIPアーカイブ、またはJPG/PNG/WEBP画像フォルダ → 翻訳・描画済みページ画像、中間JSON、ZIP/CBZ。中国語マンガ（manhua）ページを英語へ翻訳するローカル向けPythonパイプライン。吹き出し検出・OCR・翻訳・言い換え・描画・QA・梱包を段階別に実行する。
+  - 制約: READMEはPDF読み込みを未実装とし、出力もPDF/TARを作らないと明記。検出・OCR品質はモデル依存。
+  - 制作用途: 章単位のバッチ翻訳と人手修正を組み合わせる制作フローに向く。
+  - 出典（2026-10-08確認）: https://github.com/aklid01/manhua/blob/59e7bee0e4fbcdddad5bc8d97a7a538c7f37b861/README.md
+
+- **manga-image-translator-android** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 端末内の漫画ページ画像（日本語） → 翻訳・タイプセット済みページ画像。zyddnys/manga-image-translatorを基にしたAndroid向けオンデバイス漫画翻訳アプリ。日本語漫画をONNX Runtime Mobileで検出・OCR・インペイントし、LLMで翻訳する。
+  - 制約: 日本語漫画専用でOCR・辞書は日本語向け。READMEは手書きや効果音、低解像度は手動調整が必要と明記。端末のRAM/CPU性能に依存。
+  - 制作用途: スマホで原稿を確認しながら翻訳初稿を作る用途に向く。
+  - 出典（2026-10-08確認）: https://github.com/Yuu18id/manga-image-translator-android/blob/ea5fd9724b37cb98835d38136be6cd1a4b07e712/README.md
 
 ## モーション・身体演技
 
@@ -1266,6 +1308,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [Waifu-Inpaint-XL](https://huggingface.co/ShinoharaHare/Waifu-Inpaint-XL/blob/a33e08f2ce957d0bd9974edddbe70fcd9b8f1680/README.md): SDXLベースのインペインティング用モデル。unet/text_encoder/text_encoder_2/vaeのdiffusers構成と単一safetensorsを配布する。 metadataはopenrail++。
 - [Qwen3.5-4B-Danbooru-Prompt-Generator](https://huggingface.co/TRYZER01/Qwen3.5-4B-Danbooru-Prompt-Generator/blob/d54023fefd8433c0b27356c146f34d58395001ac/README.md): Qwen3.5-4B系テキスト専用LLMをマージしたモデル。Danbooruタグ列を入力に、タグ列のプロンプトへ展開する。ComfyUIノードからHTTPでモデルサーバー（LM Studio等）に問い合わせる構成。 metadataはapache-2.0。上流Qwen3.5-4Bのライセンスにも従う。
 - [waifu-scorer-v3](https://huggingface.co/Eugeoter/waifu-scorer-v3/blob/c2a747fd61d310a90e9cbbf8fc590c522f234424/README.md): CLIP特徴量にMLPを重ねた美観スコアラ。アニメ風画像を0〜10で採点する。 metadataはopenrailだが、カード本文はApache 2.0と記載され両者で表記が一致しない。商用利用の可否を断定しない。
+- [Sakura-13B-Galgame](https://huggingface.co/sakuraumi/Sakura-13B-Galgame/blob/86ebbf223c466c97aaeb503f82d63a49fe341df7/README.md): 複数のオープンLLM（Baichuan2-13B、Qwen/Qwen1.5系）を日中ACGN語料で継続事前学習・微調整したテキスト生成モデル。軽小説・Galgame領域の日中翻訳向け。 メタデータはapache-2.0だが、本文はCC BY-NC-SA 4.0と明記し、Sakura全モデルと派生モデルの商用を禁止。公開重みを無条件に商用可と扱わない。
+- [Baikal-Anime-Upscaler](https://huggingface.co/SnJake/Baikal-Anime-Upscaler/blob/37a73e6ce75b90fe2103ec95cc2e18115857b723/README.md): アニメ・イラスト向けの2倍超解像モデル。Baikal LoopSR と SwinFIR v31（Transformer系）の2系統を配布する。 MIT。カードにMIT表記あり。
+- [Anima-Control-Pose](https://huggingface.co/Claquasse/Anima-Control-Pose/blob/8f559771d5a49a02fa03f7df2a05ccb7eecb3a2a/README.md): Anima v1.0画像モデル向けのネイティブなpose制御アダプタ。凍結したAnima DiTにチャネル連結のcontrol-LoRA（rank16）とzero初期化のControlEmbedderを加える。 metadataはother、license_nameはcirclestone-labs-non-commercial-license。Anima派生としてNVIDIA Open Model Licenseも継承し、非商用のみ。
+- [H3_Ref2V_Anime_Slider_v1](https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1/blob/5a55012c837819edcd1e2f9b67c73ea46921875f/README.md): MiniMax-H3をベースにしたスライダーLoRA。正の強度で2Dアニメ寄り、負で写実寄りに全体スタイルを動かす。 カードにライセンス表記なし（metadataはnull）。MiniMax-H3の条件に従う必要があり、商用可否は未確認。
 
 ## 保留情報
 
