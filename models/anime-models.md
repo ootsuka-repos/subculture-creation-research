@@ -741,3 +741,83 @@ MiniMax-H3をベースにしたスライダーLoRA。正の強度で2Dアニメ�
 確認日: 2026-10-08 / revision `5a55012c837819edcd1e2f9b67c73ea46921875f` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `H3_Ref2V_Anime_Slider_v1.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1/blob/5a55012c837819edcd1e2f9b67c73ea46921875f/README.md) / [モデルAPI](https://huggingface.co/api/models/adf99/H3_Ref2V_Anime_Slider_v1)
+
+## Anima-3.8B
+
+Anima 2.9BのDiTを52ブロックへ拡張した約3.8Bのアニメ/イラスト向け画像モデル。timestep-awareなSemantic Connector v2を拡散チェックポイントへ統合し、別途Qwen3.5 4BとネイティブQwen3 0.6Bのテキストエンコーダを併用する。
+
+- **版の区別**: 推論用バンドルはAnima-3.8B-v1.1（旧Anima-3.8Bとpreview素材、expanded_adapterも同梱）。テキストエンコーダはqwen35_4b.safetensorsとqwen_3_06b_base.safetensors、VAEはqwen_image_vae.safetensorsを別途配置する。
+- **入力・設定**: 自然文・Danbooru/Gelbooruタグ・混合に対応。複数キャラは主語を明示し代名詞を避けるよう案内。解像度832x1216（1MP程度）、CFG4〜7、28〜50steps、res_multistep+Betaが推奨の出発点。
+- **必要構成**: ComfyUIはcomfyui-anima-3-8B、Forge Neoはforge-anima-3-8Bの拡張を導入。テキストエンコーダはプロンプト符号化時のみ読み込み、その後解放する構成でピークVRAMを抑える。
+- **制約**: 作者は実験的な拡張リリースと位置づける。低VRAMではプロンプト符号化中にQwen3.5の分だけVRAM使用が一時的に増えると説明。正確なメモリ量は解像度・attention・offload設定依存。
+- **利用条件**: CircleStone Labs Non-Commercial License（派生物カテゴリ）。Cosmos-Predict2由来のNVIDIA Open Model Licenseも関係する。無条件の商用利用可ではない。
+- **編集者評価**: Anima系の最新拡張として、プロンプト追従と複数キャラの属性束縛の改善を狙った構成が具体的。
+- **次の検証（未実施）**: Anima-2.9Bと同一プロンプト・解像度で生成し、複数キャラの属性混線と構図の差を比較する。
+
+確認日: 2026-10-09 / revision `3ef641256377dc4e7efbf35d426ca31c1fe5180b` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `difussion_models/Anima-3.8B-v1.1.safetensors`、`difussion_models/Anima-3.8B.safetensors`、`text_encoders/Anima-3.8B-expanded_adapter.safetensors`、`text_encoders/qwen35_4b.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/lylogummy/Anima-3.8B/blob/3ef641256377dc4e7efbf35d426ca31c1fe5180b/README.md) / [モデルAPI](https://huggingface.co/api/models/lylogummy/Anima-3.8B)
+
+## Anima-InContext-Character
+
+Anima 2B（Cosmos-Predict2 DiT + Qwen3-0.6Bテキストエンコーダ + WanVAE）向けのin-context参照LoRA（DiT rank64）とComfyUIノード。参照画像をVAE潜在のまま時間軸のフレームとして連結し、self-attention経由で同一性を流し込む。
+
+- **版の区別**: 重みはanima-incontext-character.safetensors。ベースのAnima各ファイルと、同梱のカスタムノードcomfyui-anima-incontext・ワークフローJSONを併用する。
+- **入力・設定**: 参照は全身1枚＋顔アップ1枚を推奨。外見タグも併記し、プロンプトはポーズ/シーン、参照は同一性を担う。strength1.0が中立、効きが弱い場合1.2〜1.5。er_sde/simple、30steps、CFG4、discrete_flow_shift3.0が推奨。
+- **必要構成**: ComfyUIにカスタムノードを配置し、LoRAはmodels/loras、Animaベース一式をdiffusion_models/text_encoders/vaeへ。参照はマスクで白背景合成するのが推奨。
+- **制約**: 細かな装飾・柄は揺れることがあるとREADMEが明記。参照を強くすると背景が薄まることがある。学習データはアニメイラスト領域。
+- **利用条件**: ベースAnimaはCircleStone Labs非商用ライセンスで、本LoRAも派生物として非商用配布。商用利用・再配布前に最新LICENSEの確認が必要と記載。
+- **編集者評価**: キャラ毎の学習なしで未知キャラを別ポーズ・別シーンに展開できる点が、制作実務の一貫性維持に効く。
+- **次の検証（未実施）**: 全身＋顔アップの参照で数シーンを生成し、髪飾りや服の柄の保持度とstrengthの効きを確認する。
+
+確認日: 2026-10-09 / revision `e084c88c02dcaa55806c56b22a43461d4c32be85` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `anima-incontext-character.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/darask0/Anima-InContext-Character/blob/e084c88c02dcaa55806c56b22a43461d4c32be85/README.md) / [モデルAPI](https://huggingface.co/api/models/darask0/Anima-InContext-Character)
+
+## z-image-modern-anime
+
+Tongyi-MAIのZ-Imageを日本語モダンアニメ調にフルファインチューンした実験モデル。作者はQuality Tuningのみで学習したと記載。diffusersのZImagePipelineでfrom_pretrainedできる形式で配布。
+
+- **版の区別**: modern_anime_z_image.safetensorsの単一チェックポイント。diffusers一式（text_encoder/transformer/vae）も同梱。
+- **入力・設定**: トリガーは「Japanese modern anime style, 」。negative promptは「photo, cg, 3d, blurry」を例示。1280x720、CFG4、30steps、cfg_normalization=Falseのコード例が示されている。
+- **必要構成**: ComfyUIでモデルを所定フォルダへ置くか、diffusersのZImagePipelineで読み込む。README記載の再現設定以外の条件は未記載。
+- **制約**: 作者がexperimental（実験的）と明記。解像度・ステップ等は例示の1条件のみで、広い条件での検証は示されていない。
+- **利用条件**: apache-2.0。
+- **編集者評価**: Z-Image系のアニメ専用ファインチューンとして、既存SDXL系のアニメモデルと比較する候補になる。
+- **次の検証（未実施）**: 同一プロンプトでZ-Imageベースと比較し、画風の寄り方と解像度安定性を確認する。
+
+確認日: 2026-10-09 / revision `c5e91f527e19f68ce9e941922dce5e7ed0af3849` / gated=False。ファイル名候補5件の一覧確認。代表ファイル: `modern_anime_z_image.safetensors`、`text_encoder/model.safetensors`、`transformer/diffusion_pytorch_model-00001-of-00002.safetensors`、`transformer/diffusion_pytorch_model-00002-of-00002.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/alfredplpl/z-image-modern-anime/blob/c5e91f527e19f68ce9e941922dce5e7ed0af3849/README.md) / [モデルAPI](https://huggingface.co/api/models/alfredplpl/z-image-modern-anime)
+
+## Irodori-TTS-600M-v3-VoiceDesign
+
+Rectified Flow Diffusion Transformer（RF-DiT）による約600Mの日本語TTS。テキスト・参照音声・キャプションを同時に条件に使うMulti-modal Voice Designで、32次元DACVAE潜在から48kHz波形を再構成する。Duration Predictorを内蔵。
+
+- **版の区別**: 重みはルートのmodel.safetensors。ベースはAratako/Irodori-TTS-500M-v2系で、推論・学習コードはGitHubのAratako/Irodori-TTSを参照する。
+- **入力・設定**: テキストに絵文字を埋めて笑い・咳・吐息などを制御（EMOJI_ANNOTATIONS.md）。キャプションで感情・話し方を指定し、参照音声で話者同一性を保持する。サンプルは同一シードでキャプション差のみを見せる。
+- **必要構成**: GitHubのIrodori-TTSの推論手順に従う。モデルカードに追加のVRAM要件は明記なし。
+- **制約**: 言語は日本語（language: ja）中心。キャプション・絵文字の効きは学習データの注釈パイプラインに依存する。
+- **利用条件**: MIT。生成音声にはSilentCipherによる不可聴ウォーターマークを付与すると記載。
+- **編集者評価**: 参照音声＋キャプション＋絵文字で演技を細かく指定できる点が、キャラ音声制作で使い分けやすい。
+- **次の検証（未実施）**: 同一参照音声でキャプションと絵文字を変え、感情表現の振れ幅と声質保持を聴き比べる。
+
+確認日: 2026-10-09 / revision `e863a3a93e652e09afeff3e84823a206a0a60314` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign/blob/e863a3a93e652e09afeff3e84823a206a0a60314/README.md) / [モデルAPI](https://huggingface.co/api/models/Aratako/Irodori-TTS-600M-v3-VoiceDesign)
+
+## manga-ocr-2025-onnx
+
+日本語漫画OCR（kha-white/manga-ocr系）のVision Encoder DecoderをOptimumでONNX出力したもの。縦書き・横書き、ルビ、画像上の文字、低品質スキャンなど漫画特有の条件に頑健とされる。
+
+- **版の区別**: encoder_model.onnxとdecoder_model.onnxの2ファイル構成。jzhang533/manga-ocr-base-2025の改良を反映。元モデルはmanga109-sと合成データで学習。
+- **入力・設定**: TrOCRProcessorとORTModelForVision2Seq（optimum[onnxruntime]）で画像をRGB読み込みし、pixel_valuesからテキストを生成する。
+- **必要構成**: optimum[onnxruntime]。ONNXランタイムでCPU推論できる構成。
+- **制約**: モデルカードに性能評価や対応範囲の記載はなく、実装は元モデルと派生改良に依存。リポジトリのライセンスは未記載（null）。
+- **利用条件**: ライセンスは明示されていない。元実装manga-ocrの条件を確認してから利用する。
+- **編集者評価**: ONNX化により漫画OCRをローカル配信やアプリ組み込みへ載せやすくする配布。
+- **次の検証（未実施）**: 手元の漫画画像でOCR精度と推論速度を、元のmanga-ocrと比較する。
+
+確認日: 2026-10-09 / revision `e8b27bbd3f424fe3877e0bda704d6a920e4f0a33` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `decoder_model.onnx`、`encoder_model.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/l0wgear/manga-ocr-2025-onnx/blob/e8b27bbd3f424fe3877e0bda704d6a920e4f0a33/README.md) / [モデルAPI](https://huggingface.co/api/models/l0wgear/manga-ocr-2025-onnx)

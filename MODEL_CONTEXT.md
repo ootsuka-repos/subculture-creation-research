@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -83,6 +83,30 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: モデル重みはCC BY-NC-SA 4.0でリポジトリ非同梱、別途ダウンロードが必要。コードはApache-2.0。
   - 制作用途: 漫画の彩色補助・ラフ彩色に使えるが、モデルの商用条件に注意。
   - 出典（2026-10-05確認）: https://github.com/Mobai0z0/manga-colorizer/blob/f1bbf26d434be05f66a0a5f66ab821a1fd10c78d/readme.md
+
+- **ColorComic** [web_app / AIモデル・学習 / 中規模・実用候補]
+  - 白黒の漫画・コミックPDF、任意で参照カラー画像、任意でOpenRouter APIキー → 彩色済みPDF（ページ単位のCMYK書き出しも可）。白黒の漫画・マンファPDFを、領域ごとに色を割り当てる「ガイド付き彩色」で手塗り風に彩色するローカルWebアプリ。Auto／参照画像／LLMの3モードを持ち、任意でテキスト専用LLMが配色を指示する。
+  - 制約: 参照モードは初回約6GB、CLIP領域分類は約600MBのDLが必要と明記。Autoモードはページ間で色が揺れうるためLAB転送で緩和する。
+  - 制作用途: 既存の白黒原稿を彩色して見本・販促用途に使う検証に向く。
+  - 出典（2026-10-09確認）: https://github.com/vikast908/ColorComic/blob/8521e525963893b69649c4cf2a747095928916ed/README.md
+
+- **manga-colorizer** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - 白黒の漫画ファイル（PDF/EPUB/CBZ） → 同形式のカラー版ファイル、拡張ではページ単位の彩色表示。白黒漫画を丸ごと（PDF/EPUB/CBZ）色付けするセルフホストWebアプリ。Docker一行で導入でき、読書中にその場で色付けするブラウザ拡張も同梱。線画を保持したまま色だけを元解像度ページへ転送する。
+  - 制約: ページごとに独立彩色するため髪や服の色がページ間で揺れるとREADMEが明記。拡張はcanvas描画ページを彩色できない。
+  - 制作用途: 既刊のカラー化試作や読書体験の検証に向く。
+  - 出典（2026-10-09確認）: https://github.com/FlamboyantEntertainment/manga-colorizer/blob/118bfe3f93befb7cb28c13a51b60a675561b6253/README.md
+
+- **MangaFlow** [workflow_tool / AIモデル・学習 / 小規模・初期評価候補（Windows v1.0.0-rc2）]
+  - 小説テキスト（貼付/TXT/Markdown）、キャラ・衣装の参照画像、外部モデルプロバイダ設定 → 漫画ページPNG、PDF、プロジェクトJSON、アセットマニフェスト。小説テキストから漫画ページを作るローカル優先の単一ユーザー向けワークベンチ。原作・キャラ/衣装参照・絵コンテ・ページ候補を追跡可能な形でまとめ、AIは補助し人間が承認して進める。
+  - 制約: READMEは未署名インストーラ、複数の未検証ケース、無人で全章を生成する製品ではない点を明記。作業UIは主に中国語。
+  - 制作用途: 原作からページ単位で人の確認を挟む漫画制作フローの検証に向く。
+  - 出典（2026-10-09確認）: https://github.com/coffe01-10/MangaFlow/blob/72e89a1fc564478e4d485886391ce86d6d18409e/README.md
+
+- **AI-Comic-Generator** [web_app / AIモデル・学習 / 小規模・初期評価候補]
+  - 物語のあらすじ・設定、Google APIキー → 絵コンテJSON、キャラ設定画像、漫画パネル画像。テキストの物語から、絵コンテ生成・キャラクター設定（三面図）・キャラ一貫性チェック・ビジュアル編集まで行うオープンソースの漫画制作ツール。Google Geminiモデルを利用し、全体をJSONで管理する。
+  - 制約: READMEはGoogleの最新モデル（gemini-3-flash-preview / gemini-3-pro-image-preview）前提と明記。他プロバイダは非対応。
+  - 制作用途: あらすじからパネル単位で作り分ける漫画の試作フローに向く。
+  - 出典（2026-10-09確認）: https://github.com/Dapeng960208/AI-Comic-Generator/blob/cc8869aeeae4892d633d0071d1de46edf7a76741/README.md
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -351,6 +375,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 正面・単一キャラ・上半身のみ対象で、パーツマスクは見本1枚向けに調整。インペイントのにじみは既知の未解決課題とREADMEが記載。
   - 制作用途: Live2Dリギング前のレイヤー分けの下準備。
   - 出典（2026-09-30確認）: https://github.com/byeolki/loom-unravel/blob/5d587a66d3e46b3c27cd0e655841356959c867fd/README.md
+
+- **see-through-portable** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - アニメキャラクターのイラスト画像1枚 → 多層PSDファイル、レイヤーごとのPNG。アニメキャラのイラスト1枚を最大23の意味レイヤー（前髪/後ろ髪・目・眉・衣装・小物など）に分解し、各レイヤーを補完して深度順に並べ、多層PSDとして書き出すWindows向けワンクリック配布版。ベースはSee-through（Apache-2.0）。
+  - 制約: 作者はWindows/NVIDIA前提と明記。解像度・層数で品質と所要時間が変動。モデル初回DLは約13GB。run.bat周りの既知トラブルをFAQで列挙。
+  - 制作用途: 生成画像のレイヤー分離とPSD書き出し工程の省力化に使える。
+  - 出典（2026-10-09確認）: https://github.com/iamtie34/see-through-portable/blob/6c2c348870a07022990b2692b6599dca7fe61d44/README.md
 
 ## 画像生成・編集・切り抜き
 
@@ -727,6 +757,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 分離は完全ではなく、残響や楽器の漏れが残る可能性。2025年からコード更新が少ない。
   - 制作用途: 歌唱分析、台詞の抽出、既存音の整理の前処理候補。
   - 出典（2026-09-09確認）: https://github.com/Anjok07/ultimatevocalremovergui/blob/5517e0cf0d1acd16a1618eeedec596957523f9e1/README.md
+
+- **agent-audio** [integration / AIモデル・学習 / 小規模・初期評価候補]
+  - 生成したい音のテキストプロンプト → WAVファイル。コーディングエージェント（Codex/Claude Code/Cursor）から呼び出せるローカル音声生成のMCPサーバー兼Agent Skill。Stable Audio 3 Mediumで効果音や音楽を生成し、ComfyUIや有料APIを不要にする。
+  - 制約: READMEはtext-to-WAV生成のみ（編集/継続/inpainting不可）、空でない負のプロンプトは拒否、長時間は540秒でタイムアウト、と明記。音量のE2E検証は未了。
+  - 制作用途: 制作プロジェクトに効果音を都度生成して当てる小回りの効く補助に向く。
+  - 出典（2026-10-09確認）: https://github.com/AIEGOBOT/agent-audio/blob/975d804594f515e81cdb8858587af5469cf78ebf/README.md
 
 ## 音楽・歌声合成
 
@@ -1188,6 +1224,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: VRMキャラのモーション最終調整や衣装・体型差の補正に。
   - 出典（2026-09-30確認）: https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/blob/dc2a4a4aabb741f2eb30683e6883c3e3dd399512/README.md
 
+- **fbx2vrma-app** [web_app / 非AI制作 / 小規模・初期評価候補]
+  - ヒューマノイドFBXアニメーション、プレビュー用のVRM/GLB/glTFモデル（任意） → .vrmaファイル（個別またはZIP）。ヒューマノイドFBXアニメーションを.vrmaへ変換し、VRMモデルでプレビューできるブラウザベースのWebアプリ。複数ファイル一括変換とZIP一括DL、英日UI切り替えに対応。
+  - 制約: 変換にNode.jsのファイル処理とネイティブFBX2glTFが必要で、GitHub Pages等の静的配信だけでは動作しない。1リクエスト最大10ファイル・100MB/ファイル。
+  - 制作用途: 手持ちモーションをVRMAへ整えてVTuber/アバター用途に再利用する作業に向く。
+  - 出典（2026-10-09確認）: https://github.com/tk256ailab/fbx2vrma-app/blob/bd00163b42b2005cbb6d48430c532fe18e545b39/README.md
+
 ## VFX・材質・ベクター演出
 
 - **Effekseer** [desktop_tool / 非AI制作 / 制作基盤として比較]
@@ -1312,6 +1354,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [Baikal-Anime-Upscaler](https://huggingface.co/SnJake/Baikal-Anime-Upscaler/blob/37a73e6ce75b90fe2103ec95cc2e18115857b723/README.md): アニメ・イラスト向けの2倍超解像モデル。Baikal LoopSR と SwinFIR v31（Transformer系）の2系統を配布する。 MIT。カードにMIT表記あり。
 - [Anima-Control-Pose](https://huggingface.co/Claquasse/Anima-Control-Pose/blob/8f559771d5a49a02fa03f7df2a05ccb7eecb3a2a/README.md): Anima v1.0画像モデル向けのネイティブなpose制御アダプタ。凍結したAnima DiTにチャネル連結のcontrol-LoRA（rank16）とzero初期化のControlEmbedderを加える。 metadataはother、license_nameはcirclestone-labs-non-commercial-license。Anima派生としてNVIDIA Open Model Licenseも継承し、非商用のみ。
 - [H3_Ref2V_Anime_Slider_v1](https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1/blob/5a55012c837819edcd1e2f9b67c73ea46921875f/README.md): MiniMax-H3をベースにしたスライダーLoRA。正の強度で2Dアニメ寄り、負で写実寄りに全体スタイルを動かす。 カードにライセンス表記なし（metadataはnull）。MiniMax-H3の条件に従う必要があり、商用可否は未確認。
+- [Anima-3.8B](https://huggingface.co/lylogummy/Anima-3.8B/blob/3ef641256377dc4e7efbf35d426ca31c1fe5180b/README.md): Anima 2.9BのDiTを52ブロックへ拡張した約3.8Bのアニメ/イラスト向け画像モデル。timestep-awareなSemantic Connector v2を拡散チェックポイントへ統合し、別途Qwen3.5 4BとネイティブQwen3 0.6Bのテキストエンコーダを併用する。 CircleStone Labs Non-Commercial License（派生物カテゴリ）。Cosmos-Predict2由来のNVIDIA Open Model Licenseも関係する。無条件の商用利用可ではない。
+- [Anima-InContext-Character](https://huggingface.co/darask0/Anima-InContext-Character/blob/e084c88c02dcaa55806c56b22a43461d4c32be85/README.md): Anima 2B（Cosmos-Predict2 DiT + Qwen3-0.6Bテキストエンコーダ + WanVAE）向けのin-context参照LoRA（DiT rank64）とComfyUIノード。参照画像をVAE潜在のまま時間軸のフレームとして連結し、self-attention経由で同一性を流し込む。 ベースAnimaはCircleStone Labs非商用ライセンスで、本LoRAも派生物として非商用配布。商用利用・再配布前に最新LICENSEの確認が必要と記載。
+- [z-image-modern-anime](https://huggingface.co/alfredplpl/z-image-modern-anime/blob/c5e91f527e19f68ce9e941922dce5e7ed0af3849/README.md): Tongyi-MAIのZ-Imageを日本語モダンアニメ調にフルファインチューンした実験モデル。作者はQuality Tuningのみで学習したと記載。diffusersのZImagePipelineでfrom_pretrainedできる形式で配布。 apache-2.0。
+- [Irodori-TTS-600M-v3-VoiceDesign](https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign/blob/e863a3a93e652e09afeff3e84823a206a0a60314/README.md): Rectified Flow Diffusion Transformer（RF-DiT）による約600Mの日本語TTS。テキスト・参照音声・キャプションを同時に条件に使うMulti-modal Voice Designで、32次元DACVAE潜在から48kHz波形を再構成する。Duration Predictorを内蔵。 MIT。生成音声にはSilentCipherによる不可聴ウォーターマークを付与すると記載。
+- [manga-ocr-2025-onnx](https://huggingface.co/l0wgear/manga-ocr-2025-onnx/blob/e8b27bbd3f424fe3877e0bda704d6a920e4f0a33/README.md): 日本語漫画OCR（kha-white/manga-ocr系）のVision Encoder DecoderをOptimumでONNX出力したもの。縦書き・横書き、ルビ、画像上の文字、低品質スキャンなど漫画特有の条件に頑健とされる。 ライセンスは明示されていない。元実装manga-ocrの条件を確認してから利用する。
 
 ## 保留情報
 

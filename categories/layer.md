@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,11 +12,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) · [詳細](#comfyui-see-through) | See-throughによる分解をComfyUIのノード工程へ接続する。 | AI連携 / ComfyUI利用者向け | 829 / 2026-08-20 |
-| [Qwen-Image-Layered](https://github.com/QwenLM/Qwen-Image-Layered) · [詳細](#qwen-image-layered) | 画像を複数の編集可能なレイヤーに分解し、個別の色・位置・サイズ変更につなげる。 | AIモデル・学習 / 基盤技術候補 | 2,128 / 2025-12-31 |
-| [see-through](https://github.com/shitagaki-lab/see-through) · [詳細](#see-through) | 一枚絵を意味別パーツへ分解し、遮蔽部分を補完してPSDに出力する。 | AIモデル・学習 / 導入候補 | 4,465 / 2026-10-05 |
+| [ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) · [詳細](#comfyui-see-through) | See-throughによる分解をComfyUIのノード工程へ接続する。 | AI連携 / ComfyUI利用者向け | 832 / 2026-08-20 |
+| [Qwen-Image-Layered](https://github.com/QwenLM/Qwen-Image-Layered) · [詳細](#qwen-image-layered) | 画像を複数の編集可能なレイヤーに分解し、個別の色・位置・サイズ変更につなげる。 | AIモデル・学習 / 基盤技術候補 | 2,129 / 2025-12-31 |
+| [see-through](https://github.com/shitagaki-lab/see-through) · [詳細](#see-through) | 一枚絵を意味別パーツへ分解し、遮蔽部分を補完してPSDに出力する。 | AIモデル・学習 / 導入候補 | 4,497 / 2026-10-05 |
 | [Stable Layers](https://github.com/Stability-AI/Stable-Layers) · [詳細](#stable-layers) | Qwen-Image-Layered上のLoRAで、画像を背景と物体の編集用RGBA層へ分解する。 | AIモデル・学習 / レイヤー分解の研究候補 | 24 / 2026-07-23 |
 | [loom-unravel](https://github.com/byeolki/loom-unravel) · [詳細](#loom-unravel) | 1枚のアニメキャラ立ち絵を顔パーツ単位のRGBAレイヤーと、階層・深度順・アンカー点を持つメタデータに分解するオフラインパイプライン。 | AIモデル・学習 / 初期評価候補 | 0 / 2026-09-11 |
+| [see-through-portable](https://github.com/iamtie34/see-through-portable) · [詳細](#see-through-portable) | アニメキャラのイラスト1枚を最大23の意味レイヤー（前髪/後ろ髪・目・眉・衣装・小物など）に分解し、各レイヤーを補完して深度順に並べ、多層PSDとして書き出すWindows向けワンクリック配布版。ベースはSee-through（Apache-2.0）。 | AIモデル・学習 / 小規模・初期評価候補 | 2 / 2026-06-06 |
 
 <a id="comfyui-see-through"></a>
 
@@ -32,7 +33,7 @@ See-throughによる分解をComfyUIのノード工程へ接続する。
 - **依存**: ComfyUI、See-through
 - **制約・未確認**: 独立した分解モデルではない。GitHub APIはルートのライセンスを判定できていない。
 - **編集者評価**: See-through公式が紹介する周辺実装で、既存ComfyUI工程へ組み込みやすい。
-- **メトリクス**: ★829、fork 70、作成 2026-03-31、最終push 2026-08-20T03:16:42Z、archived=False
+- **メトリクス**: ★832、fork 71、作成 2026-03-31、最終push 2026-08-20T03:16:42Z、archived=False
 - **確認**: 2026-09-09 / コミット `98d754bf04f668647919ab750eccb0e0640faa81`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/jtydhr88/ComfyUI-See-through/tree/98d754bf04f668647919ab750eccb0e0640faa81)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -69,7 +70,7 @@ See-throughによる分解をComfyUIのノード工程へ接続する。
 - **依存**: Qwen-Image-Layered、編集にはQwen-Image-Edit
 - **制約・未確認**: アニメ専用の可動パーツ分解ではない。最終pushは2025年12月。
 - **編集者評価**: イラスト・背景・小物を編集可能な素材に変える基盤として有用。
-- **メトリクス**: ★2,128、fork 171、作成 2025-12-18、最終push 2025-12-31T11:40:35Z、archived=False
+- **メトリクス**: ★2,129、fork 171、作成 2025-12-18、最終push 2025-12-31T11:40:35Z、archived=False
 - **確認**: 2026-09-09 / コミット `54c4fe47e76d745775e03fc66ee38457280ed9ea`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/QwenLM/Qwen-Image-Layered/tree/54c4fe47e76d745775e03fc66ee38457280ed9ea)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -108,7 +109,7 @@ See-throughによる分解をComfyUIのノード工程へ接続する。
 - **依存**: LayerDiff、Marigold、各種セグメンテーションモデル
 - **制約・未確認**: 分解が対象であり、リギングや専門家による可動構造設計は別工程。
 - **編集者評価**: PuppetLoomを含む複数の制作ツールが採用する上流基盤。
-- **メトリクス**: ★4,465、fork 405、作成 2026-03-31、最終push 2026-10-05T18:30:26Z、archived=False
+- **メトリクス**: ★4,497、fork 409、作成 2026-03-31、最終push 2026-10-05T18:30:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `7f139bb25c46a0c8ac720d95ddab185fcda5451c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/shitagaki-lab/see-through/tree/7f139bb25c46a0c8ac720d95ddab185fcda5451c)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -204,3 +205,38 @@ Live2Dリギング前のレイヤー分けの下準備。
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-07-07T06:15:59Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="see-through-portable"></a>
+
+## see-through-portable
+
+アニメキャラのイラスト1枚を最大23の意味レイヤー（前髪/後ろ髪・目・眉・衣装・小物など）に分解し、各レイヤーを補完して深度順に並べ、多層PSDとして書き出すWindows向けワンクリック配布版。ベースはSee-through（Apache-2.0）。
+
+- **リポジトリ**: https://github.com/iamtie34/see-through-portable
+- **分類**: desktop_tool / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: アニメキャラクターのイラスト画像1枚
+- **出力**: 多層PSDファイル、レイヤーごとのPNG
+- **環境**: Windows 10/11、NVIDIA GPU 8GB以上のVRAM、ドライバ560以上、Python 3.10〜3.12、ディスク約20GB。AMD GPU非対応。
+- **依存**: See-through（shitagaki-lab）、LayerDiff、Marigold、Gradio
+- **制約・未確認**: 作者はWindows/NVIDIA前提と明記。解像度・層数で品質と所要時間が変動。モデル初回DLは約13GB。run.bat周りの既知トラブルをFAQで列挙。
+- **編集者評価**: 生成イラストをレイヤー分けして再編集したり、Live2D素材へ回す用途に直結する。
+- **メトリクス**: ★2、fork 1、作成 2026-04-08、最終push 2026-06-06T07:30:05Z、archived=False
+- **確認**: 2026-10-09 / コミット `6c2c348870a07022990b2692b6599dca7fe61d44`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/iamtie34/see-through-portable/tree/6c2c348870a07022990b2692b6599dca7fe61d44)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/iamtie34/see-through-portable/blob/6c2c348870a07022990b2692b6599dca7fe61d44/README.md) / [GitHub API](https://api.github.com/repos/iamtie34/see-through-portable) / [固定ツリー](https://github.com/iamtie34/see-through-portable/tree/6c2c348870a07022990b2692b6599dca7fe61d44)
+
+### 制作に使う際の検討
+
+生成画像のレイヤー分離とPSD書き出し工程の省力化に使える。
+
+**次に確かめること（実施前）**: 手持ちのキャラ立ち絵で分解レイヤーの破綻具合と、解像度別の所要時間・VRAMを計測する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [app.py](https://github.com/iamtie34/see-through-portable/blob/6c2c348870a07022990b2692b6599dca7fe61d44/app.py)
+
+**最新GitHub Release**: [v1.1.0](https://github.com/iamtie34/see-through-portable/releases/tag/v1.1.0) / 2026-06-06T07:30:06Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-04-08T18:17:01Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

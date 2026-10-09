@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,14 +13,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ASMRify](https://github.com/ReactorcoreGames/ASMRify) · [詳細](#asmrify) | 音声に定位移動・残響・ピッチ等を加えて一括処理するASMR向け音声加工ツール。 | AI出力の後処理 / 小規模・初期評価候補 | 1 / 2026-06-18 |
-| [Audacity](https://github.com/audacity/audacity) · [詳細](#audacity) | 録音とマルチトラック編集を行う音声制作アプリ。 | 非AI制作 / 制作基盤として比較 | 18,677 / 2026-10-08 |
+| [Audacity](https://github.com/audacity/audacity) · [詳細](#audacity) | 録音とマルチトラック編集を行う音声制作アプリ。 | 非AI制作 / 制作基盤として比較 | 18,682 / 2026-10-09 |
 | [Binaural Speech Synthesis](https://github.com/facebookresearch/BinauralSpeechSynthesis) · [詳細](#binauralspeechsynthesis) | モノラル音声を空間条件に従うバイノーラル音声へ変換する研究。 | AIモデル・学習 / アーカイブ済み資料 | 191 / 2022-05-19 |
 | [ControlFoley](https://github.com/xiaomi-research/controlfoley) · [詳細](#controlfoley) | 動画・テキスト・参照音を条件に、効果音とそのタイミングを制御する。 | AIモデル・学習 / 小規模・初期候補 | 155 / 2026-08-28 |
 | [FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter) · [詳細](#foleycrafter) | 動画の内容とタイミングに合わせた効果音を生成する研究実装。 | AIモデル・学習 / 研究モデルの評価候補 | 666 / 2026-06-15 |
-| [MMAudio](https://github.com/hkchengrex/MMAudio) · [詳細](#mmaudio) | 動画やテキストを条件に、時間的に対応する音声を生成する。 | AIモデル・学習 / 研究モデルの評価候補 | 2,274 / 2026-02-23 |
-| [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) · [詳細](#stable-audio-tools) | 条件付き音声生成モデルの学習と推論を行うツール群。効果音や環境音素材を検討できる。 | AIモデル・学習 / 更新のある導入・評価候補 | 3,874 / 2026-10-07 |
-| [Steam Audio](https://github.com/ValveSoftware/steam-audio) · [詳細](#steam-audio) | ゲーム空間に合わせた音の定位・伝播を扱う空間音響SDK。 | 非AI制作 / 制作基盤として比較 | 2,962 / 2026-03-25 |
-| [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui) · [詳細](#ultimatevocalremovergui) | 音源分離モデルをGUIで使い、歌・伴奏等を分離する。 | AI連携 / 連携・制作ツール候補 | 26,529 / 2026-10-06 |
+| [MMAudio](https://github.com/hkchengrex/MMAudio) · [詳細](#mmaudio) | 動画やテキストを条件に、時間的に対応する音声を生成する。 | AIモデル・学習 / 研究モデルの評価候補 | 2,276 / 2026-02-23 |
+| [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) · [詳細](#stable-audio-tools) | 条件付き音声生成モデルの学習と推論を行うツール群。効果音や環境音素材を検討できる。 | AIモデル・学習 / 更新のある導入・評価候補 | 3,876 / 2026-10-09 |
+| [Steam Audio](https://github.com/ValveSoftware/steam-audio) · [詳細](#steam-audio) | ゲーム空間に合わせた音の定位・伝播を扱う空間音響SDK。 | 非AI制作 / 制作基盤として比較 | 2,963 / 2026-03-25 |
+| [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui) · [詳細](#ultimatevocalremovergui) | 音源分離モデルをGUIで使い、歌・伴奏等を分離する。 | AI連携 / 連携・制作ツール候補 | 26,544 / 2026-10-06 |
+| [agent-audio](https://github.com/AIEGOBOT/agent-audio) · [詳細](#agent-audio) | コーディングエージェント（Codex/Claude Code/Cursor）から呼び出せるローカル音声生成のMCPサーバー兼Agent Skill。Stable Audio 3 Mediumで効果音や音楽を生成し、ComfyUIや有料APIを不要にする。 | AIモデル・学習 / 小規模・初期評価候補 | 39 / 2026-10-05 |
 
 <a id="asmrify"></a>
 
@@ -71,7 +72,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 音声入出力機器、任意のプラグイン
 - **制約・未確認**: 現masterはAudacity4への構造変更中。3.x用の導入・開発手順と混用しない。
 - **編集者評価**: ASMR・台詞・効果音を実際に仕上げる録音編集工程。
-- **メトリクス**: ★18,677、fork 2,679、作成 2015-03-26、最終push 2026-10-08T14:37:32Z、archived=False
+- **メトリクス**: ★18,682、fork 2,679、作成 2015-03-26、最終push 2026-10-09T11:48:56Z、archived=False
 - **確認**: 2026-09-09 / コミット `7c667777427b0e80c177caa6d3c46367901fc775`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/audacity/audacity/tree/7c667777427b0e80c177caa6d3c46367901fc775)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -223,7 +224,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: MMAudio、音声VAE等
 - **制約・未確認**: ASMRや日本語のセリフ生成専用ではない。音の同期と内容は素材ごとに評価する。
 - **編集者評価**: 映像用の効果音・環境音を作る技術候補。
-- **メトリクス**: ★2,274、fork 268、作成 2024-12-07、最終push 2026-02-23T06:09:19Z、archived=False
+- **メトリクス**: ★2,276、fork 268、作成 2024-12-07、最終push 2026-02-23T06:09:19Z、archived=False
 - **確認**: 2026-09-09 / コミット `974010a026c731054592d8f777218bd9d85a6c24`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/hkchengrex/MMAudio/tree/974010a026c731054592d8f777218bd9d85a6c24)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -262,7 +263,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: Stable Audio Openなど対応モデル
 - **制約・未確認**: ASMR専用モデルではない。空間音響・ささやきの品質は未検証。
 - **編集者評価**: 音声素材の生成・追加学習を同じ基盤で扱う。
-- **メトリクス**: ★3,874、fork 486、作成 2023-05-23、最終push 2026-10-07T07:18:02Z、archived=False
+- **メトリクス**: ★3,876、fork 485、作成 2023-05-23、最終push 2026-10-09T19:13:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `3241adba4fc2a85cf5b29d9eb68d42f40a28e820`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Stability-AI/stable-audio-tools/tree/3241adba4fc2a85cf5b29d9eb68d42f40a28e820)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -301,7 +302,7 @@ ASMR・台詞・効果音を実際に仕上げる録音編集工程。
 - **依存**: ホストエンジン、シーン・音響設定
 - **制約・未確認**: ニューラルASMR生成や収録音声の声質生成ではない。HRTFと再生環境で印象が変わる。
 - **編集者評価**: VR・耳元会話・環境音の位置制御に接続しやすい非AI基盤。
-- **メトリクス**: ★2,962、fork 259、作成 2017-01-26、最終push 2026-03-25T17:13:21Z、archived=False
+- **メトリクス**: ★2,963、fork 259、作成 2017-01-26、最終push 2026-03-25T17:13:21Z、archived=False
 - **確認**: 2026-09-09 / コミット `480dd64f513cc8a6437e7d5b9eb0d3f1d30c2fac`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/ValveSoftware/steam-audio/tree/480dd64f513cc8a6437e7d5b9eb0d3f1d30c2fac)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -336,7 +337,7 @@ VR・耳元会話・環境音の位置制御に接続しやすい非AI基盤。
 - **依存**: UVR系モデル、選択によりDemucs
 - **制約・未確認**: 分離は完全ではなく、残響や楽器の漏れが残る可能性。2025年からコード更新が少ない。
 - **編集者評価**: 歌唱分析、台詞の抽出、既存音の整理の前処理候補。
-- **メトリクス**: ★26,529、fork 2,025、作成 2020-07-20、最終push 2026-10-06T22:39:26Z、archived=False
+- **メトリクス**: ★26,544、fork 2,025、作成 2020-07-20、最終push 2026-10-06T22:39:26Z、archived=False
 - **確認**: 2026-09-09 / コミット `5517e0cf0d1acd16a1618eeedec596957523f9e1`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Anjok07/ultimatevocalremovergui/tree/5517e0cf0d1acd16a1618eeedec596957523f9e1)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -356,3 +357,38 @@ VR・耳元会話・環境音の位置制御に接続しやすい非AI基盤。
 **最新GitHub Release**: [v5.6](https://github.com/Anjok07/ultimatevocalremovergui/releases/tag/v5.6) / 2023-09-26T02:29:28Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2025-03-13T21:44:03Z。公式説明と固定ツリーに基づく制作工程の検討。entry_pointsはファイルの存在確認。選択した本文確認はsource_inspectionsに限定し、全コード監査・起動・品質比較は未実施。
+
+<a id="agent-audio"></a>
+
+## agent-audio
+
+コーディングエージェント（Codex/Claude Code/Cursor）から呼び出せるローカル音声生成のMCPサーバー兼Agent Skill。Stable Audio 3 Mediumで効果音や音楽を生成し、ComfyUIや有料APIを不要にする。
+
+- **リポジトリ**: https://github.com/AIEGOBOT/agent-audio
+- **分類**: integration / AIモデル・学習 / 小規模・初期評価候補
+- **入力**: 生成したい音のテキストプロンプト
+- **出力**: WAVファイル
+- **環境**: Python 3.11+（実行系は3.12）、uv、Git。Windows CPUは25GB以上の空きと32GB級RAMを推奨。専用GPU不要。モデルDL約7.36GB。
+- **依存**: Stable Audio 3 Medium、MCP対応エージェント
+- **制約・未確認**: READMEはtext-to-WAV生成のみ（編集/継続/inpainting不可）、空でない負のプロンプトは拒否、長時間は540秒でタイムアウト、と明記。音量のE2E検証は未了。
+- **編集者評価**: ゲーム・動画の制作作業に効果音生成を組み込む発想が具体的。v0.1の早期プレビュー。
+- **メトリクス**: ★39、fork 8、作成 2026-09-22、最終push 2026-10-05T13:17:55Z、archived=False
+- **確認**: 2026-10-09 / コミット `975d804594f515e81cdb8858587af5469cf78ebf`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/AIEGOBOT/agent-audio/tree/975d804594f515e81cdb8858587af5469cf78ebf)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/AIEGOBOT/agent-audio/blob/975d804594f515e81cdb8858587af5469cf78ebf/README.md) / [GitHub API](https://api.github.com/repos/AIEGOBOT/agent-audio) / [固定ツリー](https://github.com/AIEGOBOT/agent-audio/tree/975d804594f515e81cdb8858587af5469cf78ebf)
+
+### 制作に使う際の検討
+
+制作プロジェクトに効果音を都度生成して当てる小回りの効く補助に向く。
+
+**次に確かめること（実施前）**: 短い効果音を数種生成し、生成時間とWAVの実用品質を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [src/agent_audio/cli.py](https://github.com/AIEGOBOT/agent-audio/blob/975d804594f515e81cdb8858587af5469cf78ebf/src/agent_audio/cli.py)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-10-05T13:17:49Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

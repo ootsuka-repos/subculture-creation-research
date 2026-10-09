@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-08",
+  "updated_on": "2026-10-09",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1225188,
-        "likes": 2371,
+        "downloads_last_month": 1213798,
+        "likes": 2373,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 388890,
-        "likes": 543,
+        "downloads_last_month": 383899,
+        "likes": 544,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 87218,
+        "downloads_last_month": 86861,
         "likes": 436,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 185468,
-        "likes": 181,
+        "downloads_last_month": 186607,
+        "likes": 182,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1502,
+        "downloads_last_month": 1536,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1168,
+        "downloads_last_month": 1173,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -380,7 +380,7 @@
         "downloads_last_month": 0,
         "likes": 232,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 677,
+        "downloads_last_month": 665,
         "likes": 139,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 694,
+        "downloads_last_month": 683,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -547,7 +547,7 @@
         "downloads_last_month": 32,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1150,
+        "downloads_last_month": 1151,
         "likes": 97,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14699,
-        "likes": 238,
+        "downloads_last_month": 14727,
+        "likes": 239,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 6024,
+        "downloads_last_month": 5981,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 79,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -986,7 +986,7 @@
         "downloads_last_month": 36,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 497,
+        "downloads_last_month": 504,
         "likes": 29,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1096,7 +1096,7 @@
         "downloads_last_month": 49,
         "likes": 5,
         "last_modified": "2025-08-12T05:27:46.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1150,7 +1150,7 @@
         "downloads_last_month": 38,
         "likes": 2,
         "last_modified": "2025-08-12T05:26:43.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1207,7 +1207,7 @@
         "downloads_last_month": 0,
         "likes": 3,
         "last_modified": "2026-02-17T00:28:51.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1259,10 +1259,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 509,
+        "downloads_last_month": 520,
         "likes": 6,
         "last_modified": "2026-09-21T08:22:31.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1316,7 +1316,7 @@
         "downloads_last_month": 0,
         "likes": 66,
         "last_modified": "2022-04-05T17:11:49.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1371,9 +1371,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 316,
+        "likes": 318,
         "last_modified": "2026-08-07T17:43:22.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1427,7 +1427,7 @@
         "downloads_last_month": 0,
         "likes": 13,
         "last_modified": "2024-07-17T13:00:34.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1478,10 +1478,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1165,
+        "downloads_last_month": 1255,
         "likes": 21,
         "last_modified": "2023-08-09T09:25:38.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1534,10 +1534,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 7983,
+        "downloads_last_month": 8174,
         "likes": 7,
         "last_modified": "2024-11-11T01:39:36.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1591,7 +1591,7 @@
         "downloads_last_month": 304,
         "likes": 104,
         "last_modified": "2023-11-14T18:09:01.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1645,7 +1645,7 @@
         "downloads_last_month": 0,
         "likes": 4,
         "last_modified": "2024-08-12T12:38:21.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1696,10 +1696,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14,
+        "downloads_last_month": 11,
         "likes": 12,
         "last_modified": "2024-08-12T12:39:52.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1756,7 +1756,7 @@
         "downloads_last_month": 22,
         "likes": 43,
         "last_modified": "2024-03-17T14:20:51.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1808,10 +1808,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 4344,
+        "downloads_last_month": 4434,
         "likes": 9,
         "last_modified": "2026-06-10T17:10:07.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1862,10 +1862,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 375,
+        "downloads_last_month": 369,
         "likes": 3,
         "last_modified": "2024-06-06T22:55:08.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1916,10 +1916,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 250,
+        "downloads_last_month": 243,
         "likes": 49,
         "last_modified": "2025-11-30T19:20:36.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -1973,7 +1973,7 @@
         "downloads_last_month": 0,
         "likes": 25,
         "last_modified": "2022-04-05T17:11:21.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2024,10 +2024,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 106,
+        "downloads_last_month": 102,
         "likes": 25,
         "last_modified": "2024-05-31T15:29:49.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2078,10 +2078,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 122,
+        "downloads_last_month": 117,
         "likes": 5,
         "last_modified": "2024-05-06T21:29:41.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2133,10 +2133,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 5800,
+        "downloads_last_month": 7393,
         "likes": 15,
         "last_modified": "2025-06-30T17:41:49.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2190,10 +2190,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 734,
+        "downloads_last_month": 727,
         "likes": 52,
         "last_modified": "2026-03-26T05:20:31.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2246,10 +2246,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 473,
+        "downloads_last_month": 481,
         "likes": 2,
         "last_modified": "2026-10-04T20:49:53.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2304,7 +2304,7 @@
         "downloads_last_month": 0,
         "likes": 25,
         "last_modified": "2024-09-05T14:21:42.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2358,10 +2358,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 132,
+        "downloads_last_month": 125,
         "likes": 129,
         "last_modified": "2024-11-23T09:00:48.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2413,10 +2413,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 19,
+        "downloads_last_month": 22,
         "likes": 3,
-        "last_modified": "2026-10-07T09:49:50.000Z",
-        "checked_on": "2026-10-08"
+        "last_modified": "2026-10-09T10:27:19.000Z",
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2470,10 +2470,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 2372,
-        "likes": 30,
+        "downloads_last_month": 2375,
+        "likes": 31,
         "last_modified": "2026-06-27T04:57:31.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2527,7 +2527,7 @@
         "downloads_last_month": 0,
         "likes": 14,
         "last_modified": "2026-10-02T20:12:50.000Z",
-        "checked_on": "2026-10-08"
+        "checked_on": "2026-10-09"
       },
       "sources": [
         {
@@ -2539,7 +2539,284 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "anima-3-8b",
+      "name": "Anima-3.8B",
+      "hub_repository": "lylogummy/Anima-3.8B",
+      "url": "https://huggingface.co/lylogummy/Anima-3.8B",
+      "category": "image",
+      "checked_on": "2026-10-09",
+      "architecture_ja": "Anima 2.9BのDiTを52ブロックへ拡張した約3.8Bのアニメ/イラスト向け画像モデル。timestep-awareなSemantic Connector v2を拡散チェックポイントへ統合し、別途Qwen3.5 4BとネイティブQwen3 0.6Bのテキストエンコーダを併用する。",
+      "variants_ja": "推論用バンドルはAnima-3.8B-v1.1（旧Anima-3.8Bとpreview素材、expanded_adapterも同梱）。テキストエンコーダはqwen35_4b.safetensorsとqwen_3_06b_base.safetensors、VAEはqwen_image_vae.safetensorsを別途配置する。",
+      "prompting_ja": "自然文・Danbooru/Gelbooruタグ・混合に対応。複数キャラは主語を明示し代名詞を避けるよう案内。解像度832x1216（1MP程度）、CFG4〜7、28〜50steps、res_multistep+Betaが推奨の出発点。",
+      "requirements_ja": "ComfyUIはcomfyui-anima-3-8B、Forge Neoはforge-anima-3-8Bの拡張を導入。テキストエンコーダはプロンプト符号化時のみ読み込み、その後解放する構成でピークVRAMを抑える。",
+      "limitations_ja": "作者は実験的な拡張リリースと位置づける。低VRAMではプロンプト符号化中にQwen3.5の分だけVRAM使用が一時的に増えると説明。正確なメモリ量は解像度・attention・offload設定依存。",
+      "license_notes_ja": "CircleStone Labs Non-Commercial License（派生物カテゴリ）。Cosmos-Predict2由来のNVIDIA Open Model Licenseも関係する。無条件の商用利用可ではない。",
+      "assessment_ja": "Anima系の最新拡張として、プロンプト追従と複数キャラの属性束縛の改善を狙った構成が具体的。",
+      "next_validation_ja": "Anima-2.9Bと同一プロンプト・解像度で生成し、複数キャラの属性混線と構図の差を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/lylogummy/Anima-3.8B",
+        "api_url": "https://huggingface.co/api/models/lylogummy/Anima-3.8B",
+        "checked_on": "2026-10-09",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "3ef641256377dc4e7efbf35d426ca31c1fe5180b",
+        "gated": false,
+        "license_metadata": null,
+        "license_name_metadata": null,
+        "evidence_files": [
+          "difussion_models/Anima-3.8B-v1.1.safetensors",
+          "difussion_models/Anima-3.8B.safetensors",
+          "text_encoders/Anima-3.8B-expanded_adapter.safetensors",
+          "text_encoders/qwen35_4b.safetensors"
+        ],
+        "matching_weight_file_count": 4
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 124,
+        "last_modified": "2026-08-31T20:50:45.000Z",
+        "checked_on": "2026-10-09"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/lylogummy/Anima-3.8B/blob/3ef641256377dc4e7efbf35d426ca31c1fe5180b/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/lylogummy/Anima-3.8B",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "anima-incontext-character",
+      "name": "Anima-InContext-Character",
+      "hub_repository": "darask0/Anima-InContext-Character",
+      "url": "https://huggingface.co/darask0/Anima-InContext-Character",
+      "category": "image",
+      "checked_on": "2026-10-09",
+      "architecture_ja": "Anima 2B（Cosmos-Predict2 DiT + Qwen3-0.6Bテキストエンコーダ + WanVAE）向けのin-context参照LoRA（DiT rank64）とComfyUIノード。参照画像をVAE潜在のまま時間軸のフレームとして連結し、self-attention経由で同一性を流し込む。",
+      "variants_ja": "重みはanima-incontext-character.safetensors。ベースのAnima各ファイルと、同梱のカスタムノードcomfyui-anima-incontext・ワークフローJSONを併用する。",
+      "prompting_ja": "参照は全身1枚＋顔アップ1枚を推奨。外見タグも併記し、プロンプトはポーズ/シーン、参照は同一性を担う。strength1.0が中立、効きが弱い場合1.2〜1.5。er_sde/simple、30steps、CFG4、discrete_flow_shift3.0が推奨。",
+      "requirements_ja": "ComfyUIにカスタムノードを配置し、LoRAはmodels/loras、Animaベース一式をdiffusion_models/text_encoders/vaeへ。参照はマスクで白背景合成するのが推奨。",
+      "limitations_ja": "細かな装飾・柄は揺れることがあるとREADMEが明記。参照を強くすると背景が薄まることがある。学習データはアニメイラスト領域。",
+      "license_notes_ja": "ベースAnimaはCircleStone Labs非商用ライセンスで、本LoRAも派生物として非商用配布。商用利用・再配布前に最新LICENSEの確認が必要と記載。",
+      "assessment_ja": "キャラ毎の学習なしで未知キャラを別ポーズ・別シーンに展開できる点が、制作実務の一貫性維持に効く。",
+      "next_validation_ja": "全身＋顔アップの参照で数シーンを生成し、髪飾りや服の柄の保持度とstrengthの効きを確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/darask0/Anima-InContext-Character",
+        "api_url": "https://huggingface.co/api/models/darask0/Anima-InContext-Character",
+        "checked_on": "2026-10-09",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e084c88c02dcaa55806c56b22a43461d4c32be85",
+        "gated": false,
+        "license_metadata": "other",
+        "license_name_metadata": "circlestone-labs-non-commercial",
+        "evidence_files": [
+          "anima-incontext-character.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 3263,
+        "likes": 19,
+        "last_modified": "2026-07-08T09:56:06.000Z",
+        "checked_on": "2026-10-09"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/darask0/Anima-InContext-Character/blob/e084c88c02dcaa55806c56b22a43461d4c32be85/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/darask0/Anima-InContext-Character",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "z-image-modern-anime",
+      "name": "z-image-modern-anime",
+      "hub_repository": "alfredplpl/z-image-modern-anime",
+      "url": "https://huggingface.co/alfredplpl/z-image-modern-anime",
+      "category": "image",
+      "checked_on": "2026-10-09",
+      "architecture_ja": "Tongyi-MAIのZ-Imageを日本語モダンアニメ調にフルファインチューンした実験モデル。作者はQuality Tuningのみで学習したと記載。diffusersのZImagePipelineでfrom_pretrainedできる形式で配布。",
+      "variants_ja": "modern_anime_z_image.safetensorsの単一チェックポイント。diffusers一式（text_encoder/transformer/vae）も同梱。",
+      "prompting_ja": "トリガーは「Japanese modern anime style, 」。negative promptは「photo, cg, 3d, blurry」を例示。1280x720、CFG4、30steps、cfg_normalization=Falseのコード例が示されている。",
+      "requirements_ja": "ComfyUIでモデルを所定フォルダへ置くか、diffusersのZImagePipelineで読み込む。README記載の再現設定以外の条件は未記載。",
+      "limitations_ja": "作者がexperimental（実験的）と明記。解像度・ステップ等は例示の1条件のみで、広い条件での検証は示されていない。",
+      "license_notes_ja": "apache-2.0。",
+      "assessment_ja": "Z-Image系のアニメ専用ファインチューンとして、既存SDXL系のアニメモデルと比較する候補になる。",
+      "next_validation_ja": "同一プロンプトでZ-Imageベースと比較し、画風の寄り方と解像度安定性を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/alfredplpl/z-image-modern-anime",
+        "api_url": "https://huggingface.co/api/models/alfredplpl/z-image-modern-anime",
+        "checked_on": "2026-10-09",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "c5e91f527e19f68ce9e941922dce5e7ed0af3849",
+        "gated": false,
+        "license_metadata": "apache-2.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "modern_anime_z_image.safetensors",
+          "text_encoder/model.safetensors",
+          "transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+          "transformer/diffusion_pytorch_model-00002-of-00002.safetensors"
+        ],
+        "matching_weight_file_count": 5
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 447,
+        "likes": 4,
+        "last_modified": "2026-03-05T13:33:26.000Z",
+        "checked_on": "2026-10-09"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/alfredplpl/z-image-modern-anime/blob/c5e91f527e19f68ce9e941922dce5e7ed0af3849/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/alfredplpl/z-image-modern-anime",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "irodori-tts-600m-v3-voicedesign",
+      "name": "Irodori-TTS-600M-v3-VoiceDesign",
+      "hub_repository": "Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+      "category": "tts",
+      "checked_on": "2026-10-09",
+      "architecture_ja": "Rectified Flow Diffusion Transformer（RF-DiT）による約600Mの日本語TTS。テキスト・参照音声・キャプションを同時に条件に使うMulti-modal Voice Designで、32次元DACVAE潜在から48kHz波形を再構成する。Duration Predictorを内蔵。",
+      "variants_ja": "重みはルートのmodel.safetensors。ベースはAratako/Irodori-TTS-500M-v2系で、推論・学習コードはGitHubのAratako/Irodori-TTSを参照する。",
+      "prompting_ja": "テキストに絵文字を埋めて笑い・咳・吐息などを制御（EMOJI_ANNOTATIONS.md）。キャプションで感情・話し方を指定し、参照音声で話者同一性を保持する。サンプルは同一シードでキャプション差のみを見せる。",
+      "requirements_ja": "GitHubのIrodori-TTSの推論手順に従う。モデルカードに追加のVRAM要件は明記なし。",
+      "limitations_ja": "言語は日本語（language: ja）中心。キャプション・絵文字の効きは学習データの注釈パイプラインに依存する。",
+      "license_notes_ja": "MIT。生成音声にはSilentCipherによる不可聴ウォーターマークを付与すると記載。",
+      "assessment_ja": "参照音声＋キャプション＋絵文字で演技を細かく指定できる点が、キャラ音声制作で使い分けやすい。",
+      "next_validation_ja": "同一参照音声でキャプションと絵文字を変え、感情表現の振れ幅と声質保持を聴き比べる。",
+      "distribution": {
+        "url": "https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+        "api_url": "https://huggingface.co/api/models/Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+        "checked_on": "2026-10-09",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e863a3a93e652e09afeff3e84823a206a0a60314",
+        "gated": false,
+        "license_metadata": "mit",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 0,
+        "likes": 60,
+        "last_modified": "2026-05-31T05:54:57.000Z",
+        "checked_on": "2026-10-09"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign/blob/e863a3a93e652e09afeff3e84823a206a0a60314/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "manga-ocr-2025-onnx",
+      "name": "manga-ocr-2025-onnx",
+      "hub_repository": "l0wgear/manga-ocr-2025-onnx",
+      "url": "https://huggingface.co/l0wgear/manga-ocr-2025-onnx",
+      "category": "localization",
+      "checked_on": "2026-10-09",
+      "architecture_ja": "日本語漫画OCR（kha-white/manga-ocr系）のVision Encoder DecoderをOptimumでONNX出力したもの。縦書き・横書き、ルビ、画像上の文字、低品質スキャンなど漫画特有の条件に頑健とされる。",
+      "variants_ja": "encoder_model.onnxとdecoder_model.onnxの2ファイル構成。jzhang533/manga-ocr-base-2025の改良を反映。元モデルはmanga109-sと合成データで学習。",
+      "prompting_ja": "TrOCRProcessorとORTModelForVision2Seq（optimum[onnxruntime]）で画像をRGB読み込みし、pixel_valuesからテキストを生成する。",
+      "requirements_ja": "optimum[onnxruntime]。ONNXランタイムでCPU推論できる構成。",
+      "limitations_ja": "モデルカードに性能評価や対応範囲の記載はなく、実装は元モデルと派生改良に依存。リポジトリのライセンスは未記載（null）。",
+      "license_notes_ja": "ライセンスは明示されていない。元実装manga-ocrの条件を確認してから利用する。",
+      "assessment_ja": "ONNX化により漫画OCRをローカル配信やアプリ組み込みへ載せやすくする配布。",
+      "next_validation_ja": "手元の漫画画像でOCR精度と推論速度を、元のmanga-ocrと比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/l0wgear/manga-ocr-2025-onnx",
+        "api_url": "https://huggingface.co/api/models/l0wgear/manga-ocr-2025-onnx",
+        "checked_on": "2026-10-09",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e8b27bbd3f424fe3877e0bda704d6a920e4f0a33",
+        "gated": false,
+        "license_metadata": null,
+        "license_name_metadata": null,
+        "evidence_files": [
+          "decoder_model.onnx",
+          "encoder_model.onnx"
+        ],
+        "matching_weight_file_count": 2
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 5231,
+        "likes": 9,
+        "last_modified": "2025-06-30T19:18:37.000Z",
+        "checked_on": "2026-10-09"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/l0wgear/manga-ocr-2025-onnx/blob/e8b27bbd3f424fe3877e0bda704d6a920e4f0a33/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/l0wgear/manga-ocr-2025-onnx",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-08"
+  "metrics_refreshed_on": "2026-10-09"
 }

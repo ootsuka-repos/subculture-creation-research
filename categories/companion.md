@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（76件）
+# 会話できるアニメ系AIキャラクター（79件）
 
-最終確認日: 2026-10-08。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-09。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -50,6 +50,7 @@
 - [Mana](https://github.com/Yuuzulight/Mana) — Windows向けのローカル完結型AIコンパニオン。llama.cpp推論・Whisper音声認識・ローカルTTS・画面OCRを統合し、Live2D/VRMアバターの口パクと感情反応を備える。既定で外部送信しない。
 - [ff14-ai-companion](https://github.com/michaelchang-jpg/ff14-ai-companion) — FFXIVを一緒に遊ぶLive2Dデスクトップコンパニオン。Dalamudプラグインで戦闘・副本・探索イベントを取得し、VOICEVOXの日本語音声と繁体中文字幕で反応する。
 - [desktop-agent-runtime](https://github.com/lulu930128/desktop-agent-runtime) — Windows向けlocal-firstの個人AIワークマネージャ。Open-LLM-VTuber・GPT-SoVITS・Live2Dを統合し、Live2D桌寵・Reader・Briefing・受控ツール・ローカル記憶を提供する。
+- [kataru](https://github.com/frubot/kataru) — OpenRouter/OpenAI互換/Anthropicに接続するローカル優先のロールプレイチャットアプリ。VRM 0.x/1.0アバターの表示・操作、VOICEVOXやIrodori TTSでの読み上げとVRMリップシンク、複数キャラのシチュエーション会話、メモリ保存に対応。単一バイナリで配布。
 
 ## AI VTuber・配信
 
@@ -84,6 +85,7 @@
 - [Scowld](https://github.com/apoorvdarshan/scowld) — iOS 17以降のVRM音声伴侶。Amica由来のキャラ表示に、持ち込みAPIキーによる対話・音声入出力と端末内の会話履歴を組み合わせる。
 - [xiaoke.ai (小可爱)](https://github.com/liupig/xiaokeai) — Windows向けローカル3D伴侶。VRM/PMX/GLBのキャラと音声対話し、表情・動作・カメラ演出や記憶を扱う。**同梱されないモデル・音声などの素材はコードと利用条件が別**。
 - [Yorishiro](https://github.com/sktkkoo/Yorishiro) — macOSのClaude Code／Codex用ターミナルにVRMキャラを同居させる。テキスト・音声対話、表情反応、人格・シーンを変更するパックに対応。
+- [RikumiMite-Live](https://github.com/rikumimita/RikumiMite-Live) — VRMアバターをthree.jsで描画する自律型AI VTuber配信アプリ。Kokoro等のTTSでリップシンクし、MMDモーション再生、チャット取り込み、OBS/Streamer.bot連携、Hermes Agentによる自律ホストに対応。Dockerで一式起動。
 
 ## キャラクター会話・ロールプレイ
 
@@ -94,6 +96,7 @@
 - [Corvus Story Core](https://github.com/JustLateNightAI/Corvus-Story-Core) — テキストRPG向けのGM/NPC会話エンジン。NPCカード、個別記憶、章要約と関係値などの状態を保持する。会話用LLMは別途用意。
 - [Project Riko](https://github.com/rayenfeng/riko_project) — アニメ風の人格設定、対話履歴、Faster-WhisperとGPT-SoVITSを組み合わせた音声会話スクリプト。**GUIとVRM表示は未実装**で、外部の音声合成サービスを起動する。
 - [YuriOS](https://github.com/yuri-os/YuriOS) — VRM/Live2Dのボディ、ローカル音声対話、自編集記憶、SENSE→…→REGULATEの自律ループを持つローカル志向のAIコンパニオン基盤。SillyTavernのキャラカード入出力と複数キャラ管理に対応する。
+- [Hanami](https://github.com/Undi95/Hanami) — 超軽量・ローカル優先のLLMチャットコンパニオン。3D VRMアバターが教室やカフェで歩く・座る・身振りし、フェイストゥフェイス／ビジュアルノベル／2D表示を切り替えられる。OpenAI互換バックエンドと任意のTTSサーバーに接続し、システムプロンプトを無改変で送る設計。
 
 ## 人格・キャラカード・会話記憶の制作
 

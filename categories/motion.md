@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-08。**201件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,12 +12,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ARDY](https://github.com/nv-tlabs/ardy) · [詳細](#ardy) | テキストと運動学的制約から、対応骨格のモーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 964 / 2026-07-10 |
-| [EchoAvatar](https://github.com/RobinWitch/EchoAvatar) · [詳細](#echoavatar) | ストリーミング音声から顔・身体の動きを生成してUnityアバターへ送る。 | AIモデル・学習 / 小規模・初期候補 | 47 / 2026-10-07 |
+| [ARDY](https://github.com/nv-tlabs/ardy) · [詳細](#ardy) | テキストと運動学的制約から、対応骨格のモーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 967 / 2026-07-10 |
+| [EchoAvatar](https://github.com/RobinWitch/EchoAvatar) · [詳細](#echoavatar) | ストリーミング音声から顔・身体の動きを生成してUnityアバターへ送る。 | AIモデル・学習 / 小規模・初期候補 | 48 / 2026-10-07 |
 | [Gelina](https://github.com/TGuichoux/Gelina) · [詳細](#gelina) | 音声とジェスチャーの生成・クローニング・音声から動作への変換を扱う。 | AIモデル・学習 / 小規模・初期候補 | 31 / 2026-10-01 |
-| [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) · [詳細](#hy-motion-1-0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,586 / 2026-07-18 |
+| [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) · [詳細](#hy-motion-1-0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,588 / 2026-07-18 |
 | [R-DMesh](https://github.com/Tencent-Hunyuan/R-DMesh) · [詳細](#r-dmesh) | 静的メッシュを参照動画に沿って動く4Dメッシュ列へ変換する。 | AIモデル・学習 / 小規模・初期候補 | 62 / 2026-08-11 |
 | [VRM-Spacing-Animation-Baking](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking) · [詳細](#vrm-spacing-animation-baking) | VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。 | 非AI制作 / 小規模・初期評価候補 | 10 / 2026-09-13 |
+| [fbx2vrma-app](https://github.com/tk256ailab/fbx2vrma-app) · [詳細](#fbx2vrma-app) | ヒューマノイドFBXアニメーションを.vrmaへ変換し、VRMモデルでプレビューできるブラウザベースのWebアプリ。複数ファイル一括変換とZIP一括DL、英日UI切り替えに対応。 | 非AI制作 / 小規模・初期評価候補 | 2 / 2026-06-06 |
 
 <a id="ardy"></a>
 
@@ -33,7 +34,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ARDY重み、アクセス申請が必要なLlama3-8B系テキストエンコーダ
 - **制約・未確認**: CoreとG1で骨格・fps・予測長が異なる。テキストエンコーダのメモリを本体から分ける。
 - **編集者評価**: 経路や姿勢制約を与えるキャラ動作生成として比較価値がある。
-- **メトリクス**: ★964、fork 118、作成 2026-07-08、最終push 2026-07-10T14:13:31Z、archived=False
+- **メトリクス**: ★967、fork 117、作成 2026-07-08、最終push 2026-07-10T14:13:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `693f74d13b3d04a0a22ce127ee79c929dd89756b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/nv-tlabs/ardy/tree/693f74d13b3d04a0a22ce127ee79c929dd89756b)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -72,7 +73,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 独自チェックポイント、音声エンコーダ、Unityパッケージ
 - **制約・未確認**: 公開された音声エンコーダだけで顔・体全体のモデルが揃うとは言えない。複数マシン構成。
 - **編集者評価**: 対話キャラクターの発話に身体演技を足す実験候補。
-- **メトリクス**: ★47、fork 8、作成 2026-05-27、最終push 2026-10-07T06:28:25Z、archived=False
+- **メトリクス**: ★48、fork 9、作成 2026-05-27、最終push 2026-10-07T06:28:25Z、archived=False
 - **確認**: 2026-09-09 / コミット `174ca5dc6a535a557177cf6703cc9a5338a17bc7`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RobinWitch/EchoAvatar/tree/174ca5dc6a535a557177cf6703cc9a5338a17bc7)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -142,7 +143,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: HY-Motion重み、必要に応じ別のプロンプト書き換えモデル
 - **制約・未確認**: 非人型・複数人・シームレスループ・in-placeは公式の非対応項目。追加LLMのVRAMは表に含まれない。
 - **編集者評価**: 人型の単発演技を作る候補。ゲームの常時ループには追加編集が必要。
-- **メトリクス**: ★2,586、fork 219、作成 2025-12-29、最終push 2026-07-18T15:13:36Z、archived=False
+- **メトリクス**: ★2,588、fork 220、作成 2025-12-29、最終push 2026-07-18T15:13:36Z、archived=False
 - **確認**: 2026-09-09 / コミット `4e426f5a1021cbcf7f375458c37b840ee7225229`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Tencent-Hunyuan/HY-Motion-1.0/tree/4e426f5a1021cbcf7f375458c37b840ee7225229)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -240,3 +241,38 @@ VRMキャラのモーション最終調整や衣装・体型差の補正に。
 **最新GitHub Release**: [2.1.0](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking/releases/tag/2.1.0) / 2026-09-13T13:14:33Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-13T13:13:18Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="fbx2vrma-app"></a>
+
+## fbx2vrma-app
+
+ヒューマノイドFBXアニメーションを.vrmaへ変換し、VRMモデルでプレビューできるブラウザベースのWebアプリ。複数ファイル一括変換とZIP一括DL、英日UI切り替えに対応。
+
+- **リポジトリ**: https://github.com/tk256ailab/fbx2vrma-app
+- **分類**: web_app / 非AI制作 / 小規模・初期評価候補
+- **入力**: ヒューマノイドFBXアニメーション、プレビュー用のVRM/GLB/glTFモデル（任意）
+- **出力**: .vrmaファイル（個別またはZIP）
+- **環境**: ローカル開発はNode.js 18+、本番はDocker。ネイティブ依存としてFBX2glTFをnpm run setupで取得。
+- **依存**: FBX2glTF、React/Vite、Three.js、@pixiv/three-vrm
+- **制約・未確認**: 変換にNode.jsのファイル処理とネイティブFBX2glTFが必要で、GitHub Pages等の静的配信だけでは動作しない。1リクエスト最大10ファイル・100MB/ファイル。
+- **編集者評価**: FBX系モーションをVRMアバターのVRMAへ移す工程をブラウザで完結させられる。
+- **メトリクス**: ★2、fork 0、作成 2026-06-04、最終push 2026-06-06T09:19:30Z、archived=False
+- **確認**: 2026-10-09 / コミット `bd00163b42b2005cbb6d48430c532fe18e545b39`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/tk256ailab/fbx2vrma-app/tree/bd00163b42b2005cbb6d48430c532fe18e545b39)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/tk256ailab/fbx2vrma-app/blob/bd00163b42b2005cbb6d48430c532fe18e545b39/README.md) / [GitHub API](https://api.github.com/repos/tk256ailab/fbx2vrma-app) / [固定ツリー](https://github.com/tk256ailab/fbx2vrma-app/tree/bd00163b42b2005cbb6d48430c532fe18e545b39)
+
+### 制作に使う際の検討
+
+手持ちモーションをVRMAへ整えてVTuber/アバター用途に再利用する作業に向く。
+
+**次に確かめること（実施前）**: 手持ちのFBXモーションをVRMA化し、VRMプレビューでの破綻とバッチ変換の制限を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/tk256ailab/fbx2vrma-app/blob/bd00163b42b2005cbb6d48430c532fe18e545b39/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-06-06T09:19:24Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
