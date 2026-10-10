@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-10。**218件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,13 +12,13 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5) · [詳細](#ace-step-1.5) | ローカルで楽曲を生成し、編集や追加学習につなげる音楽モデル。 | AIモデル・学習 / 更新のある導入・評価候補 | 13,322 / 2026-10-05 |
-| [Basic Pitch](https://github.com/spotify/basic-pitch) · [詳細](#basic-pitch) | 音声を音高ベンド付きMIDIへ変換する軽量な採譜モデル。 | AIモデル・学習 / 連携・制作ツール候補 | 5,828 / 2025-11-13 |
+| [ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5) · [詳細](#ace-step-1.5) | ローカルで楽曲を生成し、編集や追加学習につなげる音楽モデル。 | AIモデル・学習 / 更新のある導入・評価候補 | 13,377 / 2026-10-05 |
+| [Basic Pitch](https://github.com/spotify/basic-pitch) · [詳細](#basic-pitch) | 音声を音高ベンド付きMIDIへ変換する軽量な採譜モデル。 | AIモデル・学習 / 連携・制作ツール候補 | 5,855 / 2025-11-13 |
 | [DiffSinger](https://github.com/openvpi/DiffSinger) · [詳細](#diffsinger) | 歌声合成の学習・推論と、ピッチ・エネルギー・息成分などの制御を扱う。 | AIモデル・学習 / 更新のある導入・評価候補 | 3,218 / 2026-10-08 |
-| [OpenUtau](https://github.com/openutau/OpenUtau) · [詳細](#openutau) | UTAUコミュニティ向けの歌声編集・合成プラットフォーム。 | AIは任意 / 定番の制作基盤 | 4,391 / 2026-10-09 |
-| [SOFA](https://github.com/qiuqiao/SOFA) · [詳細](#sofa) | 歌声向けの強制アラインメントで歌詞・音素の時間位置を求める。 | AIモデル・学習 / モデル・研究候補 | 242 / 2026-09-02 |
-| [YuE2](https://github.com/multimodal-art-projection/YuE) · [詳細](#yue) | 歌詞と曲調から編集可能な旋律・和音計画を作り、歌と伴奏へ展開する。 | AIモデル・学習 / モデル・研究候補 | 11,049 / 2026-10-06 |
-| [OpenUtauMobile](https://github.com/vocoder712/OpenUtauMobile) · [詳細](#openutaumobile) | モバイル向けのオープンソース歌声合成エディタ。OpenUtau CoreをベースにUSTXプロジェクトファイルを扱い、DiffSinger／UTAU／Vogenの音源を読み込める。 | AI連携 / 初期評価候補 | 334 / 2026-10-09 |
+| [OpenUtau](https://github.com/openutau/OpenUtau) · [詳細](#openutau) | UTAUコミュニティ向けの歌声編集・合成プラットフォーム。 | AIは任意 / 定番の制作基盤 | 4,395 / 2026-10-09 |
+| [SOFA](https://github.com/qiuqiao/SOFA) · [詳細](#sofa) | 歌声向けの強制アラインメントで歌詞・音素の時間位置を求める。 | AIモデル・学習 / モデル・研究候補 | 243 / 2026-09-02 |
+| [YuE2](https://github.com/multimodal-art-projection/YuE) · [詳細](#yue) | 歌詞と曲調から編集可能な旋律・和音計画を作り、歌と伴奏へ展開する。 | AIモデル・学習 / モデル・研究候補 | 11,135 / 2026-10-06 |
+| [OpenUtauMobile](https://github.com/vocoder712/OpenUtauMobile) · [詳細](#openutaumobile) | モバイル向けのオープンソース歌声合成エディタ。OpenUtau CoreをベースにUSTXプロジェクトファイルを扱い、DiffSinger／UTAU／Vogenの音源を読み込める。 | AI連携 / 初期評価候補 | 336 / 2026-10-10 |
 | [SoulX-Singer](https://github.com/Soul-AILab/SoulX-Singer) · [詳細](#soulx-singer) | 未見の歌声を生成するゼロショット歌声合成（SVS）モデルの公式推論コード。メロディ（F0）条件と楽譜（MIDI）条件に対応し、歌声変換（SVC）版も提供する。 | AIモデル・学習 / モデル候補 | 994 / 2026-05-29 |
 | [DiffSinger](https://github.com/MoonInTheRiver/DiffSinger) · [詳細](#moonintheriver-diffsinger) | Shallow Diffusion機構を用いた歌声合成（DiffSinger）と音声合成（DiffSpeech）の公式PyTorch実装。歌詞+MIDI/F0からメルへ、メルから波形へ変換する複数構成を提供する。 | AIモデル・学習 / 確立した参照実装 | 4,873 / 2026-07-24 |
 | [yinyue](https://github.com/yishui111/yinyue) · [詳細](#yinyue) | 楽曲の原声を二次元キャラの声へ置き換えるローカルGPU向けシステム。RVC・GPT-SoVITS・so-vits-svc・DiffSingerを総控えページと端末間パイプラインで束ねる。 | AIモデル・学習 / 小規模・初期評価候補（作者の自作物のみ公開） | 0 / 2026-10-03 |
@@ -37,7 +37,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ACE-Stepのモデル群、任意のLoRA
 - **制約・未確認**: 作者の速度・商用モデル比較は当カタログで再検証していない。
 - **編集者評価**: ゲームBGM・キャラソング・映像用音楽の試作候補。
-- **メトリクス**: ★13,322、fork 1,735、作成 2025-09-04、最終push 2026-10-05T02:10:58Z、archived=False
+- **メトリクス**: ★13,377、fork 1,744、作成 2025-09-04、最終push 2026-10-05T02:10:58Z、archived=False
 - **確認**: 2026-09-09 / コミット `ca1e85fe9430179831e6bc6be790c332190a3866`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/ace-step/ACE-Step-1.5/tree/ca1e85fe9430179831e6bc6be790c332190a3866)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -76,7 +76,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 同梱・配布モデル、音声処理ライブラリ
 - **制約・未確認**: 作者は単一楽器での利用を推奨。全楽曲から完全な編曲譜が取れるわけではない。
 - **編集者評価**: 作った旋律をノート編集や再演奏へ戻す補助工程に向く。
-- **メトリクス**: ★5,828、fork 531、作成 2022-05-03、最終push 2025-11-13T14:40:46Z、archived=False
+- **メトリクス**: ★5,855、fork 533、作成 2022-05-03、最終push 2025-11-13T14:40:46Z、archived=False
 - **確認**: 2026-09-09 / コミット `fa5997af0a8210982619003269994a1be25eddf3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/spotify/basic-pitch/tree/fa5997af0a8210982619003269994a1be25eddf3)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -146,7 +146,7 @@ UTAUコミュニティ向けの歌声編集・合成プラットフォーム。
 - **依存**: UTAU系音源、対応するDiffSinger等
 - **制約・未確認**: エディタと音源・合成モデルの条件を分ける。公式リポジトリはopenutau/OpenUtauへ移転。
 - **編集者評価**: キャラソングや同人音楽で、音符と発音を編集する入口。
-- **メトリクス**: ★4,391、fork 561、作成 2014-11-27、最終push 2026-10-09T12:24:40Z、archived=False
+- **メトリクス**: ★4,395、fork 564、作成 2014-11-27、最終push 2026-10-09T12:24:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `17bf25e7f78c5f88a6c5bce437bf6d592f012e46`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/openutau/OpenUtau/tree/17bf25e7f78c5f88a6c5bce437bf6d592f012e46)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -181,7 +181,7 @@ UTAUコミュニティ向けの歌声編集・合成プラットフォーム。
 - **依存**: 配布チェックポイント、対象言語の辞書
 - **制約・未確認**: 歌声生成器ではない。辞書と歌唱発音の差が結果に影響する。
 - **編集者評価**: DiffSinger等の学習データ準備と歌詞タイミングの整備に有用。
-- **メトリクス**: ★242、fork 34、作成 2023-09-15、最終push 2026-09-02T12:39:58Z、archived=False
+- **メトリクス**: ★243、fork 34、作成 2023-09-15、最終push 2026-09-02T12:39:58Z、archived=False
 - **確認**: 2026-09-09 / コミット `9549c6a86d16019c817eefe4bb8183405da524cc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/qiuqiao/SOFA/tree/9549c6a86d16019c817eefe4bb8183405da524cc)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -216,7 +216,7 @@ DiffSinger等の学習データ準備と歌詞タイミングの整備に有用�
 - **依存**: YuE2-3B、YuE2-Vae、カバー用途ではSheetSage2等
 - **制約・未確認**: 現在のmainはYuE2で、コード・重みCC BY-NC 4.0。YuE-v1の旧条件を引き継がない。日本語は今回確認したカードの記載言語外。
 - **編集者評価**: 生成前に旋律・和音を編集する曲作りの候補。歌声エディタとは出力制御が異なる。
-- **メトリクス**: ★11,049、fork 1,256、作成 2025-01-23、最終push 2026-10-06T07:30:39Z、archived=False
+- **メトリクス**: ★11,135、fork 1,269、作成 2025-01-23、最終push 2026-10-06T07:30:39Z、archived=False
 - **確認**: 2026-09-09 / コミット `6332efcafa5f792df81812acc3b0f20b80b855cf`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/multimodal-art-projection/YuE/tree/6332efcafa5f792df81812acc3b0f20b80b855cf)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -257,7 +257,7 @@ DiffSinger等の学習データ準備と歌詞タイミングの整備に有用�
 - **依存**: OpenUtau Core、DiffSinger／UTAU／Vogen音源
 - **制約・未確認**: READMEは現状かなり不安定でメモリ管理問題が起きうるとして頻繁な保存を推奨。非公式アプリであり、公式OpenUtauを名乗ってはいけない。他音源形式の動作は非保証。
 - **編集者評価**: スマートフォンでDiffSinger系音源を使える点が実用的。V2書き換え中でmasterはlegacy扱いとの注意がある。
-- **メトリクス**: ★334、fork 70、作成 2025-10-14、最終push 2026-10-09T13:12:57Z、archived=False
+- **メトリクス**: ★336、fork 72、作成 2025-10-14、最終push 2026-10-10T16:08:50Z、archived=False
 - **確認**: 2026-10-02 / コミット `17a86f602e054c345841684224903004eff1f536`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/vocoder712/OpenUtauMobile/tree/17a86f602e054c345841684224903004eff1f536)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。

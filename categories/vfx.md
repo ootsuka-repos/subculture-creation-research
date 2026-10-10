@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-10。**218件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,14 +12,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,796 / 2026-09-14 |
+| [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,797 / 2026-09-14 |
 | [GenCompositor](https://github.com/TencentARC/GenCompositor) · [詳細](#gencompositor) | 前景・背景と制御条件を用いて動画を生成合成する。 | AIモデル・学習 / 小規模・初期候補 | 157 / 2026-06-30 |
-| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,973 / 2026-10-07 |
-| [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 798 / 2026-04-06 |
+| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,979 / 2026-10-07 |
+| [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 799 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 8 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
 | [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 21 / 2026-10-05 |
-| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-09 |
+| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-10 |
+| [relight-anime](https://github.com/yuichi-suzuki-highdrama/relight-anime) · [詳細](#relight-anime) | 生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。 | AI出力の後処理 / 活発・実用候補 | 39 / 2026-10-09 |
 
 <a id="effekseer"></a>
 
@@ -35,7 +36,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲームエンジン、エフェクト素材
 - **制約・未確認**: 動画生成型VFXとは出力が異なる。実機での描画負荷とシェーダ互換性は別途確認。
 - **編集者評価**: 魔法・攻撃・演出をゲームに組み込む実用候補。
-- **メトリクス**: ★1,796、fork 282、作成 2013-10-19、最終push 2026-09-14T13:05:28Z、archived=False
+- **メトリクス**: ★1,797、fork 283、作成 2013-10-19、最終push 2026-09-14T13:05:28Z、archived=False
 - **確認**: 2026-09-09 / コミット `6cf1cb853383765153219ba5ce9b47eff5ad8398`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/effekseer/Effekseer/tree/6cf1cb853383765153219ba5ce9b47eff5ad8398)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -109,7 +110,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Godot、任意のユーザー素材
 - **制約・未確認**: 生成AIモデルではない。出力先のPBRチャンネルと色空間を合わせる必要がある。
 - **編集者評価**: ゲーム・背景・トゥーン素材の反復制作に向く。
-- **メトリクス**: ★5,973、fork 382、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
+- **メトリクス**: ★5,979、fork 383、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `ad19fcf0ee34a7caf74df709dc4de7112f0d467d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RodZill4/material-maker/tree/ad19fcf0ee34a7caf74df709dc4de7112f0d467d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -144,7 +145,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: VLM系モデル、Lottieの描画・変換環境
 - **制約・未確認**: ラスタ動画やLive2Dリグとは別形式。重みのライセンスメタデータは未設定。
 - **編集者評価**: 配信画面の動くアイコンやゲームUIの短い演出に新しい選択肢。
-- **メトリクス**: ★798、fork 40、作成 2026-01-15、最終push 2026-04-06T04:01:50Z、archived=False
+- **メトリクス**: ★799、fork 40、作成 2026-01-15、最終push 2026-04-06T04:01:50Z、archived=False
 - **確認**: 2026-09-09 / コミット `26131278e7b46bc2f64f989b25bb816f9e07c528`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/OpenVGLab/OmniLottie/tree/26131278e7b46bc2f64f989b25bb816f9e07c528)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -300,7 +301,7 @@ ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM
 - **依存**: SAM2.1/SAM3、ViTMatte、BiRefNet等の外部モデル
 - **制約・未確認**: RMBG-2.0バックエンドは商用不可でBRIAのライセンスが必要と明記。torch/numpy等を再インストールするとComfyUIを壊す恐れがあると注意喚起。
 - **編集者評価**: マスク編集・インペイント・動画マスク伝搬をComfyUI内で完結でき、アニメ素材のレイヤ/マスク処理に応用しやすい。
-- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-09T21:49:55Z、archived=False
+- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-10T06:05:14Z、archived=False
 - **確認**: 2026-10-05 / コミット `cbfd4abead2d03c1fb3c619263b135f21c54cc54`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/tree/cbfd4abead2d03c1fb3c619263b135f21c54cc54)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -320,3 +321,38 @@ ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM
 **最新GitHub Release**: [v1.30.4](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/releases/tag/v1.30.4) / 2026-05-15T09:17:04Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-10-05T18:50:05Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="relight-anime"></a>
+
+## relight-anime
+
+生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。
+
+- **リポジトリ**: https://github.com/yuichi-suzuki-highdrama/relight-anime
+- **分類**: integration / AI出力の後処理 / 活発・実用候補
+- **入力**: 完成済みのRGB動画または画像フッテージ
+- **出力**: 再照明済み映像、深度・法線・影/オクルージョン・ラインマスクの各パス
+- **環境**: Windows 11、After Effects 2025以降、Visual Studio 2022 Build Tools、Ninja、CMake、AE SDK、ONNX Runtime 1.23とCUDA 12/cuDNN 9。
+- **依存**: Video Depth Anything Small(ONNX)、After Effects SDK、ONNX Runtime、CUDA/cuDNN
+- **制約・未確認**: 深度ONNXモデルは自作スクリプトで書き出す必要がある。READMEは静止画・動画フレームの検証とAE 2026での自動生成確認までの報告。
+- **編集者評価**: 素材の再照明をAE内で完結させ、光源をドラッグで動かせる工程が具体的。深度はONNXで別プロセス推論する。
+- **メトリクス**: ★39、fork 2、作成 2026-10-09、最終push 2026-10-09T05:40:22Z、archived=False
+- **確認**: 2026-10-10 / コミット `fbb6a71b30d6f25b118065fd1280d8d14c6d4742`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/yuichi-suzuki-highdrama/relight-anime/tree/fbb6a71b30d6f25b118065fd1280d8d14c6d4742)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/yuichi-suzuki-highdrama/relight-anime/blob/fbb6a71b30d6f25b118065fd1280d8d14c6d4742/README.md) / [GitHub API](https://api.github.com/repos/yuichi-suzuki-highdrama/relight-anime) / [固定ツリー](https://github.com/yuichi-suzuki-highdrama/relight-anime/tree/fbb6a71b30d6f25b118065fd1280d8d14c6d4742)
+
+### 制作に使う際の検討
+
+AI生成アニメのライティング調整や逆光演出をAE工程に組み込みたい制作に向く。
+
+**次に確かめること（実施前）**: 自前のAIアニメ素材でAuto Passesを実行し、プリセット6種とCPU/GPU描画の差を比較。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/yuichi-suzuki-highdrama/relight-anime/blob/fbb6a71b30d6f25b118065fd1280d8d14c6d4742/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-10-09T05:40:19Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

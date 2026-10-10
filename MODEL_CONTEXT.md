@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-09。**208件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-10。**218件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -107,6 +107,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEはGoogleの最新モデル（gemini-3-flash-preview / gemini-3-pro-image-preview）前提と明記。他プロバイダは非対応。
   - 制作用途: あらすじからパネル単位で作り分ける漫画の試作フローに向く。
   - 出典（2026-10-09確認）: https://github.com/Dapeng960208/AI-Comic-Generator/blob/cc8869aeeae4892d633d0071d1de46edf7a76741/README.md
+
+- **Manga-Creator** [web_app / AIモデル・学習 / 活発・実用候補]
+  - テキストプロンプト、参照画像、取り込んだページ画像や小説テキスト → 漫画ページPNG、CBZ、印刷向けPDF風書き出し。ブラウザで動くオープンソースのAI漫画スタジオ。AIで再利用可能なキャラ/ポーズ/表情/背景アセットを作り、非破壊パネルエディタでページに組む。Manga Agentが自然文から編集操作を組み立てる。
+  - 制約: 外部APIキーまたはComfyUIの用意が必要。READMEのテスト数はリポジトリ内の自己申告。
+  - 制作用途: 生成画像を一貫性のある漫画ページへ仕上げる編集作業に向く。
+  - 出典（2026-10-10確認）: https://github.com/QuangTQV/Manga-Creator/blob/701390ed383b61a0a375551fd55c395a149d6d5e/README.md
 
 ## シナリオ・キャラクター・絵コンテ
 
@@ -276,6 +282,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 短編のプリビズ／キーフレーム検討から動画化までの試作。
   - 出典（2026-10-02確認）: https://github.com/HarisUmer/vedGen/blob/596f32ade8967725a3f8c54ba00d0f7ab288112d/README.md
 
+- **vocaloid-style-mv-pipeline** [pipeline / AI連携 / 活発・実用候補]
+  - song.wav、公式歌詞（任意で人声分離・強制アラインメント）、キャラ設定・参照素材 → 1920x1080マスター、1080x1920縦版、共有用エンコード、JIZURAマークアップ付きLRC。楽曲と歌詞からボカロ風の手書きリリックMVを作る制作パイプライン。各フレームをCanvas2D/WebGL2で決定論的に描画し、Playwrightとffmpegで1080pマスターと9:16版を書き出す。
+  - 制約: 速度・作例は作者環境での値。AI画像生成はCodex CLI経由の例として示され、任意の画像モデルに置換可能と記載。
+  - 制作用途: 楽曲のリリックMVをコード管理で量産・修正したい制作に向く。
+  - 出典（2026-10-10確認）: https://github.com/EGSECDA/vocaloid-style-mv-pipeline/blob/13b380dab077d4c8ea956825c9693c720e0c2b91/README.md
+
+- **AIComics** [pipeline / AIモデル・学習 / 小規模・初期評価候補]
+  - 物語/小説テキスト、キャラ設定、スタイル設定 → 分鏡済みの動画、字幕、サムネイル、公開用ファイル。物語から分鏡・作画・配音・公開までをローカルで回すAI漫劇の制作システム。LLMで脚本と分鏡、ComfyUI+SDXLでキーフレーム、TTSで音声を作り、動画生成や投稿までモジュール化する。
+  - 制約: READMEが主張する多数のモジュールとテスト数は第三者検証が未確認。商用ハンドブックへの導線がある。
+  - 制作用途: 縦型漫劇やショート動画を一人で量産する実験に向く。
+  - 出典（2026-10-10確認）: https://github.com/chfr19820610-cell/AIComics/blob/e0862d048552d19f4d136a3e16dd98cabf72bbd2/README.md
+
 ## 2Dキャラクター・自動リギング
 
 - **Anime2.5DRig** [browser_tool / AIは任意 / 導入候補]
@@ -343,6 +361,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEは1枚の静止画では閉じ目や別口の立ち絵を用意できず、欠落を報告するとしている。Colab接続はユーザー承認が必要。
   - 制作用途: イラスト→PSDレイヤー化→2Dリグ準備の前工程候補。
   - 出典（2026-10-06確認）: https://github.com/shinshin86/still2rig-psd/blob/29f2c086fef408483cdd1650b6b7626e27117600/README.md
+
+- **mesh-avatar-studio** [web_app / AI連携 / 活発・実用候補]
+  - 正面・頭肩の透過PNGイラスト、カメラ映像、マイク音声 → rig.jsonと分割レイヤー、OBSブラウザソース用URL、ライブ配信用アバター映像。1枚のイラストから2Dメッシュアバターを作り、まばたき・口パク・首振り・呼吸・髪の揺れを付けるローカル制作ツール。コーディングエージェントがアバターを準備し、ローカルエディタで微調整してOBSブラウザソースで配信できる。
+  - 制約: 同梱サンプル「Miko」はMIT対象外で再配布不可とREADMEが明記。推奨エージェント/モデルはREADMEの案内であり品質は未検証。
+  - 制作用途: 個人VTuber・配信者のアバター準備とOBS配信に向く。
+  - 出典（2026-10-10確認）: https://github.com/shinshin86/mesh-avatar-studio/blob/6f6d3625349b2971d3ac7f6bf6ded0c082d74e52/README.md
 
 ## レイヤー分解
 
@@ -972,6 +996,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 軽量な配信用アバターや表情素材の検証に向く。
   - 出典（2026-10-08確認）: https://github.com/eykicuihb/KuroBlob-AI/blob/b01884dfe43ea5e14da6d408303fac86b090609c/README.md
 
+- **VRMify** [desktop_tool / 非AI制作 / 小規模・初期評価候補]
+  - PMX/FBX/unitypackage/uemodel/psk/xps/VRM、zip/7z/rar書庫 → VRM 1.0（SpringBone物理付き）、VRM 0.x（物理なし）、PMXのみ。PMX(MMD)やFBX、unitypackage、uemodel、PSK、XPSなどのモデルをVRM 1.0/0.xアバターに変換するWindows製GUIツール。BlenderやUnity、プラグインを必要としない。
+  - 制約: READMEは未署名exeのためWindowsの警告表示が出ると案内。ライセンスはGPL-3.0。
+  - 制作用途: 配布MMDモデルからVSeeFace等の配信向けVRMアバターを用意する下準備に向く。
+  - 出典（2026-10-10確認）: https://github.com/JiGuang283/VRMify/blob/bac5f4af884f84e0ac3eea80a519d7dae814321f/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -1045,6 +1075,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEはAnimaとKrea 2について体系的な検証をしていないと明記。出力品質はクライアントモデルに依存。
   - 制作用途: 画像生成のプロンプト設計を標準化する補助として使える。
   - 出典（2026-10-08確認）: https://github.com/1756141021/tag-skill/blob/58270f3a6f3f7756c077f88752bd876c517ddd41/README.md
+
+- **ComfyUI-AnimaFlow** [integration / AI連携 / 小規模・初期評価候補]
+  - 生成パラメータ（workflow/解像度/tags）、参考画像、人設JSON → 生成画像、人設レコード、Danbooruタグへの反推結果。ComfyUIのAnima系モデルをAIエージェントから呼べるようにするツール。MCPサーバ・HTTP API・CLIを提供し、ワークフローや人設ライブラリ、画像反推をAPI化する。
+  - 制約: fusion UNETやTurbo LoRAの再マップ版は非公式の派生とREADMEが明記。Anima系の多くは非商用ライセンス。
+  - 制作用途: エージェントやWebフロントからAnima生成を共通APIで叩きたい制作に向く。
+  - 出典（2026-10-10確認）: https://github.com/Langzaigg/ComfyUI-AnimaFlow/blob/a4dfef7b0268a577d4805272b40ea39705439ced/README.md
 
 ## 字幕・翻訳・ローカライズ
 
@@ -1186,6 +1222,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: スマホで原稿を確認しながら翻訳初稿を作る用途に向く。
   - 出典（2026-10-08確認）: https://github.com/Yuu18id/manga-image-translator-android/blob/ea5fd9724b37cb98835d38136be6cd1a4b07e712/README.md
 
+- **fukidashi-mcp** [pipeline / AI連携 / 小規模・初期評価候補]
+  - 漫画ページ画像、MangaDex等から取得したチャプタ → 翻訳・再組版済みのCBZ/ZIP、組版オーバーレイ。AIエージェントから呼び出せるローカル漫画翻訳のMCPサーバ。吹き出し検出・LaMaインペイント・多言語OCR・動的組版をローカルで回し、egui製QAエディタでCBZ書き出しまで行う。
+  - 制約: 翻訳の質は選択したエージェント/LLMに依存。READMEの作例はベトナム語組版が中心。
+  - 制作用途: 権利処理済みの自作物や個人利用の漫画翻訳ワークフローに向く。
+  - 出典（2026-10-10確認）: https://github.com/Kyokkei/fukidashi-mcp/blob/b600b4263d6173c1f5649f255e5163a3eb7a4af8/README.md
+
+- **Panelglass** [desktop_tool / AIモデル・学習 / 小規模・初期評価候補]
+  - 閲覧中の画面（漫画/マンガ/ウェブトゥーン）、画像・PDF・CBZ → 画面オーバーレイ翻訳、画像/ZIP/CBZ書き出し。Android向けの漫画翻訳アプリ。画面上の吹き出しをその場で消して訳文を描き直し、スクロールに追従する。Studioで手持ちのチャプタを翻訳・組版して書き出せる。
+  - 制約: リポジトリはearly developmentと明記。エンジン間の品質差はREADMEの説明以上の検証は未確認。
+  - 制作用途: 手元のAndroid端末で原稿や既刊を読む用途に向く。
+  - 出典（2026-10-10確認）: https://github.com/smnexstudio/Panelglass/blob/54ab733f5b5398c2ed841a23234032c4a9ab65b3/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -1229,6 +1277,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 変換にNode.jsのファイル処理とネイティブFBX2glTFが必要で、GitHub Pages等の静的配信だけでは動作しない。1リクエスト最大10ファイル・100MB/ファイル。
   - 制作用途: 手持ちモーションをVRMAへ整えてVTuber/アバター用途に再利用する作業に向く。
   - 出典（2026-10-09確認）: https://github.com/tk256ailab/fbx2vrma-app/blob/bd00163b42b2005cbb6d48430c532fe18e545b39/README.md
+
+- **warudo-agent-bridge** [integration / AI連携 / 小規模・初期評価候補]
+  - 自然文の指示、WARUDOのシーン・キャラ情報 → キャラのポーズ(.anim)、スクリーンショットや撮影画像。自然文の指示でWARUDOのカメラ・表情・ポーズ・衣装表示・撮影を操作するMCPサーバとCLI。AIに63個のツールを公開し、ポーズをUnity用.animとして保存できる。
+  - 制約: WARUDOやHakuyaLabsとは無関係の非公式ツール。チャット内容と撮影画像はAIサービス側で扱われるとREADMEが明記。
+  - 制作用途: 3Dアバターのポーズ出しや多角度撮影を会話で回す制作に向く。
+  - 出典（2026-10-10確認）: https://github.com/StudioRaming/warudo-agent-bridge/blob/997f9b0bf01c828c77a7fe10455ce66a578360fe/README.md
 
 ## VFX・材質・ベクター演出
 
@@ -1279,6 +1333,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: RMBG-2.0バックエンドは商用不可でBRIAのライセンスが必要と明記。torch/numpy等を再インストールするとComfyUIを壊す恐れがあると注意喚起。
   - 制作用途: レイヤ分離・マスク処理・VFX工程の自動化に有効。RMBG利用時の商用条件に注意。
   - 出典（2026-10-05確認）: https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/blob/cbfd4abead2d03c1fb3c619263b135f21c54cc54/README.md
+
+- **relight-anime** [integration / AI出力の後処理 / 活発・実用候補]
+  - 完成済みのRGB動画または画像フッテージ → 再照明済み映像、深度・法線・影/オクルージョン・ラインマスクの各パス。生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。
+  - 制約: 深度ONNXモデルは自作スクリプトで書き出す必要がある。READMEは静止画・動画フレームの検証とAE 2026での自動生成確認までの報告。
+  - 制作用途: AI生成アニメのライティング調整や逆光演出をAE工程に組み込みたい制作に向く。
+  - 出典（2026-10-10確認）: https://github.com/yuichi-suzuki-highdrama/relight-anime/blob/fbb6a71b30d6f25b118065fd1280d8d14c6d4742/README.md
 
 ## 絵コンテ・制作管理・評価
 
@@ -1359,6 +1419,10 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [z-image-modern-anime](https://huggingface.co/alfredplpl/z-image-modern-anime/blob/c5e91f527e19f68ce9e941922dce5e7ed0af3849/README.md): Tongyi-MAIのZ-Imageを日本語モダンアニメ調にフルファインチューンした実験モデル。作者はQuality Tuningのみで学習したと記載。diffusersのZImagePipelineでfrom_pretrainedできる形式で配布。 apache-2.0。
 - [Irodori-TTS-600M-v3-VoiceDesign](https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign/blob/e863a3a93e652e09afeff3e84823a206a0a60314/README.md): Rectified Flow Diffusion Transformer（RF-DiT）による約600Mの日本語TTS。テキスト・参照音声・キャプションを同時に条件に使うMulti-modal Voice Designで、32次元DACVAE潜在から48kHz波形を再構成する。Duration Predictorを内蔵。 MIT。生成音声にはSilentCipherによる不可聴ウォーターマークを付与すると記載。
 - [manga-ocr-2025-onnx](https://huggingface.co/l0wgear/manga-ocr-2025-onnx/blob/e8b27bbd3f424fe3877e0bda704d6a920e4f0a33/README.md): 日本語漫画OCR（kha-white/manga-ocr系）のVision Encoder DecoderをOptimumでONNX出力したもの。縦書き・横書き、ルビ、画像上の文字、低品質スキャンなど漫画特有の条件に頑健とされる。 ライセンスは明示されていない。元実装manga-ocrの条件を確認してから利用する。
+- [character_turnaround_sheet_qwen_image_edit_2509](https://huggingface.co/tarn59/character_turnaround_sheet_qwen_image_edit_2509/blob/bb3bcbf61c75b79a182d6a58f601fcdfc7b4e0ab/README.md): Qwen-Image-Edit-2509向けのLoRA。入力キャラ画像から多角度を合成したターンアラウンドシートを生成する。 licenseはapache-2.0。Qwen-Image-Edit-2509側の条件も別途確認が必要。
+- [flux-2-klein-4b-spritesheet-lora](https://huggingface.co/fal/flux-2-klein-4b-spritesheet-lora/blob/6d3128f9223f585251ad3a02dd0d8082c9b5ca3f/README.md): FLUX.2-Klein 4BをベースにしたLoRA。1枚のオブジェクト画像から2x2のマルチビュー・スプライトシート（アイソメ2面・側面・トップダウン）を作る。 licenseはapache-2.0。
+- [pixel_spritesheet_4walk_combat_32x48_v1](https://huggingface.co/svntax-dev/pixel_spritesheet_4walk_combat_32x48_v1/blob/9e3fafee0a2e49cbec23b7b54a8b03ce1ae0cad1/README.md): Qwen-Image-Edit-2511をベースにしたピクセルアート用LoRA。32x48のキャラについて4方向の歩行3フレーム・攻撃2フレーム・被弾1フレームを6x4グリッドで出す。 licenseはapache-2.0。ベースのQwen-Image-Edit-2511側の条件も別途確認が必要。
+- [Anima-Lightning](https://huggingface.co/aina-tech/Anima-Lightning/blob/9dbb6e1a0f94eda0a1e523836d32355fb961cc7a/README.md): CircleStone LabsのAnimaとNVIDIA Cosmos-Predict2-2Bを基にした蒸留版。付属の専用transformerがK=4条件付けを持ち、標準のCosmosTransformer3DModelでは全チェックポイントを正しく読めないと明記。 licenseはother、license_nameはcirclestone-labs-non-commercial-license。上流のCircleStone条項とNVIDIA Open Model Licenseが適用。
 
 ## 保留情報
 

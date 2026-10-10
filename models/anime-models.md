@@ -821,3 +821,67 @@ Rectified Flow Diffusion Transformer（RF-DiT）による約600Mの日本語TTS�
 確認日: 2026-10-09 / revision `e8b27bbd3f424fe3877e0bda704d6a920e4f0a33` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `decoder_model.onnx`、`encoder_model.onnx`
 
 根拠: [固定モデルカード](https://huggingface.co/l0wgear/manga-ocr-2025-onnx/blob/e8b27bbd3f424fe3877e0bda704d6a920e4f0a33/README.md) / [モデルAPI](https://huggingface.co/api/models/l0wgear/manga-ocr-2025-onnx)
+
+## character_turnaround_sheet_qwen_image_edit_2509
+
+Qwen-Image-Edit-2509向けのLoRA。入力キャラ画像から多角度を合成したターンアラウンドシートを生成する。
+
+- **版の区別**: 単一のsafetensors（character_turnaround_sheet_v2_...）を配布。トリガー語は「Character turnaround sheet」，学習データセットは別リポジトリ。
+- **入力・設定**: トリガー語「Character turnaround sheet」を使用。READMEは入力解像度600x1080、出力解像度2600x1080を推奨。
+- **必要構成**: Qwen-Image-Edit-2509とdiffusers。実行ワークフローや追加ノードの詳細はカードに記載なし。
+- **制約**: カードの記述は簡潔で、対応解像度や失敗例の詳細は限られる。
+- **利用条件**: licenseはapache-2.0。Qwen-Image-Edit-2509側の条件も別途確認が必要。
+- **編集者評価**: キャラ設定画を多角度で揃える用途に絞ったLoRAで、設定資料づくりに使いやすい。
+- **次の検証（未実施）**: 自作キャラ1体で推奨解像度どおりに生成し、角度ごとの同一性を確認。
+
+確認日: 2026-10-10 / revision `bb3bcbf61c75b79a182d6a58f601fcdfc7b4e0ab` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `character_turnaround_sheet_v2_qwen_image_edit_000000760.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/tarn59/character_turnaround_sheet_qwen_image_edit_2509/blob/bb3bcbf61c75b79a182d6a58f601fcdfc7b4e0ab/README.md) / [モデルAPI](https://huggingface.co/api/models/tarn59/character_turnaround_sheet_qwen_image_edit_2509)
+
+## flux-2-klein-4b-spritesheet-lora
+
+FLUX.2-Klein 4BをベースにしたLoRA。1枚のオブジェクト画像から2x2のマルチビュー・スプライトシート（アイソメ2面・側面・トップダウン）を作る。
+
+- **版の区別**: fal.ai用とComfyUI用の2ファイルを配布。トリガーは「2x2 sprite sheet」、推奨LoRAスケールは1.1。
+- **入力・設定**: プロンプトは「2x2 sprite sheet」。出力は左上がアイソメ(右下向き)、右上がアイソメ(左下向き)、左下が左向き横顔、右下が上向きトップダウンの固定レイアウト。
+- **必要構成**: FLUX.2-Klein 4Bと画像編集LoRAを扱える環境（fal.ai SDKまたはComfyUI）。
+- **制約**: 出力背景は赤一色（設計上）。学習データは乗り物やオブジェクト中心の48組（120生成から人手選別）。
+- **利用条件**: licenseはapache-2.0。
+- **編集者評価**: ゲーム用に多方向の参照/アセットを短い手数で作れる候補。作例はキャラクターよりオブジェクト中心。
+- **次の検証（未実施）**: 自キャラ画像で4方向の一貫性と背景除去のしやすさを確認。
+
+確認日: 2026-10-10 / revision `6d3128f9223f585251ad3a02dd0d8082c9b5ca3f` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `flux-spritesheet-lora.safetensors`、`mFtSubaAlDqtHyKk6eIPi_pytorch_lora_weights_comfy_converted.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/fal/flux-2-klein-4b-spritesheet-lora/blob/6d3128f9223f585251ad3a02dd0d8082c9b5ca3f/README.md) / [モデルAPI](https://huggingface.co/api/models/fal/flux-2-klein-4b-spritesheet-lora)
+
+## pixel_spritesheet_4walk_combat_32x48_v1
+
+Qwen-Image-Edit-2511をベースにしたピクセルアート用LoRA。32x48のキャラについて4方向の歩行3フレーム・攻撃2フレーム・被弾1フレームを6x4グリッドで出す。
+
+- **版の区別**: 単一リポジトリに複数ステップのLoRAを配布。専用トリガー語はなく、プロンプトでグリッド構成を指定する。
+- **入力・設定**: READMEの例文どおり、行ごとに下/左/右/上の向きで「歩行3・攻撃2・被弾1」フレームを指定する。
+- **必要構成**: ComfyUIのQwen Image Edit 2511ワークフローにLoRAロードノードを追加。入力は学習時と同じ768x768。
+- **制約**: ピクセルパーフィットには4分の1（768→192）へダウンスケールする必要があると注記。k-centroid縮小を推奨。
+- **利用条件**: licenseはapache-2.0。ベースのQwen-Image-Edit-2511側の条件も別途確認が必要。
+- **編集者評価**: ドット絵ゲームのキャラスプライト一式を1枚で作る用途が明確。
+- **次の検証（未実施）**: 768x768で生成し、k-centroid縮小後に各コマの位置ずれと行構成を確認。
+
+確認日: 2026-10-10 / revision `9e3fafee0a2e49cbec23b7b54a8b03ce1ae0cad1` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `pixel_4walk_32x48_qwen_image_edit_2511_v1.safetensors`、`pixel_4walk_32x48_qwen_image_edit_2511_v1_000001750.safetensors`、`pixel_4walk_32x48_qwen_image_edit_2511_v1_000002000.safetensors`、`pixel_4walk_32x48_qwen_image_edit_2511_v1_000002500.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/svntax-dev/pixel_spritesheet_4walk_combat_32x48_v1/blob/9e3fafee0a2e49cbec23b7b54a8b03ce1ae0cad1/README.md) / [モデルAPI](https://huggingface.co/api/models/svntax-dev/pixel_spritesheet_4walk_combat_32x48_v1)
+
+## Anima-Lightning
+
+CircleStone LabsのAnimaとNVIDIA Cosmos-Predict2-2Bを基にした蒸留版。付属の専用transformerがK=4条件付けを持ち、標準のCosmosTransformer3DModelでは全チェックポイントを正しく読めないと明記。
+
+- **版の区別**: 単一リポジトリにtext_encoder/text_conditioner/transformer/vaeと専用Pythonモジュールを同梱。旧checkpointとshift-1レシピを置き換える更新版。
+- **入力・設定**: READMEは「anime illustration, a lighthouse above a calm sea, sunset」のような自然文例を示す。旧shift-1レシピや標準の全ステップCFG5推論は使わず、4ステップ・CFG1・scheduler shift3・raw sigmas[1,.75,.5,.25]で使うよう明記。
+- **必要構成**: CUDA/BF16のPyTorch、Anima modular対応のDiffusers。検証環境はdiffusers 0.39.0、transformers 5.7.0、PyTorch 2.12.1+cu130。
+- **制約**: 解剖・複雑な構図・文字描画は不完全と注記。保存transformerはBF16のためFP32や他サンプラ実装と結果が異なり得ると記載。
+- **利用条件**: licenseはother、license_nameはcirclestone-labs-non-commercial-license。上流のCircleStone条項とNVIDIA Open Model Licenseが適用。
+- **編集者評価**: Anima系を4ステップで回す高速版として、試作やバッチ生成の候補になる。
+- **次の検証（未実施）**: 同一プロンプトでAnima本体と4ステップ生成を比較し、速度・構図・破綻の差を記録。
+
+確認日: 2026-10-10 / revision `9dbb6e1a0f94eda0a1e523836d32355fb961cc7a` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `text_conditioner/diffusion_pytorch_model.safetensors`、`text_encoder/model.safetensors`、`transformer/diffusion_pytorch_model.safetensors`、`vae/diffusion_pytorch_model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/aina-tech/Anima-Lightning/blob/9dbb6e1a0f94eda0a1e523836d32355fb961cc7a/README.md) / [モデルAPI](https://huggingface.co/api/models/aina-tech/Anima-Lightning)
