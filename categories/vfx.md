@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-10。**218件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,13 +14,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,797 / 2026-09-14 |
 | [GenCompositor](https://github.com/TencentARC/GenCompositor) · [詳細](#gencompositor) | 前景・背景と制御条件を用いて動画を生成合成する。 | AIモデル・学習 / 小規模・初期候補 | 157 / 2026-06-30 |
-| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,979 / 2026-10-07 |
+| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,980 / 2026-10-07 |
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 799 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 8 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
-| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 21 / 2026-10-05 |
+| [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 22 / 2026-10-11 |
 | [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-10 |
-| [relight-anime](https://github.com/yuichi-suzuki-highdrama/relight-anime) · [詳細](#relight-anime) | 生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。 | AI出力の後処理 / 活発・実用候補 | 39 / 2026-10-09 |
+| [relight-anime](https://github.com/yuichi-suzuki-highdrama/relight-anime) · [詳細](#relight-anime) | 生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。 | AI出力の後処理 / 活発・実用候補 | 40 / 2026-10-09 |
+| [three-liltoon](https://github.com/mochiya-labs/three-liltoon) · [詳細](#three-liltoon) | lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデルやVRMアバターをtoon描画するライブラリ。 | 非AI制作 / α段階・評価候補 | 27 / 2026-10-05 |
+| [AnimeEnhancer](https://github.com/picki1/AnimeEnhancer) · [詳細](#animeenhancer) | MPV不要で、Windowsの全画面ブラウザ動画にAnime4Kベースのリアルタイム拡大/復元をかけるユーティリティ。 | AI出力の後処理 / β段階・初期評価候補 | 13 / 2026-08-10 |
 
 <a id="effekseer"></a>
 
@@ -110,7 +112,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Godot、任意のユーザー素材
 - **制約・未確認**: 生成AIモデルではない。出力先のPBRチャンネルと色空間を合わせる必要がある。
 - **編集者評価**: ゲーム・背景・トゥーン素材の反復制作に向く。
-- **メトリクス**: ★5,979、fork 383、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
+- **メトリクス**: ★5,980、fork 384、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `ad19fcf0ee34a7caf74df709dc4de7112f0d467d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RodZill4/material-maker/tree/ad19fcf0ee34a7caf74df709dc4de7112f0d467d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -266,7 +268,7 @@ Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ON
 - **依存**: ONNXモデル、mpv互換GLSLシェーダ、RIFE/DRBA
 - **制約・未確認**: HDR非対応でSDR前提。一部同梱モデル/シェーダのライセンス情報は整理中と明記。
 - **編集者評価**: アニメ向けシェーダ/ONNXモデルを前提に、DirectML・NeoAMD・TensorRTを選べる構成で、既存のmpv系資産を流用できる。
-- **メトリクス**: ★21、fork 0、作成 2026-08-08、最終push 2026-10-05T05:33:10Z、archived=False
+- **メトリクス**: ★22、fork 0、作成 2026-08-08、最終push 2026-10-11T11:28:08Z、archived=False
 - **確認**: 2026-09-30 / コミット `1e8fb3e7378b7df99709393087578ea7bc55d209`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/animeojisan/cHiDeScaler-Neo/tree/1e8fb3e7378b7df99709393087578ea7bc55d209)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -283,7 +285,7 @@ Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ON
 
 **入口候補（固定ツリーで存在確認）**: [src/main.rs](https://github.com/animeojisan/cHiDeScaler-Neo/blob/1e8fb3e7378b7df99709393087578ea7bc55d209/src/main.rs)
 
-**最新GitHub Release**: [v0.99.5](https://github.com/animeojisan/cHiDeScaler-Neo/releases/tag/v0.99.5) / 2026-10-05T02:59:16Z / prerelease=False
+**最新GitHub Release**: [v0.99.6](https://github.com/animeojisan/cHiDeScaler-Neo/releases/tag/v0.99.6) / 2026-10-11T09:34:16Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-28T03:48:09Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
 
@@ -336,7 +338,7 @@ ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM
 - **依存**: Video Depth Anything Small(ONNX)、After Effects SDK、ONNX Runtime、CUDA/cuDNN
 - **制約・未確認**: 深度ONNXモデルは自作スクリプトで書き出す必要がある。READMEは静止画・動画フレームの検証とAE 2026での自動生成確認までの報告。
 - **編集者評価**: 素材の再照明をAE内で完結させ、光源をドラッグで動かせる工程が具体的。深度はONNXで別プロセス推論する。
-- **メトリクス**: ★39、fork 2、作成 2026-10-09、最終push 2026-10-09T05:40:22Z、archived=False
+- **メトリクス**: ★40、fork 2、作成 2026-10-09、最終push 2026-10-09T05:40:22Z、archived=False
 - **確認**: 2026-10-10 / コミット `fbb6a71b30d6f25b118065fd1280d8d14c6d4742`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/yuichi-suzuki-highdrama/relight-anime/tree/fbb6a71b30d6f25b118065fd1280d8d14c6d4742)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -356,3 +358,73 @@ AI生成アニメのライティング調整や逆光演出をAE工程に組み�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-10-09T05:40:19Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="three-liltoon"></a>
+
+## three-liltoon
+
+lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデルやVRMアバターをtoon描画するライブラリ。
+
+- **リポジトリ**: https://github.com/mochiya-labs/three-liltoon
+- **分類**: library / 非AI制作 / α段階・評価候補
+- **入力**: lilToon拡張付きGLB/VRM、またはJSで定義するマテリアル設定
+- **出力**: WebGL2でのtoon描画結果
+- **環境**: Three.js WebGLRenderer（WebGL2、0.180.0/0.185.1で動作確認）、VRM用途では@pixiv/three-vrm 3.5.5。
+- **依存**: three、任意で@pixiv/three-vrm、lilToon設定付きGLB/VRM
+- **制約・未確認**: α版でUnityとのピクセル一致は保証しない。WebGPU/WebXR非対応。追加ライトやUnityの影/プローブ/フォグ等は再現しない。
+- **編集者評価**: Unity由来のlilToonマテリアルをWebで再現でき、VRMと組み合わせたtoon表現の選択肢になる。
+- **メトリクス**: ★27、fork 1、作成 2026-09-02、最終push 2026-10-05T02:26:56Z、archived=False
+- **確認**: 2026-10-11 / コミット `ac06d5524b3420421c521d8057feff60cf050fb5`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/mochiya-labs/three-liltoon/tree/ac06d5524b3420421c521d8057feff60cf050fb5)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/mochiya-labs/three-liltoon/blob/ac06d5524b3420421c521d8057feff60cf050fb5/README.md) / [GitHub API](https://api.github.com/repos/mochiya-labs/three-liltoon) / [固定ツリー](https://github.com/mochiya-labs/three-liltoon/tree/ac06d5524b3420421c521d8057feff60cf050fb5)
+
+### 制作に使う際の検討
+
+VRMキャラをWebで配信する際のtoonルック調整に使える。
+
+**次に確かめること（実施前）**: 実VRMで対応マテリアルモード・負荷・Unityとの見た目差を比較する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [dist/index.js](https://github.com/mochiya-labs/three-liltoon/blob/ac06d5524b3420421c521d8057feff60cf050fb5/dist/index.js) / [examples/basic-three/main.js](https://github.com/mochiya-labs/three-liltoon/blob/ac06d5524b3420421c521d8057feff60cf050fb5/examples/basic-three/main.js) / [src/index.ts](https://github.com/mochiya-labs/three-liltoon/blob/ac06d5524b3420421c521d8057feff60cf050fb5/src/index.ts)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-09-20T06:01:49Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="animeenhancer"></a>
+
+## AnimeEnhancer
+
+MPV不要で、Windowsの全画面ブラウザ動画にAnime4Kベースのリアルタイム拡大/復元をかけるユーティリティ。
+
+- **リポジトリ**: https://github.com/picki1/AnimeEnhancer
+- **分類**: desktop_tool / AI出力の後処理 / β段階・初期評価候補
+- **入力**: 画面に表示中の全画面動画（Windows Graphics Capture）
+- **出力**: GPU処理された拡大/復元映像（クリックスルーのオーバーレイ）
+- **環境**: Windows 10 2004以降、Direct3D 11対応GPU。ビルドには.NET 10 SDK。1.1βでRIFE/ncnn Vulkanのフレーム補間（RTX向け）。
+- **依存**: Anime4Kのシェーダ、Vortice.Windows等（同梱）
+- **制約・未確認**: HDRは無効。保護された動画は黒フレームになる（DRM回避はしない）。720p以上推奨。低速/圧縮の強い素材では過処理でリンギングが出る。署名なしのためSmartScreen警告の可能性。
+- **編集者評価**: Anime4KのCNN復元＋x2拡大チェーンをキャプチャ経由で適用し、プリセットや分割比較を備える。視聴・確認用の画質向上に使える。
+- **メトリクス**: ★13、fork 0、作成 2026-08-02、最終push 2026-08-10T20:31:49Z、archived=False
+- **確認**: 2026-10-11 / コミット `7632be792c564968d6260923f50cad2501111f8b`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/picki1/AnimeEnhancer/tree/7632be792c564968d6260923f50cad2501111f8b)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/picki1/AnimeEnhancer/blob/7632be792c564968d6260923f50cad2501111f8b/README.md) / [GitHub API](https://api.github.com/repos/picki1/AnimeEnhancer) / [固定ツリー](https://github.com/picki1/AnimeEnhancer/tree/7632be792c564968d6260923f50cad2501111f8b)
+
+### 制作に使う際の検討
+
+書き出し前の見え方確認や視聴時の画質補正に。
+
+**次に確かめること（実施前）**: プリセット別のGPU負荷と、字幕・速いカットでの破綻（AnimeFlow有効時）を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/picki1/AnimeEnhancer/blob/7632be792c564968d6260923f50cad2501111f8b/README.md)
+
+**最新GitHub Release**: [v1.0.17](https://github.com/picki1/AnimeEnhancer/releases/tag/v1.0.17) / 2026-08-03T07:45:18Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-08-10T20:30:56Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

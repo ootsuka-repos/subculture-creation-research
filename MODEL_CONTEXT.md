@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-10。**218件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -294,6 +294,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 縦型漫劇やショート動画を一人で量産する実験に向く。
   - 出典（2026-10-10確認）: https://github.com/chfr19820610-cell/AIComics/blob/e0862d048552d19f4d136a3e16dd98cabf72bbd2/README.md
 
+- **html-anime** [workflow_tool / AI連携 / プロトタイプ・初期評価候補]
+  - ログライン・シーン記述、秒数/アスペクト/配色スクリプト、セリフ → ショットシート（Markdown）、HTMLアニメーション（HyperFrames）。シーンのプロンプトからショットシートを生成し、コーディングエージェントがHTML（Canvas/WebGL）でアニメを描くためのスキルとハーネス。
+  - 制約: 生成物はHTMLアニメで作画品質はコード生成に依存。参照フィルムは再混用向けではない。three.js/フォントはCDN・Google Fontsを利用。
+  - 制作用途: 絵コンテ/ショット設計の型をコード生成へ落とす試作に向く。
+  - 出典（2026-10-11確認）: https://github.com/blixvip/html-anime/blob/6ba3a05a2d16c857e5be291501d886440d47c7b2/README.md
+
 ## 2Dキャラクター・自動リギング
 
 - **Anime2.5DRig** [browser_tool / AIは任意 / 導入候補]
@@ -367,6 +373,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 同梱サンプル「Miko」はMIT対象外で再配布不可とREADMEが明記。推奨エージェント/モデルはREADMEの案内であり品質は未検証。
   - 制作用途: 個人VTuber・配信者のアバター準備とOBS配信に向く。
   - 出典（2026-10-10確認）: https://github.com/shinshin86/mesh-avatar-studio/blob/6f6d3625349b2971d3ac7f6bf6ded0c082d74e52/README.md
+
+- **umamo** [desktop_tool / 非AI制作 / α段階・初期評価候補]
+  - レイヤー画像、.cmo3 / .uma プロジェクト → .cmo3 / .moc3、.umaプロジェクト。Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットアニメ向けのオープンソース・リギング/モデリングエディタ。ペンとタッチ入力を重視。
+  - 制約: READMEにα段階でAPI・形式・範囲が流動的と明記。アニメーション機能は未実装（長期目標）。Windowsビルドは未署名。破損対策としてバックアップ推奨。
+  - 制作用途: 2DキャラのリギングをCubism以外のツールで行いたい場合の検討対象。
+  - 出典（2026-10-11確認）: https://github.com/umamoorg/umamo/blob/e6675e78190fb54687958f624456a22932df83eb/README.md
+
+- **soullink-emotion-sdk** [library / AIモデル・学習 / 活発・評価候補]
+  - テキストメッセージ、外部イベント、音声状態、Live2Dモデル → Live2Dパラメータ（表情・動作・口型）、soullink.profile.json。メッセージや音声状態を連続的なVAD感情・FACS/AU表情・身体動作・口型へ変換し、Live2Dキャラをリアルタイムに演技させるTypeScript SDK。
+  - 制約: Live2Dモデル・テクスチャ・Cubism Coreは本SDKのApache-2.0範囲外。Embedding/Planner/TTSモードは別途サービス設定が必要。
+  - 制作用途: 机寵・バーチャルキャラの表情/動作を連続制御したい時に組み込みやすい。
+  - 出典（2026-10-11確認）: https://github.com/nanlingyin/soullink-emotion-sdk/blob/02cd75ac0a085a87d84d1a885f1b33eca8742d53/README.md
 
 ## レイヤー分解
 
@@ -503,6 +521,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: 2倍固定。READMEは品質の定量比較を示しておらず、対象はアニメ・イラストに限られる。
   - 制作用途: 生成イラストや動画フレームの下処理として組み込みやすい。
   - 出典（2026-10-08確認）: https://github.com/XYETHER/Xyether-Anime-Upscaler/blob/b8d089d522a435641257262ae130cf7d0e07c55c/README.md
+
+- **GesturePortal** [integration / AIモデル・学習 / プロトタイプ・初期評価候補]
+  - Webカメラ映像、ジェスチャ（MediaPipe）、編集指示プロンプト → スタイル変換されたプレビュー映像/画像、比較用の保存画像。両手で作ったフレームでカメラ映像を切り抜き、その中だけComfyUIのFLUX/Qwenで別スタイルへ変換して見せるローカル実験ツール。
+  - 制約: Windowsプロトタイプ。画像モデルのため固定シードでもフリッカーする。速度は小さな開発環境での実測値。Qwenは研究/評価向けライセンスで任意オプトイン。リポジトリにライセンス表記なし。
+  - 制作用途: 配信や制作中の手元カメラをアニメ調に見せる演出の試作に。
+  - 出典（2026-10-11確認）: https://github.com/pixelsncodes/GesturePortal/blob/1fca0f2ccfbebab06f83ffa86c0dcf0b8b894a48/README.md
 
 ## 動画生成
 
@@ -645,6 +669,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEは人物モデル・重み・自動3D再構成プログラムを含まないと明記。全身・服・リギング・アニメーションの端到端検証例は未提供。
   - 制作用途: Blender作業を手順付きでエージェントに委ねる補助として使える。
   - 出典（2026-10-08確認）: https://github.com/icesixgod/awesome-astra-blender-characters/blob/2b54222f8d39db7ba7ae7444d6fec985be7ad5b1/README.md
+
+- **Model-To-PMX** [desktop_tool / 非AI制作 / 活発・評価候補]
+  - .fbx / .unitypackage / .vrm / .pmx / .uemodel / .psk / .pskx / .xps → PMX / VRM / uemodel / PSK・PSKX / ASCII FBX。FBX/unitypackage/VRM/uemodel/PSK/XPSとPMXの相互変換をPure Pythonで行うWindows向けGUIコンバータ。
+  - 制約: Windows前提（ドラッグ&ドロップとGUIがWindows API依存）。PMX書き出しでトゥーンを付けない等、変換仕様上の制約がある。
+  - 制作用途: VRM/MMD/UE間のモデル受け渡しを簡略化したい時に。
+  - 出典（2026-10-11確認）: https://github.com/SaraKale/Model-To-PMX/blob/1dd8b9ea155ce6bfb0f88368196e28e549b385e7/README.md
+
+- **sakuragaoka-station** [browser_tool / 非AI制作 / 参照用]
+  - なし（コードのみ。URLパラメータで部分ビルド/時間/画質を指定） → WebGLのインタラクティブシーン。セルシェードの日本のサクラ駅周辺をthree.jsで手続き生成した、歩ける一人称シーン。建物・列車・音までコードで生成。
+  - 制約: 外部3Dアセットを使わないデモで汎用ツールではない。three.js/フォント取得にオンライン接続が必要。
+  - 制作用途: セルシェード表現や手続き的環境生成の参考に。
+  - 出典（2026-10-11確認）: https://github.com/Kenton-GMI/sakuragaoka-station/blob/4112f57208b7e29998344ca71fef74202c2b2bdd/README.md
 
 ## TTS・キャラクター音声
 
@@ -1002,6 +1038,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 配布MMDモデルからVSeeFace等の配信向けVRMアバターを用意する下準備に向く。
   - 出典（2026-10-10確認）: https://github.com/JiGuang283/VRMify/blob/bac5f4af884f84e0ac3eea80a519d7dae814321f/README.md
 
+- **astrbot_plugin_live_stream_companion** [integration / AI連携 / 活発・評価候補]
+  - ライブの弾幕/ギフト/SC/上艦等のイベント、TTS音声、LLM応答 → LLM応答テキスト/音声、Live2D表情動作（VTube Studio）、OBS字幕、口型パラメータ。B站/Twitchの弾幕をAstrBot経由でLLMに渡し、VTube Studioの表情動作・TTS口型・OBS字幕を一つの配信経路にまとめるAstrBotプラグイン。
+  - 制約: 主な配信先はBilibiliとTwitch。口型連動はローカルwav生成に依存し、リモートURLや非wavではスキップ。B站の分区変更APIは呼ばない。
+  - 制作用途: AI VTuberの配信オーケストレーションを組む際の参照実装になる。
+  - 出典（2026-10-11確認）: https://github.com/menglimi/astrbot_plugin_live_stream_companion/blob/280fbab46bb28f3fdc894a3aca3c06aa2fa46370/README.md
+
 ## 制作ワークフロー・追加学習
 
 - **ComfyUI** [workflow_tool / AI連携 / 更新のある導入・評価候補]
@@ -1234,6 +1276,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 手元のAndroid端末で原稿や既刊を読む用途に向く。
   - 出典（2026-10-10確認）: https://github.com/smnexstudio/Panelglass/blob/54ab733f5b5398c2ed841a23234032c4a9ab65b3/README.md
 
+- **wavesubs** [desktop_tool / AIモデル・学習 / 活発・評価候補]
+  - 動画/音声ファイル、既存字幕ファイル、フォルダ → SRT/ASS字幕、翻訳付き/バイリンガル字幕、品質レポート。手元の動画からローカルAIでSRT/ASS字幕を生成し、翻訳・タイミング調整・画面上テキスト翻訳までオフラインで行うデスクトップアプリ。
+  - 制約: ビットマップ字幕(PGS/VobSub/DVB)は入力元に使えない。画面上テキスト認識はOS組み込みOCRに依存。クラウド翻訳は任意設定。
+  - 制作用途: 字幕の下訳とタイミング合わせの一次工程をオフラインで回せる。
+  - 出典（2026-10-11確認）: https://github.com/jason-jm/wavesubs/blob/cbe91e7f4f472d8acfab46b4c8ff3e08697e290d/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -1340,6 +1388,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: AI生成アニメのライティング調整や逆光演出をAE工程に組み込みたい制作に向く。
   - 出典（2026-10-10確認）: https://github.com/yuichi-suzuki-highdrama/relight-anime/blob/fbb6a71b30d6f25b118065fd1280d8d14c6d4742/README.md
 
+- **three-liltoon** [library / 非AI制作 / α段階・評価候補]
+  - lilToon拡張付きGLB/VRM、またはJSで定義するマテリアル設定 → WebGL2でのtoon描画結果。lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデルやVRMアバターをtoon描画するライブラリ。
+  - 制約: α版でUnityとのピクセル一致は保証しない。WebGPU/WebXR非対応。追加ライトやUnityの影/プローブ/フォグ等は再現しない。
+  - 制作用途: VRMキャラをWebで配信する際のtoonルック調整に使える。
+  - 出典（2026-10-11確認）: https://github.com/mochiya-labs/three-liltoon/blob/ac06d5524b3420421c521d8057feff60cf050fb5/README.md
+
+- **AnimeEnhancer** [desktop_tool / AI出力の後処理 / β段階・初期評価候補]
+  - 画面に表示中の全画面動画（Windows Graphics Capture） → GPU処理された拡大/復元映像（クリックスルーのオーバーレイ）。MPV不要で、Windowsの全画面ブラウザ動画にAnime4Kベースのリアルタイム拡大/復元をかけるユーティリティ。
+  - 制約: HDRは無効。保護された動画は黒フレームになる（DRM回避はしない）。720p以上推奨。低速/圧縮の強い素材では過処理でリンギングが出る。署名なしのためSmartScreen警告の可能性。
+  - 制作用途: 書き出し前の見え方確認や視聴時の画質補正に。
+  - 出典（2026-10-11確認）: https://github.com/picki1/AnimeEnhancer/blob/7632be792c564968d6260923f50cad2501111f8b/README.md
+
 ## 絵コンテ・制作管理・評価
 
 - **Kitsu** [web_app / 非AI制作 / 制作基盤として比較]
@@ -1423,6 +1483,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [flux-2-klein-4b-spritesheet-lora](https://huggingface.co/fal/flux-2-klein-4b-spritesheet-lora/blob/6d3128f9223f585251ad3a02dd0d8082c9b5ca3f/README.md): FLUX.2-Klein 4BをベースにしたLoRA。1枚のオブジェクト画像から2x2のマルチビュー・スプライトシート（アイソメ2面・側面・トップダウン）を作る。 licenseはapache-2.0。
 - [pixel_spritesheet_4walk_combat_32x48_v1](https://huggingface.co/svntax-dev/pixel_spritesheet_4walk_combat_32x48_v1/blob/9e3fafee0a2e49cbec23b7b54a8b03ce1ae0cad1/README.md): Qwen-Image-Edit-2511をベースにしたピクセルアート用LoRA。32x48のキャラについて4方向の歩行3フレーム・攻撃2フレーム・被弾1フレームを6x4グリッドで出す。 licenseはapache-2.0。ベースのQwen-Image-Edit-2511側の条件も別途確認が必要。
 - [Anima-Lightning](https://huggingface.co/aina-tech/Anima-Lightning/blob/9dbb6e1a0f94eda0a1e523836d32355fb961cc7a/README.md): CircleStone LabsのAnimaとNVIDIA Cosmos-Predict2-2Bを基にした蒸留版。付属の専用transformerがK=4条件付けを持ち、標準のCosmosTransformer3DModelでは全チェックポイントを正しく読めないと明記。 licenseはother、license_nameはcirclestone-labs-non-commercial-license。上流のCircleStone条項とNVIDIA Open Model Licenseが適用。
+- [Irodori-TTS-500M-v2](https://huggingface.co/Aratako/Irodori-TTS-500M-v2/blob/8fd631cafb911dde466bc30dd558a0dc55e8ccae/README.md): 約5億パラメータのRectified Flow Diffusion Transformer（RF-DiT）。llm-jp-3-150m由来のトークン埋め込みを使うテキストエンコーダ、参照音声潜在を符号化するreference latent encoder、Low-Rank AdaLN付きDiTから成る。音声はSemantic-DACVAE-Japanese-32dimの連続潜在で表し48kHz波形を再構成。 MIT。加えて作者が倫理制約（本人同意なき声のクローン/なりすまし禁止、誤情報生成禁止等）を明記。
+- [comic-speech-bubble-detector-yolov8m](https://huggingface.co/ogkalu/comic-speech-bubble-detector-yolov8m/blob/21d5af0a9c69bb522b9968d6cc915f898d71a264/README.md): YOLOv8 mediumベースの物体検出モデル。約8千枚の漫画・ウェブトゥーン・マンガ・欧米コミック画像で学習し、吹き出しを検出する。学習時画像サイズは1024。 Apache-2.0。
+- [convnextv2_huge.dbv4-full](https://huggingface.co/animetimm/convnextv2_huge.dbv4-full/blob/18177355d1448a69bafb0410a0608e144f714e8b/README.md): ConvNeXtV2-Hugeベースの画像分類モデル。モデル名の"dbv4-full"からDanbooru v4タグ群での学習が想定されるが、モデルカードは公開されていない。 GPL-3.0。
 
 ## 保留情報
 

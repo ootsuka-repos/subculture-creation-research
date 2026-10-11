@@ -885,3 +885,51 @@ CircleStone LabsのAnimaとNVIDIA Cosmos-Predict2-2Bを基にした蒸留版。�
 確認日: 2026-10-10 / revision `9dbb6e1a0f94eda0a1e523836d32355fb961cc7a` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `text_conditioner/diffusion_pytorch_model.safetensors`、`text_encoder/model.safetensors`、`transformer/diffusion_pytorch_model.safetensors`、`vae/diffusion_pytorch_model.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/aina-tech/Anima-Lightning/blob/9dbb6e1a0f94eda0a1e523836d32355fb961cc7a/README.md) / [モデルAPI](https://huggingface.co/api/models/aina-tech/Anima-Lightning)
+
+## Irodori-TTS-500M-v2
+
+約5億パラメータのRectified Flow Diffusion Transformer（RF-DiT）。llm-jp-3-150m由来のトークン埋め込みを使うテキストエンコーダ、参照音声潜在を符号化するreference latent encoder、Low-Rank AdaLN付きDiTから成る。音声はSemantic-DACVAE-Japanese-32dimの連続潜在で表し48kHz波形を再構成。
+
+- **版の区別**: 単一のmodel.safetensorsを配布。派生に話者をキャプションで指定するVoiceDesign版、v4系、Large/Quantized等がある。本カードの対象はv2本体。
+- **入力・設定**: 日本語テキストを入力。文に絵文字を埋め込むと話し方・感情・効果音を制御できる。短い参照音声を与えるとゼロショットで声質をクローン。絵文字の一覧はEMOJI_ANNOTATIONS.md。
+- **必要構成**: 推論・学習コードはGitHubのAratako/Irodori-TTS。依存や実行要件はモデルカードに記載がないため未確認。
+- **制約**: 日本語のみ。漢字の読み精度は同規模の他TTSより弱いと作者が記載。絵文字制御の効果は文脈依存で常に一貫しない。学習データに偏りがある声は品質が変動。
+- **利用条件**: MIT。加えて作者が倫理制約（本人同意なき声のクローン/なりすまし禁止、誤情報生成禁止等）を明記。
+- **編集者評価**: 絵文字での感情・効果音制御とゼロショット声質クローンを備えた日本語TTSで、キャラクター音声の試作に向く。
+- **次の検証（未実施）**: 参照音声クローンの再現度、絵文字制御の安定性、48kHz出力の実用性を手元で確認する。
+
+確認日: 2026-10-11 / revision `8fd631cafb911dde466bc30dd558a0dc55e8ccae` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Aratako/Irodori-TTS-500M-v2/blob/8fd631cafb911dde466bc30dd558a0dc55e8ccae/README.md) / [モデルAPI](https://huggingface.co/api/models/Aratako/Irodori-TTS-500M-v2)
+
+## comic-speech-bubble-detector-yolov8m
+
+YOLOv8 mediumベースの物体検出モデル。約8千枚の漫画・ウェブトゥーン・マンガ・欧米コミック画像で学習し、吹き出しを検出する。学習時画像サイズは1024。
+
+- **版の区別**: 単一のcomic-speech-bubble-detector.pt（YOLOv8m）。
+- **入力・設定**: プロンプト不要。画像を入力し、吹き出しのバウンディングボックスを検出結果として得る。
+- **必要構成**: Ultralytics系のYOLOv8推論環境（カードに明記なし、.pt形式）。
+- **制約**: 学習画像はリサイズのみでクロップしていない。カードに精度指標の記載はない。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: 縦長の韓国ウェブトゥーンにも対応する吹き出し検出器で、漫画翻訳パイプラインの前段に組み込みやすい。
+- **次の検証（未実施）**: 日本語漫画ページでの検出漏れ・誤検出と、OCR前処理としての実用精度を確認する。
+
+確認日: 2026-10-11 / revision `21d5af0a9c69bb522b9968d6cc915f898d71a264` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `comic-speech-bubble-detector.pt`
+
+根拠: [固定モデルカード](https://huggingface.co/ogkalu/comic-speech-bubble-detector-yolov8m/blob/21d5af0a9c69bb522b9968d6cc915f898d71a264/README.md) / [モデルAPI](https://huggingface.co/api/models/ogkalu/comic-speech-bubble-detector-yolov8m)
+
+## convnextv2_huge.dbv4-full
+
+ConvNeXtV2-Hugeベースの画像分類モデル。モデル名の"dbv4-full"からDanbooru v4タグ群での学習が想定されるが、モデルカードは公開されていない。
+
+- **版の区別**: model.safetensorsとpytorch_model.binを配布。
+- **入力・設定**: プロンプトは不要。アニメ画像を入力しタグ/分類スコアを得る想定。カードに手順の記載はない。
+- **必要構成**: transformers等での画像分類推論（詳細はカードに記載なし）。
+- **制約**: モデルカードが空で学習データ・評価・推奨手順が未公開。gated auto（利用申請は自動承認）。
+- **利用条件**: GPL-3.0。
+- **編集者評価**: アニメ画像の自動タグ付け（追加学習やキャプション生成の前処理）に使える候補。
+- **次の検証（未実施）**: 実際に推論してタグ語彙と出力形式を確かめ、既存taggerとの精度を比較する。
+
+確認日: 2026-10-11 / revision `18177355d1448a69bafb0410a0608e144f714e8b` / gated=auto。ファイル名候補2件の一覧確認。代表ファイル: `model.safetensors`、`pytorch_model.bin`
+
+根拠: [固定モデルカード](https://huggingface.co/animetimm/convnextv2_huge.dbv4-full/blob/18177355d1448a69bafb0410a0608e144f714e8b/README.md) / [モデルAPI](https://huggingface.co/api/models/animetimm/convnextv2_huge.dbv4-full)
