@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -300,6 +300,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 絵コンテ/ショット設計の型をコード生成へ落とす試作に向く。
   - 出典（2026-10-11確認）: https://github.com/blixvip/html-anime/blob/6ba3a05a2d16c857e5be291501d886440d47c7b2/README.md
 
+- **speech-animation** [library / 非AI制作 / 初期評価候補]
+  - 正規化済みの浮動小数点PCMチャンク（サンプル位置順） → サンプル位置で管理された10ms単位のキュー（エネルギー・口開き・発話区間）と終端フェード。リップシンクや口形素、発話に連動した表情キューを扱うエンジン非依存のリアルタイム音声アニメーションライブラリ。v0は決定論的なPCM解析器。
+  - 制約: v0では口形素フィールドが意図的に空で、音素推定は将来のプランナー層に委ねる。READMEの範囲はリアルタイム解析の基礎部分。
+  - 制作用途: 台詞音声から口パクと表情のタイミングを作る用途。
+  - 出典（2026-10-12確認）: https://github.com/LimiNode/speech-animation/blob/f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c/README.md
+
 ## 2Dキャラクター・自動リギング
 
 - **Anime2.5DRig** [browser_tool / AIは任意 / 導入候補]
@@ -527,6 +533,30 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: Windowsプロトタイプ。画像モデルのため固定シードでもフリッカーする。速度は小さな開発環境での実測値。Qwenは研究/評価向けライセンスで任意オプトイン。リポジトリにライセンス表記なし。
   - 制作用途: 配信や制作中の手元カメラをアニメ調に見せる演出の試作に。
   - 出典（2026-10-11確認）: https://github.com/pixelsncodes/GesturePortal/blob/1fca0f2ccfbebab06f83ffa86c0dcf0b8b894a48/README.md
+
+- **Comfyui-Anima-Wardrobe** [integration / AIは任意 / 初期評価候補]
+  - Danbooru系タグ、キャラ/服装/姿勢/シーンの指定、既存のプロンプト文字列 → 統合済みプロンプト文字列、構造化されたwardrobe宣言。ComfyUI向けのアニメキャラ造型ノード。服装/姿勢/表情/シーンのスロットと、複数プラグインが同じプロンプトに書き込むタグを裁定する機構を提供する。
+  - 制約: READMEにはNSFW五段階の分级と過激な成人向けタグ体系も含まれ、用途によっては不向き。掲載されている実測値は作者による自己申告。
+  - 制作用途: 複数の生成系ノードを混在させるワークフローで、タグの意図しない上書きを抑える用途。
+  - 出典（2026-10-12確認）: https://github.com/lingdongbudong/Comfyui-Anima-Wardrobe/blob/e049b034641575addef313a2f1d59cea674a4d8e/README.md
+
+- **comfyui-character-picker** [integration / AIは任意 / 初期評価候補]
+  - 作品プールの選択、seed → prompt_tags、danbooru_tag、base_tag、franchise。ComfyUIでアニメ/ゲームキャラをランダムに抽選し、Danbooruタグを出力するカスタムノード。9500以上のキャラを27作品のプール単位でオンオフできる。
+  - 制約: READMEのキャラ数・作品数は取得時点の値。作品を追加するにはノードコード側の対応表編集が必要と記載。
+  - 制作用途: 構図検討やランダム生成のたたき台づくり。
+  - 出典（2026-10-12確認）: https://github.com/1756141021/comfyui-character-picker/blob/c1b1520aa8fc59235c9679d2f2bff3980b3cf393/README.md
+
+- **midjourney-comfyui** [integration / AIは任意 / 初期評価候補]
+  - プロンプト、アスペクト比、stylize/chaos/weird、seed、参照画像、APIキー → 4枚の画像バッチ、先頭URL、全URL、request_id。Midjourney V7/V8/Nijiをmuapi.ai経由でComfyUIから呼び出すノード。1回の実行で4枚をIMAGEバッチとして返す。
+  - 制約: 生成はすべて外部API依存でローカル推論ではない。APIキーと従量課金が必要と記載。
+  - 制作用途: 商用APIの画像生成をComfyUIのワークフローに統合する用途。
+  - 出典（2026-10-12確認）: https://github.com/Anil-matcha/midjourney-comfyui/blob/c4cb4be02a25b3524e22ac8ae87ca9f0beb07f20/README.md
+
+- **comfyui-waifu-nodes** [integration / AIは任意 / 初期評価候補]
+  - Danbooru系のプロンプト文字列（BREAKで区切る） → チャンクごとに個別エンコードして連結したconditioning。ComfyUI本体以外に依存しない小さなアニメ画像生成用ノード集。A1111のBREAKキーワードを解釈するCLIP Text Encodeを提供する。
+  - 制約: 提供ノードはBREAK対応のCLIP Text Encode 1種のみ。READMEは特定コミットの固定を推奨している。
+  - 制作用途: 長いDanbooruタグ列で領域ごとに重みを分けたい用途。
+  - 出典（2026-10-12確認）: https://github.com/Tazuya/comfyui-waifu-nodes/blob/37823c1b8831394c25caed2f9a18ee8167cc5ce9/README.md
 
 ## 動画生成
 
@@ -762,6 +792,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: キャラクターTTS/SVC用データセット構築の下地。
   - 出典（2026-10-07確認）: https://github.com/Hecate2/sukasuka-vocal-dataset-builder/blob/5b166d5017653f9f79b1e4122e93d1087d4d7dc3/README.md
 
+- **Bocchi-The-Rock-GPT-SoVITS-Models** [model_toolkit / AIモデル・学習 / 初期評価候補]
+  - 合成したいテキスト、言語コード（ja/zh/en）、キャラクターごとの参照音声 → キャラクター音声の合成結果（音声ファイル）。アニメ「ぼっち・ざ・ろっく!」のキャラ音声をGPT-SoVITSで学習した音声モデルの配布と実行手順。Dockerでの導入とPythonインターフェースを用意する。
+  - 制約: モデル重みはHFリポジトリへ移行済みで、このリポジトリにはソースのみ。ライセンスはCC BY-NC-SA 4.0で商用利用ではない。
+  - 制作用途: キャラクターボイスを使った二次創作的な音声制作。
+  - 出典（2026-10-12確認）: https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/blob/75178d4f3c8d164dbbae94dbcccfee16de46021f/README.md
+
 ## ASMR・効果音・環境音
 
 - **ASMRify** [desktop_tool / AI出力の後処理 / 小規模・初期評価候補]
@@ -885,6 +921,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: リポジトリは作者自作部分のみで、エンジン本体・重み・ffmpegは含まない。3エンジン同時起動はVRAMを競合する。
   - 制作用途: キャラ音色の歌唱素材づくりや動画の吹き替え検証に向く。
   - 出典（2026-10-08確認）: https://github.com/yishui111/yinyue/blob/0edf42fef95ed4df06cde376800aef97343c6b4e/README.md
+
+- **UtaiSynthesizer** [desktop_tool / AIモデル・学習 / 活発な候補]
+  - 音符と言葉（歌詞）、音声クリップ、学習用データセット、ust/ustx/MIDI → 歌声音声（wav/flac/mp3/ogg/opus/m4a）、スコア（ust/ustx/MIDI）、音声モデルパッケージ（zip）。Windows向けの歌声合成DAW。ピアノロールに音符と言葉を置くとSVC音声モデルが直接歌い、RVC/So-VITS-SVC 4.0/4.1によるAIカバー、ボーカル分離、自作モデルの学習までを1つのアプリ内で扱う。
+  - 制約: READMEによると開発用クローンにはモデル等の大型アセットが含まれず手動配置が必要。対象OSはWindows中心で、macOS/Linuxは記載されていない。
+  - 制作用途: 歌ってみた/AIカバーの音声変換と歌声合成をひとつの制作環境にまとめる用途。
+  - 出典（2026-10-12確認）: https://github.com/yasoukyoku/UtaiSynthesizer/blob/518cb2aa6f094bdea32077bd33db3cd5dcd036ed/README.md
 
 ## VTuber・AIキャラクター・VRM
 
@@ -1282,6 +1324,24 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 字幕の下訳とタイミング合わせの一次工程をオフラインで回せる。
   - 出典（2026-10-11確認）: https://github.com/jason-jm/wavesubs/blob/cbe91e7f4f472d8acfab46b4c8ff3e08697e290d/README.md
 
+- **ai-manga-translator** [pipeline / AIモデル・学習 / 初期評価候補]
+  - 漫画ページ画像（jpg/png/webp）、翻訳/OCRのAPIキー、対象言語 → 翻訳済みページ画像（webp/png/jpg）、zip、R2/ローカルへの保存。漫画の翻訳をキュー駆動で行うヘッドレスworker。ページ取得→テキスト検出→OCR→吹き出しクリーニング→翻訳→描画→保存までをCLIで完結させる。
+  - 制約: READMEの速度・コストは特定の67ページ章での実測例で、台詞量や価格改定で変動する。workerモードはPostgresスキーマ合わせが必要と明記。
+  - 制作用途: 大量ページの翻訳を無人で回すバッチ運用。
+  - 出典（2026-10-12確認）: https://github.com/luxivint/ai-manga-translator/blob/1ffd18b3d9897dba964b87d20b754aea686798fc/README.md
+
+- **Multi-Modal-Manga-Translation-Pipeline** [pipeline / AIモデル・学習 / 初期評価候補]
+  - ページ画像・フォルダ・zip、シリーズ情報（名前/用語/代名詞）、LLMエンドポイント設定 → 翻訳済みページ、原稿と消去を並べた比較用画像、NDJSONストリーム。日本語漫画の検出→OCR→翻訳→消去→描画をローカルで行うパイプライン。Web UIへページ単位で結果を配信し、シリーズ単位の固有名詞・代名詞辞書を保持する。
+  - 制約: 初回にmanga-ocrやLaMa等の重みをダウンロードする。READMEの比較画像はレタリング方式変更前の出力を含む。
+  - 制作用途: シリーズを通して用語と口調を揃えた翻訳。
+  - 出典（2026-10-12確認）: https://github.com/ArsVie/Multi-Modal-Manga-Translation-Pipeline/blob/9941d2891150731468607d7db097532edf17908f/README.md
+
+- **manga-translator-plugin** [desktop_tool / AIモデル・学習 / 初期評価候補]
+  - 漫画/コミックのページ画像、翻訳エンジン設定 → 翻訳済みページ（PNG/JPEG/PDF/CBZ）。吹き出し検出・OCR・翻訳・インペイント・組版を自動化する漫画翻訳ツール。GIMPプラグインとしてもスタンドアロンCLIとしても動作する。
+  - 制約: READMEでは対応元言語が日/中/韓、対象は英語中心。翻訳エンジンによりオフラインかAPI依存かが分かれる。
+  - 制作用途: GIMP上で手直ししながらの翻訳作業。
+  - 出典（2026-10-12確認）: https://github.com/Nova4fj/manga-translator-plugin/blob/bb4576b3cbbafb60cbeefe1b5f30bcdc19deab82/README.md
+
 ## モーション・身体演技
 
 - **ARDY** [model_toolkit / AIモデル・学習 / モデル・研究候補]
@@ -1486,6 +1546,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [Irodori-TTS-500M-v2](https://huggingface.co/Aratako/Irodori-TTS-500M-v2/blob/8fd631cafb911dde466bc30dd558a0dc55e8ccae/README.md): 約5億パラメータのRectified Flow Diffusion Transformer（RF-DiT）。llm-jp-3-150m由来のトークン埋め込みを使うテキストエンコーダ、参照音声潜在を符号化するreference latent encoder、Low-Rank AdaLN付きDiTから成る。音声はSemantic-DACVAE-Japanese-32dimの連続潜在で表し48kHz波形を再構成。 MIT。加えて作者が倫理制約（本人同意なき声のクローン/なりすまし禁止、誤情報生成禁止等）を明記。
 - [comic-speech-bubble-detector-yolov8m](https://huggingface.co/ogkalu/comic-speech-bubble-detector-yolov8m/blob/21d5af0a9c69bb522b9968d6cc915f898d71a264/README.md): YOLOv8 mediumベースの物体検出モデル。約8千枚の漫画・ウェブトゥーン・マンガ・欧米コミック画像で学習し、吹き出しを検出する。学習時画像サイズは1024。 Apache-2.0。
 - [convnextv2_huge.dbv4-full](https://huggingface.co/animetimm/convnextv2_huge.dbv4-full/blob/18177355d1448a69bafb0410a0608e144f714e8b/README.md): ConvNeXtV2-Hugeベースの画像分類モデル。モデル名の"dbv4-full"からDanbooru v4タグ群での学習が想定されるが、モデルカードは公開されていない。 GPL-3.0。
+- [Index-Translate-2B-JP-Manga-Finetune-v1-GGUF](https://huggingface.co/fumetodev/Index-Translate-2B-JP-Manga-Finetune-v1-GGUF/blob/f920fe5b75390165b5b3bac508e7aeee7f64db39/README.md): IndexTeam/Index-Translate-2B（Qwen3.5系ハイブリッド）を、日本語→英語の漫画対話向けにファインチューニングしたモデル。Q4_K_MのGGUFとマージ済みbf16重みを収録する。 Apache-2.0。
+- [FLUX.2-klein-9B-manga-colorization-by-reference-LORA](https://huggingface.co/milo01/FLUX.2-klein-9B-manga-colorization-by-reference-LORA/blob/e754c5a9efd2440e2331f41c5e0cf0e8d3aa3566/README.md): black-forest-labs/FLUX.2-klein-base-9B向けのLoRA。1枚目に白黒の漫画ページ、2枚目に色参照を入力し、参照の配色を転写しながら彩色する。 Apache-2.0。
+- [qwen-image-modern-anime-lora](https://huggingface.co/alfredplpl/qwen-image-modern-anime-lora/blob/23fdf83a9ba1124d1bd568945b255e3634025e5c/README.md): Qwen/Qwen-Image向けのスタイルLoRAで、モダンな日本のアニメ調を付与する。v1とv2の重みを収録する。 Apache-2.0。
+- [SoVITS-anime-mini-tts](https://huggingface.co/cpumaxx/SoVITS-anime-mini-tts/blob/9453f92d98d39c61be4a0d92072cf8cfa7c0422c/README.md): GPT-SoVITS（v2系）で学習した日本語アニメ調の音声モデル。ckptとpthの2ファイル構成。 MIT。
+- [qwen-image-anime-irl-lora](https://huggingface.co/flymy-ai/qwen-image-anime-irl-lora/blob/8dcca17f33d54db932aa7f11ab944b500304ce07/README.md): Qwen/Qwen-Image向けのLoRAで、アニメ調の記述から写実的な画像を生成する（Anime in Real Life）。 Apache-2.0。
 
 ## 保留情報
 

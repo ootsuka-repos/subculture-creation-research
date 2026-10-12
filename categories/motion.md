@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,14 +12,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [ARDY](https://github.com/nv-tlabs/ardy) · [詳細](#ardy) | テキストと運動学的制約から、対応骨格のモーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 970 / 2026-07-10 |
+| [ARDY](https://github.com/nv-tlabs/ardy) · [詳細](#ardy) | テキストと運動学的制約から、対応骨格のモーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 976 / 2026-07-10 |
 | [EchoAvatar](https://github.com/RobinWitch/EchoAvatar) · [詳細](#echoavatar) | ストリーミング音声から顔・身体の動きを生成してUnityアバターへ送る。 | AIモデル・学習 / 小規模・初期候補 | 48 / 2026-10-07 |
 | [Gelina](https://github.com/TGuichoux/Gelina) · [詳細](#gelina) | 音声とジェスチャーの生成・クローニング・音声から動作への変換を扱う。 | AIモデル・学習 / 小規模・初期候補 | 31 / 2026-10-01 |
-| [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) · [詳細](#hy-motion-1-0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,590 / 2026-07-18 |
-| [R-DMesh](https://github.com/Tencent-Hunyuan/R-DMesh) · [詳細](#r-dmesh) | 静的メッシュを参照動画に沿って動く4Dメッシュ列へ変換する。 | AIモデル・学習 / 小規模・初期候補 | 62 / 2026-08-11 |
+| [HY-Motion 1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) · [詳細](#hy-motion-1-0) | テキストから人型キャラクターの3D動作を生成する。 | AIモデル・学習 / モデル・研究候補 | 2,594 / 2026-07-18 |
+| [R-DMesh](https://github.com/Tencent-Hunyuan/R-DMesh) · [詳細](#r-dmesh) | 静的メッシュを参照動画に沿って動く4Dメッシュ列へ変換する。 | AIモデル・学習 / 小規模・初期候補 | 63 / 2026-08-11 |
 | [VRM-Spacing-Animation-Baking](https://github.com/Meringue-Rouge/VRM-Spacing-Animation-Baking) · [詳細](#vrm-spacing-animation-baking) | VRM 1.0モデル向けBlenderアドオン。腕・脚・肩の間隔をMixamo風に調整し、髪やバストの物理ボーンをアニメへ焼き込み、ループ化する。 | 非AI制作 / 小規模・初期評価候補 | 10 / 2026-09-13 |
 | [fbx2vrma-app](https://github.com/tk256ailab/fbx2vrma-app) · [詳細](#fbx2vrma-app) | ヒューマノイドFBXアニメーションを.vrmaへ変換し、VRMモデルでプレビューできるブラウザベースのWebアプリ。複数ファイル一括変換とZIP一括DL、英日UI切り替えに対応。 | 非AI制作 / 小規模・初期評価候補 | 2 / 2026-06-06 |
-| [warudo-agent-bridge](https://github.com/StudioRaming/warudo-agent-bridge) · [詳細](#warudo-agent-bridge) | 自然文の指示でWARUDOのカメラ・表情・ポーズ・衣装表示・撮影を操作するMCPサーバとCLI。AIに63個のツールを公開し、ポーズをUnity用.animとして保存できる。 | AI連携 / 小規模・初期評価候補 | 9 / 2026-10-10 |
+| [warudo-agent-bridge](https://github.com/StudioRaming/warudo-agent-bridge) · [詳細](#warudo-agent-bridge) | 自然文の指示でWARUDOのカメラ・表情・ポーズ・衣装表示・撮影を操作するMCPサーバとCLI。AIに63個のツールを公開し、ポーズをUnity用.animとして保存できる。 | AI連携 / 小規模・初期評価候補 | 8 / 2026-10-10 |
 
 <a id="ardy"></a>
 
@@ -35,7 +35,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ARDY重み、アクセス申請が必要なLlama3-8B系テキストエンコーダ
 - **制約・未確認**: CoreとG1で骨格・fps・予測長が異なる。テキストエンコーダのメモリを本体から分ける。
 - **編集者評価**: 経路や姿勢制約を与えるキャラ動作生成として比較価値がある。
-- **メトリクス**: ★970、fork 118、作成 2026-07-08、最終push 2026-07-10T14:13:31Z、archived=False
+- **メトリクス**: ★976、fork 118、作成 2026-07-08、最終push 2026-07-10T14:13:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `693f74d13b3d04a0a22ce127ee79c929dd89756b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/nv-tlabs/ardy/tree/693f74d13b3d04a0a22ce127ee79c929dd89756b)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -144,7 +144,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: HY-Motion重み、必要に応じ別のプロンプト書き換えモデル
 - **制約・未確認**: 非人型・複数人・シームレスループ・in-placeは公式の非対応項目。追加LLMのVRAMは表に含まれない。
 - **編集者評価**: 人型の単発演技を作る候補。ゲームの常時ループには追加編集が必要。
-- **メトリクス**: ★2,590、fork 220、作成 2025-12-29、最終push 2026-07-18T15:13:36Z、archived=False
+- **メトリクス**: ★2,594、fork 220、作成 2025-12-29、最終push 2026-07-18T15:13:36Z、archived=False
 - **確認**: 2026-09-09 / コミット `4e426f5a1021cbcf7f375458c37b840ee7225229`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Tencent-Hunyuan/HY-Motion-1.0/tree/4e426f5a1021cbcf7f375458c37b840ee7225229)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -183,7 +183,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: R-DMeshチェックポイント、Wan2.2-TI2V-5B等
 - **制約・未確認**: 4Dメッシュ列と再利用可能な骨格モーションは同一ではない。リグ転送は別問題。
 - **編集者評価**: 骨格で表しにくい変形の映像制作に適する研究候補。
-- **メトリクス**: ★62、fork 9、作成 2026-04-29、最終push 2026-08-11T01:56:44Z、archived=False
+- **メトリクス**: ★63、fork 9、作成 2026-04-29、最終push 2026-08-11T01:56:44Z、archived=False
 - **確認**: 2026-09-09 / コミット `467cb35a9f53f6d61a0b36a5aa4e171e4d40ad0f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Tencent-Hunyuan/R-DMesh/tree/467cb35a9f53f6d61a0b36a5aa4e171e4d40ad0f)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -292,7 +292,7 @@ VRMキャラのモーション最終調整や衣装・体型差の補正に。
 - **依存**: WARUDO、MCPクライアント（Claude/Codex/ChatGPT Desktop等）
 - **制約・未確認**: WARUDOやHakuyaLabsとは無関係の非公式ツール。チャット内容と撮影画像はAIサービス側で扱われるとREADMEが明記。
 - **編集者評価**: VRM/3Dアバターの演出と多角度撮影をエージェント経由で行う用途が具体的。MITで無償。
-- **メトリクス**: ★9、fork 0、作成 2026-09-28、最終push 2026-10-10T23:24:34Z、archived=False
+- **メトリクス**: ★8、fork 0、作成 2026-09-28、最終push 2026-10-10T23:24:34Z、archived=False
 - **確認**: 2026-10-10 / コミット `997f9b0bf01c828c77a7fe10455ce66a578360fe`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/StudioRaming/warudo-agent-bridge/tree/997f9b0bf01c828c77a7fe10455ce66a578360fe)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

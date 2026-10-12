@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -17,14 +17,15 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [BasicPBC](https://github.com/ykdai/BasicPBC) · [詳細](#basicpbc) | 閉領域の対応付けによってアニメ線画の塗りを支援するペイントバケット彩色。 | AIモデル・学習 / モデル・研究候補 | 307 / 2025-06-26 |
 | [ECCV2022-RIFE](https://github.com/hzwer/ECCV2022-RIFE) · [詳細](#eccv2022-rife) | フレーム間の中間画像を推定する動画補間モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 5,605 / 2025-09-10 |
 | [LatentSync](https://github.com/bytedance/LatentSync) · [詳細](#latentsync) | 音声条件で口の動きを同期させる動画処理モデル。 | AIモデル・学習 / 比較・既存工程の参考 | 6,130 / 2025-06-20 |
-| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,807 / 2026-10-09 |
+| [opentoonz](https://github.com/opentoonz/opentoonz) · [詳細](#opentoonz) | 作画、彩色、撮影を扱う2Dアニメ制作アプリ。 | 非AI制作 / 定番の制作基盤 | 7,813 / 2026-10-12 |
 | [ToonComposer](https://github.com/TencentARC/ToonComposer) · [詳細](#tooncomposer) | キーフレーム後の中割りと彩色を生成AIでまとめて処理する。 | AIモデル・学習 / 研究・技術評価候補 | 591 / 2025-08-20 |
 | [ToonCrafter](https://github.com/Doubiiu/ToonCrafter) · [詳細](#tooncrafter) | 二枚のアニメ画像の間を生成する補間モデル。 | AIモデル・学習 / モデル・研究候補 | 6,033 / 2025-03-19 |
 | [comic-manga-narrator](https://github.com/MushiSenpai/comic-manga-narrator) · [詳細](#comic-manga-narrator) | 漫画/コミックページを、コマ検出・セリフの音声化・ナレーション・Ken Burnsと2.5Dパララックスで演出したナレーション付きMP4に変換するローカルパイプライン。 | AIモデル・学習 / 小規模・初期評価候補 | 0 / 2026-07-12 |
 | [vedGen](https://github.com/HarisUmer/vedGen) · [詳細](#vedgen) | 一行のあらすじから絵コンテ→ショット別I2V→結合までをローカルGPUで回すアニメ風短編動画生成ライブラリ。ComfyUIをヘッドレスでAPI駆動し、Pythonライブラリとして呼び出す。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-07-22 |
-| [vocaloid-style-mv-pipeline](https://github.com/EGSECDA/vocaloid-style-mv-pipeline) · [詳細](#vocaloid-style-mv-pipeline) | 楽曲と歌詞からボカロ風の手書きリリックMVを作る制作パイプライン。各フレームをCanvas2D/WebGL2で決定論的に描画し、Playwrightとffmpegで1080pマスターと9:16版を書き出す。 | AI連携 / 活発・実用候補 | 105 / 2026-10-04 |
+| [vocaloid-style-mv-pipeline](https://github.com/EGSECDA/vocaloid-style-mv-pipeline) · [詳細](#vocaloid-style-mv-pipeline) | 楽曲と歌詞からボカロ風の手書きリリックMVを作る制作パイプライン。各フレームをCanvas2D/WebGL2で決定論的に描画し、Playwrightとffmpegで1080pマスターと9:16版を書き出す。 | AI連携 / 活発・実用候補 | 111 / 2026-10-04 |
 | [AIComics](https://github.com/chfr19820610-cell/AIComics) · [詳細](#aicomics) | 物語から分鏡・作画・配音・公開までをローカルで回すAI漫劇の制作システム。LLMで脚本と分鏡、ComfyUI+SDXLでキーフレーム、TTSで音声を作り、動画生成や投稿までモジュール化する。 | AIモデル・学習 / 小規模・初期評価候補 | 24 / 2026-09-26 |
-| [html-anime](https://github.com/blixvip/html-anime) · [詳細](#html-anime) | シーンのプロンプトからショットシートを生成し、コーディングエージェントがHTML（Canvas/WebGL）でアニメを描くためのスキルとハーネス。 | AI連携 / プロトタイプ・初期評価候補 | 17 / 2026-10-08 |
+| [html-anime](https://github.com/blixvip/html-anime) · [詳細](#html-anime) | シーンのプロンプトからショットシートを生成し、コーディングエージェントがHTML（Canvas/WebGL）でアニメを描くためのスキルとハーネス。 | AI連携 / プロトタイプ・初期評価候補 | 18 / 2026-10-08 |
+| [speech-animation](https://github.com/LimiNode/speech-animation) · [詳細](#speech-animation) | リップシンクや口形素、発話に連動した表情キューを扱うエンジン非依存のリアルタイム音声アニメーションライブラリ。v0は決定論的なPCM解析器。 | 非AI制作 / 初期評価候補 | 0 / 2026-10-11 |
 
 <a id="anidoc"></a>
 
@@ -194,7 +195,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: LatentSyncモデル、Whisper等
 - **制約・未確認**: READMEにアニメ例はあるが、任意の二次元顔への適合性は未検証。更新は2025年中心。
 - **編集者評価**: アニメやキャラクター動画のセリフ同期を試す候補。
-- **メトリクス**: ★6,130、fork 983、作成 2024-12-11、最終push 2025-06-20T07:36:58Z、archived=False
+- **メトリクス**: ★6,130、fork 985、作成 2024-12-11、最終push 2025-06-20T07:36:58Z、archived=False
 - **確認**: 2026-09-09 / コミット `a229c3948406bc2cf6eaf4873e662e70c6a04746`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/bytedance/LatentSync/tree/a229c3948406bc2cf6eaf4873e662e70c6a04746)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -233,7 +234,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: 通常制作にAIモデル不要
 - **制約・未確認**: 生成AIモデルそのものではない。既存の制作工程への適合性を確認する。
 - **編集者評価**: AI生成素材を手で仕上げる制作基盤として有用。
-- **メトリクス**: ★7,807、fork 886、作成 2016-03-18、最終push 2026-10-09T21:44:07Z、archived=False
+- **メトリクス**: ★7,813、fork 887、作成 2016-03-18、最終push 2026-10-12T01:07:24Z、archived=False
 - **確認**: 2026-09-09 / コミット `1ef22259b9cf64c9d8710daebc131b401932e81b`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/opentoonz/opentoonz/tree/1ef22259b9cf64c9d8710daebc131b401932e81b)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -416,7 +417,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: Claude Code等のエージェント、ffmpeg、librosa、faster-whisper、Blender（任意）
 - **制約・未確認**: 速度・作例は作者環境での値。AI画像生成はCodex CLI経由の例として示され、任意の画像モデルに置換可能と記載。
 - **編集者評価**: 曲解析・歌詞タイミング・シーンライブラリ・レビューまで工程が文書化され、コードとして再現できる点が特徴。
-- **メトリクス**: ★105、fork 6、作成 2026-10-04、最終push 2026-10-04T11:38:15Z、archived=False
+- **メトリクス**: ★111、fork 7、作成 2026-10-04、最終push 2026-10-04T11:38:15Z、archived=False
 - **確認**: 2026-10-10 / コミット `13b380dab077d4c8ea956825c9693c720e0c2b91`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/EGSECDA/vocaloid-style-mv-pipeline/tree/13b380dab077d4c8ea956825c9693c720e0c2b91)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -486,7 +487,7 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 - **依存**: HyperFrames、コーディングエージェント、静的サーバ
 - **制約・未確認**: 生成物はHTMLアニメで作画品質はコード生成に依存。参照フィルムは再混用向けではない。three.js/フォントはCDN・Google Fontsを利用。
 - **編集者評価**: 映像モデルを使わず、ショット割り（尺の合計や一枚作画、ツー打ち等）を制約としてアニメをコード生成させる発想が独自。
-- **メトリクス**: ★17、fork 1、作成 2026-09-27、最終push 2026-10-08T22:47:48Z、archived=False
+- **メトリクス**: ★18、fork 1、作成 2026-09-27、最終push 2026-10-08T22:47:48Z、archived=False
 - **確認**: 2026-10-11 / コミット `6ba3a05a2d16c857e5be291501d886440d47c7b2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/blixvip/html-anime/tree/6ba3a05a2d16c857e5be291501d886440d47c7b2)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -506,3 +507,38 @@ AniDoc・BasicPBCと同じ線画で比較したい彩色候補。
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-10-08T22:47:47Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="speech-animation"></a>
+
+## speech-animation
+
+リップシンクや口形素、発話に連動した表情キューを扱うエンジン非依存のリアルタイム音声アニメーションライブラリ。v0は決定論的なPCM解析器。
+
+- **リポジトリ**: https://github.com/LimiNode/speech-animation
+- **分類**: library / 非AI制作 / 初期評価候補
+- **入力**: 正規化済みの浮動小数点PCMチャンク（サンプル位置順）
+- **出力**: サンプル位置で管理された10ms単位のキュー（エネルギー・口開き・発話区間）と終端フェード
+- **環境**: C++とCMake。ベンチはSPEECH_ANIMATION_BUILD_BENCHMARKSで有効化。
+- **依存**: なし（統合targetは任意）
+- **制約・未確認**: v0では口形素フィールドが意図的に空で、音素推定は将来のプランナー層に委ねる。READMEの範囲はリアルタイム解析の基礎部分。
+- **編集者評価**: Live2D/VRM/Unity/Godotなどの特定バックエンドに依存せず、PCMのサンプルクロックでキューの順序を保証する設計。MIT。
+- **メトリクス**: ★0、fork 0、作成 2026-10-07、最終push 2026-10-11T21:38:28Z、archived=False
+- **確認**: 2026-10-12 / コミット `f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/LimiNode/speech-animation/tree/f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/LimiNode/speech-animation/blob/f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c/README.md) / [GitHub API](https://api.github.com/repos/LimiNode/speech-animation) / [固定ツリー](https://github.com/LimiNode/speech-animation/tree/f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c)
+
+### 制作に使う際の検討
+
+台詞音声から口パクと表情のタイミングを作る用途。
+
+**次に確かめること（実施前）**: 実音声を流し、口開きの追従とサンプル位置の整合、utterance間のreset挙動を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/LimiNode/speech-animation/blob/f2d1b6c9f9772d407ea438c59ff1fec4fd12be0c/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-10-11T21:38:28Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

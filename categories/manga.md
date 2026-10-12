@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,14 +14,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [ai-comic-factory](https://github.com/jbilcke-hf/ai-comic-factory) · [詳細](#ai-comic-factory) | LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装。 | AI連携 / 旧版・履歴資料 | 1,341 / 2025-10-30 |
 | [DiffSensei](https://github.com/jianzongwu/DiffSensei) · [詳細](#diffsensei) | 複数キャラ参照と配置を条件に白黒漫画のコマを生成する。 | AIモデル・学習 / モデル・研究候補 | 925 / 2025-02-05 |
-| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,528 / 2026-10-11 |
+| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,537 / 2026-10-12 |
 | [manga-editor-desu](https://github.com/new-sankaku/manga-editor-desu) · [詳細](#manga-editor-desu) | ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。 | AIは任意 / 更新のある導入・評価候補 | 391 / 2026-10-08 |
 | [MangaNinja](https://github.com/ali-vilab/MangaNinjia) · [詳細](#manganinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 742 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) · [詳細](#openkoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 14 / 2026-05-08 |
-| [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,473 / 2024-09-26 |
+| [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) · [詳細](#storydiffusion) | キャラクターの一貫性を保つ注意機構で連続画像・漫画素材を生成する。 | AIモデル・学習 / モデル・研究候補 | 6,474 / 2024-09-26 |
 | [Venera-SSR](https://github.com/Kiastr/Venera-SSR) · [詳細](#venera-ssr) | 複数の漫画源に対応する漫画ビューアに、ローカルの白黒漫画着色・Anime4K超解像・OCR翻訳を統合した改版リーダー。 | AIモデル・学習 / 初期評価候補 | 57 / 2026-08-02 |
 | [Manga-AI-detector](https://github.com/nonillion-studios/Manga-AI-detector) · [詳細](#manga-ai-detector) | 漫画・マンファ・コミックページ向けに追加学習したYOLOv11インスタンスセグメンテーションモデル。コマ枠(panels)・吹き出し(bubbles)・本文テキスト(text)・効果音(SFX)の4要素を検出する。 | AIモデル・学習 / 小規模・初期評価候補 | 4 / 2026-08-17 |
-| [manga-colorizer](https://github.com/Mobai0z0/manga-colorizer) · [詳細](#manga-colorizer) | 白黒漫画（网点含む）の意味ベース自動彩色ツール。ONNXのSAM誘導ジェネレータで髪/肌/瞳/背景を配色し、Windowsデスクトップ（Tauri 2+Python）、ブラウザ、Dartエンジンで動作する。 | AIモデル・学習 / 小規模・初期評価候補 | 0 / 2026-10-10 |
+| [manga-colorizer](https://github.com/Mobai0z0/manga-colorizer) · [詳細](#manga-colorizer) | 白黒漫画（网点含む）の意味ベース自動彩色ツール。ONNXのSAM誘導ジェネレータで髪/肌/瞳/背景を配色し、Windowsデスクトップ（Tauri 2+Python）、ブラウザ、Dartエンジンで動作する。 | AIモデル・学習 / 小規模・初期評価候補 | 0 / 2026-10-12 |
 | [ColorComic](https://github.com/vikast908/ColorComic) · [詳細](#colorcomic) | 白黒の漫画・マンファPDFを、領域ごとに色を割り当てる「ガイド付き彩色」で手塗り風に彩色するローカルWebアプリ。Auto／参照画像／LLMの3モードを持ち、任意でテキスト専用LLMが配色を指示する。 | AIモデル・学習 / 中規模・実用候補 | 21 / 2026-07-10 |
 | [manga-colorizer](https://github.com/FlamboyantEntertainment/manga-colorizer) · [詳細](#flamboyantentertainment-manga-colorizer) | 白黒漫画を丸ごと（PDF/EPUB/CBZ）色付けするセルフホストWebアプリ。Docker一行で導入でき、読書中にその場で色付けするブラウザ拡張も同梱。線画を保持したまま色だけを元解像度ページへ転送する。 | AIモデル・学習 / 小規模・初期評価候補 | 6 / 2026-10-02 |
 | [MangaFlow](https://github.com/coffe01-10/MangaFlow) · [詳細](#mangaflow) | 小説テキストから漫画ページを作るローカル優先の単一ユーザー向けワークベンチ。原作・キャラ/衣装参照・絵コンテ・ページ候補を追跡可能な形でまとめ、AIは補助し人間が承認して進める。 | AIモデル・学習 / 小規模・初期評価候補（Windows v1.0.0-rc2） | 2 / 2026-10-05 |
@@ -116,7 +116,7 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **依存**: 通常の描画にはAIモデル不要
 - **制約・未確認**: GitHubは公式ミラーで、開発元はKDE。標準アプリをAI生成モデルとして扱わない。
 - **編集者評価**: 生成結果の手直しや原稿制作を担う定番基盤。
-- **メトリクス**: ★10,528、fork 876、作成 2015-10-09、最終push 2026-10-11T04:34:13Z、archived=False
+- **メトリクス**: ★10,537、fork 878、作成 2015-10-09、最終push 2026-10-12T12:50:58Z、archived=False
 - **確認**: 2026-09-09 / コミット `75db0d95e142c9251dc27483180148f77d4de014`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -260,7 +260,7 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 - **依存**: SDXL、版・経路によりPhotoMaker等
 - **制約・未確認**: 動画モデルのソースと重みは現READMEのTODOで未公開。画像生成と動画研究の公開範囲を区別する。
 - **編集者評価**: 画像の連続性を比較する既存研究。動画公開済み候補としては使わない。
-- **メトリクス**: ★6,473、fork 646、作成 2024-04-21、最終push 2024-09-26T02:17:52Z、archived=False
+- **メトリクス**: ★6,474、fork 647、作成 2024-04-21、最終push 2024-09-26T02:17:52Z、archived=False
 - **確認**: 2026-09-09 / コミット `8de45e424887766fdd84dc917436ff8605f00149`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/HVision-NKU/StoryDiffusion/tree/8de45e424887766fdd84dc917436ff8605f00149)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -365,7 +365,7 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 - **依存**: ONNX彩色モデル（SAM誘導generator）、Tauri/Python sidecar、WebCanvas
 - **制約・未確認**: モデル重みはCC BY-NC-SA 4.0でリポジトリ非同梱、別途ダウンロードが必要。コードはApache-2.0。
 - **編集者評価**: 网点や長尺ページ（1024px超はタイル推論）に対応し、明度を保存する設計が漫画彩色の用途に合う。
-- **メトリクス**: ★0、fork 0、作成 2026-09-23、最終push 2026-10-10T09:33:57Z、archived=False
+- **メトリクス**: ★0、fork 0、作成 2026-09-23、最終push 2026-10-12T12:21:07Z、archived=False
 - **確認**: 2026-10-05 / コミット `f1bbf26d434be05f66a0a5f66ab821a1fd10c78d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Mobai0z0/manga-colorizer/tree/f1bbf26d434be05f66a0a5f66ab821a1fd10c78d)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -382,7 +382,7 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 
 **入口候補（固定ツリーで存在確認）**: [src-tauri/src/main.rs](https://github.com/Mobai0z0/manga-colorizer/blob/f1bbf26d434be05f66a0a5f66ab821a1fd10c78d/src-tauri/src/main.rs) / [web/dist/app.js](https://github.com/Mobai0z0/manga-colorizer/blob/f1bbf26d434be05f66a0a5f66ab821a1fd10c78d/web/dist/app.js)
 
-**最新GitHub Release**: [v0.5.25](https://github.com/Mobai0z0/manga-colorizer/releases/tag/v0.5.25) / 2026-10-09T14:33:17Z / prerelease=False
+**最新GitHub Release**: [v0.5.26](https://github.com/Mobai0z0/manga-colorizer/releases/tag/v0.5.26) / 2026-10-12T12:32:07Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-24T04:40:21Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
 

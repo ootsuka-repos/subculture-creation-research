@@ -933,3 +933,83 @@ ConvNeXtV2-Hugeベースの画像分類モデル。モデル名の"dbv4-full"か
 確認日: 2026-10-11 / revision `18177355d1448a69bafb0410a0608e144f714e8b` / gated=auto。ファイル名候補2件の一覧確認。代表ファイル: `model.safetensors`、`pytorch_model.bin`
 
 根拠: [固定モデルカード](https://huggingface.co/animetimm/convnextv2_huge.dbv4-full/blob/18177355d1448a69bafb0410a0608e144f714e8b/README.md) / [モデルAPI](https://huggingface.co/api/models/animetimm/convnextv2_huge.dbv4-full)
+
+## Index-Translate-2B-JP-Manga-Finetune-v1-GGUF
+
+IndexTeam/Index-Translate-2B（Qwen3.5系ハイブリッド）を、日本語→英語の漫画対話向けにファインチューニングしたモデル。Q4_K_MのGGUFとマージ済みbf16重みを収録する。
+
+- **版の区別**: index-translate-2b-manga-v1-Q4_K_M.gguf（1.27GB）とmodel.safetensors。同じ漫画コーパスで学習したHy-MT2-1.8B-JP-Manga-Finetune-v5とは別系統。
+- **入力・設定**: ChatMLの単一userターン。指示文は中国語で、行単位／用語集付き／ページ単位（JSON）の3レイアウトを学習済み。このモデル専用のプロンプトが必要で、Hy-MT2用の文面ではchrF++が下がると記載。用語集は「日本語→英語」を「、」で連結して列挙する。
+- **必要構成**: llama.cpp等で実行。行単位なら512トークン文脈とmax_tokens128で足りると記載。Qwen3.5ハイブリッドのため、プロンプト接頭辞の再利用はKVキャッシュ巻き戻しではなく状態の保存/復元で行う必要がある。
+- **制約**: 日本語→英語のテキスト専用で、学習・検証はこの方向のみ。4文字未満の極短い台詞は前世代v5より低スコア。ページ単位では505ページ中7件で行欠落やJSON解析失敗が起きたと報告されている。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: 漫画の短い台詞と用語集付き翻訳に特化し、自動指標で前世代をわずかに上回るとカードが記載。オンデバイス実行も想定した設計。
+- **次の検証（未実施）**: held-outページで用語集あり/なし、行単位とページ単位のJSON出力の安定性を比較する。
+
+確認日: 2026-10-12 / revision `f920fe5b75390165b5b3bac508e7aeee7f64db39` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `index-translate-2b-manga-v1-Q4_K_M.gguf`、`model.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/fumetodev/Index-Translate-2B-JP-Manga-Finetune-v1-GGUF/blob/f920fe5b75390165b5b3bac508e7aeee7f64db39/README.md) / [モデルAPI](https://huggingface.co/api/models/fumetodev/Index-Translate-2B-JP-Manga-Finetune-v1-GGUF)
+
+## FLUX.2-klein-9B-manga-colorization-by-reference-LORA
+
+black-forest-labs/FLUX.2-klein-base-9B向けのLoRA。1枚目に白黒の漫画ページ、2枚目に色参照を入力し、参照の配色を転写しながら彩色する。
+
+- **版の区別**: manga_colorization.safetensors 1種。ComfyUIワークフローJSON（Flux2_klein_9b_manga_colorization.json）を同梱する。
+- **入力・設定**: トリガー語はmngclranm。任意で照明や雰囲気の短い説明を追加できる。LoRA強度は0.8〜1.0を推奨と記載。
+- **必要構成**: FLUX.2-klein-base-9B（Base、非蒸留）が必要。カードは約50ステップ・guidance_scale約4.0を想定し、BaseはLoRA学習やカスタムパイプライン向けと説明している。ComfyUIでは1枚目を漫画ページ、2枚目を色参照として与える。
+- **制約**: 参照画像に対象ページのキャラが写っていることが前提で、参照が不十分だと色が安定しないと記載。品質の断定や商用可の明示はない。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: カラーページやキャラ表を参照してシリーズの配色を揃える用途が具体的。複数キャラを含む参照にも対応すると記載されている。
+- **次の検証（未実施）**: 同一ページを参照あり/なしで彩色し、線画の保持と配色の一貫性を比較する。
+
+確認日: 2026-10-12 / revision `e754c5a9efd2440e2331f41c5e0cf0e8d3aa3566` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `manga_colorization.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/milo01/FLUX.2-klein-9B-manga-colorization-by-reference-LORA/blob/e754c5a9efd2440e2331f41c5e0cf0e8d3aa3566/README.md) / [モデルAPI](https://huggingface.co/api/models/milo01/FLUX.2-klein-9B-manga-colorization-by-reference-LORA)
+
+## qwen-image-modern-anime-lora
+
+Qwen/Qwen-Image向けのスタイルLoRAで、モダンな日本のアニメ調を付与する。v1とv2の重みを収録する。
+
+- **版の区別**: version 2はlora.safetensors（ComfyUI用）とdiffusers.safetensors、workflow.json。version 1はtest_lora.safetensors/test_diffusers.safetensorsとtest_workflow.json。
+- **入力・設定**: トリガー語は"Japanese modern anime style"。負例に"photo, cg, 3d"を指定する作例が掲載されている。
+- **必要構成**: Qwen-Image本体。ComfyUIまたはdiffusersで読み込む。学習にはmusubi-tunerを使用と記載。
+- **制約**: カードは簡潔で、作例は限られた構図・プロンプトのみ。評価指標や商用利用の明示はない。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: Qwen-Imageで日本の現代アニメ調を狙うための軽量な追加重みとして扱いやすい。ComfyUI用とdiffusers用の両方が用意されている。
+- **次の検証（未実施）**: 同一プロンプトでLoRAの有無とv1/v2の差を比較する。
+
+確認日: 2026-10-12 / revision `23fdf83a9ba1124d1bd568945b255e3634025e5c` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `diffusers.safetensors`、`lora.safetensors`、`test_diffusers.safetensors`、`test_lora.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/alfredplpl/qwen-image-modern-anime-lora/blob/23fdf83a9ba1124d1bd568945b255e3634025e5c/README.md) / [モデルAPI](https://huggingface.co/api/models/alfredplpl/qwen-image-modern-anime-lora)
+
+## SoVITS-anime-mini-tts
+
+GPT-SoVITS（v2系）で学習した日本語アニメ調の音声モデル。ckptとpthの2ファイル構成。
+
+- **版の区別**: anime-mini-e15.ckpt（GPT側）とanime-mini_e8_s48000.pth（SoVITS側）。学習にはlitagin/moe-speechを使用と記載。
+- **入力・設定**: 参照音声は3〜10秒のクリーンな日本語クリップを使い、100%正確な書き起こしを参照音声のテキスト欄に与える運用が説明されている。参照音声・推論とも言語はJapanese、スライスは句読点単位を指定する。
+- **必要構成**: RVC-Boss/GPT-SoVITS本体。pthはSoVITS_weights_v2、ckptはGPT_weights_v2へ配置。CUDA利用時はcuDNNのライブラリパス設定が必要と記載。
+- **制約**: 2024年公開の小さなモデルで、カードは手順中心。品質評価の記載はない。日本語専用。
+- **利用条件**: MIT。
+- **編集者評価**: GPT-SoVITSで手軽に試せる日本語アニメ調ボイスの入門用重み。Firefoxの読み上げ拡張から接続する例も記載されている。
+- **次の検証（未実施）**: 参照音声の長さと書き起こし精度を変えて合成品質を確認する。
+
+確認日: 2026-10-12 / revision `9453f92d98d39c61be4a0d92072cf8cfa7c0422c` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `anime-mini-e15.ckpt`、`anime-mini_e8_s48000.pth`
+
+根拠: [固定モデルカード](https://huggingface.co/cpumaxx/SoVITS-anime-mini-tts/blob/9453f92d98d39c61be4a0d92072cf8cfa7c0422c/README.md) / [モデルAPI](https://huggingface.co/api/models/cpumaxx/SoVITS-anime-mini-tts)
+
+## qwen-image-anime-irl-lora
+
+Qwen/Qwen-Image向けのLoRAで、アニメ調の記述から写実的な画像を生成する（Anime in Real Life）。
+
+- **版の区別**: flymy_anime_irl.safetensors 1種。ComfyUI用のワークフローJSONと配置手順をカード内で案内している。
+- **入力・設定**: トリガー語は"Real life Anime"。作例はtrue_cfg_scale 4、50ステップ、1024x1024、負例は空文字。
+- **必要構成**: Qwen-Image本体（ComfyUI用重みはComfy-Org/Qwen-Image_ComfyUI）。LoRAはComfyUI/models/lorasへ配置する。
+- **制約**: アニメ調から写実への変換方向の用途で、アニメ絵そのものの生成ではない。カードは作例中心で品質指標を含まない。
+- **利用条件**: Apache-2.0。
+- **編集者評価**: アニメ設定を実写寄りのイメージへ落とし込む用途に限られるが、Qwen-ImageのLoRAとして導入手順が具体的。
+- **次の検証（未実施）**: 同一プロンプトでLoRA有無による作風の変化と人物の一貫性を確認する。
+
+確認日: 2026-10-12 / revision `8dcca17f33d54db932aa7f11ab944b500304ce07` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `flymy_anime_irl.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/flymy-ai/qwen-image-anime-irl-lora/blob/8dcca17f33d54db932aa7f11ab944b500304ce07/README.md) / [モデルAPI](https://huggingface.co/api/models/flymy-ai/qwen-image-anime-irl-lora)

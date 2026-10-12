@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -12,19 +12,20 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
-| [CosyVoice](https://github.com/QwenAudio/CosyVoice) · [詳細](#cosyvoice) | ストリーミング対応の多言語音声合成。現行READMEはFun-CosyVoice3を案内。 | AIモデル・学習 / モデル・研究候補 | 23,921 / 2026-05-25 |
-| [F5-TTS](https://github.com/SWivid/F5-TTS) · [詳細](#f5-tts) | 参照音声とテキストを使うフローマッチング音声合成・追加学習。 | AIモデル・学習 / モデル・研究候補 | 15,378 / 2026-10-11 |
-| [fish-speech](https://github.com/fishaudio/fish-speech) · [詳細](#fish-speech) | Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。 | AIモデル・学習 / 更新のある導入・評価候補 | 33,007 / 2026-10-11 |
-| [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) · [詳細](#gpt-sovits) | 少量音声を使うTTSと音声クローンをWebUIから扱う。 | AIモデル・学習 / 更新のある導入・評価候補 | 62,679 / 2026-10-08 |
-| [IndexTTS](https://github.com/index-tts/index-tts) · [詳細](#index-tts) | 声質・感情の条件を扱う音声合成。現行2.5は日本語を含む5言語を案内。 | AIモデル・学習 / モデル・研究候補 | 24,423 / 2026-09-29 |
-| [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) · [詳細](#qwen3-tts) | 声のデザイン、参照音声による合成、指示による話し方制御を扱う多言語TTS。 | AIモデル・学習 / 研究モデルの評価候補 | 13,737 / 2026-03-17 |
-| [RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) · [詳細](#retrieval-based-voice-conversion-webui) | 入力音声の発話内容を保ちながら学習した声へ変換する。 | AIモデル・学習 / モデル・研究候補 | 38,685 / 2026-08-04 |
+| [CosyVoice](https://github.com/QwenAudio/CosyVoice) · [詳細](#cosyvoice) | ストリーミング対応の多言語音声合成。現行READMEはFun-CosyVoice3を案内。 | AIモデル・学習 / モデル・研究候補 | 23,931 / 2026-05-25 |
+| [F5-TTS](https://github.com/SWivid/F5-TTS) · [詳細](#f5-tts) | 参照音声とテキストを使うフローマッチング音声合成・追加学習。 | AIモデル・学習 / モデル・研究候補 | 15,387 / 2026-10-11 |
+| [fish-speech](https://github.com/fishaudio/fish-speech) · [詳細](#fish-speech) | Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。 | AIモデル・学習 / 更新のある導入・評価候補 | 33,013 / 2026-10-12 |
+| [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) · [詳細](#gpt-sovits) | 少量音声を使うTTSと音声クローンをWebUIから扱う。 | AIモデル・学習 / 更新のある導入・評価候補 | 62,728 / 2026-10-08 |
+| [IndexTTS](https://github.com/index-tts/index-tts) · [詳細](#index-tts) | 声質・感情の条件を扱う音声合成。現行2.5は日本語を含む5言語を案内。 | AIモデル・学習 / モデル・研究候補 | 24,446 / 2026-09-29 |
+| [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) · [詳細](#qwen3-tts) | 声のデザイン、参照音声による合成、指示による話し方制御を扱う多言語TTS。 | AIモデル・学習 / 研究モデルの評価候補 | 13,751 / 2026-03-17 |
+| [RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) · [詳細](#retrieval-based-voice-conversion-webui) | 入力音声の発話内容を保ちながら学習した声へ変換する。 | AIモデル・学習 / モデル・研究候補 | 38,705 / 2026-08-04 |
 | [Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2) · [詳細](#style-bert-vits2) | Bert-VITS2を基に音声スタイルの制御と学習を扱う日本語TTSツール。 | AIモデル・学習 / 比較・既存工程の参考 | 1,383 / 2025-12-07 |
-| [voicevox](https://github.com/VOICEVOX/voicevox) · [詳細](#voicevox) | 日本語のキャラクター音声を編集して出力するVOICEVOXのエディタ。 | AI連携 / 定番の制作基盤 | 3,264 / 2026-10-11 |
-| [Genie-TTS](https://github.com/High-Logic/Genie-TTS) · [詳細](#genie-tts) | GPT-SoVITS（V2/V2ProPlus）をONNX化してCPUで動かす軽量推論エンジン。TTS推論・モデル変換・FastAPIサーバーをまとめて提供する。 | AIモデル・学習 / 活発・実用段階 | 1,801 / 2026-08-30 |
-| [TTS-WebUI](https://github.com/rsxdalv/TTS-WebUI) · [詳細](#tts-webui) | 多数のTTS/音声生成モデルを1つのGradio+React UIで扱うWebUI。GPT-SoVITS、XTTSv2、Kokoro、StyleTTS2、RVC、MusicGen、Demucs等の拡張を備える。 | AIモデル・学習 / 活発・実用段階 | 3,288 / 2026-09-07 |
+| [voicevox](https://github.com/VOICEVOX/voicevox) · [詳細](#voicevox) | 日本語のキャラクター音声を編集して出力するVOICEVOXのエディタ。 | AI連携 / 定番の制作基盤 | 3,266 / 2026-10-11 |
+| [Genie-TTS](https://github.com/High-Logic/Genie-TTS) · [詳細](#genie-tts) | GPT-SoVITS（V2/V2ProPlus）をONNX化してCPUで動かす軽量推論エンジン。TTS推論・モデル変換・FastAPIサーバーをまとめて提供する。 | AIモデル・学習 / 活発・実用段階 | 1,802 / 2026-08-30 |
+| [TTS-WebUI](https://github.com/rsxdalv/TTS-WebUI) · [詳細](#tts-webui) | 多数のTTS/音声生成モデルを1つのGradio+React UIで扱うWebUI。GPT-SoVITS、XTTSv2、Kokoro、StyleTTS2、RVC、MusicGen、Demucs等の拡張を備える。 | AIモデル・学習 / 活発・実用段階 | 3,289 / 2026-09-07 |
 | [vits-simple-api](https://github.com/Artrajz/vits-simple-api) · [詳細](#vits-simple-api) | VITS系TTSをHTTP APIとして提供するサーバー。VITS/Bert-VITS2/GPT-SoVITS/emotion-vits等の複数モデルを読み込み、GETで音声合成できる。 | AIモデル・学習 / 活発・実用段階 | 1,050 / 2026-05-18 |
-| [sukasuka-vocal-dataset-builder](https://github.com/Hecate2/sukasuka-vocal-dataset-builder) · [詳細](#sukasuka-vocal-dataset-builder) | アニメ本編やドラマCDと字幕から、役柄ごとの音声を切り出してデータセット化するスクリプト群。TTS/SVC学習用のキャラクター音声データ作成を想定。 | 非AI制作 / コミュニティ運用中 | 54 / 2026-09-20 |
+| [sukasuka-vocal-dataset-builder](https://github.com/Hecate2/sukasuka-vocal-dataset-builder) · [詳細](#sukasuka-vocal-dataset-builder) | アニメ本編やドラマCDと字幕から、役柄ごとの音声を切り出してデータセット化するスクリプト群。TTS/SVC学習用のキャラクター音声データ作成を想定。 | 非AI制作 / コミュニティ運用中 | 55 / 2026-09-20 |
+| [Bocchi-The-Rock-GPT-SoVITS-Models](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models) · [詳細](#bocchi-the-rock-gpt-sovits-models) | アニメ「ぼっち・ざ・ろっく!」のキャラ音声をGPT-SoVITSで学習した音声モデルの配布と実行手順。Dockerでの導入とPythonインターフェースを用意する。 | AIモデル・学習 / 初期評価候補 | 6 / 2026-10-09 |
 
 <a id="cosyvoice"></a>
 
@@ -40,7 +41,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Fun-CosyVoice3-0.5B-2512等、音声トークナイザ
 - **制約・未確認**: FunAudioLLMからQwenAudioへ移転。作者の低遅延値は全システムの遅延ではない。
 - **編集者評価**: 会話キャラの音声バックエンド候補。発話開始までの遅延を重視する場合に比較。
-- **メトリクス**: ★23,921、fork 2,729、作成 2024-07-03、最終push 2026-05-25T18:15:40Z、archived=False
+- **メトリクス**: ★23,931、fork 2,731、作成 2024-07-03、最終push 2026-05-25T18:15:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/QwenAudio/CosyVoice/tree/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -79,7 +80,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: F5-TTSチェックポイント、VocosまたはBigVGAN
 - **制約・未確認**: コードはMIT、事前学習モデルはREADMEでCC BY-NCと明記。日本語の標準対応を推定しない。
 - **編集者評価**: 音声参照を使う研究比較に適する。声の演技と日本語品質は別々に試す。
-- **メトリクス**: ★15,378、fork 2,243、作成 2024-10-08、最終push 2026-10-11T05:25:10Z、archived=False
+- **メトリクス**: ★15,387、fork 2,243、作成 2024-10-08、最終push 2026-10-11T05:25:10Z、archived=False
 - **確認**: 2026-09-09 / コミット `9c614e9657089213efc6a7421b30630be138a3f5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/SWivid/F5-TTS/tree/9c614e9657089213efc6a7421b30630be138a3f5)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -118,7 +119,7 @@ Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。
 - **依存**: Fish Audio S2-Pro等の対応モデル
 - **制約・未確認**: READMEはFISH AUDIO RESEARCH LICENSEと記載。過去版のライセンスを現在版へ適用しない。
 - **編集者評価**: 多言語キャラ音声と会話音声の生成候補。
-- **メトリクス**: ★33,007、fork 2,866、作成 2023-10-10、最終push 2026-10-11T16:45:56Z、archived=False
+- **メトリクス**: ★33,013、fork 2,867、作成 2023-10-10、最終push 2026-10-12T08:48:41Z、archived=False
 - **確認**: 2026-09-09 / コミット `befe4001745417f8c42131739d862b8a6fdbd15a`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/fishaudio/fish-speech/tree/befe4001745417f8c42131739d862b8a6fdbd15a)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -157,7 +158,7 @@ Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。
 - **依存**: GPT-SoVITS、音声前処理モデル
 - **制約・未確認**: 参照音声の長さと品質で結果が変わる。作者の少量学習品質は未再現。
 - **編集者評価**: 独自キャラ音声を作るための学習・推論環境候補。
-- **メトリクス**: ★62,679、fork 6,695、作成 2024-01-14、最終push 2026-10-08T16:27:11Z、archived=False
+- **メトリクス**: ★62,728、fork 6,699、作成 2024-01-14、最終push 2026-10-08T16:27:11Z、archived=False
 - **確認**: 2026-09-09 / コミット `48b1a0169a28582a8984402f82cf438d3bfa6aca`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/RVC-Boss/GPT-SoVITS/tree/48b1a0169a28582a8984402f82cf438d3bfa6aca)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -196,7 +197,7 @@ Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。
 - **依存**: IndexTeam/IndexTTS-2.5、付随音声モデル
 - **制約・未確認**: 2.5と2のPython API・モデルを混用しない。日本語対応は作者説明であり品質実測ではない。
 - **編集者評価**: 日本語キャラクターの演技付き台詞に新しい比較対象。
-- **メトリクス**: ★24,423、fork 2,896、作成 2025-02-06、最終push 2026-09-29T16:06:53Z、archived=False
+- **メトリクス**: ★24,446、fork 2,898、作成 2025-02-06、最終push 2026-09-29T16:06:53Z、archived=False
 - **確認**: 2026-09-09 / コミット `ee40fa7d6c6b8a2c7f06105f9f1e65775b74868c`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/index-tts/index-tts/tree/ee40fa7d6c6b8a2c7f06105f9f1e65775b74868c)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -235,7 +236,7 @@ Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。
 - **依存**: Qwen3-TTS、音声トークナイザ
 - **制約・未確認**: 通常TTSの表現制御とASMR専用性能を同一視しない。
 - **編集者評価**: 日本語を含むキャラ音声・ナレーション制作の新しい基盤候補。
-- **メトリクス**: ★13,737、fork 1,781、作成 2026-01-21、最終push 2026-03-17T06:38:41Z、archived=False
+- **メトリクス**: ★13,751、fork 1,782、作成 2026-01-21、最終push 2026-03-17T06:38:41Z、archived=False
 - **確認**: 2026-09-09 / コミット `022e286b98fbec7e1e916cb940cdf532cd9f488e`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/QwenLM/Qwen3-TTS/tree/022e286b98fbec7e1e916cb940cdf532cd9f488e)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -274,7 +275,7 @@ Fish Audio S2系の表現豊かなTTS・音声クローンを扱う実装。
 - **依存**: HuBERT等、音高推定器、別途用意する対象声モデル
 - **制約・未確認**: TTSではなく声質変換。汎用の基盤ファイルだけでは任意の対象声が使えるわけではない。
 - **編集者評価**: 自分で演じた台詞のタイミングを保持して声を変える工程に適する。
-- **メトリクス**: ★38,685、fork 5,298、作成 2023-03-27、最終push 2026-08-04T07:47:32Z、archived=False
+- **メトリクス**: ★38,705、fork 5,301、作成 2023-03-27、最終push 2026-08-04T07:47:32Z、archived=False
 - **確認**: 2026-09-09 / コミット `81eed5e8f68b6bed1789f682fe78cdd324495afc`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/tree/81eed5e8f68b6bed1789f682fe78cdd324495afc)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -348,7 +349,7 @@ Bert-VITS2を基に音声スタイルの制御と学習を扱う日本語TTSツ�
 - **依存**: VOICEVOX ENGINE、音声ライブラリ
 - **制約・未確認**: このリポジトリはエディタ。エンジン・音声ライブラリ・キャラの条件は別。
 - **編集者評価**: セリフ・説明動画・ゲーム用音声の制作入口。
-- **メトリクス**: ★3,264、fork 374、作成 2021-07-27、最終push 2026-10-11T10:32:06Z、archived=False
+- **メトリクス**: ★3,266、fork 374、作成 2021-07-27、最終push 2026-10-11T10:32:06Z、archived=False
 - **確認**: 2026-09-09 / コミット `b7258250fe90c82f112d0f51e43f2a1b67992d36`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/VOICEVOX/voicevox/tree/b7258250fe90c82f112d0f51e43f2a1b67992d36)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -383,7 +384,7 @@ GPT-SoVITS（V2/V2ProPlus）をONNX化してCPUで動かす軽量推論エンジ
 - **依存**: GPT-SoVITSモデル、ONNXランタイム、torch（変換時）
 - **制約・未確認**: READMEは対応モデルがV2/V2ProPlusで、V3/V4は未対応と記載。性能値は作者のCPU計測で環境依存。
 - **編集者評価**: GPT-SoVITS系のキャラ音声を軽量に配備したいときに有用。日本語・英語・中国語・韓国語に対応とREADMEに記載。
-- **メトリクス**: ★1,801、fork 123、作成 2025-08-25、最終push 2026-08-30T11:22:20Z、archived=False
+- **メトリクス**: ★1,802、fork 123、作成 2025-08-25、最終push 2026-08-30T11:22:20Z、archived=False
 - **確認**: 2026-10-06 / コミット `d347fd0f8683e9a362b69f59fa0a4799ddb5e828`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/High-Logic/Genie-TTS/tree/d347fd0f8683e9a362b69f59fa0a4799ddb5e828)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -418,7 +419,7 @@ GPT-SoVITS（V2/V2ProPlus）をONNX化してCPUで動かす軽量推論エンジ
 - **依存**: 各TTS/音楽モデル、Gradio、React、Docker（任意）
 - **制約・未確認**: READMEはモデルごとに拡張が必要で、依存やライセンスは各モデルに従うと説明。動作はGPU/環境依存。
 - **編集者評価**: 複数の音声系モデルを横断して試せるため、キャラ音声や歌声・音声変換の比較検討に使いやすい。
-- **メトリクス**: ★3,288、fork 333、作成 2023-04-27、最終push 2026-09-07T08:54:58Z、archived=False
+- **メトリクス**: ★3,289、fork 333、作成 2023-04-27、最終push 2026-09-07T08:54:58Z、archived=False
 - **確認**: 2026-10-06 / コミット `2e5701387c423307d73972a45496bfdcb6a7d8e1`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/rsxdalv/TTS-WebUI/tree/2e5701387c423307d73972a45496bfdcb6a7d8e1)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -488,7 +489,7 @@ VITS系TTSをHTTP APIとして提供するサーバー。VITS/Bert-VITS2/GPT-SoV
 - **依存**: アニメ動画・字幕素材、ffmpeg、demucs（任意）
 - **制約・未確認**: キャラクターのラベリングは手作業。配布データには非ボーカル音が残る版と除去版がある。元動画・字幕のライセンスはMITとは別に確認が必要。
 - **編集者評価**: 二次元キャラ音声モデル向けのデータ整備手順と役割分担が具体的で、データ作成の参考になる。
-- **メトリクス**: ★54、fork 5、作成 2023-02-17、最終push 2026-09-20T03:30:40Z、archived=False
+- **メトリクス**: ★55、fork 5、作成 2023-02-17、最終push 2026-09-20T03:30:40Z、archived=False
 - **確認**: 2026-10-07 / コミット `5b166d5017653f9f79b1e4122e93d1087d4d7dc3`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Hecate2/sukasuka-vocal-dataset-builder/tree/5b166d5017653f9f79b1e4122e93d1087d4d7dc3)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -508,3 +509,38 @@ VITS系TTSをHTTP APIとして提供するサーバー。VITS/Bert-VITS2/GPT-SoV
 **最新GitHub Release**: [0.1.audiodrama.1](https://github.com/Hecate2/sukasuka-vocal-dataset-builder/releases/tag/0.1.audiodrama.1) / 2026-09-12T11:06:27Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-20T03:30:31Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="bocchi-the-rock-gpt-sovits-models"></a>
+
+## Bocchi-The-Rock-GPT-SoVITS-Models
+
+アニメ「ぼっち・ざ・ろっく!」のキャラ音声をGPT-SoVITSで学習した音声モデルの配布と実行手順。Dockerでの導入とPythonインターフェースを用意する。
+
+- **リポジトリ**: https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models
+- **分類**: model_toolkit / AIモデル・学習 / 初期評価候補
+- **入力**: 合成したいテキスト、言語コード（ja/zh/en）、キャラクターごとの参照音声
+- **出力**: キャラクター音声の合成結果（音声ファイル）
+- **環境**: GPT-SoVITS本体、PyTorch、Docker（推奨）またはHFからのモデル取得。web_ui.pyをポート7860で起動する手順。
+- **依存**: RVC-Boss/GPT-SoVITS、HFリポジトリ lpkpaco/BTR_GPT-SoVITS_Voicemodels
+- **制約・未確認**: モデル重みはHFリポジトリへ移行済みで、このリポジトリにはソースのみ。ライセンスはCC BY-NC-SA 4.0で商用利用ではない。
+- **編集者評価**: 日本語の生成を得意とし、HF上に学習済み重みとSpaceデモを公開。DockerでCPU/CUDA双方の導入を想定。
+- **メトリクス**: ★6、fork 0、作成 2025-08-27、最終push 2026-10-09T06:27:00Z、archived=False
+- **確認**: 2026-10-12 / コミット `75178d4f3c8d164dbbae94dbcccfee16de46021f`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/tree/75178d4f3c8d164dbbae94dbcccfee16de46021f)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/blob/75178d4f3c8d164dbbae94dbcccfee16de46021f/README.md) / [GitHub API](https://api.github.com/repos/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models) / [固定ツリー](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/tree/75178d4f3c8d164dbbae94dbcccfee16de46021f)
+
+### 制作に使う際の検討
+
+キャラクターボイスを使った二次創作的な音声制作。
+
+**次に確かめること（実施前）**: 各キャラのモデルで日本語合成を行い、参照音声の長さ・品質による差を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [inference.py](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/blob/75178d4f3c8d164dbbae94dbcccfee16de46021f/inference.py)
+
+**最新GitHub Release**: [v1.0.1](https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/releases/tag/v1.0.1) / 2026-04-02T12:21:23Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-10-09T06:26:53Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

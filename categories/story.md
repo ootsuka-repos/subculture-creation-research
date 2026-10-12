@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-11。**228件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,7 +14,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [BlueFish](https://github.com/bluefish2026/BlueFish) · [詳細](#bluefish) | 複数のAIプロバイダを接続し、脚本から絵コンテ・動画制作まで管理する。 | AI連携 / 小規模・初期評価候補 | 8 / 2026-04-22 |
 | [ink](https://github.com/inkle/ink) · [詳細](#ink) | 分岐する物語を書くスクリプト言語、コンパイラ、実行ランタイム。 | 非AI制作 / 制作基盤として比較 | 4,968 / 2026-05-05 |
-| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,327 / 2026-10-02 |
+| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,370 / 2026-10-02 |
 | [Yarn Spinner](https://github.com/YarnSpinnerTool/YarnSpinner) · [詳細](#yarnspinner) | ゲームの会話記述をコンパイル・実行する台詞制作基盤。 | 非AI制作 / 制作基盤として比較 | 2,856 / 2026-10-01 |
 | [YumingScroll](https://github.com/tansuanyl/YumingScroll) · [詳細](#yumingscroll) | 物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。 | AI連携 / 早期開発 | 1 / 2026-10-06 |
 
@@ -102,7 +102,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、任意の画像生成・TTSバックエンド
 - **制約・未確認**: 完成シナリオの整合性を自動保証するものではない。独自LLM重みは提供しない。
 - **編集者評価**: キャラクター設計やシナリオの対話試作に使う候補。
-- **メトリクス**: ★34,327、fork 6,441、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
+- **メトリクス**: ★34,370、fork 6,445、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/SillyTavern/SillyTavern/tree/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
