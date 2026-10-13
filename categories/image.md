@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,9 +13,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [anime-segmentation](https://github.com/SkyTNT/anime-segmentation) · [詳細](#anime-segmentation) | アニメ絵のキャラクター領域を抽出し、背景除去や合成用マスクを作る。 | AIモデル・学習 / 比較・既存工程の参考 | 850 / 2025-05-21 |
-| [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) · [詳細](#krita-ai-diffusion) | Kritaの描画工程へ画像生成・インペイント・アウトペイントを組み込む。 | AI連携 / 更新のある導入・評価候補 | 10,705 / 2026-10-03 |
-| [Qwen-Image](https://github.com/QwenLM/Qwen-Image) · [詳細](#qwen-image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,398 / 2026-02-10 |
-| [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,082 / 2026-02-09 |
+| [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) · [詳細](#krita-ai-diffusion) | Kritaの描画工程へ画像生成・インペイント・アウトペイントを組み込む。 | AI連携 / 更新のある導入・評価候補 | 10,711 / 2026-10-03 |
+| [Qwen-Image](https://github.com/QwenLM/Qwen-Image) · [詳細](#qwen-image) | テキスト描画と画像編集を扱う汎用画像モデル群。表紙・小物・宣伝画像の制作候補。 | AIモデル・学習 / 研究モデルの評価候補 | 8,400 / 2026-02-10 |
+| [Z-Image](https://github.com/Tongyi-MAI/Z-Image) · [詳細](#z-image) | 6B級の汎用画像モデル群。Turboやベースモデルを用途に合わせて利用する。 | AIモデル・学習 / 研究モデルの評価候補 | 12,088 / 2026-02-09 |
 | [ComfyUI-Forbidden-Vision](https://github.com/luxdelux7/ComfyUI-Forbidden-Vision) · [詳細](#comfyui-forbidden-vision) | アニメ調・実写の両方に対応する顔の検出・セグメンテーション・補正を行うComfyUIカスタムノード群。ADetailerやFaceDetailerの代替を狙い、独自学習モデルを同梱する。 | AIモデル・学習 / 更新中の実装候補 | 104 / 2026-10-11 |
 | [ComfyUI-Ultimate-Face-Fix](https://github.com/Merserk/ComfyUI-Ultimate-Face-Fix) · [詳細](#comfyui-ultimate-face-fix) | 顔を検出して切り出し、接続した生成モデルでimg2img修復し、意味マスクで顔だけを元画像に合成するComfyUIノード。 | AI出力の後処理 / 活発・候補 | 26 / 2026-07-21 |
 | [Colortina](https://github.com/Amster-Ilvil/Colortina) · [詳細](#colortina) | manga-colorization-v2を基にしたローカル漫画自動彩色デスクトップツール。手動カラーヒント、区域ごとの再彩色、髪色補正、バッチ処理を備える。 | AIモデル・学習 / 小規模・初期評価候補 | 1 / 2026-08-23 |
@@ -23,12 +23,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [ComfyUI-AnimeRembg](https://github.com/mincad/ComfyUI-AnimeRembg) · [詳細](#comfyui-animerembg) | アニメキャラ動画のアルファマットを抽出するComfyUIカスタムノード集。既知背景の差分マッティングとデスピルを実装する。 | AI出力の後処理 / 小規模・初期評価候補（beta） | 1 / 2026-08-04 |
 | [CYKSM](https://github.com/Nigh/CYKSM) · [詳細](#cyksm) | realesrgan-x4plus-animeモデルを手軽に使うためのGUIツール。画像を左側にドラッグ&ドロップしてボタンを押すと超解像し、結果を右側にプレビューする。 | AIモデル・学習 / 小規模・初期評価候補 | 102 / 2026-08-21 |
 | [Caelum](https://github.com/yumenana/Caelum) · [詳細](#caelum) | アニメイラスト専用の×4超解像・圧縮劣化復元ツール（Windows GUI）。Pixiv/X/Facebook等の再アップロードで劣化した画像の復元を狙い、PPBUNetという独自構成を採る。 | AIモデル・学習 / 小規模・初期評価候補 | 16 / 2026-09-05 |
-| [ComfyUI_LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle) · [詳細](#comfyui-layerstyle) | ComfyUIにPhotoshop風のレイヤー合成・マスク処理ノード群を追加するカスタムノード。合成・マスク・切り抜き・プロンプト補助などのノードをまとめて提供する。 | AIは任意 / 活発・実用段階 | 3,184 / 2026-10-10 |
-| [QualityScaler](https://github.com/Djdefrag/QualityScaler) · [詳細](#qualityscaler) | 画像・動画をAIで拡大・ノイズ除去するWindows向けGUIアプリ。タイル分割でVRAM制限を回避し、動画の停止再開や補間、マルチGPUにも対応。 | AIモデル・学習 / 活発・実用段階 | 3,206 / 2026-08-27 |
+| [ComfyUI_LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle) · [詳細](#comfyui-layerstyle) | ComfyUIにPhotoshop風のレイヤー合成・マスク処理ノード群を追加するカスタムノード。合成・マスク・切り抜き・プロンプト補助などのノードをまとめて提供する。 | AIは任意 / 活発・実用段階 | 3,185 / 2026-10-10 |
+| [QualityScaler](https://github.com/Djdefrag/QualityScaler) · [詳細](#qualityscaler) | 画像・動画をAIで拡大・ノイズ除去するWindows向けGUIアプリ。タイル分割でVRAM制限を回避し、動画の停止再開や補間、マルチGPUにも対応。 | AIモデル・学習 / 活発・実用段階 | 3,204 / 2026-08-27 |
 | [abg-comfyui](https://github.com/kwaroran/abg-comfyui) · [詳細](#abg-comfyui) | アニメ画像の背景除去を行うComfyUIノード。skytntのanime-remove-background系スペースを土台にしている。 | AIモデル・学習 / 公開済み | 25 / 2024-05-22 |
 | [upscalejs](https://github.com/gqgs/upscalejs) · [詳細](#upscalejs) | ブラウザ内でONNX Runtime Webを使い超解像モデルで画像を拡大するJSライブラリ。Real-ESRGAN anime 4x等をWeb Workerで実行する。 | AIモデル・学習 / 公開済み（v2） | 24 / 2026-04-15 |
 | [Xyether-Anime-Upscaler](https://github.com/XYETHER/Xyether-Anime-Upscaler) · [詳細](#xyether-anime-upscaler) | アニメ・イラスト向けの2倍超解像モデル。SRVGGアーキテクチャで、線画・色・キャラディテールの保持を狙う。GitHub Releaseで重みを配布。 | AIモデル・学習 / 小規模・初期評価候補 | 7 / 2026-08-30 |
-| [GesturePortal](https://github.com/pixelsncodes/GesturePortal) · [詳細](#gestureportal) | 両手で作ったフレームでカメラ映像を切り抜き、その中だけComfyUIのFLUX/Qwenで別スタイルへ変換して見せるローカル実験ツール。 | AIモデル・学習 / プロトタイプ・初期評価候補 | 24 / 2026-10-07 |
+| [GesturePortal](https://github.com/pixelsncodes/GesturePortal) · [詳細](#gestureportal) | 両手で作ったフレームでカメラ映像を切り抜き、その中だけComfyUIのFLUX/Qwenで別スタイルへ変換して見せるローカル実験ツール。 | AIモデル・学習 / プロトタイプ・初期評価候補 | 25 / 2026-10-07 |
 | [Comfyui-Anima-Wardrobe](https://github.com/lingdongbudong/Comfyui-Anima-Wardrobe) · [詳細](#comfyui-anima-wardrobe) | ComfyUI向けのアニメキャラ造型ノード。服装/姿勢/表情/シーンのスロットと、複数プラグインが同じプロンプトに書き込むタグを裁定する機構を提供する。 | AIは任意 / 初期評価候補 | 13 / 2026-09-29 |
 | [comfyui-character-picker](https://github.com/1756141021/comfyui-character-picker) · [詳細](#comfyui-character-picker) | ComfyUIでアニメ/ゲームキャラをランダムに抽選し、Danbooruタグを出力するカスタムノード。9500以上のキャラを27作品のプール単位でオンオフできる。 | AIは任意 / 初期評価候補 | 2 / 2026-06-04 |
 | [midjourney-comfyui](https://github.com/Anil-matcha/midjourney-comfyui) · [詳細](#midjourney-comfyui) | Midjourney V7/V8/Nijiをmuapi.ai経由でComfyUIから呼び出すノード。1回の実行で4枚をIMAGEバッチとして返す。 | AIは任意 / 初期評価候補 | 7 / 2026-08-19 |
@@ -87,7 +87,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: Krita、ComfyUI等の対応生成環境
 - **制約・未確認**: 生成モデルとサービスによって費用・実行環境が変わる。
 - **編集者評価**: 画師が手で直しながらAIを使う工程に適している。
-- **メトリクス**: ★10,705、fork 639、作成 2023-09-01、最終push 2026-10-03T10:54:01Z、archived=False
+- **メトリクス**: ★10,711、fork 640、作成 2023-09-01、最終push 2026-10-03T10:54:01Z、archived=False
 - **確認**: 2026-09-09 / コミット `dda58d1c63e361207ccec085efbc34dbd32f1654`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Acly/krita-ai-diffusion/tree/dda58d1c63e361207ccec085efbc34dbd32f1654)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -124,7 +124,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: Qwen-Imageモデル、編集用モデル。モデル中核は外部Diffusers実装に依存。
 - **制約・未確認**: 2.0の告知と公開重みの版を混同しない。本調査の重み候補は2512とEdit-2511。
 - **編集者評価**: イラスト制作と文字入り素材の基盤として評価する。
-- **メトリクス**: ★8,398、fork 564、作成 2025-08-03、最終push 2026-02-10T07:37:37Z、archived=False
+- **メトリクス**: ★8,400、fork 564、作成 2025-08-03、最終push 2026-02-10T07:37:37Z、archived=False
 - **確認**: 2026-09-09 / コミット `6b5e1f5cec987d404be5ac6657db3b9aacb56a89`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/QwenLM/Qwen-Image/tree/6b5e1f5cec987d404be5ac6657db3b9aacb56a89)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -168,7 +168,7 @@ Kritaの描画工程へ画像生成・インペイント・アウトペイント
 - **依存**: 対応するZ-Imageモデル
 - **制約・未確認**: アニメ専用ではない。Turbo・Base・Omni等の能力と公開範囲を分ける。
 - **編集者評価**: 背景・素材・イラスト試作の生成基盤候補。
-- **メトリクス**: ★12,082、fork 823、作成 2025-11-26、最終push 2026-02-09T12:49:43Z、archived=False
+- **メトリクス**: ★12,088、fork 823、作成 2025-11-26、最終push 2026-02-09T12:49:43Z、archived=False
 - **確認**: 2026-09-09 / コミット `26f23eda626ffadda020b04ff79488e1d72004cd`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/Tongyi-MAI/Z-Image/tree/26f23eda626ffadda020b04ff79488e1d72004cd)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -452,7 +452,7 @@ ComfyUIにPhotoshop風のレイヤー合成・マスク処理ノード群を追�
 - **依存**: ComfyUI、opencv-contrib、transformers等の依存、各種マスク/検出/キャプション用モデル
 - **制約・未確認**: READMEは日本語UIや分割移行により、更新時にAdvance側の導入が必要になる場合があると説明。動作は環境依存で、全ノードの検証は未実施。
 - **編集者評価**: イラストのレタッチ・切り抜き・合成をComfyUI内で完結させたいときに有用。READMEは一部ノードを別リポジトリ（Advance）へ分割したと案内している点に注意。
-- **メトリクス**: ★3,184、fork 208、作成 2024-01-17、最終push 2026-10-10T14:47:41Z、archived=False
+- **メトリクス**: ★3,185、fork 209、作成 2024-01-17、最終push 2026-10-10T14:47:41Z、archived=False
 - **確認**: 2026-10-06 / コミット `a3459a7638c4c2839878089c105c73af0eb2edd2`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/chflame163/ComfyUI_LayerStyle/tree/a3459a7638c4c2839878089c105c73af0eb2edd2)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -487,7 +487,7 @@ ComfyUIにPhotoshop風のレイヤー合成・マスク処理ノード群を追�
 - **依存**: AI-onnxモデル、ffmpeg、onnxruntime-directml
 - **制約・未確認**: READMEはWindows専用。無料版はNVIDIA、Steam版はAMD/Intel対応と記載。拡大結果は素材依存で品質の断定はできない。
 - **編集者評価**: アニメ・漫画素材の解像度向上をローカルで完結させたいときに使いやすい。オフライン動作でプライバシー重視とREADMEに記載。
-- **メトリクス**: ★3,206、fork 258、作成 2022-04-03、最終push 2026-08-27T09:42:40Z、archived=False
+- **メトリクス**: ★3,204、fork 258、作成 2022-04-03、最終push 2026-08-27T09:42:40Z、archived=False
 - **確認**: 2026-10-06 / コミット `8c4c7410e641daa7580133e6f90ff7cd7ef73532`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Djdefrag/QualityScaler/tree/8c4c7410e641daa7580133e6f90ff7cd7ef73532)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -627,7 +627,7 @@ Webアプリでの画像拡大・下書き確認。
 - **依存**: ComfyUI（FLUX.2 Klein 4B、任意でQwen Image 2.1 Turbo）、MediaPipe
 - **制約・未確認**: Windowsプロトタイプ。画像モデルのため固定シードでもフリッカーする。速度は小さな開発環境での実測値。Qwenは研究/評価向けライセンスで任意オプトイン。リポジトリにライセンス表記なし。
 - **編集者評価**: 手の枠でAI加工範囲をリアルタイムに操る発想が具体的で、アニメ調など9種のスタイルプリセットを備える。ComfyUI連携の参考実装になる。
-- **メトリクス**: ★24、fork 4、作成 2026-10-07、最終push 2026-10-07T22:27:16Z、archived=False
+- **メトリクス**: ★25、fork 4、作成 2026-10-07、最終push 2026-10-07T22:27:16Z、archived=False
 - **確認**: 2026-10-11 / コミット `1fca0f2ccfbebab06f83ffa86c0dcf0b8b894a48`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/pixelsncodes/GesturePortal/tree/1fca0f2ccfbebab06f83ffa86c0dcf0b8b894a48)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。

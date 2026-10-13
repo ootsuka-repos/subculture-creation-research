@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -15,17 +15,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [Anime2.5DRig](https://github.com/852wa/Anime2.5DRig) · [詳細](#anime2.5drig) | PSDからリグを自動構成し、目パチ・口パク・髪物理・顔追跡で動かす。 | AIは任意 / 導入候補 | 240 / 2026-09-23 |
 | [PuppetLoom](https://github.com/CheshireMew/PuppetLoom) · [詳細](#puppetloom) | レイヤーPSDを自動バインドし、改訂履歴・検証を残して動く2Dキャラを制作する。 | AI連携 / 要再確認 | 245 / 2026-10-12 |
 | [stretchystudio](https://github.com/MangoLion/stretchystudio) · [詳細](#stretchystudio) | PSDを読み込み、自動リギングとタイムライン上のメッシュ変形でアニメーションを編集する。 | AI連携 / 導入候補 | 506 / 2026-04-28 |
-| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 630 / 2026-10-12 |
-| [live2d-py](https://github.com/EasyLive2D/live2d-py) · [詳細](#live2d-py) | Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。 | 非AI制作 / 実運用段階のライブラリ | 576 / 2026-10-12 |
-| [ayagami](https://github.com/AyagamiDev/ayagami) · [詳細](#ayagami) | Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。 | 非AI制作 / 初期評価候補 | 353 / 2026-09-14 |
-| [Amahane-Hikari-Live2D](https://github.com/luomo66ccff/Amahane-Hikari-Live2D) · [詳細](#amahane-hikari-live2d) | AIエージェントと協働してLive2Dキャラクターを制作し、TypeScript/WebGLのWebランタイムで再生する制作プロジェクト。制作フローをSkillとして公開する。 | AI連携 / 活発な候補 | 113 / 2026-09-21 |
-| [live2d-agent-kit](https://github.com/Ariakage/live2d-agent-kit) · [詳細](#live2d-agent-kit) | coding agentが参考図や分层PSDから.moc3を作るためのLive2D制作キット。psd2liveアダプタ、アニメ超分スクリプト、検証手順を含む。 | AI連携 / 小規模・初期評価候補 | 27 / 2026-09-12 |
-| [iki](https://github.com/zeikar/iki) · [詳細](#iki) | MITの2Dパペットエンジン。AIエージェントが画像モデルでパーツを描き、役割名付きレイヤーから.iki形式へ自動リギングする。 | AI連携 / 初期評価候補 | 17 / 2026-10-12 |
-| [spine-parts](https://github.com/firejune/spine-parts) · [詳細](#spine-parts) | 1枚のアニメ絵からSpine 2Dキャラのパーツを組み立てるCLI。See-throughのレイヤ分解結果を統合し、メッシュ・ボーン・ループidleをspine-rigc仕様で生成、書き出し前に数値で検査する。 | AI連携 / 小規模・初期評価候補 | 2 / 2026-10-12 |
-| [still2rig-psd](https://github.com/shinshin86/still2rig-psd) · [詳細](#still2rig-psd) | 1枚のアニメキャラ画像をSee-throughで意味的にレイヤー分解し、構造チェック付きのPSDへ組み立てるワークフロー。組み込みWebUIでまばたき・口・髪/体のモーションをプレビューできる。 | AIモデル・学習 / 小規模・初期評価候補（READMEはv0.1 alphaと明記） | 130 / 2026-10-12 |
-| [mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio) · [詳細](#mesh-avatar-studio) | 1枚のイラストから2Dメッシュアバターを作り、まばたき・口パク・首振り・呼吸・髪の揺れを付けるローカル制作ツール。コーディングエージェントがアバターを準備し、ローカルエディタで微調整してOBSブラウザソースで配信できる。 | AI連携 / 活発・実用候補 | 650 / 2026-10-11 |
-| [umamo](https://github.com/umamoorg/umamo) · [詳細](#umamo) | Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットアニメ向けのオープンソース・リギング/モデリングエディタ。ペンとタッチ入力を重視。 | 非AI制作 / α段階・初期評価候補 | 154 / 2026-10-12 |
+| [psd2live](https://github.com/tsunehimatoi/psd2live) · [詳細](#psd2live) | レイヤー分けしたPSDからLive2Dモデルを自動生成し、同じ作業画面で修形・リギング・物理・アニメーション・書き出しまで行うデスクトップツール。 | AIは任意 / 活発・候補 | 641 / 2026-10-13 |
+| [live2d-py](https://github.com/EasyLive2D/live2d-py) · [詳細](#live2d-py) | Live2DモデルをPythonから直接読み込み・描画するC++拡張ライブラリ。Web Engineを挟まず、OpenGLコンテキストがあれば任意のOpenGLウィンドウに描画できる。 | 非AI制作 / 実運用段階のライブラリ | 576 / 2026-10-13 |
+| [ayagami](https://github.com/AyagamiDev/ayagami) · [詳細](#ayagami) | Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で、wgpuベースのリファレンスレンダラとGodotコンポーネントを備える。 | 非AI制作 / 初期評価候補 | 357 / 2026-09-14 |
+| [Amahane-Hikari-Live2D](https://github.com/luomo66ccff/Amahane-Hikari-Live2D) · [詳細](#amahane-hikari-live2d) | AIエージェントと協働してLive2Dキャラクターを制作し、TypeScript/WebGLのWebランタイムで再生する制作プロジェクト。制作フローをSkillとして公開する。 | AI連携 / 活発な候補 | 112 / 2026-09-21 |
+| [live2d-agent-kit](https://github.com/Ariakage/live2d-agent-kit) · [詳細](#live2d-agent-kit) | coding agentが参考図や分层PSDから.moc3を作るためのLive2D制作キット。psd2liveアダプタ、アニメ超分スクリプト、検証手順を含む。 | AI連携 / 小規模・初期評価候補 | 28 / 2026-09-12 |
+| [iki](https://github.com/zeikar/iki) · [詳細](#iki) | MITの2Dパペットエンジン。AIエージェントが画像モデルでパーツを描き、役割名付きレイヤーから.iki形式へ自動リギングする。 | AI連携 / 初期評価候補 | 17 / 2026-10-13 |
+| [spine-parts](https://github.com/firejune/spine-parts) · [詳細](#spine-parts) | 1枚のアニメ絵からSpine 2Dキャラのパーツを組み立てるCLI。See-throughのレイヤ分解結果を統合し、メッシュ・ボーン・ループidleをspine-rigc仕様で生成、書き出し前に数値で検査する。 | AI連携 / 小規模・初期評価候補 | 3 / 2026-10-13 |
+| [still2rig-psd](https://github.com/shinshin86/still2rig-psd) · [詳細](#still2rig-psd) | 1枚のアニメキャラ画像をSee-throughで意味的にレイヤー分解し、構造チェック付きのPSDへ組み立てるワークフロー。組み込みWebUIでまばたき・口・髪/体のモーションをプレビューできる。 | AIモデル・学習 / 小規模・初期評価候補（READMEはv0.1 alphaと明記） | 131 / 2026-10-13 |
+| [mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio) · [詳細](#mesh-avatar-studio) | 1枚のイラストから2Dメッシュアバターを作り、まばたき・口パク・首振り・呼吸・髪の揺れを付けるローカル制作ツール。コーディングエージェントがアバターを準備し、ローカルエディタで微調整してOBSブラウザソースで配信できる。 | AI連携 / 活発・実用候補 | 673 / 2026-10-11 |
+| [umamo](https://github.com/umamoorg/umamo) · [詳細](#umamo) | Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットアニメ向けのオープンソース・リギング/モデリングエディタ。ペンとタッチ入力を重視。 | 非AI制作 / α段階・初期評価候補 | 154 / 2026-10-13 |
 | [soullink-emotion-sdk](https://github.com/nanlingyin/soullink-emotion-sdk) · [詳細](#soullink-emotion-sdk) | メッセージや音声状態を連続的なVAD感情・FACS/AU表情・身体動作・口型へ変換し、Live2Dキャラをリアルタイムに演技させるTypeScript SDK。 | AIモデル・学習 / 活発・評価候補 | 152 / 2026-09-30 |
+| [ayatsuri_2d](https://github.com/Yoru-KenomoVT/ayatsuri_2d) · [詳細](#ayatsuri-2d) | Live2Dライクな2D人形のリギング・アニメーション編集ソフト。PSD/Kritaのレイヤーを取り込みメッシュ化し、パラメータとデフォーマで動かしてmoc3を書き出す独立実装。 | 非AI制作 / ベータ・小規模 | 3 / 2026-10-13 |
 
 <a id="anime2.5drig"></a>
 
@@ -160,7 +161,7 @@ PSDを読み込み、自動リギングとタイムライン上のメッシュ�
 - **依存**: Live2D Cubism SDKは同梱せず、公式SDKは任意。
 - **制約・未確認**: 自動生成の品質はPSDのレイヤー分けに依存し、書き出し成功が全ランタイムでの同一挙動を保証しないとREADMEが明記。
 - **編集者評価**: レイヤー名からパーツを認識してメッシュ・変形器・頭身パラメータ・待機/瞬き動作・髪物理を自動生成し、Cubism Editorで続きを編集できる形式で書き出せる点が実用的。
-- **メトリクス**: ★630、fork 54、作成 2026-09-03、最終push 2026-10-12T16:10:33Z、archived=False
+- **メトリクス**: ★641、fork 55、作成 2026-09-03、最終push 2026-10-13T15:33:52Z、archived=False
 - **確認**: 2026-09-30 / コミット `a494c6e6d713640f7c07d2114998f80f638275cf`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tsunehimatoi/psd2live/tree/a494c6e6d713640f7c07d2114998f80f638275cf)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -177,7 +178,7 @@ Live2Dモデルの初期リギングと物理設定の工数削減。
 
 **入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/tsunehimatoi/psd2live/blob/a494c6e6d713640f7c07d2114998f80f638275cf/README.md)
 
-**最新GitHub Release**: [v3.4.3](https://github.com/tsunehimatoi/psd2live/releases/tag/v3.4.3) / 2026-10-12T16:10:33Z / prerelease=False
+**最新GitHub Release**: [v3.4.5](https://github.com/tsunehimatoi/psd2live/releases/tag/v3.4.5) / 2026-10-13T15:33:53Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-30T18:27:06Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
 
@@ -195,7 +196,7 @@ Live2DモデルをPythonから直接読み込み・描画するC++拡張ライ�
 - **依存**: Live2D Cubism Native SDK、OpenGL対応のUIライブラリ
 - **制約・未確認**: Cubism Coreを同梱できないため、ソースビルド時はSDKを自分で用意する必要がある。READMEにモーション編集やモデル制作機能の記載はない。
 - **編集者評価**: Pygame／PyQt5／PySide6／GLFW等へ組み込めるため、自作VTuberやコンパニオンの描画層を自前実装する土台になる。
-- **メトリクス**: ★576、fork 55、作成 2024-06-04、最終push 2026-10-12T16:34:44Z、archived=False
+- **メトリクス**: ★576、fork 55、作成 2024-06-04、最終push 2026-10-13T17:01:11Z、archived=False
 - **確認**: 2026-10-02 / コミット `35f686412470ea25718fa9c76ee4f1809f6a8506`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/EasyLive2D/live2d-py/tree/35f686412470ea25718fa9c76ee4f1809f6a8506)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -230,7 +231,7 @@ Live2D（MOC3）互換の2Dパペット読み込み・描画SDK。Rust実装で�
 - **依存**: wgpu、egui（デモ）、Godot（ayagami-gd）
 - **制約・未確認**: API未安定・ドキュメント未整備で、表情ファイル／ポーズファイル／モーションの対応はTODOのまま。現状PRは受け付けておらず、crates.io公開も未実施。
 - **編集者評価**: ブラックボックス解析のみで書かれた独立実装で、ゲーム組込みや自作VTuberソフトの描画基盤に使える。
-- **メトリクス**: ★353、fork 17、作成 2026-07-11、最終push 2026-09-14T14:19:06Z、archived=False
+- **メトリクス**: ★357、fork 18、作成 2026-07-11、最終push 2026-09-14T14:19:06Z、archived=False
 - **確認**: 2026-10-02 / コミット `0d1d7aa3efe57b1b363b72e672e353c52a9c15d6`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/AyagamiDev/ayagami/tree/0d1d7aa3efe57b1b363b72e672e353c52a9c15d6)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -265,7 +266,7 @@ AIエージェントと協働してLive2Dキャラクターを制作し、TypeSc
 - **依存**: Live2D Cubism SDK for Web（別途取得）、npm依存
 - **制約・未確認**: キャラクター資産は自作のNo-AIライセンスで、AI/ML学習への利用が禁止。SDKは同梱されない。
 - **編集者評価**: Live2Dモデルの制作からWeb表示までの手順と検証（70項目のSDK不要CIなど）が公開され、AI支援制作の再現に使いやすい。
-- **メトリクス**: ★113、fork 1、作成 2026-09-10、最終push 2026-09-21T15:42:38Z、archived=False
+- **メトリクス**: ★112、fork 1、作成 2026-09-10、最終push 2026-09-21T15:42:38Z、archived=False
 - **確認**: 2026-10-03 / コミット `246bbd195bf260e6e35f11c0c1c24fdc1b3d097d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/luomo66ccff/Amahane-Hikari-Live2D/tree/246bbd195bf260e6e35f11c0c1c24fdc1b3d097d)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -300,7 +301,7 @@ coding agentが参考図や分层PSDから.moc3を作るためのLive2D制作キ
 - **依存**: psd2live、Upscayl CLI、Live2D Core（別途取得）
 - **制約・未確認**: 肩・腕・指の独立绑定は実装範囲外。示例資産はCC BY 4.0で、作者はLive2D社と無関係と明記。
 - **編集者評価**: Live2D制作の工程と検査をエージェント向けに文書化し、示例モデルと202項目の検証記録を公開している。
-- **メトリクス**: ★27、fork 1、作成 2026-09-11、最終push 2026-09-12T16:28:19Z、archived=False
+- **メトリクス**: ★28、fork 1、作成 2026-09-11、最終push 2026-09-12T16:28:19Z、archived=False
 - **確認**: 2026-10-03 / コミット `94e79e3a94753ae1bd29204d3ed685a3c7b59022`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Ariakage/live2d-agent-kit/tree/94e79e3a94753ae1bd29204d3ed685a3c7b59022)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -335,7 +336,7 @@ MITの2Dパペットエンジン。AIエージェントが画像モデルでパ�
 - **依存**: 画像生成モデル（別途）、npm
 - **制約・未確認**: 作者自身が早期と明記し、スキーマは流動的。Live2D/Inochi2Dより成熟度は低い。
 - **編集者評価**: オープンなJSON形式と自動リギングで、エージェントによるLive2D代替制作を試せる。作者が0.xの早期と明記している。
-- **メトリクス**: ★17、fork 1、作成 2026-06-04、最終push 2026-10-12T13:21:07Z、archived=False
+- **メトリクス**: ★17、fork 1、作成 2026-06-04、最終push 2026-10-13T21:52:57Z、archived=False
 - **確認**: 2026-10-03 / コミット `e0ebdd542212e60847ca3af37965c73e77301ad1`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/zeikar/iki/tree/e0ebdd542212e60847ca3af37965c73e77301ad1)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -370,7 +371,7 @@ MITの2Dパペットエンジン。AIエージェントが画像モデルでパ�
 - **依存**: See-through、spine-rigc、入力の立ち絵とレイヤ分解結果
 - **制約・未確認**: READMEは特定チェックポイント（Pony Diffusion V6 XL）と手作業編集を伴う例を記載。入力は正面・全身で縦長の1キャラに限定。
 - **編集者評価**: エージェント向けに検査結果を数値で出す設計で、レイヤ分解からリグ生成まで再現性を重視。2Dキャラの自動リギング検証に有用。
-- **メトリクス**: ★2、fork 0、作成 2026-09-27、最終push 2026-10-12T23:34:19Z、archived=False
+- **メトリクス**: ★3、fork 0、作成 2026-09-27、最終push 2026-10-13T20:40:28Z、archived=False
 - **確認**: 2026-10-05 / コミット `774ef0414fdb9e8b045803675d61664339965604`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/firejune/spine-parts/tree/774ef0414fdb9e8b045803675d61664339965604)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -387,7 +388,7 @@ Spine/Live2D系の2Dリグ工程の自動化・検証の足がかりになる。
 
 **入口候補（固定ツリーで存在確認）**: [cli.ts](https://github.com/firejune/spine-parts/blob/774ef0414fdb9e8b045803675d61664339965604/cli.ts) / [src/comfy/index.ts](https://github.com/firejune/spine-parts/blob/774ef0414fdb9e8b045803675d61664339965604/src/comfy/index.ts) / [src/raster/index.ts](https://github.com/firejune/spine-parts/blob/774ef0414fdb9e8b045803675d61664339965604/src/raster/index.ts)
 
-**最新GitHub Release**: [v1.14.0](https://github.com/rig-c/parts/releases/tag/v1.14.0) / 2026-10-12T22:46:53Z / prerelease=False
+**最新GitHub Release**: [v1.20.0](https://github.com/rig-c/parts/releases/tag/v1.20.0) / 2026-10-13T20:22:44Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-10-05T09:13:09Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
 
@@ -405,7 +406,7 @@ Spine/Live2D系の2Dリグ工程の自動化・検証の足がかりになる。
 - **依存**: See-through、colab-mcp-go、Google Colab、Node.js/Python/Go
 - **制約・未確認**: READMEは1枚の静止画では閉じ目や別口の立ち絵を用意できず、欠落を報告するとしている。Colab接続はユーザー承認が必要。
 - **編集者評価**: 静止画から2Dリグ用PSDを作る工程を半自動化でき、Live2D等の下準備へ接続しやすい。
-- **メトリクス**: ★130、fork 14、作成 2026-08-29、最終push 2026-10-12T22:12:54Z、archived=False
+- **メトリクス**: ★131、fork 14、作成 2026-08-29、最終push 2026-10-13T09:16:57Z、archived=False
 - **確認**: 2026-10-06 / コミット `29f2c086fef408483cdd1650b6b7626e27117600`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/shinshin86/still2rig-psd/tree/29f2c086fef408483cdd1650b6b7626e27117600)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -440,7 +441,7 @@ Spine/Live2D系の2Dリグ工程の自動化・検証の足がかりになる。
 - **依存**: Node.js、MediaPipe tasks-vision、コーディングエージェント
 - **制約・未確認**: 同梱サンプル「Miko」はMIT対象外で再配布不可とREADMEが明記。推奨エージェント/モデルはREADMEの案内であり品質は未検証。
 - **編集者評価**: イラスト1枚から配信用の動く2Dアバターを用意する工程が具体的。エージェントによる下準備とエディタでの手直しが分離されている。
-- **メトリクス**: ★650、fork 78、作成 2026-10-04、最終push 2026-10-11T23:14:37Z、archived=False
+- **メトリクス**: ★673、fork 79、作成 2026-10-04、最終push 2026-10-11T23:14:37Z、archived=False
 - **確認**: 2026-10-10 / コミット `6f6d3625349b2971d3ac7f6bf6ded0c082d74e52`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/shinshin86/mesh-avatar-studio/tree/6f6d3625349b2971d3ac7f6bf6ded0c082d74e52)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -475,7 +476,7 @@ Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットア�
 - **依存**: Java（.jar版）、入力するPSD等の素材
 - **制約・未確認**: READMEにα段階でAPI・形式・範囲が流動的と明記。アニメーション機能は未実装（長期目標）。Windowsビルドは未署名。破損対策としてバックアップ推奨。
 - **編集者評価**: Live2D Cubism Editorのドロップイン代替を目指すクロスプラットフォームエディタで、リギング工程の選択肢になりうる。
-- **メトリクス**: ★154、fork 18、作成 2026-07-13、最終push 2026-10-12T11:28:08Z、archived=False
+- **メトリクス**: ★154、fork 18、作成 2026-07-13、最終push 2026-10-13T08:01:02Z、archived=False
 - **確認**: 2026-10-11 / コミット `e6675e78190fb54687958f624456a22932df83eb`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/umamoorg/umamo/tree/e6675e78190fb54687958f624456a22932df83eb)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -510,7 +511,7 @@ Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットア�
 - **依存**: Live2DモデルとCubism Core、任意でEmbedding/OpenAI互換Planner/TTS
 - **制約・未確認**: Live2Dモデル・テクスチャ・Cubism Coreは本SDKのApache-2.0範囲外。Embedding/Planner/TTSモードは別途サービス設定が必要。
 - **編集者評価**: 感情の強度と時系列を持つレイヤー構成で、机寵やAIキャラの表情・動作制御を一貫させやすい。PIXIレンダラやVue校正ツールも同梱。
-- **メトリクス**: ★152、fork 14、作成 2026-07-18、最終push 2026-09-30T11:07:55Z、archived=False
+- **メトリクス**: ★152、fork 15、作成 2026-07-18、最終push 2026-09-30T11:07:55Z、archived=False
 - **確認**: 2026-10-11 / コミット `02cd75ac0a085a87d84d1a885f1b33eca8742d53`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/nanlingyin/soullink-emotion-sdk/tree/02cd75ac0a085a87d84d1a885f1b33eca8742d53)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -530,3 +531,38 @@ Live2D Cubismのソース形式(.cmo3)と相互運用する、2Dパペットア�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-09-21T10:52:20Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="ayatsuri-2d"></a>
+
+## ayatsuri_2d
+
+Live2Dライクな2D人形のリギング・アニメーション編集ソフト。PSD/Kritaのレイヤーを取り込みメッシュ化し、パラメータとデフォーマで動かしてmoc3を書き出す独立実装。
+
+- **リポジトリ**: https://github.com/Yoru-KenomoVT/ayatsuri_2d
+- **分類**: desktop_tool / 非AI制作 / ベータ・小規模
+- **入力**: PSD / Kritaファイル、既存のCubismモデル(.model3.json / .moc3)
+- **出力**: moc3バンドル(モデル/物理/モーション/表情/テクスチャ)、独自の.aom形式
+- **環境**: Windows/macOS/Linux向け公式ビルドあり。ソースビルドはRust。
+- **依存**: 入力するレイヤー画像、ビルド時のRustツールチェーン
+- **制約・未確認**: READMEはベータで「頻繁に保存しバックアップを」と注意喚起。ビルドはApple/Microsoft未署名。
+- **編集者評価**: 商用Cubism Editorの代替を狙う独立実装で、moc3 v3.0〜5.3の読み書きとCubism Editorの連携API互換をREADMEが明記。Live2D社とは無関係のクリーンルーム開発と説明。
+- **メトリクス**: ★3、fork 0、作成 2026-09-08、最終push 2026-10-13T16:12:28Z、archived=False
+- **確認**: 2026-10-13 / コミット `1ab63b7c4ef3363fe44c6912512a899c40375035`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Yoru-KenomoVT/ayatsuri_2d/tree/1ab63b7c4ef3363fe44c6912512a899c40375035)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Yoru-KenomoVT/ayatsuri_2d/blob/1ab63b7c4ef3363fe44c6912512a899c40375035/README.md) / [GitHub API](https://api.github.com/repos/Yoru-KenomoVT/ayatsuri_2d) / [固定ツリー](https://github.com/Yoru-KenomoVT/ayatsuri_2d/tree/1ab63b7c4ef3363fe44c6912512a899c40375035)
+
+### 制作に使う際の検討
+
+Live2Dモデルのリギング工程とmoc3書き出しの検証に。
+
+**次に確かめること（実施前）**: 手持ちPSDを取り込み、moc3書き出し→VTube Studio表示まで通して崩れを確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [apps/ayatsuri-launcher/src/main.rs](https://github.com/Yoru-KenomoVT/ayatsuri_2d/blob/1ab63b7c4ef3363fe44c6912512a899c40375035/apps/ayatsuri-launcher/src/main.rs) / [apps/ayatsuri/src/main.rs](https://github.com/Yoru-KenomoVT/ayatsuri_2d/blob/1ab63b7c4ef3363fe44c6912512a899c40375035/apps/ayatsuri/src/main.rs) / [crates/editor/src/api/server.rs](https://github.com/Yoru-KenomoVT/ayatsuri_2d/blob/1ab63b7c4ef3363fe44c6912512a899c40375035/crates/editor/src/api/server.rs)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-10-13T16:08:31Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

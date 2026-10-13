@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "checked_on": "2026-10-12",
+ "checked_on": "2026-10-13",
  "scope_ja": "アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。",
  "notice_ja": "**注意**: リンク先のコード・モデル・音声・キャラクター素材の権利はそれぞれ別です。掲載は動作・安全性・商用利用の保証ではありません。導入前に各リポジトリのライセンス、同梱素材と外部APIの利用条件を確認してください。版権キャラのモデル・声の再利用や、実在人物の発言・私的な記録を用いた人格作成には権利と同意の確認が必要です。",
  "discovery_md": "調査の入口: [live2d](https://github.com/topics/live2d) · [vtuber](https://github.com/topics/vtuber) · [anime](https://github.com/topics/anime) · [waifu](https://github.com/topics/waifu) · [virtualassistant](https://github.com/topics/virtualassistant) · [ai-companion](https://github.com/topics/ai-companion) · [chatbot](https://github.com/topics/chatbot) · [digital-human](https://github.com/topics/digital-human) のトピック、GitHubの関連語検索、[awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers) と [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion)。候補リストやトピックの掲載だけで採用せず、各プロジェクトのREADME・関連ドキュメントで機能と未実装部分を確認しています（2026-09-23）。",
@@ -852,6 +852,16 @@
    "summary_ja": "VRMアバターをthree.jsで描画する自律型AI VTuber配信アプリ。Kokoro等のTTSでリップシンクし、MMDモーション再生、チャット取り込み、OBS/Streamer.bot連携、Hermes Agentによる自律ホストに対応。Dockerで一式起動。",
    "catalog_id": null,
    "checked_on": "2026-10-09"
+  },
+  {
+   "id": "helpmeeadice-bandori-pet-rev",
+   "name": "BANDORI-PET-REV",
+   "url": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+   "repository": "HELPMEEADICE/BANDORI-PET-REV",
+   "section_id": "s1",
+   "summary_ja": "BanG Dream!のキャラをLive2Dでデスクトップに住まわせるペット。51+キャラ・305+衣装に対応し、自研LuaJITレンダリングで頭部追従・クリック反応、LLMロールプレイと好感度/記憶、Qwen3TTS音声＋口パク同期、faster-whisper音声入力、MCP/Computer Use連携、多角色同時表示を備える。キャラ模型著作権は原権利者に帰属し商用不可と明記。",
+   "catalog_id": null,
+   "checked_on": "2026-10-13"
   }
  ]
 }

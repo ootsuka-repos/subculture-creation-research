@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,7 +14,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [ai-comic-factory](https://github.com/jbilcke-hf/ai-comic-factory) · [詳細](#ai-comic-factory) | LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装。 | AI連携 / 旧版・履歴資料 | 1,341 / 2025-10-30 |
 | [DiffSensei](https://github.com/jianzongwu/DiffSensei) · [詳細](#diffsensei) | 複数キャラ参照と配置を条件に白黒漫画のコマを生成する。 | AIモデル・学習 / モデル・研究候補 | 925 / 2025-02-05 |
-| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,537 / 2026-10-12 |
+| [krita](https://github.com/KDE/krita) · [詳細](#krita) | 漫画・イラスト制作に使うデジタルペイントアプリ。 | 非AI制作 / 定番の制作基盤 | 10,539 / 2026-10-13 |
 | [manga-editor-desu](https://github.com/new-sankaku/manga-editor-desu) · [詳細](#manga-editor-desu) | ブラウザでコマ割り、吹き出し、縦書き、レイヤー編集とAI生成連携を行う。 | AIは任意 / 更新のある導入・評価候補 | 391 / 2026-10-08 |
 | [MangaNinja](https://github.com/ali-vilab/MangaNinjia) · [詳細](#manganinjia) | 参照画像と点対応を使い、線画のキャラクターに指定色を反映する。 | AIモデル・学習 / モデル・研究候補 | 742 / 2025-03-02 |
 | [OpenKoma](https://github.com/Reuben-Sun/OpenKoma) · [詳細](#openkoma) | 手持ち画像をコマに配置し、複数ページの漫画に組み立てる編集ツール。 | 非AI制作 / 小規模・初期評価候補 | 14 / 2026-05-08 |
@@ -27,6 +27,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | [MangaFlow](https://github.com/coffe01-10/MangaFlow) · [詳細](#mangaflow) | 小説テキストから漫画ページを作るローカル優先の単一ユーザー向けワークベンチ。原作・キャラ/衣装参照・絵コンテ・ページ候補を追跡可能な形でまとめ、AIは補助し人間が承認して進める。 | AIモデル・学習 / 小規模・初期評価候補（Windows v1.0.0-rc2） | 2 / 2026-10-05 |
 | [AI-Comic-Generator](https://github.com/Dapeng960208/AI-Comic-Generator) · [詳細](#ai-comic-generator) | テキストの物語から、絵コンテ生成・キャラクター設定（三面図）・キャラ一貫性チェック・ビジュアル編集まで行うオープンソースの漫画制作ツール。Google Geminiモデルを利用し、全体をJSONで管理する。 | AIモデル・学習 / 小規模・初期評価候補 | 14 / 2026-01-28 |
 | [Manga-Creator](https://github.com/QuangTQV/Manga-Creator) · [詳細](#manga-creator) | ブラウザで動くオープンソースのAI漫画スタジオ。AIで再利用可能なキャラ/ポーズ/表情/背景アセットを作り、非破壊パネルエディタでページに組む。Manga Agentが自然文から編集操作を組み立てる。 | AIモデル・学習 / 活発・実用候補 | 1 / 2026-09-18 |
+| [panelforge](https://github.com/DATGMAC/panelforge) · [詳細](#panelforge) | 漫画/韓国漫画のコマ分割と読み順番号付けを行う小型U-Net。pretrained backbone無しでコマのマスク・境界を推定し、幾何のXYカットで読み順を付ける。 | AIモデル・学習 / 初期版(小規模) | 0 / 2026-07-08 |
 
 <a id="ai-comic-factory"></a>
 
@@ -116,7 +117,7 @@ LLMと画像生成を連携してコマを作るAI漫画アプリの参考実装
 - **依存**: 通常の描画にはAIモデル不要
 - **制約・未確認**: GitHubは公式ミラーで、開発元はKDE。標準アプリをAI生成モデルとして扱わない。
 - **編集者評価**: 生成結果の手直しや原稿制作を担う定番基盤。
-- **メトリクス**: ★10,537、fork 878、作成 2015-10-09、最終push 2026-10-12T12:50:58Z、archived=False
+- **メトリクス**: ★10,539、fork 879、作成 2015-10-09、最終push 2026-10-13T09:19:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `75db0d95e142c9251dc27483180148f77d4de014`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/KDE/krita/tree/75db0d95e142c9251dc27483180148f77d4de014)。GitHub自動判定=GPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -560,3 +561,38 @@ PNG/PDFとプロジェクトJSONを併用し、画像だけの成果物から編
 **最新GitHub Release**: [v1.0.0](https://github.com/QuangTQV/Manga-Creator/releases/tag/v1.0.0) / 2026-09-18T04:24:52Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-09-18T09:09:17Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="panelforge"></a>
+
+## panelforge
+
+漫画/韓国漫画のコマ分割と読み順番号付けを行う小型U-Net。pretrained backbone無しでコマのマスク・境界を推定し、幾何のXYカットで読み順を付ける。
+
+- **リポジトリ**: https://github.com/DATGMAC/panelforge
+- **分類**: model_toolkit / AIモデル・学習 / 初期版(小規模)
+- **入力**: 漫画/Webtoonのページ画像
+- **出力**: マスク重ねPNG、コマ単位のマスク、読み順のJSON
+- **環境**: Python実行環境。明示の記載はないが学習はbf16/CUDA想定の構成。
+- **依存**: Manga109由来データセット(学習時)
+- **制約・未確認**: 4コマ見開きで綴じ目が揃うとページが交互になる既知制限。より大きい多コンポーネント版(テキスト/顔/吹き出し)は学習中。
+- **編集者評価**: 学習はシングルGPUで分単位という軽量設計。--directionでマンガ(右→左)/マンファ(左→右)を切替。held-outのコマF1@0.5は0.863/信頼度フィルタ後0.898とREADMEに記載。
+- **メトリクス**: ★0、fork 0、作成 2026-07-08、最終push 2026-07-08T15:12:59Z、archived=False
+- **確認**: 2026-10-13 / コミット `49f39e2f1af03ffa68acbe14fca84093c01d5b52`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/DATGMAC/panelforge/tree/49f39e2f1af03ffa68acbe14fca84093c01d5b52)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/DATGMAC/panelforge/blob/49f39e2f1af03ffa68acbe14fca84093c01d5b52/README.md) / [GitHub API](https://api.github.com/repos/DATGMAC/panelforge) / [固定ツリー](https://github.com/DATGMAC/panelforge/tree/49f39e2f1af03ffa68acbe14fca84093c01d5b52)
+
+### 制作に使う際の検討
+
+漫画翻訳/編集の前処理(コマ検出・読み順)に。
+
+**次に確かめること（実施前）**: 手持ちページでコマF1と読み順の崩れを確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/DATGMAC/panelforge/blob/49f39e2f1af03ffa68acbe14fca84093c01d5b52/README.md)
+
+**最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
+
+デフォルトブランチの確認コミット日時: 2026-07-08T15:12:37Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

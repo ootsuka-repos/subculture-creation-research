@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -14,14 +14,14 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | --- | --- | --- | --- |
 | [Effekseer](https://github.com/effekseer/Effekseer) · [詳細](#effekseer) | ゲーム向けのパーティクル効果を編集し、ランタイムで再生する。 | 非AI制作 / 制作基盤として比較 | 1,797 / 2026-09-14 |
 | [GenCompositor](https://github.com/TencentARC/GenCompositor) · [詳細](#gencompositor) | 前景・背景と制御条件を用いて動画を生成合成する。 | AIモデル・学習 / 小規模・初期候補 | 157 / 2026-06-30 |
-| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,981 / 2026-10-07 |
+| [Material Maker](https://github.com/RodZill4/material-maker) · [詳細](#material-maker) | ノードで手続き的なテクスチャを作り、3Dモデルへのペイントも行う。 | 非AI制作 / 制作基盤として比較 | 5,983 / 2026-10-13 |
 | [OmniLottie](https://github.com/OpenVGLab/OmniLottie) · [詳細](#omnilottie) | テキスト・画像等から編集可能なLottieベクターアニメーションを生成する。 | AIモデル・学習 / モデル・研究候補 | 798 / 2026-04-06 |
 | [VfxDB](https://github.com/VfxDB-Official/VfxDB) · [詳細](#vfxdb) | OpenVDB由来の疎な3Dボリューム効果を学習・生成する。 | AIモデル・学習 / 小規模・初期候補 | 8 / 2026-08-19 |
 | [VFXMaster](https://github.com/libaolu312/VFXMaster) · [詳細](#vfxmaster) | 効果の参照映像を条件に動的なVFX動画を生成する。 | AIモデル・学習 / 小規模・初期候補 | 67 / 2026-04-07 |
 | [cHiDeScaler-Neo](https://github.com/animeojisan/cHiDeScaler-Neo) · [詳細](#chidescaler-neo) | Windowsの任意ウィンドウをリアルタイムキャプチャし、GLSL/ONNXでAI拡大とRIFE系フレーム補間をかけるポータブルアプリ。Anime4K等のシェーダ資産を利用できる。 | AIモデル・学習 / 小規模・初期評価候補 | 22 / 2026-10-11 |
-| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-12 |
+| [ComfyUI-CustomNodePacks](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks) · [詳細](#comfyui-customnodepacks) | ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM3セグメンテーション、alpha matting、inpaintのcrop/stitch、動画マスク伝搬、EXR入出力・LUT等のVFXツールを含む。 | AI連携 / 活発・実用候補 | 58 / 2026-10-13 |
 | [relight-anime](https://github.com/yuichi-suzuki-highdrama/relight-anime) · [詳細](#relight-anime) | 生成済みのAIアニメ映像に後から光を足すAfter Effectsプラグイン。深度推定で面の向き・凹みの陰・落ち影を作り、セル調陰影とリムライトを加えつつ線画を保護する。 | AI出力の後処理 / 活発・実用候補 | 43 / 2026-10-09 |
-| [three-liltoon](https://github.com/mochiya-labs/three-liltoon) · [詳細](#three-liltoon) | lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデルやVRMアバターをtoon描画するライブラリ。 | 非AI制作 / α段階・評価候補 | 28 / 2026-10-12 |
+| [three-liltoon](https://github.com/mochiya-labs/three-liltoon) · [詳細](#three-liltoon) | lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデルやVRMアバターをtoon描画するライブラリ。 | 非AI制作 / α段階・評価候補 | 30 / 2026-10-12 |
 | [AnimeEnhancer](https://github.com/picki1/AnimeEnhancer) · [詳細](#animeenhancer) | MPV不要で、Windowsの全画面ブラウザ動画にAnime4Kベースのリアルタイム拡大/復元をかけるユーティリティ。 | AI出力の後処理 / β段階・初期評価候補 | 13 / 2026-08-10 |
 
 <a id="effekseer"></a>
@@ -112,7 +112,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Godot、任意のユーザー素材
 - **制約・未確認**: 生成AIモデルではない。出力先のPBRチャンネルと色空間を合わせる必要がある。
 - **編集者評価**: ゲーム・背景・トゥーン素材の反復制作に向く。
-- **メトリクス**: ★5,981、fork 384、作成 2018-07-22、最終push 2026-10-07T05:09:54Z、archived=False
+- **メトリクス**: ★5,983、fork 386、作成 2018-07-22、最終push 2026-10-13T19:41:31Z、archived=False
 - **確認**: 2026-09-09 / コミット `ad19fcf0ee34a7caf74df709dc4de7112f0d467d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/RodZill4/material-maker/tree/ad19fcf0ee34a7caf74df709dc4de7112f0d467d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -147,7 +147,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: VLM系モデル、Lottieの描画・変換環境
 - **制約・未確認**: ラスタ動画やLive2Dリグとは別形式。重みのライセンスメタデータは未設定。
 - **編集者評価**: 配信画面の動くアイコンやゲームUIの短い演出に新しい選択肢。
-- **メトリクス**: ★798、fork 40、作成 2026-01-15、最終push 2026-04-06T04:01:50Z、archived=False
+- **メトリクス**: ★798、fork 41、作成 2026-01-15、最終push 2026-04-06T04:01:50Z、archived=False
 - **確認**: 2026-09-09 / コミット `26131278e7b46bc2f64f989b25bb816f9e07c528`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/OpenVGLab/OmniLottie/tree/26131278e7b46bc2f64f989b25bb816f9e07c528)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -303,7 +303,7 @@ ComfyUI向けの大規模カスタムノード群（142ノード）。SAM2.1/SAM
 - **依存**: SAM2.1/SAM3、ViTMatte、BiRefNet等の外部モデル
 - **制約・未確認**: RMBG-2.0バックエンドは商用不可でBRIAのライセンスが必要と明記。torch/numpy等を再インストールするとComfyUIを壊す恐れがあると注意喚起。
 - **編集者評価**: マスク編集・インペイント・動画マスク伝搬をComfyUI内で完結でき、アニメ素材のレイヤ/マスク処理に応用しやすい。
-- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-12T20:24:15Z、archived=False
+- **メトリクス**: ★58、fork 10、作成 2026-02-19、最終push 2026-10-13T03:17:20Z、archived=False
 - **確認**: 2026-10-05 / コミット `cbfd4abead2d03c1fb3c619263b135f21c54cc54`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Code2Collapse/ComfyUI-CustomNodePacks/tree/cbfd4abead2d03c1fb3c619263b135f21c54cc54)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -373,7 +373,7 @@ lilToonのシェーディングをThree.js（WebGL2）で再現し、GLBモデ�
 - **依存**: three、任意で@pixiv/three-vrm、lilToon設定付きGLB/VRM
 - **制約・未確認**: α版でUnityとのピクセル一致は保証しない。WebGPU/WebXR非対応。追加ライトやUnityの影/プローブ/フォグ等は再現しない。
 - **編集者評価**: Unity由来のlilToonマテリアルをWebで再現でき、VRMと組み合わせたtoon表現の選択肢になる。
-- **メトリクス**: ★28、fork 1、作成 2026-09-02、最終push 2026-10-12T21:06:58Z、archived=False
+- **メトリクス**: ★30、fork 2、作成 2026-09-02、最終push 2026-10-12T21:06:58Z、archived=False
 - **確認**: 2026-10-11 / コミット `ac06d5524b3420421c521d8057feff60cf050fb5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/mochiya-labs/three-liltoon/tree/ac06d5524b3420421c521d8057feff60cf050fb5)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。

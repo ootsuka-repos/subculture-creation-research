@@ -1,6 +1,6 @@
-# 会話できるアニメ系AIキャラクター（79件）
+# 会話できるアニメ系AIキャラクター（80件）
 
-最終確認日: 2026-10-12。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
+最終確認日: 2026-10-13。[制作系リポジトリ一覧](../README.md) · [companion-catalog.json](../companion-catalog.json) · [companion-catalog.jsonl](../companion-catalog.jsonl)
 
 アニメ・二次元系の会話できるAIキャラクターを作る／動かすためのGitHubリポジトリ集。Live2DやVRMの姿を持つデスクトップ伴侶・AI VTuberを中心に、キャラクター対話、人格・会話記憶の制作、アバター実装に直接役立つものを分類。
 
@@ -51,6 +51,7 @@
 - [ff14-ai-companion](https://github.com/michaelchang-jpg/ff14-ai-companion) — FFXIVを一緒に遊ぶLive2Dデスクトップコンパニオン。Dalamudプラグインで戦闘・副本・探索イベントを取得し、VOICEVOXの日本語音声と繁体中文字幕で反応する。
 - [desktop-agent-runtime](https://github.com/lulu930128/desktop-agent-runtime) — Windows向けlocal-firstの個人AIワークマネージャ。Open-LLM-VTuber・GPT-SoVITS・Live2Dを統合し、Live2D桌寵・Reader・Briefing・受控ツール・ローカル記憶を提供する。
 - [kataru](https://github.com/frubot/kataru) — OpenRouter/OpenAI互換/Anthropicに接続するローカル優先のロールプレイチャットアプリ。VRM 0.x/1.0アバターの表示・操作、VOICEVOXやIrodori TTSでの読み上げとVRMリップシンク、複数キャラのシチュエーション会話、メモリ保存に対応。単一バイナリで配布。
+- [BANDORI-PET-REV](https://github.com/HELPMEEADICE/BANDORI-PET-REV) — BanG Dream!のキャラをLive2Dでデスクトップに住まわせるペット。51+キャラ・305+衣装に対応し、自研LuaJITレンダリングで頭部追従・クリック反応、LLMロールプレイと好感度/記憶、Qwen3TTS音声＋口パク同期、faster-whisper音声入力、MCP/Computer Use連携、多角色同時表示を備える。キャラ模型著作権は原権利者に帰属し商用不可と明記。
 
 ## AI VTuber・配信
 

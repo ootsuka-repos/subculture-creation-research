@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,10 +13,11 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [BlueFish](https://github.com/bluefish2026/BlueFish) · [詳細](#bluefish) | 複数のAIプロバイダを接続し、脚本から絵コンテ・動画制作まで管理する。 | AI連携 / 小規模・初期評価候補 | 8 / 2026-04-22 |
-| [ink](https://github.com/inkle/ink) · [詳細](#ink) | 分岐する物語を書くスクリプト言語、コンパイラ、実行ランタイム。 | 非AI制作 / 制作基盤として比較 | 4,968 / 2026-05-05 |
-| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,370 / 2026-10-02 |
+| [ink](https://github.com/inkle/ink) · [詳細](#ink) | 分岐する物語を書くスクリプト言語、コンパイラ、実行ランタイム。 | 非AI制作 / 制作基盤として比較 | 4,970 / 2026-05-05 |
+| [SillyTavern](https://github.com/SillyTavern/SillyTavern) · [詳細](#sillytavern) | キャラ設定とLorebookを使い、LLMとの対話や世界観の試作を行うフロントエンド。 | AI連携 / 更新のある導入・評価候補 | 34,413 / 2026-10-02 |
 | [Yarn Spinner](https://github.com/YarnSpinnerTool/YarnSpinner) · [詳細](#yarnspinner) | ゲームの会話記述をコンパイル・実行する台詞制作基盤。 | 非AI制作 / 制作基盤として比較 | 2,856 / 2026-10-01 |
-| [YumingScroll](https://github.com/tansuanyl/YumingScroll) · [詳細](#yumingscroll) | 物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。 | AI連携 / 早期開発 | 1 / 2026-10-06 |
+| [YumingScroll](https://github.com/tansuanyl/YumingScroll) · [詳細](#yumingscroll) | 物語テキストから世界観・人物・分鏡・画像/動画資産をひとつのプロジェクトにまとめるセルフホスト型AI漫劇制作ワークベンチ。Flow Mapで人物・場景・画風・15秒台本を接続する。 | AI連携 / 早期開発 | 1 / 2026-10-13 |
+| [deepseek-whalechan](https://github.com/Neko3000/deepseek-whalechan) · [詳細](#deepseek-whalechan) | コミュニティ発キャラ「Whale-chan」を一貫生成するためのキャラ設定仕様・参照アセット・Agentスキル群。視覚特徴の固定や頭身の数値規定、口調維持を提供する。 | AI連携 / コミュニティ製・非公式(初期) | 260 / 2026-10-11 |
 
 <a id="bluefish"></a>
 
@@ -67,7 +68,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲームエンジンまたはWebランタイム
 - **制約・未確認**: LLMではない。画面演出・音声・立ち絵表示はホスト側で実装する。
 - **編集者評価**: 生成したシナリオを分岐・変数・セーブ可能な構造へ落とす工程に適する。
-- **メトリクス**: ★4,968、fork 543、作成 2016-01-23、最終push 2026-05-05T11:24:42Z、archived=False
+- **メトリクス**: ★4,970、fork 543、作成 2016-01-23、最終push 2026-05-05T11:24:42Z、archived=False
 - **確認**: 2026-09-09 / コミット `35c63e52f1d36060930dc7ed3cfba38ea224b528`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/inkle/ink/tree/35c63e52f1d36060930dc7ed3cfba38ea224b528)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -102,7 +103,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLM、任意の画像生成・TTSバックエンド
 - **制約・未確認**: 完成シナリオの整合性を自動保証するものではない。独自LLM重みは提供しない。
 - **編集者評価**: キャラクター設計やシナリオの対話試作に使う候補。
-- **メトリクス**: ★34,370、fork 6,445、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
+- **メトリクス**: ★34,413、fork 6,452、作成 2023-02-09、最終push 2026-10-02T22:05:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/SillyTavern/SillyTavern/tree/8172dcd0ee672d3cd9a5e5f7af134f91a45cd2b8)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -172,7 +173,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: Next.js/React、NestJS、Prisma、OpenAI/Moonshot互換API、Seedance/Volcengine Ark等
 - **制約・未確認**: MockモードはUI検証用で生成品質の評価には使えない。実生成には外部Provider契約と費用が必要。単一ユーザー想定でアクセス制御なし。
 - **編集者評価**: テキスト→分鏡→画像/動画を一気通貫で扱う構成が参考になる。作者は早期開発段階と明記。
-- **メトリクス**: ★1、fork 0、作成 2026-07-11、最終push 2026-10-06T19:02:20Z、archived=False
+- **メトリクス**: ★1、fork 0、作成 2026-07-11、最終push 2026-10-13T21:41:41Z、archived=False
 - **確認**: 2026-10-07 / コミット `0255f68bba977599f06ec2f96ef7dcc9ad2732f6`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tansuanyl/YumingScroll/tree/0255f68bba977599f06ec2f96ef7dcc9ad2732f6)。GitHub自動判定=AGPL-3.0。独立レビュー・商用可否判定は未実施。
@@ -192,3 +193,38 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 **最新GitHub Release**: [v0.1.1](https://github.com/tansuanyl/YumingScroll/releases/tag/v0.1.1) / 2026-07-13T14:44:40Z / prerelease=False
 
 デフォルトブランチの確認コミット日時: 2026-07-13T15:45:02Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="deepseek-whalechan"></a>
+
+## deepseek-whalechan
+
+コミュニティ発キャラ「Whale-chan」を一貫生成するためのキャラ設定仕様・参照アセット・Agentスキル群。視覚特徴の固定や頭身の数値規定、口調維持を提供する。
+
+- **リポジトリ**: https://github.com/Neko3000/deepseek-whalechan
+- **分類**: workflow_tool / AI連携 / コミュニティ製・非公式(初期)
+- **入力**: キャラ設定とプロンプト、任意で画像生成プロバイダの認証
+- **出力**: キャラ画像・ポスター・ステッカー・複数コマ漫画
+- **環境**: Agent SkillsとローカルCLIツール群。外部画像プロバイダ(Codex ImageGen/OpenAI/Nano Banana/Seedream)は任意。
+- **依存**: Agent実行環境、任意の画像生成プロバイダ
+- **制約・未確認**: READMEはDeepSeek本家と無関係の非公式プロジェクトと明記。生成物は安全・合法な内容に限定すると記載。
+- **編集者評価**: 頭身を4.0〜2.1の5形態で数値管理し、骨格測定で検証する方針や、髪グラデ/クジラ耳/前髪/衣装の参照固定をREADMEが明記。Agent Skillsで一貫性を維持する。
+- **メトリクス**: ★260、fork 13、作成 2026-08-22、最終push 2026-10-11T08:03:41Z、archived=False
+- **確認**: 2026-10-13 / コミット `0917fd14bb96ced343145b5c9574f5714d57c0c6`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/Neko3000/deepseek-whalechan/tree/0917fd14bb96ced343145b5c9574f5714d57c0c6)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/Neko3000/deepseek-whalechan/blob/0917fd14bb96ced343145b5c9574f5714d57c0c6/README.md) / [GitHub API](https://api.github.com/repos/Neko3000/deepseek-whalechan) / [固定ツリー](https://github.com/Neko3000/deepseek-whalechan/tree/0917fd14bb96ced343145b5c9574f5714d57c0c6)
+
+### 制作に使う際の検討
+
+継続キャラの設定書式と一貫性維持の運用検討に。
+
+**次に確かめること（実施前）**: 同一プロンプトで複数回生成し、頭身・衣装の一貫性を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/Neko3000/deepseek-whalechan/blob/0917fd14bb96ced343145b5c9574f5714d57c0c6/README.md)
+
+**最新GitHub Release**: [1.0.1](https://github.com/Neko3000/deepseek-whalechan/releases/tag/1.0.1) / 2026-10-03T06:41:14Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-10-07T15:51:02Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

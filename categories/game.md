@@ -2,7 +2,7 @@
 
 [一覧へ](../README.md) · [機械可読データ](../catalog.json)
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -13,17 +13,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 | リポジトリ | 何に使うか | 区分・評価 | ★ / 最終push |
 | --- | --- | --- | --- |
 | [ControlTile](https://github.com/Junrongh/ControlTile) · [詳細](#controltile) | 条件付きの画像タイル生成を扱う研究実装。 | AIモデル・学習 / 小規模・初期候補 | 12 / 2026-07-27 |
-| [Godot](https://github.com/godotengine/godot) · [詳細](#godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,334 / 2026-10-12 |
-| [LDtk](https://github.com/deepnight/ldtk) · [詳細](#ldtk) | 2Dレベルを設計するオープンソースのエディタ。 | 非AI制作 / 制作基盤として比較 | 4,315 / 2026-10-09 |
-| [OpenGame](https://github.com/leigest519/OpenGame) · [詳細](#opengame) | 指示からWebゲームを制作するエージェント基盤。テンプレートとデバッグ手順を組み込む。 | AI連携 / 連携・制作ツール候補 | 2,987 / 2026-09-03 |
-| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) · [詳細](#pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,514 / 2026-10-12 |
+| [Godot](https://github.com/godotengine/godot) · [詳細](#godot) | 2D/3Dゲーム制作と複数プラットフォームへの出力を行うゲームエンジン。 | 非AI制作 / 定番の制作基盤 | 118,463 / 2026-10-13 |
+| [LDtk](https://github.com/deepnight/ldtk) · [詳細](#ldtk) | 2Dレベルを設計するオープンソースのエディタ。 | 非AI制作 / 制作基盤として比較 | 4,318 / 2026-10-09 |
+| [OpenGame](https://github.com/leigest519/OpenGame) · [詳細](#opengame) | 指示からWebゲームを制作するエージェント基盤。テンプレートとデバッグ手順を組み込む。 | AI連携 / 連携・制作ツール候補 | 2,995 / 2026-09-03 |
+| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama) · [詳細](#pixelorama) | ドット絵・タイル・アニメーションを編集する制作アプリ。 | 非AI制作 / 定番の制作基盤 | 10,524 / 2026-10-13 |
 | [PNGAL](https://github.com/1mm-module/PNGAL) · [詳細](#pngal) | 顔差分生成・PSD分解・目パチと口パクの補間を組み合わせ、立ち絵アニメ素材を制作する。 | AI連携 / 導入経路の追加確認が必要 | 356 / 2026-09-01 |
-| [RenPy](https://github.com/renpy/renpy) · [詳細](#renpy) | テキストとキャラクター素材を組み合わせたノベルゲームを制作する。 | 非AI制作 / 定番の制作基盤 | 6,912 / 2026-10-12 |
-| [sprite-maker](https://github.com/JohnKinyanjui/sprite-maker) · [詳細](#sprite-maker) | AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。 | AI連携 / 初期評価候補 | 434 / 2026-09-24 |
-| [Terrain Diffusion](https://github.com/xandergos/terrain-diffusion) · [詳細](#terrain-diffusion) | 広域地形を拡散モデルで生成し、地図から地形への変換も扱う。 | AIモデル・学習 / モデル・研究候補 | 1,435 / 2026-08-12 |
-| [Tiled](https://github.com/mapeditor/tiled) · [詳細](#tiled) | タイルとオブジェクトを配置して2Dゲームのマップを作る。 | 非AI制作 / 制作基盤として比較 | 12,955 / 2026-10-12 |
-| [character-animation-creator-skill](https://github.com/tachikomared/character-animation-creator-skill) · [詳細](#character-animation-creator-skill) | Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定や参照画像から64×64ピクセルアートのキャラクタースプライトシートを、8方向×idle/walk/attackのアニメーション込みで生成し、パレット量子化や検証まで行う。 | AIモデル・学習 / 小規模・初期評価候補 | 348 / 2026-05-08 |
+| [RenPy](https://github.com/renpy/renpy) · [詳細](#renpy) | テキストとキャラクター素材を組み合わせたノベルゲームを制作する。 | 非AI制作 / 定番の制作基盤 | 6,916 / 2026-10-13 |
+| [sprite-maker](https://github.com/JohnKinyanjui/sprite-maker) · [詳細](#sprite-maker) | AIエージェントと連携して素材を作り、関節・ボーンとRust描画で再現可能なアニメーションを生成する。 | AI連携 / 初期評価候補 | 435 / 2026-09-24 |
+| [Terrain Diffusion](https://github.com/xandergos/terrain-diffusion) · [詳細](#terrain-diffusion) | 広域地形を拡散モデルで生成し、地図から地形への変換も扱う。 | AIモデル・学習 / モデル・研究候補 | 1,437 / 2026-08-12 |
+| [Tiled](https://github.com/mapeditor/tiled) · [詳細](#tiled) | タイルとオブジェクトを配置して2Dゲームのマップを作る。 | 非AI制作 / 制作基盤として比較 | 12,957 / 2026-10-12 |
+| [character-animation-creator-skill](https://github.com/tachikomared/character-animation-creator-skill) · [詳細](#character-animation-creator-skill) | Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定や参照画像から64×64ピクセルアートのキャラクタースプライトシートを、8方向×idle/walk/attackのアニメーション込みで生成し、パレット量子化や検証まで行う。 | AIモデル・学習 / 小規模・初期評価候補 | 350 / 2026-05-08 |
 | [spritebrew](https://github.com/GAlbanese09/spritebrew) · [詳細](#spritebrew) | テキストや既存画像からピクセルアートのキャラクターを生成し、アニメーション化・スライス・プレビュー・エクスポートまで一貫して行うWebツール。21種のスタイルと複数エンジン向け書き出しに対応する。 | AIモデル・学習 / 稼働中・実運用候補 | 63 / 2026-10-10 |
+| [Genshin-Subtitles](https://github.com/qew21/Genshin-Subtitles) · [詳細](#genshin-subtitles) | 原神/スターレイル等のアニメ調ゲームにOCRでリアルタイム二言語字幕を重ねるWindowsツール。画面テキストを認識して既知テキストDBと照合し翻訳表示する。動画からの字幕抽出も可能。 | AI連携 / 中規模 | 94 / 2026-10-08 |
 
 <a id="controltile"></a>
 
@@ -74,7 +75,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: ゲーム用素材。AIモデルは必須でない
 - **制約・未確認**: AI素材生成機能そのものではない。配布先ごとのビルド要件は別途確認。
 - **編集者評価**: 生成素材を遊べる作品へ統合する定番基盤。
-- **メトリクス**: ★118,334、fork 27,035、作成 2014-01-04、最終push 2026-10-12T22:40:11Z、archived=False
+- **メトリクス**: ★118,463、fork 27,048、作成 2014-01-04、最終push 2026-10-13T16:51:40Z、archived=False
 - **確認**: 2026-09-09 / コミット `9552dfb6859a1aaba1e570b8e0ef5c599b830f19`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/godotengine/godot/tree/9552dfb6859a1aaba1e570b8e0ef5c599b830f19)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -109,7 +110,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 対象エンジン側のインポータ
 - **制約・未確認**: マップを作る道具で、ゲームロジックは生成しない。
 - **編集者評価**: 小規模2Dゲームのレベル反復制作でTiledと比較したい。
-- **メトリクス**: ★4,315、fork 291、作成 2020-05-29、最終push 2026-10-09T10:35:30Z、archived=False
+- **メトリクス**: ★4,318、fork 291、作成 2020-05-29、最終push 2026-10-09T10:35:30Z、archived=False
 - **確認**: 2026-09-09 / コミット `6d69bd1d6be92f01ac30778f6a934f0da8448b16`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/deepnight/ldtk/tree/6d69bd1d6be92f01ac30778f6a934f0da8448b16)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -144,7 +145,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: LLMプロバイダ、画像・動画・音声の任意API
 - **制約・未確認**: GameCoder-27Bは説明されるが本調査で公式重みは未特定。評価パイプラインはREADMEで公開予定。
 - **編集者評価**: 遊べるゲームのコードを出す対象として、ゲーム風動画生成と区別して比較。
-- **メトリクス**: ★2,987、fork 437、作成 2026-04-20、最終push 2026-09-03T17:11:09Z、archived=False
+- **メトリクス**: ★2,995、fork 437、作成 2026-04-20、最終push 2026-09-03T17:11:09Z、archived=False
 - **確認**: 2026-09-09 / コミット `c9bea37786af524bf3bbe802f2b67d23816fa5c0`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/leigest519/OpenGame/tree/c9bea37786af524bf3bbe802f2b67d23816fa5c0)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
@@ -183,7 +184,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 通常制作にAIモデル不要
 - **制約・未確認**: AI画像生成モデルを内蔵するという意味ではない。
 - **編集者評価**: 2Dゲーム素材の手直しと仕上げを担う定番候補。
-- **メトリクス**: ★10,514、fork 557、作成 2019-08-18、最終push 2026-10-12T23:49:45Z、archived=False
+- **メトリクス**: ★10,524、fork 559、作成 2019-08-18、最終push 2026-10-13T21:55:08Z、archived=False
 - **確認**: 2026-09-09 / コミット `9263cf3636efc336aadbcc46c57dc614e57525b0`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/Orama-Interactive/Pixelorama/tree/9263cf3636efc336aadbcc46c57dc614e57525b0)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -255,7 +256,7 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - **依存**: 台本、画像、音声。AIモデル不要
 - **制約・未確認**: LLMシナリオ生成器ではない。生成した素材をゲームへ組み込むためのエンジン。
 - **編集者評価**: 漫画・キャラ音声・背景など複数の生成素材を作品にまとめやすい。
-- **メトリクス**: ★6,912、fork 945、作成 2012-06-28、最終push 2026-10-12T21:43:10Z、archived=False
+- **メトリクス**: ★6,916、fork 944、作成 2012-06-28、最終push 2026-10-13T15:17:44Z、archived=False
 - **確認**: 2026-09-09 / コミット `f6a68a3a77014eca58c799d6663ccae733e5e10f`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/renpy/renpy/tree/f6a68a3a77014eca58c799d6663ccae733e5e10f)。GitHub自動判定=None。独立レビュー・商用可否判定は未実施。
@@ -290,7 +291,7 @@ AIエージェントと連携して素材を作り、関節・ボーンとRust�
 - **依存**: 外部エージェントCLI、生成経路に応じた画像モデル
 - **制約・未確認**: 初期段階。全OSでの導入成功や生成品質は未検証。
 - **編集者評価**: 2026年8月作成。エージェント操作とゲーム用素材出力を組み合わせる新規候補。
-- **メトリクス**: ★434、fork 57、作成 2026-08-09、最終push 2026-09-24T22:57:34Z、archived=False
+- **メトリクス**: ★435、fork 57、作成 2026-08-09、最終push 2026-09-24T22:57:34Z、archived=False
 - **確認**: 2026-09-09 / コミット `336c7114f0fce7336ec17f6e9beb93980ed03b1d`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/JohnKinyanjui/sprite-maker/tree/336c7114f0fce7336ec17f6e9beb93980ed03b1d)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -325,7 +326,7 @@ AIエージェントと連携して素材を作り、関節・ボーンとRust�
 - **依存**: 地形モデル、必要に応じAzgaar地図
 - **制約・未確認**: 標高データの生成であり、完成したゲームレベル・衝突設定ではない。
 - **編集者評価**: RPG世界地図や3D背景の地形案を作る補助工程。
-- **メトリクス**: ★1,435、fork 92、作成 2024-10-08、最終push 2026-08-12T03:58:54Z、archived=False
+- **メトリクス**: ★1,437、fork 92、作成 2024-10-08、最終push 2026-08-12T03:58:54Z、archived=False
 - **確認**: 2026-09-09 / コミット `e8dcb4b1a834ab2f6b1a6f5256ed7c9f2f3e8230`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。記載モデルのファイル一覧確認あり。
 - **利用条件**: [配布元の条件](https://github.com/xandergos/terrain-diffusion/tree/e8dcb4b1a834ab2f6b1a6f5256ed7c9f2f3e8230)。GitHub自動判定=MIT。独立レビュー・商用可否判定は未実施。
@@ -364,7 +365,7 @@ RPG世界地図や3D背景の地形案を作る補助工程。
 - **依存**: ゲーム側のマップローダー、素材
 - **制約・未確認**: ゲームの実行エンジンは別。独自属性の読み込みをゲーム側で実装する。
 - **編集者評価**: AI生成タイルを遊べる地形へ整理する工程の基盤。
-- **メトリクス**: ★12,955、fork 1,977、作成 2011-02-27、最終push 2026-10-12T13:46:52Z、archived=False
+- **メトリクス**: ★12,957、fork 1,977、作成 2011-02-27、最終push 2026-10-12T13:46:52Z、archived=False
 - **確認**: 2026-09-09 / コミット `395619407b39a34fccf45dc9e6e7dd0c34b6feb5`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/mapeditor/tiled/tree/395619407b39a34fccf45dc9e6e7dd0c34b6feb5)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -399,7 +400,7 @@ Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定�
 - **依存**: Pillow、外部画像生成モデル
 - **制約・未確認**: 64×64のピクセルアート前提。最終品質は画像生成バックエンド依存。ライセンスはMITとREADMEに記載。
 - **編集者評価**: プロンプト1つから8方向アニメのアトラスとQAまでを一連で作る流れが具体的で、RPG・ローグライク・見下ろし型の素材づくりに向く。
-- **メトリクス**: ★348、fork 37、作成 2026-05-03、最終push 2026-05-08T23:42:15Z、archived=False
+- **メトリクス**: ★350、fork 37、作成 2026-05-03、最終push 2026-05-08T23:42:15Z、archived=False
 - **確認**: 2026-10-04 / コミット `9ce98dffb98c84488fe7b99b62c49fabee20abd6`
 - **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
 - **利用条件**: [配布元の条件](https://github.com/tachikomared/character-animation-creator-skill/tree/9ce98dffb98c84488fe7b99b62c49fabee20abd6)。GitHub自動判定=NOASSERTION。独立レビュー・商用可否判定は未実施。
@@ -454,3 +455,38 @@ Codex（OpenAI）およびGPT Web Agent向けのスキル。テキスト指定�
 **最新GitHub Release**: APIにlatest Releaseなし。開発停止やモデル未公開を意味しません。
 
 デフォルトブランチの確認コミット日時: 2026-10-04T13:54:40Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。
+
+<a id="genshin-subtitles"></a>
+
+## Genshin-Subtitles
+
+原神/スターレイル等のアニメ調ゲームにOCRでリアルタイム二言語字幕を重ねるWindowsツール。画面テキストを認識して既知テキストDBと照合し翻訳表示する。動画からの字幕抽出も可能。
+
+- **リポジトリ**: https://github.com/qew21/Genshin-Subtitles
+- **分類**: desktop_tool / AI連携 / 中規模
+- **入力**: ゲーム画面(指定認識領域)、動画ファイル
+- **出力**: オーバーレイ表示の二言語字幕、抽出した字幕
+- **環境**: Windows 10/11 64bit、AVX対応CPU、.NET Framework 4.8以上、2GB以上のRAM。
+- **依存**: PaddleOCRSharp、ゲームのテキストDB(言語パック)
+- **制約・未確認**: 対象ゲームと認識領域設定に依存。READMEは教育/研究目的と記載し、ゲーム内テキストDBの更新も必要。
+- **編集者評価**: OCRはPP-OCRv4 mobile、n-gram索引+レーベンシュタイン距離の高速照合、フレーム変化検出で無駄なOCRを削減する構成をREADMEが説明。13言語以上の言語パックに対応。
+- **メトリクス**: ★94、fork 6、作成 2024-02-01、最終push 2026-10-08T13:51:43Z、archived=False
+- **確認**: 2026-10-13 / コミット `a0c6acf0b1190b01096f17fc77a786b8f5abf588`
+- **検証範囲**: README・ファイル構成確認。起動・推論なし。モデルファイル一覧は未確認。
+- **利用条件**: [配布元の条件](https://github.com/qew21/Genshin-Subtitles/tree/a0c6acf0b1190b01096f17fc77a786b8f5abf588)。GitHub自動判定=Apache-2.0。独立レビュー・商用可否判定は未実施。
+
+根拠: [固定README](https://github.com/qew21/Genshin-Subtitles/blob/a0c6acf0b1190b01096f17fc77a786b8f5abf588/README.md) / [GitHub API](https://api.github.com/repos/qew21/Genshin-Subtitles) / [固定ツリー](https://github.com/qew21/Genshin-Subtitles/tree/a0c6acf0b1190b01096f17fc77a786b8f5abf588)
+
+### 制作に使う際の検討
+
+アニメ調ゲームのローカライズ確認や字幕制作の補助に。
+
+**次に確かめること（実施前）**: 対象ゲームで領域選択と照合精度を確認する。
+
+**利用条件の確認メモ**: コードのGitHub自動判定のみ。モデル・素材の条件と商用可否は未確認。
+
+**入口候補（固定ツリーで存在確認）**: [README.md](https://github.com/qew21/Genshin-Subtitles/blob/a0c6acf0b1190b01096f17fc77a786b8f5abf588/README.md)
+
+**最新GitHub Release**: [1.6.13](https://github.com/qew21/Genshin-Subtitles/releases/tag/1.6.13) / 2026-10-08T13:39:12Z / prerelease=False
+
+デフォルトブランチの確認コミット日時: 2026-10-07T12:36:42Z。AI（自動調査）がREADMEから要約した項目。人による確認・起動・品質比較は未実施。

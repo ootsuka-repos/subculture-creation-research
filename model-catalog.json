@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-12",
+  "updated_on": "2026-10-13",
   "scope_ja": "GitHub中心の一覧を補うアニメ系モデル（画像・音声など）。当初の4系統は人手で調査、以降はAIが毎日自動追加（人の確認なし）。全派生を網羅した一覧ではない。具体的な配布リポジトリとrevisionを記録する。",
   "items": [
     {
@@ -44,10 +44,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1284211,
-        "likes": 2397,
+        "downloads_last_month": 1307441,
+        "likes": 2416,
         "last_modified": "2026-08-24T23:52:12.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -101,10 +101,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 395644,
+        "downloads_last_month": 402313,
         "likes": 548,
         "last_modified": "2025-02-13T16:16:46.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -158,10 +158,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 86314,
+        "downloads_last_month": 86960,
         "likes": 436,
         "last_modified": "2025-02-13T01:56:00.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -214,10 +214,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 199774,
-        "likes": 183,
+        "downloads_last_month": 201110,
+        "likes": 185,
         "last_modified": "2025-09-08T13:03:01.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -268,10 +268,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1549,
+        "downloads_last_month": 1572,
         "likes": 17,
         "last_modified": "2026-09-24T20:55:13.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -323,10 +323,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1214,
+        "downloads_last_month": 1231,
         "likes": 7,
         "last_modified": "2026-09-06T23:01:27.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -380,7 +380,7 @@
         "downloads_last_month": 0,
         "likes": 233,
         "last_modified": "2025-04-19T06:10:12.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -434,10 +434,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 602,
-        "likes": 139,
+        "downloads_last_month": 570,
+        "likes": 140,
         "last_modified": "2025-08-14T06:26:25.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -488,10 +488,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 773,
+        "downloads_last_month": 761,
         "likes": 104,
         "last_modified": "2024-07-09T15:43:58.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -544,10 +544,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 35,
+        "downloads_last_month": 34,
         "likes": 8,
         "last_modified": "2025-07-21T03:03:33.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -598,10 +598,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1212,
-        "likes": 99,
+        "downloads_last_month": 1256,
+        "likes": 100,
         "last_modified": "2025-10-21T22:01:05.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -655,10 +655,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 14968,
-        "likes": 243,
+        "downloads_last_month": 15179,
+        "likes": 244,
         "last_modified": "2026-08-12T07:23:44.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -710,10 +710,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 6049,
+        "downloads_last_month": 6073,
         "likes": 14,
         "last_modified": "2026-09-18T01:44:16.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -770,7 +770,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2025-11-17T13:15:43.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -824,7 +824,7 @@
         "downloads_last_month": 0,
         "likes": 11,
         "last_modified": "2026-05-16T10:38:24.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -878,7 +878,7 @@
         "downloads_last_month": 0,
         "likes": 10,
         "last_modified": "2026-05-16T10:38:16.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -932,7 +932,7 @@
         "downloads_last_month": 0,
         "likes": 80,
         "last_modified": "2026-04-11T16:12:30.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -983,10 +983,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 36,
+        "downloads_last_month": 35,
         "likes": 2,
         "last_modified": "2026-06-21T22:24:19.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1037,10 +1037,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 526,
-        "likes": 29,
+        "downloads_last_month": 535,
+        "likes": 30,
         "last_modified": "2026-09-21T15:36:59.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1093,10 +1093,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 49,
+        "downloads_last_month": 48,
         "likes": 5,
         "last_modified": "2025-08-12T05:27:46.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1147,10 +1147,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 40,
+        "downloads_last_month": 39,
         "likes": 2,
         "last_modified": "2025-08-12T05:26:43.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1207,7 +1207,7 @@
         "downloads_last_month": 0,
         "likes": 3,
         "last_modified": "2026-02-17T00:28:51.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1259,10 +1259,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 572,
+        "downloads_last_month": 615,
         "likes": 6,
         "last_modified": "2026-09-21T08:22:31.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1316,7 +1316,7 @@
         "downloads_last_month": 0,
         "likes": 66,
         "last_modified": "2022-04-05T17:11:49.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1371,9 +1371,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 323,
+        "likes": 322,
         "last_modified": "2026-08-07T17:43:22.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1427,7 +1427,7 @@
         "downloads_last_month": 0,
         "likes": 13,
         "last_modified": "2024-07-17T13:00:34.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1478,10 +1478,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1297,
+        "downloads_last_month": 1221,
         "likes": 21,
         "last_modified": "2023-08-09T09:25:38.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1534,10 +1534,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 8666,
+        "downloads_last_month": 8726,
         "likes": 7,
         "last_modified": "2024-11-11T01:39:36.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1588,10 +1588,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 309,
+        "downloads_last_month": 310,
         "likes": 104,
         "last_modified": "2023-11-14T18:09:01.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1645,7 +1645,7 @@
         "downloads_last_month": 0,
         "likes": 4,
         "last_modified": "2024-08-12T12:38:21.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1696,10 +1696,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 13,
+        "downloads_last_month": 11,
         "likes": 12,
         "last_modified": "2024-08-12T12:39:52.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1753,10 +1753,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 20,
+        "downloads_last_month": 21,
         "likes": 43,
         "last_modified": "2024-03-17T14:20:51.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1808,10 +1808,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 4696,
+        "downloads_last_month": 4676,
         "likes": 9,
         "last_modified": "2026-06-10T17:10:07.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1862,10 +1862,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 377,
+        "downloads_last_month": 372,
         "likes": 3,
         "last_modified": "2024-06-06T22:55:08.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1916,10 +1916,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 227,
+        "downloads_last_month": 228,
         "likes": 49,
         "last_modified": "2025-11-30T19:20:36.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -1973,7 +1973,7 @@
         "downloads_last_month": 0,
         "likes": 25,
         "last_modified": "2022-04-05T17:11:21.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2024,10 +2024,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 106,
+        "downloads_last_month": 104,
         "likes": 25,
         "last_modified": "2024-05-31T15:29:49.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2078,10 +2078,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 121,
+        "downloads_last_month": 114,
         "likes": 5,
         "last_modified": "2024-05-06T21:29:41.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2133,10 +2133,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 11821,
+        "downloads_last_month": 11806,
         "likes": 14,
         "last_modified": "2025-06-30T17:41:49.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2190,10 +2190,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 713,
+        "downloads_last_month": 721,
         "likes": 53,
         "last_modified": "2026-03-26T05:20:31.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2246,10 +2246,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 620,
+        "downloads_last_month": 657,
         "likes": 2,
         "last_modified": "2026-10-04T20:49:53.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2304,7 +2304,7 @@
         "downloads_last_month": 0,
         "likes": 25,
         "last_modified": "2024-09-05T14:21:42.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2358,10 +2358,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 127,
+        "downloads_last_month": 126,
         "likes": 129,
         "last_modified": "2024-11-23T09:00:48.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2413,10 +2413,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 34,
+        "downloads_last_month": 37,
         "likes": 3,
         "last_modified": "2026-10-09T10:27:19.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2470,10 +2470,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 2542,
+        "downloads_last_month": 2573,
         "likes": 32,
         "last_modified": "2026-06-27T04:57:31.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2527,7 +2527,7 @@
         "downloads_last_month": 0,
         "likes": 15,
         "last_modified": "2026-10-02T20:12:50.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2582,9 +2582,9 @@
       },
       "metrics": {
         "downloads_last_month": 0,
-        "likes": 123,
+        "likes": 125,
         "last_modified": "2026-08-31T20:50:45.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2635,10 +2635,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 3479,
+        "downloads_last_month": 3407,
         "likes": 20,
         "last_modified": "2026-07-08T09:56:06.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2692,10 +2692,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 445,
+        "downloads_last_month": 444,
         "likes": 3,
         "last_modified": "2026-03-05T13:33:26.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2749,7 +2749,7 @@
         "downloads_last_month": 0,
         "likes": 60,
         "last_modified": "2026-05-31T05:54:57.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2801,10 +2801,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 5775,
+        "downloads_last_month": 5852,
         "likes": 9,
         "last_modified": "2025-06-30T19:18:37.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2855,10 +2855,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 230,
+        "downloads_last_month": 228,
         "likes": 8,
         "last_modified": "2025-11-22T22:11:21.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2913,7 +2913,7 @@
         "downloads_last_month": 0,
         "likes": 107,
         "last_modified": "2026-01-21T14:44:55.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -2967,10 +2967,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 611,
+        "downloads_last_month": 620,
         "likes": 19,
         "last_modified": "2026-03-18T12:04:18.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3024,10 +3024,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 73,
-        "likes": 16,
+        "downloads_last_month": 75,
+        "likes": 17,
         "last_modified": "2026-10-06T11:25:01.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3081,7 +3081,7 @@
         "downloads_last_month": 0,
         "likes": 142,
         "last_modified": "2026-04-11T16:15:10.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3135,7 +3135,7 @@
         "downloads_last_month": 0,
         "likes": 37,
         "last_modified": "2024-01-31T00:46:26.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3187,10 +3187,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 1825,
-        "likes": 43,
+        "downloads_last_month": 1823,
+        "likes": 44,
         "last_modified": "2025-10-22T14:54:23.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3242,10 +3242,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 97,
+        "downloads_last_month": 279,
         "likes": 1,
         "last_modified": "2026-10-12T05:47:53.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3296,10 +3296,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 86,
+        "downloads_last_month": 93,
         "likes": 3,
         "last_modified": "2026-07-06T03:51:58.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3353,10 +3353,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 750,
+        "downloads_last_month": 765,
         "likes": 27,
         "last_modified": "2025-08-14T07:15:59.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3411,7 +3411,7 @@
         "downloads_last_month": 0,
         "likes": 6,
         "last_modified": "2024-11-29T19:08:22.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3462,10 +3462,10 @@
         "runtime_tested": false
       },
       "metrics": {
-        "downloads_last_month": 588,
+        "downloads_last_month": 593,
         "likes": 53,
         "last_modified": "2025-08-24T09:58:01.000Z",
-        "checked_on": "2026-10-12"
+        "checked_on": "2026-10-13"
       },
       "sources": [
         {
@@ -3477,7 +3477,173 @@
           "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
         }
       ]
+    },
+    {
+      "id": "manga-balloon-detector",
+      "name": "Manga-Balloon-Detector",
+      "hub_repository": "marco0antonio/Manga-Balloon-Detector",
+      "url": "https://huggingface.co/marco0antonio/Manga-Balloon-Detector",
+      "category": "manga",
+      "checked_on": "2026-10-13",
+      "architecture_ja": "Ultralytics YOLOv8nを480×480で学習した単一クラス(発話バルーン)の物体検出器。ONNX出力は約12MB。",
+      "variants_ja": "weights/best.pt、weights/last.pt、weights/best.onnx、簡略化したyolo.onnx(モバイル向け)。カードにはval mAP@50=0.986、盲検テスト0.975等の数値が記載。",
+      "prompting_ja": "プロンプトは無し。推論時にimgsz=480やconf=0.25等のパラメータを指定する。",
+      "requirements_ja": "UltralyticsまたはONNX Runtime。CPUでも動く軽量構成。入力は480×480にリサイズして与える。",
+      "limitations_ja": "480×480学習のため高解像度ページは縮小が必要で細部の再現率が落ちうる。単一クラスで吹き出し種別は区別しない。学習データは非公開で画風バイアスがある。",
+      "license_notes_ja": "AGPL-3.0(Ultralytics YOLOv8由来)。カードは商用利用にAGPL準拠またはUltralytics商用ライセンスが必要と明記。",
+      "assessment_ja": "漫画翻訳の吹き出し検出をモバイル/CPUで回す用途に向く軽量モデル。種別分類は持たない。",
+      "next_validation_ja": "手持ちの日本語漫画ページで吹き出し検出の再現率と縮小の影響を確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/marco0antonio/Manga-Balloon-Detector",
+        "api_url": "https://huggingface.co/api/models/marco0antonio/Manga-Balloon-Detector",
+        "checked_on": "2026-10-13",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "e3362400d075aff6a10f2e729559f05ba4cf84d9",
+        "gated": false,
+        "license_metadata": "agpl-3.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "weights/best.onnx",
+          "weights/best.pt",
+          "weights/last.pt",
+          "yolo.onnx"
+        ],
+        "matching_weight_file_count": 4
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 18,
+        "likes": 1,
+        "last_modified": "2026-10-12T20:27:48.000Z",
+        "checked_on": "2026-10-13"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/marco0antonio/Manga-Balloon-Detector/blob/e3362400d075aff6a10f2e729559f05ba4cf84d9/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/marco0antonio/Manga-Balloon-Detector",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "nllb-jaen-1-3b-lightnovels",
+      "name": "nllb-jaen-1.3B-lightnovels",
+      "hub_repository": "thefrigidliquidation/nllb-jaen-1.3B-lightnovels",
+      "url": "https://huggingface.co/thefrigidliquidation/nllb-jaen-1.3B-lightnovels",
+      "category": "localization",
+      "checked_on": "2026-10-13",
+      "architecture_ja": "NLLB-1.3Bを日本語→英語のライトノベル/Web小説でファインチューニングしたseq2seq翻訳モデル。",
+      "variants_ja": "model.safetensorsとpytorch_model.binの2形式のみで、単一チェックポイント。",
+      "prompting_ja": "最大512トークン。カードはdiverse beam search(num_beams=8, num_beam_groups=4, do_sample=False)を推奨。固有名詞は<t0>〜<t9>タグで最大10個の訳を指定でき、tgt_langの切替で敬称の有無を制御する。",
+      "requirements_ja": "transformersのAutoTokenizer/AutoModelForSeq2SeqLMで実行。",
+      "limitations_ja": "ライトノベル/Web小説特化で、一般文や他ジャンルの性能は保証されない。カードは2022〜2023年時点の記述。",
+      "license_notes_ja": "CC-BY-NC-4.0。非商用限定のため業務利用には注意。",
+      "assessment_ja": "ライトノベル翻訳のドメイン特化と用語/敬称の指定タグが特徴。ライセンスが非商用限定。",
+      "next_validation_ja": "手持ちの日本語小説数ページで訳文と固有名詞タグの効きを確認する。",
+      "distribution": {
+        "url": "https://huggingface.co/thefrigidliquidation/nllb-jaen-1.3B-lightnovels",
+        "api_url": "https://huggingface.co/api/models/thefrigidliquidation/nllb-jaen-1.3B-lightnovels",
+        "checked_on": "2026-10-13",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "55af628403016f64d9e0030fd1a2ea4e0204418f",
+        "gated": false,
+        "license_metadata": "cc-by-nc-4.0",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "model.safetensors",
+          "pytorch_model.bin"
+        ],
+        "matching_weight_file_count": 2
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 60,
+        "likes": 8,
+        "last_modified": "2023-06-04T13:38:43.000Z",
+        "checked_on": "2026-10-13"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/thefrigidliquidation/nllb-jaen-1.3B-lightnovels/blob/55af628403016f64d9e0030fd1a2ea4e0204418f/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/thefrigidliquidation/nllb-jaen-1.3B-lightnovels",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
+    },
+    {
+      "id": "anime-detailer-xl-lora",
+      "name": "anime-detailer-xl-lora",
+      "hub_repository": "Linaqruf/anime-detailer-xl-lora",
+      "url": "https://huggingface.co/Linaqruf/anime-detailer-xl-lora",
+      "category": "image",
+      "checked_on": "2026-10-13",
+      "architecture_ja": "Animagine XL 2.0(SDXL)用のLoRAアダプタ。細部量を制御するコンセプトスライダーとして機能する。",
+      "variants_ja": "anime-detailer-xl.safetensors 1ファイルのみ。",
+      "prompting_ja": "Danbooruタグ形式のプロンプトで使う。スライダーを2に近づけるほど高精細、-2で抽象的になる。カードにnegative_prompt例とguidance_scale=12、50stepsの例を掲載。",
+      "requirements_ja": "diffusersでStableDiffusionXLPipelineに読み込み、EulerAncestralDiscreteSchedulerを例示。",
+      "limitations_ja": "ベースのSDXL 1.0/Animagine XL 2.0の制約を継承する。カードは2023年時点の記述。",
+      "license_notes_ja": "CreativeML Open RAIL++-M(openrail++)。無条件の商用可とは扱わない。",
+      "assessment_ja": "生成したアニメ絵のディテール量を後段で調整したいワークフローに向くLoRA。",
+      "next_validation_ja": "同条件でスライダー値を変えて細部と破綻の差を比較する。",
+      "distribution": {
+        "url": "https://huggingface.co/Linaqruf/anime-detailer-xl-lora",
+        "api_url": "https://huggingface.co/api/models/Linaqruf/anime-detailer-xl-lora",
+        "checked_on": "2026-10-13",
+        "http_status": 200,
+        "weights_downloaded": false,
+        "verification": "file_listing_checked",
+        "revision": "0338a735b6076c636726b8c5701ed79832adfbde",
+        "gated": false,
+        "license_metadata": "openrail++",
+        "license_name_metadata": null,
+        "evidence_files": [
+          "anime-detailer-xl.safetensors"
+        ],
+        "matching_weight_file_count": 1
+      },
+      "verification": {
+        "model_card_reviewed": true,
+        "file_inventory_checked": true,
+        "weights_downloaded": false,
+        "runtime_tested": false
+      },
+      "metrics": {
+        "downloads_last_month": 4783,
+        "likes": 64,
+        "last_modified": "2024-01-23T13:32:53.000Z",
+        "checked_on": "2026-10-13"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/Linaqruf/anime-detailer-xl-lora/blob/0338a735b6076c636726b8c5701ed79832adfbde/README.md",
+          "supports": "モデルカードの能力・系統・推奨設定・利用条件（AI自動調査による要約）"
+        },
+        {
+          "url": "https://huggingface.co/api/models/Linaqruf/anime-detailer-xl-lora",
+          "supports": "revision・ファイル一覧・アクセスとライセンスメタデータ"
+        }
+      ]
     }
   ],
-  "metrics_refreshed_on": "2026-10-12"
+  "metrics_refreshed_on": "2026-10-13"
 }

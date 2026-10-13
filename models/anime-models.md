@@ -1013,3 +1013,51 @@ Qwen/Qwen-Image向けのLoRAで、アニメ調の記述から写実的な画像�
 確認日: 2026-10-12 / revision `8dcca17f33d54db932aa7f11ab944b500304ce07` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `flymy_anime_irl.safetensors`
 
 根拠: [固定モデルカード](https://huggingface.co/flymy-ai/qwen-image-anime-irl-lora/blob/8dcca17f33d54db932aa7f11ab944b500304ce07/README.md) / [モデルAPI](https://huggingface.co/api/models/flymy-ai/qwen-image-anime-irl-lora)
+
+## Manga-Balloon-Detector
+
+Ultralytics YOLOv8nを480×480で学習した単一クラス(発話バルーン)の物体検出器。ONNX出力は約12MB。
+
+- **版の区別**: weights/best.pt、weights/last.pt、weights/best.onnx、簡略化したyolo.onnx(モバイル向け)。カードにはval mAP@50=0.986、盲検テスト0.975等の数値が記載。
+- **入力・設定**: プロンプトは無し。推論時にimgsz=480やconf=0.25等のパラメータを指定する。
+- **必要構成**: UltralyticsまたはONNX Runtime。CPUでも動く軽量構成。入力は480×480にリサイズして与える。
+- **制約**: 480×480学習のため高解像度ページは縮小が必要で細部の再現率が落ちうる。単一クラスで吹き出し種別は区別しない。学習データは非公開で画風バイアスがある。
+- **利用条件**: AGPL-3.0(Ultralytics YOLOv8由来)。カードは商用利用にAGPL準拠またはUltralytics商用ライセンスが必要と明記。
+- **編集者評価**: 漫画翻訳の吹き出し検出をモバイル/CPUで回す用途に向く軽量モデル。種別分類は持たない。
+- **次の検証（未実施）**: 手持ちの日本語漫画ページで吹き出し検出の再現率と縮小の影響を確認する。
+
+確認日: 2026-10-13 / revision `e3362400d075aff6a10f2e729559f05ba4cf84d9` / gated=False。ファイル名候補4件の一覧確認。代表ファイル: `weights/best.onnx`、`weights/best.pt`、`weights/last.pt`、`yolo.onnx`
+
+根拠: [固定モデルカード](https://huggingface.co/marco0antonio/Manga-Balloon-Detector/blob/e3362400d075aff6a10f2e729559f05ba4cf84d9/README.md) / [モデルAPI](https://huggingface.co/api/models/marco0antonio/Manga-Balloon-Detector)
+
+## nllb-jaen-1.3B-lightnovels
+
+NLLB-1.3Bを日本語→英語のライトノベル/Web小説でファインチューニングしたseq2seq翻訳モデル。
+
+- **版の区別**: model.safetensorsとpytorch_model.binの2形式のみで、単一チェックポイント。
+- **入力・設定**: 最大512トークン。カードはdiverse beam search(num_beams=8, num_beam_groups=4, do_sample=False)を推奨。固有名詞は<t0>〜<t9>タグで最大10個の訳を指定でき、tgt_langの切替で敬称の有無を制御する。
+- **必要構成**: transformersのAutoTokenizer/AutoModelForSeq2SeqLMで実行。
+- **制約**: ライトノベル/Web小説特化で、一般文や他ジャンルの性能は保証されない。カードは2022〜2023年時点の記述。
+- **利用条件**: CC-BY-NC-4.0。非商用限定のため業務利用には注意。
+- **編集者評価**: ライトノベル翻訳のドメイン特化と用語/敬称の指定タグが特徴。ライセンスが非商用限定。
+- **次の検証（未実施）**: 手持ちの日本語小説数ページで訳文と固有名詞タグの効きを確認する。
+
+確認日: 2026-10-13 / revision `55af628403016f64d9e0030fd1a2ea4e0204418f` / gated=False。ファイル名候補2件の一覧確認。代表ファイル: `model.safetensors`、`pytorch_model.bin`
+
+根拠: [固定モデルカード](https://huggingface.co/thefrigidliquidation/nllb-jaen-1.3B-lightnovels/blob/55af628403016f64d9e0030fd1a2ea4e0204418f/README.md) / [モデルAPI](https://huggingface.co/api/models/thefrigidliquidation/nllb-jaen-1.3B-lightnovels)
+
+## anime-detailer-xl-lora
+
+Animagine XL 2.0(SDXL)用のLoRAアダプタ。細部量を制御するコンセプトスライダーとして機能する。
+
+- **版の区別**: anime-detailer-xl.safetensors 1ファイルのみ。
+- **入力・設定**: Danbooruタグ形式のプロンプトで使う。スライダーを2に近づけるほど高精細、-2で抽象的になる。カードにnegative_prompt例とguidance_scale=12、50stepsの例を掲載。
+- **必要構成**: diffusersでStableDiffusionXLPipelineに読み込み、EulerAncestralDiscreteSchedulerを例示。
+- **制約**: ベースのSDXL 1.0/Animagine XL 2.0の制約を継承する。カードは2023年時点の記述。
+- **利用条件**: CreativeML Open RAIL++-M(openrail++)。無条件の商用可とは扱わない。
+- **編集者評価**: 生成したアニメ絵のディテール量を後段で調整したいワークフローに向くLoRA。
+- **次の検証（未実施）**: 同条件でスライダー値を変えて細部と破綻の差を比較する。
+
+確認日: 2026-10-13 / revision `0338a735b6076c636726b8c5701ed79832adfbde` / gated=False。ファイル名候補1件の一覧確認。代表ファイル: `anime-detailer-xl.safetensors`
+
+根拠: [固定モデルカード](https://huggingface.co/Linaqruf/anime-detailer-xl-lora/blob/0338a735b6076c636726b8c5701ed79832adfbde/README.md) / [モデルAPI](https://huggingface.co/api/models/Linaqruf/anime-detailer-xl-lora)

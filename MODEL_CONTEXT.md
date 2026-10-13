@@ -1,6 +1,6 @@
 # モデルに渡す制作リサーチ・コンテキスト
 
-一覧更新日: 2026-10-12。**238件 / 18分野**。各項目の確認日はJSONに記録。
+一覧更新日: 2026-10-13。**247件 / 18分野**。各項目の確認日はJSONに記録。
 
 AI、または二次元・サブカル系コンテンツの制作に関連する公開リポジトリの選定調査。漫画・ゲーム・アニメ・3D・ASMR・TTS・画像・動画・VTuber等は入口の例であり対象の上限ではない。周辺工程も含む。網羅調査・人気ランキングではない。
 
@@ -114,6 +114,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: 生成画像を一貫性のある漫画ページへ仕上げる編集作業に向く。
   - 出典（2026-10-10確認）: https://github.com/QuangTQV/Manga-Creator/blob/701390ed383b61a0a375551fd55c395a149d6d5e/README.md
 
+- **panelforge** [model_toolkit / AIモデル・学習 / 初期版(小規模)]
+  - 漫画/Webtoonのページ画像 → マスク重ねPNG、コマ単位のマスク、読み順のJSON。漫画/韓国漫画のコマ分割と読み順番号付けを行う小型U-Net。pretrained backbone無しでコマのマスク・境界を推定し、幾何のXYカットで読み順を付ける。
+  - 制約: 4コマ見開きで綴じ目が揃うとページが交互になる既知制限。より大きい多コンポーネント版(テキスト/顔/吹き出し)は学習中。
+  - 制作用途: 漫画翻訳/編集の前処理(コマ検出・読み順)に。
+  - 出典（2026-10-13確認）: https://github.com/DATGMAC/panelforge/blob/49f39e2f1af03ffa68acbe14fca84093c01d5b52/README.md
+
 ## シナリオ・キャラクター・絵コンテ
 
 - **BlueFish** [web_app / AI連携 / 小規模・初期評価候補]
@@ -145,6 +151,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: MockモードはUI検証用で生成品質の評価には使えない。実生成には外部Provider契約と費用が必要。単一ユーザー想定でアクセス制御なし。
   - 制作用途: 漫劇・縦型動画の企画から素材生成の試作。
   - 出典（2026-10-07確認）: https://github.com/tansuanyl/YumingScroll/blob/0255f68bba977599f06ec2f96ef7dcc9ad2732f6/README.md
+
+- **deepseek-whalechan** [workflow_tool / AI連携 / コミュニティ製・非公式(初期)]
+  - キャラ設定とプロンプト、任意で画像生成プロバイダの認証 → キャラ画像・ポスター・ステッカー・複数コマ漫画。コミュニティ発キャラ「Whale-chan」を一貫生成するためのキャラ設定仕様・参照アセット・Agentスキル群。視覚特徴の固定や頭身の数値規定、口調維持を提供する。
+  - 制約: READMEはDeepSeek本家と無関係の非公式プロジェクトと明記。生成物は安全・合法な内容に限定すると記載。
+  - 制作用途: 継続キャラの設定書式と一貫性維持の運用検討に。
+  - 出典（2026-10-13確認）: https://github.com/Neko3000/deepseek-whalechan/blob/0917fd14bb96ced343145b5c9574f5714d57c0c6/README.md
 
 ## ゲーム・ノベル・スプライト
 
@@ -219,6 +231,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: AI生成はRetro DiffusionのAPI依存でトークン消費制。ローカル完結ではない。ライセンスはAGPL-3.0。
   - 制作用途: スプライト素材の生成〜書き出しを1ツールで完結させたい個人〜小規模チームに向く。
   - 出典（2026-10-04確認）: https://github.com/GAlbanese09/spritebrew/blob/8d55e758b4b76ac2c78222d83cc3eb9b933c7b1f/README.md
+
+- **Genshin-Subtitles** [desktop_tool / AI連携 / 中規模]
+  - ゲーム画面(指定認識領域)、動画ファイル → オーバーレイ表示の二言語字幕、抽出した字幕。原神/スターレイル等のアニメ調ゲームにOCRでリアルタイム二言語字幕を重ねるWindowsツール。画面テキストを認識して既知テキストDBと照合し翻訳表示する。動画からの字幕抽出も可能。
+  - 制約: 対象ゲームと認識領域設定に依存。READMEは教育/研究目的と記載し、ゲーム内テキストDBの更新も必要。
+  - 制作用途: アニメ調ゲームのローカライズ確認や字幕制作の補助に。
+  - 出典（2026-10-13確認）: https://github.com/qew21/Genshin-Subtitles/blob/a0c6acf0b1190b01096f17fc77a786b8f5abf588/README.md
 
 ## アニメ制作・中割り・彩色・リップシンク
 
@@ -391,6 +409,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: Live2Dモデル・テクスチャ・Cubism Coreは本SDKのApache-2.0範囲外。Embedding/Planner/TTSモードは別途サービス設定が必要。
   - 制作用途: 机寵・バーチャルキャラの表情/動作を連続制御したい時に組み込みやすい。
   - 出典（2026-10-11確認）: https://github.com/nanlingyin/soullink-emotion-sdk/blob/02cd75ac0a085a87d84d1a885f1b33eca8742d53/README.md
+
+- **ayatsuri_2d** [desktop_tool / 非AI制作 / ベータ・小規模]
+  - PSD / Kritaファイル、既存のCubismモデル(.model3.json / .moc3) → moc3バンドル(モデル/物理/モーション/表情/テクスチャ)、独自の.aom形式。Live2Dライクな2D人形のリギング・アニメーション編集ソフト。PSD/Kritaのレイヤーを取り込みメッシュ化し、パラメータとデフォーマで動かしてmoc3を書き出す独立実装。
+  - 制約: READMEはベータで「頻繁に保存しバックアップを」と注意喚起。ビルドはApple/Microsoft未署名。
+  - 制作用途: Live2Dモデルのリギング工程とmoc3書き出しの検証に。
+  - 出典（2026-10-13確認）: https://github.com/Yoru-KenomoVT/ayatsuri_2d/blob/1ab63b7c4ef3363fe44c6912512a899c40375035/README.md
 
 ## レイヤー分解
 
@@ -798,6 +822,18 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: キャラクターボイスを使った二次創作的な音声制作。
   - 出典（2026-10-12確認）: https://github.com/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models/blob/75178d4f3c8d164dbbae94dbcccfee16de46021f/README.md
 
+- **TTS-Audio-Suite** [integration / AIモデル・学習 / 活発(小規模〜中規模)]
+  - テキスト、参照音声、SRT字幕 → 生成音声、SRT字幕、話者切替済み音声。ComfyUI向けのマルチエンジンTTS/音声変換拡張。F5-TTS、Chatterbox、VibeVoice、Higgs Audio、IndexTTS、CosyVoice3、Qwen3-TTS、RVC等を1つのノード群で扱い、SRT生成やキャラ切替、RVC学習も含む。
+  - 制約: 多数エンジン依存で構成が重い。ライセンスはNOASSERTION表記で、各エンジンの条件確認が必要。
+  - 制作用途: キャラ音声つき制作パイプラインをComfyUI内で組む用途。
+  - 出典（2026-10-13確認）: https://github.com/diodiogod/TTS-Audio-Suite/blob/49538a481c1d69b642ef87846e3894b82d0686cb/README.md
+
+- **VoxWeave** [desktop_tool / AIモデル・学習 / 活発]
+  - WAV/FLAC/MP3/MP4/MKV、マイク入力、RVCの.pth/.index → 変換音声、変声音声トラックを追加した動画、リアルタイム出力。Windowsローカルで動くRVC変声ワークステーション。音声/歌曲/動画/ディレクトリ/マイク入力を、試聴・オフライン変換・リアルタイム変声・バッチ処理で扱い、タスクセンターで結果と失敗理由を確認できる。
+  - 制約: Linux/macOSは未検証。模型訓練やGPT-SoVITS、仮想サウンドカードは提供しないと明記。
+  - 制作用途: キャラ声の一括変換やリアルタイム配信のローカル運用に。
+  - 出典（2026-10-13確認）: https://github.com/CheshireMew/VoxWeave/blob/b81a3f97451b1e086bb4f24ef6c8d93753d97546/README.md
+
 ## ASMR・効果音・環境音
 
 - **ASMRify** [desktop_tool / AI出力の後処理 / 小規模・初期評価候補]
@@ -927,6 +963,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEによると開発用クローンにはモデル等の大型アセットが含まれず手動配置が必要。対象OSはWindows中心で、macOS/Linuxは記載されていない。
   - 制作用途: 歌ってみた/AIカバーの音声変換と歌声合成をひとつの制作環境にまとめる用途。
   - 出典（2026-10-12確認）: https://github.com/yasoukyoku/UtaiSynthesizer/blob/518cb2aa6f094bdea32077bd33db3cd5dcd036ed/README.md
+
+- **ultimate-rvc** [desktop_tool / AIモデル・学習 / 活発]
+  - 楽曲(URL/音声ファイル)、テキスト、声モデル(.pth/.index) → 歌カバー音声、合成音声。RVCで歌カバーや音声生成を行うアプリ。ボーカル抽出→変換→ミックスをワンクリックまたは工程別タブで実行でき、任意テキストからのTTSと声モデル学習も含む。
+  - 制約: READMEは対応OSをWindowsとUbuntu系に限定し、他プラットフォームは非保証と明記。
+  - 制作用途: キャラの歌カバー制作や読み上げ生成に。
+  - 出典（2026-10-13確認）: https://github.com/JackismyShephard/ultimate-rvc/blob/dc14d1451e95eeda8801c67a7b9aa2a85b9cf7bd/README.md
 
 ## VTuber・AIキャラクター・VRM
 
@@ -1166,6 +1208,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制作用途: エージェントやWebフロントからAnima生成を共通APIで叩きたい制作に向く。
   - 出典（2026-10-10確認）: https://github.com/Langzaigg/ComfyUI-AnimaFlow/blob/a4dfef7b0268a577d4805272b40ea39705439ced/README.md
 
+- **Turboism** [workflow_tool / 非AI制作 / 第三者製・小規模]
+  - Cubism Editorのプロジェクトファイル → 編集済みプロジェクト。Live2D Cubism Editor向けのランタイム拡張とプラグイン基盤。Javaエージェントと公開SDKでパラメータ・メッシュ操作やPSDユーティリティ、ローカル自動化を追加する。
+  - 制約: READMEはLive2D社と無関係の第三者プロジェクトであり、インストーラ未署名と明記。macOSはプレビューのみ。
+  - 制作用途: Cubism作業のパラメータ/メッシュ操作の自動化検討に。
+  - 出典（2026-10-13確認）: https://github.com/turboism/Turboism/blob/44cfeb80b76226c2bade006a43ad11d62b90c7bc/README.md
+
 ## 字幕・翻訳・ローカライズ
 
 - **ASMR Dubber** [pipeline / AI連携 / 小規模・制作連携候補]
@@ -1341,6 +1389,12 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
   - 制約: READMEでは対応元言語が日/中/韓、対象は英語中心。翻訳エンジンによりオフラインかAPI依存かが分かれる。
   - 制作用途: GIMP上で手直ししながらの翻訳作業。
   - 出典（2026-10-12確認）: https://github.com/Nova4fj/manga-translator-plugin/blob/bb4576b3cbbafb60cbeefe1b5f30bcdc19deab82/README.md
+
+- **autodub** [pipeline / AIモデル・学習 / 実験的・個人研究プロジェクト(READMEが明記、サポートなし)]
+  - 元動画(音声)、分析後の話者・台詞・声割当の確認入力 → 英語吹き替えを載せた動画。日本語アニメを英語吹き替えにするローカル・人手レビュー前提のパイプライン。音声分離→認識→強制アラインメント→話者分離→翻訳→声クローン合成→タイミング調整→ミックスまでを繋ぐ。
+  - 制約: 吹き替え品質は粗く不均一で完成品ではないと作者が明記。issue/PRは受け付けない。
+  - 制作用途: 吹き替え/ローカライズの構成検討と実験に。
+  - 出典（2026-10-13確認）: https://github.com/chronoite/autodub/blob/ccc2160bcd3257004c611ecb0beb73e82fdc2a27/README.md
 
 ## モーション・身体演技
 
@@ -1551,6 +1605,9 @@ starsは確認時点の累計で増加率は未取得。最終pushは全ブラ�
 - [qwen-image-modern-anime-lora](https://huggingface.co/alfredplpl/qwen-image-modern-anime-lora/blob/23fdf83a9ba1124d1bd568945b255e3634025e5c/README.md): Qwen/Qwen-Image向けのスタイルLoRAで、モダンな日本のアニメ調を付与する。v1とv2の重みを収録する。 Apache-2.0。
 - [SoVITS-anime-mini-tts](https://huggingface.co/cpumaxx/SoVITS-anime-mini-tts/blob/9453f92d98d39c61be4a0d92072cf8cfa7c0422c/README.md): GPT-SoVITS（v2系）で学習した日本語アニメ調の音声モデル。ckptとpthの2ファイル構成。 MIT。
 - [qwen-image-anime-irl-lora](https://huggingface.co/flymy-ai/qwen-image-anime-irl-lora/blob/8dcca17f33d54db932aa7f11ab944b500304ce07/README.md): Qwen/Qwen-Image向けのLoRAで、アニメ調の記述から写実的な画像を生成する（Anime in Real Life）。 Apache-2.0。
+- [Manga-Balloon-Detector](https://huggingface.co/marco0antonio/Manga-Balloon-Detector/blob/e3362400d075aff6a10f2e729559f05ba4cf84d9/README.md): Ultralytics YOLOv8nを480×480で学習した単一クラス(発話バルーン)の物体検出器。ONNX出力は約12MB。 AGPL-3.0(Ultralytics YOLOv8由来)。カードは商用利用にAGPL準拠またはUltralytics商用ライセンスが必要と明記。
+- [nllb-jaen-1.3B-lightnovels](https://huggingface.co/thefrigidliquidation/nllb-jaen-1.3B-lightnovels/blob/55af628403016f64d9e0030fd1a2ea4e0204418f/README.md): NLLB-1.3Bを日本語→英語のライトノベル/Web小説でファインチューニングしたseq2seq翻訳モデル。 CC-BY-NC-4.0。非商用限定のため業務利用には注意。
+- [anime-detailer-xl-lora](https://huggingface.co/Linaqruf/anime-detailer-xl-lora/blob/0338a735b6076c636726b8c5701ed79832adfbde/README.md): Animagine XL 2.0(SDXL)用のLoRAアダプタ。細部量を制御するコンセプトスライダーとして機能する。 CreativeML Open RAIL++-M(openrail++)。無条件の商用可とは扱わない。
 
 ## 保留情報
 
